@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 19.5, 31.125" name="DataClasses">
+  <DataContextMoniker Name="/DataClassesDataContext" />
+  <nestedChildShapes>
+    <classShape Id="fc658b41-cb17-4349-93af-302dd1486ea3" absoluteBounds="6.25, 26.75, 2, 4.0785139973958309">
+      <DataClassMoniker Name="/DataClassesDataContext/Cliente" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8fc8dcb2-9996-4296-98c6-1c49e578b94f" absoluteBounds="6.265, 27.21, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9146a183-f6b0-4013-877c-b1ad74c3ce38" absoluteBounds="11.75, 16.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DataClassesDataContext/Veicolo_venduto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="10a2d7e4-0ef4-4c63-95f1-c1ca6963b960" absoluteBounds="11.765, 17.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f88c4a36-1f89-41a9-a5ce-86daa820e46a" absoluteBounds="9, 26.625, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/DataClassesDataContext/Contratto_di_vendita" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e9c53ca3-9f3c-4343-bfb9-ae691862d238" absoluteBounds="9.015, 27.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ae2dfe32-c7b8-4c94-bb3b-0dec60b04146" absoluteBounds="9, 22.125, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/DataClassesDataContext/Corriere" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ce918129-263b-4567-9757-15aac9eb8a9b" absoluteBounds="9.015, 22.585, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="904a1f19-1609-4aa1-8f6e-a2ad012150c5" absoluteBounds="11.75, 20.125, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/DataClassesDataContext/di" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0e7b53f6-9955-4fc8-bcdf-fc19f45aaf3a" absoluteBounds="11.765, 20.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c92fb6a3-5b05-4cd5-87b2-ee8245a5456c" absoluteBounds="6.25, 15.125, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/DataClassesDataContext/Fattura_di_acquisto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="937a2e29-2399-43b5-b9c3-3dd7e413813d" absoluteBounds="6.265, 15.585, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b5fe3905-d1e7-4340-a150-dfc0d02f0578" absoluteBounds="0.75, 11.625, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/DataClassesDataContext/Fornitore" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b9ad164d-f3a1-4cb0-900c-6462c587da4a" absoluteBounds="0.765, 12.085, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="83f9cfe3-b87a-4fa8-bcd0-9724ed106914" absoluteBounds="6.25, 21.5, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/DataClassesDataContext/Giacenza" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7c487fc3-7bb3-490a-aa38-72e5c0e4b885" absoluteBounds="6.265, 21.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a1b23053-6c52-47d4-9fcf-3dde87a44917" absoluteBounds="3.5, 18.625, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/DataClassesDataContext/Modalita_di_pagamento" />
+      <nestedChildShapes>
+        <elementListCompartment Id="04ee4c4b-67b1-4b71-bb5b-5c82059f7f0f" absoluteBounds="3.515, 19.085, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="71d653a2-df68-4997-98a5-15bd31e4dad7" absoluteBounds="3.5, 9.75, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/DataClassesDataContext/Modello_veicolo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="59d1cd8b-053e-4b70-a39b-ef2396745985" absoluteBounds="3.515, 10.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ac95d00c-9202-439f-bae5-75ac69e468f7" absoluteBounds="6.25, 24.25, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/DataClassesDataContext/Nostre_modalita_di_pagamento" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7b320987-1244-4cf2-a6ff-e88f7e4bb147" absoluteBounds="6.265, 24.71, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4202db14-e35e-4192-9c9e-abae405fcd63" absoluteBounds="6.25, 5.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DataClassesDataContext/Optional" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f7441bf8-815a-454e-aa2e-2478ba898d04" absoluteBounds="6.265, 6.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="925bb90e-acac-4d3c-82e0-8b7077b376f5" absoluteBounds="9, 18.125, 2, 2.3478011067708309">
+      <DataClassMoniker Name="/DataClassesDataContext/Ordine" />
+      <nestedChildShapes>
+        <elementListCompartment Id="13c41661-bd45-4212-a5d3-2feb23cec5ea" absoluteBounds="9.015, 18.585, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bbd5a908-9fed-4a0f-becb-7c5cbe4a65b4" absoluteBounds="9, 12.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DataClassesDataContext/Pagamento_cAcquisto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a4f8608e-5165-43c7-a7ef-59c51596917f" absoluteBounds="9.015, 13.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e5e267f1-0f42-442c-81bd-9a8700c7dd57" absoluteBounds="11.75, 26.875, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/DataClassesDataContext/Pagamento_cVendita" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a2a053ad-fef8-4fd4-9197-be5f820a5f81" absoluteBounds="11.765, 27.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b0131da8-12f4-4a9a-9bf5-8bfb655472fe" absoluteBounds="11.75, 13.875, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/DataClassesDataContext/per2" />
+      <nestedChildShapes>
+        <elementListCompartment Id="69f9acf9-f8c6-44a6-855c-2020b6f3436f" absoluteBounds="11.765, 14.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e25cbc02-e473-4a0b-94b8-f34c1a4ca4ad" absoluteBounds="14.5, 14.875, 2, 1.1939925130208327">
+      <DataClassMoniker Name="/DataClassesDataContext/possesso" />
+      <nestedChildShapes>
+        <elementListCompartment Id="19827927-d6d2-4d93-bffd-7f9f1509a03e" absoluteBounds="14.515, 15.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6a9aa908-6914-4576-9ab3-5e203af972d6" absoluteBounds="9, 15.375, 2, 1.1939925130208327">
+      <DataClassMoniker Name="/DataClassesDataContext/referenza2" />
+      <nestedChildShapes>
+        <elementListCompartment Id="084f032f-8df7-4ebf-99b8-8377470289f7" absoluteBounds="9.015, 15.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="630573c1-e519-4da8-b429-709c559b0f0c" absoluteBounds="14.5, 17.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DataClassesDataContext/Revisione" />
+      <nestedChildShapes>
+        <elementListCompartment Id="20a31418-7a06-4eb6-84d1-66690222a52a" absoluteBounds="14.515, 17.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="86573a7d-467d-4d65-80ae-13ee634104fc" absoluteBounds="3.5, 21.375, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/DataClassesDataContext/Ricambio" />
+      <nestedChildShapes>
+        <elementListCompartment Id="899beb30-9752-4918-901b-cdd5ca2c6c96" absoluteBounds="3.515, 21.835, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fe532059-1b79-4db5-a771-aa6726549b2c" absoluteBounds="14.5, 19.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DataClassesDataContext/Riparazione" />
+      <nestedChildShapes>
+        <elementListCompartment Id="10674556-bb46-4389-95bc-ba1b9559daba" absoluteBounds="14.515, 20.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6143886b-6b20-4180-bfeb-3a75b75cd5c9" absoluteBounds="9, 9.875, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/DataClassesDataContext/supporto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="97b83599-7ec8-4188-b40c-89b60f143e82" absoluteBounds="9.015, 10.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="78d50b61-cf2b-47f6-8daf-f2fdc8a41109" absoluteBounds="11.75, 23.125, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/DataClassesDataContext/Trasporto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="239089cf-4799-4de7-b6b4-f39d44e50a2f" absoluteBounds="11.765, 23.585, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="743d66f3-80eb-472f-a204-74ac4e858227" absoluteBounds="17.25, 20.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DataClassesDataContext/utilizzo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f4102c25-3dad-43c7-859a-08513cec039b" absoluteBounds="17.265, 21.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9529b09a-f05c-476d-8d28-df9d638b1881" absoluteBounds="6.25, 8.5, 2, 3.8862125651041666">
+      <DataClassMoniker Name="/DataClassesDataContext/Veicolo_in_catalogo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7a879145-6dd1-4ec1-9d42-9bb9401e636c" absoluteBounds="6.265, 8.96, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(10.9713932053786 : 26.625); (11.375 : 26.2213932053786); (11.375 : 17.5392976888021); (11.4791666666667 : 17.5392976888021 : JumpStart); (11.6458333333333 : 17.5392976888021 : JumpEnd); (11.75 : 17.5392976888021)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesDataContext/Contratto_di_vendita/Contratto_di_vendita_Veicolo_venduto" />
+      <nodes>
+        <classShapeMoniker Id="f88c4a36-1f89-41a9-a5ce-86daa820e46a" />
+        <classShapeMoniker Id="9146a183-f6b0-4013-877c-b1ad74c3ce38" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 27.5729484049479); (9 : 27.5729484049479)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesDataContext/Cliente/Cliente_Contratto_di_vendita" />
+      <nodes>
+        <classShapeMoniker Id="fc658b41-cb17-4349-93af-302dd1486ea3" />
+        <classShapeMoniker Id="f88c4a36-1f89-41a9-a5ce-86daa820e46a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 14.9343082682292); (1.75 : 16.1065991210938); (2.19791916666667 : 16.1065991210938 : JumpStart); (2.36458583333333 : 16.1065991210938 : JumpEnd); (6.25 : 16.1065991210938)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesDataContext/Fornitore/Fornitore_Fattura_di_acquisto" />
+      <nodes>
+        <classShapeMoniker Id="b5fe3905-d1e7-4340-a150-dfc0d02f0578" />
+        <classShapeMoniker Id="c92fb6a3-5b05-4cd5-87b2-ee8245a5456c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.5 : 18.625); (4.5 : 16.6286511816406); (6.25 : 16.6286511816406)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesDataContext/Modalita_di_pagamento/Modalita_di_pagamento_Fattura_di_acquisto" />
+      <nodes>
+        <classShapeMoniker Id="a1b23053-6c52-47d4-9fcf-3dde87a44917" />
+        <classShapeMoniker Id="c92fb6a3-5b05-4cd5-87b2-ee8245a5456c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.2812525 : 14.9343082682292); (2.2812525 : 19.6065991210938); (3.5 : 19.6065991210938)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesDataContext/Fornitore/Fornitore_Modalita_di_pagamento" />
+      <nodes>
+        <classShapeMoniker Id="b5fe3905-d1e7-4340-a150-dfc0d02f0578" />
+        <classShapeMoniker Id="a1b23053-6c52-47d4-9fcf-3dde87a44917" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 13.2796541341146); (4.5 : 13.2796541341146); (4.5 : 11.1362939453125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesDataContext/Fornitore/Fornitore_Modello_veicolo" />
+      <nodes>
+        <classShapeMoniker Id="b5fe3905-d1e7-4340-a150-dfc0d02f0578" />
+        <classShapeMoniker Id="71d653a2-df68-4997-98a5-15bd31e4dad7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 26.0208968098958); (8.625 : 26.3958968098958); (8.625 : 26.25); (9 : 26.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClassesDataContext/Nostre_modalita_di_pagamento/Nostre_modalita_di_pagamento_Contratto_di_vendita" />
+      <nodes>
+        <classShapeMoniker Id="ac95d00c-9202-439f-bae5-75ac69e468f7" />
+        <classShapeMoniker Id="f88c4a36-1f89-41a9-a5ce-86daa820e46a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10 : 18.125); (10 : 17.113396344401); (11.4791666666667 : 17.113396344401 : JumpStart); (11.6458333333333 : 17.113396344401 : JumpEnd); (11.75 : 17.113396344401)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesDataContext/Ordine/Ordine_Veicolo_venduto" />
+      <nodes>
+        <classShapeMoniker Id="925bb90e-acac-4d3c-82e0-8b7077b376f5" />
+        <classShapeMoniker Id="9146a183-f6b0-4013-877c-b1ad74c3ce38" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 20.2989005533854); (11.2916666666667 : 20.2989005533854 : JumpStart); (11.4583333333333 : 20.2989005533854 : JumpEnd); (11.75 : 20.2989005533854)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesDataContext/Ordine/Ordine_di" />
+      <nodes>
+        <classShapeMoniker Id="925bb90e-acac-4d3c-82e0-8b7077b376f5" />
+        <classShapeMoniker Id="904a1f19-1609-4aa1-8f6e-a2ad012150c5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.25 : 17.0881982421875); (7.25 : 19.2989005533854); (8.54166666666667 : 19.2989005533854 : JumpStart); (8.70833333333333 : 19.2989005533854 : JumpEnd); (9 : 19.2989005533854)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesDataContext/Fattura_di_acquisto/Fattura_di_acquisto_Ordine" />
+      <nodes>
+        <classShapeMoniker Id="c92fb6a3-5b05-4cd5-87b2-ee8245a5456c" />
+        <classShapeMoniker Id="925bb90e-acac-4d3c-82e0-8b7077b376f5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.25 : 15.125); (7.25 : 13.5392976888021); (8.54166666666667 : 13.5392976888021 : JumpStart); (8.70833333333333 : 13.5392976888021 : JumpEnd); (8.72916666666667 : 13.5392976888021 : JumpStart); (8.89583333333333 : 13.5392976888021 : JumpEnd); (9 : 13.5392976888021)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesDataContext/Fattura_di_acquisto/Fattura_di_acquisto_Pagamento_cAcquisto" />
+      <nodes>
+        <classShapeMoniker Id="c92fb6a3-5b05-4cd5-87b2-ee8245a5456c" />
+        <classShapeMoniker Id="bbd5a908-9fed-4a0f-becb-7c5cbe4a65b4" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 27.5681469726563); (11.75 : 27.5681469726563)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesDataContext/Contratto_di_vendita/Contratto_di_vendita_Pagamento_cVendita" />
+      <nodes>
+        <classShapeMoniker Id="f88c4a36-1f89-41a9-a5ce-86daa820e46a" />
+        <classShapeMoniker Id="e5e267f1-0f42-442c-81bd-9a8700c7dd57" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 18.1865374615385); (11.3160744349011 : 17.8704630266373 : JumpStart); (11.4339255650989 : 17.7526118964396 : JumpEnd); (11.5625 : 17.6240374615385); (11.5625 : 14.5681469726562); (11.75 : 14.5681469726562)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesDataContext/Ordine/Ordine_per2" />
+      <nodes>
+        <classShapeMoniker Id="925bb90e-acac-4d3c-82e0-8b7077b376f5" />
+        <classShapeMoniker Id="b0131da8-12f4-4a9a-9bf5-8bfb655472fe" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 6.53929768880208); (15.5 : 6.53929768880208); (15.5 : 14.875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesDataContext/Optional/Optional_possesso" />
+      <nodes>
+        <classShapeMoniker Id="4202db14-e35e-4192-9c9e-abae405fcd63" />
+        <classShapeMoniker Id="e25cbc02-e473-4a0b-94b8-f34c1a4ca4ad" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.75 : 16.75); (14.125 : 16.375); (14.125 : 16.4439925130208); (14.5 : 16.0689925130208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClassesDataContext/Veicolo_venduto/Veicolo_venduto_possesso" />
+      <nodes>
+        <classShapeMoniker Id="9146a183-f6b0-4013-877c-b1ad74c3ce38" />
+        <classShapeMoniker Id="e25cbc02-e473-4a0b-94b8-f34c1a4ca4ad" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.75 : 17.9142976888021); (14.5 : 17.9142976888021)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesDataContext/Veicolo_venduto/Veicolo_venduto_Revisione" />
+      <nodes>
+        <classShapeMoniker Id="9146a183-f6b0-4013-877c-b1ad74c3ce38" />
+        <classShapeMoniker Id="630573c1-e519-4da8-b429-709c559b0f0c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.5 : 21.375); (4.5 : 20.8181469726563); (8.54166666666667 : 20.8181469726563 : JumpStart); (8.70833333333333 : 20.8181469726563 : JumpEnd); (11.2916666666667 : 20.8181469726563 : JumpStart); (11.4583333333333 : 20.8181469726563 : JumpEnd); (11.75 : 20.8181469726563)]" fixedFrom="Algorithm" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClassesDataContext/Ricambio/Ricambio_di" />
+      <nodes>
+        <classShapeMoniker Id="86573a7d-467d-4d65-80ae-13ee634104fc" />
+        <classShapeMoniker Id="904a1f19-1609-4aa1-8f6e-a2ad012150c5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 22.3854484049479); (6.25 : 22.3854484049479)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesDataContext/Ricambio/Ricambio_Giacenza" />
+      <nodes>
+        <classShapeMoniker Id="86573a7d-467d-4d65-80ae-13ee634104fc" />
+        <classShapeMoniker Id="83f9cfe3-b87a-4fa8-bcd0-9724ed106914" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 21.375); (5.625 : 21.25); (8.625 : 21.25); (8.625 : 16.9439925130208); (8.75357443490112 : 16.8154180781197 : JumpStart); (8.87142556509888 : 16.697566947922 : JumpEnd); (9 : 16.5689925130208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClassesDataContext/Ricambio/Ricambio_referenza2" />
+      <nodes>
+        <classShapeMoniker Id="86573a7d-467d-4d65-80ae-13ee634104fc" />
+        <classShapeMoniker Id="6a9aa908-6914-4576-9ab3-5e203af972d6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.2187475 : 14.9343082682292); (1.2187475 : 22.4527498372396); (3.5 : 22.4527498372396)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesDataContext/Fornitore/Fornitore_Ricambio" />
+      <nodes>
+        <classShapeMoniker Id="b5fe3905-d1e7-4340-a150-dfc0d02f0578" />
+        <classShapeMoniker Id="86573a7d-467d-4d65-80ae-13ee634104fc" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.75 : 18.3285953776042); (14.125 : 18.7035953776042); (14.125 : 20.6642976888021); (14.5 : 20.6642976888021)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesDataContext/Veicolo_venduto/Veicolo_venduto_Riparazione" />
+      <nodes>
+        <classShapeMoniker Id="9146a183-f6b0-4013-877c-b1ad74c3ce38" />
+        <classShapeMoniker Id="fe532059-1b79-4db5-a771-aa6726549b2c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 6.96519903320312); (10 : 6.96519903320312); (10 : 9.875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesDataContext/Optional/Optional_supporto" />
+      <nodes>
+        <classShapeMoniker Id="4202db14-e35e-4192-9c9e-abae405fcd63" />
+        <classShapeMoniker Id="6143886b-6b20-4180-bfeb-3a75b75cd5c9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 23.9912019856771); (11.2916666666667 : 23.9912019856771 : JumpStart); (11.4583333333333 : 23.9912019856771 : JumpEnd); (11.75 : 23.9912019856771)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesDataContext/Corriere/Corriere_Trasporto" />
+      <nodes>
+        <classShapeMoniker Id="ae2dfe32-c7b8-4c94-bb3b-0dec60b04146" />
+        <classShapeMoniker Id="78d50b61-cf2b-47f6-8daf-f2fdc8a41109" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 26.6849370458734); (11.53125 : 26.1536870458734); (11.53125 : 24.9555549785156); (11.75 : 24.9555549785156)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesDataContext/Contratto_di_vendita/Contratto_di_vendita_Trasporto" />
+      <nodes>
+        <classShapeMoniker Id="f88c4a36-1f89-41a9-a5ce-86daa820e46a" />
+        <classShapeMoniker Id="78d50b61-cf2b-47f6-8daf-f2fdc8a41109" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16.5 : 21.1642976888021); (17.25 : 21.1642976888021)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesDataContext/Riparazione/Riparazione_utilizzo" />
+      <nodes>
+        <classShapeMoniker Id="fe532059-1b79-4db5-a771-aa6726549b2c" />
+        <classShapeMoniker Id="743d66f3-80eb-472f-a204-74ac4e858227" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.968748 : 21.375); (3.968748 : 21.125); (4.41666666666667 : 21.125 : JumpStart); (4.58333333333333 : 21.125 : JumpEnd); (8.54166666666667 : 21.125 : JumpStart); (8.70833333333333 : 21.125 : JumpEnd); (11.2916666666667 : 21.125 : JumpStart); (11.4583333333333 : 21.125 : JumpEnd); (11.5 : 21.125); (11.5 : 22.0136941614583); (17.25 : 22.0136941614583)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesDataContext/Ricambio/Ricambio_utilizzo" />
+      <nodes>
+        <classShapeMoniker Id="86573a7d-467d-4d65-80ae-13ee634104fc" />
+        <classShapeMoniker Id="743d66f3-80eb-472f-a204-74ac4e858227" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.21769230769231 : 12.3862125651042); (8.8125 : 12.9810202574119); (8.8125 : 17.832151344401); (9.91666666666667 : 17.832151344401 : JumpStart); (10.0833333333333 : 17.832151344401 : JumpEnd); (11.2710527838041 : 17.832151344401 : JumpStart); (11.4583333333333 : 17.832151344401 : JumpEnd); (11.75 : 17.832151344401)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesDataContext/Veicolo_in_catalogo/Veicolo_in_catalogo_Veicolo_venduto" />
+      <nodes>
+        <classShapeMoniker Id="9529b09a-f05c-476d-8d28-df9d638b1881" />
+        <classShapeMoniker Id="9146a183-f6b0-4013-877c-b1ad74c3ce38" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 9.15625); (9.91666666666667 : 9.15625 : JumpStart); (10.0833333333333 : 9.15625 : JumpEnd); (12.75 : 9.15625); (12.75 : 13.875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesDataContext/Veicolo_in_catalogo/Veicolo_in_catalogo_per2" />
+      <nodes>
+        <classShapeMoniker Id="9529b09a-f05c-476d-8d28-df9d638b1881" />
+        <classShapeMoniker Id="b0131da8-12f4-4a9a-9bf5-8bfb655472fe" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 12.352365411258); (8.625 : 12.727365411258); (8.625 : 15.9407442565104); (8.72916666666667 : 15.9407442565104 : JumpStart); (8.89583333333333 : 15.9407442565104 : JumpEnd); (9 : 15.9407442565104)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesDataContext/Veicolo_in_catalogo/Veicolo_in_catalogo_referenza2" />
+      <nodes>
+        <classShapeMoniker Id="9529b09a-f05c-476d-8d28-df9d638b1881" />
+        <classShapeMoniker Id="6a9aa908-6914-4576-9ab3-5e203af972d6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 10.4719962565104); (9 : 10.4719962565104)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesDataContext/Veicolo_in_catalogo/Veicolo_in_catalogo_supporto" />
+      <nodes>
+        <classShapeMoniker Id="9529b09a-f05c-476d-8d28-df9d638b1881" />
+        <classShapeMoniker Id="6143886b-6b20-4180-bfeb-3a75b75cd5c9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 10.4431469726562); (6.25 : 10.4431469726562)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesDataContext/Modello_veicolo/Modello_veicolo_Veicolo_in_catalogo" />
+      <nodes>
+        <classShapeMoniker Id="71d653a2-df68-4997-98a5-15bd31e4dad7" />
+        <classShapeMoniker Id="9529b09a-f05c-476d-8d28-df9d638b1881" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
