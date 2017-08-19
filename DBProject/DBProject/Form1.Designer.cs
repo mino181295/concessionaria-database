@@ -333,7 +333,6 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Cliente = new System.Windows.Forms.TabPage();
             this.comboBox8 = new System.Windows.Forms.ComboBox();
-            this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.partitaIVACodiceFiscaleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -353,6 +352,7 @@
             this.datanascitaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cittanascitaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.provincianascitaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.button12 = new System.Windows.Forms.Button();
             this.addClienteBtn = new DBProject.EntryButton();
             this.Contratto = new System.Windows.Forms.TabPage();
@@ -417,6 +417,7 @@
             this.utilizzoTableAdapter = new DBProject.ProgettoDB16DataSetTableAdapters.utilizzoTableAdapter();
             this.ricambioTableAdapter = new DBProject.ProgettoDB16DataSetTableAdapters.RicambioTableAdapter();
             this.giacenzaTableAdapter = new DBProject.ProgettoDB16DataSetTableAdapters.GiacenzaTableAdapter();
+            this.veicolovendutoBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tabControl5.SuspendLayout();
             this.Ordine.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView20)).BeginInit();
@@ -498,8 +499,8 @@
             this.fornitoriPanel.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.Cliente.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
             this.Contratto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.contrattodivenditaBindingSource)).BeginInit();
@@ -513,6 +514,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.giacenzaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nostremodalitadipagamentoBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.possessoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.veicolovendutoBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // button30
@@ -3739,21 +3741,13 @@
             // comboBox8
             // 
             this.comboBox8.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.comboBox8.DataSource = this.clienteBindingSource;
-            this.comboBox8.DisplayMember = "PartitaIVA_CodiceFiscale";
             this.comboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox8.FormattingEnabled = true;
             this.comboBox8.Location = new System.Drawing.Point(366, 292);
             this.comboBox8.Name = "comboBox8";
             this.comboBox8.Size = new System.Drawing.Size(121, 21);
             this.comboBox8.TabIndex = 14;
-            this.comboBox8.ValueMember = "Nome";
             this.comboBox8.SelectedIndexChanged += new System.EventHandler(this.comboBoxSearchFieldChanged);
-            // 
-            // clienteBindingSource
-            // 
-            this.clienteBindingSource.DataMember = "Cliente";
-            this.clienteBindingSource.DataSource = this.progettoDB16DataSet;
             // 
             // textBox8
             // 
@@ -3918,6 +3912,11 @@
             this.provincianascitaDataGridViewTextBoxColumn.HeaderText = "Provincia_nascita";
             this.provincianascitaDataGridViewTextBoxColumn.Name = "provincianascitaDataGridViewTextBoxColumn";
             this.provincianascitaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // clienteBindingSource
+            // 
+            this.clienteBindingSource.DataMember = "Cliente";
+            this.clienteBindingSource.DataSource = this.progettoDB16DataSet;
             // 
             // button12
             // 
@@ -4427,18 +4426,23 @@
             // 
             this.giacenzaTableAdapter.ClearBeforeFill = true;
             // 
+            // veicolovendutoBindingSource1
+            // 
+            this.veicolovendutoBindingSource1.DataMember = "Veicolo_venduto";
+            this.veicolovendutoBindingSource1.DataSource = this.progettoDB16DataSet;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(655, 403);
-            this.Controls.Add(this.officinaPanel);
-            this.Controls.Add(this.homePanel);
-            this.Controls.Add(this.fornitoriPanel);
             this.Controls.Add(this.corrieriPanel);
             this.Controls.Add(this.clientiPanel);
             this.Controls.Add(this.ordiniPanel);
             this.Controls.Add(this.veicoliPanel);
+            this.Controls.Add(this.officinaPanel);
+            this.Controls.Add(this.homePanel);
+            this.Controls.Add(this.fornitoriPanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -4553,8 +4557,8 @@
             this.tabControl1.ResumeLayout(false);
             this.Cliente.ResumeLayout(false);
             this.Cliente.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
             this.Contratto.ResumeLayout(false);
             this.Contratto.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
@@ -4572,6 +4576,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.giacenzaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nostremodalitadipagamentoBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.possessoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.veicolovendutoBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -4969,6 +4974,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn periodicitaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tassointeresseDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn numerorateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource veicolovendutoBindingSource1;
     }
 }
 
