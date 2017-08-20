@@ -53,7 +53,6 @@
             this.tipoOrdineDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ordineBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.progettoDB16DataSet = new DBProject.ProgettoDB16DataSet();
-            this.button26 = new System.Windows.Forms.Button();
             this.addOrdineBtn = new DBProject.EntryButton();
             this.Dettaglio_ordine_veicolo = new System.Windows.Forms.TabPage();
             this.comboBox13 = new System.Windows.Forms.ComboBox();
@@ -63,7 +62,6 @@
             this.ordineIDordineDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quantitaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.per2BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.button4 = new System.Windows.Forms.Button();
             this.addDettaglioVeicBtn = new DBProject.EntryButton();
             this.Dettaglio_ordine_ricambio = new System.Windows.Forms.TabPage();
             this.comboBox23 = new System.Windows.Forms.ComboBox();
@@ -73,7 +71,6 @@
             this.ricambioCodiceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quantitaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.diBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.button5 = new System.Windows.Forms.Button();
             this.addDettaglioRicBtn = new DBProject.EntryButton();
             this.ordiniPanel = new System.Windows.Forms.Panel();
             this.tabControl4 = new System.Windows.Forms.TabControl();
@@ -98,7 +95,6 @@
             this.modelloNomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.modelloAnnoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.veicoloincatalogoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.button18 = new System.Windows.Forms.Button();
             this.addVeicoloBtn = new DBProject.EntryButton();
             this.Modello_veicolo = new System.Windows.Forms.TabPage();
             this.comboBox11 = new System.Windows.Forms.ComboBox();
@@ -108,7 +104,6 @@
             this.annoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fornitorePartitaIVADataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.modelloveicoloBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.button19 = new System.Windows.Forms.Button();
             this.addModelloBtn = new DBProject.EntryButton();
             this.Optional = new System.Windows.Forms.TabPage();
             this.comboBox15 = new System.Windows.Forms.ComboBox();
@@ -119,7 +114,6 @@
             this.descrizioneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.prezzoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.optionalBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.button23 = new System.Windows.Forms.Button();
             this.addOptionalBtn = new DBProject.EntryButton();
             this.Veicolo_venduto = new System.Windows.Forms.TabPage();
             this.comboBox16 = new System.Windows.Forms.ComboBox();
@@ -130,7 +124,6 @@
             this.ordineIDordineDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.veicoloCodiceDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.veicolovendutoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.button24 = new System.Windows.Forms.Button();
             this.addVenditaBtn = new DBProject.EntryButton();
             this.Revisione = new System.Windows.Forms.TabPage();
             this.dataGridView22 = new System.Windows.Forms.DataGridView();
@@ -141,7 +134,6 @@
             this.revisioneBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.comboBox17 = new System.Windows.Forms.ComboBox();
             this.textBox17 = new System.Windows.Forms.TextBox();
-            this.button28 = new System.Windows.Forms.Button();
             this.addEsecRevBtn = new DBProject.EntryButton();
             this.addRevisioneBtn = new DBProject.EntryButton();
             this.Optional_supportato = new System.Windows.Forms.TabPage();
@@ -151,7 +143,6 @@
             this.veicoloCodiceDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ricambioCodiceDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.referenza2BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.button34 = new System.Windows.Forms.Button();
             this.entryButton10 = new DBProject.EntryButton();
             this.Optional_in_veicolo_venduto = new System.Windows.Forms.TabPage();
             this.comboBox25 = new System.Windows.Forms.ComboBox();
@@ -160,7 +151,6 @@
             this.veicoloNumerotelaioDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.optionalCodiceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.possessoBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.button35 = new System.Windows.Forms.Button();
             this.addOptToVeicVend_Btn = new DBProject.EntryButton();
             this.veicoliPanel = new System.Windows.Forms.Panel();
             this.tabControl3 = new System.Windows.Forms.TabControl();
@@ -216,7 +206,6 @@
             this.dataDataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.importocomplessivoDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.riparazioneBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.button7 = new System.Windows.Forms.Button();
             this.addRiparazioneBtn = new DBProject.EntryButton();
             this.Dettaglio_riparazione = new System.Windows.Forms.TabPage();
             this.comboBox20 = new System.Windows.Forms.ComboBox();
@@ -227,7 +216,6 @@
             this.ricambioCodiceDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quantitaDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.utilizzoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.button6 = new System.Windows.Forms.Button();
             this.addDettaglioBtn = new DBProject.EntryButton();
             this.Ricambio = new System.Windows.Forms.TabPage();
             this.comboBox21 = new System.Windows.Forms.ComboBox();
@@ -241,7 +229,6 @@
             this.tipoRicambioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fornitorePartitaIVADataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ricambioBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.button22 = new System.Windows.Forms.Button();
             this.addRicambioBtn = new DBProject.EntryButton();
             this.Giacenza = new System.Windows.Forms.TabPage();
             this.dataGridView12 = new System.Windows.Forms.DataGridView();
@@ -253,7 +240,6 @@
             this.giacenzaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.comboBox22 = new System.Windows.Forms.ComboBox();
             this.textBox22 = new System.Windows.Forms.TextBox();
-            this.button21 = new System.Windows.Forms.Button();
             this.addGiacenzaBtn = new DBProject.EntryButton();
             this.Ricambio_veicolo = new System.Windows.Forms.TabPage();
             this.comboBox7 = new System.Windows.Forms.ComboBox();
@@ -262,7 +248,6 @@
             this.veicoloCodiceDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ricambioCodiceDataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.referenza2BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.button14 = new System.Windows.Forms.Button();
             this.addRicVeicBtn = new DBProject.EntryButton();
             this.officinaPanel = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -286,7 +271,6 @@
             this.indirizzoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cAPDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fornitoreBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.button8 = new System.Windows.Forms.Button();
             this.addFornitoreBtn = new DBProject.EntryButton();
             this.Fattura = new System.Windows.Forms.TabPage();
             this.dataGridViewFatt = new System.Windows.Forms.DataGridView();
@@ -299,7 +283,6 @@
             this.fatturadiacquistoBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.comboBoxFatture = new System.Windows.Forms.ComboBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
             this.addFatturaBtn = new DBProject.EntryButton();
             this.Pagamento_fornitore = new System.Windows.Forms.TabPage();
             this.dataGridViewPag = new System.Windows.Forms.DataGridView();
@@ -310,7 +293,6 @@
             this.pagamentocAcquistoBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.comboBoxPagamenti = new System.Windows.Forms.ComboBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button15 = new System.Windows.Forms.Button();
             this.addPagFornBtn = new DBProject.EntryButton();
             this.Modalita_pagamento_fornitore = new System.Windows.Forms.TabPage();
             this.dataGridViewModPag = new System.Windows.Forms.DataGridView();
@@ -323,7 +305,6 @@
             this.modalitadipagamentoBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.comboBoxModPag = new System.Windows.Forms.ComboBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button11 = new System.Windows.Forms.Button();
             this.addModPagBtn = new DBProject.EntryButton();
             this.fornitoreBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.fatturadiacquistoBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -353,7 +334,6 @@
             this.cittanascitaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.provincianascitaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.button12 = new System.Windows.Forms.Button();
             this.addClienteBtn = new DBProject.EntryButton();
             this.Contratto = new System.Windows.Forms.TabPage();
             this.comboBox24 = new System.Windows.Forms.ComboBox();
@@ -365,7 +345,6 @@
             this.nostreModDaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clientePartitaIVACodiceFiscaleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contrattodivenditaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.button16 = new System.Windows.Forms.Button();
             this.addContrattoBtn = new DBProject.EntryButton();
             this.Pagamento = new System.Windows.Forms.TabPage();
             this.comboBox9 = new System.Windows.Forms.ComboBox();
@@ -375,7 +354,6 @@
             this.dataDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.importoDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pagamentocVenditaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.button20 = new System.Windows.Forms.Button();
             this.addPagamBtn = new DBProject.EntryButton();
             this.Modalita_di_pagamento = new System.Windows.Forms.TabPage();
             this.comboBox10 = new System.Windows.Forms.ComboBox();
@@ -387,7 +365,6 @@
             this.tassointeresseDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.numerorateDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nostremodalitadipagamentoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.button3 = new System.Windows.Forms.Button();
             this.addNsModPag_Btn = new DBProject.EntryButton();
             this.clientiPanel = new System.Windows.Forms.Panel();
             this.giacenzaBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -620,7 +597,6 @@
             this.Ordine.Controls.Add(this.comboBox12);
             this.Ordine.Controls.Add(this.textBox12);
             this.Ordine.Controls.Add(this.dataGridView20);
-            this.Ordine.Controls.Add(this.button26);
             this.Ordine.Controls.Add(this.addOrdineBtn);
             this.Ordine.Location = new System.Drawing.Point(4, 22);
             this.Ordine.Name = "Ordine";
@@ -764,16 +740,6 @@
             this.progettoDB16DataSet.DataSetName = "ProgettoDB16DataSet";
             this.progettoDB16DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // button26
-            // 
-            this.button26.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button26.Location = new System.Drawing.Point(529, 176);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(75, 23);
-            this.button26.TabIndex = 13;
-            this.button26.Text = "Filtra";
-            this.button26.UseVisualStyleBackColor = true;
-            // 
             // addOrdineBtn
             // 
             this.addOrdineBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -792,7 +758,6 @@
             this.Dettaglio_ordine_veicolo.Controls.Add(this.comboBox13);
             this.Dettaglio_ordine_veicolo.Controls.Add(this.textBox13);
             this.Dettaglio_ordine_veicolo.Controls.Add(this.dataGridView21);
-            this.Dettaglio_ordine_veicolo.Controls.Add(this.button4);
             this.Dettaglio_ordine_veicolo.Controls.Add(this.addDettaglioVeicBtn);
             this.Dettaglio_ordine_veicolo.Location = new System.Drawing.Point(4, 22);
             this.Dettaglio_ordine_veicolo.Name = "Dettaglio_ordine_veicolo";
@@ -872,16 +837,6 @@
             this.per2BindingSource.DataMember = "per2";
             this.per2BindingSource.DataSource = this.progettoDB16DataSet;
             // 
-            // button4
-            // 
-            this.button4.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button4.Location = new System.Drawing.Point(519, 132);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 18;
-            this.button4.Text = "Filtra";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
             // addDettaglioVeicBtn
             // 
             this.addDettaglioVeicBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -900,7 +855,6 @@
             this.Dettaglio_ordine_ricambio.Controls.Add(this.comboBox23);
             this.Dettaglio_ordine_ricambio.Controls.Add(this.textBox23);
             this.Dettaglio_ordine_ricambio.Controls.Add(this.dataGridView23);
-            this.Dettaglio_ordine_ricambio.Controls.Add(this.button5);
             this.Dettaglio_ordine_ricambio.Controls.Add(this.addDettaglioRicBtn);
             this.Dettaglio_ordine_ricambio.Location = new System.Drawing.Point(4, 22);
             this.Dettaglio_ordine_ricambio.Name = "Dettaglio_ordine_ricambio";
@@ -980,16 +934,6 @@
             this.diBindingSource.DataMember = "di";
             this.diBindingSource.DataSource = this.progettoDB16DataSet;
             // 
-            // button5
-            // 
-            this.button5.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button5.Location = new System.Drawing.Point(519, 132);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 18;
-            this.button5.Text = "Filtra";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
             // addDettaglioRicBtn
             // 
             this.addDettaglioRicBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -1040,7 +984,6 @@
             this.Veicolo_in_catalogo.Controls.Add(this.comboBox14);
             this.Veicolo_in_catalogo.Controls.Add(this.textBox14);
             this.Veicolo_in_catalogo.Controls.Add(this.dataGridView16);
-            this.Veicolo_in_catalogo.Controls.Add(this.button18);
             this.Veicolo_in_catalogo.Controls.Add(this.addVeicoloBtn);
             this.Veicolo_in_catalogo.Location = new System.Drawing.Point(4, 22);
             this.Veicolo_in_catalogo.Name = "Veicolo_in_catalogo";
@@ -1242,16 +1185,6 @@
             this.veicoloincatalogoBindingSource.DataMember = "Veicolo_in_catalogo";
             this.veicoloincatalogoBindingSource.DataSource = this.progettoDB16DataSet;
             // 
-            // button18
-            // 
-            this.button18.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button18.Location = new System.Drawing.Point(528, 136);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(75, 23);
-            this.button18.TabIndex = 13;
-            this.button18.Text = "Filtra";
-            this.button18.UseVisualStyleBackColor = true;
-            // 
             // addVeicoloBtn
             // 
             this.addVeicoloBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -1270,7 +1203,6 @@
             this.Modello_veicolo.Controls.Add(this.comboBox11);
             this.Modello_veicolo.Controls.Add(this.textBox11);
             this.Modello_veicolo.Controls.Add(this.dataGridView17);
-            this.Modello_veicolo.Controls.Add(this.button19);
             this.Modello_veicolo.Controls.Add(this.addModelloBtn);
             this.Modello_veicolo.Location = new System.Drawing.Point(4, 22);
             this.Modello_veicolo.Name = "Modello_veicolo";
@@ -1351,16 +1283,6 @@
             this.modelloveicoloBindingSource.DataMember = "Modello_veicolo";
             this.modelloveicoloBindingSource.DataSource = this.progettoDB16DataSet;
             // 
-            // button19
-            // 
-            this.button19.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button19.Location = new System.Drawing.Point(518, 129);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(75, 23);
-            this.button19.TabIndex = 13;
-            this.button19.Text = "Filtra";
-            this.button19.UseVisualStyleBackColor = true;
-            // 
             // addModelloBtn
             // 
             this.addModelloBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -1379,7 +1301,6 @@
             this.Optional.Controls.Add(this.comboBox15);
             this.Optional.Controls.Add(this.textBox15);
             this.Optional.Controls.Add(this.dataGridView18);
-            this.Optional.Controls.Add(this.button23);
             this.Optional.Controls.Add(this.addOptionalBtn);
             this.Optional.Location = new System.Drawing.Point(4, 22);
             this.Optional.Name = "Optional";
@@ -1468,16 +1389,6 @@
             this.optionalBindingSource.DataMember = "Optional";
             this.optionalBindingSource.DataSource = this.progettoDB16DataSet;
             // 
-            // button23
-            // 
-            this.button23.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button23.Location = new System.Drawing.Point(518, 129);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(75, 23);
-            this.button23.TabIndex = 13;
-            this.button23.Text = "Filtra";
-            this.button23.UseVisualStyleBackColor = true;
-            // 
             // addOptionalBtn
             // 
             this.addOptionalBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -1496,7 +1407,6 @@
             this.Veicolo_venduto.Controls.Add(this.comboBox16);
             this.Veicolo_venduto.Controls.Add(this.textBox16);
             this.Veicolo_venduto.Controls.Add(this.dataGridView19);
-            this.Veicolo_venduto.Controls.Add(this.button24);
             this.Veicolo_venduto.Controls.Add(this.addVenditaBtn);
             this.Veicolo_venduto.Location = new System.Drawing.Point(4, 22);
             this.Veicolo_venduto.Name = "Veicolo_venduto";
@@ -1585,16 +1495,6 @@
             this.veicolovendutoBindingSource.DataMember = "Veicolo_venduto";
             this.veicolovendutoBindingSource.DataSource = this.progettoDB16DataSet;
             // 
-            // button24
-            // 
-            this.button24.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button24.Location = new System.Drawing.Point(518, 129);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(75, 23);
-            this.button24.TabIndex = 8;
-            this.button24.Text = "Filtra";
-            this.button24.UseVisualStyleBackColor = true;
-            // 
             // addVenditaBtn
             // 
             this.addVenditaBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -1613,7 +1513,6 @@
             this.Revisione.Controls.Add(this.dataGridView22);
             this.Revisione.Controls.Add(this.comboBox17);
             this.Revisione.Controls.Add(this.textBox17);
-            this.Revisione.Controls.Add(this.button28);
             this.Revisione.Controls.Add(this.addEsecRevBtn);
             this.Revisione.Controls.Add(this.addRevisioneBtn);
             this.Revisione.Location = new System.Drawing.Point(4, 22);
@@ -1704,16 +1603,6 @@
             this.textBox17.TabIndex = 19;
             this.textBox17.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
-            // button28
-            // 
-            this.button28.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button28.Location = new System.Drawing.Point(523, 157);
-            this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(75, 23);
-            this.button28.TabIndex = 11;
-            this.button28.Text = "Filtra";
-            this.button28.UseVisualStyleBackColor = true;
-            // 
             // addEsecRevBtn
             // 
             this.addEsecRevBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -1745,7 +1634,6 @@
             this.Optional_supportato.Controls.Add(this.comboBox18);
             this.Optional_supportato.Controls.Add(this.textBox18);
             this.Optional_supportato.Controls.Add(this.dataGridView24);
-            this.Optional_supportato.Controls.Add(this.button34);
             this.Optional_supportato.Controls.Add(this.entryButton10);
             this.Optional_supportato.Location = new System.Drawing.Point(4, 22);
             this.Optional_supportato.Name = "Optional_supportato";
@@ -1816,16 +1704,6 @@
             this.referenza2BindingSource.DataMember = "referenza2";
             this.referenza2BindingSource.DataSource = this.progettoDB16DataSet;
             // 
-            // button34
-            // 
-            this.button34.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button34.Location = new System.Drawing.Point(520, 137);
-            this.button34.Name = "button34";
-            this.button34.Size = new System.Drawing.Size(75, 23);
-            this.button34.TabIndex = 20;
-            this.button34.Text = "Filtra";
-            this.button34.UseVisualStyleBackColor = true;
-            // 
             // entryButton10
             // 
             this.entryButton10.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -1844,7 +1722,6 @@
             this.Optional_in_veicolo_venduto.Controls.Add(this.comboBox25);
             this.Optional_in_veicolo_venduto.Controls.Add(this.textBox25);
             this.Optional_in_veicolo_venduto.Controls.Add(this.dataGridView25);
-            this.Optional_in_veicolo_venduto.Controls.Add(this.button35);
             this.Optional_in_veicolo_venduto.Controls.Add(this.addOptToVeicVend_Btn);
             this.Optional_in_veicolo_venduto.Location = new System.Drawing.Point(4, 22);
             this.Optional_in_veicolo_venduto.Name = "Optional_in_veicolo_venduto";
@@ -1915,16 +1792,6 @@
             // 
             this.possessoBindingSource1.DataMember = "possesso";
             this.possessoBindingSource1.DataSource = this.progettoDB16DataSet;
-            // 
-            // button35
-            // 
-            this.button35.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button35.Location = new System.Drawing.Point(520, 137);
-            this.button35.Name = "button35";
-            this.button35.Size = new System.Drawing.Size(75, 23);
-            this.button35.TabIndex = 21;
-            this.button35.Text = "Filtra";
-            this.button35.UseVisualStyleBackColor = true;
             // 
             // addOptToVeicVend_Btn
             // 
@@ -2431,7 +2298,6 @@
             this.Riparazione.Controls.Add(this.comboBox19);
             this.Riparazione.Controls.Add(this.textBox19);
             this.Riparazione.Controls.Add(this.dataGridView15);
-            this.Riparazione.Controls.Add(this.button7);
             this.Riparazione.Controls.Add(this.addRiparazioneBtn);
             this.Riparazione.Location = new System.Drawing.Point(4, 22);
             this.Riparazione.Name = "Riparazione";
@@ -2522,16 +2388,6 @@
             this.riparazioneBindingSource.DataMember = "Riparazione";
             this.riparazioneBindingSource.DataSource = this.progettoDB16DataSet;
             // 
-            // button7
-            // 
-            this.button7.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button7.Location = new System.Drawing.Point(531, 159);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
-            this.button7.TabIndex = 13;
-            this.button7.Text = "Filtra";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
             // addRiparazioneBtn
             // 
             this.addRiparazioneBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -2550,7 +2406,6 @@
             this.Dettaglio_riparazione.Controls.Add(this.comboBox20);
             this.Dettaglio_riparazione.Controls.Add(this.textBox20);
             this.Dettaglio_riparazione.Controls.Add(this.dataGridView14);
-            this.Dettaglio_riparazione.Controls.Add(this.button6);
             this.Dettaglio_riparazione.Controls.Add(this.addDettaglioBtn);
             this.Dettaglio_riparazione.Location = new System.Drawing.Point(4, 22);
             this.Dettaglio_riparazione.Name = "Dettaglio_riparazione";
@@ -2641,16 +2496,6 @@
             this.utilizzoBindingSource.DataMember = "utilizzo";
             this.utilizzoBindingSource.DataSource = this.progettoDB16DataSet;
             // 
-            // button6
-            // 
-            this.button6.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button6.Location = new System.Drawing.Point(531, 159);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 13;
-            this.button6.Text = "Filtra";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
             // addDettaglioBtn
             // 
             this.addDettaglioBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -2669,7 +2514,6 @@
             this.Ricambio.Controls.Add(this.comboBox21);
             this.Ricambio.Controls.Add(this.textBox21);
             this.Ricambio.Controls.Add(this.dataGridView13);
-            this.Ricambio.Controls.Add(this.button22);
             this.Ricambio.Controls.Add(this.addRicambioBtn);
             this.Ricambio.Location = new System.Drawing.Point(4, 22);
             this.Ricambio.Name = "Ricambio";
@@ -2788,16 +2632,6 @@
             this.ricambioBindingSource.DataMember = "Ricambio";
             this.ricambioBindingSource.DataSource = this.progettoDB16DataSet;
             // 
-            // button22
-            // 
-            this.button22.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button22.Location = new System.Drawing.Point(531, 159);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(75, 23);
-            this.button22.TabIndex = 13;
-            this.button22.Text = "Filtra";
-            this.button22.UseVisualStyleBackColor = true;
-            // 
             // addRicambioBtn
             // 
             this.addRicambioBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -2816,7 +2650,6 @@
             this.Giacenza.Controls.Add(this.dataGridView12);
             this.Giacenza.Controls.Add(this.comboBox22);
             this.Giacenza.Controls.Add(this.textBox22);
-            this.Giacenza.Controls.Add(this.button21);
             this.Giacenza.Controls.Add(this.addGiacenzaBtn);
             this.Giacenza.Location = new System.Drawing.Point(4, 22);
             this.Giacenza.Name = "Giacenza";
@@ -2913,16 +2746,6 @@
             this.textBox22.TabIndex = 22;
             this.textBox22.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
-            // button21
-            // 
-            this.button21.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button21.Location = new System.Drawing.Point(531, 159);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(75, 23);
-            this.button21.TabIndex = 8;
-            this.button21.Text = "Filtra";
-            this.button21.UseVisualStyleBackColor = true;
-            // 
             // addGiacenzaBtn
             // 
             this.addGiacenzaBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -2941,7 +2764,6 @@
             this.Ricambio_veicolo.Controls.Add(this.comboBox7);
             this.Ricambio_veicolo.Controls.Add(this.textBox7);
             this.Ricambio_veicolo.Controls.Add(this.dataGridView10);
-            this.Ricambio_veicolo.Controls.Add(this.button14);
             this.Ricambio_veicolo.Controls.Add(this.addRicVeicBtn);
             this.Ricambio_veicolo.Location = new System.Drawing.Point(4, 22);
             this.Ricambio_veicolo.Name = "Ricambio_veicolo";
@@ -3012,16 +2834,6 @@
             this.referenza2BindingSource1.DataMember = "referenza2";
             this.referenza2BindingSource1.DataSource = this.progettoDB16DataSet;
             // 
-            // button14
-            // 
-            this.button14.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button14.Location = new System.Drawing.Point(531, 159);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(75, 23);
-            this.button14.TabIndex = 18;
-            this.button14.Text = "Filtra";
-            this.button14.UseVisualStyleBackColor = true;
-            // 
             // addRicVeicBtn
             // 
             this.addRicVeicBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -3089,7 +2901,6 @@
             this.Fornitore.Controls.Add(this.comboBoxFornitore);
             this.Fornitore.Controls.Add(this.textBox1);
             this.Fornitore.Controls.Add(this.dataGridViewFornitori);
-            this.Fornitore.Controls.Add(this.button8);
             this.Fornitore.Controls.Add(this.addFornitoreBtn);
             this.Fornitore.Location = new System.Drawing.Point(4, 22);
             this.Fornitore.Name = "Fornitore";
@@ -3260,16 +3071,6 @@
             this.fornitoreBindingSource1.DataMember = "Fornitore";
             this.fornitoreBindingSource1.DataSource = this.progettoDB16DataSet;
             // 
-            // button8
-            // 
-            this.button8.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button8.Location = new System.Drawing.Point(532, 158);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
-            this.button8.TabIndex = 3;
-            this.button8.Text = "Filtra";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
             // addFornitoreBtn
             // 
             this.addFornitoreBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -3288,7 +3089,6 @@
             this.Fattura.Controls.Add(this.dataGridViewFatt);
             this.Fattura.Controls.Add(this.comboBoxFatture);
             this.Fattura.Controls.Add(this.textBox2);
-            this.Fattura.Controls.Add(this.button2);
             this.Fattura.Controls.Add(this.addFatturaBtn);
             this.Fattura.Location = new System.Drawing.Point(4, 22);
             this.Fattura.Name = "Fattura";
@@ -3399,16 +3199,6 @@
             this.textBox2.TabIndex = 8;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
-            // button2
-            // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button2.Location = new System.Drawing.Point(522, 151);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Filtra";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // addFatturaBtn
             // 
             this.addFatturaBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -3427,7 +3217,6 @@
             this.Pagamento_fornitore.Controls.Add(this.dataGridViewPag);
             this.Pagamento_fornitore.Controls.Add(this.comboBoxPagamenti);
             this.Pagamento_fornitore.Controls.Add(this.textBox3);
-            this.Pagamento_fornitore.Controls.Add(this.button15);
             this.Pagamento_fornitore.Controls.Add(this.addPagFornBtn);
             this.Pagamento_fornitore.Location = new System.Drawing.Point(4, 22);
             this.Pagamento_fornitore.Name = "Pagamento_fornitore";
@@ -3517,16 +3306,6 @@
             this.textBox3.TabIndex = 17;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
-            // button15
-            // 
-            this.button15.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button15.Location = new System.Drawing.Point(522, 151);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(75, 23);
-            this.button15.TabIndex = 16;
-            this.button15.Text = "Filtra";
-            this.button15.UseVisualStyleBackColor = true;
-            // 
             // addPagFornBtn
             // 
             this.addPagFornBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -3545,7 +3324,6 @@
             this.Modalita_pagamento_fornitore.Controls.Add(this.dataGridViewModPag);
             this.Modalita_pagamento_fornitore.Controls.Add(this.comboBoxModPag);
             this.Modalita_pagamento_fornitore.Controls.Add(this.textBox4);
-            this.Modalita_pagamento_fornitore.Controls.Add(this.button11);
             this.Modalita_pagamento_fornitore.Controls.Add(this.addModPagBtn);
             this.Modalita_pagamento_fornitore.Location = new System.Drawing.Point(4, 22);
             this.Modalita_pagamento_fornitore.Name = "Modalita_pagamento_fornitore";
@@ -3654,16 +3432,6 @@
             this.textBox4.TabIndex = 8;
             this.textBox4.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
-            // button11
-            // 
-            this.button11.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button11.Location = new System.Drawing.Point(522, 151);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(75, 23);
-            this.button11.TabIndex = 6;
-            this.button11.Text = "Filtra";
-            this.button11.UseVisualStyleBackColor = true;
-            // 
             // addModPagBtn
             // 
             this.addModPagBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -3728,7 +3496,6 @@
             this.Cliente.Controls.Add(this.comboBox8);
             this.Cliente.Controls.Add(this.textBox8);
             this.Cliente.Controls.Add(this.dataGridView4);
-            this.Cliente.Controls.Add(this.button12);
             this.Cliente.Controls.Add(this.addClienteBtn);
             this.Cliente.Location = new System.Drawing.Point(4, 22);
             this.Cliente.Name = "Cliente";
@@ -3918,16 +3685,6 @@
             this.clienteBindingSource.DataMember = "Cliente";
             this.clienteBindingSource.DataSource = this.progettoDB16DataSet;
             // 
-            // button12
-            // 
-            this.button12.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button12.Location = new System.Drawing.Point(532, 155);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(75, 23);
-            this.button12.TabIndex = 8;
-            this.button12.Text = "Filtra";
-            this.button12.UseVisualStyleBackColor = true;
-            // 
             // addClienteBtn
             // 
             this.addClienteBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -3946,7 +3703,6 @@
             this.Contratto.Controls.Add(this.comboBox24);
             this.Contratto.Controls.Add(this.textBox24);
             this.Contratto.Controls.Add(this.dataGridView5);
-            this.Contratto.Controls.Add(this.button16);
             this.Contratto.Controls.Add(this.addContrattoBtn);
             this.Contratto.Location = new System.Drawing.Point(4, 22);
             this.Contratto.Name = "Contratto";
@@ -4047,16 +3803,6 @@
             this.contrattodivenditaBindingSource.DataMember = "Contratto_di_vendita";
             this.contrattodivenditaBindingSource.DataSource = this.progettoDB16DataSet;
             // 
-            // button16
-            // 
-            this.button16.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button16.Location = new System.Drawing.Point(522, 148);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(75, 23);
-            this.button16.TabIndex = 13;
-            this.button16.Text = "Filtra";
-            this.button16.UseVisualStyleBackColor = true;
-            // 
             // addContrattoBtn
             // 
             this.addContrattoBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -4075,7 +3821,6 @@
             this.Pagamento.Controls.Add(this.comboBox9);
             this.Pagamento.Controls.Add(this.textBox9);
             this.Pagamento.Controls.Add(this.dataGridView6);
-            this.Pagamento.Controls.Add(this.button20);
             this.Pagamento.Controls.Add(this.addPagamBtn);
             this.Pagamento.Location = new System.Drawing.Point(4, 22);
             this.Pagamento.Name = "Pagamento";
@@ -4155,16 +3900,6 @@
             this.pagamentocVenditaBindingSource.DataMember = "Pagamento_cVendita";
             this.pagamentocVenditaBindingSource.DataSource = this.progettoDB16DataSet;
             // 
-            // button20
-            // 
-            this.button20.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button20.Location = new System.Drawing.Point(522, 148);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(75, 23);
-            this.button20.TabIndex = 13;
-            this.button20.Text = "Filtra";
-            this.button20.UseVisualStyleBackColor = true;
-            // 
             // addPagamBtn
             // 
             this.addPagamBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -4183,7 +3918,6 @@
             this.Modalita_di_pagamento.Controls.Add(this.comboBox10);
             this.Modalita_di_pagamento.Controls.Add(this.textBox10);
             this.Modalita_di_pagamento.Controls.Add(this.dataGridView7);
-            this.Modalita_di_pagamento.Controls.Add(this.button3);
             this.Modalita_di_pagamento.Controls.Add(this.addNsModPag_Btn);
             this.Modalita_di_pagamento.Location = new System.Drawing.Point(4, 22);
             this.Modalita_di_pagamento.Name = "Modalita_di_pagamento";
@@ -4280,16 +4014,6 @@
             // 
             this.nostremodalitadipagamentoBindingSource.DataMember = "Nostre_modalita_di_pagamento";
             this.nostremodalitadipagamentoBindingSource.DataSource = this.progettoDB16DataSet;
-            // 
-            // button3
-            // 
-            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button3.Location = new System.Drawing.Point(522, 148);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 16;
-            this.button3.Text = "Filtra";
-            this.button3.UseVisualStyleBackColor = true;
             // 
             // addNsModPag_Btn
             // 
@@ -4589,19 +4313,16 @@
         private System.Windows.Forms.ComboBox comboBox12;
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.DataGridView dataGridView20;
-        private System.Windows.Forms.Button button26;
         private EntryButton addOrdineBtn;
         private System.Windows.Forms.TabPage Dettaglio_ordine_veicolo;
         private System.Windows.Forms.ComboBox comboBox13;
         private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.DataGridView dataGridView21;
-        private System.Windows.Forms.Button button4;
         private EntryButton addDettaglioVeicBtn;
         private System.Windows.Forms.TabPage Dettaglio_ordine_ricambio;
         private System.Windows.Forms.ComboBox comboBox23;
         private System.Windows.Forms.TextBox textBox23;
         private System.Windows.Forms.DataGridView dataGridView23;
-        private System.Windows.Forms.Button button5;
         private EntryButton addDettaglioRicBtn;
         private System.Windows.Forms.Panel ordiniPanel;
         private System.Windows.Forms.Button button30;
@@ -4610,44 +4331,37 @@
         private System.Windows.Forms.ComboBox comboBox14;
         private System.Windows.Forms.TextBox textBox14;
         private System.Windows.Forms.DataGridView dataGridView16;
-        private System.Windows.Forms.Button button18;
         private EntryButton addVeicoloBtn;
         private System.Windows.Forms.TabPage Modello_veicolo;
         private System.Windows.Forms.ComboBox comboBox11;
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.DataGridView dataGridView17;
-        private System.Windows.Forms.Button button19;
         private EntryButton addModelloBtn;
         private System.Windows.Forms.TabPage Optional;
         private System.Windows.Forms.ComboBox comboBox15;
         private System.Windows.Forms.TextBox textBox15;
         private System.Windows.Forms.DataGridView dataGridView18;
-        private System.Windows.Forms.Button button23;
         private EntryButton addOptionalBtn;
         private System.Windows.Forms.TabPage Veicolo_venduto;
         private System.Windows.Forms.ComboBox comboBox16;
         private System.Windows.Forms.TextBox textBox16;
         private System.Windows.Forms.DataGridView dataGridView19;
-        private System.Windows.Forms.Button button24;
         private EntryButton addVenditaBtn;
         private System.Windows.Forms.TabPage Revisione;
         private System.Windows.Forms.DataGridView dataGridView22;
         private System.Windows.Forms.ComboBox comboBox17;
         private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.Button button28;
         private EntryButton addEsecRevBtn;
         private EntryButton addRevisioneBtn;
         private System.Windows.Forms.TabPage Optional_supportato;
         private System.Windows.Forms.ComboBox comboBox18;
         private System.Windows.Forms.TextBox textBox18;
         private System.Windows.Forms.DataGridView dataGridView24;
-        private System.Windows.Forms.Button button34;
         private EntryButton entryButton10;
         private System.Windows.Forms.TabPage Optional_in_veicolo_venduto;
         private System.Windows.Forms.ComboBox comboBox25;
         private System.Windows.Forms.TextBox textBox25;
         private System.Windows.Forms.DataGridView dataGridView25;
-        private System.Windows.Forms.Button button35;
         private EntryButton addOptToVeicVend_Btn;
         private System.Windows.Forms.Panel veicoliPanel;
         private System.Windows.Forms.Button button25;
@@ -4679,31 +4393,26 @@
         private System.Windows.Forms.ComboBox comboBox19;
         private System.Windows.Forms.TextBox textBox19;
         private System.Windows.Forms.DataGridView dataGridView15;
-        private System.Windows.Forms.Button button7;
         private EntryButton addRiparazioneBtn;
         private System.Windows.Forms.TabPage Dettaglio_riparazione;
         private System.Windows.Forms.ComboBox comboBox20;
         private System.Windows.Forms.TextBox textBox20;
         private System.Windows.Forms.DataGridView dataGridView14;
-        private System.Windows.Forms.Button button6;
         private EntryButton addDettaglioBtn;
         private System.Windows.Forms.TabPage Ricambio;
         private System.Windows.Forms.ComboBox comboBox21;
         private System.Windows.Forms.TextBox textBox21;
         private System.Windows.Forms.DataGridView dataGridView13;
-        private System.Windows.Forms.Button button22;
         private EntryButton addRicambioBtn;
         private System.Windows.Forms.TabPage Giacenza;
         private System.Windows.Forms.DataGridView dataGridView12;
         private System.Windows.Forms.ComboBox comboBox22;
         private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.Button button21;
         private EntryButton addGiacenzaBtn;
         private System.Windows.Forms.TabPage Ricambio_veicolo;
         private System.Windows.Forms.ComboBox comboBox7;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.DataGridView dataGridView10;
-        private System.Windows.Forms.Button button14;
         private EntryButton addRicVeicBtn;
         private System.Windows.Forms.Panel officinaPanel;
         private System.Windows.Forms.Label label1;
@@ -4714,25 +4423,21 @@
         private System.Windows.Forms.ComboBox comboBoxFornitore;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.DataGridView dataGridViewFornitori;
-        private System.Windows.Forms.Button button8;
         private EntryButton addFornitoreBtn;
         private System.Windows.Forms.TabPage Fattura;
         private System.Windows.Forms.DataGridView dataGridViewFatt;
         private System.Windows.Forms.ComboBox comboBoxFatture;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button2;
         private EntryButton addFatturaBtn;
         private System.Windows.Forms.TabPage Pagamento_fornitore;
         private System.Windows.Forms.DataGridView dataGridViewPag;
         private System.Windows.Forms.ComboBox comboBoxPagamenti;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button15;
         private EntryButton addPagFornBtn;
         private System.Windows.Forms.TabPage Modalita_pagamento_fornitore;
         private System.Windows.Forms.DataGridView dataGridViewModPag;
         private System.Windows.Forms.ComboBox comboBoxModPag;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button button11;
         private EntryButton addModPagBtn;
         private System.Windows.Forms.Panel fornitoriPanel;
         private System.Windows.Forms.Button clientiPanel_backBtn;
@@ -4741,25 +4446,21 @@
         private System.Windows.Forms.ComboBox comboBox8;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.DataGridView dataGridView4;
-        private System.Windows.Forms.Button button12;
         private EntryButton addClienteBtn;
         private System.Windows.Forms.TabPage Contratto;
         private System.Windows.Forms.ComboBox comboBox24;
         private System.Windows.Forms.TextBox textBox24;
         private System.Windows.Forms.DataGridView dataGridView5;
-        private System.Windows.Forms.Button button16;
         private EntryButton addContrattoBtn;
         private System.Windows.Forms.TabPage Pagamento;
         private System.Windows.Forms.ComboBox comboBox9;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.DataGridView dataGridView6;
-        private System.Windows.Forms.Button button20;
         private EntryButton addPagamBtn;
         private System.Windows.Forms.TabPage Modalita_di_pagamento;
         private System.Windows.Forms.ComboBox comboBox10;
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.DataGridView dataGridView7;
-        private System.Windows.Forms.Button button3;
         private EntryButton addNsModPag_Btn;
         private System.Windows.Forms.Panel clientiPanel;
 

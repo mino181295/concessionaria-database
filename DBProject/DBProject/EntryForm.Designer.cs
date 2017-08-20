@@ -73,12 +73,13 @@ namespace DBProject
             this.submitFatturaBtn = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.fornitoreBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
+            this.fornitoreBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.fornitoreBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.addModalitaPagPanel = new System.Windows.Forms.Panel();
             this.groupBox20 = new System.Windows.Forms.GroupBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -410,6 +411,7 @@ namespace DBProject
             this.modalita_di_pagamentoTableAdapter = new DBProject.ProgettoDB16DataSetTableAdapters.Modalita_di_pagamentoTableAdapter();
             this.clienteTableAdapter = new DBProject.ProgettoDB16DataSetTableAdapters.ClienteTableAdapter();
             this.nostre_modalita_di_pagamentoTableAdapter = new DBProject.ProgettoDB16DataSetTableAdapters.Nostre_modalita_di_pagamentoTableAdapter();
+            this.tableAdapterManager = new DBProject.ProgettoDB16DataSetTableAdapters.TableAdapterManager();
             this.addFornitorePanel.SuspendLayout();
             this.groupBox11.SuspendLayout();
             this.groupBox10.SuspendLayout();
@@ -420,6 +422,7 @@ namespace DBProject
             ((System.ComponentModel.ISupportInitialize)(this.modalitadipagamentoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.progettoDB16DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fornitoreBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fornitoreBindingSource1)).BeginInit();
             this.addModalitaPagPanel.SuspendLayout();
             this.groupBox20.SuspendLayout();
             this.groupBox19.SuspendLayout();
@@ -493,7 +496,7 @@ namespace DBProject
             this.addFornitorePanel.Controls.Add(this.submitFornitoreBtn);
             this.addFornitorePanel.Location = new System.Drawing.Point(1, -2);
             this.addFornitorePanel.Name = "addFornitorePanel";
-            this.addFornitorePanel.Size = new System.Drawing.Size(836, 471);
+            this.addFornitorePanel.Size = new System.Drawing.Size(836, 476);
             this.addFornitorePanel.TabIndex = 0;
             this.addFornitorePanel.VisibleChanged += new System.EventHandler(this.addFornitorePanel_VisibleChanged);
             // 
@@ -504,7 +507,7 @@ namespace DBProject
             this.groupBox11.Controls.Add(this.textBoxFornRagSoc);
             this.groupBox11.Controls.Add(this.label1);
             this.groupBox11.Controls.Add(this.label2);
-            this.groupBox11.Location = new System.Drawing.Point(45, 38);
+            this.groupBox11.Location = new System.Drawing.Point(45, 41);
             this.groupBox11.Name = "groupBox11";
             this.groupBox11.Size = new System.Drawing.Size(366, 90);
             this.groupBox11.TabIndex = 1;
@@ -548,7 +551,7 @@ namespace DBProject
             this.groupBox10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox10.Controls.Add(this.checkBoxFornRic);
             this.groupBox10.Controls.Add(this.checkBoxFornVeic);
-            this.groupBox10.Location = new System.Drawing.Point(441, 221);
+            this.groupBox10.Location = new System.Drawing.Point(441, 224);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.Size = new System.Drawing.Size(161, 79);
             this.groupBox10.TabIndex = 12;
@@ -582,7 +585,7 @@ namespace DBProject
             this.groupBox9.Controls.Add(this.textBoxFornEmail1);
             this.groupBox9.Controls.Add(this.label100);
             this.groupBox9.Controls.Add(this.textBoxFornEmail2);
-            this.groupBox9.Location = new System.Drawing.Point(45, 270);
+            this.groupBox9.Location = new System.Drawing.Point(45, 273);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Size = new System.Drawing.Size(366, 82);
             this.groupBox9.TabIndex = 6;
@@ -630,7 +633,7 @@ namespace DBProject
             this.groupBox8.Controls.Add(this.label96);
             this.groupBox8.Controls.Add(this.textBoxFornRec3);
             this.groupBox8.Controls.Add(this.textBoxFornRec2);
-            this.groupBox8.Location = new System.Drawing.Point(45, 143);
+            this.groupBox8.Location = new System.Drawing.Point(45, 146);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(366, 111);
             this.groupBox8.TabIndex = 3;
@@ -696,7 +699,7 @@ namespace DBProject
             this.groupBox2.Controls.Add(this.label50);
             this.groupBox2.Controls.Add(this.label52);
             this.groupBox2.Controls.Add(this.label51);
-            this.groupBox2.Location = new System.Drawing.Point(438, 72);
+            this.groupBox2.Location = new System.Drawing.Point(438, 75);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(365, 123);
             this.groupBox2.TabIndex = 8;
@@ -772,7 +775,7 @@ namespace DBProject
             this.submitFornitoreBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitFornitoreBtn.BackColor = System.Drawing.Color.White;
             this.submitFornitoreBtn.Image = ((System.Drawing.Image)(resources.GetObject("submitFornitoreBtn.Image")));
-            this.submitFornitoreBtn.Location = new System.Drawing.Point(389, 418);
+            this.submitFornitoreBtn.Location = new System.Drawing.Point(389, 423);
             this.submitFornitoreBtn.Name = "submitFornitoreBtn";
             this.submitFornitoreBtn.Size = new System.Drawing.Size(46, 45);
             this.submitFornitoreBtn.TabIndex = 14;
@@ -798,14 +801,14 @@ namespace DBProject
             this.addFatturaPanel.Controls.Add(this.textBox5);
             this.addFatturaPanel.Location = new System.Drawing.Point(1, -1);
             this.addFatturaPanel.Name = "addFatturaPanel";
-            this.addFatturaPanel.Size = new System.Drawing.Size(836, 471);
+            this.addFatturaPanel.Size = new System.Drawing.Size(836, 476);
             this.addFatturaPanel.TabIndex = 1;
             // 
             // label4
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(223, 288);
+            this.label4.Location = new System.Drawing.Point(223, 291);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(114, 13);
             this.label4.TabIndex = 9;
@@ -814,14 +817,13 @@ namespace DBProject
             // comboBox22
             // 
             this.comboBox22.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox22.DataSource = this.modalitadipagamentoBindingSource;
-            this.comboBox22.DisplayMember = "Da";
+            this.comboBox22.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox22.FormattingEnabled = true;
-            this.comboBox22.Location = new System.Drawing.Point(395, 285);
+            this.comboBox22.Location = new System.Drawing.Point(395, 288);
             this.comboBox22.Name = "comboBox22";
             this.comboBox22.Size = new System.Drawing.Size(191, 21);
             this.comboBox22.TabIndex = 5;
-            this.comboBox22.ValueMember = "Da";
+            this.comboBox22.DropDown += new System.EventHandler(this.comboBox22_DropDown);
             // 
             // modalitadipagamentoBindingSource
             // 
@@ -836,7 +838,7 @@ namespace DBProject
             // dateTimePicker1
             // 
             this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePicker1.Location = new System.Drawing.Point(395, 128);
+            this.dateTimePicker1.Location = new System.Drawing.Point(395, 131);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(191, 20);
             this.dateTimePicker1.TabIndex = 2;
@@ -846,7 +848,7 @@ namespace DBProject
             this.submitFatturaBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitFatturaBtn.BackColor = System.Drawing.Color.White;
             this.submitFatturaBtn.Image = ((System.Drawing.Image)(resources.GetObject("submitFatturaBtn.Image")));
-            this.submitFatturaBtn.Location = new System.Drawing.Point(390, 411);
+            this.submitFatturaBtn.Location = new System.Drawing.Point(390, 416);
             this.submitFatturaBtn.Name = "submitFatturaBtn";
             this.submitFatturaBtn.Size = new System.Drawing.Size(46, 45);
             this.submitFatturaBtn.TabIndex = 6;
@@ -858,7 +860,7 @@ namespace DBProject
             // 
             this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(223, 236);
+            this.label13.Location = new System.Drawing.Point(223, 239);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(48, 13);
             this.label13.TabIndex = 7;
@@ -867,25 +869,19 @@ namespace DBProject
             // comboBox1
             // 
             this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox1.DataSource = this.fornitoreBindingSource;
-            this.comboBox1.DisplayMember = "Ragione_Sociale";
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(395, 233);
+            this.comboBox1.Location = new System.Drawing.Point(395, 236);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(191, 21);
             this.comboBox1.TabIndex = 4;
-            this.comboBox1.ValueMember = "Partita_IVA";
-            // 
-            // fornitoreBindingSource
-            // 
-            this.fornitoreBindingSource.DataMember = "Fornitore";
-            this.fornitoreBindingSource.DataSource = this.progettoDB16DataSet;
+            this.comboBox1.DropDown += new System.EventHandler(this.comboBox1_DropDown);
             // 
             // label7
             // 
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(223, 189);
+            this.label7.Location = new System.Drawing.Point(223, 192);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(103, 13);
             this.label7.TabIndex = 5;
@@ -895,7 +891,7 @@ namespace DBProject
             // 
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(223, 131);
+            this.label6.Location = new System.Drawing.Point(223, 134);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(30, 13);
             this.label6.TabIndex = 4;
@@ -905,7 +901,7 @@ namespace DBProject
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(223, 75);
+            this.label5.Location = new System.Drawing.Point(223, 78);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(44, 13);
             this.label5.TabIndex = 3;
@@ -914,7 +910,7 @@ namespace DBProject
             // textBox7
             // 
             this.textBox7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox7.Location = new System.Drawing.Point(395, 186);
+            this.textBox7.Location = new System.Drawing.Point(395, 189);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(192, 20);
             this.textBox7.TabIndex = 3;
@@ -922,10 +918,20 @@ namespace DBProject
             // textBox5
             // 
             this.textBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox5.Location = new System.Drawing.Point(395, 72);
+            this.textBox5.Location = new System.Drawing.Point(395, 75);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(192, 20);
             this.textBox5.TabIndex = 1;
+            // 
+            // fornitoreBindingSource
+            // 
+            this.fornitoreBindingSource.DataMember = "Fornitore";
+            this.fornitoreBindingSource.DataSource = this.progettoDB16DataSet;
+            // 
+            // fornitoreBindingSource1
+            // 
+            this.fornitoreBindingSource1.DataMember = "Fornitore";
+            this.fornitoreBindingSource1.DataSource = this.progettoDB16DataSet;
             // 
             // addModalitaPagPanel
             // 
@@ -939,7 +945,7 @@ namespace DBProject
             this.addModalitaPagPanel.Controls.Add(this.fornAddModPagLabel);
             this.addModalitaPagPanel.Location = new System.Drawing.Point(2, -2);
             this.addModalitaPagPanel.Name = "addModalitaPagPanel";
-            this.addModalitaPagPanel.Size = new System.Drawing.Size(836, 471);
+            this.addModalitaPagPanel.Size = new System.Drawing.Size(836, 476);
             this.addModalitaPagPanel.TabIndex = 2;
             this.addModalitaPagPanel.VisibleChanged += new System.EventHandler(this.addModalitaPagPanel_VisibleChanged);
             // 
@@ -952,7 +958,7 @@ namespace DBProject
             this.groupBox20.Controls.Add(this.textBox10);
             this.groupBox20.Controls.Add(this.textBox11);
             this.groupBox20.Controls.Add(this.textBox12);
-            this.groupBox20.Location = new System.Drawing.Point(231, 188);
+            this.groupBox20.Location = new System.Drawing.Point(231, 191);
             this.groupBox20.Name = "groupBox20";
             this.groupBox20.Size = new System.Drawing.Size(374, 124);
             this.groupBox20.TabIndex = 4;
@@ -1014,7 +1020,7 @@ namespace DBProject
             this.groupBox19.Controls.Add(this.label8);
             this.groupBox19.Controls.Add(this.label10);
             this.groupBox19.Controls.Add(this.textBox8);
-            this.groupBox19.Location = new System.Drawing.Point(232, 89);
+            this.groupBox19.Location = new System.Drawing.Point(232, 92);
             this.groupBox19.Name = "groupBox19";
             this.groupBox19.Size = new System.Drawing.Size(374, 82);
             this.groupBox19.TabIndex = 2;
@@ -1058,7 +1064,7 @@ namespace DBProject
             this.submitModalitaPagBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitModalitaPagBtn.BackColor = System.Drawing.Color.White;
             this.submitModalitaPagBtn.Image = ((System.Drawing.Image)(resources.GetObject("submitModalitaPagBtn.Image")));
-            this.submitModalitaPagBtn.Location = new System.Drawing.Point(395, 408);
+            this.submitModalitaPagBtn.Location = new System.Drawing.Point(395, 413);
             this.submitModalitaPagBtn.Name = "submitModalitaPagBtn";
             this.submitModalitaPagBtn.Size = new System.Drawing.Size(46, 45);
             this.submitModalitaPagBtn.TabIndex = 7;
@@ -1072,7 +1078,7 @@ namespace DBProject
             this.fornAddModPagComboBox.DataSource = this.fornitoreBindingSource;
             this.fornAddModPagComboBox.DisplayMember = "Ragione_Sociale";
             this.fornAddModPagComboBox.FormattingEnabled = true;
-            this.fornAddModPagComboBox.Location = new System.Drawing.Point(417, 50);
+            this.fornAddModPagComboBox.Location = new System.Drawing.Point(417, 53);
             this.fornAddModPagComboBox.Name = "fornAddModPagComboBox";
             this.fornAddModPagComboBox.Size = new System.Drawing.Size(183, 21);
             this.fornAddModPagComboBox.TabIndex = 1;
@@ -1082,7 +1088,7 @@ namespace DBProject
             // 
             this.fornAddModPagLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.fornAddModPagLabel.AutoSize = true;
-            this.fornAddModPagLabel.Location = new System.Drawing.Point(238, 53);
+            this.fornAddModPagLabel.Location = new System.Drawing.Point(238, 56);
             this.fornAddModPagLabel.Name = "fornAddModPagLabel";
             this.fornAddModPagLabel.Size = new System.Drawing.Size(48, 13);
             this.fornAddModPagLabel.TabIndex = 10;
@@ -1093,7 +1099,7 @@ namespace DBProject
             this.submitTrasportoBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitTrasportoBtn.BackColor = System.Drawing.Color.White;
             this.submitTrasportoBtn.Image = ((System.Drawing.Image)(resources.GetObject("submitTrasportoBtn.Image")));
-            this.submitTrasportoBtn.Location = new System.Drawing.Point(387, 420);
+            this.submitTrasportoBtn.Location = new System.Drawing.Point(387, 425);
             this.submitTrasportoBtn.Name = "submitTrasportoBtn";
             this.submitTrasportoBtn.Size = new System.Drawing.Size(46, 45);
             this.submitTrasportoBtn.TabIndex = 10;
@@ -1106,7 +1112,7 @@ namespace DBProject
             this.submitRevisioneBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitRevisioneBtn.BackColor = System.Drawing.Color.White;
             this.submitRevisioneBtn.Image = ((System.Drawing.Image)(resources.GetObject("submitRevisioneBtn.Image")));
-            this.submitRevisioneBtn.Location = new System.Drawing.Point(389, 416);
+            this.submitRevisioneBtn.Location = new System.Drawing.Point(389, 421);
             this.submitRevisioneBtn.Name = "submitRevisioneBtn";
             this.submitRevisioneBtn.Size = new System.Drawing.Size(46, 45);
             this.submitRevisioneBtn.TabIndex = 4;
@@ -1119,7 +1125,7 @@ namespace DBProject
             this.submitOptionalBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitOptionalBtn.BackColor = System.Drawing.Color.White;
             this.submitOptionalBtn.Image = ((System.Drawing.Image)(resources.GetObject("submitOptionalBtn.Image")));
-            this.submitOptionalBtn.Location = new System.Drawing.Point(384, 408);
+            this.submitOptionalBtn.Location = new System.Drawing.Point(384, 413);
             this.submitOptionalBtn.Name = "submitOptionalBtn";
             this.submitOptionalBtn.Size = new System.Drawing.Size(46, 45);
             this.submitOptionalBtn.TabIndex = 5;
@@ -1132,7 +1138,7 @@ namespace DBProject
             this.submitRicambioBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitRicambioBtn.BackColor = System.Drawing.Color.White;
             this.submitRicambioBtn.Image = ((System.Drawing.Image)(resources.GetObject("submitRicambioBtn.Image")));
-            this.submitRicambioBtn.Location = new System.Drawing.Point(396, 410);
+            this.submitRicambioBtn.Location = new System.Drawing.Point(396, 415);
             this.submitRicambioBtn.Name = "submitRicambioBtn";
             this.submitRicambioBtn.Size = new System.Drawing.Size(46, 45);
             this.submitRicambioBtn.TabIndex = 7;
@@ -1145,7 +1151,7 @@ namespace DBProject
             this.submitDettaglioBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitDettaglioBtn.BackColor = System.Drawing.Color.White;
             this.submitDettaglioBtn.Image = ((System.Drawing.Image)(resources.GetObject("submitDettaglioBtn.Image")));
-            this.submitDettaglioBtn.Location = new System.Drawing.Point(388, 408);
+            this.submitDettaglioBtn.Location = new System.Drawing.Point(388, 413);
             this.submitDettaglioBtn.Name = "submitDettaglioBtn";
             this.submitDettaglioBtn.Size = new System.Drawing.Size(46, 45);
             this.submitDettaglioBtn.TabIndex = 5;
@@ -1158,7 +1164,7 @@ namespace DBProject
             this.submitOptToVeicBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitOptToVeicBtn.BackColor = System.Drawing.Color.White;
             this.submitOptToVeicBtn.Image = ((System.Drawing.Image)(resources.GetObject("submitOptToVeicBtn.Image")));
-            this.submitOptToVeicBtn.Location = new System.Drawing.Point(399, 408);
+            this.submitOptToVeicBtn.Location = new System.Drawing.Point(399, 413);
             this.submitOptToVeicBtn.Name = "submitOptToVeicBtn";
             this.submitOptToVeicBtn.Size = new System.Drawing.Size(46, 45);
             this.submitOptToVeicBtn.TabIndex = 3;
@@ -1171,7 +1177,7 @@ namespace DBProject
             this.submitVenditaBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitVenditaBtn.BackColor = System.Drawing.Color.White;
             this.submitVenditaBtn.Image = ((System.Drawing.Image)(resources.GetObject("submitVenditaBtn.Image")));
-            this.submitVenditaBtn.Location = new System.Drawing.Point(398, 413);
+            this.submitVenditaBtn.Location = new System.Drawing.Point(398, 418);
             this.submitVenditaBtn.Name = "submitVenditaBtn";
             this.submitVenditaBtn.Size = new System.Drawing.Size(46, 45);
             this.submitVenditaBtn.TabIndex = 5;
@@ -1184,7 +1190,7 @@ namespace DBProject
             this.submitModelloBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitModelloBtn.BackColor = System.Drawing.Color.White;
             this.submitModelloBtn.Image = ((System.Drawing.Image)(resources.GetObject("submitModelloBtn.Image")));
-            this.submitModelloBtn.Location = new System.Drawing.Point(387, 409);
+            this.submitModelloBtn.Location = new System.Drawing.Point(387, 414);
             this.submitModelloBtn.Name = "submitModelloBtn";
             this.submitModelloBtn.Size = new System.Drawing.Size(46, 45);
             this.submitModelloBtn.TabIndex = 4;
@@ -1197,7 +1203,7 @@ namespace DBProject
             this.submitRiparazione.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitRiparazione.BackColor = System.Drawing.Color.White;
             this.submitRiparazione.Image = ((System.Drawing.Image)(resources.GetObject("submitRiparazione.Image")));
-            this.submitRiparazione.Location = new System.Drawing.Point(389, 397);
+            this.submitRiparazione.Location = new System.Drawing.Point(389, 402);
             this.submitRiparazione.Name = "submitRiparazione";
             this.submitRiparazione.Size = new System.Drawing.Size(46, 45);
             this.submitRiparazione.TabIndex = 5;
@@ -1210,7 +1216,7 @@ namespace DBProject
             this.submitVeicoloBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitVeicoloBtn.BackColor = System.Drawing.Color.White;
             this.submitVeicoloBtn.Image = ((System.Drawing.Image)(resources.GetObject("submitVeicoloBtn.Image")));
-            this.submitVeicoloBtn.Location = new System.Drawing.Point(382, 409);
+            this.submitVeicoloBtn.Location = new System.Drawing.Point(382, 414);
             this.submitVeicoloBtn.Name = "submitVeicoloBtn";
             this.submitVeicoloBtn.Size = new System.Drawing.Size(46, 45);
             this.submitVeicoloBtn.TabIndex = 17;
@@ -1223,7 +1229,7 @@ namespace DBProject
             this.submitContrattoBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitContrattoBtn.BackColor = System.Drawing.Color.White;
             this.submitContrattoBtn.Image = ((System.Drawing.Image)(resources.GetObject("submitContrattoBtn.Image")));
-            this.submitContrattoBtn.Location = new System.Drawing.Point(395, 416);
+            this.submitContrattoBtn.Location = new System.Drawing.Point(395, 421);
             this.submitContrattoBtn.Name = "submitContrattoBtn";
             this.submitContrattoBtn.Size = new System.Drawing.Size(46, 45);
             this.submitContrattoBtn.TabIndex = 6;
@@ -1236,7 +1242,7 @@ namespace DBProject
             this.submitPerfTraspBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitPerfTraspBtn.BackColor = System.Drawing.Color.White;
             this.submitPerfTraspBtn.Image = ((System.Drawing.Image)(resources.GetObject("submitPerfTraspBtn.Image")));
-            this.submitPerfTraspBtn.Location = new System.Drawing.Point(387, 417);
+            this.submitPerfTraspBtn.Location = new System.Drawing.Point(387, 422);
             this.submitPerfTraspBtn.Name = "submitPerfTraspBtn";
             this.submitPerfTraspBtn.Size = new System.Drawing.Size(46, 45);
             this.submitPerfTraspBtn.TabIndex = 3;
@@ -1249,7 +1255,7 @@ namespace DBProject
             this.submitClienteABtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitClienteABtn.BackColor = System.Drawing.Color.White;
             this.submitClienteABtn.Image = ((System.Drawing.Image)(resources.GetObject("submitClienteABtn.Image")));
-            this.submitClienteABtn.Location = new System.Drawing.Point(387, 390);
+            this.submitClienteABtn.Location = new System.Drawing.Point(387, 395);
             this.submitClienteABtn.Name = "submitClienteABtn";
             this.submitClienteABtn.Size = new System.Drawing.Size(46, 45);
             this.submitClienteABtn.TabIndex = 12;
@@ -1262,7 +1268,7 @@ namespace DBProject
             this.submitGiacenzaBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitGiacenzaBtn.BackColor = System.Drawing.Color.White;
             this.submitGiacenzaBtn.Image = ((System.Drawing.Image)(resources.GetObject("submitGiacenzaBtn.Image")));
-            this.submitGiacenzaBtn.Location = new System.Drawing.Point(405, 419);
+            this.submitGiacenzaBtn.Location = new System.Drawing.Point(405, 424);
             this.submitGiacenzaBtn.Name = "submitGiacenzaBtn";
             this.submitGiacenzaBtn.Size = new System.Drawing.Size(46, 45);
             this.submitGiacenzaBtn.TabIndex = 5;
@@ -1275,7 +1281,7 @@ namespace DBProject
             this.submitPagamentoBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitPagamentoBtn.BackColor = System.Drawing.Color.White;
             this.submitPagamentoBtn.Image = ((System.Drawing.Image)(resources.GetObject("submitPagamentoBtn.Image")));
-            this.submitPagamentoBtn.Location = new System.Drawing.Point(398, 417);
+            this.submitPagamentoBtn.Location = new System.Drawing.Point(398, 422);
             this.submitPagamentoBtn.Name = "submitPagamentoBtn";
             this.submitPagamentoBtn.Size = new System.Drawing.Size(46, 45);
             this.submitPagamentoBtn.TabIndex = 4;
@@ -1301,7 +1307,7 @@ namespace DBProject
             this.submitAddOrdineBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitAddOrdineBtn.BackColor = System.Drawing.Color.White;
             this.submitAddOrdineBtn.Image = ((System.Drawing.Image)(resources.GetObject("submitAddOrdineBtn.Image")));
-            this.submitAddOrdineBtn.Location = new System.Drawing.Point(389, 420);
+            this.submitAddOrdineBtn.Location = new System.Drawing.Point(389, 425);
             this.submitAddOrdineBtn.Name = "submitAddOrdineBtn";
             this.submitAddOrdineBtn.Size = new System.Drawing.Size(46, 45);
             this.submitAddOrdineBtn.TabIndex = 14;
@@ -1314,7 +1320,7 @@ namespace DBProject
             this.submitAddVeicRicToOrderBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitAddVeicRicToOrderBtn.BackColor = System.Drawing.Color.White;
             this.submitAddVeicRicToOrderBtn.Image = ((System.Drawing.Image)(resources.GetObject("submitAddVeicRicToOrderBtn.Image")));
-            this.submitAddVeicRicToOrderBtn.Location = new System.Drawing.Point(399, 409);
+            this.submitAddVeicRicToOrderBtn.Location = new System.Drawing.Point(399, 414);
             this.submitAddVeicRicToOrderBtn.Name = "submitAddVeicRicToOrderBtn";
             this.submitAddVeicRicToOrderBtn.Size = new System.Drawing.Size(46, 45);
             this.submitAddVeicRicToOrderBtn.TabIndex = 14;
@@ -1327,7 +1333,7 @@ namespace DBProject
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button1.BackColor = System.Drawing.Color.White;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(387, 417);
+            this.button1.Location = new System.Drawing.Point(387, 422);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(46, 45);
             this.button1.TabIndex = 3;
@@ -1343,7 +1349,7 @@ namespace DBProject
             this.addClientePanel.Controls.Add(this.tabControl1);
             this.addClientePanel.Location = new System.Drawing.Point(1, -1);
             this.addClientePanel.Name = "addClientePanel";
-            this.addClientePanel.Size = new System.Drawing.Size(836, 471);
+            this.addClientePanel.Size = new System.Drawing.Size(836, 476);
             this.addClientePanel.TabIndex = 2;
             // 
             // tabControl1
@@ -1351,12 +1357,12 @@ namespace DBProject
             this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Location = new System.Drawing.Point(-1, -3);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(827, 475);
+            this.tabControl1.Size = new System.Drawing.Size(827, 480);
             this.tabControl1.TabIndex = 20;
             // 
             // tabPage2
@@ -1372,7 +1378,7 @@ namespace DBProject
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(819, 449);
+            this.tabPage2.Size = new System.Drawing.Size(819, 454);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Privato";
             // 
@@ -1677,7 +1683,7 @@ namespace DBProject
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(819, 449);
+            this.tabPage1.Size = new System.Drawing.Size(819, 454);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Azienda";
             // 
@@ -1690,7 +1696,7 @@ namespace DBProject
             this.groupBox18.Controls.Add(this.label111);
             this.groupBox18.Controls.Add(this.textBox79);
             this.groupBox18.Controls.Add(this.label116);
-            this.groupBox18.Location = new System.Drawing.Point(429, 67);
+            this.groupBox18.Location = new System.Drawing.Point(429, 70);
             this.groupBox18.Name = "groupBox18";
             this.groupBox18.Size = new System.Drawing.Size(360, 96);
             this.groupBox18.TabIndex = 5;
@@ -1752,7 +1758,7 @@ namespace DBProject
             this.groupBox14.Controls.Add(this.label108);
             this.groupBox14.Controls.Add(this.textBox82);
             this.groupBox14.Controls.Add(this.label109);
-            this.groupBox14.Location = new System.Drawing.Point(46, 67);
+            this.groupBox14.Location = new System.Drawing.Point(46, 70);
             this.groupBox14.Name = "groupBox14";
             this.groupBox14.Size = new System.Drawing.Size(360, 67);
             this.groupBox14.TabIndex = 1;
@@ -1798,7 +1804,7 @@ namespace DBProject
             this.groupBox13.Controls.Add(this.label106);
             this.groupBox13.Controls.Add(this.textBox81);
             this.groupBox13.Controls.Add(this.label107);
-            this.groupBox13.Location = new System.Drawing.Point(46, 212);
+            this.groupBox13.Location = new System.Drawing.Point(46, 215);
             this.groupBox13.Name = "groupBox13";
             this.groupBox13.Size = new System.Drawing.Size(360, 67);
             this.groupBox13.TabIndex = 3;
@@ -1848,7 +1854,7 @@ namespace DBProject
             this.groupBox3.Controls.Add(this.label15);
             this.groupBox3.Controls.Add(this.label16);
             this.groupBox3.Controls.Add(this.label30);
-            this.groupBox3.Location = new System.Drawing.Point(430, 212);
+            this.groupBox3.Location = new System.Drawing.Point(430, 215);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(360, 127);
             this.groupBox3.TabIndex = 8;
@@ -1937,13 +1943,13 @@ namespace DBProject
             this.addContrattoPanel.Controls.Add(this.label28);
             this.addContrattoPanel.Location = new System.Drawing.Point(2, 0);
             this.addContrattoPanel.Name = "addContrattoPanel";
-            this.addContrattoPanel.Size = new System.Drawing.Size(836, 471);
+            this.addContrattoPanel.Size = new System.Drawing.Size(836, 476);
             this.addContrattoPanel.TabIndex = 12;
             // 
             // textBox3
             // 
             this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox3.Location = new System.Drawing.Point(415, 74);
+            this.textBox3.Location = new System.Drawing.Point(415, 77);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(183, 20);
             this.textBox3.TabIndex = 7;
@@ -1951,7 +1957,7 @@ namespace DBProject
             // dateTimePicker9
             // 
             this.dateTimePicker9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePicker9.Location = new System.Drawing.Point(416, 126);
+            this.dateTimePicker9.Location = new System.Drawing.Point(416, 129);
             this.dateTimePicker9.Name = "dateTimePicker9";
             this.dateTimePicker9.Size = new System.Drawing.Size(183, 20);
             this.dateTimePicker9.TabIndex = 2;
@@ -1962,7 +1968,7 @@ namespace DBProject
             this.comboBox6.DataSource = this.clienteBindingSource;
             this.comboBox6.DisplayMember = "PartitaIVA_CodiceFiscale";
             this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(415, 244);
+            this.comboBox6.Location = new System.Drawing.Point(415, 247);
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(183, 21);
             this.comboBox6.TabIndex = 4;
@@ -1979,7 +1985,7 @@ namespace DBProject
             this.comboBox5.DataSource = this.nostremodalitadipagamentoBindingSource;
             this.comboBox5.DisplayMember = "Da";
             this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(416, 300);
+            this.comboBox5.Location = new System.Drawing.Point(416, 303);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(183, 21);
             this.comboBox5.TabIndex = 5;
@@ -1993,7 +1999,7 @@ namespace DBProject
             // textBox21
             // 
             this.textBox21.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox21.Location = new System.Drawing.Point(416, 185);
+            this.textBox21.Location = new System.Drawing.Point(416, 188);
             this.textBox21.Name = "textBox21";
             this.textBox21.Size = new System.Drawing.Size(183, 20);
             this.textBox21.TabIndex = 3;
@@ -2002,7 +2008,7 @@ namespace DBProject
             // 
             this.label19.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(233, 248);
+            this.label19.Location = new System.Drawing.Point(233, 251);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(39, 13);
             this.label19.TabIndex = 4;
@@ -2012,7 +2018,7 @@ namespace DBProject
             // 
             this.label25.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(233, 189);
+            this.label25.Location = new System.Drawing.Point(233, 192);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(103, 13);
             this.label25.TabIndex = 3;
@@ -2022,7 +2028,7 @@ namespace DBProject
             // 
             this.label26.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(233, 131);
+            this.label26.Location = new System.Drawing.Point(233, 134);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(30, 13);
             this.label26.TabIndex = 2;
@@ -2032,7 +2038,7 @@ namespace DBProject
             // 
             this.label27.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(233, 304);
+            this.label27.Location = new System.Drawing.Point(233, 307);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(103, 13);
             this.label27.TabIndex = 1;
@@ -2042,7 +2048,7 @@ namespace DBProject
             // 
             this.label28.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(234, 76);
+            this.label28.Location = new System.Drawing.Point(234, 79);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(44, 13);
             this.label28.TabIndex = 0;
@@ -2067,7 +2073,7 @@ namespace DBProject
             this.addTrasportoPanel.Controls.Add(this.label34);
             this.addTrasportoPanel.Location = new System.Drawing.Point(2, -1);
             this.addTrasportoPanel.Name = "addTrasportoPanel";
-            this.addTrasportoPanel.Size = new System.Drawing.Size(836, 471);
+            this.addTrasportoPanel.Size = new System.Drawing.Size(836, 476);
             this.addTrasportoPanel.TabIndex = 11;
             // 
             // groupBox1
@@ -2081,7 +2087,7 @@ namespace DBProject
             this.groupBox1.Controls.Add(this.label37);
             this.groupBox1.Controls.Add(this.label35);
             this.groupBox1.Controls.Add(this.label36);
-            this.groupBox1.Location = new System.Drawing.Point(424, 157);
+            this.groupBox1.Location = new System.Drawing.Point(424, 160);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(367, 142);
             this.groupBox1.TabIndex = 6;
@@ -2159,7 +2165,7 @@ namespace DBProject
             this.comboBox8.DisplayMember = "Numero";
             this.comboBox8.FormattingEnabled = true;
             this.comboBox8.ItemHeight = 13;
-            this.comboBox8.Location = new System.Drawing.Point(199, 176);
+            this.comboBox8.Location = new System.Drawing.Point(199, 179);
             this.comboBox8.Name = "comboBox8";
             this.comboBox8.Size = new System.Drawing.Size(183, 21);
             this.comboBox8.TabIndex = 2;
@@ -2174,7 +2180,7 @@ namespace DBProject
             // 
             this.label31.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(61, 179);
+            this.label31.Location = new System.Drawing.Point(61, 182);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(50, 13);
             this.label31.TabIndex = 13;
@@ -2183,7 +2189,7 @@ namespace DBProject
             // dateTimePicker2
             // 
             this.dateTimePicker2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePicker2.Location = new System.Drawing.Point(606, 124);
+            this.dateTimePicker2.Location = new System.Drawing.Point(606, 127);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(183, 20);
             this.dateTimePicker2.TabIndex = 5;
@@ -2195,7 +2201,7 @@ namespace DBProject
             this.comboBox7.DisplayMember = "Ragione_sociale";
             this.comboBox7.FormattingEnabled = true;
             this.comboBox7.ItemHeight = 13;
-            this.comboBox7.Location = new System.Drawing.Point(198, 231);
+            this.comboBox7.Location = new System.Drawing.Point(198, 234);
             this.comboBox7.Name = "comboBox7";
             this.comboBox7.Size = new System.Drawing.Size(183, 21);
             this.comboBox7.TabIndex = 3;
@@ -2210,7 +2216,7 @@ namespace DBProject
             // 
             this.label29.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(60, 236);
+            this.label29.Location = new System.Drawing.Point(60, 239);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(43, 13);
             this.label29.TabIndex = 10;
@@ -2219,7 +2225,7 @@ namespace DBProject
             // textBox25
             // 
             this.textBox25.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox25.Location = new System.Drawing.Point(199, 279);
+            this.textBox25.Location = new System.Drawing.Point(199, 282);
             this.textBox25.Name = "textBox25";
             this.textBox25.Size = new System.Drawing.Size(183, 20);
             this.textBox25.TabIndex = 4;
@@ -2227,7 +2233,7 @@ namespace DBProject
             // textBox26
             // 
             this.textBox26.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox26.Location = new System.Drawing.Point(199, 124);
+            this.textBox26.Location = new System.Drawing.Point(199, 127);
             this.textBox26.Name = "textBox26";
             this.textBox26.Size = new System.Drawing.Size(183, 20);
             this.textBox26.TabIndex = 1;
@@ -2236,7 +2242,7 @@ namespace DBProject
             // 
             this.label32.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(61, 283);
+            this.label32.Location = new System.Drawing.Point(61, 286);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(34, 13);
             this.label32.TabIndex = 2;
@@ -2246,7 +2252,7 @@ namespace DBProject
             // 
             this.label33.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(423, 127);
+            this.label33.Location = new System.Drawing.Point(423, 130);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(126, 13);
             this.label33.TabIndex = 1;
@@ -2256,7 +2262,7 @@ namespace DBProject
             // 
             this.label34.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(61, 128);
+            this.label34.Location = new System.Drawing.Point(61, 131);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(40, 13);
             this.label34.TabIndex = 0;
@@ -2275,7 +2281,7 @@ namespace DBProject
             this.addPerfPanel.Controls.Add(this.label48);
             this.addPerfPanel.Location = new System.Drawing.Point(1, -1);
             this.addPerfPanel.Name = "addPerfPanel";
-            this.addPerfPanel.Size = new System.Drawing.Size(836, 471);
+            this.addPerfPanel.Size = new System.Drawing.Size(836, 476);
             this.addPerfPanel.TabIndex = 22;
             this.addPerfPanel.VisibleChanged += new System.EventHandler(this.addPerfPanel_VisibleChanged);
             // 
@@ -2285,7 +2291,7 @@ namespace DBProject
             this.comboOrdine.DataSource = this.ordineBindingSource;
             this.comboOrdine.DisplayMember = "ID_ordine";
             this.comboOrdine.FormattingEnabled = true;
-            this.comboOrdine.Location = new System.Drawing.Point(426, 111);
+            this.comboOrdine.Location = new System.Drawing.Point(426, 114);
             this.comboOrdine.Name = "comboOrdine";
             this.comboOrdine.Size = new System.Drawing.Size(121, 21);
             this.comboOrdine.TabIndex = 5;
@@ -2302,7 +2308,7 @@ namespace DBProject
             this.comboTrasporto.DataSource = this.trasportoBindingSource;
             this.comboTrasporto.DisplayMember = "Codice";
             this.comboTrasporto.FormattingEnabled = true;
-            this.comboTrasporto.Location = new System.Drawing.Point(426, 111);
+            this.comboTrasporto.Location = new System.Drawing.Point(426, 114);
             this.comboTrasporto.Name = "comboTrasporto";
             this.comboTrasporto.Size = new System.Drawing.Size(121, 21);
             this.comboTrasporto.TabIndex = 4;
@@ -2316,7 +2322,7 @@ namespace DBProject
             // dateTimePicker3
             // 
             this.dateTimePicker3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePicker3.Location = new System.Drawing.Point(426, 176);
+            this.dateTimePicker3.Location = new System.Drawing.Point(426, 179);
             this.dateTimePicker3.Name = "dateTimePicker3";
             this.dateTimePicker3.Size = new System.Drawing.Size(183, 20);
             this.dateTimePicker3.TabIndex = 2;
@@ -2325,7 +2331,7 @@ namespace DBProject
             // 
             this.label47.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(241, 178);
+            this.label47.Location = new System.Drawing.Point(241, 181);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(127, 13);
             this.label47.TabIndex = 1;
@@ -2335,7 +2341,7 @@ namespace DBProject
             // 
             this.label48.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(241, 114);
+            this.label48.Location = new System.Drawing.Point(241, 117);
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(84, 13);
             this.label48.TabIndex = 0;
@@ -2358,7 +2364,7 @@ namespace DBProject
             this.addPagamentoPanel.Controls.Add(this.contratto_AddPagLabel);
             this.addPagamentoPanel.Location = new System.Drawing.Point(1, -1);
             this.addPagamentoPanel.Name = "addPagamentoPanel";
-            this.addPagamentoPanel.Size = new System.Drawing.Size(836, 471);
+            this.addPagamentoPanel.Size = new System.Drawing.Size(836, 476);
             this.addPagamentoPanel.TabIndex = 23;
             this.addPagamentoPanel.VisibleChanged += new System.EventHandler(this.addPagamentoPanel_VisibleChanged);
             // 
@@ -2368,7 +2374,7 @@ namespace DBProject
             this.comboFornitore.DataSource = this.fornitoreBindingSource;
             this.comboFornitore.DisplayMember = "Ragione_Sociale";
             this.comboFornitore.FormattingEnabled = true;
-            this.comboFornitore.Location = new System.Drawing.Point(413, 86);
+            this.comboFornitore.Location = new System.Drawing.Point(413, 89);
             this.comboFornitore.Name = "comboFornitore";
             this.comboFornitore.Size = new System.Drawing.Size(186, 21);
             this.comboFornitore.TabIndex = 16;
@@ -2378,7 +2384,7 @@ namespace DBProject
             // 
             this.label126.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label126.AutoSize = true;
-            this.label126.Location = new System.Drawing.Point(231, 92);
+            this.label126.Location = new System.Drawing.Point(231, 95);
             this.label126.Name = "label126";
             this.label126.Size = new System.Drawing.Size(48, 13);
             this.label126.TabIndex = 15;
@@ -2390,7 +2396,7 @@ namespace DBProject
             this.comboFattura.DataSource = this.fatturadiacquistoBindingSource1;
             this.comboFattura.DisplayMember = "Numero";
             this.comboFattura.FormattingEnabled = true;
-            this.comboFattura.Location = new System.Drawing.Point(414, 157);
+            this.comboFattura.Location = new System.Drawing.Point(414, 160);
             this.comboFattura.Name = "comboFattura";
             this.comboFattura.Size = new System.Drawing.Size(186, 21);
             this.comboFattura.TabIndex = 14;
@@ -2407,7 +2413,7 @@ namespace DBProject
             this.comboContratto.DataSource = this.contrattodivenditaBindingSource;
             this.comboContratto.DisplayMember = "Numero";
             this.comboContratto.FormattingEnabled = true;
-            this.comboContratto.Location = new System.Drawing.Point(414, 157);
+            this.comboContratto.Location = new System.Drawing.Point(414, 160);
             this.comboContratto.Name = "comboContratto";
             this.comboContratto.Size = new System.Drawing.Size(186, 21);
             this.comboContratto.TabIndex = 1;
@@ -2421,7 +2427,7 @@ namespace DBProject
             // textBox29
             // 
             this.textBox29.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox29.Location = new System.Drawing.Point(416, 306);
+            this.textBox29.Location = new System.Drawing.Point(416, 309);
             this.textBox29.Name = "textBox29";
             this.textBox29.Size = new System.Drawing.Size(183, 20);
             this.textBox29.TabIndex = 3;
@@ -2430,7 +2436,7 @@ namespace DBProject
             // 
             this.label41.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(231, 309);
+            this.label41.Location = new System.Drawing.Point(231, 312);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(42, 13);
             this.label41.TabIndex = 13;
@@ -2439,7 +2445,7 @@ namespace DBProject
             // dateTimePicker4
             // 
             this.dateTimePicker4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePicker4.Location = new System.Drawing.Point(416, 231);
+            this.dateTimePicker4.Location = new System.Drawing.Point(416, 234);
             this.dateTimePicker4.Name = "dateTimePicker4";
             this.dateTimePicker4.Size = new System.Drawing.Size(183, 20);
             this.dateTimePicker4.TabIndex = 2;
@@ -2448,7 +2454,7 @@ namespace DBProject
             // 
             this.label39.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(231, 233);
+            this.label39.Location = new System.Drawing.Point(231, 236);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(30, 13);
             this.label39.TabIndex = 1;
@@ -2458,7 +2464,7 @@ namespace DBProject
             // 
             this.contratto_AddPagLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.contratto_AddPagLabel.AutoSize = true;
-            this.contratto_AddPagLabel.Location = new System.Drawing.Point(231, 161);
+            this.contratto_AddPagLabel.Location = new System.Drawing.Point(231, 164);
             this.contratto_AddPagLabel.Name = "contratto_AddPagLabel";
             this.contratto_AddPagLabel.Size = new System.Drawing.Size(50, 13);
             this.contratto_AddPagLabel.TabIndex = 0;
@@ -2480,7 +2486,7 @@ namespace DBProject
             this.addRiparazionePanel.Controls.Add(this.textBox43);
             this.addRiparazionePanel.Location = new System.Drawing.Point(1, -2);
             this.addRiparazionePanel.Name = "addRiparazionePanel";
-            this.addRiparazionePanel.Size = new System.Drawing.Size(836, 471);
+            this.addRiparazionePanel.Size = new System.Drawing.Size(836, 476);
             this.addRiparazionePanel.TabIndex = 32;
             // 
             // comboBox2
@@ -2489,7 +2495,7 @@ namespace DBProject
             this.comboBox2.DataSource = this.veicolovendutoBindingSource1;
             this.comboBox2.DisplayMember = "Numero_telaio";
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(410, 82);
+            this.comboBox2.Location = new System.Drawing.Point(410, 85);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(188, 21);
             this.comboBox2.TabIndex = 1;
@@ -2503,7 +2509,7 @@ namespace DBProject
             // dateTimePicker5
             // 
             this.dateTimePicker5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePicker5.Location = new System.Drawing.Point(411, 166);
+            this.dateTimePicker5.Location = new System.Drawing.Point(411, 169);
             this.dateTimePicker5.Name = "dateTimePicker5";
             this.dateTimePicker5.Size = new System.Drawing.Size(189, 20);
             this.dateTimePicker5.TabIndex = 3;
@@ -2512,7 +2518,7 @@ namespace DBProject
             // 
             this.label45.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(230, 88);
+            this.label45.Location = new System.Drawing.Point(230, 91);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(96, 13);
             this.label45.TabIndex = 7;
@@ -2522,7 +2528,7 @@ namespace DBProject
             // 
             this.label46.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(231, 214);
+            this.label46.Location = new System.Drawing.Point(231, 217);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(103, 13);
             this.label46.TabIndex = 6;
@@ -2532,7 +2538,7 @@ namespace DBProject
             // 
             this.label49.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(231, 173);
+            this.label49.Location = new System.Drawing.Point(231, 176);
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(30, 13);
             this.label49.TabIndex = 5;
@@ -2542,7 +2548,7 @@ namespace DBProject
             // 
             this.label53.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label53.AutoSize = true;
-            this.label53.Location = new System.Drawing.Point(231, 129);
+            this.label53.Location = new System.Drawing.Point(231, 132);
             this.label53.Name = "label53";
             this.label53.Size = new System.Drawing.Size(44, 13);
             this.label53.TabIndex = 4;
@@ -2551,7 +2557,7 @@ namespace DBProject
             // textBox42
             // 
             this.textBox42.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox42.Location = new System.Drawing.Point(411, 207);
+            this.textBox42.Location = new System.Drawing.Point(411, 210);
             this.textBox42.Name = "textBox42";
             this.textBox42.Size = new System.Drawing.Size(188, 20);
             this.textBox42.TabIndex = 4;
@@ -2559,7 +2565,7 @@ namespace DBProject
             // textBox43
             // 
             this.textBox43.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox43.Location = new System.Drawing.Point(411, 122);
+            this.textBox43.Location = new System.Drawing.Point(411, 125);
             this.textBox43.Name = "textBox43";
             this.textBox43.Size = new System.Drawing.Size(188, 20);
             this.textBox43.TabIndex = 2;
@@ -2580,7 +2586,7 @@ namespace DBProject
             this.addUtilizzoRicambioRipPanel.Controls.Add(this.textBox16);
             this.addUtilizzoRicambioRipPanel.Location = new System.Drawing.Point(0, -2);
             this.addUtilizzoRicambioRipPanel.Name = "addUtilizzoRicambioRipPanel";
-            this.addUtilizzoRicambioRipPanel.Size = new System.Drawing.Size(836, 471);
+            this.addUtilizzoRicambioRipPanel.Size = new System.Drawing.Size(836, 476);
             this.addUtilizzoRicambioRipPanel.TabIndex = 33;
             // 
             // comboBox25
@@ -2589,7 +2595,7 @@ namespace DBProject
             this.comboBox25.DataSource = this.riparazioneBindingSource;
             this.comboBox25.DisplayMember = "Veicolo_Numero_telaio";
             this.comboBox25.FormattingEnabled = true;
-            this.comboBox25.Location = new System.Drawing.Point(406, 76);
+            this.comboBox25.Location = new System.Drawing.Point(406, 79);
             this.comboBox25.Name = "comboBox25";
             this.comboBox25.Size = new System.Drawing.Size(188, 21);
             this.comboBox25.TabIndex = 1;
@@ -2604,7 +2610,7 @@ namespace DBProject
             // 
             this.label120.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label120.AutoSize = true;
-            this.label120.Location = new System.Drawing.Point(226, 82);
+            this.label120.Location = new System.Drawing.Point(226, 85);
             this.label120.Name = "label120";
             this.label120.Size = new System.Drawing.Size(42, 13);
             this.label120.TabIndex = 12;
@@ -2616,7 +2622,7 @@ namespace DBProject
             this.comboBox11.DataSource = this.riparazioneBindingSource;
             this.comboBox11.DisplayMember = "Numero";
             this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.Location = new System.Drawing.Point(406, 122);
+            this.comboBox11.Location = new System.Drawing.Point(406, 125);
             this.comboBox11.Name = "comboBox11";
             this.comboBox11.Size = new System.Drawing.Size(188, 21);
             this.comboBox11.TabIndex = 2;
@@ -2626,7 +2632,7 @@ namespace DBProject
             // 
             this.label54.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(226, 128);
+            this.label54.Location = new System.Drawing.Point(226, 131);
             this.label54.Name = "label54";
             this.label54.Size = new System.Drawing.Size(63, 13);
             this.label54.TabIndex = 10;
@@ -2638,7 +2644,7 @@ namespace DBProject
             this.comboBox10.DataSource = this.ricambioBindingSource;
             this.comboBox10.DisplayMember = "Codice";
             this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Location = new System.Drawing.Point(406, 169);
+            this.comboBox10.Location = new System.Drawing.Point(406, 172);
             this.comboBox10.Name = "comboBox10";
             this.comboBox10.Size = new System.Drawing.Size(188, 21);
             this.comboBox10.TabIndex = 3;
@@ -2653,7 +2659,7 @@ namespace DBProject
             // 
             this.label21.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(226, 173);
+            this.label21.Location = new System.Drawing.Point(226, 176);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(105, 13);
             this.label21.TabIndex = 7;
@@ -2663,7 +2669,7 @@ namespace DBProject
             // 
             this.label40.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(226, 217);
+            this.label40.Location = new System.Drawing.Point(226, 220);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(47, 13);
             this.label40.TabIndex = 6;
@@ -2672,7 +2678,7 @@ namespace DBProject
             // textBox16
             // 
             this.textBox16.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox16.Location = new System.Drawing.Point(406, 214);
+            this.textBox16.Location = new System.Drawing.Point(406, 217);
             this.textBox16.Name = "textBox16";
             this.textBox16.Size = new System.Drawing.Size(188, 20);
             this.textBox16.TabIndex = 4;
@@ -2695,14 +2701,14 @@ namespace DBProject
             this.addRicambioPanel.Controls.Add(this.textBox40);
             this.addRicambioPanel.Location = new System.Drawing.Point(1, -4);
             this.addRicambioPanel.Name = "addRicambioPanel";
-            this.addRicambioPanel.Size = new System.Drawing.Size(836, 471);
+            this.addRicambioPanel.Size = new System.Drawing.Size(836, 476);
             this.addRicambioPanel.TabIndex = 34;
             // 
             // label119
             // 
             this.label119.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label119.AutoSize = true;
-            this.label119.Location = new System.Drawing.Point(636, 209);
+            this.label119.Location = new System.Drawing.Point(636, 212);
             this.label119.Name = "label119";
             this.label119.Size = new System.Drawing.Size(39, 13);
             this.label119.TabIndex = 13;
@@ -2714,7 +2720,7 @@ namespace DBProject
             this.comboBox13.DataSource = this.fornitoreBindingSource;
             this.comboBox13.DisplayMember = "Partita_IVA";
             this.comboBox13.FormattingEnabled = true;
-            this.comboBox13.Location = new System.Drawing.Point(416, 204);
+            this.comboBox13.Location = new System.Drawing.Point(416, 207);
             this.comboBox13.Name = "comboBox13";
             this.comboBox13.Size = new System.Drawing.Size(191, 21);
             this.comboBox13.TabIndex = 5;
@@ -2724,7 +2730,7 @@ namespace DBProject
             // 
             this.label64.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label64.AutoSize = true;
-            this.label64.Location = new System.Drawing.Point(241, 207);
+            this.label64.Location = new System.Drawing.Point(241, 210);
             this.label64.Name = "label64";
             this.label64.Size = new System.Drawing.Size(48, 13);
             this.label64.TabIndex = 12;
@@ -2737,7 +2743,7 @@ namespace DBProject
             this.groupBox4.Controls.Add(this.label58);
             this.groupBox4.Controls.Add(this.textBox45);
             this.groupBox4.Controls.Add(this.textBox44);
-            this.groupBox4.Location = new System.Drawing.Point(243, 121);
+            this.groupBox4.Location = new System.Drawing.Point(243, 124);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(365, 76);
             this.groupBox4.TabIndex = 3;
@@ -2780,7 +2786,7 @@ namespace DBProject
             // 
             this.label43.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(240, 238);
+            this.label43.Location = new System.Drawing.Point(240, 241);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(57, 13);
             this.label43.TabIndex = 8;
@@ -2789,7 +2795,7 @@ namespace DBProject
             // textBox41
             // 
             this.textBox41.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox41.Location = new System.Drawing.Point(374, 240);
+            this.textBox41.Location = new System.Drawing.Point(374, 243);
             this.textBox41.Multiline = true;
             this.textBox41.Name = "textBox41";
             this.textBox41.Size = new System.Drawing.Size(233, 85);
@@ -2799,7 +2805,7 @@ namespace DBProject
             // 
             this.label56.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label56.AutoSize = true;
-            this.label56.Location = new System.Drawing.Point(240, 102);
+            this.label56.Location = new System.Drawing.Point(240, 105);
             this.label56.Name = "label56";
             this.label56.Size = new System.Drawing.Size(35, 13);
             this.label56.TabIndex = 6;
@@ -2809,7 +2815,7 @@ namespace DBProject
             // 
             this.label57.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label57.AutoSize = true;
-            this.label57.Location = new System.Drawing.Point(241, 75);
+            this.label57.Location = new System.Drawing.Point(241, 78);
             this.label57.Name = "label57";
             this.label57.Size = new System.Drawing.Size(40, 13);
             this.label57.TabIndex = 4;
@@ -2818,7 +2824,7 @@ namespace DBProject
             // textBox39
             // 
             this.textBox39.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox39.Location = new System.Drawing.Point(417, 99);
+            this.textBox39.Location = new System.Drawing.Point(417, 102);
             this.textBox39.Name = "textBox39";
             this.textBox39.Size = new System.Drawing.Size(191, 20);
             this.textBox39.TabIndex = 2;
@@ -2826,7 +2832,7 @@ namespace DBProject
             // textBox40
             // 
             this.textBox40.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox40.Location = new System.Drawing.Point(417, 72);
+            this.textBox40.Location = new System.Drawing.Point(417, 75);
             this.textBox40.Name = "textBox40";
             this.textBox40.Size = new System.Drawing.Size(192, 20);
             this.textBox40.TabIndex = 1;
@@ -2849,13 +2855,14 @@ namespace DBProject
             this.addGiacenzaPanel.Controls.Add(this.label61);
             this.addGiacenzaPanel.Location = new System.Drawing.Point(1, -3);
             this.addGiacenzaPanel.Name = "addGiacenzaPanel";
-            this.addGiacenzaPanel.Size = new System.Drawing.Size(836, 471);
+            this.addGiacenzaPanel.Size = new System.Drawing.Size(836, 476);
             this.addGiacenzaPanel.TabIndex = 24;
+            this.addGiacenzaPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.addGiacenzaPanel_Paint);
             // 
             // textBox4
             // 
             this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox4.Location = new System.Drawing.Point(416, 124);
+            this.textBox4.Location = new System.Drawing.Point(416, 127);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(185, 20);
             this.textBox4.TabIndex = 19;
@@ -2863,7 +2870,7 @@ namespace DBProject
             // textBox48
             // 
             this.textBox48.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox48.Location = new System.Drawing.Point(366, 277);
+            this.textBox48.Location = new System.Drawing.Point(366, 280);
             this.textBox48.Multiline = true;
             this.textBox48.Name = "textBox48";
             this.textBox48.Size = new System.Drawing.Size(235, 112);
@@ -2873,7 +2880,7 @@ namespace DBProject
             // 
             this.label63.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label63.AutoSize = true;
-            this.label63.Location = new System.Drawing.Point(234, 280);
+            this.label63.Location = new System.Drawing.Point(234, 283);
             this.label63.Name = "label63";
             this.label63.Size = new System.Drawing.Size(45, 13);
             this.label63.TabIndex = 18;
@@ -2883,7 +2890,7 @@ namespace DBProject
             // 
             this.label62.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label62.AutoSize = true;
-            this.label62.Location = new System.Drawing.Point(235, 127);
+            this.label62.Location = new System.Drawing.Point(235, 130);
             this.label62.Name = "label62";
             this.label62.Size = new System.Drawing.Size(44, 13);
             this.label62.TabIndex = 16;
@@ -2895,7 +2902,7 @@ namespace DBProject
             this.comboBox12.DataSource = this.ricambioBindingSource;
             this.comboBox12.DisplayMember = "Codice";
             this.comboBox12.FormattingEnabled = true;
-            this.comboBox12.Location = new System.Drawing.Point(416, 81);
+            this.comboBox12.Location = new System.Drawing.Point(416, 84);
             this.comboBox12.Name = "comboBox12";
             this.comboBox12.Size = new System.Drawing.Size(186, 21);
             this.comboBox12.TabIndex = 1;
@@ -2904,7 +2911,7 @@ namespace DBProject
             // textBox46
             // 
             this.textBox46.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox46.Location = new System.Drawing.Point(416, 220);
+            this.textBox46.Location = new System.Drawing.Point(416, 223);
             this.textBox46.Name = "textBox46";
             this.textBox46.Size = new System.Drawing.Size(185, 20);
             this.textBox46.TabIndex = 3;
@@ -2913,7 +2920,7 @@ namespace DBProject
             // 
             this.label59.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label59.AutoSize = true;
-            this.label59.Location = new System.Drawing.Point(233, 223);
+            this.label59.Location = new System.Drawing.Point(233, 226);
             this.label59.Name = "label59";
             this.label59.Size = new System.Drawing.Size(85, 13);
             this.label59.TabIndex = 13;
@@ -2922,7 +2929,7 @@ namespace DBProject
             // dateTimePicker6
             // 
             this.dateTimePicker6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePicker6.Location = new System.Drawing.Point(416, 165);
+            this.dateTimePicker6.Location = new System.Drawing.Point(416, 168);
             this.dateTimePicker6.Name = "dateTimePicker6";
             this.dateTimePicker6.Size = new System.Drawing.Size(186, 20);
             this.dateTimePicker6.TabIndex = 2;
@@ -2931,7 +2938,7 @@ namespace DBProject
             // 
             this.label60.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label60.AutoSize = true;
-            this.label60.Location = new System.Drawing.Point(234, 167);
+            this.label60.Location = new System.Drawing.Point(234, 170);
             this.label60.Name = "label60";
             this.label60.Size = new System.Drawing.Size(30, 13);
             this.label60.TabIndex = 1;
@@ -2941,7 +2948,7 @@ namespace DBProject
             // 
             this.label61.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label61.AutoSize = true;
-            this.label61.Location = new System.Drawing.Point(234, 85);
+            this.label61.Location = new System.Drawing.Point(234, 88);
             this.label61.Name = "label61";
             this.label61.Size = new System.Drawing.Size(51, 13);
             this.label61.TabIndex = 0;
@@ -2960,7 +2967,7 @@ namespace DBProject
             this.addVeicoloPanel.Controls.Add(this.textBox53);
             this.addVeicoloPanel.Location = new System.Drawing.Point(1, -3);
             this.addVeicoloPanel.Name = "addVeicoloPanel";
-            this.addVeicoloPanel.Size = new System.Drawing.Size(836, 471);
+            this.addVeicoloPanel.Size = new System.Drawing.Size(836, 476);
             this.addVeicoloPanel.TabIndex = 35;
             // 
             // groupBox21
@@ -2972,7 +2979,7 @@ namespace DBProject
             this.groupBox21.Controls.Add(this.label118);
             this.groupBox21.Controls.Add(this.comboBox14);
             this.groupBox21.Controls.Add(this.label117);
-            this.groupBox21.Location = new System.Drawing.Point(202, 75);
+            this.groupBox21.Location = new System.Drawing.Point(202, 78);
             this.groupBox21.Name = "groupBox21";
             this.groupBox21.Size = new System.Drawing.Size(428, 98);
             this.groupBox21.TabIndex = 2;
@@ -3051,7 +3058,7 @@ namespace DBProject
             this.groupBox6.Controls.Add(this.textBox51);
             this.groupBox6.Controls.Add(this.textBox55);
             this.groupBox6.Controls.Add(this.label72);
-            this.groupBox6.Location = new System.Drawing.Point(202, 176);
+            this.groupBox6.Location = new System.Drawing.Point(202, 179);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(428, 82);
             this.groupBox6.TabIndex = 5;
@@ -3142,7 +3149,7 @@ namespace DBProject
             this.groupBox5.Controls.Add(this.textBox57);
             this.groupBox5.Controls.Add(this.textBox50);
             this.groupBox5.Controls.Add(this.label74);
-            this.groupBox5.Location = new System.Drawing.Point(202, 264);
+            this.groupBox5.Location = new System.Drawing.Point(202, 267);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(428, 123);
             this.groupBox5.TabIndex = 9;
@@ -3281,7 +3288,7 @@ namespace DBProject
             // 
             this.label70.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label70.AutoSize = true;
-            this.label70.Location = new System.Drawing.Point(216, 49);
+            this.label70.Location = new System.Drawing.Point(216, 52);
             this.label70.Name = "label70";
             this.label70.Size = new System.Drawing.Size(40, 13);
             this.label70.TabIndex = 4;
@@ -3290,7 +3297,7 @@ namespace DBProject
             // textBox53
             // 
             this.textBox53.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox53.Location = new System.Drawing.Point(333, 45);
+            this.textBox53.Location = new System.Drawing.Point(333, 48);
             this.textBox53.Name = "textBox53";
             this.textBox53.Size = new System.Drawing.Size(79, 20);
             this.textBox53.TabIndex = 1;
@@ -3309,7 +3316,7 @@ namespace DBProject
             this.addModelloPanel.Controls.Add(this.textBox74);
             this.addModelloPanel.Location = new System.Drawing.Point(1, -3);
             this.addModelloPanel.Name = "addModelloPanel";
-            this.addModelloPanel.Size = new System.Drawing.Size(836, 471);
+            this.addModelloPanel.Size = new System.Drawing.Size(836, 476);
             this.addModelloPanel.TabIndex = 36;
             // 
             // dateTimePicker15
@@ -3323,7 +3330,7 @@ namespace DBProject
             // 
             this.label79.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label79.AutoSize = true;
-            this.label79.Location = new System.Drawing.Point(258, 237);
+            this.label79.Location = new System.Drawing.Point(258, 240);
             this.label79.Name = "label79";
             this.label79.Size = new System.Drawing.Size(32, 13);
             this.label79.TabIndex = 13;
@@ -3336,7 +3343,7 @@ namespace DBProject
             this.comboBox15.DisplayMember = "Partita_IVA";
             this.comboBox15.FormattingEnabled = true;
             this.comboBox15.ItemHeight = 13;
-            this.comboBox15.Location = new System.Drawing.Point(382, 177);
+            this.comboBox15.Location = new System.Drawing.Point(382, 180);
             this.comboBox15.Name = "comboBox15";
             this.comboBox15.Size = new System.Drawing.Size(191, 21);
             this.comboBox15.TabIndex = 3;
@@ -3346,7 +3353,7 @@ namespace DBProject
             // 
             this.label91.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label91.AutoSize = true;
-            this.label91.Location = new System.Drawing.Point(256, 181);
+            this.label91.Location = new System.Drawing.Point(256, 184);
             this.label91.Name = "label91";
             this.label91.Size = new System.Drawing.Size(84, 13);
             this.label91.TabIndex = 12;
@@ -3356,7 +3363,7 @@ namespace DBProject
             // 
             this.label92.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label92.AutoSize = true;
-            this.label92.Location = new System.Drawing.Point(257, 127);
+            this.label92.Location = new System.Drawing.Point(257, 130);
             this.label92.Name = "label92";
             this.label92.Size = new System.Drawing.Size(35, 13);
             this.label92.TabIndex = 4;
@@ -3365,7 +3372,7 @@ namespace DBProject
             // textBox74
             // 
             this.textBox74.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox74.Location = new System.Drawing.Point(381, 123);
+            this.textBox74.Location = new System.Drawing.Point(381, 126);
             this.textBox74.Name = "textBox74";
             this.textBox74.Size = new System.Drawing.Size(192, 20);
             this.textBox74.TabIndex = 1;
@@ -3386,13 +3393,13 @@ namespace DBProject
             this.addOptionalPanel.Controls.Add(this.submitOptionalBtn);
             this.addOptionalPanel.Location = new System.Drawing.Point(0, -2);
             this.addOptionalPanel.Name = "addOptionalPanel";
-            this.addOptionalPanel.Size = new System.Drawing.Size(836, 471);
+            this.addOptionalPanel.Size = new System.Drawing.Size(836, 476);
             this.addOptionalPanel.TabIndex = 37;
             // 
             // textBox66
             // 
             this.textBox66.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox66.Location = new System.Drawing.Point(400, 212);
+            this.textBox66.Location = new System.Drawing.Point(400, 215);
             this.textBox66.Multiline = true;
             this.textBox66.Name = "textBox66";
             this.textBox66.Size = new System.Drawing.Size(216, 109);
@@ -3402,7 +3409,7 @@ namespace DBProject
             // 
             this.label83.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label83.AutoSize = true;
-            this.label83.Location = new System.Drawing.Point(272, 90);
+            this.label83.Location = new System.Drawing.Point(272, 93);
             this.label83.Name = "label83";
             this.label83.Size = new System.Drawing.Size(40, 13);
             this.label83.TabIndex = 16;
@@ -3411,7 +3418,7 @@ namespace DBProject
             // textBox65
             // 
             this.textBox65.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox65.Location = new System.Drawing.Point(399, 86);
+            this.textBox65.Location = new System.Drawing.Point(399, 89);
             this.textBox65.Name = "textBox65";
             this.textBox65.Size = new System.Drawing.Size(150, 20);
             this.textBox65.TabIndex = 1;
@@ -3419,7 +3426,7 @@ namespace DBProject
             // textBox63
             // 
             this.textBox63.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox63.Location = new System.Drawing.Point(400, 173);
+            this.textBox63.Location = new System.Drawing.Point(400, 176);
             this.textBox63.Name = "textBox63";
             this.textBox63.Size = new System.Drawing.Size(150, 20);
             this.textBox63.TabIndex = 3;
@@ -3428,7 +3435,7 @@ namespace DBProject
             // 
             this.label80.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label80.AutoSize = true;
-            this.label80.Location = new System.Drawing.Point(273, 177);
+            this.label80.Location = new System.Drawing.Point(273, 180);
             this.label80.Name = "label80";
             this.label80.Size = new System.Drawing.Size(39, 13);
             this.label80.TabIndex = 13;
@@ -3438,7 +3445,7 @@ namespace DBProject
             // 
             this.label81.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label81.AutoSize = true;
-            this.label81.Location = new System.Drawing.Point(273, 215);
+            this.label81.Location = new System.Drawing.Point(273, 218);
             this.label81.Name = "label81";
             this.label81.Size = new System.Drawing.Size(62, 13);
             this.label81.TabIndex = 12;
@@ -3448,7 +3455,7 @@ namespace DBProject
             // 
             this.label82.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label82.AutoSize = true;
-            this.label82.Location = new System.Drawing.Point(273, 133);
+            this.label82.Location = new System.Drawing.Point(273, 136);
             this.label82.Name = "label82";
             this.label82.Size = new System.Drawing.Size(35, 13);
             this.label82.TabIndex = 4;
@@ -3457,7 +3464,7 @@ namespace DBProject
             // textBox64
             // 
             this.textBox64.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox64.Location = new System.Drawing.Point(400, 129);
+            this.textBox64.Location = new System.Drawing.Point(400, 132);
             this.textBox64.Name = "textBox64";
             this.textBox64.Size = new System.Drawing.Size(150, 20);
             this.textBox64.TabIndex = 2;
@@ -3476,7 +3483,7 @@ namespace DBProject
             this.addOptToVeicPanel.Controls.Add(this.submitOptToVeicBtn);
             this.addOptToVeicPanel.Location = new System.Drawing.Point(0, -2);
             this.addOptToVeicPanel.Name = "addOptToVeicPanel";
-            this.addOptToVeicPanel.Size = new System.Drawing.Size(836, 471);
+            this.addOptToVeicPanel.Size = new System.Drawing.Size(836, 476);
             this.addOptToVeicPanel.TabIndex = 38;
             this.addOptToVeicPanel.VisibleChanged += new System.EventHandler(this.addOptToVeicPanel_VisibleChanged);
             // 
@@ -3486,7 +3493,7 @@ namespace DBProject
             this.comboRic.DataSource = this.riparazioneBindingSource;
             this.comboRic.DisplayMember = "Codice";
             this.comboRic.FormattingEnabled = true;
-            this.comboRic.Location = new System.Drawing.Point(383, 173);
+            this.comboRic.Location = new System.Drawing.Point(383, 176);
             this.comboRic.Name = "comboRic";
             this.comboRic.Size = new System.Drawing.Size(121, 21);
             this.comboRic.TabIndex = 18;
@@ -3498,7 +3505,7 @@ namespace DBProject
             this.comboVeicCat.DataSource = this.veicoloincatalogoBindingSource;
             this.comboVeicCat.DisplayMember = "Codice";
             this.comboVeicCat.FormattingEnabled = true;
-            this.comboVeicCat.Location = new System.Drawing.Point(384, 115);
+            this.comboVeicCat.Location = new System.Drawing.Point(384, 118);
             this.comboVeicCat.Name = "comboVeicCat";
             this.comboVeicCat.Size = new System.Drawing.Size(121, 21);
             this.comboVeicCat.TabIndex = 17;
@@ -3515,7 +3522,7 @@ namespace DBProject
             this.comboOpt.DataSource = this.optionalBindingSource;
             this.comboOpt.DisplayMember = "Codice";
             this.comboOpt.FormattingEnabled = true;
-            this.comboOpt.Location = new System.Drawing.Point(383, 173);
+            this.comboOpt.Location = new System.Drawing.Point(383, 176);
             this.comboOpt.Name = "comboOpt";
             this.comboOpt.Size = new System.Drawing.Size(121, 21);
             this.comboOpt.TabIndex = 2;
@@ -3532,7 +3539,7 @@ namespace DBProject
             this.comboVeicVend.DataSource = this.veicolovendutoBindingSource2;
             this.comboVeicVend.DisplayMember = "Numero_telaio";
             this.comboVeicVend.FormattingEnabled = true;
-            this.comboVeicVend.Location = new System.Drawing.Point(384, 115);
+            this.comboVeicVend.Location = new System.Drawing.Point(384, 118);
             this.comboVeicVend.Name = "comboVeicVend";
             this.comboVeicVend.Size = new System.Drawing.Size(121, 21);
             this.comboVeicVend.TabIndex = 1;
@@ -3547,7 +3554,7 @@ namespace DBProject
             // 
             this.label84.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label84.AutoSize = true;
-            this.label84.Location = new System.Drawing.Point(285, 178);
+            this.label84.Location = new System.Drawing.Point(285, 181);
             this.label84.Name = "label84";
             this.label84.Size = new System.Drawing.Size(46, 13);
             this.label84.TabIndex = 16;
@@ -3557,7 +3564,7 @@ namespace DBProject
             // 
             this.label87.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label87.AutoSize = true;
-            this.label87.Location = new System.Drawing.Point(286, 118);
+            this.label87.Location = new System.Drawing.Point(286, 121);
             this.label87.Name = "label87";
             this.label87.Size = new System.Drawing.Size(42, 13);
             this.label87.TabIndex = 4;
@@ -3579,7 +3586,7 @@ namespace DBProject
             this.addVenditaPanel.Controls.Add(this.label88);
             this.addVenditaPanel.Location = new System.Drawing.Point(1, -2);
             this.addVenditaPanel.Name = "addVenditaPanel";
-            this.addVenditaPanel.Size = new System.Drawing.Size(836, 471);
+            this.addVenditaPanel.Size = new System.Drawing.Size(836, 476);
             this.addVenditaPanel.TabIndex = 39;
             // 
             // comboBox20
@@ -3588,7 +3595,7 @@ namespace DBProject
             this.comboBox20.DataSource = this.contrattodivenditaBindingSource;
             this.comboBox20.DisplayMember = "Numero";
             this.comboBox20.FormattingEnabled = true;
-            this.comboBox20.Location = new System.Drawing.Point(399, 189);
+            this.comboBox20.Location = new System.Drawing.Point(399, 192);
             this.comboBox20.Name = "comboBox20";
             this.comboBox20.Size = new System.Drawing.Size(121, 21);
             this.comboBox20.TabIndex = 3;
@@ -3598,7 +3605,7 @@ namespace DBProject
             // 
             this.label95.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label95.AutoSize = true;
-            this.label95.Location = new System.Drawing.Point(301, 194);
+            this.label95.Location = new System.Drawing.Point(301, 197);
             this.label95.Name = "label95";
             this.label95.Size = new System.Drawing.Size(50, 13);
             this.label95.TabIndex = 21;
@@ -3607,7 +3614,7 @@ namespace DBProject
             // textBox67
             // 
             this.textBox67.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox67.Location = new System.Drawing.Point(399, 101);
+            this.textBox67.Location = new System.Drawing.Point(399, 104);
             this.textBox67.Name = "textBox67";
             this.textBox67.Size = new System.Drawing.Size(121, 20);
             this.textBox67.TabIndex = 1;
@@ -3616,7 +3623,7 @@ namespace DBProject
             // 
             this.label85.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label85.AutoSize = true;
-            this.label85.Location = new System.Drawing.Point(301, 102);
+            this.label85.Location = new System.Drawing.Point(301, 105);
             this.label85.Name = "label85";
             this.label85.Size = new System.Drawing.Size(36, 13);
             this.label85.TabIndex = 19;
@@ -3628,7 +3635,7 @@ namespace DBProject
             this.comboBox18.DataSource = this.ordineBindingSource;
             this.comboBox18.DisplayMember = "ID_ordine";
             this.comboBox18.FormattingEnabled = true;
-            this.comboBox18.Location = new System.Drawing.Point(399, 234);
+            this.comboBox18.Location = new System.Drawing.Point(399, 237);
             this.comboBox18.Name = "comboBox18";
             this.comboBox18.Size = new System.Drawing.Size(121, 21);
             this.comboBox18.TabIndex = 4;
@@ -3640,7 +3647,7 @@ namespace DBProject
             this.comboBox19.DataSource = this.veicoloincatalogoBindingSource;
             this.comboBox19.DisplayMember = "Codice";
             this.comboBox19.FormattingEnabled = true;
-            this.comboBox19.Location = new System.Drawing.Point(399, 144);
+            this.comboBox19.Location = new System.Drawing.Point(399, 147);
             this.comboBox19.Name = "comboBox19";
             this.comboBox19.Size = new System.Drawing.Size(121, 21);
             this.comboBox19.TabIndex = 2;
@@ -3650,7 +3657,7 @@ namespace DBProject
             // 
             this.label86.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label86.AutoSize = true;
-            this.label86.Location = new System.Drawing.Point(301, 239);
+            this.label86.Location = new System.Drawing.Point(301, 242);
             this.label86.Name = "label86";
             this.label86.Size = new System.Drawing.Size(91, 13);
             this.label86.TabIndex = 16;
@@ -3660,7 +3667,7 @@ namespace DBProject
             // 
             this.label88.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label88.AutoSize = true;
-            this.label88.Location = new System.Drawing.Point(301, 147);
+            this.label88.Location = new System.Drawing.Point(301, 150);
             this.label88.Name = "label88";
             this.label88.Size = new System.Drawing.Size(42, 13);
             this.label88.TabIndex = 4;
@@ -3680,7 +3687,7 @@ namespace DBProject
             this.addRevisionePanel.Controls.Add(this.label93);
             this.addRevisionePanel.Location = new System.Drawing.Point(0, -3);
             this.addRevisionePanel.Name = "addRevisionePanel";
-            this.addRevisionePanel.Size = new System.Drawing.Size(836, 471);
+            this.addRevisionePanel.Size = new System.Drawing.Size(836, 476);
             this.addRevisionePanel.TabIndex = 40;
             // 
             // textBox13
@@ -3694,7 +3701,7 @@ namespace DBProject
             // 
             this.label90.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label90.AutoSize = true;
-            this.label90.Location = new System.Drawing.Point(261, 211);
+            this.label90.Location = new System.Drawing.Point(261, 214);
             this.label90.Name = "label90";
             this.label90.Size = new System.Drawing.Size(55, 13);
             this.label90.TabIndex = 21;
@@ -3703,7 +3710,7 @@ namespace DBProject
             // dateTimePicker8
             // 
             this.dateTimePicker8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePicker8.Location = new System.Drawing.Point(359, 208);
+            this.dateTimePicker8.Location = new System.Drawing.Point(359, 211);
             this.dateTimePicker8.Name = "dateTimePicker8";
             this.dateTimePicker8.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker8.TabIndex = 2;
@@ -3712,7 +3719,7 @@ namespace DBProject
             // 
             this.label89.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label89.AutoSize = true;
-            this.label89.Location = new System.Drawing.Point(263, 103);
+            this.label89.Location = new System.Drawing.Point(263, 106);
             this.label89.Name = "label89";
             this.label89.Size = new System.Drawing.Size(44, 13);
             this.label89.TabIndex = 19;
@@ -3724,7 +3731,7 @@ namespace DBProject
             this.comboBox21.DataSource = this.veicolovendutoBindingSource;
             this.comboBox21.DisplayMember = "Numero_telaio";
             this.comboBox21.FormattingEnabled = true;
-            this.comboBox21.Location = new System.Drawing.Point(359, 154);
+            this.comboBox21.Location = new System.Drawing.Point(359, 157);
             this.comboBox21.Name = "comboBox21";
             this.comboBox21.Size = new System.Drawing.Size(121, 21);
             this.comboBox21.TabIndex = 1;
@@ -3739,7 +3746,7 @@ namespace DBProject
             // 
             this.label93.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label93.AutoSize = true;
-            this.label93.Location = new System.Drawing.Point(263, 156);
+            this.label93.Location = new System.Drawing.Point(263, 159);
             this.label93.Name = "label93";
             this.label93.Size = new System.Drawing.Size(42, 13);
             this.label93.TabIndex = 4;
@@ -3756,7 +3763,7 @@ namespace DBProject
             this.addOrdinePanel.Controls.Add(this.submitAddOrdineBtn);
             this.addOrdinePanel.Location = new System.Drawing.Point(1, -2);
             this.addOrdinePanel.Name = "addOrdinePanel";
-            this.addOrdinePanel.Size = new System.Drawing.Size(836, 473);
+            this.addOrdinePanel.Size = new System.Drawing.Size(836, 478);
             this.addOrdinePanel.TabIndex = 41;
             // 
             // groupBox24
@@ -3768,7 +3775,7 @@ namespace DBProject
             this.groupBox24.Controls.Add(this.comboBox30);
             this.groupBox24.Controls.Add(this.label123);
             this.groupBox24.Controls.Add(this.comboBox29);
-            this.groupBox24.Location = new System.Drawing.Point(128, 61);
+            this.groupBox24.Location = new System.Drawing.Point(128, 64);
             this.groupBox24.Name = "groupBox24";
             this.groupBox24.Size = new System.Drawing.Size(385, 115);
             this.groupBox24.TabIndex = 30;
@@ -3845,7 +3852,7 @@ namespace DBProject
             this.groupBox22.Controls.Add(this.dateTimePicker13);
             this.groupBox22.Controls.Add(this.dateTimePicker12);
             this.groupBox22.Controls.Add(this.dateTimePicker11);
-            this.groupBox22.Location = new System.Drawing.Point(127, 210);
+            this.groupBox22.Location = new System.Drawing.Point(127, 213);
             this.groupBox22.Name = "groupBox22";
             this.groupBox22.Size = new System.Drawing.Size(385, 130);
             this.groupBox22.TabIndex = 17;
@@ -3905,7 +3912,7 @@ namespace DBProject
             this.groupBox23.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox23.Controls.Add(this.radioButton2);
             this.groupBox23.Controls.Add(this.radioButton1);
-            this.groupBox23.Location = new System.Drawing.Point(607, 154);
+            this.groupBox23.Location = new System.Drawing.Point(607, 157);
             this.groupBox23.Name = "groupBox23";
             this.groupBox23.Size = new System.Drawing.Size(119, 79);
             this.groupBox23.TabIndex = 8;
@@ -3949,7 +3956,7 @@ namespace DBProject
             this.addVeicRicToOrdinePanel.Controls.Add(this.label130);
             this.addVeicRicToOrdinePanel.Location = new System.Drawing.Point(1, -3);
             this.addVeicRicToOrdinePanel.Name = "addVeicRicToOrdinePanel";
-            this.addVeicRicToOrdinePanel.Size = new System.Drawing.Size(836, 473);
+            this.addVeicRicToOrdinePanel.Size = new System.Drawing.Size(836, 478);
             this.addVeicRicToOrdinePanel.TabIndex = 42;
             this.addVeicRicToOrdinePanel.VisibleChanged += new System.EventHandler(this.addVeicRicToOrdinePanel_VisibleChanged);
             // 
@@ -3959,7 +3966,7 @@ namespace DBProject
             this.comboVeicolo.DataSource = this.veicoloincatalogoBindingSource;
             this.comboVeicolo.DisplayMember = "Codice";
             this.comboVeicolo.FormattingEnabled = true;
-            this.comboVeicolo.Location = new System.Drawing.Point(420, 161);
+            this.comboVeicolo.Location = new System.Drawing.Point(420, 164);
             this.comboVeicolo.Name = "comboVeicolo";
             this.comboVeicolo.Size = new System.Drawing.Size(121, 21);
             this.comboVeicolo.TabIndex = 21;
@@ -3968,7 +3975,7 @@ namespace DBProject
             // textBox93
             // 
             this.textBox93.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox93.Location = new System.Drawing.Point(420, 245);
+            this.textBox93.Location = new System.Drawing.Point(420, 248);
             this.textBox93.Name = "textBox93";
             this.textBox93.Size = new System.Drawing.Size(121, 20);
             this.textBox93.TabIndex = 20;
@@ -3979,7 +3986,7 @@ namespace DBProject
             this.comboRicambio.DataSource = this.ordineBindingSource;
             this.comboRicambio.DisplayMember = "ID_ordine";
             this.comboRicambio.FormattingEnabled = true;
-            this.comboRicambio.Location = new System.Drawing.Point(420, 161);
+            this.comboRicambio.Location = new System.Drawing.Point(420, 164);
             this.comboRicambio.Name = "comboRicambio";
             this.comboRicambio.Size = new System.Drawing.Size(121, 21);
             this.comboRicambio.TabIndex = 19;
@@ -3991,7 +3998,7 @@ namespace DBProject
             this.comboBox3.DataSource = this.ordineBindingSource;
             this.comboBox3.DisplayMember = "ID_ordine";
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(420, 203);
+            this.comboBox3.Location = new System.Drawing.Point(420, 206);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(121, 21);
             this.comboBox3.TabIndex = 18;
@@ -4001,7 +4008,7 @@ namespace DBProject
             // 
             this.label129.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label129.AutoSize = true;
-            this.label129.Location = new System.Drawing.Point(291, 163);
+            this.label129.Location = new System.Drawing.Point(291, 166);
             this.label129.Name = "label129";
             this.label129.Size = new System.Drawing.Size(42, 13);
             this.label129.TabIndex = 15;
@@ -4011,7 +4018,7 @@ namespace DBProject
             // 
             this.label131.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label131.AutoSize = true;
-            this.label131.Location = new System.Drawing.Point(292, 204);
+            this.label131.Location = new System.Drawing.Point(292, 207);
             this.label131.Name = "label131";
             this.label131.Size = new System.Drawing.Size(38, 13);
             this.label131.TabIndex = 17;
@@ -4021,7 +4028,7 @@ namespace DBProject
             // 
             this.label130.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label130.AutoSize = true;
-            this.label130.Location = new System.Drawing.Point(291, 247);
+            this.label130.Location = new System.Drawing.Point(291, 250);
             this.label130.Name = "label130";
             this.label130.Size = new System.Drawing.Size(47, 13);
             this.label130.TabIndex = 16;
@@ -4041,7 +4048,7 @@ namespace DBProject
             this.addEsecRevPanel.Controls.Add(this.label124);
             this.addEsecRevPanel.Location = new System.Drawing.Point(0, 0);
             this.addEsecRevPanel.Name = "addEsecRevPanel";
-            this.addEsecRevPanel.Size = new System.Drawing.Size(836, 471);
+            this.addEsecRevPanel.Size = new System.Drawing.Size(836, 476);
             this.addEsecRevPanel.TabIndex = 23;
             // 
             // comboBox27
@@ -4050,7 +4057,7 @@ namespace DBProject
             this.comboBox27.DataSource = this.revisioneBindingSource;
             this.comboBox27.DisplayMember = "Numero";
             this.comboBox27.FormattingEnabled = true;
-            this.comboBox27.Location = new System.Drawing.Point(426, 164);
+            this.comboBox27.Location = new System.Drawing.Point(426, 167);
             this.comboBox27.Name = "comboBox27";
             this.comboBox27.Size = new System.Drawing.Size(121, 21);
             this.comboBox27.TabIndex = 6;
@@ -4065,7 +4072,7 @@ namespace DBProject
             // 
             this.label125.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label125.AutoSize = true;
-            this.label125.Location = new System.Drawing.Point(241, 167);
+            this.label125.Location = new System.Drawing.Point(241, 170);
             this.label125.Name = "label125";
             this.label125.Size = new System.Drawing.Size(69, 13);
             this.label125.TabIndex = 5;
@@ -4077,7 +4084,7 @@ namespace DBProject
             this.comboBox26.DataSource = this.revisioneBindingSource;
             this.comboBox26.DisplayMember = "Veicolo_Numero_telaio";
             this.comboBox26.FormattingEnabled = true;
-            this.comboBox26.Location = new System.Drawing.Point(426, 111);
+            this.comboBox26.Location = new System.Drawing.Point(426, 114);
             this.comboBox26.Name = "comboBox26";
             this.comboBox26.Size = new System.Drawing.Size(121, 21);
             this.comboBox26.TabIndex = 4;
@@ -4086,7 +4093,7 @@ namespace DBProject
             // dateTimePicker7
             // 
             this.dateTimePicker7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePicker7.Location = new System.Drawing.Point(426, 219);
+            this.dateTimePicker7.Location = new System.Drawing.Point(426, 222);
             this.dateTimePicker7.Name = "dateTimePicker7";
             this.dateTimePicker7.Size = new System.Drawing.Size(183, 20);
             this.dateTimePicker7.TabIndex = 2;
@@ -4095,7 +4102,7 @@ namespace DBProject
             // 
             this.label94.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label94.AutoSize = true;
-            this.label94.Location = new System.Drawing.Point(241, 221);
+            this.label94.Location = new System.Drawing.Point(241, 224);
             this.label94.Name = "label94";
             this.label94.Size = new System.Drawing.Size(87, 13);
             this.label94.TabIndex = 1;
@@ -4105,7 +4112,7 @@ namespace DBProject
             // 
             this.label124.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label124.AutoSize = true;
-            this.label124.Location = new System.Drawing.Point(241, 114);
+            this.label124.Location = new System.Drawing.Point(241, 117);
             this.label124.Name = "label124";
             this.label124.Size = new System.Drawing.Size(42, 13);
             this.label124.TabIndex = 0;
@@ -4175,17 +4182,41 @@ namespace DBProject
             // 
             this.nostre_modalita_di_pagamentoTableAdapter.ClearBeforeFill = true;
             // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.ClienteTableAdapter = this.clienteTableAdapter;
+            this.tableAdapterManager.Contratto_di_venditaTableAdapter = this.contratto_di_venditaTableAdapter;
+            this.tableAdapterManager.CorriereTableAdapter = this.corriereTableAdapter;
+            this.tableAdapterManager.diTableAdapter = null;
+            this.tableAdapterManager.Fattura_di_acquistoTableAdapter = this.fattura_di_acquistoTableAdapter;
+            this.tableAdapterManager.FornitoreTableAdapter = this.fornitoreTableAdapter;
+            this.tableAdapterManager.GiacenzaTableAdapter = null;
+            this.tableAdapterManager.Modalita_di_pagamentoTableAdapter = this.modalita_di_pagamentoTableAdapter;
+            this.tableAdapterManager.Modello_veicoloTableAdapter = this.modello_veicoloTableAdapter;
+            this.tableAdapterManager.Nostre_modalita_di_pagamentoTableAdapter = this.nostre_modalita_di_pagamentoTableAdapter;
+            this.tableAdapterManager.OptionalTableAdapter = this.optionalTableAdapter;
+            this.tableAdapterManager.OrdineTableAdapter = this.ordineTableAdapter;
+            this.tableAdapterManager.Pagamento_cAcquistoTableAdapter = null;
+            this.tableAdapterManager.Pagamento_cVenditaTableAdapter = null;
+            this.tableAdapterManager.per2TableAdapter = null;
+            this.tableAdapterManager.possessoTableAdapter = null;
+            this.tableAdapterManager.referenza2TableAdapter = null;
+            this.tableAdapterManager.RevisioneTableAdapter = this.revisioneTableAdapter;
+            this.tableAdapterManager.RicambioTableAdapter = this.ricambioTableAdapter;
+            this.tableAdapterManager.RiparazioneTableAdapter = this.riparazioneTableAdapter;
+            this.tableAdapterManager.supportoTableAdapter = null;
+            this.tableAdapterManager.TrasportoTableAdapter = this.trasportoTableAdapter;
+            this.tableAdapterManager.UpdateOrder = DBProject.ProgettoDB16DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.utilizzoTableAdapter = null;
+            this.tableAdapterManager.Veicolo_in_catalogoTableAdapter = this.veicolo_in_catalogoTableAdapter;
+            this.tableAdapterManager.Veicolo_vendutoTableAdapter = this.veicolo_vendutoTableAdapter;
+            // 
             // EntryForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(839, 467);
-            this.Controls.Add(this.addRicambioPanel);
-            this.Controls.Add(this.addUtilizzoRicambioRipPanel);
-            this.Controls.Add(this.addRiparazionePanel);
-            this.Controls.Add(this.addVeicRicToOrdinePanel);
-            this.Controls.Add(this.addOrdinePanel);
-            this.Controls.Add(this.addFornitorePanel);
+            this.ClientSize = new System.Drawing.Size(839, 472);
             this.Controls.Add(this.addFatturaPanel);
             this.Controls.Add(this.addContrattoPanel);
             this.Controls.Add(this.addClientePanel);
@@ -4201,6 +4232,12 @@ namespace DBProject
             this.Controls.Add(this.addOptionalPanel);
             this.Controls.Add(this.addModelloPanel);
             this.Controls.Add(this.addVeicoloPanel);
+            this.Controls.Add(this.addRicambioPanel);
+            this.Controls.Add(this.addUtilizzoRicambioRipPanel);
+            this.Controls.Add(this.addRiparazionePanel);
+            this.Controls.Add(this.addVeicRicToOrdinePanel);
+            this.Controls.Add(this.addOrdinePanel);
+            this.Controls.Add(this.addFornitorePanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EntryForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -4221,6 +4258,7 @@ namespace DBProject
             ((System.ComponentModel.ISupportInitialize)(this.modalitadipagamentoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.progettoDB16DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fornitoreBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fornitoreBindingSource1)).EndInit();
             this.addModalitaPagPanel.ResumeLayout(false);
             this.addModalitaPagPanel.PerformLayout();
             this.groupBox20.ResumeLayout(false);
@@ -4698,5 +4736,7 @@ namespace DBProject
         private TextBox textBox3;
         private TextBox textBox4;
         private TextBox textBox13;
+        private ProgettoDB16DataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private BindingSource fornitoreBindingSource1;
     }
 }

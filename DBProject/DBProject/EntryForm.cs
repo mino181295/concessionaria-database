@@ -456,8 +456,8 @@ namespace DBProject
             f.Numero = convertStringInt(this.textBox5.Text);
             f.Data = this.dateTimePicker1.Value;
             f.Importo_complessivo = convertStringFloat(this.textBox7.Text);
-            f.Fornitore_Partita_IVA = this.comboBox1.ValueMember;
-            f.Mod_Pagamento_Da = convertStringFloat(this.comboBox22.ValueMember);
+            f.Fornitore_Partita_IVA = this.comboBox1.SelectedValue.ToString();
+            f.Mod_Pagamento_Da = convertStringFloat(this.comboBox22.SelectedValue.ToString());
 
             try
             {
@@ -467,10 +467,10 @@ namespace DBProject
                       isFloat(f.Mod_Pagamento_Da)
                     ))
                 {
-                    throw new Exception("Campi vuoti");
+                    throw new Exception("Valori sbagliati o vuoti");
                 }
-                //db.Fornitore.InsertOnSubmit(f);
-                //db.SubmitChanges();
+                db.Fattura_di_acquisto.InsertOnSubmit(f);
+                db.SubmitChanges();
             }
             catch (Exception ex)
             {
@@ -848,5 +848,52 @@ namespace DBProject
 
         #endregion
 
+
+
+        private void addGiacenzaPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+
+
+
+        #region EntryForm combobox setup
+
+        /******************************************
+         * Settaggio combobox in EntryForm Fatture
+         ******************************************/
+
+        // Mostro solo i fornitori con almeno una modalità di pagamento.
+        private void comboBox1_DropDown(object sender, EventArgs e)
+        {
+            var pive = from f in this.db.Fornitore
+                       where (from mod in this.db.Modalita_di_pagamento
+                              where mod.Fornitore_Partita_IVA == f.Partita_IVA
+                              select mod).ToList().Count > 0
+                       select new { f.Ragione_Sociale, f.Partita_IVA };
+            this.comboBox1.DataSource = pive.ToList();
+            this.comboBox1.DisplayMember = "Ragione_Sociale";
+            this.comboBox1.ValueMember = "Partita_IVA"; 
+
+        }
+
+        // Selezionato un fornitore, fillo il combobox con le relative modalità di pagamento.
+        private void comboBox22_DropDown(object sender, EventArgs e)
+        {           
+            var value = this.comboBox1.SelectedValue;
+            if (value == null)
+                return;
+            
+            String forn = value.ToString();
+            var modpag = from f in this.db.Modalita_di_pagamento
+                         where f.Fornitore_Partita_IVA == forn
+                         select new { f.Da, member = f.Da + "-" + f.A }; 
+            this.comboBox22.DataSource = modpag.ToList();
+            this.comboBox22.DisplayMember = "member"; // nome del campo dell'oggetto corrente (della lista di oggetti passati) da visualizzare 
+            this.comboBox22.ValueMember = "Da"; // nome del campo dell'oggetto corrente da restituire
+        }
     }
+
+    #endregion
 }
