@@ -61,7 +61,8 @@ create table FatturaAcquisto (
 
 create table Fornitore (
 	PartitaIVA char(11) not null,
-	TipoFornitore char(1) not null,
+	CasaProduttrice char(1) not null,
+	FornitoreRicambi char(1) not null,
 	RagioneSociale varchar(50) not null,
 	Recapito1 varchar(12) not null,
 	Recapito2 varchar(12),
@@ -221,6 +222,7 @@ create table VeicoloVenduto (
 	Id numeric not null identity(1,1),
 	Telaio char(17),
 	Contratto numeric not null,
+	VeicoloCatalogo char(6) not null,
 	primary key (Id),
 	unique (Telaio));
 
@@ -347,3 +349,7 @@ alter table VeicoloCatalogo add constraint FKappartenenza
 alter table VeicoloVenduto add constraint FKinclusione
 	foreign key (Contratto)
 	references ContrattoVendita;
+
+alter table VeicoloVenduto add constraint FKvendita
+	foreign key (VeicoloCatalogo)
+	references VeicoloCatalogo;
