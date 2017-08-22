@@ -1,5 +1,5 @@
 create table Cliente (
-	Id  numeric(6) not null,
+	Id  numeric not null identity(1,1),
 	TipoCliente char not null,
 	CodiceFiscale varchar(16),
 	Nome varchar(20),
@@ -21,12 +21,12 @@ create table Cliente (
 	unique (CodiceFiscale, PartitaIVA));
 
 create table ContrattoVendita (
-	Numero  numeric(6) not null,
-	Trasporto char(5),
+	Numero  numeric not null identity(1,1),
+	Trasporto char(6),
 	Data date not null,
 	ImportoComplessivo float(10) not null,
 	Modalit‡Pagamento float(7) not null,
-	Cliente numeric(6) not null,
+	Cliente numeric not null,
 	primary key (Numero),
 	unique (Trasporto));
 
@@ -44,14 +44,14 @@ create table Corriere (
 	primary key (PartitaIVA));
 
 create table Dotazione (
-	Optional char(5) not null,
-	Veicolo numeric(6) not null,
+	Optional char(6) not null,
+	Veicolo numeric not null,
 	primary key (Veicolo, Optional));
 
 create table FatturaAcquisto (
 	Fornitore char(11) not null,
 	Numero numeric(6) not null,
-	Ordine numeric(6) not null,
+	Ordine numeric not null,
 	Data date not null,
 	ImportoComplessivo float(10) not null,
 	ModPagamentoFornitore char(11) not null,
@@ -74,8 +74,8 @@ create table Fornitore (
 	primary key (PartitaIVA));
 
 create table Giacenza (
-	Ricambio char(5) not null,
-	Numero  numeric(6) not null,
+	Ricambio char(6) not null,
+	Numero  numeric not null identity(1,1),
 	Data date not null,
 	Quantit‡ numeric(6) not null,
 	Causale varchar(255) not null,
@@ -105,14 +105,14 @@ create table NostreModalit‡Pagamento (
 	primary key (Da));
 
 create table Optional (
-	Codice char(5) not null,
+	Codice char(6) not null,
 	Nome varchar(30) not null,
 	Descrizione varchar(255) not null,
 	Prezzo float(7) not null,
 	primary key (Codice));
 
 create table Ordine (
-	Id numeric(6) not null,
+	Id numeric not null identity(1,1),
 	TipoOrdine char not null,
 	DataOrdine date not null,
 	DataConsegnaPrevista date not null,
@@ -121,16 +121,16 @@ create table Ordine (
 	primary key (Id));
 
 create table OrdineRicambio (
-	Ordine numeric(6) not null,
-	Ricambio char(5) not null,
+	Ordine numeric not null,
+	Ricambio char(6) not null,
 	Quantit‡ numeric(6) not null,
 	PrezzoUnitario float(7) not null,
 	primary key (Ordine, Ricambio));
 
 create table OrdineVeicolo (
-	Veicolo numeric(6) not null,
+	Veicolo numeric not null,
 	PrezzoFornitore float(10) not null,
-	Ordine numeric(6) not null,
+	Ordine numeric not null,
 	primary key (Veicolo));
 
 create table Rata (
@@ -142,26 +142,26 @@ create table Rata (
 	primary key (FornitoreFattura, NumeroFattura, Scadenza));
 
 create table RataCliente (
-	Contratto numeric(6) not null,
+	Contratto numeric not null,
 	Scadenza date not null,
 	Importo float(10) not null,
 	DataPagamento date,
 	primary key (Contratto, Scadenza));
 
 create table Referenza (
-	VeicoloCatalogo char(5) not null,
-	Ricambio char(5) not null,
+	VeicoloCatalogo char(6) not null,
+	Ricambio char(6) not null,
 	primary key (VeicoloCatalogo, Ricambio));
 
 create table Revisione (
-	VeicoloVenduto numeric(6) not null,
-	Numero  numeric(6) not null,
+	VeicoloVenduto numeric not null,
+	Numero  numeric not null identity(1,1),
 	Scadenza date not null,
 	DataEsecuzione date,
 	primary key (VeicoloVenduto, Numero));
 
 create table Ricambio (
-	Codice char(5) not null,
+	Codice char(6) not null,
 	Nome varchar(30) not null,
 	Descrizione varchar(255) not null,
 	PrezzoUnitarioRiparazione float(7) not null,
@@ -170,19 +170,19 @@ create table Ricambio (
 	primary key (Codice));
 
 create table Riparazione (
-	Veicolo numeric(6) not null,
-	Numero numeric(6)  not null,
+	Veicolo numeric not null,
+	Numero numeric not null identity(1,1),
 	Data date not null,
 	ImportoComplessivo float(7) not null,
 	primary key (Veicolo, Numero));
 
 create table Supporto (
-	VeicoloCatalogo char(5) not null,
-	Optional char(5) not null,
+	VeicoloCatalogo char(6) not null,
+	Optional char(6) not null,
 	primary key (Optional, VeicoloCatalogo));
 
 create table Trasporto (
-	Codice char(5) not null,
+	Codice char(6) not null,
 	Costo float(7),
 	DataConsegnaPrevista date not null,
 	DataConsegna date,
@@ -193,14 +193,14 @@ create table Trasporto (
 	primary key (Codice));
 
 create table Utilizzo (
-	Ricambio char(5) not null,
-	Veicolo numeric(6) not null,
-	Numero numeric(6) not null,
+	Ricambio char(6) not null,
+	Veicolo numeric not null,
+	Numero numeric not null,
 	Quantit‡ numeric(6) not null,
 	primary key (Ricambio, Veicolo, Numero));
 
 create table VeicoloCatalogo (
-	Codice char(5) not null,
+	Codice char(6) not null,
 	PrezzoBase float(8) not null,
 	Potenza float(4) not null,
 	NumPosti numeric(1) not null,
@@ -218,9 +218,9 @@ create table VeicoloCatalogo (
 	primary key (Codice));
 
 create table VeicoloVenduto (
-	Id numeric(6) not null,
+	Id numeric not null identity(1,1),
 	Telaio char(17),
-	Contratto numeric(6) not null,
+	Contratto numeric not null,
 	primary key (Id),
 	unique (Telaio));
 
