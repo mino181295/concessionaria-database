@@ -1,0 +1,403 @@
+-- ***************************
+-- * Standard SQL generation *
+-- ***************************
+
+
+-- Database Section
+-- ________________
+
+create database Schema Logico;
+
+
+-- TableSpace Section
+-- __________________
+
+-- Table Section
+-- _____________
+
+create table Cliente (
+	Id  not null,
+	Tipo cliente char not null,
+	Codice fiscale varchar(16),
+	Nome varchar(20),
+	Cognome varchar(20),
+	Data nascita date,
+	Città nascita varchar(30),
+	Provincia nascita varchar(30),
+	Partita IVA char(11),
+	Ragione sociale varchar(50),
+	Recapito1 varchar(12) not null,
+	Recapito2 char(1),
+	Indirizzo e-mail1 varchar(30),
+	Indirizzo e-mail2 char(1),
+	Indirizzo varchar(50) not null,
+	Città varchar(30) not null,
+	Provincia varchar(30) not null,
+	CAP char(4) not null,
+	primary key (Id),
+	unique (Codice fiscale, Partita IVA));
+
+create table Contratto di vendita (
+	Numero  not null,
+	Trasporto char(5),
+	Data date not null,
+	Importo complessivo float(10) not null,
+	Modalit. pagamento float(7) not null,
+	Cliente numeric(6) not null,
+	primary key (Numero),
+	unique (Trasporto));
+
+create table Corriere (
+	Partita IVA char(11) not null,
+	Ragione sociale varchar(30) not null,
+	Indirizzo varchar(50) not null,
+	Città varchar(30) not null,
+	Provincia varchar(30) not null,
+	CAP char(5) not null,
+	Recapito1 varchar(12) not null,
+	Recapito2 varchar(12),
+	Indirizzo e-mail1 varchar(50) not null,
+	Indirizzo e-mail2 varchar(50),
+	primary key (Partita IVA));
+
+create table dotazione (
+	Optional char(5) not null,
+	Veicolo numeric(6) not null,
+	primary key (Veicolo, Optional));
+
+create table Fattura di acquisto (
+	Fornitore char(11) not null,
+	Numero numeric(5) not null,
+	Ordine numeric(6) not null,
+	Data date not null,
+	Importo complessivo float(10) not null,
+	Mod. Pagamento Fornitore char(11) not null,
+	Mod. Pagamento Da float(7) not null,
+	primary key (Fornitore, Numero),
+	unique (Ordine));
+
+create table Fornitore (
+	Partita IVA char(11) not null,
+	Tipo fornitore char(1) not null,
+	Ragione Sociale varchar(50) not null,
+	Recapito1 varchar(12) not null,
+	Recapito2 varchar(12),
+	Indirizzo e-mail1 varchar(50) not null,
+	Indirizzo e-mail2 varchar(50),
+	Indirizzo varchar(50) not null,
+	Città varchar(30) not null,
+	Provincia varchar(30) not null,
+	CAP char(5) not null,
+	primary key (Partita IVA));
+
+create table Giacenza (
+	Ricambio char(5) not null,
+	Numero  not null,
+	Data date not null,
+	Quantità numeric(4) not null,
+	Causale varchar(255) not null,
+	primary key (Ricambio, Numero));
+
+create table Modalità di pagamento (
+	Fornitore char(11) not null,
+	Da float(7) not null,
+	A float(10) not null,
+	Periodicità varchar(10) not null,
+	Tasso interesse float(5) not null,
+	Numero rate numeric(2) not null,
+	primary key (Fornitore, Da));
+
+create table Modello veicolo (
+	Nome varchar(20) not null,
+	Anno date not null,
+	Fornitore char(11) not null,
+	primary key (Nome, Anno));
+
+create table Nostre modalit. di pagamento (
+	Da float(7) not null,
+	A float(10) not null,
+	Periodicità varchar(10) not null,
+	Tasso interesse float(5) not null,
+	Numero rate numeric(2) not null,
+	primary key (Da));
+
+create table Optional (
+	Codice char(5) not null,
+	Nome varchar(30) not null,
+	Descrizione varchar(255) not null,
+	Prezzo float(7) not null,
+	primary key (Codice));
+
+create table Ordine (
+	Id  not null,
+	Tipo ordine char not null,
+	Data ordine date not null,
+	Data consegna prevista date not null,
+	Data consegna date,
+	Fornitore char(11) not null,
+	primary key (Id));
+
+create table ordine ricambio (
+	Ordine numeric(6) not null,
+	Ricambio char(5) not null,
+	Quantità numeric(3) not null,
+	Prezzo unitario float(7) not null,
+	primary key (Ordine, Ricambio));
+
+create table ordine veicolo (
+	Veicolo numeric(6) not null,
+	Prezzo fornitore float(10) not null,
+	Ordine numeric(6) not null,
+	primary key (Veicolo));
+
+create table Rata (
+	Fornitore fattura char(11) not null,
+	Numero fattura numeric(5) not null,
+	Scadenza date not null,
+	Importo float(10) not null,
+	Data pagamento date,
+	primary key (Fornitore fattura, Numero fattura, Scadenza));
+
+create table Rata cliente (
+	Contratto numeric(5) not null,
+	Scadenza date not null,
+	Importo float(10) not null,
+	Data pagamento date,
+	primary key (Contratto, Scadenza));
+
+create table referenza (
+	Veicolo catalogo char(5) not null,
+	Ricambio char(5) not null,
+	primary key (Veicolo catalogo, Ricambio));
+
+create table Revisione (
+	Veicolo Venduto numeric(6) not null,
+	Numero  not null,
+	Scadenza date not null,
+	Data esecuzione date,
+	primary key (Veicolo Venduto, Numero));
+
+create table Ricambio (
+	Codice char(5) not null,
+	Nome varchar(30) not null,
+	Descrizione varchar(255) not null,
+	Prezzo/u riparazione float(7) not null,
+	Tipo ricambio char(1) not null,
+	Fornitore char(11) not null,
+	primary key (Codice));
+
+create table Riparazione (
+	Veicolo numeric(6) not null,
+	Numero  not null,
+	Data date not null,
+	Importo complessivo float(7) not null,
+	primary key (Veicolo, Numero));
+
+create table supporto (
+	Veicolo catalogo char(5) not null,
+	Optional char(5) not null,
+	primary key (Optional, Veicolo catalogo));
+
+create table Trasporto (
+	Codice char(5) not null,
+	Costo float(7),
+	Data consegna prevista date not null,
+	Data consegna date,
+	Indirizzo consegna varchar(50) not null,
+	Città consegna varchar(30) not null,
+	Provincia consegna varchar(30) not null,
+	Corriere char(11),
+	primary key (Codice));
+
+create table utilizzo (
+	Ricambio char(5) not null,
+	Veicolo numeric(6) not null,
+	Numero numeric(3) not null,
+	Quantità numeric(3) not null,
+	primary key (Ricambio, Veicolo, Numero));
+
+create table Veicolo in catalogo (
+	Codice char(5) not null,
+	Prezzo base float(8) not null,
+	Potenza (KW) float(4) not null,
+	No. posti numeric(1) not null,
+	Consumi (/100km) float(4) not null,
+	Omologazione varchar(10) not null,
+	Capacit. serbatorio float(5) not null,
+	Tipo alimentazione varchar(20) not null,
+	Cilindrata float(7) not null,
+	Trazione varchar(20) not null,
+	Cambio varchar(20) not null,
+	Capienza bagagliaio (litri) float(5) not null,
+	No. porte numeric(1) not null,
+	Nome modello varchar(20) not null,
+	Anno modello date not null,
+	primary key (Codice));
+
+create table Veicolo venduto (
+	Id  not null,
+	Telaio char(17),
+	Contratto numeric(5) not null,
+	primary key (Id),
+	unique (Telaio));
+
+
+-- Constraints Section
+-- ___________________
+
+alter table Contratto di vendita add constraint FKdefinizione 
+	foreign key (Modalit. pagamento)
+	references Nostre modalit. di pagamento;
+
+alter table Contratto di vendita add constraint FKstipulazione
+	foreign key (Cliente)
+	references Cliente;
+
+alter table Cliente add constraint 
+	check(exist(select * from Contratto di vendita
+	            where Contratto di vendita.Cliente = Id));
+
+alter table Contratto di vendita add constraint FKservizio
+	foreign key (Trasporto)
+	references Trasporto;
+
+alter table Trasporto add constraint 
+	check(exist(select * from Contratto di vendita
+	            where Contratto di vendita.Trasporto = Codice));
+
+alter table dotazione add constraint FKdot_Vei
+	foreign key (Veicolo)
+	references Veicolo venduto;
+
+alter table dotazione add constraint FKdot_Opt
+	foreign key (Optional)
+	references Optional;
+
+alter table Fattura di acquisto add constraint FKdocumentare
+	foreign key (Ordine)
+	references Ordine;
+
+alter table Fattura di acquisto add constraint FKemissione
+	foreign key (Fornitore)
+	references Fornitore;
+
+alter table Fattura di acquisto add constraint FKsoggezione
+	foreign key (Mod. Pagamento Fornitore, Mod. Pagamento Da)
+	references Modalità di pagamento;
+
+alter table Giacenza add constraint FKgiacenza
+	foreign key (Ricambio)
+	references Ricambio;
+
+alter table Ricambio add constraint 
+	check(exist(select * from Giacenza
+	            where Giacenza.Ricambio = Codice));
+
+alter table Modalità di pagamento add constraint FKdefinizione
+	foreign key (Fornitore)
+	references Fornitore;
+
+alter table Fornitore add constraint 
+	check(exist(select * from Modalità di pagamento
+	            where Modalità di pagamento.Fornitore = Partita IVA));
+
+alter table Modello veicolo add constraint FKproduzione
+	foreign key (Fornitore)
+	references Fornitore;
+
+alter table Ordine add constraint FKrichiesta
+	foreign key (Fornitore)
+	references Fornitore;
+
+alter table ordine ricambio add constraint FKord_Ric
+	foreign key (Ricambio)
+	references Ricambio;
+
+alter table ordine ricambio add constraint FKord_Ord
+	foreign key (Ordine)
+	references Ordine;
+
+alter table ordine veicolo add constraint FKord_Ord
+	foreign key (Ordine)
+	references Ordine;
+
+alter table ordine veicolo add constraint FKord_Vei
+	foreign key (Veicolo)
+	references Veicolo venduto;
+
+alter table Rata add constraint FKpagamento
+	foreign key (Fornitore fattura, Numero fattura)
+	references Fattura di acquisto;
+
+alter table Rata cliente add constraint FKpagamento_cliente
+	foreign key (Contratto)
+	references Contratto di vendita;
+
+alter table referenza add constraint FKref_Ric
+	foreign key (Ricambio)
+	references Ricambio;
+
+alter table Ricambio add constraint 
+	check(exist(select * from referenza
+	            where referenza.Ricambio = Codice));
+
+alter table referenza add constraint FKref_Vei
+	foreign key (Veicolo catalogo)
+	references Veicolo in catalogo;
+
+alter table Veicolo in catalogo add constraint 
+	check(exist(select * from referenza
+	            where referenza.Veicolo catalogo = Codice));
+
+alter table Revisione add constraint FKscadenza
+	foreign key (Veicolo Venduto)
+	references Veicolo venduto;
+
+alter table Ricambio add constraint FKfornitura
+	foreign key (Fornitore)
+	references Fornitore;
+
+alter table Riparazione add constraint FKesecuzione
+	foreign key (Veicolo)
+	references Veicolo venduto;
+
+alter table supporto add constraint FKsup_Opt
+	foreign key (Optional)
+	references Optional;
+
+alter table supporto add constraint FKsup_Vei
+	foreign key (Veicolo catalogo)
+	references Veicolo in catalogo;
+
+alter table Trasporto add constraint FKesecuzione 
+	foreign key (Corriere)
+	references Corriere;
+
+alter table utilizzo add constraint FKuti_Rip
+	foreign key (Veicolo, Numero)
+	references Riparazione;
+
+alter table Riparazione add constraint 
+	check(exist(select * from utilizzo
+	            where utilizzo.Veicolo = Veicolo and utilizzo.Numero = Numero));
+
+alter table utilizzo add constraint FKuti_Ric
+	foreign key (Ricambio)
+	references Ricambio;
+
+alter table Veicolo in catalogo add constraint FKappartenenza
+	foreign key (Nome modello, Anno modello)
+	references Modello veicolo;
+
+alter table Veicolo venduto add constraint FKinclusione
+	foreign key (Contratto)
+	references Contratto di vendita;
+
+alter table Contratto di vendita add constraint 
+	check(exist(select * from Veicolo venduto
+	            where Veicolo venduto.Contratto = Numero));
+
+
+-- Index Section
+-- _____________
+

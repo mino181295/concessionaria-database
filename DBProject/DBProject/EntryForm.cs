@@ -459,6 +459,8 @@ namespace DBProject
             f.Fornitore_Partita_IVA = this.comboBox1.SelectedValue.ToString();
             f.Mod_Pagamento_Da = convertStringFloat(this.comboBox22.SelectedValue.ToString());
 
+
+
             try
             {
                 if (!(isInt(f.Numero) &&
