@@ -43,5 +43,17 @@ namespace DBProject.Properties {
                 return ((string)(this["ProgettoDB16ConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Paolo\\Desktop\\dbproj" +
+            "ect-1617\\ProgettoDB-1617\\database\\DBProject1617.mdf;Integrated Security=True;Con" +
+            "nect Timeout=30")]
+        public string DBProject1617ConnectionString {
+            get {
+                return ((string)(this["DBProject1617ConnectionString"]));
+            }
+        }
     }
 }

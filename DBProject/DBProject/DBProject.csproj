@@ -52,6 +52,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataClasses.dbml</DependentUpon>
     </Compile>
+    <Compile Include="DBProject1617DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBProject1617DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="EntryButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -66,11 +71,6 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ProgettoDB16DataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ProgettoDB16DataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -92,16 +92,16 @@
       <LastGenOutput>DataClasses.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="ProgettoDB16DataSet.xsc">
-      <DependentUpon>ProgettoDB16DataSet.xsd</DependentUpon>
+    <None Include="DBProject1617DataSet.xsc">
+      <DependentUpon>DBProject1617DataSet.xsd</DependentUpon>
     </None>
-    <None Include="ProgettoDB16DataSet.xsd">
+    <None Include="DBProject1617DataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>ProgettoDB16DataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>DBProject1617DataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="ProgettoDB16DataSet.xss">
-      <DependentUpon>ProgettoDB16DataSet.xsd</DependentUpon>
+    <None Include="DBProject1617DataSet.xss">
+      <DependentUpon>DBProject1617DataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

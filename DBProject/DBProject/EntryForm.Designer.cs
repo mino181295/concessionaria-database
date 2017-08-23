@@ -49,10 +49,8 @@ namespace DBProject
             this.textBoxFornEmail2 = new System.Windows.Forms.TextBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.label97 = new System.Windows.Forms.Label();
             this.textBoxFornRec1 = new System.Windows.Forms.TextBox();
             this.label96 = new System.Windows.Forms.Label();
-            this.textBoxFornRec3 = new System.Windows.Forms.TextBox();
             this.textBoxFornRec2 = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.textBoxFornCitta = new System.Windows.Forms.TextBox();
@@ -67,8 +65,6 @@ namespace DBProject
             this.addFatturaPanel = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.comboBox22 = new System.Windows.Forms.ComboBox();
-            this.modalitadipagamentoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.progettoDB16DataSet = new DBProject.ProgettoDB16DataSet();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.submitFatturaBtn = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
@@ -78,8 +74,6 @@ namespace DBProject
             this.label5 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.fornitoreBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.fornitoreBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.addModalitaPagPanel = new System.Windows.Forms.Panel();
             this.groupBox20 = new System.Windows.Forms.GroupBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -182,9 +176,7 @@ namespace DBProject
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.dateTimePicker9 = new System.Windows.Forms.DateTimePicker();
             this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.nostremodalitadipagamentoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.textBox21 = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
@@ -202,11 +194,9 @@ namespace DBProject
             this.label35 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
             this.comboBox8 = new System.Windows.Forms.ComboBox();
-            this.contrattodivenditaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.label31 = new System.Windows.Forms.Label();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.corriereBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label29 = new System.Windows.Forms.Label();
             this.textBox25 = new System.Windows.Forms.TextBox();
             this.textBox26 = new System.Windows.Forms.TextBox();
@@ -215,9 +205,7 @@ namespace DBProject
             this.label34 = new System.Windows.Forms.Label();
             this.addPerfPanel = new System.Windows.Forms.Panel();
             this.comboOrdine = new System.Windows.Forms.ComboBox();
-            this.ordineBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.comboTrasporto = new System.Windows.Forms.ComboBox();
-            this.trasportoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
             this.label47 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
@@ -225,9 +213,7 @@ namespace DBProject
             this.comboFornitore = new System.Windows.Forms.ComboBox();
             this.label126 = new System.Windows.Forms.Label();
             this.comboFattura = new System.Windows.Forms.ComboBox();
-            this.fatturadiacquistoBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.comboContratto = new System.Windows.Forms.ComboBox();
-            this.contrattodivenditaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.textBox29 = new System.Windows.Forms.TextBox();
             this.label41 = new System.Windows.Forms.Label();
             this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
@@ -235,7 +221,6 @@ namespace DBProject
             this.contratto_AddPagLabel = new System.Windows.Forms.Label();
             this.addRiparazionePanel = new System.Windows.Forms.Panel();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.veicolovendutoBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
             this.label45 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
@@ -245,12 +230,10 @@ namespace DBProject
             this.textBox43 = new System.Windows.Forms.TextBox();
             this.addUtilizzoRicambioRipPanel = new System.Windows.Forms.Panel();
             this.comboBox25 = new System.Windows.Forms.ComboBox();
-            this.riparazioneBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label120 = new System.Windows.Forms.Label();
             this.comboBox11 = new System.Windows.Forms.ComboBox();
             this.label54 = new System.Windows.Forms.Label();
             this.comboBox10 = new System.Windows.Forms.ComboBox();
-            this.ricambioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label21 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.textBox16 = new System.Windows.Forms.TextBox();
@@ -287,7 +270,6 @@ namespace DBProject
             this.label65 = new System.Windows.Forms.Label();
             this.label118 = new System.Windows.Forms.Label();
             this.comboBox14 = new System.Windows.Forms.ComboBox();
-            this.modelloveicoloBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label117 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.label75 = new System.Windows.Forms.Label();
@@ -336,11 +318,8 @@ namespace DBProject
             this.addOptToVeicPanel = new System.Windows.Forms.Panel();
             this.comboRic = new System.Windows.Forms.ComboBox();
             this.comboVeicCat = new System.Windows.Forms.ComboBox();
-            this.veicoloincatalogoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.comboOpt = new System.Windows.Forms.ComboBox();
-            this.optionalBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.comboVeicVend = new System.Windows.Forms.ComboBox();
-            this.veicolovendutoBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.label84 = new System.Windows.Forms.Label();
             this.label87 = new System.Windows.Forms.Label();
             this.addVenditaPanel = new System.Windows.Forms.Panel();
@@ -358,7 +337,6 @@ namespace DBProject
             this.dateTimePicker8 = new System.Windows.Forms.DateTimePicker();
             this.label89 = new System.Windows.Forms.Label();
             this.comboBox21 = new System.Windows.Forms.ComboBox();
-            this.veicolovendutoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label93 = new System.Windows.Forms.Label();
             this.addOrdinePanel = new System.Windows.Forms.Panel();
             this.groupBox24 = new System.Windows.Forms.GroupBox();
@@ -366,7 +344,6 @@ namespace DBProject
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.comboBox30 = new System.Windows.Forms.ComboBox();
-            this.fatturadiacquistoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label123 = new System.Windows.Forms.Label();
             this.comboBox29 = new System.Windows.Forms.ComboBox();
             this.groupBox22 = new System.Windows.Forms.GroupBox();
@@ -389,29 +366,11 @@ namespace DBProject
             this.label130 = new System.Windows.Forms.Label();
             this.addEsecRevPanel = new System.Windows.Forms.Panel();
             this.comboBox27 = new System.Windows.Forms.ComboBox();
-            this.revisioneBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label125 = new System.Windows.Forms.Label();
             this.comboBox26 = new System.Windows.Forms.ComboBox();
             this.dateTimePicker7 = new System.Windows.Forms.DateTimePicker();
             this.label94 = new System.Windows.Forms.Label();
             this.label124 = new System.Windows.Forms.Label();
-            this.ricambioTableAdapter = new DBProject.ProgettoDB16DataSetTableAdapters.RicambioTableAdapter();
-            this.contratto_di_venditaTableAdapter = new DBProject.ProgettoDB16DataSetTableAdapters.Contratto_di_venditaTableAdapter();
-            this.veicolo_vendutoTableAdapter = new DBProject.ProgettoDB16DataSetTableAdapters.Veicolo_vendutoTableAdapter();
-            this.revisioneTableAdapter = new DBProject.ProgettoDB16DataSetTableAdapters.RevisioneTableAdapter();
-            this.trasportoTableAdapter = new DBProject.ProgettoDB16DataSetTableAdapters.TrasportoTableAdapter();
-            this.corriereTableAdapter = new DBProject.ProgettoDB16DataSetTableAdapters.CorriereTableAdapter();
-            this.fornitoreTableAdapter = new DBProject.ProgettoDB16DataSetTableAdapters.FornitoreTableAdapter();
-            this.veicolo_in_catalogoTableAdapter = new DBProject.ProgettoDB16DataSetTableAdapters.Veicolo_in_catalogoTableAdapter();
-            this.ordineTableAdapter = new DBProject.ProgettoDB16DataSetTableAdapters.OrdineTableAdapter();
-            this.optionalTableAdapter = new DBProject.ProgettoDB16DataSetTableAdapters.OptionalTableAdapter();
-            this.modello_veicoloTableAdapter = new DBProject.ProgettoDB16DataSetTableAdapters.Modello_veicoloTableAdapter();
-            this.riparazioneTableAdapter = new DBProject.ProgettoDB16DataSetTableAdapters.RiparazioneTableAdapter();
-            this.fattura_di_acquistoTableAdapter = new DBProject.ProgettoDB16DataSetTableAdapters.Fattura_di_acquistoTableAdapter();
-            this.modalita_di_pagamentoTableAdapter = new DBProject.ProgettoDB16DataSetTableAdapters.Modalita_di_pagamentoTableAdapter();
-            this.clienteTableAdapter = new DBProject.ProgettoDB16DataSetTableAdapters.ClienteTableAdapter();
-            this.nostre_modalita_di_pagamentoTableAdapter = new DBProject.ProgettoDB16DataSetTableAdapters.Nostre_modalita_di_pagamentoTableAdapter();
-            this.tableAdapterManager = new DBProject.ProgettoDB16DataSetTableAdapters.TableAdapterManager();
             this.addFornitorePanel.SuspendLayout();
             this.groupBox11.SuspendLayout();
             this.groupBox10.SuspendLayout();
@@ -419,10 +378,6 @@ namespace DBProject
             this.groupBox8.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.addFatturaPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.modalitadipagamentoBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.progettoDB16DataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fornitoreBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fornitoreBindingSource1)).BeginInit();
             this.addModalitaPagPanel.SuspendLayout();
             this.groupBox20.SuspendLayout();
             this.groupBox19.SuspendLayout();
@@ -439,48 +394,30 @@ namespace DBProject
             this.groupBox13.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.addContrattoPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nostremodalitadipagamentoBindingSource)).BeginInit();
             this.addTrasportoPanel.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.contrattodivenditaBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.corriereBindingSource)).BeginInit();
             this.addPerfPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ordineBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trasportoBindingSource)).BeginInit();
             this.addPagamentoPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.fatturadiacquistoBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.contrattodivenditaBindingSource)).BeginInit();
             this.addRiparazionePanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.veicolovendutoBindingSource1)).BeginInit();
             this.addUtilizzoRicambioRipPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.riparazioneBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ricambioBindingSource)).BeginInit();
             this.addRicambioPanel.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.addGiacenzaPanel.SuspendLayout();
             this.addVeicoloPanel.SuspendLayout();
             this.groupBox21.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.modelloveicoloBindingSource)).BeginInit();
             this.groupBox6.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.addModelloPanel.SuspendLayout();
             this.addOptionalPanel.SuspendLayout();
             this.addOptToVeicPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.veicoloincatalogoBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.optionalBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.veicolovendutoBindingSource2)).BeginInit();
             this.addVenditaPanel.SuspendLayout();
             this.addRevisionePanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.veicolovendutoBindingSource)).BeginInit();
             this.addOrdinePanel.SuspendLayout();
             this.groupBox24.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.fatturadiacquistoBindingSource)).BeginInit();
             this.groupBox22.SuspendLayout();
             this.groupBox23.SuspendLayout();
             this.addVeicRicToOrdinePanel.SuspendLayout();
             this.addEsecRevPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.revisioneBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // addFornitorePanel
@@ -517,6 +454,7 @@ namespace DBProject
             // textBoxFornPIVA
             // 
             this.textBoxFornPIVA.Location = new System.Drawing.Point(174, 25);
+            this.textBoxFornPIVA.MaxLength = 11;
             this.textBoxFornPIVA.Name = "textBoxFornPIVA";
             this.textBoxFornPIVA.Size = new System.Drawing.Size(188, 20);
             this.textBoxFornPIVA.TabIndex = 1;
@@ -524,6 +462,7 @@ namespace DBProject
             // textBoxFornRagSoc
             // 
             this.textBoxFornRagSoc.Location = new System.Drawing.Point(173, 51);
+            this.textBoxFornRagSoc.MaxLength = 50;
             this.textBoxFornRagSoc.Name = "textBoxFornRagSoc";
             this.textBoxFornRagSoc.Size = new System.Drawing.Size(188, 20);
             this.textBoxFornRagSoc.TabIndex = 2;
@@ -585,7 +524,7 @@ namespace DBProject
             this.groupBox9.Controls.Add(this.textBoxFornEmail1);
             this.groupBox9.Controls.Add(this.label100);
             this.groupBox9.Controls.Add(this.textBoxFornEmail2);
-            this.groupBox9.Location = new System.Drawing.Point(45, 273);
+            this.groupBox9.Location = new System.Drawing.Point(45, 246);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Size = new System.Drawing.Size(366, 82);
             this.groupBox9.TabIndex = 6;
@@ -604,6 +543,7 @@ namespace DBProject
             // textBoxFornEmail1
             // 
             this.textBoxFornEmail1.Location = new System.Drawing.Point(174, 19);
+            this.textBoxFornEmail1.MaxLength = 50;
             this.textBoxFornEmail1.Name = "textBoxFornEmail1";
             this.textBoxFornEmail1.Size = new System.Drawing.Size(188, 20);
             this.textBoxFornEmail1.TabIndex = 6;
@@ -620,6 +560,7 @@ namespace DBProject
             // textBoxFornEmail2
             // 
             this.textBoxFornEmail2.Location = new System.Drawing.Point(173, 45);
+            this.textBoxFornEmail2.MaxLength = 50;
             this.textBoxFornEmail2.Name = "textBoxFornEmail2";
             this.textBoxFornEmail2.Size = new System.Drawing.Size(188, 20);
             this.textBoxFornEmail2.TabIndex = 7;
@@ -628,14 +569,12 @@ namespace DBProject
             // 
             this.groupBox8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox8.Controls.Add(this.label3);
-            this.groupBox8.Controls.Add(this.label97);
             this.groupBox8.Controls.Add(this.textBoxFornRec1);
             this.groupBox8.Controls.Add(this.label96);
-            this.groupBox8.Controls.Add(this.textBoxFornRec3);
             this.groupBox8.Controls.Add(this.textBoxFornRec2);
             this.groupBox8.Location = new System.Drawing.Point(45, 146);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(366, 111);
+            this.groupBox8.Size = new System.Drawing.Size(366, 84);
             this.groupBox8.TabIndex = 3;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Recapiti";
@@ -649,18 +588,10 @@ namespace DBProject
             this.label3.TabIndex = 6;
             this.label3.Text = "Principale";
             // 
-            // label97
-            // 
-            this.label97.AutoSize = true;
-            this.label97.Location = new System.Drawing.Point(13, 74);
-            this.label97.Name = "label97";
-            this.label97.Size = new System.Drawing.Size(46, 13);
-            this.label97.TabIndex = 13;
-            this.label97.Text = "Ulteriore";
-            // 
             // textBoxFornRec1
             // 
             this.textBoxFornRec1.Location = new System.Drawing.Point(174, 21);
+            this.textBoxFornRec1.MaxLength = 12;
             this.textBoxFornRec1.Name = "textBoxFornRec1";
             this.textBoxFornRec1.Size = new System.Drawing.Size(188, 20);
             this.textBoxFornRec1.TabIndex = 3;
@@ -674,16 +605,10 @@ namespace DBProject
             this.label96.TabIndex = 11;
             this.label96.Text = "Secondario";
             // 
-            // textBoxFornRec3
-            // 
-            this.textBoxFornRec3.Location = new System.Drawing.Point(173, 73);
-            this.textBoxFornRec3.Name = "textBoxFornRec3";
-            this.textBoxFornRec3.Size = new System.Drawing.Size(188, 20);
-            this.textBoxFornRec3.TabIndex = 5;
-            // 
             // textBoxFornRec2
             // 
             this.textBoxFornRec2.Location = new System.Drawing.Point(173, 47);
+            this.textBoxFornRec2.MaxLength = 12;
             this.textBoxFornRec2.Name = "textBoxFornRec2";
             this.textBoxFornRec2.Size = new System.Drawing.Size(188, 20);
             this.textBoxFornRec2.TabIndex = 4;
@@ -709,6 +634,7 @@ namespace DBProject
             // textBoxFornCitta
             // 
             this.textBoxFornCitta.Location = new System.Drawing.Point(174, 44);
+            this.textBoxFornCitta.MaxLength = 30;
             this.textBoxFornCitta.Name = "textBoxFornCitta";
             this.textBoxFornCitta.Size = new System.Drawing.Size(188, 20);
             this.textBoxFornCitta.TabIndex = 9;
@@ -725,6 +651,7 @@ namespace DBProject
             // textBoxFornProvincia
             // 
             this.textBoxFornProvincia.Location = new System.Drawing.Point(174, 71);
+            this.textBoxFornProvincia.MaxLength = 30;
             this.textBoxFornProvincia.Name = "textBoxFornProvincia";
             this.textBoxFornProvincia.Size = new System.Drawing.Size(188, 20);
             this.textBoxFornProvincia.TabIndex = 10;
@@ -732,6 +659,7 @@ namespace DBProject
             // textBoxFornIndirizzo
             // 
             this.textBoxFornIndirizzo.Location = new System.Drawing.Point(174, 18);
+            this.textBoxFornIndirizzo.MaxLength = 50;
             this.textBoxFornIndirizzo.Name = "textBoxFornIndirizzo";
             this.textBoxFornIndirizzo.Size = new System.Drawing.Size(188, 20);
             this.textBoxFornIndirizzo.TabIndex = 8;
@@ -739,6 +667,7 @@ namespace DBProject
             // textBoxFornCAP
             // 
             this.textBoxFornCAP.Location = new System.Drawing.Point(174, 96);
+            this.textBoxFornCAP.MaxLength = 5;
             this.textBoxFornCAP.Name = "textBoxFornCAP";
             this.textBoxFornCAP.Size = new System.Drawing.Size(92, 20);
             this.textBoxFornCAP.TabIndex = 11;
@@ -824,16 +753,6 @@ namespace DBProject
             this.comboBox22.Size = new System.Drawing.Size(191, 21);
             this.comboBox22.TabIndex = 5;
             this.comboBox22.DropDown += new System.EventHandler(this.comboBox22_DropDown);
-            // 
-            // modalitadipagamentoBindingSource
-            // 
-            this.modalitadipagamentoBindingSource.DataMember = "Modalita_di_pagamento";
-            this.modalitadipagamentoBindingSource.DataSource = this.progettoDB16DataSet;
-            // 
-            // progettoDB16DataSet
-            // 
-            this.progettoDB16DataSet.DataSetName = "ProgettoDB16DataSet";
-            this.progettoDB16DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // dateTimePicker1
             // 
@@ -922,16 +841,6 @@ namespace DBProject
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(192, 20);
             this.textBox5.TabIndex = 1;
-            // 
-            // fornitoreBindingSource
-            // 
-            this.fornitoreBindingSource.DataMember = "Fornitore";
-            this.fornitoreBindingSource.DataSource = this.progettoDB16DataSet;
-            // 
-            // fornitoreBindingSource1
-            // 
-            this.fornitoreBindingSource1.DataMember = "Fornitore";
-            this.fornitoreBindingSource1.DataSource = this.progettoDB16DataSet;
             // 
             // addModalitaPagPanel
             // 
@@ -1075,8 +984,7 @@ namespace DBProject
             // fornAddModPagComboBox
             // 
             this.fornAddModPagComboBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.fornAddModPagComboBox.DataSource = this.fornitoreBindingSource;
-            this.fornAddModPagComboBox.DisplayMember = "Ragione_Sociale";
+            this.fornAddModPagComboBox.DisplayMember = "Partita_IVA";
             this.fornAddModPagComboBox.FormattingEnabled = true;
             this.fornAddModPagComboBox.Location = new System.Drawing.Point(417, 53);
             this.fornAddModPagComboBox.Name = "fornAddModPagComboBox";
@@ -1965,24 +1873,15 @@ namespace DBProject
             // comboBox6
             // 
             this.comboBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox6.DataSource = this.clienteBindingSource;
-            this.comboBox6.DisplayMember = "PartitaIVA_CodiceFiscale";
             this.comboBox6.FormattingEnabled = true;
             this.comboBox6.Location = new System.Drawing.Point(415, 247);
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(183, 21);
             this.comboBox6.TabIndex = 4;
-            this.comboBox6.ValueMember = "PartitaIVA_CodiceFiscale";
-            // 
-            // clienteBindingSource
-            // 
-            this.clienteBindingSource.DataMember = "Cliente";
-            this.clienteBindingSource.DataSource = this.progettoDB16DataSet;
             // 
             // comboBox5
             // 
             this.comboBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox5.DataSource = this.nostremodalitadipagamentoBindingSource;
             this.comboBox5.DisplayMember = "Da";
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Location = new System.Drawing.Point(416, 303);
@@ -1990,11 +1889,6 @@ namespace DBProject
             this.comboBox5.Size = new System.Drawing.Size(183, 21);
             this.comboBox5.TabIndex = 5;
             this.comboBox5.ValueMember = "Da";
-            // 
-            // nostremodalitadipagamentoBindingSource
-            // 
-            this.nostremodalitadipagamentoBindingSource.DataMember = "Nostre_modalita_di_pagamento";
-            this.nostremodalitadipagamentoBindingSource.DataSource = this.progettoDB16DataSet;
             // 
             // textBox21
             // 
@@ -2161,7 +2055,6 @@ namespace DBProject
             // comboBox8
             // 
             this.comboBox8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox8.DataSource = this.contrattodivenditaBindingSource1;
             this.comboBox8.DisplayMember = "Numero";
             this.comboBox8.FormattingEnabled = true;
             this.comboBox8.ItemHeight = 13;
@@ -2170,11 +2063,6 @@ namespace DBProject
             this.comboBox8.Size = new System.Drawing.Size(183, 21);
             this.comboBox8.TabIndex = 2;
             this.comboBox8.ValueMember = "Numero";
-            // 
-            // contrattodivenditaBindingSource1
-            // 
-            this.contrattodivenditaBindingSource1.DataMember = "Contratto_di_vendita";
-            this.contrattodivenditaBindingSource1.DataSource = this.progettoDB16DataSet;
             // 
             // label31
             // 
@@ -2197,8 +2085,7 @@ namespace DBProject
             // comboBox7
             // 
             this.comboBox7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox7.DataSource = this.corriereBindingSource;
-            this.comboBox7.DisplayMember = "Ragione_sociale";
+            this.comboBox7.DisplayMember = "Partita_IVA";
             this.comboBox7.FormattingEnabled = true;
             this.comboBox7.ItemHeight = 13;
             this.comboBox7.Location = new System.Drawing.Point(198, 234);
@@ -2206,11 +2093,6 @@ namespace DBProject
             this.comboBox7.Size = new System.Drawing.Size(183, 21);
             this.comboBox7.TabIndex = 3;
             this.comboBox7.ValueMember = "Partita_IVA";
-            // 
-            // corriereBindingSource
-            // 
-            this.corriereBindingSource.DataMember = "Corriere";
-            this.corriereBindingSource.DataSource = this.progettoDB16DataSet;
             // 
             // label29
             // 
@@ -2288,7 +2170,6 @@ namespace DBProject
             // comboOrdine
             // 
             this.comboOrdine.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboOrdine.DataSource = this.ordineBindingSource;
             this.comboOrdine.DisplayMember = "ID_ordine";
             this.comboOrdine.FormattingEnabled = true;
             this.comboOrdine.Location = new System.Drawing.Point(426, 114);
@@ -2297,15 +2178,9 @@ namespace DBProject
             this.comboOrdine.TabIndex = 5;
             this.comboOrdine.ValueMember = "ID_ordine";
             // 
-            // ordineBindingSource
-            // 
-            this.ordineBindingSource.DataMember = "Ordine";
-            this.ordineBindingSource.DataSource = this.progettoDB16DataSet;
-            // 
             // comboTrasporto
             // 
             this.comboTrasporto.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboTrasporto.DataSource = this.trasportoBindingSource;
             this.comboTrasporto.DisplayMember = "Codice";
             this.comboTrasporto.FormattingEnabled = true;
             this.comboTrasporto.Location = new System.Drawing.Point(426, 114);
@@ -2313,11 +2188,6 @@ namespace DBProject
             this.comboTrasporto.Size = new System.Drawing.Size(121, 21);
             this.comboTrasporto.TabIndex = 4;
             this.comboTrasporto.ValueMember = "Codice";
-            // 
-            // trasportoBindingSource
-            // 
-            this.trasportoBindingSource.DataMember = "Trasporto";
-            this.trasportoBindingSource.DataSource = this.progettoDB16DataSet;
             // 
             // dateTimePicker3
             // 
@@ -2371,8 +2241,7 @@ namespace DBProject
             // comboFornitore
             // 
             this.comboFornitore.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboFornitore.DataSource = this.fornitoreBindingSource;
-            this.comboFornitore.DisplayMember = "Ragione_Sociale";
+            this.comboFornitore.DisplayMember = "Partita_IVA";
             this.comboFornitore.FormattingEnabled = true;
             this.comboFornitore.Location = new System.Drawing.Point(413, 89);
             this.comboFornitore.Name = "comboFornitore";
@@ -2393,7 +2262,6 @@ namespace DBProject
             // comboFattura
             // 
             this.comboFattura.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboFattura.DataSource = this.fatturadiacquistoBindingSource1;
             this.comboFattura.DisplayMember = "Numero";
             this.comboFattura.FormattingEnabled = true;
             this.comboFattura.Location = new System.Drawing.Point(414, 160);
@@ -2402,15 +2270,9 @@ namespace DBProject
             this.comboFattura.TabIndex = 14;
             this.comboFattura.ValueMember = "Numero";
             // 
-            // fatturadiacquistoBindingSource1
-            // 
-            this.fatturadiacquistoBindingSource1.DataMember = "Fattura_di_acquisto";
-            this.fatturadiacquistoBindingSource1.DataSource = this.progettoDB16DataSet;
-            // 
             // comboContratto
             // 
             this.comboContratto.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboContratto.DataSource = this.contrattodivenditaBindingSource;
             this.comboContratto.DisplayMember = "Numero";
             this.comboContratto.FormattingEnabled = true;
             this.comboContratto.Location = new System.Drawing.Point(414, 160);
@@ -2418,11 +2280,6 @@ namespace DBProject
             this.comboContratto.Size = new System.Drawing.Size(186, 21);
             this.comboContratto.TabIndex = 1;
             this.comboContratto.ValueMember = "Numero";
-            // 
-            // contrattodivenditaBindingSource
-            // 
-            this.contrattodivenditaBindingSource.DataMember = "Contratto_di_vendita";
-            this.contrattodivenditaBindingSource.DataSource = this.progettoDB16DataSet;
             // 
             // textBox29
             // 
@@ -2492,7 +2349,6 @@ namespace DBProject
             // comboBox2
             // 
             this.comboBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox2.DataSource = this.veicolovendutoBindingSource1;
             this.comboBox2.DisplayMember = "Numero_telaio";
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(410, 85);
@@ -2500,11 +2356,6 @@ namespace DBProject
             this.comboBox2.Size = new System.Drawing.Size(188, 21);
             this.comboBox2.TabIndex = 1;
             this.comboBox2.ValueMember = "Numero_telaio";
-            // 
-            // veicolovendutoBindingSource1
-            // 
-            this.veicolovendutoBindingSource1.DataMember = "Veicolo_venduto";
-            this.veicolovendutoBindingSource1.DataSource = this.progettoDB16DataSet;
             // 
             // dateTimePicker5
             // 
@@ -2592,7 +2443,6 @@ namespace DBProject
             // comboBox25
             // 
             this.comboBox25.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox25.DataSource = this.riparazioneBindingSource;
             this.comboBox25.DisplayMember = "Veicolo_Numero_telaio";
             this.comboBox25.FormattingEnabled = true;
             this.comboBox25.Location = new System.Drawing.Point(406, 79);
@@ -2600,11 +2450,6 @@ namespace DBProject
             this.comboBox25.Size = new System.Drawing.Size(188, 21);
             this.comboBox25.TabIndex = 1;
             this.comboBox25.ValueMember = "Veicolo_Numero_telaio";
-            // 
-            // riparazioneBindingSource
-            // 
-            this.riparazioneBindingSource.DataMember = "Riparazione";
-            this.riparazioneBindingSource.DataSource = this.progettoDB16DataSet;
             // 
             // label120
             // 
@@ -2619,7 +2464,6 @@ namespace DBProject
             // comboBox11
             // 
             this.comboBox11.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox11.DataSource = this.riparazioneBindingSource;
             this.comboBox11.DisplayMember = "Numero";
             this.comboBox11.FormattingEnabled = true;
             this.comboBox11.Location = new System.Drawing.Point(406, 125);
@@ -2641,7 +2485,6 @@ namespace DBProject
             // comboBox10
             // 
             this.comboBox10.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox10.DataSource = this.ricambioBindingSource;
             this.comboBox10.DisplayMember = "Codice";
             this.comboBox10.FormattingEnabled = true;
             this.comboBox10.Location = new System.Drawing.Point(406, 172);
@@ -2649,11 +2492,6 @@ namespace DBProject
             this.comboBox10.Size = new System.Drawing.Size(188, 21);
             this.comboBox10.TabIndex = 3;
             this.comboBox10.ValueMember = "Codice";
-            // 
-            // ricambioBindingSource
-            // 
-            this.ricambioBindingSource.DataMember = "Ricambio";
-            this.ricambioBindingSource.DataSource = this.progettoDB16DataSet;
             // 
             // label21
             // 
@@ -2717,7 +2555,6 @@ namespace DBProject
             // comboBox13
             // 
             this.comboBox13.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox13.DataSource = this.fornitoreBindingSource;
             this.comboBox13.DisplayMember = "Partita_IVA";
             this.comboBox13.FormattingEnabled = true;
             this.comboBox13.Location = new System.Drawing.Point(416, 207);
@@ -2899,7 +2736,6 @@ namespace DBProject
             // comboBox12
             // 
             this.comboBox12.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox12.DataSource = this.ricambioBindingSource;
             this.comboBox12.DisplayMember = "Codice";
             this.comboBox12.FormattingEnabled = true;
             this.comboBox12.Location = new System.Drawing.Point(416, 84);
@@ -2995,7 +2831,6 @@ namespace DBProject
             // 
             // comboBox24
             // 
-            this.comboBox24.DataSource = this.fornitoreBindingSource;
             this.comboBox24.DisplayMember = "Partita_IVA";
             this.comboBox24.FormattingEnabled = true;
             this.comboBox24.Location = new System.Drawing.Point(208, 43);
@@ -3024,7 +2859,6 @@ namespace DBProject
             // 
             // comboBox14
             // 
-            this.comboBox14.DataSource = this.modelloveicoloBindingSource;
             this.comboBox14.DisplayMember = "Nome";
             this.comboBox14.FormattingEnabled = true;
             this.comboBox14.Location = new System.Drawing.Point(208, 12);
@@ -3032,11 +2866,6 @@ namespace DBProject
             this.comboBox14.Size = new System.Drawing.Size(191, 21);
             this.comboBox14.TabIndex = 2;
             this.comboBox14.ValueMember = "Nome";
-            // 
-            // modelloveicoloBindingSource
-            // 
-            this.modelloveicoloBindingSource.DataMember = "Modello_veicolo";
-            this.modelloveicoloBindingSource.DataSource = this.progettoDB16DataSet;
             // 
             // label117
             // 
@@ -3339,7 +3168,6 @@ namespace DBProject
             // comboBox15
             // 
             this.comboBox15.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox15.DataSource = this.fornitoreBindingSource;
             this.comboBox15.DisplayMember = "Partita_IVA";
             this.comboBox15.FormattingEnabled = true;
             this.comboBox15.ItemHeight = 13;
@@ -3490,7 +3318,6 @@ namespace DBProject
             // comboRic
             // 
             this.comboRic.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboRic.DataSource = this.riparazioneBindingSource;
             this.comboRic.DisplayMember = "Codice";
             this.comboRic.FormattingEnabled = true;
             this.comboRic.Location = new System.Drawing.Point(383, 176);
@@ -3502,7 +3329,6 @@ namespace DBProject
             // comboVeicCat
             // 
             this.comboVeicCat.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboVeicCat.DataSource = this.veicoloincatalogoBindingSource;
             this.comboVeicCat.DisplayMember = "Codice";
             this.comboVeicCat.FormattingEnabled = true;
             this.comboVeicCat.Location = new System.Drawing.Point(384, 118);
@@ -3511,15 +3337,9 @@ namespace DBProject
             this.comboVeicCat.TabIndex = 17;
             this.comboVeicCat.ValueMember = "Codice";
             // 
-            // veicoloincatalogoBindingSource
-            // 
-            this.veicoloincatalogoBindingSource.DataMember = "Veicolo_in_catalogo";
-            this.veicoloincatalogoBindingSource.DataSource = this.progettoDB16DataSet;
-            // 
             // comboOpt
             // 
             this.comboOpt.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboOpt.DataSource = this.optionalBindingSource;
             this.comboOpt.DisplayMember = "Codice";
             this.comboOpt.FormattingEnabled = true;
             this.comboOpt.Location = new System.Drawing.Point(383, 176);
@@ -3528,15 +3348,9 @@ namespace DBProject
             this.comboOpt.TabIndex = 2;
             this.comboOpt.ValueMember = "Codice";
             // 
-            // optionalBindingSource
-            // 
-            this.optionalBindingSource.DataMember = "Optional";
-            this.optionalBindingSource.DataSource = this.progettoDB16DataSet;
-            // 
             // comboVeicVend
             // 
             this.comboVeicVend.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboVeicVend.DataSource = this.veicolovendutoBindingSource2;
             this.comboVeicVend.DisplayMember = "Numero_telaio";
             this.comboVeicVend.FormattingEnabled = true;
             this.comboVeicVend.Location = new System.Drawing.Point(384, 118);
@@ -3544,11 +3358,6 @@ namespace DBProject
             this.comboVeicVend.Size = new System.Drawing.Size(121, 21);
             this.comboVeicVend.TabIndex = 1;
             this.comboVeicVend.ValueMember = "Numero_telaio";
-            // 
-            // veicolovendutoBindingSource2
-            // 
-            this.veicolovendutoBindingSource2.DataMember = "Veicolo_venduto";
-            this.veicolovendutoBindingSource2.DataSource = this.progettoDB16DataSet;
             // 
             // label84
             // 
@@ -3592,7 +3401,6 @@ namespace DBProject
             // comboBox20
             // 
             this.comboBox20.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox20.DataSource = this.contrattodivenditaBindingSource;
             this.comboBox20.DisplayMember = "Numero";
             this.comboBox20.FormattingEnabled = true;
             this.comboBox20.Location = new System.Drawing.Point(399, 192);
@@ -3632,7 +3440,6 @@ namespace DBProject
             // comboBox18
             // 
             this.comboBox18.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox18.DataSource = this.ordineBindingSource;
             this.comboBox18.DisplayMember = "ID_ordine";
             this.comboBox18.FormattingEnabled = true;
             this.comboBox18.Location = new System.Drawing.Point(399, 237);
@@ -3644,7 +3451,6 @@ namespace DBProject
             // comboBox19
             // 
             this.comboBox19.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox19.DataSource = this.veicoloincatalogoBindingSource;
             this.comboBox19.DisplayMember = "Codice";
             this.comboBox19.FormattingEnabled = true;
             this.comboBox19.Location = new System.Drawing.Point(399, 147);
@@ -3728,7 +3534,6 @@ namespace DBProject
             // comboBox21
             // 
             this.comboBox21.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox21.DataSource = this.veicolovendutoBindingSource;
             this.comboBox21.DisplayMember = "Numero_telaio";
             this.comboBox21.FormattingEnabled = true;
             this.comboBox21.Location = new System.Drawing.Point(359, 157);
@@ -3736,11 +3541,6 @@ namespace DBProject
             this.comboBox21.Size = new System.Drawing.Size(121, 21);
             this.comboBox21.TabIndex = 1;
             this.comboBox21.ValueMember = "Numero_telaio";
-            // 
-            // veicolovendutoBindingSource
-            // 
-            this.veicolovendutoBindingSource.DataMember = "Veicolo_venduto";
-            this.veicolovendutoBindingSource.DataSource = this.progettoDB16DataSet;
             // 
             // label93
             // 
@@ -3809,7 +3609,6 @@ namespace DBProject
             // 
             // comboBox30
             // 
-            this.comboBox30.DataSource = this.fatturadiacquistoBindingSource;
             this.comboBox30.DisplayMember = "Fornitore_Partita_IVA";
             this.comboBox30.FormattingEnabled = true;
             this.comboBox30.Location = new System.Drawing.Point(171, 50);
@@ -3817,11 +3616,6 @@ namespace DBProject
             this.comboBox30.Size = new System.Drawing.Size(121, 21);
             this.comboBox30.TabIndex = 25;
             this.comboBox30.ValueMember = "Fornitore_Partita_IVA";
-            // 
-            // fatturadiacquistoBindingSource
-            // 
-            this.fatturadiacquistoBindingSource.DataMember = "Fattura_di_acquisto";
-            this.fatturadiacquistoBindingSource.DataSource = this.progettoDB16DataSet;
             // 
             // label123
             // 
@@ -3834,7 +3628,6 @@ namespace DBProject
             // 
             // comboBox29
             // 
-            this.comboBox29.DataSource = this.fatturadiacquistoBindingSource;
             this.comboBox29.DisplayMember = "Numero";
             this.comboBox29.FormattingEnabled = true;
             this.comboBox29.Location = new System.Drawing.Point(172, 81);
@@ -3963,7 +3756,6 @@ namespace DBProject
             // comboVeicolo
             // 
             this.comboVeicolo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboVeicolo.DataSource = this.veicoloincatalogoBindingSource;
             this.comboVeicolo.DisplayMember = "Codice";
             this.comboVeicolo.FormattingEnabled = true;
             this.comboVeicolo.Location = new System.Drawing.Point(420, 164);
@@ -3983,7 +3775,6 @@ namespace DBProject
             // comboRicambio
             // 
             this.comboRicambio.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboRicambio.DataSource = this.ordineBindingSource;
             this.comboRicambio.DisplayMember = "ID_ordine";
             this.comboRicambio.FormattingEnabled = true;
             this.comboRicambio.Location = new System.Drawing.Point(420, 164);
@@ -3995,7 +3786,6 @@ namespace DBProject
             // comboBox3
             // 
             this.comboBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox3.DataSource = this.ordineBindingSource;
             this.comboBox3.DisplayMember = "ID_ordine";
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Location = new System.Drawing.Point(420, 206);
@@ -4054,7 +3844,6 @@ namespace DBProject
             // comboBox27
             // 
             this.comboBox27.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox27.DataSource = this.revisioneBindingSource;
             this.comboBox27.DisplayMember = "Numero";
             this.comboBox27.FormattingEnabled = true;
             this.comboBox27.Location = new System.Drawing.Point(426, 167);
@@ -4062,11 +3851,6 @@ namespace DBProject
             this.comboBox27.Size = new System.Drawing.Size(121, 21);
             this.comboBox27.TabIndex = 6;
             this.comboBox27.ValueMember = "Numero";
-            // 
-            // revisioneBindingSource
-            // 
-            this.revisioneBindingSource.DataMember = "Revisione";
-            this.revisioneBindingSource.DataSource = this.progettoDB16DataSet;
             // 
             // label125
             // 
@@ -4081,7 +3865,6 @@ namespace DBProject
             // comboBox26
             // 
             this.comboBox26.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox26.DataSource = this.revisioneBindingSource;
             this.comboBox26.DisplayMember = "Veicolo_Numero_telaio";
             this.comboBox26.FormattingEnabled = true;
             this.comboBox26.Location = new System.Drawing.Point(426, 114);
@@ -4118,105 +3901,12 @@ namespace DBProject
             this.label124.TabIndex = 0;
             this.label124.Text = "Veicolo";
             // 
-            // ricambioTableAdapter
-            // 
-            this.ricambioTableAdapter.ClearBeforeFill = true;
-            // 
-            // contratto_di_venditaTableAdapter
-            // 
-            this.contratto_di_venditaTableAdapter.ClearBeforeFill = true;
-            // 
-            // veicolo_vendutoTableAdapter
-            // 
-            this.veicolo_vendutoTableAdapter.ClearBeforeFill = true;
-            // 
-            // revisioneTableAdapter
-            // 
-            this.revisioneTableAdapter.ClearBeforeFill = true;
-            // 
-            // trasportoTableAdapter
-            // 
-            this.trasportoTableAdapter.ClearBeforeFill = true;
-            // 
-            // corriereTableAdapter
-            // 
-            this.corriereTableAdapter.ClearBeforeFill = true;
-            // 
-            // fornitoreTableAdapter
-            // 
-            this.fornitoreTableAdapter.ClearBeforeFill = true;
-            // 
-            // veicolo_in_catalogoTableAdapter
-            // 
-            this.veicolo_in_catalogoTableAdapter.ClearBeforeFill = true;
-            // 
-            // ordineTableAdapter
-            // 
-            this.ordineTableAdapter.ClearBeforeFill = true;
-            // 
-            // optionalTableAdapter
-            // 
-            this.optionalTableAdapter.ClearBeforeFill = true;
-            // 
-            // modello_veicoloTableAdapter
-            // 
-            this.modello_veicoloTableAdapter.ClearBeforeFill = true;
-            // 
-            // riparazioneTableAdapter
-            // 
-            this.riparazioneTableAdapter.ClearBeforeFill = true;
-            // 
-            // fattura_di_acquistoTableAdapter
-            // 
-            this.fattura_di_acquistoTableAdapter.ClearBeforeFill = true;
-            // 
-            // modalita_di_pagamentoTableAdapter
-            // 
-            this.modalita_di_pagamentoTableAdapter.ClearBeforeFill = true;
-            // 
-            // clienteTableAdapter
-            // 
-            this.clienteTableAdapter.ClearBeforeFill = true;
-            // 
-            // nostre_modalita_di_pagamentoTableAdapter
-            // 
-            this.nostre_modalita_di_pagamentoTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.ClienteTableAdapter = this.clienteTableAdapter;
-            this.tableAdapterManager.Contratto_di_venditaTableAdapter = this.contratto_di_venditaTableAdapter;
-            this.tableAdapterManager.CorriereTableAdapter = this.corriereTableAdapter;
-            this.tableAdapterManager.diTableAdapter = null;
-            this.tableAdapterManager.Fattura_di_acquistoTableAdapter = this.fattura_di_acquistoTableAdapter;
-            this.tableAdapterManager.FornitoreTableAdapter = this.fornitoreTableAdapter;
-            this.tableAdapterManager.GiacenzaTableAdapter = null;
-            this.tableAdapterManager.Modalita_di_pagamentoTableAdapter = this.modalita_di_pagamentoTableAdapter;
-            this.tableAdapterManager.Modello_veicoloTableAdapter = this.modello_veicoloTableAdapter;
-            this.tableAdapterManager.Nostre_modalita_di_pagamentoTableAdapter = this.nostre_modalita_di_pagamentoTableAdapter;
-            this.tableAdapterManager.OptionalTableAdapter = this.optionalTableAdapter;
-            this.tableAdapterManager.OrdineTableAdapter = this.ordineTableAdapter;
-            this.tableAdapterManager.Pagamento_cAcquistoTableAdapter = null;
-            this.tableAdapterManager.Pagamento_cVenditaTableAdapter = null;
-            this.tableAdapterManager.per2TableAdapter = null;
-            this.tableAdapterManager.possessoTableAdapter = null;
-            this.tableAdapterManager.referenza2TableAdapter = null;
-            this.tableAdapterManager.RevisioneTableAdapter = this.revisioneTableAdapter;
-            this.tableAdapterManager.RicambioTableAdapter = this.ricambioTableAdapter;
-            this.tableAdapterManager.RiparazioneTableAdapter = this.riparazioneTableAdapter;
-            this.tableAdapterManager.supportoTableAdapter = null;
-            this.tableAdapterManager.TrasportoTableAdapter = this.trasportoTableAdapter;
-            this.tableAdapterManager.UpdateOrder = DBProject.ProgettoDB16DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            this.tableAdapterManager.utilizzoTableAdapter = null;
-            this.tableAdapterManager.Veicolo_in_catalogoTableAdapter = this.veicolo_in_catalogoTableAdapter;
-            this.tableAdapterManager.Veicolo_vendutoTableAdapter = this.veicolo_vendutoTableAdapter;
-            // 
             // EntryForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(839, 472);
+            this.Controls.Add(this.addFornitorePanel);
             this.Controls.Add(this.addFatturaPanel);
             this.Controls.Add(this.addContrattoPanel);
             this.Controls.Add(this.addClientePanel);
@@ -4237,7 +3927,6 @@ namespace DBProject
             this.Controls.Add(this.addRiparazionePanel);
             this.Controls.Add(this.addVeicRicToOrdinePanel);
             this.Controls.Add(this.addOrdinePanel);
-            this.Controls.Add(this.addFornitorePanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EntryForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -4255,10 +3944,6 @@ namespace DBProject
             this.groupBox2.PerformLayout();
             this.addFatturaPanel.ResumeLayout(false);
             this.addFatturaPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.modalitadipagamentoBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.progettoDB16DataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fornitoreBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fornitoreBindingSource1)).EndInit();
             this.addModalitaPagPanel.ResumeLayout(false);
             this.addModalitaPagPanel.PerformLayout();
             this.groupBox20.ResumeLayout(false);
@@ -4288,29 +3973,18 @@ namespace DBProject
             this.groupBox3.PerformLayout();
             this.addContrattoPanel.ResumeLayout(false);
             this.addContrattoPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nostremodalitadipagamentoBindingSource)).EndInit();
             this.addTrasportoPanel.ResumeLayout(false);
             this.addTrasportoPanel.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.contrattodivenditaBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.corriereBindingSource)).EndInit();
             this.addPerfPanel.ResumeLayout(false);
             this.addPerfPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ordineBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trasportoBindingSource)).EndInit();
             this.addPagamentoPanel.ResumeLayout(false);
             this.addPagamentoPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.fatturadiacquistoBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.contrattodivenditaBindingSource)).EndInit();
             this.addRiparazionePanel.ResumeLayout(false);
             this.addRiparazionePanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.veicolovendutoBindingSource1)).EndInit();
             this.addUtilizzoRicambioRipPanel.ResumeLayout(false);
             this.addUtilizzoRicambioRipPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.riparazioneBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ricambioBindingSource)).EndInit();
             this.addRicambioPanel.ResumeLayout(false);
             this.addRicambioPanel.PerformLayout();
             this.groupBox4.ResumeLayout(false);
@@ -4321,7 +3995,6 @@ namespace DBProject
             this.addVeicoloPanel.PerformLayout();
             this.groupBox21.ResumeLayout(false);
             this.groupBox21.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.modelloveicoloBindingSource)).EndInit();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
             this.groupBox5.ResumeLayout(false);
@@ -4332,18 +4005,13 @@ namespace DBProject
             this.addOptionalPanel.PerformLayout();
             this.addOptToVeicPanel.ResumeLayout(false);
             this.addOptToVeicPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.veicoloincatalogoBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.optionalBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.veicolovendutoBindingSource2)).EndInit();
             this.addVenditaPanel.ResumeLayout(false);
             this.addVenditaPanel.PerformLayout();
             this.addRevisionePanel.ResumeLayout(false);
             this.addRevisionePanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.veicolovendutoBindingSource)).EndInit();
             this.addOrdinePanel.ResumeLayout(false);
             this.groupBox24.ResumeLayout(false);
             this.groupBox24.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.fatturadiacquistoBindingSource)).EndInit();
             this.groupBox22.ResumeLayout(false);
             this.groupBox22.PerformLayout();
             this.groupBox23.ResumeLayout(false);
@@ -4352,7 +4020,6 @@ namespace DBProject
             this.addVeicRicToOrdinePanel.PerformLayout();
             this.addEsecRevPanel.ResumeLayout(false);
             this.addEsecRevPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.revisioneBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -4562,9 +4229,7 @@ namespace DBProject
         private Button submitGiacenzaBtn;
         private Button submitPagamentoBtn;
         private GroupBox groupBox8;
-        private Label label97;
         private Label label96;
-        private TextBox textBoxFornRec3;
         private TextBox textBoxFornRec2;
         private GroupBox groupBox9;
         private Label label98;
@@ -4688,55 +4353,16 @@ namespace DBProject
         private ComboBox comboBox27;
         private Label label125;
         private DateTimePicker dateTimePicker14;
-        private ProgettoDB16DataSet progettoDB16DataSet;
-        private BindingSource ricambioBindingSource;
-        private ProgettoDB16DataSetTableAdapters.RicambioTableAdapter ricambioTableAdapter;
-        private BindingSource contrattodivenditaBindingSource;
-        private ProgettoDB16DataSetTableAdapters.Contratto_di_venditaTableAdapter contratto_di_venditaTableAdapter;
-        private BindingSource veicolovendutoBindingSource;
-        private ProgettoDB16DataSetTableAdapters.Veicolo_vendutoTableAdapter veicolo_vendutoTableAdapter;
-        private BindingSource revisioneBindingSource;
-        private ProgettoDB16DataSetTableAdapters.RevisioneTableAdapter revisioneTableAdapter;
-        private BindingSource trasportoBindingSource;
-        private ProgettoDB16DataSetTableAdapters.TrasportoTableAdapter trasportoTableAdapter;
-        private BindingSource contrattodivenditaBindingSource1;
-        private BindingSource corriereBindingSource;
-        private ProgettoDB16DataSetTableAdapters.CorriereTableAdapter corriereTableAdapter;
-        private BindingSource fornitoreBindingSource;
-        private ProgettoDB16DataSetTableAdapters.FornitoreTableAdapter fornitoreTableAdapter;
-        private BindingSource veicolovendutoBindingSource1;
-        private BindingSource veicoloincatalogoBindingSource;
-        private ProgettoDB16DataSetTableAdapters.Veicolo_in_catalogoTableAdapter veicolo_in_catalogoTableAdapter;
-        private BindingSource veicolovendutoBindingSource2;
-        private BindingSource ordineBindingSource;
-        private ProgettoDB16DataSetTableAdapters.OrdineTableAdapter ordineTableAdapter;
         private ComboBox comboVeicCat;
-        private BindingSource optionalBindingSource;
-        private ProgettoDB16DataSetTableAdapters.OptionalTableAdapter optionalTableAdapter;
         private ComboBox comboRic;
         private DateTimePicker dateTimePicker15;
-        private BindingSource modelloveicoloBindingSource;
-        private ProgettoDB16DataSetTableAdapters.Modello_veicoloTableAdapter modello_veicoloTableAdapter;
-        private BindingSource riparazioneBindingSource;
-        private ProgettoDB16DataSetTableAdapters.RiparazioneTableAdapter riparazioneTableAdapter;
         private ComboBox comboVeicolo;
-        private BindingSource fatturadiacquistoBindingSource;
-        private ProgettoDB16DataSetTableAdapters.Fattura_di_acquistoTableAdapter fattura_di_acquistoTableAdapter;
-        private BindingSource modalitadipagamentoBindingSource;
-        private ProgettoDB16DataSetTableAdapters.Modalita_di_pagamentoTableAdapter modalita_di_pagamentoTableAdapter;
-        private BindingSource clienteBindingSource;
-        private ProgettoDB16DataSetTableAdapters.ClienteTableAdapter clienteTableAdapter;
-        private BindingSource nostremodalitadipagamentoBindingSource;
-        private ProgettoDB16DataSetTableAdapters.Nostre_modalita_di_pagamentoTableAdapter nostre_modalita_di_pagamentoTableAdapter;
         private ComboBox comboFattura;
         private ComboBox comboFornitore;
         private Label label126;
-        private BindingSource fatturadiacquistoBindingSource1;
         private ComboBox comboOrdine;
         private TextBox textBox3;
         private TextBox textBox4;
         private TextBox textBox13;
-        private ProgettoDB16DataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private BindingSource fornitoreBindingSource1;
     }
 }

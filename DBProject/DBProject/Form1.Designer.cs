@@ -43,34 +43,33 @@
             this.comboBox12 = new System.Windows.Forms.ComboBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.dataGridView20 = new System.Windows.Forms.DataGridView();
-            this.iDordineDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fatturaPartitaIVADataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.numeroDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataordineDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataspedizioneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataconsegna1DataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataconsegna2DataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipoOrdineDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataOrdineDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataConsegnaPrevistaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataConsegnaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fornitoreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ordineBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.progettoDB16DataSet = new DBProject.ProgettoDB16DataSet();
+            this.dBProject1617DataSet = new DBProject.DBProject1617DataSet();
             this.addOrdineBtn = new DBProject.EntryButton();
             this.Dettaglio_ordine_veicolo = new System.Windows.Forms.TabPage();
             this.comboBox13 = new System.Windows.Forms.ComboBox();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.dataGridView21 = new System.Windows.Forms.DataGridView();
-            this.veicoloCodiceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ordineIDordineDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quantitaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.per2BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.veicoloDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prezzoFornitoreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ordineDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ordineVeicoloBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.addDettaglioVeicBtn = new DBProject.EntryButton();
             this.Dettaglio_ordine_ricambio = new System.Windows.Forms.TabPage();
             this.comboBox23 = new System.Windows.Forms.ComboBox();
             this.textBox23 = new System.Windows.Forms.TextBox();
             this.dataGridView23 = new System.Windows.Forms.DataGridView();
-            this.ordineIDordineDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ricambioCodiceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quantitaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.diBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ordineDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ricambioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantitàDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prezzoUnitarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ordineRicambioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.addDettaglioRicBtn = new DBProject.EntryButton();
             this.ordiniPanel = new System.Windows.Forms.Panel();
             this.tabControl4 = new System.Windows.Forms.TabControl();
@@ -79,22 +78,21 @@
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.dataGridView16 = new System.Windows.Forms.DataGridView();
             this.codiceDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.prezzobaseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prezzoBaseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.potenzaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nopostiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numPostiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.consumiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.omologazioneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.capacitaserbatorioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tipoalimentazioneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.capacitàSerbatorioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tipoAlimentazioneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cilindrataDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.trazioneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cambioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.capienzabagagliaioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.noporteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.modelloPartitaIVADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.modelloNomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.modelloAnnoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.veicoloincatalogoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.capienzaBagagliaioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numPorteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomeModelloDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.annoModelloDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.veicoloCatalogoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.addVeicoloBtn = new DBProject.EntryButton();
             this.Modello_veicolo = new System.Windows.Forms.TabPage();
             this.comboBox11 = new System.Windows.Forms.ComboBox();
@@ -102,8 +100,8 @@
             this.dataGridView17 = new System.Windows.Forms.DataGridView();
             this.nomeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.annoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fornitorePartitaIVADataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.modelloveicoloBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.fornitoreDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.modelloVeicoloBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.addModelloBtn = new DBProject.EntryButton();
             this.Optional = new System.Windows.Forms.TabPage();
             this.comboBox15 = new System.Windows.Forms.ComboBox();
@@ -119,18 +117,18 @@
             this.comboBox16 = new System.Windows.Forms.ComboBox();
             this.textBox16 = new System.Windows.Forms.TextBox();
             this.dataGridView19 = new System.Windows.Forms.DataGridView();
-            this.numerotelaioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.contrattoNumeroDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ordineIDordineDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.veicoloCodiceDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.veicolovendutoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.idDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telaioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contrattoDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.veicoloCatalogoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.veicoloVendutoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.addVenditaBtn = new DBProject.EntryButton();
             this.Revisione = new System.Windows.Forms.TabPage();
             this.dataGridView22 = new System.Windows.Forms.DataGridView();
-            this.veicoloNumerotelaioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.numeroDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.scadenzaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataesecuzioneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.veicoloVendutoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numeroDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.scadenzaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataEsecuzioneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.revisioneBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.comboBox17 = new System.Windows.Forms.ComboBox();
             this.textBox17 = new System.Windows.Forms.TextBox();
@@ -140,17 +138,17 @@
             this.comboBox18 = new System.Windows.Forms.ComboBox();
             this.textBox18 = new System.Windows.Forms.TextBox();
             this.dataGridView24 = new System.Windows.Forms.DataGridView();
-            this.veicoloCodiceDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ricambioCodiceDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.referenza2BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.veicoloCatalogoDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.optionalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.supportoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.entryButton10 = new DBProject.EntryButton();
             this.Optional_in_veicolo_venduto = new System.Windows.Forms.TabPage();
             this.comboBox25 = new System.Windows.Forms.ComboBox();
             this.textBox25 = new System.Windows.Forms.TextBox();
             this.dataGridView25 = new System.Windows.Forms.DataGridView();
-            this.veicoloNumerotelaioDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.optionalCodiceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.possessoBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.optionalDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.veicoloDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dotazioneBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.addOptToVeicVend_Btn = new DBProject.EntryButton();
             this.veicoliPanel = new System.Windows.Forms.Panel();
             this.tabControl3 = new System.Windows.Forms.TabControl();
@@ -158,30 +156,28 @@
             this.comboBoxCorrieri = new System.Windows.Forms.ComboBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.dataGridViewCorrieri = new System.Windows.Forms.DataGridView();
-            this.partitaIVADataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ragionesocialeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cittaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.provinciaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.indirizzoDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cAPDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.recapito1DataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.recapito2DataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.indirizzoemail1DataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.indirizzoemail2DataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.partitaIVADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ragioneSocialeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.indirizzoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cittàDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.provinciaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cAPDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.recapito1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.recapito2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.indirizzoEmail1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.indirizzoEmail2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.corriereBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.entryButton3 = new DBProject.EntryButton();
             this.Trasporto = new System.Windows.Forms.TabPage();
             this.dataGridViewTrasporti = new System.Windows.Forms.DataGridView();
             this.codiceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.contrattoNumeroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.costoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataconsegna1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataconsegna2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.indirizzoDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cittaDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.provinciaDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cAPDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.corrierePartitaIVADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataConsegnaPrevistaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataConsegnaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.indirizzoConsegnaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cittàConsegnaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.provinciaConsegnaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.corriereDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.trasportoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.comboBoxTrasporti = new System.Windows.Forms.ComboBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -201,20 +197,20 @@
             this.comboBox19 = new System.Windows.Forms.ComboBox();
             this.textBox19 = new System.Windows.Forms.TextBox();
             this.dataGridView15 = new System.Windows.Forms.DataGridView();
-            this.veicoloNumerotelaioDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.numeroDataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataDataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.importocomplessivoDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.veicoloDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numeroDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.importoComplessivoDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.riparazioneBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.addRiparazioneBtn = new DBProject.EntryButton();
             this.Dettaglio_riparazione = new System.Windows.Forms.TabPage();
             this.comboBox20 = new System.Windows.Forms.ComboBox();
             this.textBox20 = new System.Windows.Forms.TextBox();
             this.dataGridView14 = new System.Windows.Forms.DataGridView();
-            this.veicoloNumerotelaioDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.riparazioneNumeroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ricambioCodiceDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quantitaDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ricambioDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.veicoloDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numeroDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantitàDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.utilizzoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.addDettaglioBtn = new DBProject.EntryButton();
             this.Ricambio = new System.Windows.Forms.TabPage();
@@ -224,20 +220,19 @@
             this.codiceDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descrizioneDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.prezzodiacquistoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.prezzouRiparazioneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prezzoUnitarioRiparazioneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipoRicambioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fornitorePartitaIVADataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fornitoreDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ricambioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.addRicambioBtn = new DBProject.EntryButton();
             this.Giacenza = new System.Windows.Forms.TabPage();
             this.dataGridView12 = new System.Windows.Forms.DataGridView();
-            this.ricambioCodiceDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.numeroDataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataDataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quantitaDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ricambioDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numeroDataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantitàDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.causaleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.giacenzaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.giacenzaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.comboBox22 = new System.Windows.Forms.ComboBox();
             this.textBox22 = new System.Windows.Forms.TextBox();
             this.addGiacenzaBtn = new DBProject.EntryButton();
@@ -245,9 +240,9 @@
             this.comboBox7 = new System.Windows.Forms.ComboBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.dataGridView10 = new System.Windows.Forms.DataGridView();
-            this.veicoloCodiceDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ricambioCodiceDataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.referenza2BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.veicoloCatalogoDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ricambioDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.referenzaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.addRicVeicBtn = new DBProject.EntryButton();
             this.officinaPanel = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -257,178 +252,175 @@
             this.comboBoxFornitore = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dataGridViewFornitori = new System.Windows.Forms.DataGridView();
-            this.partitaIVADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ragioneSocialeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.recapito1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.recapito2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.recapito3DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.indirizzoemail1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.indirizzoemail2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tipoRicambiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tipoCasaProduttriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cittaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.provinciaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.indirizzoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cAPDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fornitoreBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.partitaIVADataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.casaProduttriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fornitoreRicambiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ragioneSocialeDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.recapito1DataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.recapito2DataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.indirizzoEmail1DataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.indirizzoEmail2DataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.indirizzoDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cittàDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.provinciaDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cAPDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fornitoreBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.addFornitoreBtn = new DBProject.EntryButton();
             this.Fattura = new System.Windows.Forms.TabPage();
             this.dataGridViewFatt = new System.Windows.Forms.DataGridView();
-            this.fornitorePartitaIVADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.numeroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.importocomplessivoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.modPagamentoPartitaIVADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fornitoreDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numeroDataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ordineDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.importoComplessivoDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.modPagamentoFornitoreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.modPagamentoDaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fatturadiacquistoBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.fatturaAcquistoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.comboBoxFatture = new System.Windows.Forms.ComboBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.addFatturaBtn = new DBProject.EntryButton();
             this.Pagamento_fornitore = new System.Windows.Forms.TabPage();
             this.dataGridViewPag = new System.Windows.Forms.DataGridView();
-            this.fatturaPartitaIVADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fatturaNumeroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.importoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pagamentocAcquistoBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.fornitoreFatturaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numeroFatturaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.scadenzaDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.importoDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataPagamentoDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rataBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.comboBoxPagamenti = new System.Windows.Forms.ComboBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.addPagFornBtn = new DBProject.EntryButton();
             this.Modalita_pagamento_fornitore = new System.Windows.Forms.TabPage();
             this.dataGridViewModPag = new System.Windows.Forms.DataGridView();
-            this.fornitorePartitaIVADataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.daDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.aDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.periodicitaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tassointeresseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.numerorateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.modalitadipagamentoBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.fornitoreDataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.daDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.aDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.periodicitàDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tassoInteresseDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numeroRateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.modalitàPagamentoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.comboBoxModPag = new System.Windows.Forms.ComboBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.addModPagBtn = new DBProject.EntryButton();
-            this.fornitoreBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.fatturadiacquistoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.pagamentocAcquistoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.modalitadipagamentoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.fornitoriPanel = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Cliente = new System.Windows.Forms.TabPage();
             this.comboBox8 = new System.Windows.Forms.ComboBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
-            this.partitaIVACodiceFiscaleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.recapito1DataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.recapito2DataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.recapito3DataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cittaDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.indirizzoDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.provinciaDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cAPDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipoClienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ragionesocialeDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.indirizzoemail1DataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.indirizzoemail2DataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.codiceFiscaleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cognomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.datanascitaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cittanascitaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.provincianascitaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataNascitaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cittàNascitaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.provinciaNascitaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.partitaIVADataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ragioneSocialeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.recapito1DataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.recapito2DataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.indirizzoEmail1DataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.indirizzoEmail2DataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.indirizzoDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cittàDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.provinciaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cAPDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.addClienteBtn = new DBProject.EntryButton();
             this.Contratto = new System.Windows.Forms.TabPage();
             this.comboBox24 = new System.Windows.Forms.ComboBox();
             this.textBox24 = new System.Windows.Forms.TextBox();
             this.dataGridView5 = new System.Windows.Forms.DataGridView();
-            this.numeroDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.importocomplessivoDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nostreModDaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clientePartitaIVACodiceFiscaleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.contrattodivenditaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.numeroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.trasportoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.importoComplessivoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.modalitàPagamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contrattoVenditaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.addContrattoBtn = new DBProject.EntryButton();
             this.Pagamento = new System.Windows.Forms.TabPage();
             this.comboBox9 = new System.Windows.Forms.ComboBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.dataGridView6 = new System.Windows.Forms.DataGridView();
-            this.contrattoNumeroDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.importoDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pagamentocVenditaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.contrattoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.scadenzaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.importoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataPagamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rataClienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.addPagamBtn = new DBProject.EntryButton();
             this.Modalita_di_pagamento = new System.Windows.Forms.TabPage();
             this.comboBox10 = new System.Windows.Forms.ComboBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.dataGridView7 = new System.Windows.Forms.DataGridView();
-            this.daDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.aDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.periodicitaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tassointeresseDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.numerorateDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nostremodalitadipagamentoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.daDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.aDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.periodicitàDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tassoInteresseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numerRateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nostreModalitàPagamentoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.addNsModPag_Btn = new DBProject.EntryButton();
             this.clientiPanel = new System.Windows.Forms.Panel();
-            this.giacenzaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.fornitoreTableAdapter = new DBProject.ProgettoDB16DataSetTableAdapters.FornitoreTableAdapter();
-            this.fattura_di_acquistoTableAdapter = new DBProject.ProgettoDB16DataSetTableAdapters.Fattura_di_acquistoTableAdapter();
-            this.pagamento_cAcquistoTableAdapter = new DBProject.ProgettoDB16DataSetTableAdapters.Pagamento_cAcquistoTableAdapter();
-            this.modalita_di_pagamentoTableAdapter = new DBProject.ProgettoDB16DataSetTableAdapters.Modalita_di_pagamentoTableAdapter();
-            this.corriereTableAdapter = new DBProject.ProgettoDB16DataSetTableAdapters.CorriereTableAdapter();
-            this.trasportoTableAdapter = new DBProject.ProgettoDB16DataSetTableAdapters.TrasportoTableAdapter();
-            this.clienteTableAdapter = new DBProject.ProgettoDB16DataSetTableAdapters.ClienteTableAdapter();
-            this.contratto_di_venditaTableAdapter = new DBProject.ProgettoDB16DataSetTableAdapters.Contratto_di_venditaTableAdapter();
-            this.pagamento_cVenditaTableAdapter = new DBProject.ProgettoDB16DataSetTableAdapters.Pagamento_cVenditaTableAdapter();
-            this.nostre_modalita_di_pagamentoTableAdapter = new DBProject.ProgettoDB16DataSetTableAdapters.Nostre_modalita_di_pagamentoTableAdapter();
-            this.ordineTableAdapter = new DBProject.ProgettoDB16DataSetTableAdapters.OrdineTableAdapter();
-            this.per2TableAdapter = new DBProject.ProgettoDB16DataSetTableAdapters.per2TableAdapter();
-            this.diTableAdapter = new DBProject.ProgettoDB16DataSetTableAdapters.diTableAdapter();
-            this.veicolo_in_catalogoTableAdapter = new DBProject.ProgettoDB16DataSetTableAdapters.Veicolo_in_catalogoTableAdapter();
-            this.modello_veicoloTableAdapter = new DBProject.ProgettoDB16DataSetTableAdapters.Modello_veicoloTableAdapter();
-            this.nostremodalitadipagamentoBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.optionalTableAdapter = new DBProject.ProgettoDB16DataSetTableAdapters.OptionalTableAdapter();
-            this.veicolo_vendutoTableAdapter = new DBProject.ProgettoDB16DataSetTableAdapters.Veicolo_vendutoTableAdapter();
-            this.revisioneTableAdapter = new DBProject.ProgettoDB16DataSetTableAdapters.RevisioneTableAdapter();
-            this.possessoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.possessoTableAdapter = new DBProject.ProgettoDB16DataSetTableAdapters.possessoTableAdapter();
-            this.referenza2TableAdapter = new DBProject.ProgettoDB16DataSetTableAdapters.referenza2TableAdapter();
-            this.riparazioneTableAdapter = new DBProject.ProgettoDB16DataSetTableAdapters.RiparazioneTableAdapter();
-            this.utilizzoTableAdapter = new DBProject.ProgettoDB16DataSetTableAdapters.utilizzoTableAdapter();
-            this.ricambioTableAdapter = new DBProject.ProgettoDB16DataSetTableAdapters.RicambioTableAdapter();
-            this.giacenzaTableAdapter = new DBProject.ProgettoDB16DataSetTableAdapters.GiacenzaTableAdapter();
-            this.veicolovendutoBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.corriereTableAdapter = new DBProject.DBProject1617DataSetTableAdapters.CorriereTableAdapter();
+            this.trasportoTableAdapter = new DBProject.DBProject1617DataSetTableAdapters.TrasportoTableAdapter();
+            this.clienteTableAdapter = new DBProject.DBProject1617DataSetTableAdapters.ClienteTableAdapter();
+            this.contrattoVenditaTableAdapter = new DBProject.DBProject1617DataSetTableAdapters.ContrattoVenditaTableAdapter();
+            this.rataClienteTableAdapter = new DBProject.DBProject1617DataSetTableAdapters.RataClienteTableAdapter();
+            this.nostreModalitàPagamentoTableAdapter = new DBProject.DBProject1617DataSetTableAdapters.NostreModalitàPagamentoTableAdapter();
+            this.ordineTableAdapter = new DBProject.DBProject1617DataSetTableAdapters.OrdineTableAdapter();
+            this.ordineVeicoloTableAdapter = new DBProject.DBProject1617DataSetTableAdapters.OrdineVeicoloTableAdapter();
+            this.ordineRicambioTableAdapter = new DBProject.DBProject1617DataSetTableAdapters.OrdineRicambioTableAdapter();
+            this.veicoloCatalogoTableAdapter = new DBProject.DBProject1617DataSetTableAdapters.VeicoloCatalogoTableAdapter();
+            this.modelloVeicoloTableAdapter = new DBProject.DBProject1617DataSetTableAdapters.ModelloVeicoloTableAdapter();
+            this.optionalTableAdapter = new DBProject.DBProject1617DataSetTableAdapters.OptionalTableAdapter();
+            this.veicoloVendutoTableAdapter = new DBProject.DBProject1617DataSetTableAdapters.VeicoloVendutoTableAdapter();
+            this.revisioneTableAdapter = new DBProject.DBProject1617DataSetTableAdapters.RevisioneTableAdapter();
+            this.supportoTableAdapter = new DBProject.DBProject1617DataSetTableAdapters.SupportoTableAdapter();
+            this.dotazioneTableAdapter = new DBProject.DBProject1617DataSetTableAdapters.DotazioneTableAdapter();
+            this.riparazioneTableAdapter = new DBProject.DBProject1617DataSetTableAdapters.RiparazioneTableAdapter();
+            this.utilizzoTableAdapter = new DBProject.DBProject1617DataSetTableAdapters.UtilizzoTableAdapter();
+            this.ricambioTableAdapter = new DBProject.DBProject1617DataSetTableAdapters.RicambioTableAdapter();
+            this.giacenzaTableAdapter = new DBProject.DBProject1617DataSetTableAdapters.GiacenzaTableAdapter();
+            this.referenzaTableAdapter = new DBProject.DBProject1617DataSetTableAdapters.ReferenzaTableAdapter();
+            this.fornitoreTableAdapter = new DBProject.DBProject1617DataSetTableAdapters.FornitoreTableAdapter();
+            this.fatturaAcquistoTableAdapter = new DBProject.DBProject1617DataSetTableAdapters.FatturaAcquistoTableAdapter();
+            this.rataTableAdapter = new DBProject.DBProject1617DataSetTableAdapters.RataTableAdapter();
+            this.modalitàPagamentoTableAdapter = new DBProject.DBProject1617DataSetTableAdapters.ModalitàPagamentoTableAdapter();
             this.tabControl5.SuspendLayout();
             this.Ordine.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordineBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.progettoDB16DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dBProject1617DataSet)).BeginInit();
             this.Dettaglio_ordine_veicolo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.per2BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ordineVeicoloBindingSource)).BeginInit();
             this.Dettaglio_ordine_ricambio.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.diBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ordineRicambioBindingSource)).BeginInit();
             this.ordiniPanel.SuspendLayout();
             this.tabControl4.SuspendLayout();
             this.Veicolo_in_catalogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.veicoloincatalogoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.veicoloCatalogoBindingSource)).BeginInit();
             this.Modello_veicolo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.modelloveicoloBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.modelloVeicoloBindingSource)).BeginInit();
             this.Optional.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.optionalBindingSource)).BeginInit();
             this.Veicolo_venduto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.veicolovendutoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.veicoloVendutoBindingSource)).BeginInit();
             this.Revisione.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.revisioneBindingSource)).BeginInit();
             this.Optional_supportato.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView24)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.referenza2BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.supportoBindingSource)).BeginInit();
             this.Optional_in_veicolo_venduto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView25)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.possessoBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dotazioneBindingSource)).BeginInit();
             this.veicoliPanel.SuspendLayout();
             this.tabControl3.SuspendLayout();
             this.Corriere.SuspendLayout();
@@ -451,28 +443,24 @@
             ((System.ComponentModel.ISupportInitialize)(this.ricambioBindingSource)).BeginInit();
             this.Giacenza.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.giacenzaBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.giacenzaBindingSource)).BeginInit();
             this.Ricambio_veicolo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.referenza2BindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.referenzaBindingSource)).BeginInit();
             this.officinaPanel.SuspendLayout();
             this.tabControlFornitori.SuspendLayout();
             this.Fornitore.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFornitori)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fornitoreBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fornitoreBindingSource)).BeginInit();
             this.Fattura.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFatt)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fatturadiacquistoBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fatturaAcquistoBindingSource)).BeginInit();
             this.Pagamento_fornitore.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPag)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pagamentocAcquistoBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rataBindingSource)).BeginInit();
             this.Modalita_pagamento_fornitore.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewModPag)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.modalitadipagamentoBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fornitoreBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fatturadiacquistoBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pagamentocAcquistoBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.modalitadipagamentoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.modalitàPagamentoBindingSource)).BeginInit();
             this.fornitoriPanel.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.Cliente.SuspendLayout();
@@ -480,18 +468,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
             this.Contratto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.contrattodivenditaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.contrattoVenditaBindingSource)).BeginInit();
             this.Pagamento.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pagamentocVenditaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rataClienteBindingSource)).BeginInit();
             this.Modalita_di_pagamento.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nostremodalitadipagamentoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nostreModalitàPagamentoBindingSource)).BeginInit();
             this.clientiPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.giacenzaBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nostremodalitadipagamentoBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.possessoBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.veicolovendutoBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // button30
@@ -658,14 +642,12 @@
             this.dataGridView20.AutoGenerateColumns = false;
             this.dataGridView20.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView20.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.iDordineDataGridViewTextBoxColumn,
-            this.fatturaPartitaIVADataGridViewTextBoxColumn1,
-            this.numeroDataGridViewTextBoxColumn2,
-            this.dataordineDataGridViewTextBoxColumn,
-            this.dataspedizioneDataGridViewTextBoxColumn,
-            this.dataconsegna1DataGridViewTextBoxColumn1,
-            this.dataconsegna2DataGridViewTextBoxColumn1,
-            this.tipoOrdineDataGridViewTextBoxColumn});
+            this.idDataGridViewTextBoxColumn1,
+            this.tipoOrdineDataGridViewTextBoxColumn,
+            this.dataOrdineDataGridViewTextBoxColumn,
+            this.dataConsegnaPrevistaDataGridViewTextBoxColumn1,
+            this.dataConsegnaDataGridViewTextBoxColumn1,
+            this.fornitoreDataGridViewTextBoxColumn});
             this.dataGridView20.DataSource = this.ordineBindingSource;
             this.dataGridView20.Location = new System.Drawing.Point(9, 8);
             this.dataGridView20.Name = "dataGridView20";
@@ -673,72 +655,57 @@
             this.dataGridView20.Size = new System.Drawing.Size(482, 273);
             this.dataGridView20.TabIndex = 15;
             // 
-            // iDordineDataGridViewTextBoxColumn
+            // idDataGridViewTextBoxColumn1
             // 
-            this.iDordineDataGridViewTextBoxColumn.DataPropertyName = "ID_ordine";
-            this.iDordineDataGridViewTextBoxColumn.HeaderText = "ID_ordine";
-            this.iDordineDataGridViewTextBoxColumn.Name = "iDordineDataGridViewTextBoxColumn";
-            this.iDordineDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // fatturaPartitaIVADataGridViewTextBoxColumn1
-            // 
-            this.fatturaPartitaIVADataGridViewTextBoxColumn1.DataPropertyName = "Fattura_Partita_IVA";
-            this.fatturaPartitaIVADataGridViewTextBoxColumn1.HeaderText = "Fattura_Partita_IVA";
-            this.fatturaPartitaIVADataGridViewTextBoxColumn1.Name = "fatturaPartitaIVADataGridViewTextBoxColumn1";
-            this.fatturaPartitaIVADataGridViewTextBoxColumn1.ReadOnly = true;
-            this.fatturaPartitaIVADataGridViewTextBoxColumn1.Width = 120;
-            // 
-            // numeroDataGridViewTextBoxColumn2
-            // 
-            this.numeroDataGridViewTextBoxColumn2.DataPropertyName = "Numero";
-            this.numeroDataGridViewTextBoxColumn2.HeaderText = "Numero";
-            this.numeroDataGridViewTextBoxColumn2.Name = "numeroDataGridViewTextBoxColumn2";
-            this.numeroDataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // dataordineDataGridViewTextBoxColumn
-            // 
-            this.dataordineDataGridViewTextBoxColumn.DataPropertyName = "Data_ordine";
-            this.dataordineDataGridViewTextBoxColumn.HeaderText = "Data_ordine";
-            this.dataordineDataGridViewTextBoxColumn.Name = "dataordineDataGridViewTextBoxColumn";
-            this.dataordineDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // dataspedizioneDataGridViewTextBoxColumn
-            // 
-            this.dataspedizioneDataGridViewTextBoxColumn.DataPropertyName = "Data_spedizione";
-            this.dataspedizioneDataGridViewTextBoxColumn.HeaderText = "Data_spedizione";
-            this.dataspedizioneDataGridViewTextBoxColumn.Name = "dataspedizioneDataGridViewTextBoxColumn";
-            this.dataspedizioneDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // dataconsegna1DataGridViewTextBoxColumn1
-            // 
-            this.dataconsegna1DataGridViewTextBoxColumn1.DataPropertyName = "Data_consegna_1";
-            this.dataconsegna1DataGridViewTextBoxColumn1.HeaderText = "Data_consegna_1";
-            this.dataconsegna1DataGridViewTextBoxColumn1.Name = "dataconsegna1DataGridViewTextBoxColumn1";
-            this.dataconsegna1DataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dataconsegna2DataGridViewTextBoxColumn1
-            // 
-            this.dataconsegna2DataGridViewTextBoxColumn1.DataPropertyName = "Data_consegna_2";
-            this.dataconsegna2DataGridViewTextBoxColumn1.HeaderText = "Data_consegna_2";
-            this.dataconsegna2DataGridViewTextBoxColumn1.Name = "dataconsegna2DataGridViewTextBoxColumn1";
-            this.dataconsegna2DataGridViewTextBoxColumn1.ReadOnly = true;
+            this.idDataGridViewTextBoxColumn1.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn1.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn1.Name = "idDataGridViewTextBoxColumn1";
+            this.idDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // tipoOrdineDataGridViewTextBoxColumn
             // 
-            this.tipoOrdineDataGridViewTextBoxColumn.DataPropertyName = "Tipo_Ordine";
-            this.tipoOrdineDataGridViewTextBoxColumn.HeaderText = "Tipo_Ordine";
+            this.tipoOrdineDataGridViewTextBoxColumn.DataPropertyName = "TipoOrdine";
+            this.tipoOrdineDataGridViewTextBoxColumn.HeaderText = "TipoOrdine";
             this.tipoOrdineDataGridViewTextBoxColumn.Name = "tipoOrdineDataGridViewTextBoxColumn";
             this.tipoOrdineDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // dataOrdineDataGridViewTextBoxColumn
+            // 
+            this.dataOrdineDataGridViewTextBoxColumn.DataPropertyName = "DataOrdine";
+            this.dataOrdineDataGridViewTextBoxColumn.HeaderText = "DataOrdine";
+            this.dataOrdineDataGridViewTextBoxColumn.Name = "dataOrdineDataGridViewTextBoxColumn";
+            this.dataOrdineDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // dataConsegnaPrevistaDataGridViewTextBoxColumn1
+            // 
+            this.dataConsegnaPrevistaDataGridViewTextBoxColumn1.DataPropertyName = "DataConsegnaPrevista";
+            this.dataConsegnaPrevistaDataGridViewTextBoxColumn1.HeaderText = "DataConsegnaPrevista";
+            this.dataConsegnaPrevistaDataGridViewTextBoxColumn1.Name = "dataConsegnaPrevistaDataGridViewTextBoxColumn1";
+            this.dataConsegnaPrevistaDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataConsegnaDataGridViewTextBoxColumn1
+            // 
+            this.dataConsegnaDataGridViewTextBoxColumn1.DataPropertyName = "DataConsegna";
+            this.dataConsegnaDataGridViewTextBoxColumn1.HeaderText = "DataConsegna";
+            this.dataConsegnaDataGridViewTextBoxColumn1.Name = "dataConsegnaDataGridViewTextBoxColumn1";
+            this.dataConsegnaDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // fornitoreDataGridViewTextBoxColumn
+            // 
+            this.fornitoreDataGridViewTextBoxColumn.DataPropertyName = "Fornitore";
+            this.fornitoreDataGridViewTextBoxColumn.HeaderText = "Fornitore";
+            this.fornitoreDataGridViewTextBoxColumn.Name = "fornitoreDataGridViewTextBoxColumn";
+            this.fornitoreDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // ordineBindingSource
             // 
             this.ordineBindingSource.DataMember = "Ordine";
-            this.ordineBindingSource.DataSource = this.progettoDB16DataSet;
+            this.ordineBindingSource.DataSource = this.dBProject1617DataSet;
             // 
-            // progettoDB16DataSet
+            // dBProject1617DataSet
             // 
-            this.progettoDB16DataSet.DataSetName = "ProgettoDB16DataSet";
-            this.progettoDB16DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.dBProject1617DataSet.DataSetName = "DBProject1617DataSet";
+            this.dBProject1617DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // addOrdineBtn
             // 
@@ -801,41 +768,41 @@
             this.dataGridView21.AutoGenerateColumns = false;
             this.dataGridView21.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView21.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.veicoloCodiceDataGridViewTextBoxColumn,
-            this.ordineIDordineDataGridViewTextBoxColumn,
-            this.quantitaDataGridViewTextBoxColumn});
-            this.dataGridView21.DataSource = this.per2BindingSource;
+            this.veicoloDataGridViewTextBoxColumn,
+            this.prezzoFornitoreDataGridViewTextBoxColumn,
+            this.ordineDataGridViewTextBoxColumn});
+            this.dataGridView21.DataSource = this.ordineVeicoloBindingSource;
             this.dataGridView21.Location = new System.Drawing.Point(9, 8);
             this.dataGridView21.Name = "dataGridView21";
             this.dataGridView21.ReadOnly = true;
             this.dataGridView21.Size = new System.Drawing.Size(472, 260);
             this.dataGridView21.TabIndex = 20;
             // 
-            // veicoloCodiceDataGridViewTextBoxColumn
+            // veicoloDataGridViewTextBoxColumn
             // 
-            this.veicoloCodiceDataGridViewTextBoxColumn.DataPropertyName = "Veicolo_Codice";
-            this.veicoloCodiceDataGridViewTextBoxColumn.HeaderText = "Veicolo_Codice";
-            this.veicoloCodiceDataGridViewTextBoxColumn.Name = "veicoloCodiceDataGridViewTextBoxColumn";
-            this.veicoloCodiceDataGridViewTextBoxColumn.ReadOnly = true;
+            this.veicoloDataGridViewTextBoxColumn.DataPropertyName = "Veicolo";
+            this.veicoloDataGridViewTextBoxColumn.HeaderText = "Veicolo";
+            this.veicoloDataGridViewTextBoxColumn.Name = "veicoloDataGridViewTextBoxColumn";
+            this.veicoloDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // ordineIDordineDataGridViewTextBoxColumn
+            // prezzoFornitoreDataGridViewTextBoxColumn
             // 
-            this.ordineIDordineDataGridViewTextBoxColumn.DataPropertyName = "Ordine_ID_ordine";
-            this.ordineIDordineDataGridViewTextBoxColumn.HeaderText = "Ordine_ID_ordine";
-            this.ordineIDordineDataGridViewTextBoxColumn.Name = "ordineIDordineDataGridViewTextBoxColumn";
-            this.ordineIDordineDataGridViewTextBoxColumn.ReadOnly = true;
+            this.prezzoFornitoreDataGridViewTextBoxColumn.DataPropertyName = "PrezzoFornitore";
+            this.prezzoFornitoreDataGridViewTextBoxColumn.HeaderText = "PrezzoFornitore";
+            this.prezzoFornitoreDataGridViewTextBoxColumn.Name = "prezzoFornitoreDataGridViewTextBoxColumn";
+            this.prezzoFornitoreDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // quantitaDataGridViewTextBoxColumn
+            // ordineDataGridViewTextBoxColumn
             // 
-            this.quantitaDataGridViewTextBoxColumn.DataPropertyName = "quantita";
-            this.quantitaDataGridViewTextBoxColumn.HeaderText = "quantita";
-            this.quantitaDataGridViewTextBoxColumn.Name = "quantitaDataGridViewTextBoxColumn";
-            this.quantitaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.ordineDataGridViewTextBoxColumn.DataPropertyName = "Ordine";
+            this.ordineDataGridViewTextBoxColumn.HeaderText = "Ordine";
+            this.ordineDataGridViewTextBoxColumn.Name = "ordineDataGridViewTextBoxColumn";
+            this.ordineDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // per2BindingSource
+            // ordineVeicoloBindingSource
             // 
-            this.per2BindingSource.DataMember = "per2";
-            this.per2BindingSource.DataSource = this.progettoDB16DataSet;
+            this.ordineVeicoloBindingSource.DataMember = "OrdineVeicolo";
+            this.ordineVeicoloBindingSource.DataSource = this.dBProject1617DataSet;
             // 
             // addDettaglioVeicBtn
             // 
@@ -898,41 +865,49 @@
             this.dataGridView23.AutoGenerateColumns = false;
             this.dataGridView23.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView23.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ordineIDordineDataGridViewTextBoxColumn1,
-            this.ricambioCodiceDataGridViewTextBoxColumn,
-            this.quantitaDataGridViewTextBoxColumn1});
-            this.dataGridView23.DataSource = this.diBindingSource;
+            this.ordineDataGridViewTextBoxColumn1,
+            this.ricambioDataGridViewTextBoxColumn,
+            this.quantitàDataGridViewTextBoxColumn,
+            this.prezzoUnitarioDataGridViewTextBoxColumn});
+            this.dataGridView23.DataSource = this.ordineRicambioBindingSource;
             this.dataGridView23.Location = new System.Drawing.Point(9, 8);
             this.dataGridView23.Name = "dataGridView23";
             this.dataGridView23.ReadOnly = true;
             this.dataGridView23.Size = new System.Drawing.Size(472, 260);
             this.dataGridView23.TabIndex = 20;
             // 
-            // ordineIDordineDataGridViewTextBoxColumn1
+            // ordineDataGridViewTextBoxColumn1
             // 
-            this.ordineIDordineDataGridViewTextBoxColumn1.DataPropertyName = "Ordine_ID_ordine";
-            this.ordineIDordineDataGridViewTextBoxColumn1.HeaderText = "Ordine_ID_ordine";
-            this.ordineIDordineDataGridViewTextBoxColumn1.Name = "ordineIDordineDataGridViewTextBoxColumn1";
-            this.ordineIDordineDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.ordineDataGridViewTextBoxColumn1.DataPropertyName = "Ordine";
+            this.ordineDataGridViewTextBoxColumn1.HeaderText = "Ordine";
+            this.ordineDataGridViewTextBoxColumn1.Name = "ordineDataGridViewTextBoxColumn1";
+            this.ordineDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
-            // ricambioCodiceDataGridViewTextBoxColumn
+            // ricambioDataGridViewTextBoxColumn
             // 
-            this.ricambioCodiceDataGridViewTextBoxColumn.DataPropertyName = "Ricambio_Codice";
-            this.ricambioCodiceDataGridViewTextBoxColumn.HeaderText = "Ricambio_Codice";
-            this.ricambioCodiceDataGridViewTextBoxColumn.Name = "ricambioCodiceDataGridViewTextBoxColumn";
-            this.ricambioCodiceDataGridViewTextBoxColumn.ReadOnly = true;
+            this.ricambioDataGridViewTextBoxColumn.DataPropertyName = "Ricambio";
+            this.ricambioDataGridViewTextBoxColumn.HeaderText = "Ricambio";
+            this.ricambioDataGridViewTextBoxColumn.Name = "ricambioDataGridViewTextBoxColumn";
+            this.ricambioDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // quantitaDataGridViewTextBoxColumn1
+            // quantitàDataGridViewTextBoxColumn
             // 
-            this.quantitaDataGridViewTextBoxColumn1.DataPropertyName = "quantita";
-            this.quantitaDataGridViewTextBoxColumn1.HeaderText = "quantita";
-            this.quantitaDataGridViewTextBoxColumn1.Name = "quantitaDataGridViewTextBoxColumn1";
-            this.quantitaDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.quantitàDataGridViewTextBoxColumn.DataPropertyName = "Quantità";
+            this.quantitàDataGridViewTextBoxColumn.HeaderText = "Quantità";
+            this.quantitàDataGridViewTextBoxColumn.Name = "quantitàDataGridViewTextBoxColumn";
+            this.quantitàDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // diBindingSource
+            // prezzoUnitarioDataGridViewTextBoxColumn
             // 
-            this.diBindingSource.DataMember = "di";
-            this.diBindingSource.DataSource = this.progettoDB16DataSet;
+            this.prezzoUnitarioDataGridViewTextBoxColumn.DataPropertyName = "PrezzoUnitario";
+            this.prezzoUnitarioDataGridViewTextBoxColumn.HeaderText = "PrezzoUnitario";
+            this.prezzoUnitarioDataGridViewTextBoxColumn.Name = "prezzoUnitarioDataGridViewTextBoxColumn";
+            this.prezzoUnitarioDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // ordineRicambioBindingSource
+            // 
+            this.ordineRicambioBindingSource.DataMember = "OrdineRicambio";
+            this.ordineRicambioBindingSource.DataSource = this.dBProject1617DataSet;
             // 
             // addDettaglioRicBtn
             // 
@@ -1042,22 +1017,21 @@
             this.dataGridView16.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView16.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.codiceDataGridViewTextBoxColumn1,
-            this.prezzobaseDataGridViewTextBoxColumn,
+            this.prezzoBaseDataGridViewTextBoxColumn,
             this.potenzaDataGridViewTextBoxColumn,
-            this.nopostiDataGridViewTextBoxColumn,
+            this.numPostiDataGridViewTextBoxColumn,
             this.consumiDataGridViewTextBoxColumn,
             this.omologazioneDataGridViewTextBoxColumn,
-            this.capacitaserbatorioDataGridViewTextBoxColumn,
-            this.tipoalimentazioneDataGridViewTextBoxColumn,
+            this.capacitàSerbatorioDataGridViewTextBoxColumn,
+            this.tipoAlimentazioneDataGridViewTextBoxColumn,
             this.cilindrataDataGridViewTextBoxColumn,
             this.trazioneDataGridViewTextBoxColumn,
             this.cambioDataGridViewTextBoxColumn,
-            this.capienzabagagliaioDataGridViewTextBoxColumn,
-            this.noporteDataGridViewTextBoxColumn,
-            this.modelloPartitaIVADataGridViewTextBoxColumn,
-            this.modelloNomeDataGridViewTextBoxColumn,
-            this.modelloAnnoDataGridViewTextBoxColumn});
-            this.dataGridView16.DataSource = this.veicoloincatalogoBindingSource;
+            this.capienzaBagagliaioDataGridViewTextBoxColumn,
+            this.numPorteDataGridViewTextBoxColumn,
+            this.nomeModelloDataGridViewTextBoxColumn,
+            this.annoModelloDataGridViewTextBoxColumn});
+            this.dataGridView16.DataSource = this.veicoloCatalogoBindingSource;
             this.dataGridView16.Location = new System.Drawing.Point(9, 8);
             this.dataGridView16.Name = "dataGridView16";
             this.dataGridView16.ReadOnly = true;
@@ -1071,12 +1045,12 @@
             this.codiceDataGridViewTextBoxColumn1.Name = "codiceDataGridViewTextBoxColumn1";
             this.codiceDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
-            // prezzobaseDataGridViewTextBoxColumn
+            // prezzoBaseDataGridViewTextBoxColumn
             // 
-            this.prezzobaseDataGridViewTextBoxColumn.DataPropertyName = "Prezzo_base";
-            this.prezzobaseDataGridViewTextBoxColumn.HeaderText = "Prezzo_base";
-            this.prezzobaseDataGridViewTextBoxColumn.Name = "prezzobaseDataGridViewTextBoxColumn";
-            this.prezzobaseDataGridViewTextBoxColumn.ReadOnly = true;
+            this.prezzoBaseDataGridViewTextBoxColumn.DataPropertyName = "PrezzoBase";
+            this.prezzoBaseDataGridViewTextBoxColumn.HeaderText = "PrezzoBase";
+            this.prezzoBaseDataGridViewTextBoxColumn.Name = "prezzoBaseDataGridViewTextBoxColumn";
+            this.prezzoBaseDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // potenzaDataGridViewTextBoxColumn
             // 
@@ -1085,12 +1059,12 @@
             this.potenzaDataGridViewTextBoxColumn.Name = "potenzaDataGridViewTextBoxColumn";
             this.potenzaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // nopostiDataGridViewTextBoxColumn
+            // numPostiDataGridViewTextBoxColumn
             // 
-            this.nopostiDataGridViewTextBoxColumn.DataPropertyName = "No_posti";
-            this.nopostiDataGridViewTextBoxColumn.HeaderText = "No_posti";
-            this.nopostiDataGridViewTextBoxColumn.Name = "nopostiDataGridViewTextBoxColumn";
-            this.nopostiDataGridViewTextBoxColumn.ReadOnly = true;
+            this.numPostiDataGridViewTextBoxColumn.DataPropertyName = "NumPosti";
+            this.numPostiDataGridViewTextBoxColumn.HeaderText = "NumPosti";
+            this.numPostiDataGridViewTextBoxColumn.Name = "numPostiDataGridViewTextBoxColumn";
+            this.numPostiDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // consumiDataGridViewTextBoxColumn
             // 
@@ -1106,21 +1080,19 @@
             this.omologazioneDataGridViewTextBoxColumn.Name = "omologazioneDataGridViewTextBoxColumn";
             this.omologazioneDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // capacitaserbatorioDataGridViewTextBoxColumn
+            // capacitàSerbatorioDataGridViewTextBoxColumn
             // 
-            this.capacitaserbatorioDataGridViewTextBoxColumn.DataPropertyName = "Capacita_serbatorio";
-            this.capacitaserbatorioDataGridViewTextBoxColumn.HeaderText = "Capacita_serbatorio";
-            this.capacitaserbatorioDataGridViewTextBoxColumn.Name = "capacitaserbatorioDataGridViewTextBoxColumn";
-            this.capacitaserbatorioDataGridViewTextBoxColumn.ReadOnly = true;
-            this.capacitaserbatorioDataGridViewTextBoxColumn.Width = 120;
+            this.capacitàSerbatorioDataGridViewTextBoxColumn.DataPropertyName = "CapacitàSerbatorio";
+            this.capacitàSerbatorioDataGridViewTextBoxColumn.HeaderText = "CapacitàSerbatorio";
+            this.capacitàSerbatorioDataGridViewTextBoxColumn.Name = "capacitàSerbatorioDataGridViewTextBoxColumn";
+            this.capacitàSerbatorioDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // tipoalimentazioneDataGridViewTextBoxColumn
+            // tipoAlimentazioneDataGridViewTextBoxColumn
             // 
-            this.tipoalimentazioneDataGridViewTextBoxColumn.DataPropertyName = "Tipo_alimentazione";
-            this.tipoalimentazioneDataGridViewTextBoxColumn.HeaderText = "Tipo_alimentazione";
-            this.tipoalimentazioneDataGridViewTextBoxColumn.Name = "tipoalimentazioneDataGridViewTextBoxColumn";
-            this.tipoalimentazioneDataGridViewTextBoxColumn.ReadOnly = true;
-            this.tipoalimentazioneDataGridViewTextBoxColumn.Width = 120;
+            this.tipoAlimentazioneDataGridViewTextBoxColumn.DataPropertyName = "TipoAlimentazione";
+            this.tipoAlimentazioneDataGridViewTextBoxColumn.HeaderText = "TipoAlimentazione";
+            this.tipoAlimentazioneDataGridViewTextBoxColumn.Name = "tipoAlimentazioneDataGridViewTextBoxColumn";
+            this.tipoAlimentazioneDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // cilindrataDataGridViewTextBoxColumn
             // 
@@ -1143,47 +1115,38 @@
             this.cambioDataGridViewTextBoxColumn.Name = "cambioDataGridViewTextBoxColumn";
             this.cambioDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // capienzabagagliaioDataGridViewTextBoxColumn
+            // capienzaBagagliaioDataGridViewTextBoxColumn
             // 
-            this.capienzabagagliaioDataGridViewTextBoxColumn.DataPropertyName = "Capienza_bagagliaio";
-            this.capienzabagagliaioDataGridViewTextBoxColumn.HeaderText = "Capienza_bagagliaio";
-            this.capienzabagagliaioDataGridViewTextBoxColumn.Name = "capienzabagagliaioDataGridViewTextBoxColumn";
-            this.capienzabagagliaioDataGridViewTextBoxColumn.ReadOnly = true;
-            this.capienzabagagliaioDataGridViewTextBoxColumn.Width = 120;
+            this.capienzaBagagliaioDataGridViewTextBoxColumn.DataPropertyName = "CapienzaBagagliaio";
+            this.capienzaBagagliaioDataGridViewTextBoxColumn.HeaderText = "CapienzaBagagliaio";
+            this.capienzaBagagliaioDataGridViewTextBoxColumn.Name = "capienzaBagagliaioDataGridViewTextBoxColumn";
+            this.capienzaBagagliaioDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // noporteDataGridViewTextBoxColumn
+            // numPorteDataGridViewTextBoxColumn
             // 
-            this.noporteDataGridViewTextBoxColumn.DataPropertyName = "No_porte";
-            this.noporteDataGridViewTextBoxColumn.HeaderText = "No_porte";
-            this.noporteDataGridViewTextBoxColumn.Name = "noporteDataGridViewTextBoxColumn";
-            this.noporteDataGridViewTextBoxColumn.ReadOnly = true;
+            this.numPorteDataGridViewTextBoxColumn.DataPropertyName = "NumPorte";
+            this.numPorteDataGridViewTextBoxColumn.HeaderText = "NumPorte";
+            this.numPorteDataGridViewTextBoxColumn.Name = "numPorteDataGridViewTextBoxColumn";
+            this.numPorteDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // modelloPartitaIVADataGridViewTextBoxColumn
+            // nomeModelloDataGridViewTextBoxColumn
             // 
-            this.modelloPartitaIVADataGridViewTextBoxColumn.DataPropertyName = "Modello_Partita_IVA";
-            this.modelloPartitaIVADataGridViewTextBoxColumn.HeaderText = "Modello_Partita_IVA";
-            this.modelloPartitaIVADataGridViewTextBoxColumn.Name = "modelloPartitaIVADataGridViewTextBoxColumn";
-            this.modelloPartitaIVADataGridViewTextBoxColumn.ReadOnly = true;
-            this.modelloPartitaIVADataGridViewTextBoxColumn.Width = 120;
+            this.nomeModelloDataGridViewTextBoxColumn.DataPropertyName = "NomeModello";
+            this.nomeModelloDataGridViewTextBoxColumn.HeaderText = "NomeModello";
+            this.nomeModelloDataGridViewTextBoxColumn.Name = "nomeModelloDataGridViewTextBoxColumn";
+            this.nomeModelloDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // modelloNomeDataGridViewTextBoxColumn
+            // annoModelloDataGridViewTextBoxColumn
             // 
-            this.modelloNomeDataGridViewTextBoxColumn.DataPropertyName = "Modello_Nome";
-            this.modelloNomeDataGridViewTextBoxColumn.HeaderText = "Modello_Nome";
-            this.modelloNomeDataGridViewTextBoxColumn.Name = "modelloNomeDataGridViewTextBoxColumn";
-            this.modelloNomeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.annoModelloDataGridViewTextBoxColumn.DataPropertyName = "AnnoModello";
+            this.annoModelloDataGridViewTextBoxColumn.HeaderText = "AnnoModello";
+            this.annoModelloDataGridViewTextBoxColumn.Name = "annoModelloDataGridViewTextBoxColumn";
+            this.annoModelloDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // modelloAnnoDataGridViewTextBoxColumn
+            // veicoloCatalogoBindingSource
             // 
-            this.modelloAnnoDataGridViewTextBoxColumn.DataPropertyName = "Modello_Anno";
-            this.modelloAnnoDataGridViewTextBoxColumn.HeaderText = "Modello_Anno";
-            this.modelloAnnoDataGridViewTextBoxColumn.Name = "modelloAnnoDataGridViewTextBoxColumn";
-            this.modelloAnnoDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // veicoloincatalogoBindingSource
-            // 
-            this.veicoloincatalogoBindingSource.DataMember = "Veicolo_in_catalogo";
-            this.veicoloincatalogoBindingSource.DataSource = this.progettoDB16DataSet;
+            this.veicoloCatalogoBindingSource.DataMember = "VeicoloCatalogo";
+            this.veicoloCatalogoBindingSource.DataSource = this.dBProject1617DataSet;
             // 
             // addVeicoloBtn
             // 
@@ -1248,8 +1211,8 @@
             this.dataGridView17.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nomeDataGridViewTextBoxColumn1,
             this.annoDataGridViewTextBoxColumn,
-            this.fornitorePartitaIVADataGridViewTextBoxColumn2});
-            this.dataGridView17.DataSource = this.modelloveicoloBindingSource;
+            this.fornitoreDataGridViewTextBoxColumn1});
+            this.dataGridView17.DataSource = this.modelloVeicoloBindingSource;
             this.dataGridView17.Location = new System.Drawing.Point(9, 8);
             this.dataGridView17.Name = "dataGridView17";
             this.dataGridView17.ReadOnly = true;
@@ -1270,18 +1233,17 @@
             this.annoDataGridViewTextBoxColumn.Name = "annoDataGridViewTextBoxColumn";
             this.annoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // fornitorePartitaIVADataGridViewTextBoxColumn2
+            // fornitoreDataGridViewTextBoxColumn1
             // 
-            this.fornitorePartitaIVADataGridViewTextBoxColumn2.DataPropertyName = "Fornitore_Partita_IVA";
-            this.fornitorePartitaIVADataGridViewTextBoxColumn2.HeaderText = "Fornitore_Partita_IVA";
-            this.fornitorePartitaIVADataGridViewTextBoxColumn2.Name = "fornitorePartitaIVADataGridViewTextBoxColumn2";
-            this.fornitorePartitaIVADataGridViewTextBoxColumn2.ReadOnly = true;
-            this.fornitorePartitaIVADataGridViewTextBoxColumn2.Width = 120;
+            this.fornitoreDataGridViewTextBoxColumn1.DataPropertyName = "Fornitore";
+            this.fornitoreDataGridViewTextBoxColumn1.HeaderText = "Fornitore";
+            this.fornitoreDataGridViewTextBoxColumn1.Name = "fornitoreDataGridViewTextBoxColumn1";
+            this.fornitoreDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
-            // modelloveicoloBindingSource
+            // modelloVeicoloBindingSource
             // 
-            this.modelloveicoloBindingSource.DataMember = "Modello_veicolo";
-            this.modelloveicoloBindingSource.DataSource = this.progettoDB16DataSet;
+            this.modelloVeicoloBindingSource.DataMember = "ModelloVeicolo";
+            this.modelloVeicoloBindingSource.DataSource = this.dBProject1617DataSet;
             // 
             // addModelloBtn
             // 
@@ -1387,7 +1349,7 @@
             // optionalBindingSource
             // 
             this.optionalBindingSource.DataMember = "Optional";
-            this.optionalBindingSource.DataSource = this.progettoDB16DataSet;
+            this.optionalBindingSource.DataSource = this.dBProject1617DataSet;
             // 
             // addOptionalBtn
             // 
@@ -1451,49 +1413,49 @@
             this.dataGridView19.AutoGenerateColumns = false;
             this.dataGridView19.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView19.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.numerotelaioDataGridViewTextBoxColumn,
-            this.contrattoNumeroDataGridViewTextBoxColumn2,
-            this.ordineIDordineDataGridViewTextBoxColumn2,
-            this.veicoloCodiceDataGridViewTextBoxColumn1});
-            this.dataGridView19.DataSource = this.veicolovendutoBindingSource;
+            this.idDataGridViewTextBoxColumn2,
+            this.telaioDataGridViewTextBoxColumn,
+            this.contrattoDataGridViewTextBoxColumn1,
+            this.veicoloCatalogoDataGridViewTextBoxColumn});
+            this.dataGridView19.DataSource = this.veicoloVendutoBindingSource;
             this.dataGridView19.Location = new System.Drawing.Point(9, 8);
             this.dataGridView19.Name = "dataGridView19";
             this.dataGridView19.ReadOnly = true;
             this.dataGridView19.Size = new System.Drawing.Size(472, 260);
             this.dataGridView19.TabIndex = 20;
             // 
-            // numerotelaioDataGridViewTextBoxColumn
+            // idDataGridViewTextBoxColumn2
             // 
-            this.numerotelaioDataGridViewTextBoxColumn.DataPropertyName = "Numero_telaio";
-            this.numerotelaioDataGridViewTextBoxColumn.HeaderText = "Numero_telaio";
-            this.numerotelaioDataGridViewTextBoxColumn.Name = "numerotelaioDataGridViewTextBoxColumn";
-            this.numerotelaioDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idDataGridViewTextBoxColumn2.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn2.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn2.Name = "idDataGridViewTextBoxColumn2";
+            this.idDataGridViewTextBoxColumn2.ReadOnly = true;
             // 
-            // contrattoNumeroDataGridViewTextBoxColumn2
+            // telaioDataGridViewTextBoxColumn
             // 
-            this.contrattoNumeroDataGridViewTextBoxColumn2.DataPropertyName = "Contratto_Numero";
-            this.contrattoNumeroDataGridViewTextBoxColumn2.HeaderText = "Contratto_Numero";
-            this.contrattoNumeroDataGridViewTextBoxColumn2.Name = "contrattoNumeroDataGridViewTextBoxColumn2";
-            this.contrattoNumeroDataGridViewTextBoxColumn2.ReadOnly = true;
+            this.telaioDataGridViewTextBoxColumn.DataPropertyName = "Telaio";
+            this.telaioDataGridViewTextBoxColumn.HeaderText = "Telaio";
+            this.telaioDataGridViewTextBoxColumn.Name = "telaioDataGridViewTextBoxColumn";
+            this.telaioDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // ordineIDordineDataGridViewTextBoxColumn2
+            // contrattoDataGridViewTextBoxColumn1
             // 
-            this.ordineIDordineDataGridViewTextBoxColumn2.DataPropertyName = "Ordine_ID_ordine";
-            this.ordineIDordineDataGridViewTextBoxColumn2.HeaderText = "Ordine_ID_ordine";
-            this.ordineIDordineDataGridViewTextBoxColumn2.Name = "ordineIDordineDataGridViewTextBoxColumn2";
-            this.ordineIDordineDataGridViewTextBoxColumn2.ReadOnly = true;
+            this.contrattoDataGridViewTextBoxColumn1.DataPropertyName = "Contratto";
+            this.contrattoDataGridViewTextBoxColumn1.HeaderText = "Contratto";
+            this.contrattoDataGridViewTextBoxColumn1.Name = "contrattoDataGridViewTextBoxColumn1";
+            this.contrattoDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
-            // veicoloCodiceDataGridViewTextBoxColumn1
+            // veicoloCatalogoDataGridViewTextBoxColumn
             // 
-            this.veicoloCodiceDataGridViewTextBoxColumn1.DataPropertyName = "Veicolo_Codice";
-            this.veicoloCodiceDataGridViewTextBoxColumn1.HeaderText = "Veicolo_Codice";
-            this.veicoloCodiceDataGridViewTextBoxColumn1.Name = "veicoloCodiceDataGridViewTextBoxColumn1";
-            this.veicoloCodiceDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.veicoloCatalogoDataGridViewTextBoxColumn.DataPropertyName = "VeicoloCatalogo";
+            this.veicoloCatalogoDataGridViewTextBoxColumn.HeaderText = "VeicoloCatalogo";
+            this.veicoloCatalogoDataGridViewTextBoxColumn.Name = "veicoloCatalogoDataGridViewTextBoxColumn";
+            this.veicoloCatalogoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // veicolovendutoBindingSource
+            // veicoloVendutoBindingSource
             // 
-            this.veicolovendutoBindingSource.DataMember = "Veicolo_venduto";
-            this.veicolovendutoBindingSource.DataSource = this.progettoDB16DataSet;
+            this.veicoloVendutoBindingSource.DataMember = "VeicoloVenduto";
+            this.veicoloVendutoBindingSource.DataSource = this.dBProject1617DataSet;
             // 
             // addVenditaBtn
             // 
@@ -1533,10 +1495,10 @@
             this.dataGridView22.AutoGenerateColumns = false;
             this.dataGridView22.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView22.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.veicoloNumerotelaioDataGridViewTextBoxColumn,
-            this.numeroDataGridViewTextBoxColumn3,
-            this.scadenzaDataGridViewTextBoxColumn,
-            this.dataesecuzioneDataGridViewTextBoxColumn});
+            this.veicoloVendutoDataGridViewTextBoxColumn,
+            this.numeroDataGridViewTextBoxColumn1,
+            this.scadenzaDataGridViewTextBoxColumn1,
+            this.dataEsecuzioneDataGridViewTextBoxColumn});
             this.dataGridView22.DataSource = this.revisioneBindingSource;
             this.dataGridView22.Location = new System.Drawing.Point(9, 8);
             this.dataGridView22.Name = "dataGridView22";
@@ -1544,39 +1506,38 @@
             this.dataGridView22.Size = new System.Drawing.Size(472, 260);
             this.dataGridView22.TabIndex = 24;
             // 
-            // veicoloNumerotelaioDataGridViewTextBoxColumn
+            // veicoloVendutoDataGridViewTextBoxColumn
             // 
-            this.veicoloNumerotelaioDataGridViewTextBoxColumn.DataPropertyName = "Veicolo_Numero_telaio";
-            this.veicoloNumerotelaioDataGridViewTextBoxColumn.HeaderText = "Veicolo_Numero_telaio";
-            this.veicoloNumerotelaioDataGridViewTextBoxColumn.Name = "veicoloNumerotelaioDataGridViewTextBoxColumn";
-            this.veicoloNumerotelaioDataGridViewTextBoxColumn.ReadOnly = true;
-            this.veicoloNumerotelaioDataGridViewTextBoxColumn.Width = 120;
+            this.veicoloVendutoDataGridViewTextBoxColumn.DataPropertyName = "VeicoloVenduto";
+            this.veicoloVendutoDataGridViewTextBoxColumn.HeaderText = "VeicoloVenduto";
+            this.veicoloVendutoDataGridViewTextBoxColumn.Name = "veicoloVendutoDataGridViewTextBoxColumn";
+            this.veicoloVendutoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // numeroDataGridViewTextBoxColumn3
+            // numeroDataGridViewTextBoxColumn1
             // 
-            this.numeroDataGridViewTextBoxColumn3.DataPropertyName = "Numero";
-            this.numeroDataGridViewTextBoxColumn3.HeaderText = "Numero";
-            this.numeroDataGridViewTextBoxColumn3.Name = "numeroDataGridViewTextBoxColumn3";
-            this.numeroDataGridViewTextBoxColumn3.ReadOnly = true;
+            this.numeroDataGridViewTextBoxColumn1.DataPropertyName = "Numero";
+            this.numeroDataGridViewTextBoxColumn1.HeaderText = "Numero";
+            this.numeroDataGridViewTextBoxColumn1.Name = "numeroDataGridViewTextBoxColumn1";
+            this.numeroDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
-            // scadenzaDataGridViewTextBoxColumn
+            // scadenzaDataGridViewTextBoxColumn1
             // 
-            this.scadenzaDataGridViewTextBoxColumn.DataPropertyName = "Scadenza";
-            this.scadenzaDataGridViewTextBoxColumn.HeaderText = "Scadenza";
-            this.scadenzaDataGridViewTextBoxColumn.Name = "scadenzaDataGridViewTextBoxColumn";
-            this.scadenzaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.scadenzaDataGridViewTextBoxColumn1.DataPropertyName = "Scadenza";
+            this.scadenzaDataGridViewTextBoxColumn1.HeaderText = "Scadenza";
+            this.scadenzaDataGridViewTextBoxColumn1.Name = "scadenzaDataGridViewTextBoxColumn1";
+            this.scadenzaDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
-            // dataesecuzioneDataGridViewTextBoxColumn
+            // dataEsecuzioneDataGridViewTextBoxColumn
             // 
-            this.dataesecuzioneDataGridViewTextBoxColumn.DataPropertyName = "Data_esecuzione";
-            this.dataesecuzioneDataGridViewTextBoxColumn.HeaderText = "Data_esecuzione";
-            this.dataesecuzioneDataGridViewTextBoxColumn.Name = "dataesecuzioneDataGridViewTextBoxColumn";
-            this.dataesecuzioneDataGridViewTextBoxColumn.ReadOnly = true;
+            this.dataEsecuzioneDataGridViewTextBoxColumn.DataPropertyName = "DataEsecuzione";
+            this.dataEsecuzioneDataGridViewTextBoxColumn.HeaderText = "DataEsecuzione";
+            this.dataEsecuzioneDataGridViewTextBoxColumn.Name = "dataEsecuzioneDataGridViewTextBoxColumn";
+            this.dataEsecuzioneDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // revisioneBindingSource
             // 
             this.revisioneBindingSource.DataMember = "Revisione";
-            this.revisioneBindingSource.DataSource = this.progettoDB16DataSet;
+            this.revisioneBindingSource.DataSource = this.dBProject1617DataSet;
             // 
             // comboBox17
             // 
@@ -1676,33 +1637,33 @@
             this.dataGridView24.AutoGenerateColumns = false;
             this.dataGridView24.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView24.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.veicoloCodiceDataGridViewTextBoxColumn2,
-            this.ricambioCodiceDataGridViewTextBoxColumn1});
-            this.dataGridView24.DataSource = this.referenza2BindingSource;
+            this.veicoloCatalogoDataGridViewTextBoxColumn1,
+            this.optionalDataGridViewTextBoxColumn});
+            this.dataGridView24.DataSource = this.supportoBindingSource;
             this.dataGridView24.Location = new System.Drawing.Point(9, 8);
             this.dataGridView24.Name = "dataGridView24";
             this.dataGridView24.ReadOnly = true;
             this.dataGridView24.Size = new System.Drawing.Size(472, 260);
             this.dataGridView24.TabIndex = 23;
             // 
-            // veicoloCodiceDataGridViewTextBoxColumn2
+            // veicoloCatalogoDataGridViewTextBoxColumn1
             // 
-            this.veicoloCodiceDataGridViewTextBoxColumn2.DataPropertyName = "Veicolo_Codice";
-            this.veicoloCodiceDataGridViewTextBoxColumn2.HeaderText = "Veicolo_Codice";
-            this.veicoloCodiceDataGridViewTextBoxColumn2.Name = "veicoloCodiceDataGridViewTextBoxColumn2";
-            this.veicoloCodiceDataGridViewTextBoxColumn2.ReadOnly = true;
+            this.veicoloCatalogoDataGridViewTextBoxColumn1.DataPropertyName = "VeicoloCatalogo";
+            this.veicoloCatalogoDataGridViewTextBoxColumn1.HeaderText = "VeicoloCatalogo";
+            this.veicoloCatalogoDataGridViewTextBoxColumn1.Name = "veicoloCatalogoDataGridViewTextBoxColumn1";
+            this.veicoloCatalogoDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
-            // ricambioCodiceDataGridViewTextBoxColumn1
+            // optionalDataGridViewTextBoxColumn
             // 
-            this.ricambioCodiceDataGridViewTextBoxColumn1.DataPropertyName = "Ricambio_Codice";
-            this.ricambioCodiceDataGridViewTextBoxColumn1.HeaderText = "Ricambio_Codice";
-            this.ricambioCodiceDataGridViewTextBoxColumn1.Name = "ricambioCodiceDataGridViewTextBoxColumn1";
-            this.ricambioCodiceDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.optionalDataGridViewTextBoxColumn.DataPropertyName = "Optional";
+            this.optionalDataGridViewTextBoxColumn.HeaderText = "Optional";
+            this.optionalDataGridViewTextBoxColumn.Name = "optionalDataGridViewTextBoxColumn";
+            this.optionalDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // referenza2BindingSource
+            // supportoBindingSource
             // 
-            this.referenza2BindingSource.DataMember = "referenza2";
-            this.referenza2BindingSource.DataSource = this.progettoDB16DataSet;
+            this.supportoBindingSource.DataMember = "Supporto";
+            this.supportoBindingSource.DataSource = this.dBProject1617DataSet;
             // 
             // entryButton10
             // 
@@ -1764,34 +1725,33 @@
             this.dataGridView25.AutoGenerateColumns = false;
             this.dataGridView25.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView25.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.veicoloNumerotelaioDataGridViewTextBoxColumn1,
-            this.optionalCodiceDataGridViewTextBoxColumn});
-            this.dataGridView25.DataSource = this.possessoBindingSource1;
+            this.optionalDataGridViewTextBoxColumn1,
+            this.veicoloDataGridViewTextBoxColumn1});
+            this.dataGridView25.DataSource = this.dotazioneBindingSource;
             this.dataGridView25.Location = new System.Drawing.Point(9, 8);
             this.dataGridView25.Name = "dataGridView25";
             this.dataGridView25.ReadOnly = true;
             this.dataGridView25.Size = new System.Drawing.Size(472, 260);
             this.dataGridView25.TabIndex = 24;
             // 
-            // veicoloNumerotelaioDataGridViewTextBoxColumn1
+            // optionalDataGridViewTextBoxColumn1
             // 
-            this.veicoloNumerotelaioDataGridViewTextBoxColumn1.DataPropertyName = "Veicolo_Numero_telaio";
-            this.veicoloNumerotelaioDataGridViewTextBoxColumn1.HeaderText = "Veicolo_Numero_telaio";
-            this.veicoloNumerotelaioDataGridViewTextBoxColumn1.Name = "veicoloNumerotelaioDataGridViewTextBoxColumn1";
-            this.veicoloNumerotelaioDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.veicoloNumerotelaioDataGridViewTextBoxColumn1.Width = 120;
+            this.optionalDataGridViewTextBoxColumn1.DataPropertyName = "Optional";
+            this.optionalDataGridViewTextBoxColumn1.HeaderText = "Optional";
+            this.optionalDataGridViewTextBoxColumn1.Name = "optionalDataGridViewTextBoxColumn1";
+            this.optionalDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
-            // optionalCodiceDataGridViewTextBoxColumn
+            // veicoloDataGridViewTextBoxColumn1
             // 
-            this.optionalCodiceDataGridViewTextBoxColumn.DataPropertyName = "Optional_Codice";
-            this.optionalCodiceDataGridViewTextBoxColumn.HeaderText = "Optional_Codice";
-            this.optionalCodiceDataGridViewTextBoxColumn.Name = "optionalCodiceDataGridViewTextBoxColumn";
-            this.optionalCodiceDataGridViewTextBoxColumn.ReadOnly = true;
+            this.veicoloDataGridViewTextBoxColumn1.DataPropertyName = "Veicolo";
+            this.veicoloDataGridViewTextBoxColumn1.HeaderText = "Veicolo";
+            this.veicoloDataGridViewTextBoxColumn1.Name = "veicoloDataGridViewTextBoxColumn1";
+            this.veicoloDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
-            // possessoBindingSource1
+            // dotazioneBindingSource
             // 
-            this.possessoBindingSource1.DataMember = "possesso";
-            this.possessoBindingSource1.DataSource = this.progettoDB16DataSet;
+            this.dotazioneBindingSource.DataMember = "Dotazione";
+            this.dotazioneBindingSource.DataSource = this.dBProject1617DataSet;
             // 
             // addOptToVeicVend_Btn
             // 
@@ -1889,16 +1849,16 @@
             this.dataGridViewCorrieri.AutoGenerateColumns = false;
             this.dataGridViewCorrieri.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewCorrieri.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.partitaIVADataGridViewTextBoxColumn1,
-            this.ragionesocialeDataGridViewTextBoxColumn1,
-            this.cittaDataGridViewTextBoxColumn1,
-            this.provinciaDataGridViewTextBoxColumn1,
-            this.indirizzoDataGridViewTextBoxColumn1,
-            this.cAPDataGridViewTextBoxColumn1,
-            this.recapito1DataGridViewTextBoxColumn1,
-            this.recapito2DataGridViewTextBoxColumn1,
-            this.indirizzoemail1DataGridViewTextBoxColumn1,
-            this.indirizzoemail2DataGridViewTextBoxColumn1});
+            this.partitaIVADataGridViewTextBoxColumn,
+            this.ragioneSocialeDataGridViewTextBoxColumn,
+            this.indirizzoDataGridViewTextBoxColumn,
+            this.cittàDataGridViewTextBoxColumn,
+            this.provinciaDataGridViewTextBoxColumn,
+            this.cAPDataGridViewTextBoxColumn,
+            this.recapito1DataGridViewTextBoxColumn,
+            this.recapito2DataGridViewTextBoxColumn,
+            this.indirizzoEmail1DataGridViewTextBoxColumn,
+            this.indirizzoEmail2DataGridViewTextBoxColumn});
             this.dataGridViewCorrieri.DataSource = this.corriereBindingSource;
             this.dataGridViewCorrieri.Location = new System.Drawing.Point(9, 8);
             this.dataGridViewCorrieri.Name = "dataGridViewCorrieri";
@@ -1906,80 +1866,80 @@
             this.dataGridViewCorrieri.Size = new System.Drawing.Size(482, 274);
             this.dataGridViewCorrieri.TabIndex = 13;
             // 
-            // partitaIVADataGridViewTextBoxColumn1
+            // partitaIVADataGridViewTextBoxColumn
             // 
-            this.partitaIVADataGridViewTextBoxColumn1.DataPropertyName = "Partita_IVA";
-            this.partitaIVADataGridViewTextBoxColumn1.HeaderText = "Partita_IVA";
-            this.partitaIVADataGridViewTextBoxColumn1.Name = "partitaIVADataGridViewTextBoxColumn1";
-            this.partitaIVADataGridViewTextBoxColumn1.ReadOnly = true;
+            this.partitaIVADataGridViewTextBoxColumn.DataPropertyName = "PartitaIVA";
+            this.partitaIVADataGridViewTextBoxColumn.HeaderText = "PartitaIVA";
+            this.partitaIVADataGridViewTextBoxColumn.Name = "partitaIVADataGridViewTextBoxColumn";
+            this.partitaIVADataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // ragionesocialeDataGridViewTextBoxColumn1
+            // ragioneSocialeDataGridViewTextBoxColumn
             // 
-            this.ragionesocialeDataGridViewTextBoxColumn1.DataPropertyName = "Ragione_sociale";
-            this.ragionesocialeDataGridViewTextBoxColumn1.HeaderText = "Ragione_sociale";
-            this.ragionesocialeDataGridViewTextBoxColumn1.Name = "ragionesocialeDataGridViewTextBoxColumn1";
-            this.ragionesocialeDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.ragioneSocialeDataGridViewTextBoxColumn.DataPropertyName = "RagioneSociale";
+            this.ragioneSocialeDataGridViewTextBoxColumn.HeaderText = "RagioneSociale";
+            this.ragioneSocialeDataGridViewTextBoxColumn.Name = "ragioneSocialeDataGridViewTextBoxColumn";
+            this.ragioneSocialeDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // cittaDataGridViewTextBoxColumn1
+            // indirizzoDataGridViewTextBoxColumn
             // 
-            this.cittaDataGridViewTextBoxColumn1.DataPropertyName = "Citta";
-            this.cittaDataGridViewTextBoxColumn1.HeaderText = "Citta";
-            this.cittaDataGridViewTextBoxColumn1.Name = "cittaDataGridViewTextBoxColumn1";
-            this.cittaDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.indirizzoDataGridViewTextBoxColumn.DataPropertyName = "Indirizzo";
+            this.indirizzoDataGridViewTextBoxColumn.HeaderText = "Indirizzo";
+            this.indirizzoDataGridViewTextBoxColumn.Name = "indirizzoDataGridViewTextBoxColumn";
+            this.indirizzoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // provinciaDataGridViewTextBoxColumn1
+            // cittàDataGridViewTextBoxColumn
             // 
-            this.provinciaDataGridViewTextBoxColumn1.DataPropertyName = "Provincia";
-            this.provinciaDataGridViewTextBoxColumn1.HeaderText = "Provincia";
-            this.provinciaDataGridViewTextBoxColumn1.Name = "provinciaDataGridViewTextBoxColumn1";
-            this.provinciaDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.cittàDataGridViewTextBoxColumn.DataPropertyName = "Città";
+            this.cittàDataGridViewTextBoxColumn.HeaderText = "Città";
+            this.cittàDataGridViewTextBoxColumn.Name = "cittàDataGridViewTextBoxColumn";
+            this.cittàDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // indirizzoDataGridViewTextBoxColumn1
+            // provinciaDataGridViewTextBoxColumn
             // 
-            this.indirizzoDataGridViewTextBoxColumn1.DataPropertyName = "Indirizzo";
-            this.indirizzoDataGridViewTextBoxColumn1.HeaderText = "Indirizzo";
-            this.indirizzoDataGridViewTextBoxColumn1.Name = "indirizzoDataGridViewTextBoxColumn1";
-            this.indirizzoDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.provinciaDataGridViewTextBoxColumn.DataPropertyName = "Provincia";
+            this.provinciaDataGridViewTextBoxColumn.HeaderText = "Provincia";
+            this.provinciaDataGridViewTextBoxColumn.Name = "provinciaDataGridViewTextBoxColumn";
+            this.provinciaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // cAPDataGridViewTextBoxColumn1
+            // cAPDataGridViewTextBoxColumn
             // 
-            this.cAPDataGridViewTextBoxColumn1.DataPropertyName = "CAP";
-            this.cAPDataGridViewTextBoxColumn1.HeaderText = "CAP";
-            this.cAPDataGridViewTextBoxColumn1.Name = "cAPDataGridViewTextBoxColumn1";
-            this.cAPDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.cAPDataGridViewTextBoxColumn.DataPropertyName = "CAP";
+            this.cAPDataGridViewTextBoxColumn.HeaderText = "CAP";
+            this.cAPDataGridViewTextBoxColumn.Name = "cAPDataGridViewTextBoxColumn";
+            this.cAPDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // recapito1DataGridViewTextBoxColumn1
+            // recapito1DataGridViewTextBoxColumn
             // 
-            this.recapito1DataGridViewTextBoxColumn1.DataPropertyName = "Recapito_1";
-            this.recapito1DataGridViewTextBoxColumn1.HeaderText = "Recapito_1";
-            this.recapito1DataGridViewTextBoxColumn1.Name = "recapito1DataGridViewTextBoxColumn1";
-            this.recapito1DataGridViewTextBoxColumn1.ReadOnly = true;
+            this.recapito1DataGridViewTextBoxColumn.DataPropertyName = "Recapito1";
+            this.recapito1DataGridViewTextBoxColumn.HeaderText = "Recapito1";
+            this.recapito1DataGridViewTextBoxColumn.Name = "recapito1DataGridViewTextBoxColumn";
+            this.recapito1DataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // recapito2DataGridViewTextBoxColumn1
+            // recapito2DataGridViewTextBoxColumn
             // 
-            this.recapito2DataGridViewTextBoxColumn1.DataPropertyName = "Recapito_2";
-            this.recapito2DataGridViewTextBoxColumn1.HeaderText = "Recapito_2";
-            this.recapito2DataGridViewTextBoxColumn1.Name = "recapito2DataGridViewTextBoxColumn1";
-            this.recapito2DataGridViewTextBoxColumn1.ReadOnly = true;
+            this.recapito2DataGridViewTextBoxColumn.DataPropertyName = "Recapito2";
+            this.recapito2DataGridViewTextBoxColumn.HeaderText = "Recapito2";
+            this.recapito2DataGridViewTextBoxColumn.Name = "recapito2DataGridViewTextBoxColumn";
+            this.recapito2DataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // indirizzoemail1DataGridViewTextBoxColumn1
+            // indirizzoEmail1DataGridViewTextBoxColumn
             // 
-            this.indirizzoemail1DataGridViewTextBoxColumn1.DataPropertyName = "Indirizzo_e_mail_1";
-            this.indirizzoemail1DataGridViewTextBoxColumn1.HeaderText = "Indirizzo_e_mail_1";
-            this.indirizzoemail1DataGridViewTextBoxColumn1.Name = "indirizzoemail1DataGridViewTextBoxColumn1";
-            this.indirizzoemail1DataGridViewTextBoxColumn1.ReadOnly = true;
+            this.indirizzoEmail1DataGridViewTextBoxColumn.DataPropertyName = "IndirizzoEmail1";
+            this.indirizzoEmail1DataGridViewTextBoxColumn.HeaderText = "IndirizzoEmail1";
+            this.indirizzoEmail1DataGridViewTextBoxColumn.Name = "indirizzoEmail1DataGridViewTextBoxColumn";
+            this.indirizzoEmail1DataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // indirizzoemail2DataGridViewTextBoxColumn1
+            // indirizzoEmail2DataGridViewTextBoxColumn
             // 
-            this.indirizzoemail2DataGridViewTextBoxColumn1.DataPropertyName = "Indirizzo_e_mail_2";
-            this.indirizzoemail2DataGridViewTextBoxColumn1.HeaderText = "Indirizzo_e_mail_2";
-            this.indirizzoemail2DataGridViewTextBoxColumn1.Name = "indirizzoemail2DataGridViewTextBoxColumn1";
-            this.indirizzoemail2DataGridViewTextBoxColumn1.ReadOnly = true;
+            this.indirizzoEmail2DataGridViewTextBoxColumn.DataPropertyName = "IndirizzoEmail2";
+            this.indirizzoEmail2DataGridViewTextBoxColumn.HeaderText = "IndirizzoEmail2";
+            this.indirizzoEmail2DataGridViewTextBoxColumn.Name = "indirizzoEmail2DataGridViewTextBoxColumn";
+            this.indirizzoEmail2DataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // corriereBindingSource
             // 
             this.corriereBindingSource.DataMember = "Corriere";
-            this.corriereBindingSource.DataSource = this.progettoDB16DataSet;
+            this.corriereBindingSource.DataSource = this.dBProject1617DataSet;
             // 
             // entryButton3
             // 
@@ -2021,15 +1981,13 @@
             this.dataGridViewTrasporti.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewTrasporti.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.codiceDataGridViewTextBoxColumn,
-            this.contrattoNumeroDataGridViewTextBoxColumn,
             this.costoDataGridViewTextBoxColumn,
-            this.dataconsegna1DataGridViewTextBoxColumn,
-            this.dataconsegna2DataGridViewTextBoxColumn,
-            this.indirizzoDataGridViewTextBoxColumn2,
-            this.cittaDataGridViewTextBoxColumn2,
-            this.provinciaDataGridViewTextBoxColumn2,
-            this.cAPDataGridViewTextBoxColumn2,
-            this.corrierePartitaIVADataGridViewTextBoxColumn});
+            this.dataConsegnaPrevistaDataGridViewTextBoxColumn,
+            this.dataConsegnaDataGridViewTextBoxColumn,
+            this.indirizzoConsegnaDataGridViewTextBoxColumn,
+            this.cittàConsegnaDataGridViewTextBoxColumn,
+            this.provinciaConsegnaDataGridViewTextBoxColumn,
+            this.corriereDataGridViewTextBoxColumn});
             this.dataGridViewTrasporti.DataSource = this.trasportoBindingSource;
             this.dataGridViewTrasporti.Location = new System.Drawing.Point(9, 8);
             this.dataGridViewTrasporti.Name = "dataGridViewTrasporti";
@@ -2044,13 +2002,6 @@
             this.codiceDataGridViewTextBoxColumn.Name = "codiceDataGridViewTextBoxColumn";
             this.codiceDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // contrattoNumeroDataGridViewTextBoxColumn
-            // 
-            this.contrattoNumeroDataGridViewTextBoxColumn.DataPropertyName = "Contratto_Numero";
-            this.contrattoNumeroDataGridViewTextBoxColumn.HeaderText = "Contratto_Numero";
-            this.contrattoNumeroDataGridViewTextBoxColumn.Name = "contrattoNumeroDataGridViewTextBoxColumn";
-            this.contrattoNumeroDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
             // costoDataGridViewTextBoxColumn
             // 
             this.costoDataGridViewTextBoxColumn.DataPropertyName = "Costo";
@@ -2058,60 +2009,52 @@
             this.costoDataGridViewTextBoxColumn.Name = "costoDataGridViewTextBoxColumn";
             this.costoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // dataconsegna1DataGridViewTextBoxColumn
+            // dataConsegnaPrevistaDataGridViewTextBoxColumn
             // 
-            this.dataconsegna1DataGridViewTextBoxColumn.DataPropertyName = "Data_consegna_1";
-            this.dataconsegna1DataGridViewTextBoxColumn.HeaderText = "Data_consegna_1";
-            this.dataconsegna1DataGridViewTextBoxColumn.Name = "dataconsegna1DataGridViewTextBoxColumn";
-            this.dataconsegna1DataGridViewTextBoxColumn.ReadOnly = true;
+            this.dataConsegnaPrevistaDataGridViewTextBoxColumn.DataPropertyName = "DataConsegnaPrevista";
+            this.dataConsegnaPrevistaDataGridViewTextBoxColumn.HeaderText = "DataConsegnaPrevista";
+            this.dataConsegnaPrevistaDataGridViewTextBoxColumn.Name = "dataConsegnaPrevistaDataGridViewTextBoxColumn";
+            this.dataConsegnaPrevistaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // dataconsegna2DataGridViewTextBoxColumn
+            // dataConsegnaDataGridViewTextBoxColumn
             // 
-            this.dataconsegna2DataGridViewTextBoxColumn.DataPropertyName = "Data_consegna_2";
-            this.dataconsegna2DataGridViewTextBoxColumn.HeaderText = "Data_consegna_2";
-            this.dataconsegna2DataGridViewTextBoxColumn.Name = "dataconsegna2DataGridViewTextBoxColumn";
-            this.dataconsegna2DataGridViewTextBoxColumn.ReadOnly = true;
+            this.dataConsegnaDataGridViewTextBoxColumn.DataPropertyName = "DataConsegna";
+            this.dataConsegnaDataGridViewTextBoxColumn.HeaderText = "DataConsegna";
+            this.dataConsegnaDataGridViewTextBoxColumn.Name = "dataConsegnaDataGridViewTextBoxColumn";
+            this.dataConsegnaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // indirizzoDataGridViewTextBoxColumn2
+            // indirizzoConsegnaDataGridViewTextBoxColumn
             // 
-            this.indirizzoDataGridViewTextBoxColumn2.DataPropertyName = "Indirizzo";
-            this.indirizzoDataGridViewTextBoxColumn2.HeaderText = "Indirizzo";
-            this.indirizzoDataGridViewTextBoxColumn2.Name = "indirizzoDataGridViewTextBoxColumn2";
-            this.indirizzoDataGridViewTextBoxColumn2.ReadOnly = true;
+            this.indirizzoConsegnaDataGridViewTextBoxColumn.DataPropertyName = "IndirizzoConsegna";
+            this.indirizzoConsegnaDataGridViewTextBoxColumn.HeaderText = "IndirizzoConsegna";
+            this.indirizzoConsegnaDataGridViewTextBoxColumn.Name = "indirizzoConsegnaDataGridViewTextBoxColumn";
+            this.indirizzoConsegnaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // cittaDataGridViewTextBoxColumn2
+            // cittàConsegnaDataGridViewTextBoxColumn
             // 
-            this.cittaDataGridViewTextBoxColumn2.DataPropertyName = "Citta";
-            this.cittaDataGridViewTextBoxColumn2.HeaderText = "Citta";
-            this.cittaDataGridViewTextBoxColumn2.Name = "cittaDataGridViewTextBoxColumn2";
-            this.cittaDataGridViewTextBoxColumn2.ReadOnly = true;
+            this.cittàConsegnaDataGridViewTextBoxColumn.DataPropertyName = "CittàConsegna";
+            this.cittàConsegnaDataGridViewTextBoxColumn.HeaderText = "CittàConsegna";
+            this.cittàConsegnaDataGridViewTextBoxColumn.Name = "cittàConsegnaDataGridViewTextBoxColumn";
+            this.cittàConsegnaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // provinciaDataGridViewTextBoxColumn2
+            // provinciaConsegnaDataGridViewTextBoxColumn
             // 
-            this.provinciaDataGridViewTextBoxColumn2.DataPropertyName = "Provincia";
-            this.provinciaDataGridViewTextBoxColumn2.HeaderText = "Provincia";
-            this.provinciaDataGridViewTextBoxColumn2.Name = "provinciaDataGridViewTextBoxColumn2";
-            this.provinciaDataGridViewTextBoxColumn2.ReadOnly = true;
+            this.provinciaConsegnaDataGridViewTextBoxColumn.DataPropertyName = "ProvinciaConsegna";
+            this.provinciaConsegnaDataGridViewTextBoxColumn.HeaderText = "ProvinciaConsegna";
+            this.provinciaConsegnaDataGridViewTextBoxColumn.Name = "provinciaConsegnaDataGridViewTextBoxColumn";
+            this.provinciaConsegnaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // cAPDataGridViewTextBoxColumn2
+            // corriereDataGridViewTextBoxColumn
             // 
-            this.cAPDataGridViewTextBoxColumn2.DataPropertyName = "CAP";
-            this.cAPDataGridViewTextBoxColumn2.HeaderText = "CAP";
-            this.cAPDataGridViewTextBoxColumn2.Name = "cAPDataGridViewTextBoxColumn2";
-            this.cAPDataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // corrierePartitaIVADataGridViewTextBoxColumn
-            // 
-            this.corrierePartitaIVADataGridViewTextBoxColumn.DataPropertyName = "Corriere_Partita_IVA";
-            this.corrierePartitaIVADataGridViewTextBoxColumn.HeaderText = "Corriere_Partita_IVA";
-            this.corrierePartitaIVADataGridViewTextBoxColumn.Name = "corrierePartitaIVADataGridViewTextBoxColumn";
-            this.corrierePartitaIVADataGridViewTextBoxColumn.ReadOnly = true;
-            this.corrierePartitaIVADataGridViewTextBoxColumn.Width = 120;
+            this.corriereDataGridViewTextBoxColumn.DataPropertyName = "Corriere";
+            this.corriereDataGridViewTextBoxColumn.HeaderText = "Corriere";
+            this.corriereDataGridViewTextBoxColumn.Name = "corriereDataGridViewTextBoxColumn";
+            this.corriereDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // trasportoBindingSource
             // 
             this.trasportoBindingSource.DataMember = "Trasporto";
-            this.trasportoBindingSource.DataSource = this.progettoDB16DataSet;
+            this.trasportoBindingSource.DataSource = this.dBProject1617DataSet;
             // 
             // comboBoxTrasporti
             // 
@@ -2342,10 +2285,10 @@
             this.dataGridView15.AutoGenerateColumns = false;
             this.dataGridView15.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView15.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.veicoloNumerotelaioDataGridViewTextBoxColumn2,
-            this.numeroDataGridViewTextBoxColumn4,
-            this.dataDataGridViewTextBoxColumn4,
-            this.importocomplessivoDataGridViewTextBoxColumn2});
+            this.veicoloDataGridViewTextBoxColumn2,
+            this.numeroDataGridViewTextBoxColumn2,
+            this.dataDataGridViewTextBoxColumn1,
+            this.importoComplessivoDataGridViewTextBoxColumn1});
             this.dataGridView15.DataSource = this.riparazioneBindingSource;
             this.dataGridView15.Location = new System.Drawing.Point(9, 8);
             this.dataGridView15.Name = "dataGridView15";
@@ -2353,40 +2296,38 @@
             this.dataGridView15.Size = new System.Drawing.Size(482, 273);
             this.dataGridView15.TabIndex = 15;
             // 
-            // veicoloNumerotelaioDataGridViewTextBoxColumn2
+            // veicoloDataGridViewTextBoxColumn2
             // 
-            this.veicoloNumerotelaioDataGridViewTextBoxColumn2.DataPropertyName = "Veicolo_Numero_telaio";
-            this.veicoloNumerotelaioDataGridViewTextBoxColumn2.HeaderText = "Veicolo_Numero_telaio";
-            this.veicoloNumerotelaioDataGridViewTextBoxColumn2.Name = "veicoloNumerotelaioDataGridViewTextBoxColumn2";
-            this.veicoloNumerotelaioDataGridViewTextBoxColumn2.ReadOnly = true;
-            this.veicoloNumerotelaioDataGridViewTextBoxColumn2.Width = 150;
+            this.veicoloDataGridViewTextBoxColumn2.DataPropertyName = "Veicolo";
+            this.veicoloDataGridViewTextBoxColumn2.HeaderText = "Veicolo";
+            this.veicoloDataGridViewTextBoxColumn2.Name = "veicoloDataGridViewTextBoxColumn2";
+            this.veicoloDataGridViewTextBoxColumn2.ReadOnly = true;
             // 
-            // numeroDataGridViewTextBoxColumn4
+            // numeroDataGridViewTextBoxColumn2
             // 
-            this.numeroDataGridViewTextBoxColumn4.DataPropertyName = "Numero";
-            this.numeroDataGridViewTextBoxColumn4.HeaderText = "Numero";
-            this.numeroDataGridViewTextBoxColumn4.Name = "numeroDataGridViewTextBoxColumn4";
-            this.numeroDataGridViewTextBoxColumn4.ReadOnly = true;
+            this.numeroDataGridViewTextBoxColumn2.DataPropertyName = "Numero";
+            this.numeroDataGridViewTextBoxColumn2.HeaderText = "Numero";
+            this.numeroDataGridViewTextBoxColumn2.Name = "numeroDataGridViewTextBoxColumn2";
+            this.numeroDataGridViewTextBoxColumn2.ReadOnly = true;
             // 
-            // dataDataGridViewTextBoxColumn4
+            // dataDataGridViewTextBoxColumn1
             // 
-            this.dataDataGridViewTextBoxColumn4.DataPropertyName = "Data";
-            this.dataDataGridViewTextBoxColumn4.HeaderText = "Data";
-            this.dataDataGridViewTextBoxColumn4.Name = "dataDataGridViewTextBoxColumn4";
-            this.dataDataGridViewTextBoxColumn4.ReadOnly = true;
+            this.dataDataGridViewTextBoxColumn1.DataPropertyName = "Data";
+            this.dataDataGridViewTextBoxColumn1.HeaderText = "Data";
+            this.dataDataGridViewTextBoxColumn1.Name = "dataDataGridViewTextBoxColumn1";
+            this.dataDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
-            // importocomplessivoDataGridViewTextBoxColumn2
+            // importoComplessivoDataGridViewTextBoxColumn1
             // 
-            this.importocomplessivoDataGridViewTextBoxColumn2.DataPropertyName = "Importo_complessivo";
-            this.importocomplessivoDataGridViewTextBoxColumn2.HeaderText = "Importo_complessivo";
-            this.importocomplessivoDataGridViewTextBoxColumn2.Name = "importocomplessivoDataGridViewTextBoxColumn2";
-            this.importocomplessivoDataGridViewTextBoxColumn2.ReadOnly = true;
-            this.importocomplessivoDataGridViewTextBoxColumn2.Width = 120;
+            this.importoComplessivoDataGridViewTextBoxColumn1.DataPropertyName = "ImportoComplessivo";
+            this.importoComplessivoDataGridViewTextBoxColumn1.HeaderText = "ImportoComplessivo";
+            this.importoComplessivoDataGridViewTextBoxColumn1.Name = "importoComplessivoDataGridViewTextBoxColumn1";
+            this.importoComplessivoDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // riparazioneBindingSource
             // 
             this.riparazioneBindingSource.DataMember = "Riparazione";
-            this.riparazioneBindingSource.DataSource = this.progettoDB16DataSet;
+            this.riparazioneBindingSource.DataSource = this.dBProject1617DataSet;
             // 
             // addRiparazioneBtn
             // 
@@ -2450,10 +2391,10 @@
             this.dataGridView14.AutoGenerateColumns = false;
             this.dataGridView14.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView14.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.veicoloNumerotelaioDataGridViewTextBoxColumn3,
-            this.riparazioneNumeroDataGridViewTextBoxColumn,
-            this.ricambioCodiceDataGridViewTextBoxColumn2,
-            this.quantitaDataGridViewTextBoxColumn2});
+            this.ricambioDataGridViewTextBoxColumn1,
+            this.veicoloDataGridViewTextBoxColumn3,
+            this.numeroDataGridViewTextBoxColumn3,
+            this.quantitàDataGridViewTextBoxColumn1});
             this.dataGridView14.DataSource = this.utilizzoBindingSource;
             this.dataGridView14.Location = new System.Drawing.Point(9, 8);
             this.dataGridView14.Name = "dataGridView14";
@@ -2461,40 +2402,38 @@
             this.dataGridView14.Size = new System.Drawing.Size(482, 273);
             this.dataGridView14.TabIndex = 23;
             // 
-            // veicoloNumerotelaioDataGridViewTextBoxColumn3
+            // ricambioDataGridViewTextBoxColumn1
             // 
-            this.veicoloNumerotelaioDataGridViewTextBoxColumn3.DataPropertyName = "Veicolo_Numero_telaio";
-            this.veicoloNumerotelaioDataGridViewTextBoxColumn3.HeaderText = "Veicolo_Numero_telaio";
-            this.veicoloNumerotelaioDataGridViewTextBoxColumn3.Name = "veicoloNumerotelaioDataGridViewTextBoxColumn3";
-            this.veicoloNumerotelaioDataGridViewTextBoxColumn3.ReadOnly = true;
-            this.veicoloNumerotelaioDataGridViewTextBoxColumn3.Width = 140;
+            this.ricambioDataGridViewTextBoxColumn1.DataPropertyName = "Ricambio";
+            this.ricambioDataGridViewTextBoxColumn1.HeaderText = "Ricambio";
+            this.ricambioDataGridViewTextBoxColumn1.Name = "ricambioDataGridViewTextBoxColumn1";
+            this.ricambioDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
-            // riparazioneNumeroDataGridViewTextBoxColumn
+            // veicoloDataGridViewTextBoxColumn3
             // 
-            this.riparazioneNumeroDataGridViewTextBoxColumn.DataPropertyName = "Riparazione_Numero";
-            this.riparazioneNumeroDataGridViewTextBoxColumn.HeaderText = "Riparazione_Numero";
-            this.riparazioneNumeroDataGridViewTextBoxColumn.Name = "riparazioneNumeroDataGridViewTextBoxColumn";
-            this.riparazioneNumeroDataGridViewTextBoxColumn.ReadOnly = true;
-            this.riparazioneNumeroDataGridViewTextBoxColumn.Width = 120;
+            this.veicoloDataGridViewTextBoxColumn3.DataPropertyName = "Veicolo";
+            this.veicoloDataGridViewTextBoxColumn3.HeaderText = "Veicolo";
+            this.veicoloDataGridViewTextBoxColumn3.Name = "veicoloDataGridViewTextBoxColumn3";
+            this.veicoloDataGridViewTextBoxColumn3.ReadOnly = true;
             // 
-            // ricambioCodiceDataGridViewTextBoxColumn2
+            // numeroDataGridViewTextBoxColumn3
             // 
-            this.ricambioCodiceDataGridViewTextBoxColumn2.DataPropertyName = "Ricambio_Codice";
-            this.ricambioCodiceDataGridViewTextBoxColumn2.HeaderText = "Ricambio_Codice";
-            this.ricambioCodiceDataGridViewTextBoxColumn2.Name = "ricambioCodiceDataGridViewTextBoxColumn2";
-            this.ricambioCodiceDataGridViewTextBoxColumn2.ReadOnly = true;
+            this.numeroDataGridViewTextBoxColumn3.DataPropertyName = "Numero";
+            this.numeroDataGridViewTextBoxColumn3.HeaderText = "Numero";
+            this.numeroDataGridViewTextBoxColumn3.Name = "numeroDataGridViewTextBoxColumn3";
+            this.numeroDataGridViewTextBoxColumn3.ReadOnly = true;
             // 
-            // quantitaDataGridViewTextBoxColumn2
+            // quantitàDataGridViewTextBoxColumn1
             // 
-            this.quantitaDataGridViewTextBoxColumn2.DataPropertyName = "quantita";
-            this.quantitaDataGridViewTextBoxColumn2.HeaderText = "quantita";
-            this.quantitaDataGridViewTextBoxColumn2.Name = "quantitaDataGridViewTextBoxColumn2";
-            this.quantitaDataGridViewTextBoxColumn2.ReadOnly = true;
+            this.quantitàDataGridViewTextBoxColumn1.DataPropertyName = "Quantità";
+            this.quantitàDataGridViewTextBoxColumn1.HeaderText = "Quantità";
+            this.quantitàDataGridViewTextBoxColumn1.Name = "quantitàDataGridViewTextBoxColumn1";
+            this.quantitàDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // utilizzoBindingSource
             // 
-            this.utilizzoBindingSource.DataMember = "utilizzo";
-            this.utilizzoBindingSource.DataSource = this.progettoDB16DataSet;
+            this.utilizzoBindingSource.DataMember = "Utilizzo";
+            this.utilizzoBindingSource.DataSource = this.dBProject1617DataSet;
             // 
             // addDettaglioBtn
             // 
@@ -2564,10 +2503,9 @@
             this.codiceDataGridViewTextBoxColumn3,
             this.nomeDataGridViewTextBoxColumn3,
             this.descrizioneDataGridViewTextBoxColumn1,
-            this.prezzodiacquistoDataGridViewTextBoxColumn,
-            this.prezzouRiparazioneDataGridViewTextBoxColumn,
+            this.prezzoUnitarioRiparazioneDataGridViewTextBoxColumn,
             this.tipoRicambioDataGridViewTextBoxColumn,
-            this.fornitorePartitaIVADataGridViewTextBoxColumn3});
+            this.fornitoreDataGridViewTextBoxColumn2});
             this.dataGridView13.DataSource = this.ricambioBindingSource;
             this.dataGridView13.Location = new System.Drawing.Point(9, 8);
             this.dataGridView13.Name = "dataGridView13";
@@ -2596,41 +2534,31 @@
             this.descrizioneDataGridViewTextBoxColumn1.Name = "descrizioneDataGridViewTextBoxColumn1";
             this.descrizioneDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
-            // prezzodiacquistoDataGridViewTextBoxColumn
+            // prezzoUnitarioRiparazioneDataGridViewTextBoxColumn
             // 
-            this.prezzodiacquistoDataGridViewTextBoxColumn.DataPropertyName = "Prezzo_di_acquisto";
-            this.prezzodiacquistoDataGridViewTextBoxColumn.HeaderText = "Prezzo_di_acquisto";
-            this.prezzodiacquistoDataGridViewTextBoxColumn.Name = "prezzodiacquistoDataGridViewTextBoxColumn";
-            this.prezzodiacquistoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.prezzodiacquistoDataGridViewTextBoxColumn.Width = 110;
-            // 
-            // prezzouRiparazioneDataGridViewTextBoxColumn
-            // 
-            this.prezzouRiparazioneDataGridViewTextBoxColumn.DataPropertyName = "Prezzo_uRiparazione";
-            this.prezzouRiparazioneDataGridViewTextBoxColumn.HeaderText = "Prezzo_uRiparazione";
-            this.prezzouRiparazioneDataGridViewTextBoxColumn.Name = "prezzouRiparazioneDataGridViewTextBoxColumn";
-            this.prezzouRiparazioneDataGridViewTextBoxColumn.ReadOnly = true;
-            this.prezzouRiparazioneDataGridViewTextBoxColumn.Width = 110;
+            this.prezzoUnitarioRiparazioneDataGridViewTextBoxColumn.DataPropertyName = "PrezzoUnitarioRiparazione";
+            this.prezzoUnitarioRiparazioneDataGridViewTextBoxColumn.HeaderText = "PrezzoUnitarioRiparazione";
+            this.prezzoUnitarioRiparazioneDataGridViewTextBoxColumn.Name = "prezzoUnitarioRiparazioneDataGridViewTextBoxColumn";
+            this.prezzoUnitarioRiparazioneDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // tipoRicambioDataGridViewTextBoxColumn
             // 
-            this.tipoRicambioDataGridViewTextBoxColumn.DataPropertyName = "Tipo_Ricambio";
-            this.tipoRicambioDataGridViewTextBoxColumn.HeaderText = "Tipo_Ricambio";
+            this.tipoRicambioDataGridViewTextBoxColumn.DataPropertyName = "TipoRicambio";
+            this.tipoRicambioDataGridViewTextBoxColumn.HeaderText = "TipoRicambio";
             this.tipoRicambioDataGridViewTextBoxColumn.Name = "tipoRicambioDataGridViewTextBoxColumn";
             this.tipoRicambioDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // fornitorePartitaIVADataGridViewTextBoxColumn3
+            // fornitoreDataGridViewTextBoxColumn2
             // 
-            this.fornitorePartitaIVADataGridViewTextBoxColumn3.DataPropertyName = "Fornitore_Partita_IVA";
-            this.fornitorePartitaIVADataGridViewTextBoxColumn3.HeaderText = "Fornitore_Partita_IVA";
-            this.fornitorePartitaIVADataGridViewTextBoxColumn3.Name = "fornitorePartitaIVADataGridViewTextBoxColumn3";
-            this.fornitorePartitaIVADataGridViewTextBoxColumn3.ReadOnly = true;
-            this.fornitorePartitaIVADataGridViewTextBoxColumn3.Width = 120;
+            this.fornitoreDataGridViewTextBoxColumn2.DataPropertyName = "Fornitore";
+            this.fornitoreDataGridViewTextBoxColumn2.HeaderText = "Fornitore";
+            this.fornitoreDataGridViewTextBoxColumn2.Name = "fornitoreDataGridViewTextBoxColumn2";
+            this.fornitoreDataGridViewTextBoxColumn2.ReadOnly = true;
             // 
             // ricambioBindingSource
             // 
             this.ricambioBindingSource.DataMember = "Ricambio";
-            this.ricambioBindingSource.DataSource = this.progettoDB16DataSet;
+            this.ricambioBindingSource.DataSource = this.dBProject1617DataSet;
             // 
             // addRicambioBtn
             // 
@@ -2669,45 +2597,45 @@
             this.dataGridView12.AutoGenerateColumns = false;
             this.dataGridView12.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView12.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ricambioCodiceDataGridViewTextBoxColumn3,
-            this.numeroDataGridViewTextBoxColumn5,
-            this.dataDataGridViewTextBoxColumn5,
-            this.quantitaDataGridViewTextBoxColumn3,
+            this.ricambioDataGridViewTextBoxColumn2,
+            this.numeroDataGridViewTextBoxColumn4,
+            this.dataDataGridViewTextBoxColumn2,
+            this.quantitàDataGridViewTextBoxColumn2,
             this.causaleDataGridViewTextBoxColumn});
-            this.dataGridView12.DataSource = this.giacenzaBindingSource1;
+            this.dataGridView12.DataSource = this.giacenzaBindingSource;
             this.dataGridView12.Location = new System.Drawing.Point(9, 8);
             this.dataGridView12.Name = "dataGridView12";
             this.dataGridView12.ReadOnly = true;
             this.dataGridView12.Size = new System.Drawing.Size(482, 273);
             this.dataGridView12.TabIndex = 25;
             // 
-            // ricambioCodiceDataGridViewTextBoxColumn3
+            // ricambioDataGridViewTextBoxColumn2
             // 
-            this.ricambioCodiceDataGridViewTextBoxColumn3.DataPropertyName = "Ricambio_Codice";
-            this.ricambioCodiceDataGridViewTextBoxColumn3.HeaderText = "Ricambio_Codice";
-            this.ricambioCodiceDataGridViewTextBoxColumn3.Name = "ricambioCodiceDataGridViewTextBoxColumn3";
-            this.ricambioCodiceDataGridViewTextBoxColumn3.ReadOnly = true;
+            this.ricambioDataGridViewTextBoxColumn2.DataPropertyName = "Ricambio";
+            this.ricambioDataGridViewTextBoxColumn2.HeaderText = "Ricambio";
+            this.ricambioDataGridViewTextBoxColumn2.Name = "ricambioDataGridViewTextBoxColumn2";
+            this.ricambioDataGridViewTextBoxColumn2.ReadOnly = true;
             // 
-            // numeroDataGridViewTextBoxColumn5
+            // numeroDataGridViewTextBoxColumn4
             // 
-            this.numeroDataGridViewTextBoxColumn5.DataPropertyName = "Numero";
-            this.numeroDataGridViewTextBoxColumn5.HeaderText = "Numero";
-            this.numeroDataGridViewTextBoxColumn5.Name = "numeroDataGridViewTextBoxColumn5";
-            this.numeroDataGridViewTextBoxColumn5.ReadOnly = true;
+            this.numeroDataGridViewTextBoxColumn4.DataPropertyName = "Numero";
+            this.numeroDataGridViewTextBoxColumn4.HeaderText = "Numero";
+            this.numeroDataGridViewTextBoxColumn4.Name = "numeroDataGridViewTextBoxColumn4";
+            this.numeroDataGridViewTextBoxColumn4.ReadOnly = true;
             // 
-            // dataDataGridViewTextBoxColumn5
+            // dataDataGridViewTextBoxColumn2
             // 
-            this.dataDataGridViewTextBoxColumn5.DataPropertyName = "Data";
-            this.dataDataGridViewTextBoxColumn5.HeaderText = "Data";
-            this.dataDataGridViewTextBoxColumn5.Name = "dataDataGridViewTextBoxColumn5";
-            this.dataDataGridViewTextBoxColumn5.ReadOnly = true;
+            this.dataDataGridViewTextBoxColumn2.DataPropertyName = "Data";
+            this.dataDataGridViewTextBoxColumn2.HeaderText = "Data";
+            this.dataDataGridViewTextBoxColumn2.Name = "dataDataGridViewTextBoxColumn2";
+            this.dataDataGridViewTextBoxColumn2.ReadOnly = true;
             // 
-            // quantitaDataGridViewTextBoxColumn3
+            // quantitàDataGridViewTextBoxColumn2
             // 
-            this.quantitaDataGridViewTextBoxColumn3.DataPropertyName = "Quantita";
-            this.quantitaDataGridViewTextBoxColumn3.HeaderText = "Quantita";
-            this.quantitaDataGridViewTextBoxColumn3.Name = "quantitaDataGridViewTextBoxColumn3";
-            this.quantitaDataGridViewTextBoxColumn3.ReadOnly = true;
+            this.quantitàDataGridViewTextBoxColumn2.DataPropertyName = "Quantità";
+            this.quantitàDataGridViewTextBoxColumn2.HeaderText = "Quantità";
+            this.quantitàDataGridViewTextBoxColumn2.Name = "quantitàDataGridViewTextBoxColumn2";
+            this.quantitàDataGridViewTextBoxColumn2.ReadOnly = true;
             // 
             // causaleDataGridViewTextBoxColumn
             // 
@@ -2716,10 +2644,10 @@
             this.causaleDataGridViewTextBoxColumn.Name = "causaleDataGridViewTextBoxColumn";
             this.causaleDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // giacenzaBindingSource1
+            // giacenzaBindingSource
             // 
-            this.giacenzaBindingSource1.DataMember = "Giacenza";
-            this.giacenzaBindingSource1.DataSource = this.progettoDB16DataSet;
+            this.giacenzaBindingSource.DataMember = "Giacenza";
+            this.giacenzaBindingSource.DataSource = this.dBProject1617DataSet;
             // 
             // comboBox22
             // 
@@ -2806,33 +2734,33 @@
             this.dataGridView10.AutoGenerateColumns = false;
             this.dataGridView10.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView10.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.veicoloCodiceDataGridViewTextBoxColumn3,
-            this.ricambioCodiceDataGridViewTextBoxColumn4});
-            this.dataGridView10.DataSource = this.referenza2BindingSource1;
+            this.veicoloCatalogoDataGridViewTextBoxColumn2,
+            this.ricambioDataGridViewTextBoxColumn3});
+            this.dataGridView10.DataSource = this.referenzaBindingSource;
             this.dataGridView10.Location = new System.Drawing.Point(9, 8);
             this.dataGridView10.Name = "dataGridView10";
             this.dataGridView10.ReadOnly = true;
             this.dataGridView10.Size = new System.Drawing.Size(482, 273);
             this.dataGridView10.TabIndex = 20;
             // 
-            // veicoloCodiceDataGridViewTextBoxColumn3
+            // veicoloCatalogoDataGridViewTextBoxColumn2
             // 
-            this.veicoloCodiceDataGridViewTextBoxColumn3.DataPropertyName = "Veicolo_Codice";
-            this.veicoloCodiceDataGridViewTextBoxColumn3.HeaderText = "Veicolo_Codice";
-            this.veicoloCodiceDataGridViewTextBoxColumn3.Name = "veicoloCodiceDataGridViewTextBoxColumn3";
-            this.veicoloCodiceDataGridViewTextBoxColumn3.ReadOnly = true;
+            this.veicoloCatalogoDataGridViewTextBoxColumn2.DataPropertyName = "VeicoloCatalogo";
+            this.veicoloCatalogoDataGridViewTextBoxColumn2.HeaderText = "VeicoloCatalogo";
+            this.veicoloCatalogoDataGridViewTextBoxColumn2.Name = "veicoloCatalogoDataGridViewTextBoxColumn2";
+            this.veicoloCatalogoDataGridViewTextBoxColumn2.ReadOnly = true;
             // 
-            // ricambioCodiceDataGridViewTextBoxColumn4
+            // ricambioDataGridViewTextBoxColumn3
             // 
-            this.ricambioCodiceDataGridViewTextBoxColumn4.DataPropertyName = "Ricambio_Codice";
-            this.ricambioCodiceDataGridViewTextBoxColumn4.HeaderText = "Ricambio_Codice";
-            this.ricambioCodiceDataGridViewTextBoxColumn4.Name = "ricambioCodiceDataGridViewTextBoxColumn4";
-            this.ricambioCodiceDataGridViewTextBoxColumn4.ReadOnly = true;
+            this.ricambioDataGridViewTextBoxColumn3.DataPropertyName = "Ricambio";
+            this.ricambioDataGridViewTextBoxColumn3.HeaderText = "Ricambio";
+            this.ricambioDataGridViewTextBoxColumn3.Name = "ricambioDataGridViewTextBoxColumn3";
+            this.ricambioDataGridViewTextBoxColumn3.ReadOnly = true;
             // 
-            // referenza2BindingSource1
+            // referenzaBindingSource
             // 
-            this.referenza2BindingSource1.DataMember = "referenza2";
-            this.referenza2BindingSource1.DataSource = this.progettoDB16DataSet;
+            this.referenzaBindingSource.DataMember = "Referenza";
+            this.referenzaBindingSource.DataSource = this.dBProject1617DataSet;
             // 
             // addRicVeicBtn
             // 
@@ -2894,7 +2822,6 @@
             this.tabControlFornitori.Size = new System.Drawing.Size(655, 346);
             this.tabControlFornitori.TabIndex = 1;
             this.tabControlFornitori.SelectedIndexChanged += new System.EventHandler(this.tabControlSelectedIndexChanged);
-            this.tabControlFornitori.Enter += new System.EventHandler(this.tabControl_Enter);
             // 
             // Fornitore
             // 
@@ -2954,122 +2881,113 @@
             this.dataGridViewFornitori.AutoGenerateColumns = false;
             this.dataGridViewFornitori.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewFornitori.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.partitaIVADataGridViewTextBoxColumn,
-            this.ragioneSocialeDataGridViewTextBoxColumn,
-            this.recapito1DataGridViewTextBoxColumn,
-            this.recapito2DataGridViewTextBoxColumn,
-            this.recapito3DataGridViewTextBoxColumn,
-            this.indirizzoemail1DataGridViewTextBoxColumn,
-            this.indirizzoemail2DataGridViewTextBoxColumn,
-            this.tipoRicambiDataGridViewTextBoxColumn,
-            this.tipoCasaProduttriceDataGridViewTextBoxColumn,
-            this.cittaDataGridViewTextBoxColumn,
-            this.provinciaDataGridViewTextBoxColumn,
-            this.indirizzoDataGridViewTextBoxColumn,
-            this.cAPDataGridViewTextBoxColumn});
-            this.dataGridViewFornitori.DataSource = this.fornitoreBindingSource1;
+            this.partitaIVADataGridViewTextBoxColumn2,
+            this.casaProduttriceDataGridViewTextBoxColumn,
+            this.fornitoreRicambiDataGridViewTextBoxColumn,
+            this.ragioneSocialeDataGridViewTextBoxColumn2,
+            this.recapito1DataGridViewTextBoxColumn2,
+            this.recapito2DataGridViewTextBoxColumn2,
+            this.indirizzoEmail1DataGridViewTextBoxColumn2,
+            this.indirizzoEmail2DataGridViewTextBoxColumn2,
+            this.indirizzoDataGridViewTextBoxColumn2,
+            this.cittàDataGridViewTextBoxColumn2,
+            this.provinciaDataGridViewTextBoxColumn2,
+            this.cAPDataGridViewTextBoxColumn2});
+            this.dataGridViewFornitori.DataSource = this.fornitoreBindingSource;
             this.dataGridViewFornitori.Location = new System.Drawing.Point(9, 8);
             this.dataGridViewFornitori.Name = "dataGridViewFornitori";
             this.dataGridViewFornitori.ReadOnly = true;
             this.dataGridViewFornitori.Size = new System.Drawing.Size(482, 273);
             this.dataGridViewFornitori.TabIndex = 9;
             // 
-            // partitaIVADataGridViewTextBoxColumn
+            // partitaIVADataGridViewTextBoxColumn2
             // 
-            this.partitaIVADataGridViewTextBoxColumn.DataPropertyName = "Partita_IVA";
-            this.partitaIVADataGridViewTextBoxColumn.HeaderText = "Partita_IVA";
-            this.partitaIVADataGridViewTextBoxColumn.Name = "partitaIVADataGridViewTextBoxColumn";
-            this.partitaIVADataGridViewTextBoxColumn.ReadOnly = true;
+            this.partitaIVADataGridViewTextBoxColumn2.DataPropertyName = "PartitaIVA";
+            this.partitaIVADataGridViewTextBoxColumn2.HeaderText = "PartitaIVA";
+            this.partitaIVADataGridViewTextBoxColumn2.Name = "partitaIVADataGridViewTextBoxColumn2";
+            this.partitaIVADataGridViewTextBoxColumn2.ReadOnly = true;
             // 
-            // ragioneSocialeDataGridViewTextBoxColumn
+            // casaProduttriceDataGridViewTextBoxColumn
             // 
-            this.ragioneSocialeDataGridViewTextBoxColumn.DataPropertyName = "Ragione_Sociale";
-            this.ragioneSocialeDataGridViewTextBoxColumn.HeaderText = "Ragione_Sociale";
-            this.ragioneSocialeDataGridViewTextBoxColumn.Name = "ragioneSocialeDataGridViewTextBoxColumn";
-            this.ragioneSocialeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.casaProduttriceDataGridViewTextBoxColumn.DataPropertyName = "CasaProduttrice";
+            this.casaProduttriceDataGridViewTextBoxColumn.HeaderText = "CasaProduttrice";
+            this.casaProduttriceDataGridViewTextBoxColumn.Name = "casaProduttriceDataGridViewTextBoxColumn";
+            this.casaProduttriceDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // recapito1DataGridViewTextBoxColumn
+            // fornitoreRicambiDataGridViewTextBoxColumn
             // 
-            this.recapito1DataGridViewTextBoxColumn.DataPropertyName = "Recapito_1";
-            this.recapito1DataGridViewTextBoxColumn.HeaderText = "Recapito_1";
-            this.recapito1DataGridViewTextBoxColumn.Name = "recapito1DataGridViewTextBoxColumn";
-            this.recapito1DataGridViewTextBoxColumn.ReadOnly = true;
+            this.fornitoreRicambiDataGridViewTextBoxColumn.DataPropertyName = "FornitoreRicambi";
+            this.fornitoreRicambiDataGridViewTextBoxColumn.HeaderText = "FornitoreRicambi";
+            this.fornitoreRicambiDataGridViewTextBoxColumn.Name = "fornitoreRicambiDataGridViewTextBoxColumn";
+            this.fornitoreRicambiDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // recapito2DataGridViewTextBoxColumn
+            // ragioneSocialeDataGridViewTextBoxColumn2
             // 
-            this.recapito2DataGridViewTextBoxColumn.DataPropertyName = "Recapito_2";
-            this.recapito2DataGridViewTextBoxColumn.HeaderText = "Recapito_2";
-            this.recapito2DataGridViewTextBoxColumn.Name = "recapito2DataGridViewTextBoxColumn";
-            this.recapito2DataGridViewTextBoxColumn.ReadOnly = true;
+            this.ragioneSocialeDataGridViewTextBoxColumn2.DataPropertyName = "RagioneSociale";
+            this.ragioneSocialeDataGridViewTextBoxColumn2.HeaderText = "RagioneSociale";
+            this.ragioneSocialeDataGridViewTextBoxColumn2.Name = "ragioneSocialeDataGridViewTextBoxColumn2";
+            this.ragioneSocialeDataGridViewTextBoxColumn2.ReadOnly = true;
             // 
-            // recapito3DataGridViewTextBoxColumn
+            // recapito1DataGridViewTextBoxColumn2
             // 
-            this.recapito3DataGridViewTextBoxColumn.DataPropertyName = "Recapito_3";
-            this.recapito3DataGridViewTextBoxColumn.HeaderText = "Recapito_3";
-            this.recapito3DataGridViewTextBoxColumn.Name = "recapito3DataGridViewTextBoxColumn";
-            this.recapito3DataGridViewTextBoxColumn.ReadOnly = true;
+            this.recapito1DataGridViewTextBoxColumn2.DataPropertyName = "Recapito1";
+            this.recapito1DataGridViewTextBoxColumn2.HeaderText = "Recapito1";
+            this.recapito1DataGridViewTextBoxColumn2.Name = "recapito1DataGridViewTextBoxColumn2";
+            this.recapito1DataGridViewTextBoxColumn2.ReadOnly = true;
             // 
-            // indirizzoemail1DataGridViewTextBoxColumn
+            // recapito2DataGridViewTextBoxColumn2
             // 
-            this.indirizzoemail1DataGridViewTextBoxColumn.DataPropertyName = "Indirizzo_e_mail_1";
-            this.indirizzoemail1DataGridViewTextBoxColumn.HeaderText = "Indirizzo_e_mail_1";
-            this.indirizzoemail1DataGridViewTextBoxColumn.Name = "indirizzoemail1DataGridViewTextBoxColumn";
-            this.indirizzoemail1DataGridViewTextBoxColumn.ReadOnly = true;
+            this.recapito2DataGridViewTextBoxColumn2.DataPropertyName = "Recapito2";
+            this.recapito2DataGridViewTextBoxColumn2.HeaderText = "Recapito2";
+            this.recapito2DataGridViewTextBoxColumn2.Name = "recapito2DataGridViewTextBoxColumn2";
+            this.recapito2DataGridViewTextBoxColumn2.ReadOnly = true;
             // 
-            // indirizzoemail2DataGridViewTextBoxColumn
+            // indirizzoEmail1DataGridViewTextBoxColumn2
             // 
-            this.indirizzoemail2DataGridViewTextBoxColumn.DataPropertyName = "Indirizzo_e_mail_2";
-            this.indirizzoemail2DataGridViewTextBoxColumn.HeaderText = "Indirizzo_e_mail_2";
-            this.indirizzoemail2DataGridViewTextBoxColumn.Name = "indirizzoemail2DataGridViewTextBoxColumn";
-            this.indirizzoemail2DataGridViewTextBoxColumn.ReadOnly = true;
+            this.indirizzoEmail1DataGridViewTextBoxColumn2.DataPropertyName = "IndirizzoEmail1";
+            this.indirizzoEmail1DataGridViewTextBoxColumn2.HeaderText = "IndirizzoEmail1";
+            this.indirizzoEmail1DataGridViewTextBoxColumn2.Name = "indirizzoEmail1DataGridViewTextBoxColumn2";
+            this.indirizzoEmail1DataGridViewTextBoxColumn2.ReadOnly = true;
             // 
-            // tipoRicambiDataGridViewTextBoxColumn
+            // indirizzoEmail2DataGridViewTextBoxColumn2
             // 
-            this.tipoRicambiDataGridViewTextBoxColumn.DataPropertyName = "Tipo_Ricambi";
-            this.tipoRicambiDataGridViewTextBoxColumn.HeaderText = "Tipo_Ricambi";
-            this.tipoRicambiDataGridViewTextBoxColumn.Name = "tipoRicambiDataGridViewTextBoxColumn";
-            this.tipoRicambiDataGridViewTextBoxColumn.ReadOnly = true;
+            this.indirizzoEmail2DataGridViewTextBoxColumn2.DataPropertyName = "IndirizzoEmail2";
+            this.indirizzoEmail2DataGridViewTextBoxColumn2.HeaderText = "IndirizzoEmail2";
+            this.indirizzoEmail2DataGridViewTextBoxColumn2.Name = "indirizzoEmail2DataGridViewTextBoxColumn2";
+            this.indirizzoEmail2DataGridViewTextBoxColumn2.ReadOnly = true;
             // 
-            // tipoCasaProduttriceDataGridViewTextBoxColumn
+            // indirizzoDataGridViewTextBoxColumn2
             // 
-            this.tipoCasaProduttriceDataGridViewTextBoxColumn.DataPropertyName = "Tipo_CasaProduttrice";
-            this.tipoCasaProduttriceDataGridViewTextBoxColumn.HeaderText = "Tipo_CasaProduttrice";
-            this.tipoCasaProduttriceDataGridViewTextBoxColumn.Name = "tipoCasaProduttriceDataGridViewTextBoxColumn";
-            this.tipoCasaProduttriceDataGridViewTextBoxColumn.ReadOnly = true;
-            this.tipoCasaProduttriceDataGridViewTextBoxColumn.Width = 120;
+            this.indirizzoDataGridViewTextBoxColumn2.DataPropertyName = "Indirizzo";
+            this.indirizzoDataGridViewTextBoxColumn2.HeaderText = "Indirizzo";
+            this.indirizzoDataGridViewTextBoxColumn2.Name = "indirizzoDataGridViewTextBoxColumn2";
+            this.indirizzoDataGridViewTextBoxColumn2.ReadOnly = true;
             // 
-            // cittaDataGridViewTextBoxColumn
+            // cittàDataGridViewTextBoxColumn2
             // 
-            this.cittaDataGridViewTextBoxColumn.DataPropertyName = "Citta";
-            this.cittaDataGridViewTextBoxColumn.HeaderText = "Citta";
-            this.cittaDataGridViewTextBoxColumn.Name = "cittaDataGridViewTextBoxColumn";
-            this.cittaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.cittàDataGridViewTextBoxColumn2.DataPropertyName = "Città";
+            this.cittàDataGridViewTextBoxColumn2.HeaderText = "Città";
+            this.cittàDataGridViewTextBoxColumn2.Name = "cittàDataGridViewTextBoxColumn2";
+            this.cittàDataGridViewTextBoxColumn2.ReadOnly = true;
             // 
-            // provinciaDataGridViewTextBoxColumn
+            // provinciaDataGridViewTextBoxColumn2
             // 
-            this.provinciaDataGridViewTextBoxColumn.DataPropertyName = "Provincia";
-            this.provinciaDataGridViewTextBoxColumn.HeaderText = "Provincia";
-            this.provinciaDataGridViewTextBoxColumn.Name = "provinciaDataGridViewTextBoxColumn";
-            this.provinciaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.provinciaDataGridViewTextBoxColumn2.DataPropertyName = "Provincia";
+            this.provinciaDataGridViewTextBoxColumn2.HeaderText = "Provincia";
+            this.provinciaDataGridViewTextBoxColumn2.Name = "provinciaDataGridViewTextBoxColumn2";
+            this.provinciaDataGridViewTextBoxColumn2.ReadOnly = true;
             // 
-            // indirizzoDataGridViewTextBoxColumn
+            // cAPDataGridViewTextBoxColumn2
             // 
-            this.indirizzoDataGridViewTextBoxColumn.DataPropertyName = "Indirizzo";
-            this.indirizzoDataGridViewTextBoxColumn.HeaderText = "Indirizzo";
-            this.indirizzoDataGridViewTextBoxColumn.Name = "indirizzoDataGridViewTextBoxColumn";
-            this.indirizzoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.cAPDataGridViewTextBoxColumn2.DataPropertyName = "CAP";
+            this.cAPDataGridViewTextBoxColumn2.HeaderText = "CAP";
+            this.cAPDataGridViewTextBoxColumn2.Name = "cAPDataGridViewTextBoxColumn2";
+            this.cAPDataGridViewTextBoxColumn2.ReadOnly = true;
             // 
-            // cAPDataGridViewTextBoxColumn
+            // fornitoreBindingSource
             // 
-            this.cAPDataGridViewTextBoxColumn.DataPropertyName = "CAP";
-            this.cAPDataGridViewTextBoxColumn.HeaderText = "CAP";
-            this.cAPDataGridViewTextBoxColumn.Name = "cAPDataGridViewTextBoxColumn";
-            this.cAPDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // fornitoreBindingSource1
-            // 
-            this.fornitoreBindingSource1.DataMember = "Fornitore";
-            this.fornitoreBindingSource1.DataSource = this.progettoDB16DataSet;
+            this.fornitoreBindingSource.DataMember = "Fornitore";
+            this.fornitoreBindingSource.DataSource = this.dBProject1617DataSet;
             // 
             // addFornitoreBtn
             // 
@@ -3108,69 +3026,73 @@
             this.dataGridViewFatt.AutoGenerateColumns = false;
             this.dataGridViewFatt.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewFatt.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.fornitorePartitaIVADataGridViewTextBoxColumn,
-            this.numeroDataGridViewTextBoxColumn,
-            this.dataDataGridViewTextBoxColumn,
-            this.importocomplessivoDataGridViewTextBoxColumn,
-            this.modPagamentoPartitaIVADataGridViewTextBoxColumn,
+            this.fornitoreDataGridViewTextBoxColumn3,
+            this.numeroDataGridViewTextBoxColumn5,
+            this.ordineDataGridViewTextBoxColumn2,
+            this.dataDataGridViewTextBoxColumn3,
+            this.importoComplessivoDataGridViewTextBoxColumn2,
+            this.modPagamentoFornitoreDataGridViewTextBoxColumn,
             this.modPagamentoDaDataGridViewTextBoxColumn});
-            this.dataGridViewFatt.DataSource = this.fatturadiacquistoBindingSource1;
+            this.dataGridViewFatt.DataSource = this.fatturaAcquistoBindingSource;
             this.dataGridViewFatt.Location = new System.Drawing.Point(9, 8);
             this.dataGridViewFatt.Name = "dataGridViewFatt";
             this.dataGridViewFatt.ReadOnly = true;
             this.dataGridViewFatt.Size = new System.Drawing.Size(472, 260);
             this.dataGridViewFatt.TabIndex = 11;
             // 
-            // fornitorePartitaIVADataGridViewTextBoxColumn
+            // fornitoreDataGridViewTextBoxColumn3
             // 
-            this.fornitorePartitaIVADataGridViewTextBoxColumn.DataPropertyName = "Fornitore_Partita_IVA";
-            this.fornitorePartitaIVADataGridViewTextBoxColumn.HeaderText = "Fornitore_Partita_IVA";
-            this.fornitorePartitaIVADataGridViewTextBoxColumn.Name = "fornitorePartitaIVADataGridViewTextBoxColumn";
-            this.fornitorePartitaIVADataGridViewTextBoxColumn.ReadOnly = true;
-            this.fornitorePartitaIVADataGridViewTextBoxColumn.Width = 120;
+            this.fornitoreDataGridViewTextBoxColumn3.DataPropertyName = "Fornitore";
+            this.fornitoreDataGridViewTextBoxColumn3.HeaderText = "Fornitore";
+            this.fornitoreDataGridViewTextBoxColumn3.Name = "fornitoreDataGridViewTextBoxColumn3";
+            this.fornitoreDataGridViewTextBoxColumn3.ReadOnly = true;
             // 
-            // numeroDataGridViewTextBoxColumn
+            // numeroDataGridViewTextBoxColumn5
             // 
-            this.numeroDataGridViewTextBoxColumn.DataPropertyName = "Numero";
-            this.numeroDataGridViewTextBoxColumn.HeaderText = "Numero";
-            this.numeroDataGridViewTextBoxColumn.Name = "numeroDataGridViewTextBoxColumn";
-            this.numeroDataGridViewTextBoxColumn.ReadOnly = true;
+            this.numeroDataGridViewTextBoxColumn5.DataPropertyName = "Numero";
+            this.numeroDataGridViewTextBoxColumn5.HeaderText = "Numero";
+            this.numeroDataGridViewTextBoxColumn5.Name = "numeroDataGridViewTextBoxColumn5";
+            this.numeroDataGridViewTextBoxColumn5.ReadOnly = true;
             // 
-            // dataDataGridViewTextBoxColumn
+            // ordineDataGridViewTextBoxColumn2
             // 
-            this.dataDataGridViewTextBoxColumn.DataPropertyName = "Data";
-            this.dataDataGridViewTextBoxColumn.HeaderText = "Data";
-            this.dataDataGridViewTextBoxColumn.Name = "dataDataGridViewTextBoxColumn";
-            this.dataDataGridViewTextBoxColumn.ReadOnly = true;
+            this.ordineDataGridViewTextBoxColumn2.DataPropertyName = "Ordine";
+            this.ordineDataGridViewTextBoxColumn2.HeaderText = "Ordine";
+            this.ordineDataGridViewTextBoxColumn2.Name = "ordineDataGridViewTextBoxColumn2";
+            this.ordineDataGridViewTextBoxColumn2.ReadOnly = true;
             // 
-            // importocomplessivoDataGridViewTextBoxColumn
+            // dataDataGridViewTextBoxColumn3
             // 
-            this.importocomplessivoDataGridViewTextBoxColumn.DataPropertyName = "Importo_complessivo";
-            this.importocomplessivoDataGridViewTextBoxColumn.HeaderText = "Importo_complessivo";
-            this.importocomplessivoDataGridViewTextBoxColumn.Name = "importocomplessivoDataGridViewTextBoxColumn";
-            this.importocomplessivoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.importocomplessivoDataGridViewTextBoxColumn.Width = 120;
+            this.dataDataGridViewTextBoxColumn3.DataPropertyName = "Data";
+            this.dataDataGridViewTextBoxColumn3.HeaderText = "Data";
+            this.dataDataGridViewTextBoxColumn3.Name = "dataDataGridViewTextBoxColumn3";
+            this.dataDataGridViewTextBoxColumn3.ReadOnly = true;
             // 
-            // modPagamentoPartitaIVADataGridViewTextBoxColumn
+            // importoComplessivoDataGridViewTextBoxColumn2
             // 
-            this.modPagamentoPartitaIVADataGridViewTextBoxColumn.DataPropertyName = "Mod_Pagamento_Partita_IVA";
-            this.modPagamentoPartitaIVADataGridViewTextBoxColumn.HeaderText = "Mod_Pagamento_Partita_IVA";
-            this.modPagamentoPartitaIVADataGridViewTextBoxColumn.Name = "modPagamentoPartitaIVADataGridViewTextBoxColumn";
-            this.modPagamentoPartitaIVADataGridViewTextBoxColumn.ReadOnly = true;
-            this.modPagamentoPartitaIVADataGridViewTextBoxColumn.Width = 150;
+            this.importoComplessivoDataGridViewTextBoxColumn2.DataPropertyName = "ImportoComplessivo";
+            this.importoComplessivoDataGridViewTextBoxColumn2.HeaderText = "ImportoComplessivo";
+            this.importoComplessivoDataGridViewTextBoxColumn2.Name = "importoComplessivoDataGridViewTextBoxColumn2";
+            this.importoComplessivoDataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // modPagamentoFornitoreDataGridViewTextBoxColumn
+            // 
+            this.modPagamentoFornitoreDataGridViewTextBoxColumn.DataPropertyName = "ModPagamentoFornitore";
+            this.modPagamentoFornitoreDataGridViewTextBoxColumn.HeaderText = "ModPagamentoFornitore";
+            this.modPagamentoFornitoreDataGridViewTextBoxColumn.Name = "modPagamentoFornitoreDataGridViewTextBoxColumn";
+            this.modPagamentoFornitoreDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // modPagamentoDaDataGridViewTextBoxColumn
             // 
-            this.modPagamentoDaDataGridViewTextBoxColumn.DataPropertyName = "Mod_Pagamento_Da";
-            this.modPagamentoDaDataGridViewTextBoxColumn.HeaderText = "Mod_Pagamento_Da";
+            this.modPagamentoDaDataGridViewTextBoxColumn.DataPropertyName = "ModPagamentoDa";
+            this.modPagamentoDaDataGridViewTextBoxColumn.HeaderText = "ModPagamentoDa";
             this.modPagamentoDaDataGridViewTextBoxColumn.Name = "modPagamentoDaDataGridViewTextBoxColumn";
             this.modPagamentoDaDataGridViewTextBoxColumn.ReadOnly = true;
-            this.modPagamentoDaDataGridViewTextBoxColumn.Width = 120;
             // 
-            // fatturadiacquistoBindingSource1
+            // fatturaAcquistoBindingSource
             // 
-            this.fatturadiacquistoBindingSource1.DataMember = "Fattura_di_acquisto";
-            this.fatturadiacquistoBindingSource1.DataSource = this.progettoDB16DataSet;
+            this.fatturaAcquistoBindingSource.DataMember = "FatturaAcquisto";
+            this.fatturaAcquistoBindingSource.DataSource = this.dBProject1617DataSet;
             // 
             // comboBoxFatture
             // 
@@ -3236,50 +3158,57 @@
             this.dataGridViewPag.AutoGenerateColumns = false;
             this.dataGridViewPag.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewPag.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.fatturaPartitaIVADataGridViewTextBoxColumn,
-            this.fatturaNumeroDataGridViewTextBoxColumn,
-            this.dataDataGridViewTextBoxColumn1,
-            this.importoDataGridViewTextBoxColumn});
-            this.dataGridViewPag.DataSource = this.pagamentocAcquistoBindingSource1;
+            this.fornitoreFatturaDataGridViewTextBoxColumn,
+            this.numeroFatturaDataGridViewTextBoxColumn,
+            this.scadenzaDataGridViewTextBoxColumn2,
+            this.importoDataGridViewTextBoxColumn1,
+            this.dataPagamentoDataGridViewTextBoxColumn1});
+            this.dataGridViewPag.DataSource = this.rataBindingSource;
             this.dataGridViewPag.Location = new System.Drawing.Point(9, 8);
             this.dataGridViewPag.Name = "dataGridViewPag";
             this.dataGridViewPag.ReadOnly = true;
             this.dataGridViewPag.Size = new System.Drawing.Size(472, 260);
             this.dataGridViewPag.TabIndex = 20;
             // 
-            // fatturaPartitaIVADataGridViewTextBoxColumn
+            // fornitoreFatturaDataGridViewTextBoxColumn
             // 
-            this.fatturaPartitaIVADataGridViewTextBoxColumn.DataPropertyName = "Fattura_Partita_IVA";
-            this.fatturaPartitaIVADataGridViewTextBoxColumn.HeaderText = "Fattura_Partita_IVA";
-            this.fatturaPartitaIVADataGridViewTextBoxColumn.Name = "fatturaPartitaIVADataGridViewTextBoxColumn";
-            this.fatturaPartitaIVADataGridViewTextBoxColumn.ReadOnly = true;
-            this.fatturaPartitaIVADataGridViewTextBoxColumn.Width = 110;
+            this.fornitoreFatturaDataGridViewTextBoxColumn.DataPropertyName = "FornitoreFattura";
+            this.fornitoreFatturaDataGridViewTextBoxColumn.HeaderText = "FornitoreFattura";
+            this.fornitoreFatturaDataGridViewTextBoxColumn.Name = "fornitoreFatturaDataGridViewTextBoxColumn";
+            this.fornitoreFatturaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // fatturaNumeroDataGridViewTextBoxColumn
+            // numeroFatturaDataGridViewTextBoxColumn
             // 
-            this.fatturaNumeroDataGridViewTextBoxColumn.DataPropertyName = "Fattura_Numero";
-            this.fatturaNumeroDataGridViewTextBoxColumn.HeaderText = "Fattura_Numero";
-            this.fatturaNumeroDataGridViewTextBoxColumn.Name = "fatturaNumeroDataGridViewTextBoxColumn";
-            this.fatturaNumeroDataGridViewTextBoxColumn.ReadOnly = true;
+            this.numeroFatturaDataGridViewTextBoxColumn.DataPropertyName = "NumeroFattura";
+            this.numeroFatturaDataGridViewTextBoxColumn.HeaderText = "NumeroFattura";
+            this.numeroFatturaDataGridViewTextBoxColumn.Name = "numeroFatturaDataGridViewTextBoxColumn";
+            this.numeroFatturaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // dataDataGridViewTextBoxColumn1
+            // scadenzaDataGridViewTextBoxColumn2
             // 
-            this.dataDataGridViewTextBoxColumn1.DataPropertyName = "Data";
-            this.dataDataGridViewTextBoxColumn1.HeaderText = "Data";
-            this.dataDataGridViewTextBoxColumn1.Name = "dataDataGridViewTextBoxColumn1";
-            this.dataDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.scadenzaDataGridViewTextBoxColumn2.DataPropertyName = "Scadenza";
+            this.scadenzaDataGridViewTextBoxColumn2.HeaderText = "Scadenza";
+            this.scadenzaDataGridViewTextBoxColumn2.Name = "scadenzaDataGridViewTextBoxColumn2";
+            this.scadenzaDataGridViewTextBoxColumn2.ReadOnly = true;
             // 
-            // importoDataGridViewTextBoxColumn
+            // importoDataGridViewTextBoxColumn1
             // 
-            this.importoDataGridViewTextBoxColumn.DataPropertyName = "Importo";
-            this.importoDataGridViewTextBoxColumn.HeaderText = "Importo";
-            this.importoDataGridViewTextBoxColumn.Name = "importoDataGridViewTextBoxColumn";
-            this.importoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.importoDataGridViewTextBoxColumn1.DataPropertyName = "Importo";
+            this.importoDataGridViewTextBoxColumn1.HeaderText = "Importo";
+            this.importoDataGridViewTextBoxColumn1.Name = "importoDataGridViewTextBoxColumn1";
+            this.importoDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
-            // pagamentocAcquistoBindingSource1
+            // dataPagamentoDataGridViewTextBoxColumn1
             // 
-            this.pagamentocAcquistoBindingSource1.DataMember = "Pagamento_cAcquisto";
-            this.pagamentocAcquistoBindingSource1.DataSource = this.progettoDB16DataSet;
+            this.dataPagamentoDataGridViewTextBoxColumn1.DataPropertyName = "DataPagamento";
+            this.dataPagamentoDataGridViewTextBoxColumn1.HeaderText = "DataPagamento";
+            this.dataPagamentoDataGridViewTextBoxColumn1.Name = "dataPagamentoDataGridViewTextBoxColumn1";
+            this.dataPagamentoDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // rataBindingSource
+            // 
+            this.rataBindingSource.DataMember = "Rata";
+            this.rataBindingSource.DataSource = this.dBProject1617DataSet;
             // 
             // comboBoxPagamenti
             // 
@@ -3344,66 +3273,65 @@
             this.dataGridViewModPag.AutoGenerateColumns = false;
             this.dataGridViewModPag.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewModPag.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.fornitorePartitaIVADataGridViewTextBoxColumn1,
-            this.daDataGridViewTextBoxColumn,
-            this.aDataGridViewTextBoxColumn,
-            this.periodicitaDataGridViewTextBoxColumn,
-            this.tassointeresseDataGridViewTextBoxColumn,
-            this.numerorateDataGridViewTextBoxColumn});
-            this.dataGridViewModPag.DataSource = this.modalitadipagamentoBindingSource1;
+            this.fornitoreDataGridViewTextBoxColumn4,
+            this.daDataGridViewTextBoxColumn1,
+            this.aDataGridViewTextBoxColumn1,
+            this.periodicitàDataGridViewTextBoxColumn1,
+            this.tassoInteresseDataGridViewTextBoxColumn1,
+            this.numeroRateDataGridViewTextBoxColumn});
+            this.dataGridViewModPag.DataSource = this.modalitàPagamentoBindingSource;
             this.dataGridViewModPag.Location = new System.Drawing.Point(9, 8);
             this.dataGridViewModPag.Name = "dataGridViewModPag";
             this.dataGridViewModPag.ReadOnly = true;
             this.dataGridViewModPag.Size = new System.Drawing.Size(472, 260);
             this.dataGridViewModPag.TabIndex = 21;
             // 
-            // fornitorePartitaIVADataGridViewTextBoxColumn1
+            // fornitoreDataGridViewTextBoxColumn4
             // 
-            this.fornitorePartitaIVADataGridViewTextBoxColumn1.DataPropertyName = "Fornitore_Partita_IVA";
-            this.fornitorePartitaIVADataGridViewTextBoxColumn1.HeaderText = "Fornitore_Partita_IVA";
-            this.fornitorePartitaIVADataGridViewTextBoxColumn1.Name = "fornitorePartitaIVADataGridViewTextBoxColumn1";
-            this.fornitorePartitaIVADataGridViewTextBoxColumn1.ReadOnly = true;
-            this.fornitorePartitaIVADataGridViewTextBoxColumn1.Width = 120;
+            this.fornitoreDataGridViewTextBoxColumn4.DataPropertyName = "Fornitore";
+            this.fornitoreDataGridViewTextBoxColumn4.HeaderText = "Fornitore";
+            this.fornitoreDataGridViewTextBoxColumn4.Name = "fornitoreDataGridViewTextBoxColumn4";
+            this.fornitoreDataGridViewTextBoxColumn4.ReadOnly = true;
             // 
-            // daDataGridViewTextBoxColumn
+            // daDataGridViewTextBoxColumn1
             // 
-            this.daDataGridViewTextBoxColumn.DataPropertyName = "Da";
-            this.daDataGridViewTextBoxColumn.HeaderText = "Da";
-            this.daDataGridViewTextBoxColumn.Name = "daDataGridViewTextBoxColumn";
-            this.daDataGridViewTextBoxColumn.ReadOnly = true;
+            this.daDataGridViewTextBoxColumn1.DataPropertyName = "Da";
+            this.daDataGridViewTextBoxColumn1.HeaderText = "Da";
+            this.daDataGridViewTextBoxColumn1.Name = "daDataGridViewTextBoxColumn1";
+            this.daDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
-            // aDataGridViewTextBoxColumn
+            // aDataGridViewTextBoxColumn1
             // 
-            this.aDataGridViewTextBoxColumn.DataPropertyName = "A";
-            this.aDataGridViewTextBoxColumn.HeaderText = "A";
-            this.aDataGridViewTextBoxColumn.Name = "aDataGridViewTextBoxColumn";
-            this.aDataGridViewTextBoxColumn.ReadOnly = true;
+            this.aDataGridViewTextBoxColumn1.DataPropertyName = "A";
+            this.aDataGridViewTextBoxColumn1.HeaderText = "A";
+            this.aDataGridViewTextBoxColumn1.Name = "aDataGridViewTextBoxColumn1";
+            this.aDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
-            // periodicitaDataGridViewTextBoxColumn
+            // periodicitàDataGridViewTextBoxColumn1
             // 
-            this.periodicitaDataGridViewTextBoxColumn.DataPropertyName = "Periodicita";
-            this.periodicitaDataGridViewTextBoxColumn.HeaderText = "Periodicita";
-            this.periodicitaDataGridViewTextBoxColumn.Name = "periodicitaDataGridViewTextBoxColumn";
-            this.periodicitaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.periodicitàDataGridViewTextBoxColumn1.DataPropertyName = "Periodicità";
+            this.periodicitàDataGridViewTextBoxColumn1.HeaderText = "Periodicità";
+            this.periodicitàDataGridViewTextBoxColumn1.Name = "periodicitàDataGridViewTextBoxColumn1";
+            this.periodicitàDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
-            // tassointeresseDataGridViewTextBoxColumn
+            // tassoInteresseDataGridViewTextBoxColumn1
             // 
-            this.tassointeresseDataGridViewTextBoxColumn.DataPropertyName = "Tasso_interesse";
-            this.tassointeresseDataGridViewTextBoxColumn.HeaderText = "Tasso_interesse";
-            this.tassointeresseDataGridViewTextBoxColumn.Name = "tassointeresseDataGridViewTextBoxColumn";
-            this.tassointeresseDataGridViewTextBoxColumn.ReadOnly = true;
+            this.tassoInteresseDataGridViewTextBoxColumn1.DataPropertyName = "TassoInteresse";
+            this.tassoInteresseDataGridViewTextBoxColumn1.HeaderText = "TassoInteresse";
+            this.tassoInteresseDataGridViewTextBoxColumn1.Name = "tassoInteresseDataGridViewTextBoxColumn1";
+            this.tassoInteresseDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
-            // numerorateDataGridViewTextBoxColumn
+            // numeroRateDataGridViewTextBoxColumn
             // 
-            this.numerorateDataGridViewTextBoxColumn.DataPropertyName = "Numero_rate";
-            this.numerorateDataGridViewTextBoxColumn.HeaderText = "Numero_rate";
-            this.numerorateDataGridViewTextBoxColumn.Name = "numerorateDataGridViewTextBoxColumn";
-            this.numerorateDataGridViewTextBoxColumn.ReadOnly = true;
+            this.numeroRateDataGridViewTextBoxColumn.DataPropertyName = "NumeroRate";
+            this.numeroRateDataGridViewTextBoxColumn.HeaderText = "NumeroRate";
+            this.numeroRateDataGridViewTextBoxColumn.Name = "numeroRateDataGridViewTextBoxColumn";
+            this.numeroRateDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // modalitadipagamentoBindingSource1
+            // modalitàPagamentoBindingSource
             // 
-            this.modalitadipagamentoBindingSource1.DataMember = "Modalita_di_pagamento";
-            this.modalitadipagamentoBindingSource1.DataSource = this.progettoDB16DataSet;
+            this.modalitàPagamentoBindingSource.DataMember = "ModalitàPagamento";
+            this.modalitàPagamentoBindingSource.DataSource = this.dBProject1617DataSet;
             // 
             // comboBoxModPag
             // 
@@ -3444,23 +3372,6 @@
             this.addModPagBtn.Text = "Nuova modalità";
             this.addModPagBtn.UseVisualStyleBackColor = true;
             this.addModPagBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
-            // 
-            // fornitoreBindingSource
-            // 
-            this.fornitoreBindingSource.DataSource = this.progettoDB16DataSet;
-            this.fornitoreBindingSource.Position = 0;
-            // 
-            // fatturadiacquistoBindingSource
-            // 
-            this.fatturadiacquistoBindingSource.DataMember = "Fattura_di_acquisto";
-            // 
-            // pagamentocAcquistoBindingSource
-            // 
-            this.pagamentocAcquistoBindingSource.DataMember = "Pagamento_cAcquisto";
-            // 
-            // modalitadipagamentoBindingSource
-            // 
-            this.modalitadipagamentoBindingSource.DataMember = "Modalita_di_pagamento";
             // 
             // fornitoriPanel
             // 
@@ -3536,23 +3447,24 @@
             this.dataGridView4.AutoGenerateColumns = false;
             this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.partitaIVACodiceFiscaleDataGridViewTextBoxColumn,
-            this.recapito1DataGridViewTextBoxColumn2,
-            this.recapito2DataGridViewTextBoxColumn2,
-            this.recapito3DataGridViewTextBoxColumn1,
-            this.cittaDataGridViewTextBoxColumn3,
-            this.indirizzoDataGridViewTextBoxColumn3,
-            this.provinciaDataGridViewTextBoxColumn3,
-            this.cAPDataGridViewTextBoxColumn3,
+            this.idDataGridViewTextBoxColumn,
             this.tipoClienteDataGridViewTextBoxColumn,
-            this.ragionesocialeDataGridViewTextBoxColumn2,
-            this.indirizzoemail1DataGridViewTextBoxColumn2,
-            this.indirizzoemail2DataGridViewTextBoxColumn2,
+            this.codiceFiscaleDataGridViewTextBoxColumn,
             this.nomeDataGridViewTextBoxColumn,
             this.cognomeDataGridViewTextBoxColumn,
-            this.datanascitaDataGridViewTextBoxColumn,
-            this.cittanascitaDataGridViewTextBoxColumn,
-            this.provincianascitaDataGridViewTextBoxColumn});
+            this.dataNascitaDataGridViewTextBoxColumn,
+            this.cittàNascitaDataGridViewTextBoxColumn,
+            this.provinciaNascitaDataGridViewTextBoxColumn,
+            this.partitaIVADataGridViewTextBoxColumn1,
+            this.ragioneSocialeDataGridViewTextBoxColumn1,
+            this.recapito1DataGridViewTextBoxColumn1,
+            this.recapito2DataGridViewTextBoxColumn1,
+            this.indirizzoEmail1DataGridViewTextBoxColumn1,
+            this.indirizzoEmail2DataGridViewTextBoxColumn1,
+            this.indirizzoDataGridViewTextBoxColumn1,
+            this.cittàDataGridViewTextBoxColumn1,
+            this.provinciaDataGridViewTextBoxColumn1,
+            this.cAPDataGridViewTextBoxColumn1});
             this.dataGridView4.DataSource = this.clienteBindingSource;
             this.dataGridView4.Location = new System.Drawing.Point(9, 8);
             this.dataGridView4.Name = "dataGridView4";
@@ -3560,90 +3472,26 @@
             this.dataGridView4.Size = new System.Drawing.Size(482, 278);
             this.dataGridView4.TabIndex = 13;
             // 
-            // partitaIVACodiceFiscaleDataGridViewTextBoxColumn
+            // idDataGridViewTextBoxColumn
             // 
-            this.partitaIVACodiceFiscaleDataGridViewTextBoxColumn.DataPropertyName = "PartitaIVA_CodiceFiscale";
-            this.partitaIVACodiceFiscaleDataGridViewTextBoxColumn.HeaderText = "PartitaIVA_CodiceFiscale";
-            this.partitaIVACodiceFiscaleDataGridViewTextBoxColumn.Name = "partitaIVACodiceFiscaleDataGridViewTextBoxColumn";
-            this.partitaIVACodiceFiscaleDataGridViewTextBoxColumn.ReadOnly = true;
-            this.partitaIVACodiceFiscaleDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // recapito1DataGridViewTextBoxColumn2
-            // 
-            this.recapito1DataGridViewTextBoxColumn2.DataPropertyName = "Recapito_1";
-            this.recapito1DataGridViewTextBoxColumn2.HeaderText = "Recapito_1";
-            this.recapito1DataGridViewTextBoxColumn2.Name = "recapito1DataGridViewTextBoxColumn2";
-            this.recapito1DataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // recapito2DataGridViewTextBoxColumn2
-            // 
-            this.recapito2DataGridViewTextBoxColumn2.DataPropertyName = "Recapito_2";
-            this.recapito2DataGridViewTextBoxColumn2.HeaderText = "Recapito_2";
-            this.recapito2DataGridViewTextBoxColumn2.Name = "recapito2DataGridViewTextBoxColumn2";
-            this.recapito2DataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // recapito3DataGridViewTextBoxColumn1
-            // 
-            this.recapito3DataGridViewTextBoxColumn1.DataPropertyName = "Recapito_3";
-            this.recapito3DataGridViewTextBoxColumn1.HeaderText = "Recapito_3";
-            this.recapito3DataGridViewTextBoxColumn1.Name = "recapito3DataGridViewTextBoxColumn1";
-            this.recapito3DataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // cittaDataGridViewTextBoxColumn3
-            // 
-            this.cittaDataGridViewTextBoxColumn3.DataPropertyName = "Citta";
-            this.cittaDataGridViewTextBoxColumn3.HeaderText = "Citta";
-            this.cittaDataGridViewTextBoxColumn3.Name = "cittaDataGridViewTextBoxColumn3";
-            this.cittaDataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // indirizzoDataGridViewTextBoxColumn3
-            // 
-            this.indirizzoDataGridViewTextBoxColumn3.DataPropertyName = "Indirizzo";
-            this.indirizzoDataGridViewTextBoxColumn3.HeaderText = "Indirizzo";
-            this.indirizzoDataGridViewTextBoxColumn3.Name = "indirizzoDataGridViewTextBoxColumn3";
-            this.indirizzoDataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // provinciaDataGridViewTextBoxColumn3
-            // 
-            this.provinciaDataGridViewTextBoxColumn3.DataPropertyName = "Provincia";
-            this.provinciaDataGridViewTextBoxColumn3.HeaderText = "Provincia";
-            this.provinciaDataGridViewTextBoxColumn3.Name = "provinciaDataGridViewTextBoxColumn3";
-            this.provinciaDataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // cAPDataGridViewTextBoxColumn3
-            // 
-            this.cAPDataGridViewTextBoxColumn3.DataPropertyName = "CAP";
-            this.cAPDataGridViewTextBoxColumn3.HeaderText = "CAP";
-            this.cAPDataGridViewTextBoxColumn3.Name = "cAPDataGridViewTextBoxColumn3";
-            this.cAPDataGridViewTextBoxColumn3.ReadOnly = true;
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // tipoClienteDataGridViewTextBoxColumn
             // 
-            this.tipoClienteDataGridViewTextBoxColumn.DataPropertyName = "Tipo_Cliente";
-            this.tipoClienteDataGridViewTextBoxColumn.HeaderText = "Tipo_Cliente";
+            this.tipoClienteDataGridViewTextBoxColumn.DataPropertyName = "TipoCliente";
+            this.tipoClienteDataGridViewTextBoxColumn.HeaderText = "TipoCliente";
             this.tipoClienteDataGridViewTextBoxColumn.Name = "tipoClienteDataGridViewTextBoxColumn";
             this.tipoClienteDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // ragionesocialeDataGridViewTextBoxColumn2
+            // codiceFiscaleDataGridViewTextBoxColumn
             // 
-            this.ragionesocialeDataGridViewTextBoxColumn2.DataPropertyName = "Ragione_sociale";
-            this.ragionesocialeDataGridViewTextBoxColumn2.HeaderText = "Ragione_sociale";
-            this.ragionesocialeDataGridViewTextBoxColumn2.Name = "ragionesocialeDataGridViewTextBoxColumn2";
-            this.ragionesocialeDataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // indirizzoemail1DataGridViewTextBoxColumn2
-            // 
-            this.indirizzoemail1DataGridViewTextBoxColumn2.DataPropertyName = "Indirizzo_e_mail_1";
-            this.indirizzoemail1DataGridViewTextBoxColumn2.HeaderText = "Indirizzo_e_mail_1";
-            this.indirizzoemail1DataGridViewTextBoxColumn2.Name = "indirizzoemail1DataGridViewTextBoxColumn2";
-            this.indirizzoemail1DataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // indirizzoemail2DataGridViewTextBoxColumn2
-            // 
-            this.indirizzoemail2DataGridViewTextBoxColumn2.DataPropertyName = "Indirizzo_e_mail_2";
-            this.indirizzoemail2DataGridViewTextBoxColumn2.HeaderText = "Indirizzo_e_mail_2";
-            this.indirizzoemail2DataGridViewTextBoxColumn2.Name = "indirizzoemail2DataGridViewTextBoxColumn2";
-            this.indirizzoemail2DataGridViewTextBoxColumn2.ReadOnly = true;
+            this.codiceFiscaleDataGridViewTextBoxColumn.DataPropertyName = "CodiceFiscale";
+            this.codiceFiscaleDataGridViewTextBoxColumn.HeaderText = "CodiceFiscale";
+            this.codiceFiscaleDataGridViewTextBoxColumn.Name = "codiceFiscaleDataGridViewTextBoxColumn";
+            this.codiceFiscaleDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // nomeDataGridViewTextBoxColumn
             // 
@@ -3659,31 +3507,101 @@
             this.cognomeDataGridViewTextBoxColumn.Name = "cognomeDataGridViewTextBoxColumn";
             this.cognomeDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // datanascitaDataGridViewTextBoxColumn
+            // dataNascitaDataGridViewTextBoxColumn
             // 
-            this.datanascitaDataGridViewTextBoxColumn.DataPropertyName = "Data_nascita";
-            this.datanascitaDataGridViewTextBoxColumn.HeaderText = "Data_nascita";
-            this.datanascitaDataGridViewTextBoxColumn.Name = "datanascitaDataGridViewTextBoxColumn";
-            this.datanascitaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.dataNascitaDataGridViewTextBoxColumn.DataPropertyName = "DataNascita";
+            this.dataNascitaDataGridViewTextBoxColumn.HeaderText = "DataNascita";
+            this.dataNascitaDataGridViewTextBoxColumn.Name = "dataNascitaDataGridViewTextBoxColumn";
+            this.dataNascitaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // cittanascitaDataGridViewTextBoxColumn
+            // cittàNascitaDataGridViewTextBoxColumn
             // 
-            this.cittanascitaDataGridViewTextBoxColumn.DataPropertyName = "Citta_nascita";
-            this.cittanascitaDataGridViewTextBoxColumn.HeaderText = "Citta_nascita";
-            this.cittanascitaDataGridViewTextBoxColumn.Name = "cittanascitaDataGridViewTextBoxColumn";
-            this.cittanascitaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.cittàNascitaDataGridViewTextBoxColumn.DataPropertyName = "CittàNascita";
+            this.cittàNascitaDataGridViewTextBoxColumn.HeaderText = "CittàNascita";
+            this.cittàNascitaDataGridViewTextBoxColumn.Name = "cittàNascitaDataGridViewTextBoxColumn";
+            this.cittàNascitaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // provincianascitaDataGridViewTextBoxColumn
+            // provinciaNascitaDataGridViewTextBoxColumn
             // 
-            this.provincianascitaDataGridViewTextBoxColumn.DataPropertyName = "Provincia_nascita";
-            this.provincianascitaDataGridViewTextBoxColumn.HeaderText = "Provincia_nascita";
-            this.provincianascitaDataGridViewTextBoxColumn.Name = "provincianascitaDataGridViewTextBoxColumn";
-            this.provincianascitaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.provinciaNascitaDataGridViewTextBoxColumn.DataPropertyName = "ProvinciaNascita";
+            this.provinciaNascitaDataGridViewTextBoxColumn.HeaderText = "ProvinciaNascita";
+            this.provinciaNascitaDataGridViewTextBoxColumn.Name = "provinciaNascitaDataGridViewTextBoxColumn";
+            this.provinciaNascitaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // partitaIVADataGridViewTextBoxColumn1
+            // 
+            this.partitaIVADataGridViewTextBoxColumn1.DataPropertyName = "PartitaIVA";
+            this.partitaIVADataGridViewTextBoxColumn1.HeaderText = "PartitaIVA";
+            this.partitaIVADataGridViewTextBoxColumn1.Name = "partitaIVADataGridViewTextBoxColumn1";
+            this.partitaIVADataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // ragioneSocialeDataGridViewTextBoxColumn1
+            // 
+            this.ragioneSocialeDataGridViewTextBoxColumn1.DataPropertyName = "RagioneSociale";
+            this.ragioneSocialeDataGridViewTextBoxColumn1.HeaderText = "RagioneSociale";
+            this.ragioneSocialeDataGridViewTextBoxColumn1.Name = "ragioneSocialeDataGridViewTextBoxColumn1";
+            this.ragioneSocialeDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // recapito1DataGridViewTextBoxColumn1
+            // 
+            this.recapito1DataGridViewTextBoxColumn1.DataPropertyName = "Recapito1";
+            this.recapito1DataGridViewTextBoxColumn1.HeaderText = "Recapito1";
+            this.recapito1DataGridViewTextBoxColumn1.Name = "recapito1DataGridViewTextBoxColumn1";
+            this.recapito1DataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // recapito2DataGridViewTextBoxColumn1
+            // 
+            this.recapito2DataGridViewTextBoxColumn1.DataPropertyName = "Recapito2";
+            this.recapito2DataGridViewTextBoxColumn1.HeaderText = "Recapito2";
+            this.recapito2DataGridViewTextBoxColumn1.Name = "recapito2DataGridViewTextBoxColumn1";
+            this.recapito2DataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // indirizzoEmail1DataGridViewTextBoxColumn1
+            // 
+            this.indirizzoEmail1DataGridViewTextBoxColumn1.DataPropertyName = "IndirizzoEmail1";
+            this.indirizzoEmail1DataGridViewTextBoxColumn1.HeaderText = "IndirizzoEmail1";
+            this.indirizzoEmail1DataGridViewTextBoxColumn1.Name = "indirizzoEmail1DataGridViewTextBoxColumn1";
+            this.indirizzoEmail1DataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // indirizzoEmail2DataGridViewTextBoxColumn1
+            // 
+            this.indirizzoEmail2DataGridViewTextBoxColumn1.DataPropertyName = "IndirizzoEmail2";
+            this.indirizzoEmail2DataGridViewTextBoxColumn1.HeaderText = "IndirizzoEmail2";
+            this.indirizzoEmail2DataGridViewTextBoxColumn1.Name = "indirizzoEmail2DataGridViewTextBoxColumn1";
+            this.indirizzoEmail2DataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // indirizzoDataGridViewTextBoxColumn1
+            // 
+            this.indirizzoDataGridViewTextBoxColumn1.DataPropertyName = "Indirizzo";
+            this.indirizzoDataGridViewTextBoxColumn1.HeaderText = "Indirizzo";
+            this.indirizzoDataGridViewTextBoxColumn1.Name = "indirizzoDataGridViewTextBoxColumn1";
+            this.indirizzoDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // cittàDataGridViewTextBoxColumn1
+            // 
+            this.cittàDataGridViewTextBoxColumn1.DataPropertyName = "Città";
+            this.cittàDataGridViewTextBoxColumn1.HeaderText = "Città";
+            this.cittàDataGridViewTextBoxColumn1.Name = "cittàDataGridViewTextBoxColumn1";
+            this.cittàDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // provinciaDataGridViewTextBoxColumn1
+            // 
+            this.provinciaDataGridViewTextBoxColumn1.DataPropertyName = "Provincia";
+            this.provinciaDataGridViewTextBoxColumn1.HeaderText = "Provincia";
+            this.provinciaDataGridViewTextBoxColumn1.Name = "provinciaDataGridViewTextBoxColumn1";
+            this.provinciaDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // cAPDataGridViewTextBoxColumn1
+            // 
+            this.cAPDataGridViewTextBoxColumn1.DataPropertyName = "CAP";
+            this.cAPDataGridViewTextBoxColumn1.HeaderText = "CAP";
+            this.cAPDataGridViewTextBoxColumn1.Name = "cAPDataGridViewTextBoxColumn1";
+            this.cAPDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // clienteBindingSource
             // 
             this.clienteBindingSource.DataMember = "Cliente";
-            this.clienteBindingSource.DataSource = this.progettoDB16DataSet;
+            this.clienteBindingSource.DataSource = this.dBProject1617DataSet;
             // 
             // addClienteBtn
             // 
@@ -3749,59 +3667,65 @@
             this.dataGridView5.AutoGenerateColumns = false;
             this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.numeroDataGridViewTextBoxColumn1,
-            this.dataDataGridViewTextBoxColumn2,
-            this.importocomplessivoDataGridViewTextBoxColumn1,
-            this.nostreModDaDataGridViewTextBoxColumn,
-            this.clientePartitaIVACodiceFiscaleDataGridViewTextBoxColumn});
-            this.dataGridView5.DataSource = this.contrattodivenditaBindingSource;
+            this.numeroDataGridViewTextBoxColumn,
+            this.trasportoDataGridViewTextBoxColumn,
+            this.dataDataGridViewTextBoxColumn,
+            this.importoComplessivoDataGridViewTextBoxColumn,
+            this.modalitàPagamentoDataGridViewTextBoxColumn,
+            this.clienteDataGridViewTextBoxColumn});
+            this.dataGridView5.DataSource = this.contrattoVenditaBindingSource;
             this.dataGridView5.Location = new System.Drawing.Point(9, 8);
             this.dataGridView5.Name = "dataGridView5";
             this.dataGridView5.ReadOnly = true;
             this.dataGridView5.Size = new System.Drawing.Size(472, 265);
             this.dataGridView5.TabIndex = 18;
             // 
-            // numeroDataGridViewTextBoxColumn1
+            // numeroDataGridViewTextBoxColumn
             // 
-            this.numeroDataGridViewTextBoxColumn1.DataPropertyName = "Numero";
-            this.numeroDataGridViewTextBoxColumn1.HeaderText = "Numero";
-            this.numeroDataGridViewTextBoxColumn1.Name = "numeroDataGridViewTextBoxColumn1";
-            this.numeroDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.numeroDataGridViewTextBoxColumn.DataPropertyName = "Numero";
+            this.numeroDataGridViewTextBoxColumn.HeaderText = "Numero";
+            this.numeroDataGridViewTextBoxColumn.Name = "numeroDataGridViewTextBoxColumn";
+            this.numeroDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // dataDataGridViewTextBoxColumn2
+            // trasportoDataGridViewTextBoxColumn
             // 
-            this.dataDataGridViewTextBoxColumn2.DataPropertyName = "Data";
-            this.dataDataGridViewTextBoxColumn2.HeaderText = "Data";
-            this.dataDataGridViewTextBoxColumn2.Name = "dataDataGridViewTextBoxColumn2";
-            this.dataDataGridViewTextBoxColumn2.ReadOnly = true;
+            this.trasportoDataGridViewTextBoxColumn.DataPropertyName = "Trasporto";
+            this.trasportoDataGridViewTextBoxColumn.HeaderText = "Trasporto";
+            this.trasportoDataGridViewTextBoxColumn.Name = "trasportoDataGridViewTextBoxColumn";
+            this.trasportoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // importocomplessivoDataGridViewTextBoxColumn1
+            // dataDataGridViewTextBoxColumn
             // 
-            this.importocomplessivoDataGridViewTextBoxColumn1.DataPropertyName = "Importo_complessivo";
-            this.importocomplessivoDataGridViewTextBoxColumn1.HeaderText = "Importo_complessivo";
-            this.importocomplessivoDataGridViewTextBoxColumn1.Name = "importocomplessivoDataGridViewTextBoxColumn1";
-            this.importocomplessivoDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.importocomplessivoDataGridViewTextBoxColumn1.Width = 120;
+            this.dataDataGridViewTextBoxColumn.DataPropertyName = "Data";
+            this.dataDataGridViewTextBoxColumn.HeaderText = "Data";
+            this.dataDataGridViewTextBoxColumn.Name = "dataDataGridViewTextBoxColumn";
+            this.dataDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // nostreModDaDataGridViewTextBoxColumn
+            // importoComplessivoDataGridViewTextBoxColumn
             // 
-            this.nostreModDaDataGridViewTextBoxColumn.DataPropertyName = "Nostre_Mod_Da";
-            this.nostreModDaDataGridViewTextBoxColumn.HeaderText = "Nostre_Mod_Da";
-            this.nostreModDaDataGridViewTextBoxColumn.Name = "nostreModDaDataGridViewTextBoxColumn";
-            this.nostreModDaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.importoComplessivoDataGridViewTextBoxColumn.DataPropertyName = "ImportoComplessivo";
+            this.importoComplessivoDataGridViewTextBoxColumn.HeaderText = "ImportoComplessivo";
+            this.importoComplessivoDataGridViewTextBoxColumn.Name = "importoComplessivoDataGridViewTextBoxColumn";
+            this.importoComplessivoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // clientePartitaIVACodiceFiscaleDataGridViewTextBoxColumn
+            // modalitàPagamentoDataGridViewTextBoxColumn
             // 
-            this.clientePartitaIVACodiceFiscaleDataGridViewTextBoxColumn.DataPropertyName = "Cliente_PartitaIVA_CodiceFiscale";
-            this.clientePartitaIVACodiceFiscaleDataGridViewTextBoxColumn.HeaderText = "Cliente_PartitaIVA_CodiceFiscale";
-            this.clientePartitaIVACodiceFiscaleDataGridViewTextBoxColumn.Name = "clientePartitaIVACodiceFiscaleDataGridViewTextBoxColumn";
-            this.clientePartitaIVACodiceFiscaleDataGridViewTextBoxColumn.ReadOnly = true;
-            this.clientePartitaIVACodiceFiscaleDataGridViewTextBoxColumn.Width = 190;
+            this.modalitàPagamentoDataGridViewTextBoxColumn.DataPropertyName = "ModalitàPagamento";
+            this.modalitàPagamentoDataGridViewTextBoxColumn.HeaderText = "ModalitàPagamento";
+            this.modalitàPagamentoDataGridViewTextBoxColumn.Name = "modalitàPagamentoDataGridViewTextBoxColumn";
+            this.modalitàPagamentoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // contrattodivenditaBindingSource
+            // clienteDataGridViewTextBoxColumn
             // 
-            this.contrattodivenditaBindingSource.DataMember = "Contratto_di_vendita";
-            this.contrattodivenditaBindingSource.DataSource = this.progettoDB16DataSet;
+            this.clienteDataGridViewTextBoxColumn.DataPropertyName = "Cliente";
+            this.clienteDataGridViewTextBoxColumn.HeaderText = "Cliente";
+            this.clienteDataGridViewTextBoxColumn.Name = "clienteDataGridViewTextBoxColumn";
+            this.clienteDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // contrattoVenditaBindingSource
+            // 
+            this.contrattoVenditaBindingSource.DataMember = "ContrattoVendita";
+            this.contrattoVenditaBindingSource.DataSource = this.dBProject1617DataSet;
             // 
             // addContrattoBtn
             // 
@@ -3864,41 +3788,49 @@
             this.dataGridView6.AutoGenerateColumns = false;
             this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView6.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.contrattoNumeroDataGridViewTextBoxColumn1,
-            this.dataDataGridViewTextBoxColumn3,
-            this.importoDataGridViewTextBoxColumn1});
-            this.dataGridView6.DataSource = this.pagamentocVenditaBindingSource;
+            this.contrattoDataGridViewTextBoxColumn,
+            this.scadenzaDataGridViewTextBoxColumn,
+            this.importoDataGridViewTextBoxColumn,
+            this.dataPagamentoDataGridViewTextBoxColumn});
+            this.dataGridView6.DataSource = this.rataClienteBindingSource;
             this.dataGridView6.Location = new System.Drawing.Point(9, 8);
             this.dataGridView6.Name = "dataGridView6";
             this.dataGridView6.ReadOnly = true;
             this.dataGridView6.Size = new System.Drawing.Size(472, 265);
             this.dataGridView6.TabIndex = 21;
             // 
-            // contrattoNumeroDataGridViewTextBoxColumn1
+            // contrattoDataGridViewTextBoxColumn
             // 
-            this.contrattoNumeroDataGridViewTextBoxColumn1.DataPropertyName = "Contratto_Numero";
-            this.contrattoNumeroDataGridViewTextBoxColumn1.HeaderText = "Contratto_Numero";
-            this.contrattoNumeroDataGridViewTextBoxColumn1.Name = "contrattoNumeroDataGridViewTextBoxColumn1";
-            this.contrattoNumeroDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.contrattoDataGridViewTextBoxColumn.DataPropertyName = "Contratto";
+            this.contrattoDataGridViewTextBoxColumn.HeaderText = "Contratto";
+            this.contrattoDataGridViewTextBoxColumn.Name = "contrattoDataGridViewTextBoxColumn";
+            this.contrattoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // dataDataGridViewTextBoxColumn3
+            // scadenzaDataGridViewTextBoxColumn
             // 
-            this.dataDataGridViewTextBoxColumn3.DataPropertyName = "Data";
-            this.dataDataGridViewTextBoxColumn3.HeaderText = "Data";
-            this.dataDataGridViewTextBoxColumn3.Name = "dataDataGridViewTextBoxColumn3";
-            this.dataDataGridViewTextBoxColumn3.ReadOnly = true;
+            this.scadenzaDataGridViewTextBoxColumn.DataPropertyName = "Scadenza";
+            this.scadenzaDataGridViewTextBoxColumn.HeaderText = "Scadenza";
+            this.scadenzaDataGridViewTextBoxColumn.Name = "scadenzaDataGridViewTextBoxColumn";
+            this.scadenzaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // importoDataGridViewTextBoxColumn1
+            // importoDataGridViewTextBoxColumn
             // 
-            this.importoDataGridViewTextBoxColumn1.DataPropertyName = "Importo";
-            this.importoDataGridViewTextBoxColumn1.HeaderText = "Importo";
-            this.importoDataGridViewTextBoxColumn1.Name = "importoDataGridViewTextBoxColumn1";
-            this.importoDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.importoDataGridViewTextBoxColumn.DataPropertyName = "Importo";
+            this.importoDataGridViewTextBoxColumn.HeaderText = "Importo";
+            this.importoDataGridViewTextBoxColumn.Name = "importoDataGridViewTextBoxColumn";
+            this.importoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // pagamentocVenditaBindingSource
+            // dataPagamentoDataGridViewTextBoxColumn
             // 
-            this.pagamentocVenditaBindingSource.DataMember = "Pagamento_cVendita";
-            this.pagamentocVenditaBindingSource.DataSource = this.progettoDB16DataSet;
+            this.dataPagamentoDataGridViewTextBoxColumn.DataPropertyName = "DataPagamento";
+            this.dataPagamentoDataGridViewTextBoxColumn.HeaderText = "DataPagamento";
+            this.dataPagamentoDataGridViewTextBoxColumn.Name = "dataPagamentoDataGridViewTextBoxColumn";
+            this.dataPagamentoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // rataClienteBindingSource
+            // 
+            this.rataClienteBindingSource.DataMember = "RataCliente";
+            this.rataClienteBindingSource.DataSource = this.dBProject1617DataSet;
             // 
             // addPagamBtn
             // 
@@ -3963,57 +3895,57 @@
             this.dataGridView7.AutoGenerateColumns = false;
             this.dataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView7.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.daDataGridViewTextBoxColumn1,
-            this.aDataGridViewTextBoxColumn1,
-            this.periodicitaDataGridViewTextBoxColumn1,
-            this.tassointeresseDataGridViewTextBoxColumn1,
-            this.numerorateDataGridViewTextBoxColumn1});
-            this.dataGridView7.DataSource = this.nostremodalitadipagamentoBindingSource;
+            this.daDataGridViewTextBoxColumn,
+            this.aDataGridViewTextBoxColumn,
+            this.periodicitàDataGridViewTextBoxColumn,
+            this.tassoInteresseDataGridViewTextBoxColumn,
+            this.numerRateDataGridViewTextBoxColumn});
+            this.dataGridView7.DataSource = this.nostreModalitàPagamentoBindingSource;
             this.dataGridView7.Location = new System.Drawing.Point(9, 8);
             this.dataGridView7.Name = "dataGridView7";
             this.dataGridView7.ReadOnly = true;
             this.dataGridView7.Size = new System.Drawing.Size(472, 265);
             this.dataGridView7.TabIndex = 21;
             // 
-            // daDataGridViewTextBoxColumn1
+            // daDataGridViewTextBoxColumn
             // 
-            this.daDataGridViewTextBoxColumn1.DataPropertyName = "Da";
-            this.daDataGridViewTextBoxColumn1.HeaderText = "Da";
-            this.daDataGridViewTextBoxColumn1.Name = "daDataGridViewTextBoxColumn1";
-            this.daDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.daDataGridViewTextBoxColumn.DataPropertyName = "Da";
+            this.daDataGridViewTextBoxColumn.HeaderText = "Da";
+            this.daDataGridViewTextBoxColumn.Name = "daDataGridViewTextBoxColumn";
+            this.daDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // aDataGridViewTextBoxColumn1
+            // aDataGridViewTextBoxColumn
             // 
-            this.aDataGridViewTextBoxColumn1.DataPropertyName = "A";
-            this.aDataGridViewTextBoxColumn1.HeaderText = "A";
-            this.aDataGridViewTextBoxColumn1.Name = "aDataGridViewTextBoxColumn1";
-            this.aDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.aDataGridViewTextBoxColumn.DataPropertyName = "A";
+            this.aDataGridViewTextBoxColumn.HeaderText = "A";
+            this.aDataGridViewTextBoxColumn.Name = "aDataGridViewTextBoxColumn";
+            this.aDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // periodicitaDataGridViewTextBoxColumn1
+            // periodicitàDataGridViewTextBoxColumn
             // 
-            this.periodicitaDataGridViewTextBoxColumn1.DataPropertyName = "Periodicita";
-            this.periodicitaDataGridViewTextBoxColumn1.HeaderText = "Periodicita";
-            this.periodicitaDataGridViewTextBoxColumn1.Name = "periodicitaDataGridViewTextBoxColumn1";
-            this.periodicitaDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.periodicitàDataGridViewTextBoxColumn.DataPropertyName = "Periodicità";
+            this.periodicitàDataGridViewTextBoxColumn.HeaderText = "Periodicità";
+            this.periodicitàDataGridViewTextBoxColumn.Name = "periodicitàDataGridViewTextBoxColumn";
+            this.periodicitàDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // tassointeresseDataGridViewTextBoxColumn1
+            // tassoInteresseDataGridViewTextBoxColumn
             // 
-            this.tassointeresseDataGridViewTextBoxColumn1.DataPropertyName = "Tasso_interesse";
-            this.tassointeresseDataGridViewTextBoxColumn1.HeaderText = "Tasso_interesse";
-            this.tassointeresseDataGridViewTextBoxColumn1.Name = "tassointeresseDataGridViewTextBoxColumn1";
-            this.tassointeresseDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.tassoInteresseDataGridViewTextBoxColumn.DataPropertyName = "TassoInteresse";
+            this.tassoInteresseDataGridViewTextBoxColumn.HeaderText = "TassoInteresse";
+            this.tassoInteresseDataGridViewTextBoxColumn.Name = "tassoInteresseDataGridViewTextBoxColumn";
+            this.tassoInteresseDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // numerorateDataGridViewTextBoxColumn1
+            // numerRateDataGridViewTextBoxColumn
             // 
-            this.numerorateDataGridViewTextBoxColumn1.DataPropertyName = "Numero_rate";
-            this.numerorateDataGridViewTextBoxColumn1.HeaderText = "Numero_rate";
-            this.numerorateDataGridViewTextBoxColumn1.Name = "numerorateDataGridViewTextBoxColumn1";
-            this.numerorateDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.numerRateDataGridViewTextBoxColumn.DataPropertyName = "NumerRate";
+            this.numerRateDataGridViewTextBoxColumn.HeaderText = "NumerRate";
+            this.numerRateDataGridViewTextBoxColumn.Name = "numerRateDataGridViewTextBoxColumn";
+            this.numerRateDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // nostremodalitadipagamentoBindingSource
+            // nostreModalitàPagamentoBindingSource
             // 
-            this.nostremodalitadipagamentoBindingSource.DataMember = "Nostre_modalita_di_pagamento";
-            this.nostremodalitadipagamentoBindingSource.DataSource = this.progettoDB16DataSet;
+            this.nostreModalitàPagamentoBindingSource.DataMember = "NostreModalitàPagamento";
+            this.nostreModalitàPagamentoBindingSource.DataSource = this.dBProject1617DataSet;
             // 
             // addNsModPag_Btn
             // 
@@ -4040,26 +3972,6 @@
             this.clientiPanel.Size = new System.Drawing.Size(658, 406);
             this.clientiPanel.TabIndex = 2;
             // 
-            // giacenzaBindingSource
-            // 
-            this.giacenzaBindingSource.DataMember = "Giacenza";
-            // 
-            // fornitoreTableAdapter
-            // 
-            this.fornitoreTableAdapter.ClearBeforeFill = true;
-            // 
-            // fattura_di_acquistoTableAdapter
-            // 
-            this.fattura_di_acquistoTableAdapter.ClearBeforeFill = true;
-            // 
-            // pagamento_cAcquistoTableAdapter
-            // 
-            this.pagamento_cAcquistoTableAdapter.ClearBeforeFill = true;
-            // 
-            // modalita_di_pagamentoTableAdapter
-            // 
-            this.modalita_di_pagamentoTableAdapter.ClearBeforeFill = true;
-            // 
             // corriereTableAdapter
             // 
             this.corriereTableAdapter.ClearBeforeFill = true;
@@ -4072,67 +3984,57 @@
             // 
             this.clienteTableAdapter.ClearBeforeFill = true;
             // 
-            // contratto_di_venditaTableAdapter
+            // contrattoVenditaTableAdapter
             // 
-            this.contratto_di_venditaTableAdapter.ClearBeforeFill = true;
+            this.contrattoVenditaTableAdapter.ClearBeforeFill = true;
             // 
-            // pagamento_cVenditaTableAdapter
+            // rataClienteTableAdapter
             // 
-            this.pagamento_cVenditaTableAdapter.ClearBeforeFill = true;
+            this.rataClienteTableAdapter.ClearBeforeFill = true;
             // 
-            // nostre_modalita_di_pagamentoTableAdapter
+            // nostreModalitàPagamentoTableAdapter
             // 
-            this.nostre_modalita_di_pagamentoTableAdapter.ClearBeforeFill = true;
+            this.nostreModalitàPagamentoTableAdapter.ClearBeforeFill = true;
             // 
             // ordineTableAdapter
             // 
             this.ordineTableAdapter.ClearBeforeFill = true;
             // 
-            // per2TableAdapter
+            // ordineVeicoloTableAdapter
             // 
-            this.per2TableAdapter.ClearBeforeFill = true;
+            this.ordineVeicoloTableAdapter.ClearBeforeFill = true;
             // 
-            // diTableAdapter
+            // ordineRicambioTableAdapter
             // 
-            this.diTableAdapter.ClearBeforeFill = true;
+            this.ordineRicambioTableAdapter.ClearBeforeFill = true;
             // 
-            // veicolo_in_catalogoTableAdapter
+            // veicoloCatalogoTableAdapter
             // 
-            this.veicolo_in_catalogoTableAdapter.ClearBeforeFill = true;
+            this.veicoloCatalogoTableAdapter.ClearBeforeFill = true;
             // 
-            // modello_veicoloTableAdapter
+            // modelloVeicoloTableAdapter
             // 
-            this.modello_veicoloTableAdapter.ClearBeforeFill = true;
-            // 
-            // nostremodalitadipagamentoBindingSource1
-            // 
-            this.nostremodalitadipagamentoBindingSource1.DataMember = "Nostre_modalita_di_pagamento";
-            this.nostremodalitadipagamentoBindingSource1.DataSource = this.progettoDB16DataSet;
+            this.modelloVeicoloTableAdapter.ClearBeforeFill = true;
             // 
             // optionalTableAdapter
             // 
             this.optionalTableAdapter.ClearBeforeFill = true;
             // 
-            // veicolo_vendutoTableAdapter
+            // veicoloVendutoTableAdapter
             // 
-            this.veicolo_vendutoTableAdapter.ClearBeforeFill = true;
+            this.veicoloVendutoTableAdapter.ClearBeforeFill = true;
             // 
             // revisioneTableAdapter
             // 
             this.revisioneTableAdapter.ClearBeforeFill = true;
             // 
-            // possessoBindingSource
+            // supportoTableAdapter
             // 
-            this.possessoBindingSource.DataMember = "possesso";
-            this.possessoBindingSource.DataSource = this.progettoDB16DataSet;
+            this.supportoTableAdapter.ClearBeforeFill = true;
             // 
-            // possessoTableAdapter
+            // dotazioneTableAdapter
             // 
-            this.possessoTableAdapter.ClearBeforeFill = true;
-            // 
-            // referenza2TableAdapter
-            // 
-            this.referenza2TableAdapter.ClearBeforeFill = true;
+            this.dotazioneTableAdapter.ClearBeforeFill = true;
             // 
             // riparazioneTableAdapter
             // 
@@ -4150,53 +4052,69 @@
             // 
             this.giacenzaTableAdapter.ClearBeforeFill = true;
             // 
-            // veicolovendutoBindingSource1
+            // referenzaTableAdapter
             // 
-            this.veicolovendutoBindingSource1.DataMember = "Veicolo_venduto";
-            this.veicolovendutoBindingSource1.DataSource = this.progettoDB16DataSet;
+            this.referenzaTableAdapter.ClearBeforeFill = true;
+            // 
+            // fornitoreTableAdapter
+            // 
+            this.fornitoreTableAdapter.ClearBeforeFill = true;
+            // 
+            // fatturaAcquistoTableAdapter
+            // 
+            this.fatturaAcquistoTableAdapter.ClearBeforeFill = true;
+            // 
+            // rataTableAdapter
+            // 
+            this.rataTableAdapter.ClearBeforeFill = true;
+            // 
+            // modalitàPagamentoTableAdapter
+            // 
+            this.modalitàPagamentoTableAdapter.ClearBeforeFill = true;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(655, 403);
+            this.Controls.Add(this.fornitoriPanel);
             this.Controls.Add(this.corrieriPanel);
             this.Controls.Add(this.clientiPanel);
             this.Controls.Add(this.ordiniPanel);
             this.Controls.Add(this.veicoliPanel);
             this.Controls.Add(this.officinaPanel);
             this.Controls.Add(this.homePanel);
-            this.Controls.Add(this.fornitoriPanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MinosPolDB";
+            this.Activated += new System.EventHandler(this.MainForm_Activated);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl5.ResumeLayout(false);
             this.Ordine.ResumeLayout(false);
             this.Ordine.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordineBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.progettoDB16DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dBProject1617DataSet)).EndInit();
             this.Dettaglio_ordine_veicolo.ResumeLayout(false);
             this.Dettaglio_ordine_veicolo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.per2BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ordineVeicoloBindingSource)).EndInit();
             this.Dettaglio_ordine_ricambio.ResumeLayout(false);
             this.Dettaglio_ordine_ricambio.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.diBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ordineRicambioBindingSource)).EndInit();
             this.ordiniPanel.ResumeLayout(false);
             this.ordiniPanel.PerformLayout();
             this.tabControl4.ResumeLayout(false);
             this.Veicolo_in_catalogo.ResumeLayout(false);
             this.Veicolo_in_catalogo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.veicoloincatalogoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.veicoloCatalogoBindingSource)).EndInit();
             this.Modello_veicolo.ResumeLayout(false);
             this.Modello_veicolo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.modelloveicoloBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.modelloVeicoloBindingSource)).EndInit();
             this.Optional.ResumeLayout(false);
             this.Optional.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView18)).EndInit();
@@ -4204,7 +4122,7 @@
             this.Veicolo_venduto.ResumeLayout(false);
             this.Veicolo_venduto.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.veicolovendutoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.veicoloVendutoBindingSource)).EndInit();
             this.Revisione.ResumeLayout(false);
             this.Revisione.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView22)).EndInit();
@@ -4212,11 +4130,11 @@
             this.Optional_supportato.ResumeLayout(false);
             this.Optional_supportato.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView24)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.referenza2BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.supportoBindingSource)).EndInit();
             this.Optional_in_veicolo_venduto.ResumeLayout(false);
             this.Optional_in_veicolo_venduto.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView25)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.possessoBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dotazioneBindingSource)).EndInit();
             this.veicoliPanel.ResumeLayout(false);
             this.veicoliPanel.PerformLayout();
             this.tabControl3.ResumeLayout(false);
@@ -4248,34 +4166,30 @@
             this.Giacenza.ResumeLayout(false);
             this.Giacenza.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.giacenzaBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.giacenzaBindingSource)).EndInit();
             this.Ricambio_veicolo.ResumeLayout(false);
             this.Ricambio_veicolo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.referenza2BindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.referenzaBindingSource)).EndInit();
             this.officinaPanel.ResumeLayout(false);
             this.officinaPanel.PerformLayout();
             this.tabControlFornitori.ResumeLayout(false);
             this.Fornitore.ResumeLayout(false);
             this.Fornitore.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFornitori)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fornitoreBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fornitoreBindingSource)).EndInit();
             this.Fattura.ResumeLayout(false);
             this.Fattura.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFatt)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fatturadiacquistoBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fatturaAcquistoBindingSource)).EndInit();
             this.Pagamento_fornitore.ResumeLayout(false);
             this.Pagamento_fornitore.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPag)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pagamentocAcquistoBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rataBindingSource)).EndInit();
             this.Modalita_pagamento_fornitore.ResumeLayout(false);
             this.Modalita_pagamento_fornitore.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewModPag)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.modalitadipagamentoBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fornitoreBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fatturadiacquistoBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pagamentocAcquistoBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.modalitadipagamentoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.modalitàPagamentoBindingSource)).EndInit();
             this.fornitoriPanel.ResumeLayout(false);
             this.fornitoriPanel.PerformLayout();
             this.tabControl1.ResumeLayout(false);
@@ -4286,21 +4200,17 @@
             this.Contratto.ResumeLayout(false);
             this.Contratto.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.contrattodivenditaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.contrattoVenditaBindingSource)).EndInit();
             this.Pagamento.ResumeLayout(false);
             this.Pagamento.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pagamentocVenditaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rataClienteBindingSource)).EndInit();
             this.Modalita_di_pagamento.ResumeLayout(false);
             this.Modalita_di_pagamento.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nostremodalitadipagamentoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nostreModalitàPagamentoBindingSource)).EndInit();
             this.clientiPanel.ResumeLayout(false);
             this.clientiPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.giacenzaBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nostremodalitadipagamentoBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.possessoBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.veicolovendutoBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -4463,219 +4373,206 @@
         private System.Windows.Forms.DataGridView dataGridView7;
         private EntryButton addNsModPag_Btn;
         private System.Windows.Forms.Panel clientiPanel;
-
-        private System.Windows.Forms.BindingSource giacenzaBindingSource;
-        
-        private System.Windows.Forms.BindingSource fornitoreBindingSource;
-        
-        private System.Windows.Forms.BindingSource fatturadiacquistoBindingSource;
-        
-        private System.Windows.Forms.BindingSource pagamentocAcquistoBindingSource;
-        
-        private System.Windows.Forms.BindingSource modalitadipagamentoBindingSource;
-        private ProgettoDB16DataSet progettoDB16DataSet;
-        private System.Windows.Forms.BindingSource fornitoreBindingSource1;
-        private ProgettoDB16DataSetTableAdapters.FornitoreTableAdapter fornitoreTableAdapter;
+        private DBProject1617DataSet dBProject1617DataSet;
+        private System.Windows.Forms.BindingSource corriereBindingSource;
+        private DBProject1617DataSetTableAdapters.CorriereTableAdapter corriereTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn partitaIVADataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ragioneSocialeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn indirizzoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cittàDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn provinciaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cAPDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn recapito1DataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn recapito2DataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn recapito3DataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn indirizzoemail1DataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn indirizzoemail2DataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tipoRicambiDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tipoCasaProduttriceDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cittaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn provinciaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn indirizzoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cAPDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource fatturadiacquistoBindingSource1;
-        private ProgettoDB16DataSetTableAdapters.Fattura_di_acquistoTableAdapter fattura_di_acquistoTableAdapter;
-        private System.Windows.Forms.BindingSource pagamentocAcquistoBindingSource1;
-        private ProgettoDB16DataSetTableAdapters.Pagamento_cAcquistoTableAdapter pagamento_cAcquistoTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fatturaPartitaIVADataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fatturaNumeroDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn importoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource modalitadipagamentoBindingSource1;
-        private ProgettoDB16DataSetTableAdapters.Modalita_di_pagamentoTableAdapter modalita_di_pagamentoTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fornitorePartitaIVADataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn numeroDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn importocomplessivoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn modPagamentoPartitaIVADataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn modPagamentoDaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource corriereBindingSource;
-        private ProgettoDB16DataSetTableAdapters.CorriereTableAdapter corriereTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn partitaIVADataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ragionesocialeDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cittaDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn provinciaDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn indirizzoDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cAPDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn recapito1DataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn recapito2DataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn indirizzoemail1DataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn indirizzoemail2DataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn indirizzoEmail1DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn indirizzoEmail2DataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource trasportoBindingSource;
-        private ProgettoDB16DataSetTableAdapters.TrasportoTableAdapter trasportoTableAdapter;
+        private DBProject1617DataSetTableAdapters.TrasportoTableAdapter trasportoTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn codiceDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn contrattoNumeroDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn costoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataconsegna1DataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataconsegna2DataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn indirizzoDataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cittaDataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn provinciaDataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cAPDataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn corrierePartitaIVADataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataConsegnaPrevistaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataConsegnaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn indirizzoConsegnaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cittàConsegnaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn provinciaConsegnaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn corriereDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource clienteBindingSource;
-        private ProgettoDB16DataSetTableAdapters.ClienteTableAdapter clienteTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn partitaIVACodiceFiscaleDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn recapito1DataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn recapito2DataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn recapito3DataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cittaDataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn indirizzoDataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn provinciaDataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cAPDataGridViewTextBoxColumn3;
+        private DBProject1617DataSetTableAdapters.ClienteTableAdapter clienteTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tipoClienteDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ragionesocialeDataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn indirizzoemail1DataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn indirizzoemail2DataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codiceFiscaleDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cognomeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn datanascitaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cittanascitaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn provincianascitaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource contrattodivenditaBindingSource;
-        private ProgettoDB16DataSetTableAdapters.Contratto_di_venditaTableAdapter contratto_di_venditaTableAdapter;
-        private System.Windows.Forms.BindingSource pagamentocVenditaBindingSource;
-        private ProgettoDB16DataSetTableAdapters.Pagamento_cVenditaTableAdapter pagamento_cVenditaTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn contrattoNumeroDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataDataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn importoDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.BindingSource nostremodalitadipagamentoBindingSource;
-        private ProgettoDB16DataSetTableAdapters.Nostre_modalita_di_pagamentoTableAdapter nostre_modalita_di_pagamentoTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn daDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn aDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn periodicitaDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tassointeresseDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn numerorateDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataNascitaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cittàNascitaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn provinciaNascitaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn partitaIVADataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ragioneSocialeDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn recapito1DataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn recapito2DataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn indirizzoEmail1DataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn indirizzoEmail2DataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn indirizzoDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cittàDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn provinciaDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cAPDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.BindingSource contrattoVenditaBindingSource;
+        private DBProject1617DataSetTableAdapters.ContrattoVenditaTableAdapter contrattoVenditaTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numeroDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn trasportoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn importoComplessivoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn modalitàPagamentoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clienteDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource rataClienteBindingSource;
+        private DBProject1617DataSetTableAdapters.RataClienteTableAdapter rataClienteTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn contrattoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn scadenzaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn importoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataPagamentoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource nostreModalitàPagamentoBindingSource;
+        private DBProject1617DataSetTableAdapters.NostreModalitàPagamentoTableAdapter nostreModalitàPagamentoTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn daDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn aDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn periodicitàDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tassoInteresseDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numerRateDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource ordineBindingSource;
-        private ProgettoDB16DataSetTableAdapters.OrdineTableAdapter ordineTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDordineDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fatturaPartitaIVADataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn numeroDataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataordineDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataspedizioneDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataconsegna1DataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataconsegna2DataGridViewTextBoxColumn1;
+        private DBProject1617DataSetTableAdapters.OrdineTableAdapter ordineTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn tipoOrdineDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource per2BindingSource;
-        private ProgettoDB16DataSetTableAdapters.per2TableAdapter per2TableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn veicoloCodiceDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ordineIDordineDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn quantitaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource diBindingSource;
-        private ProgettoDB16DataSetTableAdapters.diTableAdapter diTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ordineIDordineDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ricambioCodiceDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn quantitaDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.BindingSource veicoloincatalogoBindingSource;
-        private ProgettoDB16DataSetTableAdapters.Veicolo_in_catalogoTableAdapter veicolo_in_catalogoTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataOrdineDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataConsegnaPrevistaDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataConsegnaDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fornitoreDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource ordineVeicoloBindingSource;
+        private DBProject1617DataSetTableAdapters.OrdineVeicoloTableAdapter ordineVeicoloTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn veicoloDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn prezzoFornitoreDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ordineDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource ordineRicambioBindingSource;
+        private DBProject1617DataSetTableAdapters.OrdineRicambioTableAdapter ordineRicambioTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ordineDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ricambioDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn quantitàDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn prezzoUnitarioDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource veicoloCatalogoBindingSource;
+        private DBProject1617DataSetTableAdapters.VeicoloCatalogoTableAdapter veicoloCatalogoTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn codiceDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn prezzobaseDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn prezzoBaseDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn potenzaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nopostiDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numPostiDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn consumiDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn omologazioneDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn capacitaserbatorioDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tipoalimentazioneDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn capacitàSerbatorioDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tipoAlimentazioneDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cilindrataDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn trazioneDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cambioDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn capienzabagagliaioDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn noporteDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn modelloPartitaIVADataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn modelloNomeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn modelloAnnoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource modelloveicoloBindingSource;
-        private ProgettoDB16DataSetTableAdapters.Modello_veicoloTableAdapter modello_veicoloTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn capienzaBagagliaioDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numPorteDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomeModelloDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn annoModelloDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource modelloVeicoloBindingSource;
+        private DBProject1617DataSetTableAdapters.ModelloVeicoloTableAdapter modelloVeicoloTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn annoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fornitorePartitaIVADataGridViewTextBoxColumn2;
-        private System.Windows.Forms.BindingSource nostremodalitadipagamentoBindingSource1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fornitoreDataGridViewTextBoxColumn1;
         private System.Windows.Forms.BindingSource optionalBindingSource;
-        private ProgettoDB16DataSetTableAdapters.OptionalTableAdapter optionalTableAdapter;
+        private DBProject1617DataSetTableAdapters.OptionalTableAdapter optionalTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn codiceDataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn descrizioneDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn prezzoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource veicolovendutoBindingSource;
-        private ProgettoDB16DataSetTableAdapters.Veicolo_vendutoTableAdapter veicolo_vendutoTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn numerotelaioDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn contrattoNumeroDataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ordineIDordineDataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn veicoloCodiceDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.BindingSource veicoloVendutoBindingSource;
+        private DBProject1617DataSetTableAdapters.VeicoloVendutoTableAdapter veicoloVendutoTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn telaioDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn contrattoDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn veicoloCatalogoDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource revisioneBindingSource;
-        private ProgettoDB16DataSetTableAdapters.RevisioneTableAdapter revisioneTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn veicoloNumerotelaioDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn numeroDataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn scadenzaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataesecuzioneDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource possessoBindingSource;
-        private ProgettoDB16DataSetTableAdapters.possessoTableAdapter possessoTableAdapter;
-        private System.Windows.Forms.BindingSource referenza2BindingSource;
-        private ProgettoDB16DataSetTableAdapters.referenza2TableAdapter referenza2TableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn veicoloCodiceDataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ricambioCodiceDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.BindingSource possessoBindingSource1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn veicoloNumerotelaioDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn optionalCodiceDataGridViewTextBoxColumn;
+        private DBProject1617DataSetTableAdapters.RevisioneTableAdapter revisioneTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn veicoloVendutoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numeroDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn scadenzaDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataEsecuzioneDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource supportoBindingSource;
+        private DBProject1617DataSetTableAdapters.SupportoTableAdapter supportoTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn veicoloCatalogoDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn optionalDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource dotazioneBindingSource;
+        private DBProject1617DataSetTableAdapters.DotazioneTableAdapter dotazioneTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn optionalDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn veicoloDataGridViewTextBoxColumn1;
         private System.Windows.Forms.BindingSource riparazioneBindingSource;
-        private ProgettoDB16DataSetTableAdapters.RiparazioneTableAdapter riparazioneTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn veicoloNumerotelaioDataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn numeroDataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataDataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn importocomplessivoDataGridViewTextBoxColumn2;
+        private DBProject1617DataSetTableAdapters.RiparazioneTableAdapter riparazioneTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn veicoloDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numeroDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn importoComplessivoDataGridViewTextBoxColumn1;
         private System.Windows.Forms.BindingSource utilizzoBindingSource;
-        private ProgettoDB16DataSetTableAdapters.utilizzoTableAdapter utilizzoTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn veicoloNumerotelaioDataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn riparazioneNumeroDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ricambioCodiceDataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn quantitaDataGridViewTextBoxColumn2;
+        private DBProject1617DataSetTableAdapters.UtilizzoTableAdapter utilizzoTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ricambioDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn veicoloDataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numeroDataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn quantitàDataGridViewTextBoxColumn1;
         private System.Windows.Forms.BindingSource ricambioBindingSource;
-        private ProgettoDB16DataSetTableAdapters.RicambioTableAdapter ricambioTableAdapter;
+        private DBProject1617DataSetTableAdapters.RicambioTableAdapter ricambioTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn codiceDataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn descrizioneDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn prezzodiacquistoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn prezzouRiparazioneDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn prezzoUnitarioRiparazioneDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tipoRicambioDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fornitorePartitaIVADataGridViewTextBoxColumn3;
-        private System.Windows.Forms.BindingSource giacenzaBindingSource1;
-        private ProgettoDB16DataSetTableAdapters.GiacenzaTableAdapter giacenzaTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ricambioCodiceDataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn numeroDataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataDataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn quantitaDataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn causaleDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn veicoloCodiceDataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ricambioCodiceDataGridViewTextBoxColumn4;
-        private System.Windows.Forms.BindingSource referenza2BindingSource1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn numeroDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fornitoreDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.BindingSource giacenzaBindingSource;
+        private DBProject1617DataSetTableAdapters.GiacenzaTableAdapter giacenzaTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ricambioDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numeroDataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataDataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn importocomplessivoDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nostreModDaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clientePartitaIVACodiceFiscaleDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fornitorePartitaIVADataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn daDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn aDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn periodicitaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tassointeresseDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn numerorateDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource veicolovendutoBindingSource1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn quantitàDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn causaleDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource referenzaBindingSource;
+        private DBProject1617DataSetTableAdapters.ReferenzaTableAdapter referenzaTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn veicoloCatalogoDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ricambioDataGridViewTextBoxColumn3;
+        private System.Windows.Forms.BindingSource fornitoreBindingSource;
+        private DBProject1617DataSetTableAdapters.FornitoreTableAdapter fornitoreTableAdapter;
+        private System.Windows.Forms.BindingSource fatturaAcquistoBindingSource;
+        private DBProject1617DataSetTableAdapters.FatturaAcquistoTableAdapter fatturaAcquistoTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fornitoreDataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numeroDataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ordineDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataDataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn importoComplessivoDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn modPagamentoFornitoreDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn modPagamentoDaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource rataBindingSource;
+        private DBProject1617DataSetTableAdapters.RataTableAdapter rataTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fornitoreFatturaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numeroFatturaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn scadenzaDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn importoDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataPagamentoDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.BindingSource modalitàPagamentoBindingSource;
+        private DBProject1617DataSetTableAdapters.ModalitàPagamentoTableAdapter modalitàPagamentoTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fornitoreDataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn daDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn aDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn periodicitàDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tassoInteresseDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numeroRateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn partitaIVADataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn casaProduttriceDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fornitoreRicambiDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ragioneSocialeDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn recapito1DataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn recapito2DataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn indirizzoEmail1DataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn indirizzoEmail2DataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn indirizzoDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cittàDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn provinciaDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cAPDataGridViewTextBoxColumn2;
     }
 }
 

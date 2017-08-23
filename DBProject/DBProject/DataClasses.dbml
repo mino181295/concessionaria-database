@@ -1,315 +1,314 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ProgettoDB16" Class="DataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=PAOLO-LENOVO;Initial Catalog=ProgettoDB16;Integrated Security=True" SettingsObjectName="DBProject.Properties.Settings" SettingsPropertyName="ProgettoDB16ConnectionString" Provider="System.Data.SqlClient" />
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DBProject1617" Class="DataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Paolo\Desktop\dbproject-1617\ProgettoDB-1617\database\DBProject1617.mdf;Integrated Security=True;Connect Timeout=30" SettingsObjectName="DBProject.Properties.Settings" SettingsPropertyName="DBProject1617ConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.Cliente" Member="Cliente">
     <Type Name="Cliente">
-      <Column Name="PartitaIVA_CodiceFiscale" Type="System.String" DbType="Char(11) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Recapito_1" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
-      <Column Name="Recapito_2" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
-      <Column Name="Recapito_3" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
-      <Column Name="Citta" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
-      <Column Name="Indirizzo" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
-      <Column Name="Provincia" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
-      <Column Name="CAP" Type="System.String" DbType="Char(5) NOT NULL" CanBeNull="false" />
-      <Column Name="Tipo_Cliente" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
-      <Column Name="Ragione_sociale" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
-      <Column Name="Indirizzo_e_mail_1" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
-      <Column Name="Indirizzo_e_mail_2" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="Id" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TipoCliente" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="CodiceFiscale" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
       <Column Name="Nome" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
       <Column Name="Cognome" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="Data_nascita" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="Citta_nascita" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
-      <Column Name="Provincia_nascita" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
-      <Association Name="Cliente_Contratto_di_vendita" Member="Contratto_di_vendita" ThisKey="PartitaIVA_CodiceFiscale" OtherKey="Cliente_PartitaIVA_CodiceFiscale" Type="Contratto_di_vendita" />
+      <Column Name="DataNascita" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="CittàNascita" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="ProvinciaNascita" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="PartitaIVA" Type="System.String" DbType="Char(11)" CanBeNull="true" />
+      <Column Name="RagioneSociale" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Recapito1" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="Recapito2" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="IndirizzoEmail1" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="IndirizzoEmail2" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="Indirizzo" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Città" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Provincia" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="CAP" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Association Name="Cliente_ContrattoVendita" Member="ContrattoVendita" ThisKey="Id" OtherKey="Cliente" Type="ContrattoVendita" />
     </Type>
   </Table>
-  <Table Name="dbo.Veicolo_venduto" Member="Veicolo_venduto">
-    <Type Name="Veicolo_venduto">
-      <Column Name="Numero_telaio" Type="System.String" DbType="Char(17) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Contratto_Numero" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Ordine_ID_ordine" Type="System.String" DbType="Char(6) NOT NULL" CanBeNull="false" />
-      <Column Name="Veicolo_Codice" Type="System.String" DbType="Char(5) NOT NULL" CanBeNull="false" />
-      <Association Name="Veicolo_venduto_possesso" Member="possesso" ThisKey="Numero_telaio" OtherKey="Veicolo_Numero_telaio" Type="possesso" />
-      <Association Name="Veicolo_venduto_Revisione" Member="Revisione" ThisKey="Numero_telaio" OtherKey="Veicolo_Numero_telaio" Type="Revisione" />
-      <Association Name="Veicolo_venduto_Riparazione" Member="Riparazione" ThisKey="Numero_telaio" OtherKey="Veicolo_Numero_telaio" Type="Riparazione" />
-      <Association Name="Contratto_di_vendita_Veicolo_venduto" Member="Contratto_di_vendita" ThisKey="Contratto_Numero" OtherKey="Numero" Type="Contratto_di_vendita" IsForeignKey="true" />
-      <Association Name="Ordine_Veicolo_venduto" Member="Ordine" ThisKey="Ordine_ID_ordine" OtherKey="ID_ordine" Type="Ordine" IsForeignKey="true" />
-      <Association Name="Veicolo_in_catalogo_Veicolo_venduto" Member="Veicolo_in_catalogo" ThisKey="Veicolo_Codice" OtherKey="Codice" Type="Veicolo_in_catalogo" IsForeignKey="true" />
+  <Table Name="dbo.VeicoloVenduto" Member="VeicoloVenduto">
+    <Type Name="VeicoloVenduto">
+      <Column Name="Id" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Telaio" Type="System.String" DbType="Char(17)" CanBeNull="true" />
+      <Column Name="Contratto" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="VeicoloCatalogo" Type="System.String" DbType="Char(6) NOT NULL" CanBeNull="false" />
+      <Association Name="VeicoloVenduto_Dotazione" Member="Dotazione" ThisKey="Id" OtherKey="Veicolo" Type="Dotazione" />
+      <Association Name="VeicoloVenduto_OrdineVeicolo" Member="OrdineVeicolo" ThisKey="Id" OtherKey="Veicolo" Type="OrdineVeicolo" Cardinality="One" />
+      <Association Name="VeicoloVenduto_Revisione" Member="Revisione" ThisKey="Id" OtherKey="VeicoloVenduto" Type="Revisione" />
+      <Association Name="VeicoloVenduto_Riparazione" Member="Riparazione" ThisKey="Id" OtherKey="Veicolo" Type="Riparazione" />
+      <Association Name="ContrattoVendita_VeicoloVenduto" Member="ContrattoVendita" ThisKey="Contratto" OtherKey="Numero" Type="ContrattoVendita" IsForeignKey="true" />
+      <Association Name="VeicoloCatalogo_VeicoloVenduto" Member="VeicoloCatalogo1" ThisKey="VeicoloCatalogo" OtherKey="Codice" Type="VeicoloCatalogo" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="dbo.Contratto_di_vendita" Member="Contratto_di_vendita">
-    <Type Name="Contratto_di_vendita">
-      <Column Name="Numero" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+  <Table Name="dbo.ContrattoVendita" Member="ContrattoVendita">
+    <Type Name="ContrattoVendita">
+      <Column Name="Numero" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Trasporto" Type="System.String" DbType="Char(6)" CanBeNull="true" />
       <Column Name="Data" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
-      <Column Name="Importo_complessivo" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
-      <Column Name="Nostre_Mod_Da" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
-      <Column Name="Cliente_PartitaIVA_CodiceFiscale" Type="System.String" DbType="Char(11) NOT NULL" CanBeNull="false" />
-      <Association Name="Contratto_di_vendita_Veicolo_venduto" Member="Veicolo_venduto" ThisKey="Numero" OtherKey="Contratto_Numero" Type="Veicolo_venduto" />
-      <Association Name="Contratto_di_vendita_Pagamento_cVendita" Member="Pagamento_cVendita" ThisKey="Numero" OtherKey="Contratto_Numero" Type="Pagamento_cVendita" />
-      <Association Name="Contratto_di_vendita_Trasporto" Member="Trasporto" ThisKey="Numero" OtherKey="Contratto_Numero" Type="Trasporto" />
-      <Association Name="Cliente_Contratto_di_vendita" Member="Cliente" ThisKey="Cliente_PartitaIVA_CodiceFiscale" OtherKey="PartitaIVA_CodiceFiscale" Type="Cliente" IsForeignKey="true" />
-      <Association Name="Nostre_modalita_di_pagamento_Contratto_di_vendita" Member="Nostre_modalita_di_pagamento" ThisKey="Nostre_Mod_Da" OtherKey="Da" Type="Nostre_modalita_di_pagamento" IsForeignKey="true" />
+      <Column Name="ImportoComplessivo" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Column Name="ModalitàPagamento" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Column Name="Cliente" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Association Name="ContrattoVendita_VeicoloVenduto" Member="VeicoloVenduto" ThisKey="Numero" OtherKey="Contratto" Type="VeicoloVenduto" />
+      <Association Name="ContrattoVendita_RataCliente" Member="RataCliente" ThisKey="Numero" OtherKey="Contratto" Type="RataCliente" />
+      <Association Name="Cliente_ContrattoVendita" Member="Cliente1" ThisKey="Cliente" OtherKey="Id" Type="Cliente" IsForeignKey="true" />
+      <Association Name="NostreModalitàPagamento_ContrattoVendita" Member="NostreModalitàPagamento" ThisKey="ModalitàPagamento" OtherKey="Da" Type="NostreModalitàPagamento" IsForeignKey="true" />
+      <Association Name="Trasporto_ContrattoVendita" Member="Trasporto1" ThisKey="Trasporto" OtherKey="Codice" Type="Trasporto" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.Corriere" Member="Corriere">
     <Type Name="Corriere">
-      <Column Name="Partita_IVA" Type="System.String" DbType="Char(11) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Ragione_sociale" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
-      <Column Name="Citta" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="PartitaIVA" Type="System.String" DbType="Char(11) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RagioneSociale" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Indirizzo" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Città" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
       <Column Name="Provincia" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
-      <Column Name="Indirizzo" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
       <Column Name="CAP" Type="System.String" DbType="Char(5) NOT NULL" CanBeNull="false" />
-      <Column Name="Recapito_1" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
-      <Column Name="Recapito_2" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
-      <Column Name="Indirizzo_e_mail_1" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
-      <Column Name="Indirizzo_e_mail_2" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
-      <Association Name="Corriere_Trasporto" Member="Trasporto" ThisKey="Partita_IVA" OtherKey="Corriere_Partita_IVA" Type="Trasporto" />
+      <Column Name="Recapito1" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="Recapito2" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="IndirizzoEmail1" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IndirizzoEmail2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Corriere_Trasporto" Member="Trasporto" ThisKey="PartitaIVA" OtherKey="Corriere" Type="Trasporto" />
     </Type>
   </Table>
-  <Table Name="dbo.di" Member="di">
-    <Type Name="di">
-      <Column Name="Ordine_ID_ordine" Type="System.String" DbType="Char(6) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Ricambio_Codice" Type="System.String" DbType="Char(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="quantita" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Association Name="Ordine_di" Member="Ordine" ThisKey="Ordine_ID_ordine" OtherKey="ID_ordine" Type="Ordine" IsForeignKey="true" />
-      <Association Name="Ricambio_di" Member="Ricambio" ThisKey="Ricambio_Codice" OtherKey="Codice" Type="Ricambio" IsForeignKey="true" />
+  <Table Name="dbo.Dotazione" Member="Dotazione">
+    <Type Name="Dotazione">
+      <Column Name="Optional" Type="System.String" DbType="Char(6) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Veicolo" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="VeicoloVenduto_Dotazione" Member="VeicoloVenduto" ThisKey="Veicolo" OtherKey="Id" Type="VeicoloVenduto" IsForeignKey="true" />
+      <Association Name="Optional_Dotazione" Member="Optional1" ThisKey="Optional" OtherKey="Codice" Type="Optional" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="dbo.Fattura_di_acquisto" Member="Fattura_di_acquisto">
-    <Type Name="Fattura_di_acquisto">
-      <Column Name="Fornitore_Partita_IVA" Type="System.String" DbType="Char(11) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Numero" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+  <Table Name="dbo.FatturaAcquisto" Member="FatturaAcquisto">
+    <Type Name="FatturaAcquisto">
+      <Column Name="Fornitore" Type="System.String" DbType="Char(11) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Numero" Type="System.Decimal" DbType="Decimal(6,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Ordine" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
       <Column Name="Data" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
-      <Column Name="Importo_complessivo" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
-      <Column Name="Mod_Pagamento_Partita_IVA" Type="System.String" DbType="Char(11) NOT NULL" CanBeNull="false" />
-      <Column Name="Mod_Pagamento_Da" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
-      <Association Name="Fattura_di_acquisto_Ordine" Member="Ordine" ThisKey="Fornitore_Partita_IVA,Numero" OtherKey="Fattura_Partita_IVA,Numero" Type="Ordine" />
-      <Association Name="Fattura_di_acquisto_Pagamento_cAcquisto" Member="Pagamento_cAcquisto" ThisKey="Fornitore_Partita_IVA,Numero" OtherKey="Fattura_Partita_IVA,Fattura_Numero" Type="Pagamento_cAcquisto" />
-      <Association Name="Fornitore_Fattura_di_acquisto" Member="Fornitore" ThisKey="Fornitore_Partita_IVA" OtherKey="Partita_IVA" Type="Fornitore" IsForeignKey="true" />
-      <Association Name="Modalita_di_pagamento_Fattura_di_acquisto" Member="Modalita_di_pagamento" ThisKey="Mod_Pagamento_Partita_IVA,Mod_Pagamento_Da" OtherKey="Fornitore_Partita_IVA,Da" Type="Modalita_di_pagamento" IsForeignKey="true" />
+      <Column Name="ImportoComplessivo" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Column Name="ModPagamentoFornitore" Type="System.String" DbType="Char(11) NOT NULL" CanBeNull="false" />
+      <Column Name="ModPagamentoDa" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Association Name="FatturaAcquisto_Rata" Member="Rata" ThisKey="Fornitore,Numero" OtherKey="FornitoreFattura,NumeroFattura" Type="Rata" />
+      <Association Name="Fornitore_FatturaAcquisto" Member="Fornitore1" ThisKey="Fornitore" OtherKey="PartitaIVA" Type="Fornitore" IsForeignKey="true" />
+      <Association Name="ModalitàPagamento_FatturaAcquisto" Member="ModalitàPagamento" ThisKey="ModPagamentoFornitore,ModPagamentoDa" OtherKey="Fornitore,Da" Type="ModalitàPagamento" IsForeignKey="true" />
+      <Association Name="Ordine_FatturaAcquisto" Member="Ordine1" ThisKey="Ordine" OtherKey="Id" Type="Ordine" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.Fornitore" Member="Fornitore">
     <Type Name="Fornitore">
-      <Column Name="Partita_IVA" Type="System.String" DbType="Char(11) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Ragione_Sociale" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
-      <Column Name="Recapito_1" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
-      <Column Name="Recapito_2" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
-      <Column Name="Recapito_3" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
-      <Column Name="Indirizzo_e_mail_1" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
-      <Column Name="Indirizzo_e_mail_2" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
-      <Column Name="Tipo_Ricambi" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
-      <Column Name="Tipo_CasaProduttrice" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
-      <Column Name="Citta" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="PartitaIVA" Type="System.String" DbType="Char(11) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CasaProduttrice" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="FornitoreRicambi" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="RagioneSociale" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Recapito1" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="Recapito2" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="IndirizzoEmail1" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IndirizzoEmail2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Indirizzo" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Città" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
       <Column Name="Provincia" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
-      <Column Name="Indirizzo" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
-      <Column Name="CAP" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
-      <Association Name="Fornitore_Fattura_di_acquisto" Member="Fattura_di_acquisto" ThisKey="Partita_IVA" OtherKey="Fornitore_Partita_IVA" Type="Fattura_di_acquisto" />
-      <Association Name="Fornitore_Modalita_di_pagamento" Member="Modalita_di_pagamento" ThisKey="Partita_IVA" OtherKey="Fornitore_Partita_IVA" Type="Modalita_di_pagamento" />
-      <Association Name="Fornitore_Modello_veicolo" Member="Modello_veicolo" ThisKey="Partita_IVA" OtherKey="Fornitore_Partita_IVA" Type="Modello_veicolo" />
-      <Association Name="Fornitore_Ricambio" Member="Ricambio" ThisKey="Partita_IVA" OtherKey="Fornitore_Partita_IVA" Type="Ricambio" />
+      <Column Name="CAP" Type="System.String" DbType="Char(5) NOT NULL" CanBeNull="false" />
+      <Association Name="Fornitore_FatturaAcquisto" Member="FatturaAcquisto" ThisKey="PartitaIVA" OtherKey="Fornitore" Type="FatturaAcquisto" />
+      <Association Name="Fornitore_ModalitàPagamento" Member="ModalitàPagamento" ThisKey="PartitaIVA" OtherKey="Fornitore" Type="ModalitàPagamento" />
+      <Association Name="Fornitore_ModelloVeicolo" Member="ModelloVeicolo" ThisKey="PartitaIVA" OtherKey="Fornitore" Type="ModelloVeicolo" />
+      <Association Name="Fornitore_Ordine" Member="Ordine" ThisKey="PartitaIVA" OtherKey="Fornitore" Type="Ordine" />
+      <Association Name="Fornitore_Ricambio" Member="Ricambio" ThisKey="PartitaIVA" OtherKey="Fornitore" Type="Ricambio" />
     </Type>
   </Table>
   <Table Name="dbo.Giacenza" Member="Giacenza">
     <Type Name="Giacenza">
-      <Column Name="Ricambio_Codice" Type="System.String" DbType="Char(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Numero" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Ricambio" Type="System.String" DbType="Char(6) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Numero" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="Data" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
-      <Column Name="Quantita" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Causale" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
-      <Association Name="Ricambio_Giacenza" Member="Ricambio" ThisKey="Ricambio_Codice" OtherKey="Codice" Type="Ricambio" IsForeignKey="true" />
+      <Column Name="Quantità" Type="System.Decimal" DbType="Decimal(6,0) NOT NULL" CanBeNull="false" />
+      <Column Name="Causale" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Association Name="Ricambio_Giacenza" Member="Ricambio1" ThisKey="Ricambio" OtherKey="Codice" Type="Ricambio" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="dbo.Modalita_di_pagamento" Member="Modalita_di_pagamento">
-    <Type Name="Modalita_di_pagamento">
-      <Column Name="Fornitore_Partita_IVA" Type="System.String" DbType="Char(11) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+  <Table Name="dbo.ModalitàPagamento" Member="ModalitàPagamento">
+    <Type Name="ModalitàPagamento">
+      <Column Name="Fornitore" Type="System.String" DbType="Char(11) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Da" Type="System.Single" DbType="Real NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="A" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
-      <Column Name="Periodicita" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
-      <Column Name="Tasso_interesse" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
-      <Column Name="Numero_rate" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Association Name="Modalita_di_pagamento_Fattura_di_acquisto" Member="Fattura_di_acquisto" ThisKey="Fornitore_Partita_IVA,Da" OtherKey="Mod_Pagamento_Partita_IVA,Mod_Pagamento_Da" Type="Fattura_di_acquisto" />
-      <Association Name="Fornitore_Modalita_di_pagamento" Member="Fornitore" ThisKey="Fornitore_Partita_IVA" OtherKey="Partita_IVA" Type="Fornitore" IsForeignKey="true" />
+      <Column Name="Periodicità" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="TassoInteresse" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Column Name="NumeroRate" Type="System.Decimal" DbType="Decimal(2,0) NOT NULL" CanBeNull="false" />
+      <Association Name="ModalitàPagamento_FatturaAcquisto" Member="FatturaAcquisto" ThisKey="Fornitore,Da" OtherKey="ModPagamentoFornitore,ModPagamentoDa" Type="FatturaAcquisto" />
+      <Association Name="Fornitore_ModalitàPagamento" Member="Fornitore1" ThisKey="Fornitore" OtherKey="PartitaIVA" Type="Fornitore" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="dbo.Modello_veicolo" Member="Modello_veicolo">
-    <Type Name="Modello_veicolo">
+  <Table Name="dbo.ModelloVeicolo" Member="ModelloVeicolo">
+    <Type Name="ModelloVeicolo">
       <Column Name="Nome" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Anno" Type="System.DateTime" DbType="Date NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Fornitore_Partita_IVA" Type="System.String" DbType="Char(11) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Association Name="Modello_veicolo_Veicolo_in_catalogo" Member="Veicolo_in_catalogo" ThisKey="Fornitore_Partita_IVA,Nome,Anno" OtherKey="Modello_Partita_IVA,Modello_Nome,Modello_Anno" Type="Veicolo_in_catalogo" />
-      <Association Name="Fornitore_Modello_veicolo" Member="Fornitore" ThisKey="Fornitore_Partita_IVA" OtherKey="Partita_IVA" Type="Fornitore" IsForeignKey="true" />
+      <Column Name="Fornitore" Type="System.String" DbType="Char(11) NOT NULL" CanBeNull="false" />
+      <Association Name="ModelloVeicolo_VeicoloCatalogo" Member="VeicoloCatalogo" ThisKey="Nome,Anno" OtherKey="NomeModello,AnnoModello" Type="VeicoloCatalogo" />
+      <Association Name="Fornitore_ModelloVeicolo" Member="Fornitore1" ThisKey="Fornitore" OtherKey="PartitaIVA" Type="Fornitore" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="dbo.Nostre_modalita_di_pagamento" Member="Nostre_modalita_di_pagamento">
-    <Type Name="Nostre_modalita_di_pagamento">
+  <Table Name="dbo.NostreModalitàPagamento" Member="NostreModalitàPagamento">
+    <Type Name="NostreModalitàPagamento">
       <Column Name="Da" Type="System.Single" DbType="Real NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="A" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
-      <Column Name="Periodicita" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
-      <Column Name="Tasso_interesse" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
-      <Column Name="Numero_rate" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Association Name="Nostre_modalita_di_pagamento_Contratto_di_vendita" Member="Contratto_di_vendita" ThisKey="Da" OtherKey="Nostre_Mod_Da" Type="Contratto_di_vendita" />
+      <Column Name="Periodicità" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="TassoInteresse" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Column Name="NumerRate" Type="System.Decimal" DbType="Decimal(2,0) NOT NULL" CanBeNull="false" />
+      <Association Name="NostreModalitàPagamento_ContrattoVendita" Member="ContrattoVendita" ThisKey="Da" OtherKey="ModalitàPagamento" Type="ContrattoVendita" />
     </Type>
   </Table>
   <Table Name="dbo.Optional" Member="Optional">
     <Type Name="Optional">
-      <Column Name="Codice" Type="System.String" DbType="Char(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Nome" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
-      <Column Name="Descrizione" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="Codice" Type="System.String" DbType="Char(6) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nome" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Descrizione" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
       <Column Name="Prezzo" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
-      <Association Name="Optional_possesso" Member="possesso" ThisKey="Codice" OtherKey="Optional_Codice" Type="possesso" />
-      <Association Name="Optional_supporto" Member="supporto" ThisKey="Codice" OtherKey="Optional_Codice" Type="supporto" />
+      <Association Name="Optional_Dotazione" Member="Dotazione" ThisKey="Codice" OtherKey="Optional" Type="Dotazione" />
+      <Association Name="Optional_Supporto" Member="Supporto" ThisKey="Codice" OtherKey="Optional" Type="Supporto" />
     </Type>
   </Table>
   <Table Name="dbo.Ordine" Member="Ordine">
     <Type Name="Ordine">
-      <Column Name="ID_ordine" Type="System.String" DbType="Char(6) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Fattura_Partita_IVA" Type="System.String" DbType="Char(11) NOT NULL" CanBeNull="false" />
-      <Column Name="Numero" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Data_ordine" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
-      <Column Name="Data_spedizione" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
-      <Column Name="Data_consegna_1" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="Data_consegna_2" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="Tipo_Ordine" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
-      <Association Name="Ordine_Veicolo_venduto" Member="Veicolo_venduto" ThisKey="ID_ordine" OtherKey="Ordine_ID_ordine" Type="Veicolo_venduto" />
-      <Association Name="Ordine_di" Member="di" ThisKey="ID_ordine" OtherKey="Ordine_ID_ordine" Type="di" />
-      <Association Name="Ordine_per2" Member="per2" ThisKey="ID_ordine" OtherKey="Ordine_ID_ordine" Type="per2" />
-      <Association Name="Fattura_di_acquisto_Ordine" Member="Fattura_di_acquisto" ThisKey="Fattura_Partita_IVA,Numero" OtherKey="Fornitore_Partita_IVA,Numero" Type="Fattura_di_acquisto" IsForeignKey="true" />
+      <Column Name="Id" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TipoOrdine" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="DataOrdine" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="DataConsegnaPrevista" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="DataConsegna" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Fornitore" Type="System.String" DbType="Char(11) NOT NULL" CanBeNull="false" />
+      <Association Name="Ordine_FatturaAcquisto" Member="FatturaAcquisto" ThisKey="Id" OtherKey="Ordine" Type="FatturaAcquisto" />
+      <Association Name="Ordine_OrdineRicambio" Member="OrdineRicambio" ThisKey="Id" OtherKey="Ordine" Type="OrdineRicambio" />
+      <Association Name="Ordine_OrdineVeicolo" Member="OrdineVeicolo" ThisKey="Id" OtherKey="Ordine" Type="OrdineVeicolo" />
+      <Association Name="Fornitore_Ordine" Member="Fornitore1" ThisKey="Fornitore" OtherKey="PartitaIVA" Type="Fornitore" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="dbo.Pagamento_cAcquisto" Member="Pagamento_cAcquisto">
-    <Type Name="Pagamento_cAcquisto">
-      <Column Name="Fattura_Partita_IVA" Type="System.String" DbType="Char(11) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Fattura_Numero" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Data" Type="System.DateTime" DbType="Date NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+  <Table Name="dbo.OrdineRicambio" Member="OrdineRicambio">
+    <Type Name="OrdineRicambio">
+      <Column Name="Ordine" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Ricambio" Type="System.String" DbType="Char(6) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Quantità" Type="System.Decimal" DbType="Decimal(6,0) NOT NULL" CanBeNull="false" />
+      <Column Name="PrezzoUnitario" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Association Name="Ordine_OrdineRicambio" Member="Ordine1" ThisKey="Ordine" OtherKey="Id" Type="Ordine" IsForeignKey="true" />
+      <Association Name="Ricambio_OrdineRicambio" Member="Ricambio1" ThisKey="Ricambio" OtherKey="Codice" Type="Ricambio" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.OrdineVeicolo" Member="OrdineVeicolo">
+    <Type Name="OrdineVeicolo">
+      <Column Name="Veicolo" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PrezzoFornitore" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Column Name="Ordine" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Association Name="Ordine_OrdineVeicolo" Member="Ordine1" ThisKey="Ordine" OtherKey="Id" Type="Ordine" IsForeignKey="true" />
+      <Association Name="VeicoloVenduto_OrdineVeicolo" Member="VeicoloVenduto" ThisKey="Veicolo" OtherKey="Id" Type="VeicoloVenduto" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Rata" Member="Rata">
+    <Type Name="Rata">
+      <Column Name="FornitoreFattura" Type="System.String" DbType="Char(11) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NumeroFattura" Type="System.Decimal" DbType="Decimal(6,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Scadenza" Type="System.DateTime" DbType="Date NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Importo" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
-      <Association Name="Fattura_di_acquisto_Pagamento_cAcquisto" Member="Fattura_di_acquisto" ThisKey="Fattura_Partita_IVA,Fattura_Numero" OtherKey="Fornitore_Partita_IVA,Numero" Type="Fattura_di_acquisto" IsForeignKey="true" />
+      <Column Name="DataPagamento" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="FatturaAcquisto_Rata" Member="FatturaAcquisto" ThisKey="FornitoreFattura,NumeroFattura" OtherKey="Fornitore,Numero" Type="FatturaAcquisto" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="dbo.Pagamento_cVendita" Member="Pagamento_cVendita">
-    <Type Name="Pagamento_cVendita">
-      <Column Name="Contratto_Numero" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Data" Type="System.DateTime" DbType="Date NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+  <Table Name="dbo.RataCliente" Member="RataCliente">
+    <Type Name="RataCliente">
+      <Column Name="Contratto" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Scadenza" Type="System.DateTime" DbType="Date NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Importo" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
-      <Association Name="Contratto_di_vendita_Pagamento_cVendita" Member="Contratto_di_vendita" ThisKey="Contratto_Numero" OtherKey="Numero" Type="Contratto_di_vendita" IsForeignKey="true" />
+      <Column Name="DataPagamento" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="ContrattoVendita_RataCliente" Member="ContrattoVendita" ThisKey="Contratto" OtherKey="Numero" Type="ContrattoVendita" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="dbo.per2" Member="per2">
-    <Type Name="per2">
-      <Column Name="Veicolo_Codice" Type="System.String" DbType="Char(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Ordine_ID_ordine" Type="System.String" DbType="Char(6) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="quantita" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Association Name="Ordine_per2" Member="Ordine" ThisKey="Ordine_ID_ordine" OtherKey="ID_ordine" Type="Ordine" IsForeignKey="true" />
-      <Association Name="Veicolo_in_catalogo_per2" Member="Veicolo_in_catalogo" ThisKey="Veicolo_Codice" OtherKey="Codice" Type="Veicolo_in_catalogo" IsForeignKey="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.possesso" Member="possesso">
-    <Type Name="possesso">
-      <Column Name="Veicolo_Numero_telaio" Type="System.String" DbType="Char(17) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Optional_Codice" Type="System.String" DbType="Char(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Association Name="Optional_possesso" Member="Optional" ThisKey="Optional_Codice" OtherKey="Codice" Type="Optional" IsForeignKey="true" />
-      <Association Name="Veicolo_venduto_possesso" Member="Veicolo_venduto" ThisKey="Veicolo_Numero_telaio" OtherKey="Numero_telaio" Type="Veicolo_venduto" IsForeignKey="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.referenza2" Member="referenza2">
-    <Type Name="referenza2">
-      <Column Name="Veicolo_Codice" Type="System.String" DbType="Char(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Ricambio_Codice" Type="System.String" DbType="Char(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Association Name="Ricambio_referenza2" Member="Ricambio" ThisKey="Ricambio_Codice" OtherKey="Codice" Type="Ricambio" IsForeignKey="true" />
-      <Association Name="Veicolo_in_catalogo_referenza2" Member="Veicolo_in_catalogo" ThisKey="Veicolo_Codice" OtherKey="Codice" Type="Veicolo_in_catalogo" IsForeignKey="true" />
+  <Table Name="dbo.Referenza" Member="Referenza">
+    <Type Name="Referenza">
+      <Column Name="VeicoloCatalogo" Type="System.String" DbType="Char(6) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Ricambio" Type="System.String" DbType="Char(6) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Ricambio_Referenza" Member="Ricambio1" ThisKey="Ricambio" OtherKey="Codice" Type="Ricambio" IsForeignKey="true" />
+      <Association Name="VeicoloCatalogo_Referenza" Member="VeicoloCatalogo1" ThisKey="VeicoloCatalogo" OtherKey="Codice" Type="VeicoloCatalogo" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.Revisione" Member="Revisione">
     <Type Name="Revisione">
-      <Column Name="Veicolo_Numero_telaio" Type="System.String" DbType="Char(17) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Numero" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="VeicoloVenduto" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Numero" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="Scadenza" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
-      <Column Name="Data_esecuzione" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Association Name="Veicolo_venduto_Revisione" Member="Veicolo_venduto" ThisKey="Veicolo_Numero_telaio" OtherKey="Numero_telaio" Type="Veicolo_venduto" IsForeignKey="true" />
+      <Column Name="DataEsecuzione" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="VeicoloVenduto_Revisione" Member="VeicoloVenduto1" ThisKey="VeicoloVenduto" OtherKey="Id" Type="VeicoloVenduto" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.Ricambio" Member="Ricambio">
     <Type Name="Ricambio">
-      <Column Name="Codice" Type="System.String" DbType="Char(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Nome" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
-      <Column Name="Descrizione" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
-      <Column Name="Prezzo_di_acquisto" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
-      <Column Name="Prezzo_uRiparazione" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
-      <Column Name="Tipo_Ricambio" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
-      <Column Name="Fornitore_Partita_IVA" Type="System.String" DbType="Char(11) NOT NULL" CanBeNull="false" />
-      <Association Name="Ricambio_di" Member="di" ThisKey="Codice" OtherKey="Ricambio_Codice" Type="di" />
-      <Association Name="Ricambio_Giacenza" Member="Giacenza" ThisKey="Codice" OtherKey="Ricambio_Codice" Type="Giacenza" />
-      <Association Name="Ricambio_referenza2" Member="referenza2" ThisKey="Codice" OtherKey="Ricambio_Codice" Type="referenza2" />
-      <Association Name="Ricambio_utilizzo" Member="utilizzo" ThisKey="Codice" OtherKey="Ricambio_Codice" Type="utilizzo" />
-      <Association Name="Fornitore_Ricambio" Member="Fornitore" ThisKey="Fornitore_Partita_IVA" OtherKey="Partita_IVA" Type="Fornitore" IsForeignKey="true" />
+      <Column Name="Codice" Type="System.String" DbType="Char(6) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nome" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Descrizione" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="PrezzoUnitarioRiparazione" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Column Name="TipoRicambio" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="Fornitore" Type="System.String" DbType="Char(11) NOT NULL" CanBeNull="false" />
+      <Association Name="Ricambio_Giacenza" Member="Giacenza" ThisKey="Codice" OtherKey="Ricambio" Type="Giacenza" />
+      <Association Name="Ricambio_OrdineRicambio" Member="OrdineRicambio" ThisKey="Codice" OtherKey="Ricambio" Type="OrdineRicambio" />
+      <Association Name="Ricambio_Referenza" Member="Referenza" ThisKey="Codice" OtherKey="Ricambio" Type="Referenza" />
+      <Association Name="Ricambio_Utilizzo" Member="Utilizzo" ThisKey="Codice" OtherKey="Ricambio" Type="Utilizzo" />
+      <Association Name="Fornitore_Ricambio" Member="Fornitore1" ThisKey="Fornitore" OtherKey="PartitaIVA" Type="Fornitore" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.Riparazione" Member="Riparazione">
     <Type Name="Riparazione">
-      <Column Name="Veicolo_Numero_telaio" Type="System.String" DbType="Char(17) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Numero" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Veicolo" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Numero" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="Data" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
-      <Column Name="Importo_complessivo" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
-      <Association Name="Riparazione_utilizzo" Member="utilizzo" ThisKey="Veicolo_Numero_telaio,Numero" OtherKey="Veicolo_Numero_telaio,Riparazione_Numero" Type="utilizzo" />
-      <Association Name="Veicolo_venduto_Riparazione" Member="Veicolo_venduto" ThisKey="Veicolo_Numero_telaio" OtherKey="Numero_telaio" Type="Veicolo_venduto" IsForeignKey="true" />
+      <Column Name="ImportoComplessivo" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Association Name="Riparazione_Utilizzo" Member="Utilizzo" ThisKey="Veicolo,Numero" OtherKey="Veicolo,Numero" Type="Utilizzo" />
+      <Association Name="VeicoloVenduto_Riparazione" Member="VeicoloVenduto" ThisKey="Veicolo" OtherKey="Id" Type="VeicoloVenduto" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="dbo.supporto" Member="supporto">
-    <Type Name="supporto">
-      <Column Name="Veicolo_Codice" Type="System.String" DbType="Char(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Optional_Codice" Type="System.String" DbType="Char(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Association Name="Optional_supporto" Member="Optional" ThisKey="Optional_Codice" OtherKey="Codice" Type="Optional" IsForeignKey="true" />
-      <Association Name="Veicolo_in_catalogo_supporto" Member="Veicolo_in_catalogo" ThisKey="Veicolo_Codice" OtherKey="Codice" Type="Veicolo_in_catalogo" IsForeignKey="true" />
+  <Table Name="dbo.Supporto" Member="Supporto">
+    <Type Name="Supporto">
+      <Column Name="VeicoloCatalogo" Type="System.String" DbType="Char(6) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Optional" Type="System.String" DbType="Char(6) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Optional_Supporto" Member="Optional1" ThisKey="Optional" OtherKey="Codice" Type="Optional" IsForeignKey="true" />
+      <Association Name="VeicoloCatalogo_Supporto" Member="VeicoloCatalogo1" ThisKey="VeicoloCatalogo" OtherKey="Codice" Type="VeicoloCatalogo" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.Trasporto" Member="Trasporto">
     <Type Name="Trasporto">
-      <Column Name="Codice" Type="System.String" DbType="Char(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Contratto_Numero" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Costo" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
-      <Column Name="Data_consegna_1" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
-      <Column Name="Data_consegna_2" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="Indirizzo" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
-      <Column Name="Citta" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
-      <Column Name="Provincia" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
-      <Column Name="CAP" Type="System.String" DbType="Char(5) NOT NULL" CanBeNull="false" />
-      <Column Name="Corriere_Partita_IVA" Type="System.String" DbType="Char(11) NOT NULL" CanBeNull="false" />
-      <Association Name="Corriere_Trasporto" Member="Corriere" ThisKey="Corriere_Partita_IVA" OtherKey="Partita_IVA" Type="Corriere" IsForeignKey="true" />
-      <Association Name="Contratto_di_vendita_Trasporto" Member="Contratto_di_vendita" ThisKey="Contratto_Numero" OtherKey="Numero" Type="Contratto_di_vendita" IsForeignKey="true" />
+      <Column Name="Codice" Type="System.String" DbType="Char(6) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Costo" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="DataConsegnaPrevista" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="DataConsegna" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="IndirizzoConsegna" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CittàConsegna" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="ProvinciaConsegna" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Corriere" Type="System.String" DbType="Char(11)" CanBeNull="true" />
+      <Association Name="Trasporto_ContrattoVendita" Member="ContrattoVendita" ThisKey="Codice" OtherKey="Trasporto" Type="ContrattoVendita" />
+      <Association Name="Corriere_Trasporto" Member="Corriere1" ThisKey="Corriere" OtherKey="PartitaIVA" Type="Corriere" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="dbo.utilizzo" Member="utilizzo">
-    <Type Name="utilizzo">
-      <Column Name="Veicolo_Numero_telaio" Type="System.String" DbType="Char(17) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Riparazione_Numero" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Ricambio_Codice" Type="System.String" DbType="Char(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="quantita" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Association Name="Riparazione_utilizzo" Member="Riparazione" ThisKey="Veicolo_Numero_telaio,Riparazione_Numero" OtherKey="Veicolo_Numero_telaio,Numero" Type="Riparazione" IsForeignKey="true" />
-      <Association Name="Ricambio_utilizzo" Member="Ricambio" ThisKey="Ricambio_Codice" OtherKey="Codice" Type="Ricambio" IsForeignKey="true" />
+  <Table Name="dbo.Utilizzo" Member="Utilizzo">
+    <Type Name="Utilizzo">
+      <Column Name="Ricambio" Type="System.String" DbType="Char(6) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Veicolo" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Numero" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Quantità" Type="System.Decimal" DbType="Decimal(6,0) NOT NULL" CanBeNull="false" />
+      <Association Name="Ricambio_Utilizzo" Member="Ricambio1" ThisKey="Ricambio" OtherKey="Codice" Type="Ricambio" IsForeignKey="true" />
+      <Association Name="Riparazione_Utilizzo" Member="Riparazione" ThisKey="Veicolo,Numero" OtherKey="Veicolo,Numero" Type="Riparazione" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="dbo.Veicolo_in_catalogo" Member="Veicolo_in_catalogo">
-    <Type Name="Veicolo_in_catalogo">
-      <Column Name="Codice" Type="System.String" DbType="Char(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Prezzo_base" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+  <Table Name="dbo.VeicoloCatalogo" Member="VeicoloCatalogo">
+    <Type Name="VeicoloCatalogo">
+      <Column Name="Codice" Type="System.String" DbType="Char(6) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PrezzoBase" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
       <Column Name="Potenza" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
-      <Column Name="No_posti" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NumPosti" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
       <Column Name="Consumi" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
       <Column Name="Omologazione" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
-      <Column Name="Capacita_serbatorio" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
-      <Column Name="Tipo_alimentazione" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="CapacitàSerbatorio" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Column Name="TipoAlimentazione" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
       <Column Name="Cilindrata" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
       <Column Name="Trazione" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
-      <Column Name="Cambio" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="Capienza_bagagliaio" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
-      <Column Name="No_porte" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Modello_Partita_IVA" Type="System.String" DbType="Char(11) NOT NULL" CanBeNull="false" />
-      <Column Name="Modello_Nome" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
-      <Column Name="Modello_Anno" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
-      <Association Name="Veicolo_in_catalogo_Veicolo_venduto" Member="Veicolo_venduto" ThisKey="Codice" OtherKey="Veicolo_Codice" Type="Veicolo_venduto" />
-      <Association Name="Veicolo_in_catalogo_per2" Member="per2" ThisKey="Codice" OtherKey="Veicolo_Codice" Type="per2" />
-      <Association Name="Veicolo_in_catalogo_referenza2" Member="referenza2" ThisKey="Codice" OtherKey="Veicolo_Codice" Type="referenza2" />
-      <Association Name="Veicolo_in_catalogo_supporto" Member="supporto" ThisKey="Codice" OtherKey="Veicolo_Codice" Type="supporto" />
-      <Association Name="Modello_veicolo_Veicolo_in_catalogo" Member="Modello_veicolo" ThisKey="Modello_Partita_IVA,Modello_Nome,Modello_Anno" OtherKey="Fornitore_Partita_IVA,Nome,Anno" Type="Modello_veicolo" IsForeignKey="true" />
+      <Column Name="Cambio" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="CapienzaBagagliaio" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Column Name="NumPorte" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="NomeModello" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="AnnoModello" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="VeicoloCatalogo_VeicoloVenduto" Member="VeicoloVenduto" ThisKey="Codice" OtherKey="VeicoloCatalogo" Type="VeicoloVenduto" />
+      <Association Name="VeicoloCatalogo_Referenza" Member="Referenza" ThisKey="Codice" OtherKey="VeicoloCatalogo" Type="Referenza" />
+      <Association Name="VeicoloCatalogo_Supporto" Member="Supporto" ThisKey="Codice" OtherKey="VeicoloCatalogo" Type="Supporto" />
+      <Association Name="ModelloVeicolo_VeicoloCatalogo" Member="ModelloVeicolo" ThisKey="NomeModello,AnnoModello" OtherKey="Nome,Anno" Type="ModelloVeicolo" IsForeignKey="true" />
     </Type>
   </Table>
 </Database>
