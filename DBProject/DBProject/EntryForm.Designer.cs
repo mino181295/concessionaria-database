@@ -63,6 +63,8 @@ namespace DBProject
             this.label51 = new System.Windows.Forms.Label();
             this.submitFornitoreBtn = new System.Windows.Forms.Button();
             this.addFatturaPanel = new System.Windows.Forms.Panel();
+            this.label97 = new System.Windows.Forms.Label();
+            this.comboBox9 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.comboBox22 = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -76,11 +78,11 @@ namespace DBProject
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.addModalitaPagPanel = new System.Windows.Forms.Panel();
             this.groupBox20 = new System.Windows.Forms.GroupBox();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.groupBox19 = new System.Windows.Forms.GroupBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
@@ -204,8 +206,7 @@ namespace DBProject
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.addPerfPanel = new System.Windows.Forms.Panel();
-            this.comboOrdine = new System.Windows.Forms.ComboBox();
-            this.comboTrasporto = new System.Windows.Forms.ComboBox();
+            this.comboPerf = new System.Windows.Forms.ComboBox();
             this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
             this.label47 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
@@ -339,19 +340,12 @@ namespace DBProject
             this.comboBox21 = new System.Windows.Forms.ComboBox();
             this.label93 = new System.Windows.Forms.Label();
             this.addOrdinePanel = new System.Windows.Forms.Panel();
-            this.groupBox24 = new System.Windows.Forms.GroupBox();
-            this.label122 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
             this.comboBox30 = new System.Windows.Forms.ComboBox();
             this.label123 = new System.Windows.Forms.Label();
-            this.comboBox29 = new System.Windows.Forms.ComboBox();
             this.groupBox22 = new System.Windows.Forms.GroupBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
             this.label121 = new System.Windows.Forms.Label();
             this.dateTimePicker13 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker12 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker11 = new System.Windows.Forms.DateTimePicker();
             this.groupBox23 = new System.Windows.Forms.GroupBox();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -413,7 +407,6 @@ namespace DBProject
             this.addVenditaPanel.SuspendLayout();
             this.addRevisionePanel.SuspendLayout();
             this.addOrdinePanel.SuspendLayout();
-            this.groupBox24.SuspendLayout();
             this.groupBox22.SuspendLayout();
             this.groupBox23.SuspendLayout();
             this.addVeicRicToOrdinePanel.SuspendLayout();
@@ -717,6 +710,8 @@ namespace DBProject
             this.addFatturaPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.addFatturaPanel.Controls.Add(this.label97);
+            this.addFatturaPanel.Controls.Add(this.comboBox9);
             this.addFatturaPanel.Controls.Add(this.label4);
             this.addFatturaPanel.Controls.Add(this.comboBox22);
             this.addFatturaPanel.Controls.Add(this.dateTimePicker1);
@@ -732,6 +727,27 @@ namespace DBProject
             this.addFatturaPanel.Name = "addFatturaPanel";
             this.addFatturaPanel.Size = new System.Drawing.Size(836, 476);
             this.addFatturaPanel.TabIndex = 1;
+            // 
+            // label97
+            // 
+            this.label97.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label97.AutoSize = true;
+            this.label97.Location = new System.Drawing.Point(223, 340);
+            this.label97.Name = "label97";
+            this.label97.Size = new System.Drawing.Size(38, 13);
+            this.label97.TabIndex = 11;
+            this.label97.Text = "Ordine";
+            // 
+            // comboBox9
+            // 
+            this.comboBox9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox9.FormattingEnabled = true;
+            this.comboBox9.Location = new System.Drawing.Point(395, 337);
+            this.comboBox9.Name = "comboBox9";
+            this.comboBox9.Size = new System.Drawing.Size(191, 21);
+            this.comboBox9.TabIndex = 10;
+            this.comboBox9.DropDown += new System.EventHandler(this.comboBox9_DropDown);
             // 
             // label4
             // 
@@ -838,6 +854,7 @@ namespace DBProject
             // 
             this.textBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox5.Location = new System.Drawing.Point(395, 75);
+            this.textBox5.MaxLength = 6;
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(192, 20);
             this.textBox5.TabIndex = 1;
@@ -861,11 +878,11 @@ namespace DBProject
             // groupBox20
             // 
             this.groupBox20.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox20.Controls.Add(this.comboBox4);
             this.groupBox20.Controls.Add(this.label11);
             this.groupBox20.Controls.Add(this.label9);
             this.groupBox20.Controls.Add(this.label12);
             this.groupBox20.Controls.Add(this.textBox10);
-            this.groupBox20.Controls.Add(this.textBox11);
             this.groupBox20.Controls.Add(this.textBox12);
             this.groupBox20.Location = new System.Drawing.Point(231, 191);
             this.groupBox20.Name = "groupBox20";
@@ -873,6 +890,22 @@ namespace DBProject
             this.groupBox20.TabIndex = 4;
             this.groupBox20.TabStop = false;
             this.groupBox20.Text = "Caratteristiche";
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Items.AddRange(new object[] {
+            "Mensile",
+            "Bimestrale",
+            "Trimestrale",
+            "Quadrimestrale",
+            "Semestrale"});
+            this.comboBox4.Location = new System.Drawing.Point(185, 56);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(183, 21);
+            this.comboBox4.TabIndex = 11;
             // 
             // label11
             // 
@@ -904,16 +937,10 @@ namespace DBProject
             // textBox10
             // 
             this.textBox10.Location = new System.Drawing.Point(185, 23);
+            this.textBox10.MaxLength = 2;
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(183, 20);
             this.textBox10.TabIndex = 4;
-            // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(185, 58);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(183, 20);
-            this.textBox11.TabIndex = 5;
             // 
             // textBox12
             // 
@@ -984,13 +1011,13 @@ namespace DBProject
             // fornAddModPagComboBox
             // 
             this.fornAddModPagComboBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.fornAddModPagComboBox.DisplayMember = "Partita_IVA";
+            this.fornAddModPagComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.fornAddModPagComboBox.FormattingEnabled = true;
             this.fornAddModPagComboBox.Location = new System.Drawing.Point(417, 53);
             this.fornAddModPagComboBox.Name = "fornAddModPagComboBox";
             this.fornAddModPagComboBox.Size = new System.Drawing.Size(183, 21);
             this.fornAddModPagComboBox.TabIndex = 1;
-            this.fornAddModPagComboBox.ValueMember = "Partita_IVA";
+            this.fornAddModPagComboBox.DropDown += new System.EventHandler(this.fornitoreComboBox_DropDown);
             // 
             // fornAddModPagLabel
             // 
@@ -1189,7 +1216,7 @@ namespace DBProject
             this.submitPagamentoBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitPagamentoBtn.BackColor = System.Drawing.Color.White;
             this.submitPagamentoBtn.Image = ((System.Drawing.Image)(resources.GetObject("submitPagamentoBtn.Image")));
-            this.submitPagamentoBtn.Location = new System.Drawing.Point(398, 422);
+            this.submitPagamentoBtn.Location = new System.Drawing.Point(398, 412);
             this.submitPagamentoBtn.Name = "submitPagamentoBtn";
             this.submitPagamentoBtn.Size = new System.Drawing.Size(46, 45);
             this.submitPagamentoBtn.TabIndex = 4;
@@ -1215,7 +1242,7 @@ namespace DBProject
             this.submitAddOrdineBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitAddOrdineBtn.BackColor = System.Drawing.Color.White;
             this.submitAddOrdineBtn.Image = ((System.Drawing.Image)(resources.GetObject("submitAddOrdineBtn.Image")));
-            this.submitAddOrdineBtn.Location = new System.Drawing.Point(389, 425);
+            this.submitAddOrdineBtn.Location = new System.Drawing.Point(389, 388);
             this.submitAddOrdineBtn.Name = "submitAddOrdineBtn";
             this.submitAddOrdineBtn.Size = new System.Drawing.Size(46, 45);
             this.submitAddOrdineBtn.TabIndex = 14;
@@ -2155,8 +2182,7 @@ namespace DBProject
             this.addPerfPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.addPerfPanel.Controls.Add(this.comboOrdine);
-            this.addPerfPanel.Controls.Add(this.comboTrasporto);
+            this.addPerfPanel.Controls.Add(this.comboPerf);
             this.addPerfPanel.Controls.Add(this.dateTimePicker3);
             this.addPerfPanel.Controls.Add(this.submitPerfTraspBtn);
             this.addPerfPanel.Controls.Add(this.label47);
@@ -2167,34 +2193,25 @@ namespace DBProject
             this.addPerfPanel.TabIndex = 22;
             this.addPerfPanel.VisibleChanged += new System.EventHandler(this.addPerfPanel_VisibleChanged);
             // 
-            // comboOrdine
+            // comboPerf
             // 
-            this.comboOrdine.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboOrdine.DisplayMember = "ID_ordine";
-            this.comboOrdine.FormattingEnabled = true;
-            this.comboOrdine.Location = new System.Drawing.Point(426, 114);
-            this.comboOrdine.Name = "comboOrdine";
-            this.comboOrdine.Size = new System.Drawing.Size(121, 21);
-            this.comboOrdine.TabIndex = 5;
-            this.comboOrdine.ValueMember = "ID_ordine";
-            // 
-            // comboTrasporto
-            // 
-            this.comboTrasporto.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboTrasporto.DisplayMember = "Codice";
-            this.comboTrasporto.FormattingEnabled = true;
-            this.comboTrasporto.Location = new System.Drawing.Point(426, 114);
-            this.comboTrasporto.Name = "comboTrasporto";
-            this.comboTrasporto.Size = new System.Drawing.Size(121, 21);
-            this.comboTrasporto.TabIndex = 4;
-            this.comboTrasporto.ValueMember = "Codice";
+            this.comboPerf.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboPerf.DisplayMember = "Codice";
+            this.comboPerf.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboPerf.FormattingEnabled = true;
+            this.comboPerf.IntegralHeight = false;
+            this.comboPerf.Location = new System.Drawing.Point(426, 114);
+            this.comboPerf.Name = "comboPerf";
+            this.comboPerf.Size = new System.Drawing.Size(226, 21);
+            this.comboPerf.TabIndex = 4;
+            this.comboPerf.ValueMember = "Codice";
             // 
             // dateTimePicker3
             // 
             this.dateTimePicker3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dateTimePicker3.Location = new System.Drawing.Point(426, 179);
             this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(183, 20);
+            this.dateTimePicker3.Size = new System.Drawing.Size(226, 20);
             this.dateTimePicker3.TabIndex = 2;
             // 
             // label47
@@ -2203,9 +2220,9 @@ namespace DBProject
             this.label47.AutoSize = true;
             this.label47.Location = new System.Drawing.Point(241, 181);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(127, 13);
+            this.label47.Size = new System.Drawing.Size(87, 13);
             this.label47.TabIndex = 1;
-            this.label47.Text = "Data consegna (effettiva)";
+            this.label47.Text = "Data esecuzione";
             // 
             // label48
             // 
@@ -2242,12 +2259,14 @@ namespace DBProject
             // 
             this.comboFornitore.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboFornitore.DisplayMember = "Partita_IVA";
+            this.comboFornitore.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboFornitore.FormattingEnabled = true;
             this.comboFornitore.Location = new System.Drawing.Point(413, 89);
             this.comboFornitore.Name = "comboFornitore";
             this.comboFornitore.Size = new System.Drawing.Size(186, 21);
             this.comboFornitore.TabIndex = 16;
             this.comboFornitore.ValueMember = "Partita_IVA";
+            this.comboFornitore.DropDown += new System.EventHandler(this.comboFornitore_DropDown);
             // 
             // label126
             // 
@@ -2263,12 +2282,14 @@ namespace DBProject
             // 
             this.comboFattura.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboFattura.DisplayMember = "Numero";
+            this.comboFattura.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboFattura.FormattingEnabled = true;
             this.comboFattura.Location = new System.Drawing.Point(414, 160);
             this.comboFattura.Name = "comboFattura";
             this.comboFattura.Size = new System.Drawing.Size(186, 21);
             this.comboFattura.TabIndex = 14;
             this.comboFattura.ValueMember = "Numero";
+            this.comboFattura.DropDown += new System.EventHandler(this.comboFattura_DropDown);
             // 
             // comboContratto
             // 
@@ -2313,9 +2334,9 @@ namespace DBProject
             this.label39.AutoSize = true;
             this.label39.Location = new System.Drawing.Point(231, 236);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(30, 13);
+            this.label39.Size = new System.Drawing.Size(55, 13);
             this.label39.TabIndex = 1;
-            this.label39.Text = "Data";
+            this.label39.Text = "Scadenza";
             // 
             // contratto_AddPagLabel
             // 
@@ -3557,7 +3578,8 @@ namespace DBProject
             this.addOrdinePanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.addOrdinePanel.Controls.Add(this.groupBox24);
+            this.addOrdinePanel.Controls.Add(this.comboBox30);
+            this.addOrdinePanel.Controls.Add(this.label123);
             this.addOrdinePanel.Controls.Add(this.groupBox22);
             this.addOrdinePanel.Controls.Add(this.groupBox23);
             this.addOrdinePanel.Controls.Add(this.submitAddOrdineBtn);
@@ -3566,88 +3588,37 @@ namespace DBProject
             this.addOrdinePanel.Size = new System.Drawing.Size(836, 478);
             this.addOrdinePanel.TabIndex = 41;
             // 
-            // groupBox24
-            // 
-            this.groupBox24.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.groupBox24.Controls.Add(this.label122);
-            this.groupBox24.Controls.Add(this.textBox6);
-            this.groupBox24.Controls.Add(this.label17);
-            this.groupBox24.Controls.Add(this.comboBox30);
-            this.groupBox24.Controls.Add(this.label123);
-            this.groupBox24.Controls.Add(this.comboBox29);
-            this.groupBox24.Location = new System.Drawing.Point(128, 64);
-            this.groupBox24.Name = "groupBox24";
-            this.groupBox24.Size = new System.Drawing.Size(385, 115);
-            this.groupBox24.TabIndex = 30;
-            this.groupBox24.TabStop = false;
-            this.groupBox24.Text = "Informazioni base";
-            // 
-            // label122
-            // 
-            this.label122.AutoSize = true;
-            this.label122.Location = new System.Drawing.Point(25, 28);
-            this.label122.Name = "label122";
-            this.label122.Size = new System.Drawing.Size(52, 13);
-            this.label122.TabIndex = 21;
-            this.label122.Text = "ID Ordine";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(172, 24);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(120, 20);
-            this.textBox6.TabIndex = 26;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(25, 84);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(57, 13);
-            this.label17.TabIndex = 4;
-            this.label17.Text = "No. fattura";
-            // 
             // comboBox30
             // 
             this.comboBox30.DisplayMember = "Fornitore_Partita_IVA";
+            this.comboBox30.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox30.FormattingEnabled = true;
-            this.comboBox30.Location = new System.Drawing.Point(171, 50);
+            this.comboBox30.Location = new System.Drawing.Point(382, 75);
             this.comboBox30.Name = "comboBox30";
             this.comboBox30.Size = new System.Drawing.Size(121, 21);
-            this.comboBox30.TabIndex = 25;
+            this.comboBox30.TabIndex = 32;
             this.comboBox30.ValueMember = "Fornitore_Partita_IVA";
+            this.comboBox30.DropDown += new System.EventHandler(this.fornitoreComboBox_DropDown);
             // 
             // label123
             // 
             this.label123.AutoSize = true;
-            this.label123.Location = new System.Drawing.Point(25, 54);
+            this.label123.Location = new System.Drawing.Point(240, 78);
             this.label123.Name = "label123";
             this.label123.Size = new System.Drawing.Size(48, 13);
-            this.label123.TabIndex = 22;
+            this.label123.TabIndex = 31;
             this.label123.Text = "Fornitore";
-            // 
-            // comboBox29
-            // 
-            this.comboBox29.DisplayMember = "Numero";
-            this.comboBox29.FormattingEnabled = true;
-            this.comboBox29.Location = new System.Drawing.Point(172, 81);
-            this.comboBox29.Name = "comboBox29";
-            this.comboBox29.Size = new System.Drawing.Size(121, 21);
-            this.comboBox29.TabIndex = 24;
-            this.comboBox29.ValueMember = "Numero";
             // 
             // groupBox22
             // 
             this.groupBox22.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox22.Controls.Add(this.label18);
-            this.groupBox22.Controls.Add(this.label44);
             this.groupBox22.Controls.Add(this.label121);
             this.groupBox22.Controls.Add(this.dateTimePicker13);
-            this.groupBox22.Controls.Add(this.dateTimePicker12);
             this.groupBox22.Controls.Add(this.dateTimePicker11);
-            this.groupBox22.Location = new System.Drawing.Point(127, 213);
+            this.groupBox22.Location = new System.Drawing.Point(234, 231);
             this.groupBox22.Name = "groupBox22";
-            this.groupBox22.Size = new System.Drawing.Size(385, 130);
+            this.groupBox22.Size = new System.Drawing.Size(385, 95);
             this.groupBox22.TabIndex = 17;
             this.groupBox22.TabStop = false;
             this.groupBox22.Text = "Date";
@@ -3655,25 +3626,16 @@ namespace DBProject
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(22, 23);
+            this.label18.Location = new System.Drawing.Point(22, 26);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(54, 13);
+            this.label18.Size = new System.Drawing.Size(51, 13);
             this.label18.TabIndex = 28;
-            this.label18.Text = "Emissione";
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(22, 58);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(59, 13);
-            this.label44.TabIndex = 29;
-            this.label44.Text = "Spedizione";
+            this.label18.Text = "Richiesta";
             // 
             // label121
             // 
             this.label121.AutoSize = true;
-            this.label121.Location = new System.Drawing.Point(22, 91);
+            this.label121.Location = new System.Drawing.Point(22, 58);
             this.label121.Name = "label121";
             this.label121.Size = new System.Drawing.Size(101, 13);
             this.label121.TabIndex = 27;
@@ -3681,17 +3643,10 @@ namespace DBProject
             // 
             // dateTimePicker13
             // 
-            this.dateTimePicker13.Location = new System.Drawing.Point(173, 88);
+            this.dateTimePicker13.Location = new System.Drawing.Point(172, 57);
             this.dateTimePicker13.Name = "dateTimePicker13";
             this.dateTimePicker13.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker13.TabIndex = 2;
-            // 
-            // dateTimePicker12
-            // 
-            this.dateTimePicker12.Location = new System.Drawing.Point(172, 54);
-            this.dateTimePicker12.Name = "dateTimePicker12";
-            this.dateTimePicker12.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker12.TabIndex = 1;
             // 
             // dateTimePicker11
             // 
@@ -3705,7 +3660,7 @@ namespace DBProject
             this.groupBox23.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox23.Controls.Add(this.radioButton2);
             this.groupBox23.Controls.Add(this.radioButton1);
-            this.groupBox23.Location = new System.Drawing.Point(607, 157);
+            this.groupBox23.Location = new System.Drawing.Point(234, 130);
             this.groupBox23.Name = "groupBox23";
             this.groupBox23.Size = new System.Drawing.Size(119, 79);
             this.groupBox23.TabIndex = 8;
@@ -3906,13 +3861,6 @@ namespace DBProject
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(839, 472);
-            this.Controls.Add(this.addFornitorePanel);
-            this.Controls.Add(this.addFatturaPanel);
-            this.Controls.Add(this.addContrattoPanel);
-            this.Controls.Add(this.addClientePanel);
-            this.Controls.Add(this.addGiacenzaPanel);
-            this.Controls.Add(this.addPagamentoPanel);
-            this.Controls.Add(this.addEsecRevPanel);
             this.Controls.Add(this.addPerfPanel);
             this.Controls.Add(this.addTrasportoPanel);
             this.Controls.Add(this.addModalitaPagPanel);
@@ -3927,6 +3875,13 @@ namespace DBProject
             this.Controls.Add(this.addRiparazionePanel);
             this.Controls.Add(this.addVeicRicToOrdinePanel);
             this.Controls.Add(this.addOrdinePanel);
+            this.Controls.Add(this.addFornitorePanel);
+            this.Controls.Add(this.addFatturaPanel);
+            this.Controls.Add(this.addContrattoPanel);
+            this.Controls.Add(this.addClientePanel);
+            this.Controls.Add(this.addGiacenzaPanel);
+            this.Controls.Add(this.addPagamentoPanel);
+            this.Controls.Add(this.addEsecRevPanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EntryForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -4010,8 +3965,7 @@ namespace DBProject
             this.addRevisionePanel.ResumeLayout(false);
             this.addRevisionePanel.PerformLayout();
             this.addOrdinePanel.ResumeLayout(false);
-            this.groupBox24.ResumeLayout(false);
-            this.groupBox24.PerformLayout();
+            this.addOrdinePanel.PerformLayout();
             this.groupBox22.ResumeLayout(false);
             this.groupBox22.PerformLayout();
             this.groupBox23.ResumeLayout(false);
@@ -4040,7 +3994,6 @@ namespace DBProject
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TextBox textBox8;
@@ -4317,7 +4270,6 @@ namespace DBProject
         private ComboBox comboBox25;
         private Label label120;
         private Panel addOrdinePanel;
-        private Label label17;
         private GroupBox groupBox23;
         private Button submitAddOrdineBtn;
         private Panel addVeicRicToOrdinePanel;
@@ -4330,20 +4282,12 @@ namespace DBProject
         private Label label129;
         private RadioButton radioButton2;
         private RadioButton radioButton1;
-        private Label label122;
-        private Label label123;
-        private TextBox textBox6;
-        private ComboBox comboBox30;
-        private ComboBox comboBox29;
-        private GroupBox groupBox24;
         private GroupBox groupBox22;
         private Label label18;
-        private Label label44;
         private Label label121;
         private DateTimePicker dateTimePicker13;
-        private DateTimePicker dateTimePicker12;
         private DateTimePicker dateTimePicker11;
-        private ComboBox comboTrasporto;
+        private ComboBox comboPerf;
         private Panel addEsecRevPanel;
         private ComboBox comboBox26;
         private DateTimePicker dateTimePicker7;
@@ -4360,9 +4304,13 @@ namespace DBProject
         private ComboBox comboFattura;
         private ComboBox comboFornitore;
         private Label label126;
-        private ComboBox comboOrdine;
         private TextBox textBox3;
         private TextBox textBox4;
         private TextBox textBox13;
+        private ComboBox comboBox4;
+        private Label label97;
+        private ComboBox comboBox9;
+        private ComboBox comboBox30;
+        private Label label123;
     }
 }

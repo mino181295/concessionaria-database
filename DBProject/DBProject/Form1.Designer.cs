@@ -280,6 +280,7 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.addFatturaBtn = new DBProject.EntryButton();
             this.Pagamento_fornitore = new System.Windows.Forms.TabPage();
+            this.entryButton1 = new DBProject.EntryButton();
             this.dataGridViewPag = new System.Windows.Forms.DataGridView();
             this.fornitoreFatturaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.numeroFatturaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -573,7 +574,6 @@
             this.tabControl5.Size = new System.Drawing.Size(654, 346);
             this.tabControl5.TabIndex = 1;
             this.tabControl5.SelectedIndexChanged += new System.EventHandler(this.tabControlSelectedIndexChanged);
-            this.tabControl5.Enter += new System.EventHandler(this.tabControl_Enter);
             // 
             // Ordine
             // 
@@ -952,7 +952,6 @@
             this.tabControl4.Size = new System.Drawing.Size(654, 346);
             this.tabControl4.TabIndex = 1;
             this.tabControl4.SelectedIndexChanged += new System.EventHandler(this.tabControlSelectedIndexChanged);
-            this.tabControl4.Enter += new System.EventHandler(this.tabControl_Enter);
             // 
             // Veicolo_in_catalogo
             // 
@@ -1791,7 +1790,6 @@
             this.tabControl3.Size = new System.Drawing.Size(655, 344);
             this.tabControl3.TabIndex = 6;
             this.tabControl3.SelectedIndexChanged += new System.EventHandler(this.tabControlSelectedIndexChanged);
-            this.tabControl3.Enter += new System.EventHandler(this.tabControl_Enter);
             // 
             // Corriere
             // 
@@ -2234,7 +2232,6 @@
             this.tabControl2.Size = new System.Drawing.Size(654, 346);
             this.tabControl2.TabIndex = 1;
             this.tabControl2.SelectedIndexChanged += new System.EventHandler(this.tabControlSelectedIndexChanged);
-            this.tabControl2.Enter += new System.EventHandler(this.tabControl_Enter);
             // 
             // Riparazione
             // 
@@ -3136,6 +3133,7 @@
             // 
             // Pagamento_fornitore
             // 
+            this.Pagamento_fornitore.Controls.Add(this.entryButton1);
             this.Pagamento_fornitore.Controls.Add(this.dataGridViewPag);
             this.Pagamento_fornitore.Controls.Add(this.comboBoxPagamenti);
             this.Pagamento_fornitore.Controls.Add(this.textBox3);
@@ -3146,6 +3144,19 @@
             this.Pagamento_fornitore.TabIndex = 5;
             this.Pagamento_fornitore.Text = "Pagamenti";
             this.Pagamento_fornitore.UseVisualStyleBackColor = true;
+            // 
+            // entryButton1
+            // 
+            this.entryButton1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.entryButton1.EntryPanel = DBProject.Entry.PerPagForn;
+            this.entryButton1.FormName = "Perfeziona pagamento";
+            this.entryButton1.Location = new System.Drawing.Point(507, 148);
+            this.entryButton1.Name = "entryButton1";
+            this.entryButton1.Size = new System.Drawing.Size(104, 36);
+            this.entryButton1.TabIndex = 21;
+            this.entryButton1.Text = "Perfeziona pagamento";
+            this.entryButton1.UseVisualStyleBackColor = true;
+            this.entryButton1.Click += new System.EventHandler(this.addInstanceBtn_Click);
             // 
             // dataGridViewPag
             // 
@@ -3244,7 +3255,7 @@
             this.addPagFornBtn.Name = "addPagFornBtn";
             this.addPagFornBtn.Size = new System.Drawing.Size(104, 23);
             this.addPagFornBtn.TabIndex = 15;
-            this.addPagFornBtn.Text = "Nuovo pagamento";
+            this.addPagFornBtn.Text = "Nuovo scadenza";
             this.addPagFornBtn.UseVisualStyleBackColor = true;
             this.addPagFornBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
             // 
@@ -3400,7 +3411,6 @@
             this.tabControl1.Size = new System.Drawing.Size(660, 348);
             this.tabControl1.TabIndex = 6;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControlSelectedIndexChanged);
-            this.tabControl1.Enter += new System.EventHandler(this.tabControl_Enter);
             // 
             // Cliente
             // 
@@ -4573,6 +4583,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn cittàDataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn provinciaDataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn cAPDataGridViewTextBoxColumn2;
+        private EntryButton entryButton1;
     }
 }
 

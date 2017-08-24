@@ -396,19 +396,6 @@ namespace DBProject
         }
 
 
-        #endregion       
-
-
-
-
-        // da rimuovere
-        private void tabControl_Enter(object sender, EventArgs e)
-        {
-          //  searchSetup(sender);      
-        }
-
-      
-
-              
+        #endregion             
     }
 }

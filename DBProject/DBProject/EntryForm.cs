@@ -19,10 +19,10 @@ namespace DBProject
         None,
 
         // Gestione Fornitore
-        Fornitore, Fattura, ModPag, RecapitoForn, EmailForn, PagVForn,
+        Fornitore, Fattura, ModPag, RecapitoForn, EmailForn, PagVForn, PerPagForn,
 
         // Gestione Cliente
-        Cliente, Contratto, Pagamento, RecapitoCli, EmailCli, NsModPag,
+        Cliente, Contratto, Pagamento, RecapitoCli, EmailCli, NsModPag, PerPagCli,
 
         // Gestione Corriere
         Corriere, RecapitoCor, EmailCor, Trasporto, PerfTrasp,
@@ -61,12 +61,14 @@ namespace DBProject
             this.panelMap.Add(Entry.Fattura, this.addFatturaPanel);
             this.panelMap.Add(Entry.ModPag, this.addModalitaPagPanel);
             this.panelMap.Add(Entry.PagVForn, this.addPagamentoPanel);
+            this.panelMap.Add(Entry.PerPagForn, this.addPerfPanel);
 
             // Gestione Cliente
             this.panelMap.Add(Entry.Cliente, this.addClientePanel);
             this.panelMap.Add(Entry.Contratto, this.addContrattoPanel);
             this.panelMap.Add(Entry.Pagamento, this.addPagamentoPanel);
             this.panelMap.Add(Entry.NsModPag, this.addModalitaPagPanel);
+            this.panelMap.Add(Entry.PerPagCli, this.addPerfPanel);
 
             // Gestione Corriere
             this.panelMap.Add(Entry.Corriere, this.addFornitorePanel);
@@ -152,19 +154,63 @@ namespace DBProject
         }
 
         // per inserire la DATA EFFETTIVA CONSEGNA sia dell'ORDINE che del VEICOLO al cliente
+        // e per le rate cliente/fornitore
         private void addPerfPanel_VisibleChanged(object sender, EventArgs e)
         {
+
             if (this.currEntry == Entry.PerfOrdine)
             {
                 this.label48.Text = "ID Ordine";
-                this.comboOrdine.BringToFront();
+                var data = from o in db.Ordine
+                           where o.DataConsegna == null
+                           select new { desc = ("Id " + o.Id + " del " + o.DataOrdine), o.Id };
+
+                comboPerf.DataSource = data.ToList();
+                comboPerf.DisplayMember = "desc";
+                comboPerf.ValueMember = "Id";
+            }
+            else if (this.currEntry == Entry.PerfTrasp)
+            {
+                this.label48.Text = "Codice trasporto";
+                var data = from o in db.Trasporto
+                           where o.DataConsegna == null
+                           select new { desc = ("Codice " + o.Codice + " del " + o.DataConsegnaPrevista), o.Codice };
+
+                comboPerf.DataSource = data.ToList();
+                comboPerf.DisplayMember = "desc";
+                comboPerf.ValueMember = "Codice";
             }
             else
             {
-                this.label48.Text = "Codice trasporto";
-                this.comboTrasporto.BringToFront();
-            }
-            // occorre riempire il comboBox adeguatamente
+                this.label48.Text = "Pagamento";
+                if (this.currEntry == Entry.PerPagForn)
+                {
+                    var data = from o in db.Rata
+                               where o.DataPagamento == null
+                               select new
+                               {
+                                   desc = ("Fornitore: " + o.FornitoreFattura + " fattura: " + o.NumeroFattura),
+                                   id = new { o.FornitoreFattura, o.NumeroFattura, o.Scadenza }
+                               };
+
+                    comboPerf.DataSource = data.ToList();                    
+                }
+                else
+                {
+                    var data = from o in db.RataCliente
+                               where o.DataPagamento == null
+                               select new
+                               {
+                                   desc = ("Contratto: " + o.Contratto),
+                                   id = new { o.Contratto, o.Scadenza }
+                               };
+
+                    comboPerf.DataSource = data.ToList();
+
+                }
+                comboPerf.DisplayMember = "desc";
+                comboPerf.ValueMember = "id";
+            }                    
         }
 
         // usato sia per DETTAGLIO ORDINE VEICOLO che RICAMBIO
@@ -279,30 +325,27 @@ namespace DBProject
         private void submitAddOrdineBtn_Click(object sender, EventArgs e)
         {
             Ordine o = new Ordine();
-/*
-            o.ID_ordine = this.textBox6.Text;
-            o.Fattura_Partita_IVA = this.comboBox30.ValueMember;
-            o.Numero = convertStringInt(this.comboBox29.ValueMember);
-            o.Data_ordine = this.dateTimePicker11.Value;
-            o.Data_spedizione = this.dateTimePicker12.Value;
-            o.Data_consegna_1 = this.dateTimePicker13.Value;
-            o.Data_consegna_2 = null;
-            o.Tipo_Ordine = this.radioButton1.Checked ? 'r' : 'v';
+
+            var val = this.comboBox30.SelectedValue;
+            o.Fornitore = val == null ? null : val.ToString();                        
+            o.DataOrdine = this.dateTimePicker11.Value;
+            o.DataConsegnaPrevista = this.dateTimePicker13.Value;                       
+            o.TipoOrdine = this.radioButton1.Checked ? 'r' : 'v';
 
             try
             {
-                if (!(isString(o.ID_ordine) && isString(o.Fattura_Partita_IVA) && isInt(o.Numero)))
+                if (!(isString(o.Fornitore)))
                 {
-                    throw new Exception("Campi vuoti");
+                    throw new Exception("Campi vuoti o errati");
                 }
-                //db.Ordine.InsertOnSubmit(o);
-                //db.SubmitChanges();
+                db.Ordine.InsertOnSubmit(o);
+                db.SubmitChanges();
+                this.Close();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Errore di inserimento dati");
-            }*/
-            this.Close();
+            }            
         }
 
         private void submitVenditaBtn_Click(object sender, EventArgs e)
@@ -451,35 +494,40 @@ namespace DBProject
         }
 
         private void submitFatturaBtn_Click(object sender, EventArgs e)
-        {/*
-            Fattura_di_acquisto f = new Fattura_di_acquisto();
+        {
+            FatturaAcquisto f = new FatturaAcquisto();
             f.Numero = convertStringInt(this.textBox5.Text);
             f.Data = this.dateTimePicker1.Value;
-            f.Importo_complessivo = convertStringFloat(this.textBox7.Text);
-            f.Fornitore_Partita_IVA = this.comboBox1.SelectedValue.ToString();
-            f.Mod_Pagamento_Da = convertStringFloat(this.comboBox22.SelectedValue.ToString());
-
-
-
+            f.ImportoComplessivo = convertStringFloat(this.textBox7.Text);
+            var val = this.comboBox1.SelectedValue;
+            f.Fornitore = val == null ? null : val.ToString();
+            val = this.comboBox22.SelectedValue;
+            f.ModPagamentoDa = convertStringFloat(val == null ? null : val.ToString());
+            f.ModPagamentoFornitore = f.Fornitore;
+            val = this.comboBox9.SelectedValue;
+            f.Ordine = val == null ? -1 : Convert.ToDecimal(val.ToString());
+            
             try
             {
-                if (!(isInt(f.Numero) &&
-                      isFloat(f.Importo_complessivo) &&
-                      isString(f.Fornitore_Partita_IVA) &&
-                      isFloat(f.Mod_Pagamento_Da)
+                if (!(isInt((int)f.Numero) &&
+                      isFloat(f.ImportoComplessivo) &&
+                      isString(f.Fornitore) &&
+                      isFloat(f.ModPagamentoDa) &&
+                      isInt((int)f.Ordine) &&
+                      f.Ordine > 0
                     ))
                 {
                     throw new Exception("Valori sbagliati o vuoti");
                 }
-                db.Fattura_di_acquisto.InsertOnSubmit(f);
+                db.FatturaAcquisto.InsertOnSubmit(f);
                 db.SubmitChanges();
+                this.Close();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Errore di inserimento dati");
             }
-            */
-            this.Close();
+            
         }
 
         private void submitContrattoBtn_Click(object sender, EventArgs e)
@@ -581,30 +629,56 @@ namespace DBProject
         }
 
         private void submitPagamentoBtn_Click(object sender, EventArgs e)
-        {/*
-            Pagamento_cAcquisto p = new Pagamento_cAcquisto();
-            p.Fattura_Partita_IVA = this.comboFornitore.Text;
-            p.Fattura_Numero = convertStringInt(this.comboFattura.ValueMember);
-            p.Data = this.dateTimePicker4.Value;
-            p.Importo = convertStringFloat(this.textBox29.Text);
-
+        {            
+                                  
             try
             {
-                if (!(  isString(p.Fattura_Partita_IVA) &&                    
-                        isInt(p.Fattura_Numero) &&
-                        isFloat(p.Importo)))
+                // Caso di utilizzo per rata cliente
+             if (this.currEntry == Entry.Pagamento)
                 {
-                    throw new Exception("Campi vuoti");
+                    RataCliente rc = new RataCliente();
+
+                    var val = this.comboFattura.SelectedValue;
+                    rc.Contratto = convertStringInt(val == null ? null : val.ToString());
+                    rc.Scadenza = this.dateTimePicker4.Value;
+                    rc.Importo = convertStringFloat(this.textBox29.Text);
+
+                    if (!(isInt((int)rc.Contratto) &&
+                            isFloat(rc.Importo)))
+                    {
+                        throw new Exception("Campi vuoti o errati");
+                    }
+                    db.RataCliente.InsertOnSubmit(rc);
+
                 }
-                //db.Giacenza.InsertOnSubmit(p);
-                //db.SubmitChanges();
+                else
+                {
+                    Rata p = new Rata();
+
+                    var val = this.comboFornitore.SelectedValue;
+                    p.FornitoreFattura = val == null ? null : val.ToString();
+                    val = this.comboFattura.SelectedValue;
+                    p.NumeroFattura = convertStringInt(val == null ? null : val.ToString());
+                    p.Scadenza = this.dateTimePicker4.Value;
+                    p.Importo = convertStringFloat(this.textBox29.Text);
+
+
+                    if (!(isString(p.FornitoreFattura) &&
+                            isInt((int)p.NumeroFattura) &&
+                            isFloat(p.Importo)))
+                    {
+                        throw new Exception("Campi vuoti o errati");
+                    }
+                    db.Rata.InsertOnSubmit(p);
+                }               
+
+                db.SubmitChanges();
+                this.Close();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Errore di inserimento dati");
-            }
-            */
-            this.Close();
+            }                       
         }
 
         private void submitPerfTraspBtn_Click(object sender, EventArgs e)
@@ -656,40 +730,45 @@ namespace DBProject
         private void submitModalitaPagBtn_Click(object sender, EventArgs e)
         {
             // mino uso questo metodo sia per le nostre modalità di pagamento che per quelle del
-             // fornitore, il se inserire le nostre modalità o quelle del fornitore lo aggiungo poi io
-             
-            /*
-
-            Modalita_di_pagamento mp = new Modalita_di_pagamento();
-            Nostre_modalita_di_pagamento nmp = new Nostre_modalita_di_pagamento();
-            mp.Fornitore_Partita_IVA = this.fornAddModPagComboBox.Text;
+            // fornitore, il se inserire le nostre modalità o quelle del fornitore lo aggiungo poi io
+            
+            ModalitàPagamento mp = new ModalitàPagamento();
+            NostreModalitàPagamento nmp = new NostreModalitàPagamento();
+            var val = this.fornAddModPagComboBox.SelectedValue;
+            mp.Fornitore = val == null ? null : val.ToString();
             nmp.Da = mp.Da = convertStringFloat( this.textBox8.Text);
             nmp.A = mp.A = convertStringFloat(this.textBox9.Text);
-            nmp.Numero_rate = mp.Numero_rate = convertStringInt(this.textBox10.Text);
-            nmp.Periodicita = mp.Periodicita = this.textBox11.Text;
-            nmp.Tasso_interesse = mp.Tasso_interesse = convertStringFloat(this.textBox12.Text);
+            nmp.NumerRate = mp.NumeroRate = convertStringInt(this.textBox10.Text);           
+            nmp.Periodicità = mp.Periodicità = this.comboBox4.Text;
+            nmp.TassoInteresse = mp.TassoInteresse = convertStringFloat(this.textBox12.Text);
 
             try
             {
-                if (!(  isString(mp.Fornitore_Partita_IVA) &&
+                if (!(  isString(mp.Fornitore) &&
                         isFloat(mp.Da) &&
                         isFloat(mp.A) &&
-                        isInt(mp.Numero_rate) &&
-                        isString(mp.Periodicita) &&
-                        isFloat(mp.Tasso_interesse)))
+                        isInt((int)mp.NumeroRate) &&
+                        (mp.Da < mp.A) &&
+                        isString(mp.Periodicità) &&
+                        isFloat(mp.TassoInteresse)))
                 {
-                    throw new Exception("Campi vuoti");
-                }
-                //db.Trasporto.InsertOnSubmit(mp); qui scegli se aggiungere a uno o l'altro
-                //db.SubmitChanges();
+                    throw new Exception("Campi vuoti o errati");
+                }               
+
+                // Aggiungo mod pagamento del fornitore                
+                if (currEntry == Entry.ModPag)                
+                    db.ModalitàPagamento.InsertOnSubmit(mp);                
+                // Aggiungo mie modalità di pagamento
+                else                
+                    db.NostreModalitàPagamento.InsertOnSubmit(nmp);                
+
+                db.SubmitChanges();
+                this.Close();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Errore di inserimento dati");
-            }
-            */
-
-            this.Close();
+            }                       
         }
 
         private void submitRevisioneBtn_Click(object sender, EventArgs e)
@@ -875,8 +954,8 @@ namespace DBProject
                               select mod).ToList().Count > 0
                        select new { f.RagioneSociale, f.PartitaIVA };
             this.comboBox1.DataSource = pive.ToList();
-            this.comboBox1.DisplayMember = "Ragione_Sociale";
-            this.comboBox1.ValueMember = "Partita_IVA";
+            this.comboBox1.DisplayMember = "RagioneSociale";
+            this.comboBox1.ValueMember = "PartitaIVA";
 
         }
 
@@ -894,6 +973,73 @@ namespace DBProject
             this.comboBox22.DataSource = modpag.ToList();
             this.comboBox22.DisplayMember = "member"; // nome del campo dell'oggetto corrente (della lista di oggetti passati) da visualizzare 
             this.comboBox22.ValueMember = "Da"; // nome del campo dell'oggetto corrente da restituire
+        }
+
+        private void comboBox9_DropDown(object sender, EventArgs e)
+        {
+            var value = this.comboBox1.SelectedValue;
+            if (value == null)
+                return;
+            var o = from f in this.db.Ordine
+                    where f.Fornitore == value.ToString()
+                    select new {desc = ("Numero " + f.Id + " del " + f.DataOrdine), f.Id };
+
+            ComboBox combo = (ComboBox)sender;
+            combo.DataSource = o.ToList();
+            combo.DisplayMember = "desc"; // nome del campo dell'oggetto corrente (della lista di oggetti passati) da visualizzare 
+            combo.ValueMember = "Id"; // nome del campo dell'oggetto corrente da restituire            
+        }
+
+
+        private void fornitoreComboBox_DropDown(object sender, EventArgs e)
+        {
+            var pive = from f in this.db.Fornitore                       
+                       select new { f.RagioneSociale, f.PartitaIVA };
+
+            ComboBox combo = (ComboBox)sender;
+            combo.DataSource = pive.ToList();
+            combo.DisplayMember = "RagioneSociale";
+            combo.ValueMember = "PartitaIVA";
+        }
+
+        private void comboFattura_DropDown(object sender, EventArgs e)
+        {
+            ComboBox combo = (ComboBox)sender;
+
+            // Caso di utilizzo per rata cliente            
+            if (this.currEntry == Entry.Pagamento)
+            {
+                var data = from d in db.ContrattoVendita
+                           select new { desc = ("Numero " + d.Numero + " del " + d.Data), d.Numero };
+              
+                combo.DataSource = data.ToList();
+            } else // caso di utilizzo per rata fornitore
+            {
+                var value = this.comboFornitore.SelectedValue;
+                if (value == null)
+                    return;
+
+                String forn = value.ToString();
+                var data = from f in this.db.FatturaAcquisto
+                             where f.Fornitore == forn
+                             select new { desc = ("Numero " + f.Numero + " del " + f.Data), f.Numero };
+               
+                combo.DataSource = data.ToList();
+            }
+            combo.DisplayMember = "desc";
+            combo.ValueMember = "Numero";
+        }
+
+        private void comboFornitore_DropDown(object sender, EventArgs e)
+        {
+            var pive = from f in this.db.Fornitore
+                       where f.FatturaAcquisto.ToList().Count > 0
+                       select new { f.RagioneSociale, f.PartitaIVA };
+
+            ComboBox combo = (ComboBox)sender;
+            combo.DataSource = pive.ToList();
+            combo.DisplayMember = "RagioneSociale";
+            combo.ValueMember = "PartitaIVA";
         }
     }
 
