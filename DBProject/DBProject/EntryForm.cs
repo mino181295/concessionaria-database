@@ -61,14 +61,14 @@ namespace DBProject
             this.panelMap.Add(Entry.Fattura, this.addFatturaPanel);
             this.panelMap.Add(Entry.ModPag, this.addModalitaPagPanel);
             this.panelMap.Add(Entry.PagVForn, this.addPagamentoPanel);
-            this.panelMap.Add(Entry.PerPagForn, this.addPerfPanel);
+            this.panelMap.Add(Entry.PerPagForn, this.addPagamentoPanel);
 
             // Gestione Cliente
             this.panelMap.Add(Entry.Cliente, this.addClientePanel);
             this.panelMap.Add(Entry.Contratto, this.addContrattoPanel);
             this.panelMap.Add(Entry.Pagamento, this.addPagamentoPanel);
             this.panelMap.Add(Entry.NsModPag, this.addModalitaPagPanel);
-            this.panelMap.Add(Entry.PerPagCli, this.addPerfPanel);
+            this.panelMap.Add(Entry.PerPagCli, this.addPagamentoPanel);
 
             // Gestione Corriere
             this.panelMap.Add(Entry.Corriere, this.addFornitorePanel);
@@ -133,28 +133,39 @@ namespace DBProject
             this.fornAddModPagLabel.Visible = cond;
             this.fornAddModPagComboBox.Visible = cond;
         }
-
+        
         // usato sia per PAGAMENTO FATTURA ORDINE che per PAGAMENTO CONTRATTO VENDITA
         private void addPagamentoPanel_VisibleChanged(object sender, EventArgs e)
         {
-            if (this.currEntry == Entry.Pagamento)
+            if (this.currEntry == Entry.Pagamento || this.currEntry == Entry.PerPagCli)
             {
-                this.contratto_AddPagLabel.Text = "Contratto";
-                this.comboContratto.BringToFront();
+                this.contratto_AddPagLabel.Text = "Contratto";                
                 this.label126.Visible = false;
                 this.comboFornitore.Visible = false;
             }
-            else
+            else if (this.currEntry == Entry.PagVForn || this.currEntry == Entry.PerPagForn)
             {
-                this.contratto_AddPagLabel.Text = "Fattura";
-                this.comboFattura.BringToFront();
+                this.contratto_AddPagLabel.Text = "Fattura";                
                 this.label126.Visible = true;
                 this.comboFornitore.Visible = true;
             }
+
+            if (this.currEntry == Entry.PerPagCli || this.currEntry == Entry.PerPagForn)
+            {
+                comboScadenza.BringToFront();
+                datePagamento.BringToFront();
+                label41.Text = "Data pagamento";
+
+            }                            
+             else {
+                dateTimePicker4.BringToFront();
+                textBox29.BringToFront();
+                label41.Text = "Importo";
+            } 
+                           
         }
 
-        // per inserire la DATA EFFETTIVA CONSEGNA sia dell'ORDINE che del VEICOLO al cliente
-        // e per le rate cliente/fornitore
+        // per inserire la DATA EFFETTIVA CONSEGNA sia dell'ORDINE che del VEICOLO al cliente        
         private void addPerfPanel_VisibleChanged(object sender, EventArgs e)
         {
 
@@ -169,7 +180,7 @@ namespace DBProject
                 comboPerf.DisplayMember = "desc";
                 comboPerf.ValueMember = "Id";
             }
-            else if (this.currEntry == Entry.PerfTrasp)
+            else
             {
                 this.label48.Text = "Codice trasporto";
                 var data = from o in db.Trasporto
@@ -179,39 +190,8 @@ namespace DBProject
                 comboPerf.DataSource = data.ToList();
                 comboPerf.DisplayMember = "desc";
                 comboPerf.ValueMember = "Codice";
-            }
-            else
-            {
-                this.label48.Text = "Pagamento";
-                if (this.currEntry == Entry.PerPagForn)
-                {
-                    var data = from o in db.Rata
-                               where o.DataPagamento == null
-                               select new
-                               {
-                                   desc = ("Fornitore: " + o.FornitoreFattura + " fattura: " + o.NumeroFattura),
-                                   id = new { o.FornitoreFattura, o.NumeroFattura, o.Scadenza }
-                               };
-
-                    comboPerf.DataSource = data.ToList();                    
-                }
-                else
-                {
-                    var data = from o in db.RataCliente
-                               where o.DataPagamento == null
-                               select new
-                               {
-                                   desc = ("Contratto: " + o.Contratto),
-                                   id = new { o.Contratto, o.Scadenza }
-                               };
-
-                    comboPerf.DataSource = data.ToList();
-
-                }
-                comboPerf.DisplayMember = "desc";
-                comboPerf.ValueMember = "id";
-            }                    
-        }
+            }                                                        
+        }     
 
         // usato sia per DETTAGLIO ORDINE VEICOLO che RICAMBIO
         private void addVeicRicToOrdinePanel_VisibleChanged(object sender, EventArgs e)
@@ -558,44 +538,40 @@ namespace DBProject
         }
 
         private void submitClienteABtn_Click(object sender, EventArgs e)
-        {/*
+        {
             Cliente c = new Cliente();
 
-            c.PartitaIVA_CodiceFiscale = this.textBox82.Text;
-            c.Ragione_sociale = this.textBox80.Text;
-            c.Indirizzo_e_mail_1 = this.textBox81.Text;
-            c.Indirizzo_e_mail_2 = this.textBox15.Text;
-            c.Recapito_1 = this.textBox79.Text;
-            c.Recapito_2 = this.textBox17.Text;
-            c.Recapito_3 = this.textBox1.Text;
+            c.PartitaIVA = this.textBox82.Text;
+            c.RagioneSociale = this.textBox80.Text;
+            c.IndirizzoEmail1 = this.textBox81.Text;            
+            c.Recapito1 = this.textBox79.Text;                       
             c.Indirizzo = this.textBox31.Text;
-            c.Citta = this.textBox28.Text;
+            c.Città = this.textBox28.Text;
             c.Provincia = this.textBox30.Text;
             c.CAP = this.textBox32.Text;
+            c.TipoCliente = 'a';
 
             try
             {
-                if ( ! (  isString(c.PartitaIVA_CodiceFiscale) &&
-                          isString(c.Ragione_sociale) &&
-                          isString(c.Indirizzo_e_mail_1) &&
-                          isString(c.Recapito_1) &&
+                if ( ! (  isString(c.PartitaIVA) &&
+                          isString(c.RagioneSociale) &&
+                          isString(c.IndirizzoEmail1) &&
+                          isString(c.Recapito1) &&
                           isString(c.Indirizzo) &&
-                          isString(c.Citta) &&
-                          isString(c.Citta) &&
+                          isString(c.Città) &&                          
                           isString(c.Provincia) &&
                           isString(c.CAP)))
                 {
-                    throw new Exception("Campi vuoti");
+                    throw new Exception("Campi vuoti o errati");
                 }
-                //db.Contratto_di_vendita.InsertOnSubmit(c);
-                //db.SubmitChanges();
+                db.Cliente.InsertOnSubmit(c);
+                db.SubmitChanges();
+                this.Close();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Errore di inserimento dati");
-            }
-            */
-            this.Close();
+            }                       
         }
 
         private void submitGiacenzaBtn_Click(object sender, EventArgs e)
@@ -634,7 +610,7 @@ namespace DBProject
             try
             {
                 // Caso di utilizzo per rata cliente
-             if (this.currEntry == Entry.Pagamento)
+                if (this.currEntry == Entry.Pagamento)
                 {
                     RataCliente rc = new RataCliente();
 
@@ -649,9 +625,10 @@ namespace DBProject
                         throw new Exception("Campi vuoti o errati");
                     }
                     db.RataCliente.InsertOnSubmit(rc);
+                    db.SubmitChanges();
 
                 }
-                else
+                else if (this.currEntry == Entry.PagVForn)
                 {
                     Rata p = new Rata();
 
@@ -670,9 +647,55 @@ namespace DBProject
                         throw new Exception("Campi vuoti o errati");
                     }
                     db.Rata.InsertOnSubmit(p);
-                }               
+                    db.SubmitChanges();
+                }
+                // Caso inserimento pagamento
+                else
+                {                    
+                    var val = this.comboFattura.SelectedValue;
+                    String fattContr = val == null ? null : val.ToString();
 
-                db.SubmitChanges();
+                    val = this.comboScadenza.SelectedValue;
+                    String scad = val == null ? null : val.ToString();
+
+                    if (!(isString(fattContr) &&
+                            isString(scad)))
+                    {
+                        throw new Exception("Campi vuoti o errati");
+                    }
+
+                    if (this.currEntry == Entry.PerPagCli)
+                    {
+                        RataCliente rc = (from p in db.RataCliente
+                                          where p.Contratto == Convert.ToDecimal(fattContr)
+                                          && p.Scadenza == Convert.ToDateTime(scad)
+                                          select p).First();
+                        rc.DataPagamento = this.datePagamento.Value;
+
+                        db.SubmitChanges();
+                        db.Refresh(System.Data.Linq.RefreshMode.KeepChanges, rc);
+                    }
+                    else
+                    {
+                        val = this.comboFornitore.SelectedValue;
+                        String forn = val == null ? null : val.ToString();
+
+                        if (!isString(forn))
+                        {
+                            throw new Exception("Campi vuoti o errati");
+                        }
+
+                        Rata r = (from p in db.Rata
+                                  where p.FornitoreFattura == forn
+                                  && p.NumeroFattura == Convert.ToDecimal(fattContr)
+                                  && p.Scadenza == Convert.ToDateTime(scad)
+                                  select p).First();
+                        r.DataPagamento = this.datePagamento.Value;
+
+                        db.SubmitChanges();
+                        db.Refresh(System.Data.Linq.RefreshMode.KeepChanges, r);
+                    }
+                }                                              
                 this.Close();
             }
             catch (Exception ex)
@@ -897,8 +920,46 @@ namespace DBProject
 
         private void submitClientePBtn_Click(object sender, EventArgs e)
         {
-            // settare il tipo di cliente 
-            this.Close();
+            Cliente c = new Cliente();
+
+            c.CodiceFiscale = this.textBox18.Text;
+            c.Nome = this.textBox14.Text;
+            c.Cognome = this.textBox2.Text;
+            c.DataNascita = dateTimePicker10.Value;
+            c.CittàNascita = this.textBox73.Text;
+            c.ProvinciaNascita = this.textBox23.Text;
+            c.IndirizzoEmail1 = this.textBox76.Text;
+            c.Recapito1 = this.textBox78.Text;
+            c.Indirizzo = this.textBox87.Text;
+            c.Città = this.textBox85.Text;
+            c.Provincia = this.textBox86.Text;
+            c.CAP = this.textBox88.Text;
+
+            c.TipoCliente = 'p';
+
+            try
+            {
+                if (!(isString(c.CodiceFiscale) &&
+                          isString(c.Nome) &&
+                          isString(c.Cognome) &&
+                          isString(c.CittàNascita) &&
+                          isString(c.ProvinciaNascita) &&                          
+                          isString(c.Recapito1) &&
+                          isString(c.Indirizzo) &&
+                          isString(c.Città) &&                          
+                          isString(c.Provincia) &&
+                          isString(c.CAP)))
+                {
+                    throw new Exception("Campi vuoti o errati");
+                }
+                db.Cliente.InsertOnSubmit(c);
+                db.SubmitChanges();
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Errore di inserimento dati");
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -1004,10 +1065,10 @@ namespace DBProject
 
         private void comboFattura_DropDown(object sender, EventArgs e)
         {
-            ComboBox combo = (ComboBox)sender;
+            ComboBox combo = (ComboBox)sender;            
 
             // Caso di utilizzo per rata cliente            
-            if (this.currEntry == Entry.Pagamento)
+            if (this.currEntry == Entry.Pagamento || this.currEntry == Entry.PerPagCli)
             {
                 var data = from d in db.ContrattoVendita
                            select new { desc = ("Numero " + d.Numero + " del " + d.Data), d.Numero };
@@ -1040,6 +1101,38 @@ namespace DBProject
             combo.DataSource = pive.ToList();
             combo.DisplayMember = "RagioneSociale";
             combo.ValueMember = "PartitaIVA";
+        }               
+
+        private void comboScadenza_DropDown(object sender, EventArgs e)
+        {
+            var v = this.comboFattura.SelectedValue;
+            if (v == null)
+                return;
+
+            String contFatt = v.ToString();
+
+            if (this.currEntry == Entry.PerPagCli)
+            {
+                var q = from s in db.RataCliente
+                        where s.Contratto == Convert.ToDecimal(contFatt)
+                        select s.Scadenza;
+                ComboBox combo = (ComboBox)sender;
+                combo.DataSource = q.ToList();                
+            } else
+            {
+                var value = this.comboFornitore.SelectedValue;
+                if (value == null)
+                    return;
+
+                String forn = value.ToString();
+
+                var q = from s in db.Rata
+                        where s.FornitoreFattura == forn && s.NumeroFattura == Convert.ToDecimal(contFatt)
+                        select s.Scadenza;
+                ComboBox combo = (ComboBox)sender;
+                combo.DataSource = q.ToList();
+            }
+            
         }
     }
 

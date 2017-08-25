@@ -116,8 +116,6 @@ namespace DBProject
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox16 = new System.Windows.Forms.GroupBox();
-            this.textBox75 = new System.Windows.Forms.TextBox();
-            this.label103 = new System.Windows.Forms.Label();
             this.textBox76 = new System.Windows.Forms.TextBox();
             this.label104 = new System.Windows.Forms.Label();
             this.textBox78 = new System.Windows.Forms.TextBox();
@@ -149,8 +147,6 @@ namespace DBProject
             this.label105 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox18 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
             this.textBox17 = new System.Windows.Forms.TextBox();
             this.label111 = new System.Windows.Forms.Label();
             this.textBox79 = new System.Windows.Forms.TextBox();
@@ -211,10 +207,11 @@ namespace DBProject
             this.label47 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
             this.addPagamentoPanel = new System.Windows.Forms.Panel();
+            this.datePagamento = new System.Windows.Forms.DateTimePicker();
+            this.comboScadenza = new System.Windows.Forms.ComboBox();
             this.comboFornitore = new System.Windows.Forms.ComboBox();
             this.label126 = new System.Windows.Forms.Label();
             this.comboFattura = new System.Windows.Forms.ComboBox();
-            this.comboContratto = new System.Windows.Forms.ComboBox();
             this.textBox29 = new System.Windows.Forms.TextBox();
             this.label41 = new System.Windows.Forms.Label();
             this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
@@ -1190,7 +1187,7 @@ namespace DBProject
             this.submitClienteABtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitClienteABtn.BackColor = System.Drawing.Color.White;
             this.submitClienteABtn.Image = ((System.Drawing.Image)(resources.GetObject("submitClienteABtn.Image")));
-            this.submitClienteABtn.Location = new System.Drawing.Point(387, 395);
+            this.submitClienteABtn.Location = new System.Drawing.Point(387, 375);
             this.submitClienteABtn.Name = "submitClienteABtn";
             this.submitClienteABtn.Size = new System.Drawing.Size(46, 45);
             this.submitClienteABtn.TabIndex = 12;
@@ -1320,38 +1317,21 @@ namespace DBProject
             // groupBox16
             // 
             this.groupBox16.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.groupBox16.Controls.Add(this.textBox75);
-            this.groupBox16.Controls.Add(this.label103);
             this.groupBox16.Controls.Add(this.textBox76);
             this.groupBox16.Controls.Add(this.label104);
             this.groupBox16.Controls.Add(this.textBox78);
             this.groupBox16.Controls.Add(this.label110);
             this.groupBox16.Location = new System.Drawing.Point(429, 54);
             this.groupBox16.Name = "groupBox16";
-            this.groupBox16.Size = new System.Drawing.Size(360, 96);
+            this.groupBox16.Size = new System.Drawing.Size(360, 67);
             this.groupBox16.TabIndex = 9;
             this.groupBox16.TabStop = false;
             this.groupBox16.Text = "Recapiti";
             // 
-            // textBox75
-            // 
-            this.textBox75.Location = new System.Drawing.Point(176, 65);
-            this.textBox75.Name = "textBox75";
-            this.textBox75.Size = new System.Drawing.Size(181, 20);
-            this.textBox75.TabIndex = 11;
-            // 
-            // label103
-            // 
-            this.label103.AutoSize = true;
-            this.label103.Location = new System.Drawing.Point(23, 68);
-            this.label103.Name = "label103";
-            this.label103.Size = new System.Drawing.Size(46, 13);
-            this.label103.TabIndex = 21;
-            this.label103.Text = "Ulteriore";
-            // 
             // textBox76
             // 
             this.textBox76.Location = new System.Drawing.Point(176, 40);
+            this.textBox76.MaxLength = 30;
             this.textBox76.Name = "textBox76";
             this.textBox76.Size = new System.Drawing.Size(181, 20);
             this.textBox76.TabIndex = 10;
@@ -1361,13 +1341,14 @@ namespace DBProject
             this.label104.AutoSize = true;
             this.label104.Location = new System.Drawing.Point(23, 19);
             this.label104.Name = "label104";
-            this.label104.Size = new System.Drawing.Size(53, 13);
+            this.label104.Size = new System.Drawing.Size(49, 13);
             this.label104.TabIndex = 19;
-            this.label104.Text = "Principale";
+            this.label104.Text = "Telefono";
             // 
             // textBox78
             // 
             this.textBox78.Location = new System.Drawing.Point(176, 14);
+            this.textBox78.MaxLength = 12;
             this.textBox78.Name = "textBox78";
             this.textBox78.Size = new System.Drawing.Size(181, 20);
             this.textBox78.TabIndex = 9;
@@ -1377,9 +1358,9 @@ namespace DBProject
             this.label110.AutoSize = true;
             this.label110.Location = new System.Drawing.Point(23, 43);
             this.label110.Name = "label110";
-            this.label110.Size = new System.Drawing.Size(61, 13);
+            this.label110.Size = new System.Drawing.Size(32, 13);
             this.label110.TabIndex = 18;
-            this.label110.Text = "Secondario";
+            this.label110.Text = "Email";
             // 
             // groupBox12
             // 
@@ -1390,7 +1371,7 @@ namespace DBProject
             this.groupBox12.Controls.Add(this.textBox73);
             this.groupBox12.Controls.Add(this.label101);
             this.groupBox12.Controls.Add(this.label102);
-            this.groupBox12.Location = new System.Drawing.Point(46, 199);
+            this.groupBox12.Location = new System.Drawing.Point(46, 200);
             this.groupBox12.Name = "groupBox12";
             this.groupBox12.Size = new System.Drawing.Size(360, 96);
             this.groupBox12.TabIndex = 5;
@@ -1407,6 +1388,7 @@ namespace DBProject
             // textBox23
             // 
             this.textBox23.Location = new System.Drawing.Point(176, 65);
+            this.textBox23.MaxLength = 30;
             this.textBox23.Name = "textBox23";
             this.textBox23.Size = new System.Drawing.Size(181, 20);
             this.textBox23.TabIndex = 8;
@@ -1423,6 +1405,7 @@ namespace DBProject
             // textBox73
             // 
             this.textBox73.Location = new System.Drawing.Point(176, 40);
+            this.textBox73.MaxLength = 30;
             this.textBox73.Name = "textBox73";
             this.textBox73.Size = new System.Drawing.Size(181, 20);
             this.textBox73.TabIndex = 7;
@@ -1454,7 +1437,7 @@ namespace DBProject
             this.groupBox15.Controls.Add(this.label23);
             this.groupBox15.Controls.Add(this.textBox18);
             this.groupBox15.Controls.Add(this.label24);
-            this.groupBox15.Location = new System.Drawing.Point(46, 54);
+            this.groupBox15.Location = new System.Drawing.Point(46, 52);
             this.groupBox15.Name = "groupBox15";
             this.groupBox15.Size = new System.Drawing.Size(360, 96);
             this.groupBox15.TabIndex = 1;
@@ -1464,6 +1447,7 @@ namespace DBProject
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(176, 65);
+            this.textBox2.MaxLength = 20;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(181, 20);
             this.textBox2.TabIndex = 4;
@@ -1480,6 +1464,7 @@ namespace DBProject
             // textBox14
             // 
             this.textBox14.Location = new System.Drawing.Point(176, 40);
+            this.textBox14.MaxLength = 20;
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(181, 20);
             this.textBox14.TabIndex = 3;
@@ -1496,6 +1481,7 @@ namespace DBProject
             // textBox18
             // 
             this.textBox18.Location = new System.Drawing.Point(176, 14);
+            this.textBox18.MaxLength = 16;
             this.textBox18.Name = "textBox18";
             this.textBox18.Size = new System.Drawing.Size(181, 20);
             this.textBox18.TabIndex = 2;
@@ -1520,7 +1506,7 @@ namespace DBProject
             this.groupBox17.Controls.Add(this.label113);
             this.groupBox17.Controls.Add(this.label114);
             this.groupBox17.Controls.Add(this.label115);
-            this.groupBox17.Location = new System.Drawing.Point(430, 199);
+            this.groupBox17.Location = new System.Drawing.Point(430, 198);
             this.groupBox17.Name = "groupBox17";
             this.groupBox17.Size = new System.Drawing.Size(360, 127);
             this.groupBox17.TabIndex = 12;
@@ -1530,6 +1516,7 @@ namespace DBProject
             // textBox85
             // 
             this.textBox85.Location = new System.Drawing.Point(176, 40);
+            this.textBox85.MaxLength = 30;
             this.textBox85.Name = "textBox85";
             this.textBox85.Size = new System.Drawing.Size(181, 20);
             this.textBox85.TabIndex = 13;
@@ -1546,6 +1533,7 @@ namespace DBProject
             // textBox86
             // 
             this.textBox86.Location = new System.Drawing.Point(176, 67);
+            this.textBox86.MaxLength = 30;
             this.textBox86.Name = "textBox86";
             this.textBox86.Size = new System.Drawing.Size(181, 20);
             this.textBox86.TabIndex = 14;
@@ -1553,6 +1541,7 @@ namespace DBProject
             // textBox87
             // 
             this.textBox87.Location = new System.Drawing.Point(176, 14);
+            this.textBox87.MaxLength = 50;
             this.textBox87.Name = "textBox87";
             this.textBox87.Size = new System.Drawing.Size(181, 20);
             this.textBox87.TabIndex = 12;
@@ -1560,6 +1549,7 @@ namespace DBProject
             // textBox88
             // 
             this.textBox88.Location = new System.Drawing.Point(175, 92);
+            this.textBox88.MaxLength = 4;
             this.textBox88.Name = "textBox88";
             this.textBox88.Size = new System.Drawing.Size(78, 20);
             this.textBox88.TabIndex = 15;
@@ -1625,38 +1615,21 @@ namespace DBProject
             // groupBox18
             // 
             this.groupBox18.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.groupBox18.Controls.Add(this.textBox1);
-            this.groupBox18.Controls.Add(this.label22);
             this.groupBox18.Controls.Add(this.textBox17);
             this.groupBox18.Controls.Add(this.label111);
             this.groupBox18.Controls.Add(this.textBox79);
             this.groupBox18.Controls.Add(this.label116);
-            this.groupBox18.Location = new System.Drawing.Point(429, 70);
+            this.groupBox18.Location = new System.Drawing.Point(429, 50);
             this.groupBox18.Name = "groupBox18";
-            this.groupBox18.Size = new System.Drawing.Size(360, 96);
+            this.groupBox18.Size = new System.Drawing.Size(360, 70);
             this.groupBox18.TabIndex = 5;
             this.groupBox18.TabStop = false;
             this.groupBox18.Text = "Recapiti";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(176, 65);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(181, 20);
-            this.textBox1.TabIndex = 7;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(23, 68);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(46, 13);
-            this.label22.TabIndex = 21;
-            this.label22.Text = "Ulteriore";
-            // 
             // textBox17
             // 
             this.textBox17.Location = new System.Drawing.Point(176, 40);
+            this.textBox17.MaxLength = 12;
             this.textBox17.Name = "textBox17";
             this.textBox17.Size = new System.Drawing.Size(181, 20);
             this.textBox17.TabIndex = 6;
@@ -1673,6 +1646,7 @@ namespace DBProject
             // textBox79
             // 
             this.textBox79.Location = new System.Drawing.Point(176, 14);
+            this.textBox79.MaxLength = 12;
             this.textBox79.Name = "textBox79";
             this.textBox79.Size = new System.Drawing.Size(181, 20);
             this.textBox79.TabIndex = 5;
@@ -1693,7 +1667,7 @@ namespace DBProject
             this.groupBox14.Controls.Add(this.label108);
             this.groupBox14.Controls.Add(this.textBox82);
             this.groupBox14.Controls.Add(this.label109);
-            this.groupBox14.Location = new System.Drawing.Point(46, 70);
+            this.groupBox14.Location = new System.Drawing.Point(46, 50);
             this.groupBox14.Name = "groupBox14";
             this.groupBox14.Size = new System.Drawing.Size(360, 67);
             this.groupBox14.TabIndex = 1;
@@ -1703,6 +1677,7 @@ namespace DBProject
             // textBox80
             // 
             this.textBox80.Location = new System.Drawing.Point(176, 40);
+            this.textBox80.MaxLength = 50;
             this.textBox80.Name = "textBox80";
             this.textBox80.Size = new System.Drawing.Size(181, 20);
             this.textBox80.TabIndex = 2;
@@ -1719,6 +1694,7 @@ namespace DBProject
             // textBox82
             // 
             this.textBox82.Location = new System.Drawing.Point(176, 14);
+            this.textBox82.MaxLength = 11;
             this.textBox82.Name = "textBox82";
             this.textBox82.Size = new System.Drawing.Size(181, 20);
             this.textBox82.TabIndex = 1;
@@ -1739,7 +1715,7 @@ namespace DBProject
             this.groupBox13.Controls.Add(this.label106);
             this.groupBox13.Controls.Add(this.textBox81);
             this.groupBox13.Controls.Add(this.label107);
-            this.groupBox13.Location = new System.Drawing.Point(46, 215);
+            this.groupBox13.Location = new System.Drawing.Point(46, 195);
             this.groupBox13.Name = "groupBox13";
             this.groupBox13.Size = new System.Drawing.Size(360, 67);
             this.groupBox13.TabIndex = 3;
@@ -1749,6 +1725,7 @@ namespace DBProject
             // textBox15
             // 
             this.textBox15.Location = new System.Drawing.Point(176, 40);
+            this.textBox15.MaxLength = 30;
             this.textBox15.Name = "textBox15";
             this.textBox15.Size = new System.Drawing.Size(181, 20);
             this.textBox15.TabIndex = 4;
@@ -1765,6 +1742,7 @@ namespace DBProject
             // textBox81
             // 
             this.textBox81.Location = new System.Drawing.Point(176, 14);
+            this.textBox81.MaxLength = 30;
             this.textBox81.Name = "textBox81";
             this.textBox81.Size = new System.Drawing.Size(181, 20);
             this.textBox81.TabIndex = 3;
@@ -1789,7 +1767,7 @@ namespace DBProject
             this.groupBox3.Controls.Add(this.label15);
             this.groupBox3.Controls.Add(this.label16);
             this.groupBox3.Controls.Add(this.label30);
-            this.groupBox3.Location = new System.Drawing.Point(430, 215);
+            this.groupBox3.Location = new System.Drawing.Point(430, 195);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(360, 127);
             this.groupBox3.TabIndex = 8;
@@ -1799,6 +1777,7 @@ namespace DBProject
             // textBox28
             // 
             this.textBox28.Location = new System.Drawing.Point(176, 40);
+            this.textBox28.MaxLength = 30;
             this.textBox28.Name = "textBox28";
             this.textBox28.Size = new System.Drawing.Size(181, 20);
             this.textBox28.TabIndex = 9;
@@ -1815,6 +1794,7 @@ namespace DBProject
             // textBox30
             // 
             this.textBox30.Location = new System.Drawing.Point(176, 67);
+            this.textBox30.MaxLength = 30;
             this.textBox30.Name = "textBox30";
             this.textBox30.Size = new System.Drawing.Size(181, 20);
             this.textBox30.TabIndex = 10;
@@ -1822,6 +1802,7 @@ namespace DBProject
             // textBox31
             // 
             this.textBox31.Location = new System.Drawing.Point(176, 14);
+            this.textBox31.MaxLength = 50;
             this.textBox31.Name = "textBox31";
             this.textBox31.Size = new System.Drawing.Size(181, 20);
             this.textBox31.TabIndex = 8;
@@ -1829,6 +1810,7 @@ namespace DBProject
             // textBox32
             // 
             this.textBox32.Location = new System.Drawing.Point(175, 92);
+            this.textBox32.MaxLength = 4;
             this.textBox32.Name = "textBox32";
             this.textBox32.Size = new System.Drawing.Size(78, 20);
             this.textBox32.TabIndex = 11;
@@ -2239,11 +2221,12 @@ namespace DBProject
             this.addPagamentoPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.addPagamentoPanel.Controls.Add(this.datePagamento);
+            this.addPagamentoPanel.Controls.Add(this.comboScadenza);
             this.addPagamentoPanel.Controls.Add(this.comboFornitore);
             this.addPagamentoPanel.Controls.Add(this.label126);
             this.addPagamentoPanel.Controls.Add(this.comboFattura);
             this.addPagamentoPanel.Controls.Add(this.submitPagamentoBtn);
-            this.addPagamentoPanel.Controls.Add(this.comboContratto);
             this.addPagamentoPanel.Controls.Add(this.textBox29);
             this.addPagamentoPanel.Controls.Add(this.label41);
             this.addPagamentoPanel.Controls.Add(this.dateTimePicker4);
@@ -2254,6 +2237,27 @@ namespace DBProject
             this.addPagamentoPanel.Size = new System.Drawing.Size(836, 476);
             this.addPagamentoPanel.TabIndex = 23;
             this.addPagamentoPanel.VisibleChanged += new System.EventHandler(this.addPagamentoPanel_VisibleChanged);
+            // 
+            // datePagamento
+            // 
+            this.datePagamento.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.datePagamento.Location = new System.Drawing.Point(416, 309);
+            this.datePagamento.Name = "datePagamento";
+            this.datePagamento.Size = new System.Drawing.Size(183, 20);
+            this.datePagamento.TabIndex = 19;
+            // 
+            // comboScadenza
+            // 
+            this.comboScadenza.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboScadenza.DisplayMember = "Numero";
+            this.comboScadenza.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboScadenza.FormattingEnabled = true;
+            this.comboScadenza.Location = new System.Drawing.Point(415, 234);
+            this.comboScadenza.Name = "comboScadenza";
+            this.comboScadenza.Size = new System.Drawing.Size(185, 21);
+            this.comboScadenza.TabIndex = 17;
+            this.comboScadenza.ValueMember = "Numero";
+            this.comboScadenza.DropDown += new System.EventHandler(this.comboScadenza_DropDown);
             // 
             // comboFornitore
             // 
@@ -2284,23 +2288,12 @@ namespace DBProject
             this.comboFattura.DisplayMember = "Numero";
             this.comboFattura.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboFattura.FormattingEnabled = true;
-            this.comboFattura.Location = new System.Drawing.Point(414, 160);
+            this.comboFattura.Location = new System.Drawing.Point(415, 161);
             this.comboFattura.Name = "comboFattura";
             this.comboFattura.Size = new System.Drawing.Size(186, 21);
             this.comboFattura.TabIndex = 14;
             this.comboFattura.ValueMember = "Numero";
             this.comboFattura.DropDown += new System.EventHandler(this.comboFattura_DropDown);
-            // 
-            // comboContratto
-            // 
-            this.comboContratto.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboContratto.DisplayMember = "Numero";
-            this.comboContratto.FormattingEnabled = true;
-            this.comboContratto.Location = new System.Drawing.Point(414, 160);
-            this.comboContratto.Name = "comboContratto";
-            this.comboContratto.Size = new System.Drawing.Size(186, 21);
-            this.comboContratto.TabIndex = 1;
-            this.comboContratto.ValueMember = "Numero";
             // 
             // textBox29
             // 
@@ -2323,9 +2316,9 @@ namespace DBProject
             // dateTimePicker4
             // 
             this.dateTimePicker4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePicker4.Location = new System.Drawing.Point(416, 234);
+            this.dateTimePicker4.Location = new System.Drawing.Point(415, 234);
             this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(183, 20);
+            this.dateTimePicker4.Size = new System.Drawing.Size(185, 20);
             this.dateTimePicker4.TabIndex = 2;
             // 
             // label39
@@ -3861,6 +3854,10 @@ namespace DBProject
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(839, 472);
+            this.Controls.Add(this.addClientePanel);
+            this.Controls.Add(this.addGiacenzaPanel);
+            this.Controls.Add(this.addPagamentoPanel);
+            this.Controls.Add(this.addEsecRevPanel);
             this.Controls.Add(this.addPerfPanel);
             this.Controls.Add(this.addTrasportoPanel);
             this.Controls.Add(this.addModalitaPagPanel);
@@ -3878,10 +3875,6 @@ namespace DBProject
             this.Controls.Add(this.addFornitorePanel);
             this.Controls.Add(this.addFatturaPanel);
             this.Controls.Add(this.addContrattoPanel);
-            this.Controls.Add(this.addClientePanel);
-            this.Controls.Add(this.addGiacenzaPanel);
-            this.Controls.Add(this.addPagamentoPanel);
-            this.Controls.Add(this.addEsecRevPanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EntryForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -4046,7 +4039,6 @@ namespace DBProject
         private DateTimePicker dateTimePicker4;
         private Label label39;
         private Label contratto_AddPagLabel;
-        private ComboBox comboContratto;
         private TextBox textBoxFornCitta;
         private TextBox textBoxFornProvincia;
         private Label label42;
@@ -4247,15 +4239,11 @@ namespace DBProject
         private Label label20;
         private DateTimePicker dateTimePicker10;
         private GroupBox groupBox16;
-        private TextBox textBox75;
-        private Label label103;
         private TextBox textBox76;
         private Label label104;
         private TextBox textBox78;
         private Label label110;
         private GroupBox groupBox18;
-        private TextBox textBox1;
-        private Label label22;
         private TextBox textBox17;
         private Label label111;
         private TextBox textBox79;
@@ -4312,5 +4300,7 @@ namespace DBProject
         private ComboBox comboBox9;
         private ComboBox comboBox30;
         private Label label123;
+        private ComboBox comboScadenza;
+        private DateTimePicker datePagamento;
     }
 }

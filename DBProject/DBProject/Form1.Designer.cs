@@ -39,7 +39,6 @@
             this.clientiPanel_backBtn = new System.Windows.Forms.Button();
             this.tabControl5 = new System.Windows.Forms.TabControl();
             this.Ordine = new System.Windows.Forms.TabPage();
-            this.addPerfOrdineBtn = new DBProject.EntryButton();
             this.comboBox12 = new System.Windows.Forms.ComboBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.dataGridView20 = new System.Windows.Forms.DataGridView();
@@ -51,7 +50,6 @@
             this.fornitoreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ordineBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dBProject1617DataSet = new DBProject.DBProject1617DataSet();
-            this.addOrdineBtn = new DBProject.EntryButton();
             this.Dettaglio_ordine_veicolo = new System.Windows.Forms.TabPage();
             this.comboBox13 = new System.Windows.Forms.ComboBox();
             this.textBox13 = new System.Windows.Forms.TextBox();
@@ -60,7 +58,6 @@
             this.prezzoFornitoreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ordineDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ordineVeicoloBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.addDettaglioVeicBtn = new DBProject.EntryButton();
             this.Dettaglio_ordine_ricambio = new System.Windows.Forms.TabPage();
             this.comboBox23 = new System.Windows.Forms.ComboBox();
             this.textBox23 = new System.Windows.Forms.TextBox();
@@ -70,7 +67,6 @@
             this.quantitàDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.prezzoUnitarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ordineRicambioBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.addDettaglioRicBtn = new DBProject.EntryButton();
             this.ordiniPanel = new System.Windows.Forms.Panel();
             this.tabControl4 = new System.Windows.Forms.TabControl();
             this.Veicolo_in_catalogo = new System.Windows.Forms.TabPage();
@@ -93,7 +89,6 @@
             this.nomeModelloDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.annoModelloDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.veicoloCatalogoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.addVeicoloBtn = new DBProject.EntryButton();
             this.Modello_veicolo = new System.Windows.Forms.TabPage();
             this.comboBox11 = new System.Windows.Forms.ComboBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
@@ -102,7 +97,6 @@
             this.annoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fornitoreDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.modelloVeicoloBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.addModelloBtn = new DBProject.EntryButton();
             this.Optional = new System.Windows.Forms.TabPage();
             this.comboBox15 = new System.Windows.Forms.ComboBox();
             this.textBox15 = new System.Windows.Forms.TextBox();
@@ -112,7 +106,6 @@
             this.descrizioneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.prezzoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.optionalBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.addOptionalBtn = new DBProject.EntryButton();
             this.Veicolo_venduto = new System.Windows.Forms.TabPage();
             this.comboBox16 = new System.Windows.Forms.ComboBox();
             this.textBox16 = new System.Windows.Forms.TextBox();
@@ -122,7 +115,6 @@
             this.contrattoDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.veicoloCatalogoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.veicoloVendutoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.addVenditaBtn = new DBProject.EntryButton();
             this.Revisione = new System.Windows.Forms.TabPage();
             this.dataGridView22 = new System.Windows.Forms.DataGridView();
             this.veicoloVendutoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -132,8 +124,6 @@
             this.revisioneBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.comboBox17 = new System.Windows.Forms.ComboBox();
             this.textBox17 = new System.Windows.Forms.TextBox();
-            this.addEsecRevBtn = new DBProject.EntryButton();
-            this.addRevisioneBtn = new DBProject.EntryButton();
             this.Optional_supportato = new System.Windows.Forms.TabPage();
             this.comboBox18 = new System.Windows.Forms.ComboBox();
             this.textBox18 = new System.Windows.Forms.TextBox();
@@ -141,7 +131,6 @@
             this.veicoloCatalogoDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.optionalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.supportoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.entryButton10 = new DBProject.EntryButton();
             this.Optional_in_veicolo_venduto = new System.Windows.Forms.TabPage();
             this.comboBox25 = new System.Windows.Forms.ComboBox();
             this.textBox25 = new System.Windows.Forms.TextBox();
@@ -149,7 +138,6 @@
             this.optionalDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.veicoloDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dotazioneBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.addOptToVeicVend_Btn = new DBProject.EntryButton();
             this.veicoliPanel = new System.Windows.Forms.Panel();
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.Corriere = new System.Windows.Forms.TabPage();
@@ -167,7 +155,6 @@
             this.indirizzoEmail1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.indirizzoEmail2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.corriereBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.entryButton3 = new DBProject.EntryButton();
             this.Trasporto = new System.Windows.Forms.TabPage();
             this.dataGridViewTrasporti = new System.Windows.Forms.DataGridView();
             this.codiceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -181,8 +168,6 @@
             this.trasportoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.comboBoxTrasporti = new System.Windows.Forms.ComboBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
-            this.addPerfTraspBtn = new DBProject.EntryButton();
-            this.addTrasportoBtn = new DBProject.EntryButton();
             this.corrieriPanel = new System.Windows.Forms.Panel();
             this.corrieriBtn = new System.Windows.Forms.Button();
             this.ordiniBtn = new System.Windows.Forms.Button();
@@ -202,7 +187,6 @@
             this.dataDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.importoComplessivoDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.riparazioneBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.addRiparazioneBtn = new DBProject.EntryButton();
             this.Dettaglio_riparazione = new System.Windows.Forms.TabPage();
             this.comboBox20 = new System.Windows.Forms.ComboBox();
             this.textBox20 = new System.Windows.Forms.TextBox();
@@ -212,7 +196,6 @@
             this.numeroDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quantitàDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.utilizzoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.addDettaglioBtn = new DBProject.EntryButton();
             this.Ricambio = new System.Windows.Forms.TabPage();
             this.comboBox21 = new System.Windows.Forms.ComboBox();
             this.textBox21 = new System.Windows.Forms.TextBox();
@@ -224,7 +207,6 @@
             this.tipoRicambioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fornitoreDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ricambioBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.addRicambioBtn = new DBProject.EntryButton();
             this.Giacenza = new System.Windows.Forms.TabPage();
             this.dataGridView12 = new System.Windows.Forms.DataGridView();
             this.ricambioDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -235,7 +217,6 @@
             this.giacenzaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.comboBox22 = new System.Windows.Forms.ComboBox();
             this.textBox22 = new System.Windows.Forms.TextBox();
-            this.addGiacenzaBtn = new DBProject.EntryButton();
             this.Ricambio_veicolo = new System.Windows.Forms.TabPage();
             this.comboBox7 = new System.Windows.Forms.ComboBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
@@ -243,7 +224,6 @@
             this.veicoloCatalogoDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ricambioDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.referenzaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.addRicVeicBtn = new DBProject.EntryButton();
             this.officinaPanel = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -265,7 +245,6 @@
             this.provinciaDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cAPDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fornitoreBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.addFornitoreBtn = new DBProject.EntryButton();
             this.Fattura = new System.Windows.Forms.TabPage();
             this.dataGridViewFatt = new System.Windows.Forms.DataGridView();
             this.fornitoreDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -278,9 +257,7 @@
             this.fatturaAcquistoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.comboBoxFatture = new System.Windows.Forms.ComboBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.addFatturaBtn = new DBProject.EntryButton();
             this.Pagamento_fornitore = new System.Windows.Forms.TabPage();
-            this.entryButton1 = new DBProject.EntryButton();
             this.dataGridViewPag = new System.Windows.Forms.DataGridView();
             this.fornitoreFatturaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.numeroFatturaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -290,7 +267,6 @@
             this.rataBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.comboBoxPagamenti = new System.Windows.Forms.ComboBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.addPagFornBtn = new DBProject.EntryButton();
             this.Modalita_pagamento_fornitore = new System.Windows.Forms.TabPage();
             this.dataGridViewModPag = new System.Windows.Forms.DataGridView();
             this.fornitoreDataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -302,7 +278,6 @@
             this.modalitàPagamentoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.comboBoxModPag = new System.Windows.Forms.ComboBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.addModPagBtn = new DBProject.EntryButton();
             this.fornitoriPanel = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Cliente = new System.Windows.Forms.TabPage();
@@ -328,7 +303,6 @@
             this.provinciaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cAPDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.addClienteBtn = new DBProject.EntryButton();
             this.Contratto = new System.Windows.Forms.TabPage();
             this.comboBox24 = new System.Windows.Forms.ComboBox();
             this.textBox24 = new System.Windows.Forms.TextBox();
@@ -340,7 +314,6 @@
             this.modalitàPagamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contrattoVenditaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.addContrattoBtn = new DBProject.EntryButton();
             this.Pagamento = new System.Windows.Forms.TabPage();
             this.comboBox9 = new System.Windows.Forms.ComboBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
@@ -350,7 +323,6 @@
             this.importoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataPagamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.rataClienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.addPagamBtn = new DBProject.EntryButton();
             this.Modalita_di_pagamento = new System.Windows.Forms.TabPage();
             this.comboBox10 = new System.Windows.Forms.ComboBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
@@ -361,7 +333,6 @@
             this.tassoInteresseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.numerRateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nostreModalitàPagamentoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.addNsModPag_Btn = new DBProject.EntryButton();
             this.clientiPanel = new System.Windows.Forms.Panel();
             this.corriereTableAdapter = new DBProject.DBProject1617DataSetTableAdapters.CorriereTableAdapter();
             this.trasportoTableAdapter = new DBProject.DBProject1617DataSetTableAdapters.TrasportoTableAdapter();
@@ -388,6 +359,35 @@
             this.fatturaAcquistoTableAdapter = new DBProject.DBProject1617DataSetTableAdapters.FatturaAcquistoTableAdapter();
             this.rataTableAdapter = new DBProject.DBProject1617DataSetTableAdapters.RataTableAdapter();
             this.modalitàPagamentoTableAdapter = new DBProject.DBProject1617DataSetTableAdapters.ModalitàPagamentoTableAdapter();
+            this.addFornitoreBtn = new DBProject.EntryButton();
+            this.addFatturaBtn = new DBProject.EntryButton();
+            this.entryButton1 = new DBProject.EntryButton();
+            this.addPagFornBtn = new DBProject.EntryButton();
+            this.addModPagBtn = new DBProject.EntryButton();
+            this.entryButton3 = new DBProject.EntryButton();
+            this.addPerfTraspBtn = new DBProject.EntryButton();
+            this.addTrasportoBtn = new DBProject.EntryButton();
+            this.addClienteBtn = new DBProject.EntryButton();
+            this.addContrattoBtn = new DBProject.EntryButton();
+            this.addPagamBtn = new DBProject.EntryButton();
+            this.addNsModPag_Btn = new DBProject.EntryButton();
+            this.addPerfOrdineBtn = new DBProject.EntryButton();
+            this.addOrdineBtn = new DBProject.EntryButton();
+            this.addDettaglioVeicBtn = new DBProject.EntryButton();
+            this.addDettaglioRicBtn = new DBProject.EntryButton();
+            this.addVeicoloBtn = new DBProject.EntryButton();
+            this.addModelloBtn = new DBProject.EntryButton();
+            this.addOptionalBtn = new DBProject.EntryButton();
+            this.addVenditaBtn = new DBProject.EntryButton();
+            this.addEsecRevBtn = new DBProject.EntryButton();
+            this.addRevisioneBtn = new DBProject.EntryButton();
+            this.entryButton10 = new DBProject.EntryButton();
+            this.addOptToVeicVend_Btn = new DBProject.EntryButton();
+            this.addRiparazioneBtn = new DBProject.EntryButton();
+            this.addDettaglioBtn = new DBProject.EntryButton();
+            this.addRicambioBtn = new DBProject.EntryButton();
+            this.addGiacenzaBtn = new DBProject.EntryButton();
+            this.addRicVeicBtn = new DBProject.EntryButton();
             this.tabControl5.SuspendLayout();
             this.Ordine.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView20)).BeginInit();
@@ -589,19 +589,6 @@
             this.Ordine.Text = "Ordini";
             this.Ordine.UseVisualStyleBackColor = true;
             // 
-            // addPerfOrdineBtn
-            // 
-            this.addPerfOrdineBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.addPerfOrdineBtn.EntryPanel = DBProject.Entry.PerfOrdine;
-            this.addPerfOrdineBtn.FormName = "Aggiunta perfezionamento ordine";
-            this.addPerfOrdineBtn.Location = new System.Drawing.Point(514, 125);
-            this.addPerfOrdineBtn.Name = "addPerfOrdineBtn";
-            this.addPerfOrdineBtn.Size = new System.Drawing.Size(104, 36);
-            this.addPerfOrdineBtn.TabIndex = 18;
-            this.addPerfOrdineBtn.Text = "Aggiungi\r\nperfezionamento";
-            this.addPerfOrdineBtn.UseVisualStyleBackColor = true;
-            this.addPerfOrdineBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
-            // 
             // comboBox12
             // 
             this.comboBox12.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
@@ -707,19 +694,6 @@
             this.dBProject1617DataSet.DataSetName = "DBProject1617DataSet";
             this.dBProject1617DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // addOrdineBtn
-            // 
-            this.addOrdineBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.addOrdineBtn.EntryPanel = DBProject.Entry.Ordine;
-            this.addOrdineBtn.FormName = "Aggiunta ordine";
-            this.addOrdineBtn.Location = new System.Drawing.Point(514, 92);
-            this.addOrdineBtn.Name = "addOrdineBtn";
-            this.addOrdineBtn.Size = new System.Drawing.Size(104, 23);
-            this.addOrdineBtn.TabIndex = 12;
-            this.addOrdineBtn.Text = "Nuova ordine";
-            this.addOrdineBtn.UseVisualStyleBackColor = true;
-            this.addOrdineBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
-            // 
             // Dettaglio_ordine_veicolo
             // 
             this.Dettaglio_ordine_veicolo.Controls.Add(this.comboBox13);
@@ -803,19 +777,6 @@
             // 
             this.ordineVeicoloBindingSource.DataMember = "OrdineVeicolo";
             this.ordineVeicoloBindingSource.DataSource = this.dBProject1617DataSet;
-            // 
-            // addDettaglioVeicBtn
-            // 
-            this.addDettaglioVeicBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.addDettaglioVeicBtn.EntryPanel = DBProject.Entry.DetVeic;
-            this.addDettaglioVeicBtn.FormName = "Aggiunta dettaglio veicolo";
-            this.addDettaglioVeicBtn.Location = new System.Drawing.Point(504, 86);
-            this.addDettaglioVeicBtn.Name = "addDettaglioVeicBtn";
-            this.addDettaglioVeicBtn.Size = new System.Drawing.Size(104, 23);
-            this.addDettaglioVeicBtn.TabIndex = 17;
-            this.addDettaglioVeicBtn.Text = "Nuovo dettaglio";
-            this.addDettaglioVeicBtn.UseVisualStyleBackColor = true;
-            this.addDettaglioVeicBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
             // 
             // Dettaglio_ordine_ricambio
             // 
@@ -908,19 +869,6 @@
             // 
             this.ordineRicambioBindingSource.DataMember = "OrdineRicambio";
             this.ordineRicambioBindingSource.DataSource = this.dBProject1617DataSet;
-            // 
-            // addDettaglioRicBtn
-            // 
-            this.addDettaglioRicBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.addDettaglioRicBtn.EntryPanel = DBProject.Entry.DetRic;
-            this.addDettaglioRicBtn.FormName = "Aggiunta dettaglio ricambio";
-            this.addDettaglioRicBtn.Location = new System.Drawing.Point(504, 86);
-            this.addDettaglioRicBtn.Name = "addDettaglioRicBtn";
-            this.addDettaglioRicBtn.Size = new System.Drawing.Size(104, 23);
-            this.addDettaglioRicBtn.TabIndex = 17;
-            this.addDettaglioRicBtn.Text = "Nuova dettaglio";
-            this.addDettaglioRicBtn.UseVisualStyleBackColor = true;
-            this.addDettaglioRicBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
             // 
             // ordiniPanel
             // 
@@ -1147,19 +1095,6 @@
             this.veicoloCatalogoBindingSource.DataMember = "VeicoloCatalogo";
             this.veicoloCatalogoBindingSource.DataSource = this.dBProject1617DataSet;
             // 
-            // addVeicoloBtn
-            // 
-            this.addVeicoloBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.addVeicoloBtn.EntryPanel = DBProject.Entry.Veicolo;
-            this.addVeicoloBtn.FormName = "Aggiunta veicolo";
-            this.addVeicoloBtn.Location = new System.Drawing.Point(513, 90);
-            this.addVeicoloBtn.Name = "addVeicoloBtn";
-            this.addVeicoloBtn.Size = new System.Drawing.Size(104, 23);
-            this.addVeicoloBtn.TabIndex = 12;
-            this.addVeicoloBtn.Text = "Nuovo veicolo";
-            this.addVeicoloBtn.UseVisualStyleBackColor = true;
-            this.addVeicoloBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
-            // 
             // Modello_veicolo
             // 
             this.Modello_veicolo.Controls.Add(this.comboBox11);
@@ -1243,19 +1178,6 @@
             // 
             this.modelloVeicoloBindingSource.DataMember = "ModelloVeicolo";
             this.modelloVeicoloBindingSource.DataSource = this.dBProject1617DataSet;
-            // 
-            // addModelloBtn
-            // 
-            this.addModelloBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.addModelloBtn.EntryPanel = DBProject.Entry.Modello;
-            this.addModelloBtn.FormName = "Aggiunta modello";
-            this.addModelloBtn.Location = new System.Drawing.Point(503, 83);
-            this.addModelloBtn.Name = "addModelloBtn";
-            this.addModelloBtn.Size = new System.Drawing.Size(104, 23);
-            this.addModelloBtn.TabIndex = 12;
-            this.addModelloBtn.Text = "Nuovo modello";
-            this.addModelloBtn.UseVisualStyleBackColor = true;
-            this.addModelloBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
             // 
             // Optional
             // 
@@ -1350,19 +1272,6 @@
             this.optionalBindingSource.DataMember = "Optional";
             this.optionalBindingSource.DataSource = this.dBProject1617DataSet;
             // 
-            // addOptionalBtn
-            // 
-            this.addOptionalBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.addOptionalBtn.EntryPanel = DBProject.Entry.Optional;
-            this.addOptionalBtn.FormName = "Aggiunta optional";
-            this.addOptionalBtn.Location = new System.Drawing.Point(503, 83);
-            this.addOptionalBtn.Name = "addOptionalBtn";
-            this.addOptionalBtn.Size = new System.Drawing.Size(104, 23);
-            this.addOptionalBtn.TabIndex = 12;
-            this.addOptionalBtn.Text = "Nuovo optional";
-            this.addOptionalBtn.UseVisualStyleBackColor = true;
-            this.addOptionalBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
-            // 
             // Veicolo_venduto
             // 
             this.Veicolo_venduto.Controls.Add(this.comboBox16);
@@ -1455,19 +1364,6 @@
             // 
             this.veicoloVendutoBindingSource.DataMember = "VeicoloVenduto";
             this.veicoloVendutoBindingSource.DataSource = this.dBProject1617DataSet;
-            // 
-            // addVenditaBtn
-            // 
-            this.addVenditaBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.addVenditaBtn.EntryPanel = DBProject.Entry.Vendita;
-            this.addVenditaBtn.FormName = "Aggiunta vendita";
-            this.addVenditaBtn.Location = new System.Drawing.Point(503, 83);
-            this.addVenditaBtn.Name = "addVenditaBtn";
-            this.addVenditaBtn.Size = new System.Drawing.Size(104, 23);
-            this.addVenditaBtn.TabIndex = 7;
-            this.addVenditaBtn.Text = "Nuova vendita";
-            this.addVenditaBtn.UseVisualStyleBackColor = true;
-            this.addVenditaBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
             // 
             // Revisione
             // 
@@ -1563,32 +1459,6 @@
             this.textBox17.TabIndex = 19;
             this.textBox17.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
-            // addEsecRevBtn
-            // 
-            this.addEsecRevBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.addEsecRevBtn.EntryPanel = DBProject.Entry.EsecRev;
-            this.addEsecRevBtn.FormName = "Aggiunta esecuzione revisione";
-            this.addEsecRevBtn.Location = new System.Drawing.Point(500, 108);
-            this.addEsecRevBtn.Name = "addEsecRevBtn";
-            this.addEsecRevBtn.Size = new System.Drawing.Size(116, 23);
-            this.addEsecRevBtn.TabIndex = 15;
-            this.addEsecRevBtn.Text = "Aggiungi esecuzione";
-            this.addEsecRevBtn.UseVisualStyleBackColor = true;
-            this.addEsecRevBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
-            // 
-            // addRevisioneBtn
-            // 
-            this.addRevisioneBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.addRevisioneBtn.EntryPanel = DBProject.Entry.Revisione;
-            this.addRevisioneBtn.FormName = "Aggiunta nuova revisione";
-            this.addRevisioneBtn.Location = new System.Drawing.Point(500, 63);
-            this.addRevisioneBtn.Name = "addRevisioneBtn";
-            this.addRevisioneBtn.Size = new System.Drawing.Size(116, 23);
-            this.addRevisioneBtn.TabIndex = 10;
-            this.addRevisioneBtn.Text = "Nuova scadenza";
-            this.addRevisioneBtn.UseVisualStyleBackColor = true;
-            this.addRevisioneBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
-            // 
             // Optional_supportato
             // 
             this.Optional_supportato.Controls.Add(this.comboBox18);
@@ -1664,19 +1534,6 @@
             this.supportoBindingSource.DataMember = "Supporto";
             this.supportoBindingSource.DataSource = this.dBProject1617DataSet;
             // 
-            // entryButton10
-            // 
-            this.entryButton10.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.entryButton10.EntryPanel = DBProject.Entry.OptToVeic;
-            this.entryButton10.FormName = "Aggiunta optional";
-            this.entryButton10.Location = new System.Drawing.Point(506, 75);
-            this.entryButton10.Name = "entryButton10";
-            this.entryButton10.Size = new System.Drawing.Size(104, 39);
-            this.entryButton10.TabIndex = 21;
-            this.entryButton10.Text = "Aggiungi optional\r\na veicolo";
-            this.entryButton10.UseVisualStyleBackColor = true;
-            this.entryButton10.Click += new System.EventHandler(this.addInstanceBtn_Click);
-            // 
             // Optional_in_veicolo_venduto
             // 
             this.Optional_in_veicolo_venduto.Controls.Add(this.comboBox25);
@@ -1751,19 +1608,6 @@
             // 
             this.dotazioneBindingSource.DataMember = "Dotazione";
             this.dotazioneBindingSource.DataSource = this.dBProject1617DataSet;
-            // 
-            // addOptToVeicVend_Btn
-            // 
-            this.addOptToVeicVend_Btn.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.addOptToVeicVend_Btn.EntryPanel = DBProject.Entry.OptToVeicVend;
-            this.addOptToVeicVend_Btn.FormName = "Aggiunta optional";
-            this.addOptToVeicVend_Btn.Location = new System.Drawing.Point(506, 75);
-            this.addOptToVeicVend_Btn.Name = "addOptToVeicVend_Btn";
-            this.addOptToVeicVend_Btn.Size = new System.Drawing.Size(104, 37);
-            this.addOptToVeicVend_Btn.TabIndex = 22;
-            this.addOptToVeicVend_Btn.Text = "Aggiungi optional\r\na veicolo venduto";
-            this.addOptToVeicVend_Btn.UseVisualStyleBackColor = true;
-            this.addOptToVeicVend_Btn.Click += new System.EventHandler(this.addInstanceBtn_Click);
             // 
             // veicoliPanel
             // 
@@ -1939,19 +1783,6 @@
             this.corriereBindingSource.DataMember = "Corriere";
             this.corriereBindingSource.DataSource = this.dBProject1617DataSet;
             // 
-            // entryButton3
-            // 
-            this.entryButton3.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.entryButton3.EntryPanel = DBProject.Entry.Corriere;
-            this.entryButton3.FormName = "Aggiunta corriere";
-            this.entryButton3.Location = new System.Drawing.Point(515, 107);
-            this.entryButton3.Name = "entryButton3";
-            this.entryButton3.Size = new System.Drawing.Size(104, 23);
-            this.entryButton3.TabIndex = 7;
-            this.entryButton3.Text = "Nuovo corriere";
-            this.entryButton3.UseVisualStyleBackColor = true;
-            this.entryButton3.Click += new System.EventHandler(this.addInstanceBtn_Click);
-            // 
             // Trasporto
             // 
             this.Trasporto.Controls.Add(this.dataGridViewTrasporti);
@@ -2084,32 +1915,6 @@
             this.textBox6.Size = new System.Drawing.Size(207, 20);
             this.textBox6.TabIndex = 16;
             this.textBox6.TextChanged += new System.EventHandler(this.textBox_TextChanged);
-            // 
-            // addPerfTraspBtn
-            // 
-            this.addPerfTraspBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.addPerfTraspBtn.EntryPanel = DBProject.Entry.PerfTrasp;
-            this.addPerfTraspBtn.FormName = "Perfezionamento trasporto";
-            this.addPerfTraspBtn.Location = new System.Drawing.Point(504, 128);
-            this.addPerfTraspBtn.Name = "addPerfTraspBtn";
-            this.addPerfTraspBtn.Size = new System.Drawing.Size(104, 40);
-            this.addPerfTraspBtn.TabIndex = 19;
-            this.addPerfTraspBtn.Text = "Nuovo perfezionamento";
-            this.addPerfTraspBtn.UseVisualStyleBackColor = true;
-            this.addPerfTraspBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
-            // 
-            // addTrasportoBtn
-            // 
-            this.addTrasportoBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.addTrasportoBtn.EntryPanel = DBProject.Entry.Trasporto;
-            this.addTrasportoBtn.FormName = "Aggiunta trasporto";
-            this.addTrasportoBtn.Location = new System.Drawing.Point(504, 91);
-            this.addTrasportoBtn.Name = "addTrasportoBtn";
-            this.addTrasportoBtn.Size = new System.Drawing.Size(104, 23);
-            this.addTrasportoBtn.TabIndex = 15;
-            this.addTrasportoBtn.Text = "Nuovo trasporto";
-            this.addTrasportoBtn.UseVisualStyleBackColor = true;
-            this.addTrasportoBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
             // 
             // corrieriPanel
             // 
@@ -2326,19 +2131,6 @@
             this.riparazioneBindingSource.DataMember = "Riparazione";
             this.riparazioneBindingSource.DataSource = this.dBProject1617DataSet;
             // 
-            // addRiparazioneBtn
-            // 
-            this.addRiparazioneBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.addRiparazioneBtn.EntryPanel = DBProject.Entry.Riparazione;
-            this.addRiparazioneBtn.FormName = "Aggiunta riparazione";
-            this.addRiparazioneBtn.Location = new System.Drawing.Point(516, 113);
-            this.addRiparazioneBtn.Name = "addRiparazioneBtn";
-            this.addRiparazioneBtn.Size = new System.Drawing.Size(104, 23);
-            this.addRiparazioneBtn.TabIndex = 12;
-            this.addRiparazioneBtn.Text = "Nuova riparazione";
-            this.addRiparazioneBtn.UseVisualStyleBackColor = true;
-            this.addRiparazioneBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
-            // 
             // Dettaglio_riparazione
             // 
             this.Dettaglio_riparazione.Controls.Add(this.comboBox20);
@@ -2431,19 +2223,6 @@
             // 
             this.utilizzoBindingSource.DataMember = "Utilizzo";
             this.utilizzoBindingSource.DataSource = this.dBProject1617DataSet;
-            // 
-            // addDettaglioBtn
-            // 
-            this.addDettaglioBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.addDettaglioBtn.EntryPanel = DBProject.Entry.UtilizzoRicambioRip;
-            this.addDettaglioBtn.FormName = "Aggiunta dettaglio riparazione";
-            this.addDettaglioBtn.Location = new System.Drawing.Point(516, 113);
-            this.addDettaglioBtn.Name = "addDettaglioBtn";
-            this.addDettaglioBtn.Size = new System.Drawing.Size(104, 23);
-            this.addDettaglioBtn.TabIndex = 12;
-            this.addDettaglioBtn.Text = "Nuovo dettaglio";
-            this.addDettaglioBtn.UseVisualStyleBackColor = true;
-            this.addDettaglioBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
             // 
             // Ricambio
             // 
@@ -2557,19 +2336,6 @@
             this.ricambioBindingSource.DataMember = "Ricambio";
             this.ricambioBindingSource.DataSource = this.dBProject1617DataSet;
             // 
-            // addRicambioBtn
-            // 
-            this.addRicambioBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.addRicambioBtn.EntryPanel = DBProject.Entry.Ricambio;
-            this.addRicambioBtn.FormName = "Aggiunta ricambio";
-            this.addRicambioBtn.Location = new System.Drawing.Point(516, 113);
-            this.addRicambioBtn.Name = "addRicambioBtn";
-            this.addRicambioBtn.Size = new System.Drawing.Size(104, 23);
-            this.addRicambioBtn.TabIndex = 12;
-            this.addRicambioBtn.Text = "Nuovo ricambio";
-            this.addRicambioBtn.UseVisualStyleBackColor = true;
-            this.addRicambioBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
-            // 
             // Giacenza
             // 
             this.Giacenza.Controls.Add(this.dataGridView12);
@@ -2671,19 +2437,6 @@
             this.textBox22.TabIndex = 22;
             this.textBox22.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
-            // addGiacenzaBtn
-            // 
-            this.addGiacenzaBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.addGiacenzaBtn.EntryPanel = DBProject.Entry.Giacenza;
-            this.addGiacenzaBtn.FormName = "Aggiunta giacenza";
-            this.addGiacenzaBtn.Location = new System.Drawing.Point(516, 113);
-            this.addGiacenzaBtn.Name = "addGiacenzaBtn";
-            this.addGiacenzaBtn.Size = new System.Drawing.Size(104, 23);
-            this.addGiacenzaBtn.TabIndex = 7;
-            this.addGiacenzaBtn.Text = "Nuova giacenza";
-            this.addGiacenzaBtn.UseVisualStyleBackColor = true;
-            this.addGiacenzaBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
-            // 
             // Ricambio_veicolo
             // 
             this.Ricambio_veicolo.Controls.Add(this.comboBox7);
@@ -2758,19 +2511,6 @@
             // 
             this.referenzaBindingSource.DataMember = "Referenza";
             this.referenzaBindingSource.DataSource = this.dBProject1617DataSet;
-            // 
-            // addRicVeicBtn
-            // 
-            this.addRicVeicBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.addRicVeicBtn.EntryPanel = DBProject.Entry.RicVeic;
-            this.addRicVeicBtn.FormName = "Aggiunta ricambio-veicolo";
-            this.addRicVeicBtn.Location = new System.Drawing.Point(516, 104);
-            this.addRicVeicBtn.Name = "addRicVeicBtn";
-            this.addRicVeicBtn.Size = new System.Drawing.Size(104, 35);
-            this.addRicVeicBtn.TabIndex = 17;
-            this.addRicVeicBtn.Text = "Aggiungi ricambio-veicolo";
-            this.addRicVeicBtn.UseVisualStyleBackColor = true;
-            this.addRicVeicBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
             // 
             // officinaPanel
             // 
@@ -2986,19 +2726,6 @@
             this.fornitoreBindingSource.DataMember = "Fornitore";
             this.fornitoreBindingSource.DataSource = this.dBProject1617DataSet;
             // 
-            // addFornitoreBtn
-            // 
-            this.addFornitoreBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.addFornitoreBtn.EntryPanel = DBProject.Entry.Fornitore;
-            this.addFornitoreBtn.FormName = "Aggiunta fornitore";
-            this.addFornitoreBtn.Location = new System.Drawing.Point(517, 110);
-            this.addFornitoreBtn.Name = "addFornitoreBtn";
-            this.addFornitoreBtn.Size = new System.Drawing.Size(104, 23);
-            this.addFornitoreBtn.TabIndex = 2;
-            this.addFornitoreBtn.Text = "Nuovo fornitore";
-            this.addFornitoreBtn.UseVisualStyleBackColor = true;
-            this.addFornitoreBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
-            // 
             // Fattura
             // 
             this.Fattura.Controls.Add(this.dataGridViewFatt);
@@ -3118,19 +2845,6 @@
             this.textBox2.TabIndex = 8;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
-            // addFatturaBtn
-            // 
-            this.addFatturaBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.addFatturaBtn.EntryPanel = DBProject.Entry.Fattura;
-            this.addFatturaBtn.FormName = "Aggiunta fattura";
-            this.addFatturaBtn.Location = new System.Drawing.Point(507, 103);
-            this.addFatturaBtn.Name = "addFatturaBtn";
-            this.addFatturaBtn.Size = new System.Drawing.Size(104, 23);
-            this.addFatturaBtn.TabIndex = 5;
-            this.addFatturaBtn.Text = "Nuova fattura";
-            this.addFatturaBtn.UseVisualStyleBackColor = true;
-            this.addFatturaBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
-            // 
             // Pagamento_fornitore
             // 
             this.Pagamento_fornitore.Controls.Add(this.entryButton1);
@@ -3144,19 +2858,6 @@
             this.Pagamento_fornitore.TabIndex = 5;
             this.Pagamento_fornitore.Text = "Pagamenti";
             this.Pagamento_fornitore.UseVisualStyleBackColor = true;
-            // 
-            // entryButton1
-            // 
-            this.entryButton1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.entryButton1.EntryPanel = DBProject.Entry.PerPagForn;
-            this.entryButton1.FormName = "Perfeziona pagamento";
-            this.entryButton1.Location = new System.Drawing.Point(507, 148);
-            this.entryButton1.Name = "entryButton1";
-            this.entryButton1.Size = new System.Drawing.Size(104, 36);
-            this.entryButton1.TabIndex = 21;
-            this.entryButton1.Text = "Perfeziona pagamento";
-            this.entryButton1.UseVisualStyleBackColor = true;
-            this.entryButton1.Click += new System.EventHandler(this.addInstanceBtn_Click);
             // 
             // dataGridViewPag
             // 
@@ -3245,19 +2946,6 @@
             this.textBox3.Size = new System.Drawing.Size(207, 20);
             this.textBox3.TabIndex = 17;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox_TextChanged);
-            // 
-            // addPagFornBtn
-            // 
-            this.addPagFornBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.addPagFornBtn.EntryPanel = DBProject.Entry.PagVForn;
-            this.addPagFornBtn.FormName = "Aggiunta pagamento";
-            this.addPagFornBtn.Location = new System.Drawing.Point(507, 103);
-            this.addPagFornBtn.Name = "addPagFornBtn";
-            this.addPagFornBtn.Size = new System.Drawing.Size(104, 23);
-            this.addPagFornBtn.TabIndex = 15;
-            this.addPagFornBtn.Text = "Nuovo scadenza";
-            this.addPagFornBtn.UseVisualStyleBackColor = true;
-            this.addPagFornBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
             // 
             // Modalita_pagamento_fornitore
             // 
@@ -3370,19 +3058,6 @@
             this.textBox4.Size = new System.Drawing.Size(207, 20);
             this.textBox4.TabIndex = 8;
             this.textBox4.TextChanged += new System.EventHandler(this.textBox_TextChanged);
-            // 
-            // addModPagBtn
-            // 
-            this.addModPagBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.addModPagBtn.EntryPanel = DBProject.Entry.ModPag;
-            this.addModPagBtn.FormName = "Aggiunta modalità pagamento";
-            this.addModPagBtn.Location = new System.Drawing.Point(507, 103);
-            this.addModPagBtn.Name = "addModPagBtn";
-            this.addModPagBtn.Size = new System.Drawing.Size(104, 23);
-            this.addModPagBtn.TabIndex = 5;
-            this.addModPagBtn.Text = "Nuova modalità";
-            this.addModPagBtn.UseVisualStyleBackColor = true;
-            this.addModPagBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
             // 
             // fornitoriPanel
             // 
@@ -3613,19 +3288,6 @@
             this.clienteBindingSource.DataMember = "Cliente";
             this.clienteBindingSource.DataSource = this.dBProject1617DataSet;
             // 
-            // addClienteBtn
-            // 
-            this.addClienteBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.addClienteBtn.EntryPanel = DBProject.Entry.Cliente;
-            this.addClienteBtn.FormName = "Aggiunta cliente";
-            this.addClienteBtn.Location = new System.Drawing.Point(517, 112);
-            this.addClienteBtn.Name = "addClienteBtn";
-            this.addClienteBtn.Size = new System.Drawing.Size(104, 23);
-            this.addClienteBtn.TabIndex = 7;
-            this.addClienteBtn.Text = "Nuovo cliente";
-            this.addClienteBtn.UseVisualStyleBackColor = true;
-            this.addClienteBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
-            // 
             // Contratto
             // 
             this.Contratto.Controls.Add(this.comboBox24);
@@ -3737,19 +3399,6 @@
             this.contrattoVenditaBindingSource.DataMember = "ContrattoVendita";
             this.contrattoVenditaBindingSource.DataSource = this.dBProject1617DataSet;
             // 
-            // addContrattoBtn
-            // 
-            this.addContrattoBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.addContrattoBtn.EntryPanel = DBProject.Entry.Contratto;
-            this.addContrattoBtn.FormName = "Aggiunta contratto";
-            this.addContrattoBtn.Location = new System.Drawing.Point(507, 105);
-            this.addContrattoBtn.Name = "addContrattoBtn";
-            this.addContrattoBtn.Size = new System.Drawing.Size(104, 23);
-            this.addContrattoBtn.TabIndex = 12;
-            this.addContrattoBtn.Text = "Nuovo contratto";
-            this.addContrattoBtn.UseVisualStyleBackColor = true;
-            this.addContrattoBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
-            // 
             // Pagamento
             // 
             this.Pagamento.Controls.Add(this.comboBox9);
@@ -3841,19 +3490,6 @@
             // 
             this.rataClienteBindingSource.DataMember = "RataCliente";
             this.rataClienteBindingSource.DataSource = this.dBProject1617DataSet;
-            // 
-            // addPagamBtn
-            // 
-            this.addPagamBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.addPagamBtn.EntryPanel = DBProject.Entry.Pagamento;
-            this.addPagamBtn.FormName = "Aggiunta pagamento";
-            this.addPagamBtn.Location = new System.Drawing.Point(507, 105);
-            this.addPagamBtn.Name = "addPagamBtn";
-            this.addPagamBtn.Size = new System.Drawing.Size(104, 23);
-            this.addPagamBtn.TabIndex = 12;
-            this.addPagamBtn.Text = "Nuovo pagamento";
-            this.addPagamBtn.UseVisualStyleBackColor = true;
-            this.addPagamBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
             // 
             // Modalita_di_pagamento
             // 
@@ -3956,19 +3592,6 @@
             // 
             this.nostreModalitàPagamentoBindingSource.DataMember = "NostreModalitàPagamento";
             this.nostreModalitàPagamentoBindingSource.DataSource = this.dBProject1617DataSet;
-            // 
-            // addNsModPag_Btn
-            // 
-            this.addNsModPag_Btn.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.addNsModPag_Btn.EntryPanel = DBProject.Entry.NsModPag;
-            this.addNsModPag_Btn.FormName = "Aggiunta modalità pagamento";
-            this.addNsModPag_Btn.Location = new System.Drawing.Point(507, 105);
-            this.addNsModPag_Btn.Name = "addNsModPag_Btn";
-            this.addNsModPag_Btn.Size = new System.Drawing.Size(104, 23);
-            this.addNsModPag_Btn.TabIndex = 15;
-            this.addNsModPag_Btn.Text = "Nuova modalità";
-            this.addNsModPag_Btn.UseVisualStyleBackColor = true;
-            this.addNsModPag_Btn.Click += new System.EventHandler(this.addInstanceBtn_Click);
             // 
             // clientiPanel
             // 
@@ -4082,18 +3705,395 @@
             // 
             this.modalitàPagamentoTableAdapter.ClearBeforeFill = true;
             // 
+            // addFornitoreBtn
+            // 
+            this.addFornitoreBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.addFornitoreBtn.EntryPanel = DBProject.Entry.Fornitore;
+            this.addFornitoreBtn.FormName = "Aggiunta fornitore";
+            this.addFornitoreBtn.Location = new System.Drawing.Point(517, 110);
+            this.addFornitoreBtn.Name = "addFornitoreBtn";
+            this.addFornitoreBtn.Size = new System.Drawing.Size(104, 23);
+            this.addFornitoreBtn.TabIndex = 2;
+            this.addFornitoreBtn.Text = "Nuovo fornitore";
+            this.addFornitoreBtn.UseVisualStyleBackColor = true;
+            this.addFornitoreBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
+            // 
+            // addFatturaBtn
+            // 
+            this.addFatturaBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.addFatturaBtn.EntryPanel = DBProject.Entry.Fattura;
+            this.addFatturaBtn.FormName = "Aggiunta fattura";
+            this.addFatturaBtn.Location = new System.Drawing.Point(507, 103);
+            this.addFatturaBtn.Name = "addFatturaBtn";
+            this.addFatturaBtn.Size = new System.Drawing.Size(104, 23);
+            this.addFatturaBtn.TabIndex = 5;
+            this.addFatturaBtn.Text = "Nuova fattura";
+            this.addFatturaBtn.UseVisualStyleBackColor = true;
+            this.addFatturaBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
+            // 
+            // entryButton1
+            // 
+            this.entryButton1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.entryButton1.EntryPanel = DBProject.Entry.PerPagForn;
+            this.entryButton1.FormName = "Perfeziona pagamento";
+            this.entryButton1.Location = new System.Drawing.Point(507, 148);
+            this.entryButton1.Name = "entryButton1";
+            this.entryButton1.Size = new System.Drawing.Size(104, 36);
+            this.entryButton1.TabIndex = 21;
+            this.entryButton1.Text = "Perfeziona pagamento";
+            this.entryButton1.UseVisualStyleBackColor = true;
+            this.entryButton1.Click += new System.EventHandler(this.addInstanceBtn_Click);
+            // 
+            // addPagFornBtn
+            // 
+            this.addPagFornBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.addPagFornBtn.EntryPanel = DBProject.Entry.PagVForn;
+            this.addPagFornBtn.FormName = "Aggiunta pagamento";
+            this.addPagFornBtn.Location = new System.Drawing.Point(507, 103);
+            this.addPagFornBtn.Name = "addPagFornBtn";
+            this.addPagFornBtn.Size = new System.Drawing.Size(104, 23);
+            this.addPagFornBtn.TabIndex = 15;
+            this.addPagFornBtn.Text = "Nuovo scadenza";
+            this.addPagFornBtn.UseVisualStyleBackColor = true;
+            this.addPagFornBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
+            // 
+            // addModPagBtn
+            // 
+            this.addModPagBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.addModPagBtn.EntryPanel = DBProject.Entry.ModPag;
+            this.addModPagBtn.FormName = "Aggiunta modalità pagamento";
+            this.addModPagBtn.Location = new System.Drawing.Point(507, 103);
+            this.addModPagBtn.Name = "addModPagBtn";
+            this.addModPagBtn.Size = new System.Drawing.Size(104, 23);
+            this.addModPagBtn.TabIndex = 5;
+            this.addModPagBtn.Text = "Nuova modalità";
+            this.addModPagBtn.UseVisualStyleBackColor = true;
+            this.addModPagBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
+            // 
+            // entryButton3
+            // 
+            this.entryButton3.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.entryButton3.EntryPanel = DBProject.Entry.Corriere;
+            this.entryButton3.FormName = "Aggiunta corriere";
+            this.entryButton3.Location = new System.Drawing.Point(515, 107);
+            this.entryButton3.Name = "entryButton3";
+            this.entryButton3.Size = new System.Drawing.Size(104, 23);
+            this.entryButton3.TabIndex = 7;
+            this.entryButton3.Text = "Nuovo corriere";
+            this.entryButton3.UseVisualStyleBackColor = true;
+            this.entryButton3.Click += new System.EventHandler(this.addInstanceBtn_Click);
+            // 
+            // addPerfTraspBtn
+            // 
+            this.addPerfTraspBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.addPerfTraspBtn.EntryPanel = DBProject.Entry.PerfTrasp;
+            this.addPerfTraspBtn.FormName = "Perfezionamento trasporto";
+            this.addPerfTraspBtn.Location = new System.Drawing.Point(504, 128);
+            this.addPerfTraspBtn.Name = "addPerfTraspBtn";
+            this.addPerfTraspBtn.Size = new System.Drawing.Size(104, 40);
+            this.addPerfTraspBtn.TabIndex = 19;
+            this.addPerfTraspBtn.Text = "Nuovo perfezionamento";
+            this.addPerfTraspBtn.UseVisualStyleBackColor = true;
+            this.addPerfTraspBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
+            // 
+            // addTrasportoBtn
+            // 
+            this.addTrasportoBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.addTrasportoBtn.EntryPanel = DBProject.Entry.Trasporto;
+            this.addTrasportoBtn.FormName = "Aggiunta trasporto";
+            this.addTrasportoBtn.Location = new System.Drawing.Point(504, 91);
+            this.addTrasportoBtn.Name = "addTrasportoBtn";
+            this.addTrasportoBtn.Size = new System.Drawing.Size(104, 23);
+            this.addTrasportoBtn.TabIndex = 15;
+            this.addTrasportoBtn.Text = "Nuovo trasporto";
+            this.addTrasportoBtn.UseVisualStyleBackColor = true;
+            this.addTrasportoBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
+            // 
+            // addClienteBtn
+            // 
+            this.addClienteBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.addClienteBtn.EntryPanel = DBProject.Entry.Cliente;
+            this.addClienteBtn.FormName = "Aggiunta cliente";
+            this.addClienteBtn.Location = new System.Drawing.Point(517, 112);
+            this.addClienteBtn.Name = "addClienteBtn";
+            this.addClienteBtn.Size = new System.Drawing.Size(104, 23);
+            this.addClienteBtn.TabIndex = 7;
+            this.addClienteBtn.Text = "Nuovo cliente";
+            this.addClienteBtn.UseVisualStyleBackColor = true;
+            this.addClienteBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
+            // 
+            // addContrattoBtn
+            // 
+            this.addContrattoBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.addContrattoBtn.EntryPanel = DBProject.Entry.Contratto;
+            this.addContrattoBtn.FormName = "Aggiunta contratto";
+            this.addContrattoBtn.Location = new System.Drawing.Point(507, 105);
+            this.addContrattoBtn.Name = "addContrattoBtn";
+            this.addContrattoBtn.Size = new System.Drawing.Size(104, 23);
+            this.addContrattoBtn.TabIndex = 12;
+            this.addContrattoBtn.Text = "Nuovo contratto";
+            this.addContrattoBtn.UseVisualStyleBackColor = true;
+            this.addContrattoBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
+            // 
+            // addPagamBtn
+            // 
+            this.addPagamBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.addPagamBtn.EntryPanel = DBProject.Entry.Pagamento;
+            this.addPagamBtn.FormName = "Aggiunta pagamento";
+            this.addPagamBtn.Location = new System.Drawing.Point(507, 105);
+            this.addPagamBtn.Name = "addPagamBtn";
+            this.addPagamBtn.Size = new System.Drawing.Size(104, 23);
+            this.addPagamBtn.TabIndex = 12;
+            this.addPagamBtn.Text = "Nuovo pagamento";
+            this.addPagamBtn.UseVisualStyleBackColor = true;
+            this.addPagamBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
+            // 
+            // addNsModPag_Btn
+            // 
+            this.addNsModPag_Btn.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.addNsModPag_Btn.EntryPanel = DBProject.Entry.NsModPag;
+            this.addNsModPag_Btn.FormName = "Aggiunta modalità pagamento";
+            this.addNsModPag_Btn.Location = new System.Drawing.Point(507, 105);
+            this.addNsModPag_Btn.Name = "addNsModPag_Btn";
+            this.addNsModPag_Btn.Size = new System.Drawing.Size(104, 23);
+            this.addNsModPag_Btn.TabIndex = 15;
+            this.addNsModPag_Btn.Text = "Nuova modalità";
+            this.addNsModPag_Btn.UseVisualStyleBackColor = true;
+            this.addNsModPag_Btn.Click += new System.EventHandler(this.addInstanceBtn_Click);
+            // 
+            // addPerfOrdineBtn
+            // 
+            this.addPerfOrdineBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.addPerfOrdineBtn.EntryPanel = DBProject.Entry.PerfOrdine;
+            this.addPerfOrdineBtn.FormName = "Aggiunta perfezionamento ordine";
+            this.addPerfOrdineBtn.Location = new System.Drawing.Point(514, 125);
+            this.addPerfOrdineBtn.Name = "addPerfOrdineBtn";
+            this.addPerfOrdineBtn.Size = new System.Drawing.Size(104, 36);
+            this.addPerfOrdineBtn.TabIndex = 18;
+            this.addPerfOrdineBtn.Text = "Aggiungi\r\nperfezionamento";
+            this.addPerfOrdineBtn.UseVisualStyleBackColor = true;
+            this.addPerfOrdineBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
+            // 
+            // addOrdineBtn
+            // 
+            this.addOrdineBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.addOrdineBtn.EntryPanel = DBProject.Entry.Ordine;
+            this.addOrdineBtn.FormName = "Aggiunta ordine";
+            this.addOrdineBtn.Location = new System.Drawing.Point(514, 92);
+            this.addOrdineBtn.Name = "addOrdineBtn";
+            this.addOrdineBtn.Size = new System.Drawing.Size(104, 23);
+            this.addOrdineBtn.TabIndex = 12;
+            this.addOrdineBtn.Text = "Nuova ordine";
+            this.addOrdineBtn.UseVisualStyleBackColor = true;
+            this.addOrdineBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
+            // 
+            // addDettaglioVeicBtn
+            // 
+            this.addDettaglioVeicBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.addDettaglioVeicBtn.EntryPanel = DBProject.Entry.DetVeic;
+            this.addDettaglioVeicBtn.FormName = "Aggiunta dettaglio veicolo";
+            this.addDettaglioVeicBtn.Location = new System.Drawing.Point(504, 86);
+            this.addDettaglioVeicBtn.Name = "addDettaglioVeicBtn";
+            this.addDettaglioVeicBtn.Size = new System.Drawing.Size(104, 23);
+            this.addDettaglioVeicBtn.TabIndex = 17;
+            this.addDettaglioVeicBtn.Text = "Nuovo dettaglio";
+            this.addDettaglioVeicBtn.UseVisualStyleBackColor = true;
+            this.addDettaglioVeicBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
+            // 
+            // addDettaglioRicBtn
+            // 
+            this.addDettaglioRicBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.addDettaglioRicBtn.EntryPanel = DBProject.Entry.DetRic;
+            this.addDettaglioRicBtn.FormName = "Aggiunta dettaglio ricambio";
+            this.addDettaglioRicBtn.Location = new System.Drawing.Point(504, 86);
+            this.addDettaglioRicBtn.Name = "addDettaglioRicBtn";
+            this.addDettaglioRicBtn.Size = new System.Drawing.Size(104, 23);
+            this.addDettaglioRicBtn.TabIndex = 17;
+            this.addDettaglioRicBtn.Text = "Nuova dettaglio";
+            this.addDettaglioRicBtn.UseVisualStyleBackColor = true;
+            this.addDettaglioRicBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
+            // 
+            // addVeicoloBtn
+            // 
+            this.addVeicoloBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.addVeicoloBtn.EntryPanel = DBProject.Entry.Veicolo;
+            this.addVeicoloBtn.FormName = "Aggiunta veicolo";
+            this.addVeicoloBtn.Location = new System.Drawing.Point(513, 90);
+            this.addVeicoloBtn.Name = "addVeicoloBtn";
+            this.addVeicoloBtn.Size = new System.Drawing.Size(104, 23);
+            this.addVeicoloBtn.TabIndex = 12;
+            this.addVeicoloBtn.Text = "Nuovo veicolo";
+            this.addVeicoloBtn.UseVisualStyleBackColor = true;
+            this.addVeicoloBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
+            // 
+            // addModelloBtn
+            // 
+            this.addModelloBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.addModelloBtn.EntryPanel = DBProject.Entry.Modello;
+            this.addModelloBtn.FormName = "Aggiunta modello";
+            this.addModelloBtn.Location = new System.Drawing.Point(503, 83);
+            this.addModelloBtn.Name = "addModelloBtn";
+            this.addModelloBtn.Size = new System.Drawing.Size(104, 23);
+            this.addModelloBtn.TabIndex = 12;
+            this.addModelloBtn.Text = "Nuovo modello";
+            this.addModelloBtn.UseVisualStyleBackColor = true;
+            this.addModelloBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
+            // 
+            // addOptionalBtn
+            // 
+            this.addOptionalBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.addOptionalBtn.EntryPanel = DBProject.Entry.Optional;
+            this.addOptionalBtn.FormName = "Aggiunta optional";
+            this.addOptionalBtn.Location = new System.Drawing.Point(503, 83);
+            this.addOptionalBtn.Name = "addOptionalBtn";
+            this.addOptionalBtn.Size = new System.Drawing.Size(104, 23);
+            this.addOptionalBtn.TabIndex = 12;
+            this.addOptionalBtn.Text = "Nuovo optional";
+            this.addOptionalBtn.UseVisualStyleBackColor = true;
+            this.addOptionalBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
+            // 
+            // addVenditaBtn
+            // 
+            this.addVenditaBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.addVenditaBtn.EntryPanel = DBProject.Entry.Vendita;
+            this.addVenditaBtn.FormName = "Aggiunta vendita";
+            this.addVenditaBtn.Location = new System.Drawing.Point(503, 83);
+            this.addVenditaBtn.Name = "addVenditaBtn";
+            this.addVenditaBtn.Size = new System.Drawing.Size(104, 23);
+            this.addVenditaBtn.TabIndex = 7;
+            this.addVenditaBtn.Text = "Nuova vendita";
+            this.addVenditaBtn.UseVisualStyleBackColor = true;
+            this.addVenditaBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
+            // 
+            // addEsecRevBtn
+            // 
+            this.addEsecRevBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.addEsecRevBtn.EntryPanel = DBProject.Entry.EsecRev;
+            this.addEsecRevBtn.FormName = "Aggiunta esecuzione revisione";
+            this.addEsecRevBtn.Location = new System.Drawing.Point(500, 108);
+            this.addEsecRevBtn.Name = "addEsecRevBtn";
+            this.addEsecRevBtn.Size = new System.Drawing.Size(116, 23);
+            this.addEsecRevBtn.TabIndex = 15;
+            this.addEsecRevBtn.Text = "Aggiungi esecuzione";
+            this.addEsecRevBtn.UseVisualStyleBackColor = true;
+            this.addEsecRevBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
+            // 
+            // addRevisioneBtn
+            // 
+            this.addRevisioneBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.addRevisioneBtn.EntryPanel = DBProject.Entry.Revisione;
+            this.addRevisioneBtn.FormName = "Aggiunta nuova revisione";
+            this.addRevisioneBtn.Location = new System.Drawing.Point(500, 63);
+            this.addRevisioneBtn.Name = "addRevisioneBtn";
+            this.addRevisioneBtn.Size = new System.Drawing.Size(116, 23);
+            this.addRevisioneBtn.TabIndex = 10;
+            this.addRevisioneBtn.Text = "Nuova scadenza";
+            this.addRevisioneBtn.UseVisualStyleBackColor = true;
+            this.addRevisioneBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
+            // 
+            // entryButton10
+            // 
+            this.entryButton10.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.entryButton10.EntryPanel = DBProject.Entry.OptToVeic;
+            this.entryButton10.FormName = "Aggiunta optional";
+            this.entryButton10.Location = new System.Drawing.Point(506, 75);
+            this.entryButton10.Name = "entryButton10";
+            this.entryButton10.Size = new System.Drawing.Size(104, 39);
+            this.entryButton10.TabIndex = 21;
+            this.entryButton10.Text = "Aggiungi optional\r\na veicolo";
+            this.entryButton10.UseVisualStyleBackColor = true;
+            this.entryButton10.Click += new System.EventHandler(this.addInstanceBtn_Click);
+            // 
+            // addOptToVeicVend_Btn
+            // 
+            this.addOptToVeicVend_Btn.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.addOptToVeicVend_Btn.EntryPanel = DBProject.Entry.OptToVeicVend;
+            this.addOptToVeicVend_Btn.FormName = "Aggiunta optional";
+            this.addOptToVeicVend_Btn.Location = new System.Drawing.Point(506, 75);
+            this.addOptToVeicVend_Btn.Name = "addOptToVeicVend_Btn";
+            this.addOptToVeicVend_Btn.Size = new System.Drawing.Size(104, 37);
+            this.addOptToVeicVend_Btn.TabIndex = 22;
+            this.addOptToVeicVend_Btn.Text = "Aggiungi optional\r\na veicolo venduto";
+            this.addOptToVeicVend_Btn.UseVisualStyleBackColor = true;
+            this.addOptToVeicVend_Btn.Click += new System.EventHandler(this.addInstanceBtn_Click);
+            // 
+            // addRiparazioneBtn
+            // 
+            this.addRiparazioneBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.addRiparazioneBtn.EntryPanel = DBProject.Entry.Riparazione;
+            this.addRiparazioneBtn.FormName = "Aggiunta riparazione";
+            this.addRiparazioneBtn.Location = new System.Drawing.Point(516, 113);
+            this.addRiparazioneBtn.Name = "addRiparazioneBtn";
+            this.addRiparazioneBtn.Size = new System.Drawing.Size(104, 23);
+            this.addRiparazioneBtn.TabIndex = 12;
+            this.addRiparazioneBtn.Text = "Nuova riparazione";
+            this.addRiparazioneBtn.UseVisualStyleBackColor = true;
+            this.addRiparazioneBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
+            // 
+            // addDettaglioBtn
+            // 
+            this.addDettaglioBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.addDettaglioBtn.EntryPanel = DBProject.Entry.UtilizzoRicambioRip;
+            this.addDettaglioBtn.FormName = "Aggiunta dettaglio riparazione";
+            this.addDettaglioBtn.Location = new System.Drawing.Point(516, 113);
+            this.addDettaglioBtn.Name = "addDettaglioBtn";
+            this.addDettaglioBtn.Size = new System.Drawing.Size(104, 23);
+            this.addDettaglioBtn.TabIndex = 12;
+            this.addDettaglioBtn.Text = "Nuovo dettaglio";
+            this.addDettaglioBtn.UseVisualStyleBackColor = true;
+            this.addDettaglioBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
+            // 
+            // addRicambioBtn
+            // 
+            this.addRicambioBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.addRicambioBtn.EntryPanel = DBProject.Entry.Ricambio;
+            this.addRicambioBtn.FormName = "Aggiunta ricambio";
+            this.addRicambioBtn.Location = new System.Drawing.Point(516, 113);
+            this.addRicambioBtn.Name = "addRicambioBtn";
+            this.addRicambioBtn.Size = new System.Drawing.Size(104, 23);
+            this.addRicambioBtn.TabIndex = 12;
+            this.addRicambioBtn.Text = "Nuovo ricambio";
+            this.addRicambioBtn.UseVisualStyleBackColor = true;
+            this.addRicambioBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
+            // 
+            // addGiacenzaBtn
+            // 
+            this.addGiacenzaBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.addGiacenzaBtn.EntryPanel = DBProject.Entry.Giacenza;
+            this.addGiacenzaBtn.FormName = "Aggiunta giacenza";
+            this.addGiacenzaBtn.Location = new System.Drawing.Point(516, 113);
+            this.addGiacenzaBtn.Name = "addGiacenzaBtn";
+            this.addGiacenzaBtn.Size = new System.Drawing.Size(104, 23);
+            this.addGiacenzaBtn.TabIndex = 7;
+            this.addGiacenzaBtn.Text = "Nuova giacenza";
+            this.addGiacenzaBtn.UseVisualStyleBackColor = true;
+            this.addGiacenzaBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
+            // 
+            // addRicVeicBtn
+            // 
+            this.addRicVeicBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.addRicVeicBtn.EntryPanel = DBProject.Entry.RicVeic;
+            this.addRicVeicBtn.FormName = "Aggiunta ricambio-veicolo";
+            this.addRicVeicBtn.Location = new System.Drawing.Point(516, 104);
+            this.addRicVeicBtn.Name = "addRicVeicBtn";
+            this.addRicVeicBtn.Size = new System.Drawing.Size(104, 35);
+            this.addRicVeicBtn.TabIndex = 17;
+            this.addRicVeicBtn.Text = "Aggiungi ricambio-veicolo";
+            this.addRicVeicBtn.UseVisualStyleBackColor = true;
+            this.addRicVeicBtn.Click += new System.EventHandler(this.addInstanceBtn_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(655, 403);
-            this.Controls.Add(this.fornitoriPanel);
-            this.Controls.Add(this.corrieriPanel);
-            this.Controls.Add(this.clientiPanel);
             this.Controls.Add(this.ordiniPanel);
             this.Controls.Add(this.veicoliPanel);
             this.Controls.Add(this.officinaPanel);
             this.Controls.Add(this.homePanel);
+            this.Controls.Add(this.fornitoriPanel);
+            this.Controls.Add(this.corrieriPanel);
+            this.Controls.Add(this.clientiPanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
