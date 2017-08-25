@@ -196,27 +196,35 @@ namespace DBProject
         // usato sia per DETTAGLIO ORDINE VEICOLO che RICAMBIO
         private void addVeicRicToOrdinePanel_VisibleChanged(object sender, EventArgs e)
         {
+            comboBox3.DataSource = from o in db.Ordine
+                                   where o.TipoOrdine == (this.currEntry == Entry.DetVeic ? 'v' : 'r')
+                                   select new { desc = "id: " + o.Id + " del " + o.DataOrdine, o.Id };
+            comboBox3.DisplayMember = "desc";
+            comboBox3.ValueMember = "Id";
+
             if (this.currEntry == Entry.DetVeic)
             {
-                this.label129.Text = "Veicolo";
-                this.comboVeicolo.BringToFront();
-            }
-            else
+                this.label129.Text = "Veicolo Cliente";
+                label130.Visible = false;
+                textBox93.Visible = false;                
+
+                comboItem.DataSource = from v in db.VeicoloVenduto
+                                       where v.OrdineVeicolo == null
+                                       select new { desc = "id: " + v.Id + " contratto: " + v.Contratto, v.Id };
+                comboItem.DisplayMember = "desc";
+                comboItem.ValueMember = "Id";
+
+            } else
             {
                 this.label129.Text = "Ricambio";
-                this.comboRicambio.BringToFront();
-            }
+                label130.Visible = true;
+                textBox93.Visible = true;
 
-            // occorre riempire il comboBox adeguatamente
-            /*  var q =
-             from c in Class
-             select new { Name = c.CompanyName, ID = c.CompanyID };
-
-              companyComboBox.ItemsSource = companyQuery.ToList();
-              companyComboBox.DisplayMemberPath = "Name";
-              companyComboBox.SelectedValuePath = "ID";
-              InitializeComponent();
-              */
+                comboItem.DataSource = from v in db.Ricambio                                      
+                                       select new { desc = v.Nome + " codice: " + v.Codice, v.Codice};
+                comboItem.DisplayMember = "desc";
+                comboItem.ValueMember = "Codice";
+            }            
         }
 
         /* usato per associare:
@@ -426,10 +434,7 @@ namespace DBProject
         {
             // fare check sul tipo di fornitore per determinare il tipo di ricambio (generico/originale)
             this.Close();
-        }
-
-        
-
+        }     
 
         private void submitFornitoreBtn_Click(object sender, EventArgs e)
         {
@@ -913,9 +918,71 @@ namespace DBProject
 
         private void submitAddVeicRicToOrderBtn_Click(object sender, EventArgs e)
         {
-            //uso lo stesso metodo per inserire un veicolo/ricambio in un dettaglio d'ordine
-            //il check add veicolo/ricambio lo farà io, completa il resto
-            this.Close();
+
+            // Inserisco ordine per veicolo
+            if(this.currEntry == Entry.DetVeic)
+            {
+                var ov = new OrdineVeicolo();
+
+                var val = this.comboBox3.SelectedValue;
+                ov.Ordine = val == null ? -1 : convertStringInt(val.ToString());
+
+                val = this.comboItem.SelectedValue;
+                ov.Veicolo = val == null ? -1 : convertStringInt(val.ToString());
+
+                ov.PrezzoFornitore = convertStringFloat(textBox1.Text);
+
+                try
+                {
+                    if (!(isInt((int)ov.Ordine) &&                         
+                         isInt((int)ov.Veicolo) &&                         
+                         isFloat(ov.PrezzoFornitore)
+                        ))
+                    {
+                        throw new Exception("Campi vuoti o errati");
+                    }
+                    db.OrdineVeicolo.InsertOnSubmit(ov);
+                    db.SubmitChanges();
+                    this.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Errore di inserimento dati");
+                }
+
+            } else
+            {
+                var or = new OrdineRicambio();
+
+                var val = this.comboBox3.SelectedValue;
+                or.Ordine = val == null ? -1 : convertStringInt(val.ToString());
+
+                val = this.comboItem.SelectedValue;
+                or.Ricambio = val == null ? null : val.ToString();
+
+                or.PrezzoUnitario = convertStringFloat(textBox1.Text);
+
+                or.Quantità = convertStringInt(textBox93.Text);
+
+                try
+                {
+                    if (!(isInt((int)or.Ordine) &&                          
+                         isString(or.Ricambio) &&
+                         isInt((int)or.Quantità) &&                         
+                         isFloat(or.PrezzoUnitario)
+                        ))
+                    {
+                        throw new Exception("Campi vuoti o errati");
+                    }
+                    db.OrdineRicambio.InsertOnSubmit(or);
+                    db.SubmitChanges();
+                    this.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Errore di inserimento dati");
+                }
+            }
         }
 
         private void submitClientePBtn_Click(object sender, EventArgs e)

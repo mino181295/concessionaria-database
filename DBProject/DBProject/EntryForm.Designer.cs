@@ -348,9 +348,8 @@ namespace DBProject
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.addVeicRicToOrdinePanel = new System.Windows.Forms.Panel();
-            this.comboVeicolo = new System.Windows.Forms.ComboBox();
+            this.comboItem = new System.Windows.Forms.ComboBox();
             this.textBox93 = new System.Windows.Forms.TextBox();
-            this.comboRicambio = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label129 = new System.Windows.Forms.Label();
             this.label131 = new System.Windows.Forms.Label();
@@ -362,6 +361,8 @@ namespace DBProject
             this.dateTimePicker7 = new System.Windows.Forms.DateTimePicker();
             this.label94 = new System.Windows.Forms.Label();
             this.label124 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
             this.addFornitorePanel.SuspendLayout();
             this.groupBox11.SuspendLayout();
             this.groupBox10.SuspendLayout();
@@ -1252,7 +1253,7 @@ namespace DBProject
             this.submitAddVeicRicToOrderBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitAddVeicRicToOrderBtn.BackColor = System.Drawing.Color.White;
             this.submitAddVeicRicToOrderBtn.Image = ((System.Drawing.Image)(resources.GetObject("submitAddVeicRicToOrderBtn.Image")));
-            this.submitAddVeicRicToOrderBtn.Location = new System.Drawing.Point(399, 414);
+            this.submitAddVeicRicToOrderBtn.Location = new System.Drawing.Point(399, 367);
             this.submitAddVeicRicToOrderBtn.Name = "submitAddVeicRicToOrderBtn";
             this.submitAddVeicRicToOrderBtn.Size = new System.Drawing.Size(46, 45);
             this.submitAddVeicRicToOrderBtn.TabIndex = 14;
@@ -3687,9 +3688,10 @@ namespace DBProject
             this.addVeicRicToOrdinePanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.addVeicRicToOrdinePanel.Controls.Add(this.comboVeicolo);
+            this.addVeicRicToOrdinePanel.Controls.Add(this.textBox1);
+            this.addVeicRicToOrdinePanel.Controls.Add(this.label17);
+            this.addVeicRicToOrdinePanel.Controls.Add(this.comboItem);
             this.addVeicRicToOrdinePanel.Controls.Add(this.textBox93);
-            this.addVeicRicToOrdinePanel.Controls.Add(this.comboRicambio);
             this.addVeicRicToOrdinePanel.Controls.Add(this.submitAddVeicRicToOrderBtn);
             this.addVeicRicToOrdinePanel.Controls.Add(this.comboBox3);
             this.addVeicRicToOrdinePanel.Controls.Add(this.label129);
@@ -3701,44 +3703,36 @@ namespace DBProject
             this.addVeicRicToOrdinePanel.TabIndex = 42;
             this.addVeicRicToOrdinePanel.VisibleChanged += new System.EventHandler(this.addVeicRicToOrdinePanel_VisibleChanged);
             // 
-            // comboVeicolo
+            // comboItem
             // 
-            this.comboVeicolo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboVeicolo.DisplayMember = "Codice";
-            this.comboVeicolo.FormattingEnabled = true;
-            this.comboVeicolo.Location = new System.Drawing.Point(420, 164);
-            this.comboVeicolo.Name = "comboVeicolo";
-            this.comboVeicolo.Size = new System.Drawing.Size(121, 21);
-            this.comboVeicolo.TabIndex = 21;
-            this.comboVeicolo.ValueMember = "Codice";
+            this.comboItem.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboItem.DisplayMember = "Codice";
+            this.comboItem.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboItem.FormattingEnabled = true;
+            this.comboItem.Location = new System.Drawing.Point(419, 168);
+            this.comboItem.Name = "comboItem";
+            this.comboItem.Size = new System.Drawing.Size(121, 21);
+            this.comboItem.TabIndex = 21;
+            this.comboItem.ValueMember = "Codice";
             // 
             // textBox93
             // 
             this.textBox93.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox93.Location = new System.Drawing.Point(420, 248);
+            this.textBox93.Location = new System.Drawing.Point(420, 254);
+            this.textBox93.MaxLength = 6;
             this.textBox93.Name = "textBox93";
             this.textBox93.Size = new System.Drawing.Size(121, 20);
             this.textBox93.TabIndex = 20;
-            // 
-            // comboRicambio
-            // 
-            this.comboRicambio.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboRicambio.DisplayMember = "ID_ordine";
-            this.comboRicambio.FormattingEnabled = true;
-            this.comboRicambio.Location = new System.Drawing.Point(420, 164);
-            this.comboRicambio.Name = "comboRicambio";
-            this.comboRicambio.Size = new System.Drawing.Size(121, 21);
-            this.comboRicambio.TabIndex = 19;
-            this.comboRicambio.ValueMember = "ID_ordine";
             // 
             // comboBox3
             // 
             this.comboBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBox3.DisplayMember = "ID_ordine";
+            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(420, 206);
+            this.comboBox3.Location = new System.Drawing.Point(419, 116);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 21);
+            this.comboBox3.Size = new System.Drawing.Size(246, 21);
             this.comboBox3.TabIndex = 18;
             this.comboBox3.ValueMember = "ID_ordine";
             // 
@@ -3746,17 +3740,17 @@ namespace DBProject
             // 
             this.label129.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label129.AutoSize = true;
-            this.label129.Location = new System.Drawing.Point(291, 166);
+            this.label129.Location = new System.Drawing.Point(290, 168);
             this.label129.Name = "label129";
-            this.label129.Size = new System.Drawing.Size(42, 13);
+            this.label129.Size = new System.Drawing.Size(76, 13);
             this.label129.TabIndex = 15;
-            this.label129.Text = "Veicolo";
+            this.label129.Text = "Veicolo cliente";
             // 
             // label131
             // 
             this.label131.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label131.AutoSize = true;
-            this.label131.Location = new System.Drawing.Point(292, 207);
+            this.label131.Location = new System.Drawing.Point(289, 117);
             this.label131.Name = "label131";
             this.label131.Size = new System.Drawing.Size(38, 13);
             this.label131.TabIndex = 17;
@@ -3766,7 +3760,7 @@ namespace DBProject
             // 
             this.label130.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label130.AutoSize = true;
-            this.label130.Location = new System.Drawing.Point(291, 250);
+            this.label130.Location = new System.Drawing.Point(291, 256);
             this.label130.Name = "label130";
             this.label130.Size = new System.Drawing.Size(47, 13);
             this.label130.TabIndex = 16;
@@ -3849,11 +3843,35 @@ namespace DBProject
             this.label124.TabIndex = 0;
             this.label124.Text = "Veicolo";
             // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox1.Location = new System.Drawing.Point(420, 212);
+            this.textBox1.MaxLength = 10;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(121, 20);
+            this.textBox1.TabIndex = 23;
+            // 
+            // label17
+            // 
+            this.label17.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(291, 215);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(50, 13);
+            this.label17.TabIndex = 22;
+            this.label17.Text = "Prezzo/u";
+            // 
             // EntryForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(839, 472);
+            this.Controls.Add(this.addVeicRicToOrdinePanel);
+            this.Controls.Add(this.addOrdinePanel);
+            this.Controls.Add(this.addFornitorePanel);
+            this.Controls.Add(this.addFatturaPanel);
+            this.Controls.Add(this.addContrattoPanel);
             this.Controls.Add(this.addClientePanel);
             this.Controls.Add(this.addGiacenzaPanel);
             this.Controls.Add(this.addPagamentoPanel);
@@ -3870,11 +3888,6 @@ namespace DBProject
             this.Controls.Add(this.addRicambioPanel);
             this.Controls.Add(this.addUtilizzoRicambioRipPanel);
             this.Controls.Add(this.addRiparazionePanel);
-            this.Controls.Add(this.addVeicRicToOrdinePanel);
-            this.Controls.Add(this.addOrdinePanel);
-            this.Controls.Add(this.addFornitorePanel);
-            this.Controls.Add(this.addFatturaPanel);
-            this.Controls.Add(this.addContrattoPanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EntryForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -4263,7 +4276,6 @@ namespace DBProject
         private Panel addVeicRicToOrdinePanel;
         private Button submitAddVeicRicToOrderBtn;
         private TextBox textBox93;
-        private ComboBox comboRicambio;
         private ComboBox comboBox3;
         private Label label131;
         private Label label130;
@@ -4288,7 +4300,7 @@ namespace DBProject
         private ComboBox comboVeicCat;
         private ComboBox comboRic;
         private DateTimePicker dateTimePicker15;
-        private ComboBox comboVeicolo;
+        private ComboBox comboItem;
         private ComboBox comboFattura;
         private ComboBox comboFornitore;
         private Label label126;
@@ -4302,5 +4314,7 @@ namespace DBProject
         private Label label123;
         private ComboBox comboScadenza;
         private DateTimePicker datePagamento;
+        private TextBox textBox1;
+        private Label label17;
     }
 }
