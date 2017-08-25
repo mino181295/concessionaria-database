@@ -273,7 +273,10 @@ namespace DBProject
                 var field = c.GetType().GetProperty(searchField);                
                 if (field != null)
                 {
-                    return field.GetValue(c).ToString().Contains(filter);
+                    var content = field.GetValue(c);
+                    if (content == null)
+                        return false;
+                    return content.ToString().Contains(filter);
                 }
                 return false;
             };
