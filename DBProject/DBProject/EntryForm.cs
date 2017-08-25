@@ -206,7 +206,7 @@ namespace DBProject
             {
                 this.label129.Text = "Veicolo Cliente";
                 label130.Visible = false;
-                textBox93.Visible = false;                
+                numericUpDown4.Visible = false;                
 
                 comboItem.DataSource = from v in db.VeicoloVenduto
                                        where v.OrdineVeicolo == null
@@ -218,7 +218,7 @@ namespace DBProject
             {
                 this.label129.Text = "Ricambio";
                 label130.Visible = true;
-                textBox93.Visible = true;
+                numericUpDown4.Visible = true;
 
                 comboItem.DataSource = from v in db.Ricambio                                      
                                        select new { desc = v.Nome + " codice: " + v.Codice, v.Codice};
@@ -962,7 +962,7 @@ namespace DBProject
 
                 or.PrezzoUnitario = convertStringFloat(textBox1.Text);
 
-                or.Quantità = convertStringInt(textBox93.Text);
+                or.Quantità = numericUpDown4.Value;
 
                 try
                 {
@@ -1200,6 +1200,44 @@ namespace DBProject
                 combo.DataSource = q.ToList();
             }
             
+        }
+
+        private void casaProduttriceDropDown(object sender, EventArgs e)
+        {
+            var pive = from f in this.db.Fornitore
+                       where f.CasaProduttrice == 'y'
+                       select new { f.RagioneSociale, f.PartitaIVA };
+
+            ComboBox combo = (ComboBox)sender;
+            combo.DataSource = pive.ToList();
+            combo.DisplayMember = "RagioneSociale";
+            combo.ValueMember = "PartitaIVA";
+        }
+
+        private void comboBox24_DropDown(object sender, EventArgs e)
+        {            
+            var value = this.comboBox14.SelectedValue;
+            if (value == null)
+                return;
+
+            String forn = value.ToString();
+            var mod = from f in this.db.ModelloVeicolo
+                         where f.Fornitore == forn
+                         select f.Nome;
+
+            this.comboBox22.DataSource = mod.ToList();            
+        }
+
+        private void comboBox13_DropDown(object sender, EventArgs e)
+        {
+            var pive = from f in this.db.Fornitore
+                       where f.FornitoreRicambi == 'y'
+                       select new { f.RagioneSociale, f.PartitaIVA };
+
+            ComboBox combo = (ComboBox)sender;
+            combo.DataSource = pive.ToList();
+            combo.DisplayMember = "RagioneSociale";
+            combo.ValueMember = "PartitaIVA";
         }
     }
 

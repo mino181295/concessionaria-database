@@ -82,7 +82,6 @@ namespace DBProject
             this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.groupBox19 = new System.Windows.Forms.GroupBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
@@ -171,7 +170,6 @@ namespace DBProject
             this.label16 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.addContrattoPanel = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.dateTimePicker9 = new System.Windows.Forms.DateTimePicker();
             this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
@@ -180,16 +178,13 @@ namespace DBProject
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
             this.addTrasportoPanel = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBox27 = new System.Windows.Forms.TextBox();
             this.label38 = new System.Windows.Forms.Label();
             this.textBox24 = new System.Windows.Forms.TextBox();
             this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
             this.label37 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
             this.comboBox8 = new System.Windows.Forms.ComboBox();
             this.label31 = new System.Windows.Forms.Label();
@@ -223,10 +218,9 @@ namespace DBProject
             this.label45 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
             this.textBox42 = new System.Windows.Forms.TextBox();
-            this.textBox43 = new System.Windows.Forms.TextBox();
             this.addUtilizzoRicambioRipPanel = new System.Windows.Forms.Panel();
+            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
             this.comboBox25 = new System.Windows.Forms.ComboBox();
             this.label120 = new System.Windows.Forms.Label();
             this.comboBox11 = new System.Windows.Forms.ComboBox();
@@ -234,16 +228,11 @@ namespace DBProject
             this.comboBox10 = new System.Windows.Forms.ComboBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
             this.addRicambioPanel = new System.Windows.Forms.Panel();
-            this.label119 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.textBox44 = new System.Windows.Forms.TextBox();
             this.comboBox13 = new System.Windows.Forms.ComboBox();
             this.label64 = new System.Windows.Forms.Label();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.label55 = new System.Windows.Forms.Label();
-            this.label58 = new System.Windows.Forms.Label();
-            this.textBox45 = new System.Windows.Forms.TextBox();
-            this.textBox44 = new System.Windows.Forms.TextBox();
             this.label43 = new System.Windows.Forms.Label();
             this.textBox41 = new System.Windows.Forms.TextBox();
             this.label56 = new System.Windows.Forms.Label();
@@ -251,12 +240,9 @@ namespace DBProject
             this.textBox39 = new System.Windows.Forms.TextBox();
             this.textBox40 = new System.Windows.Forms.TextBox();
             this.addGiacenzaPanel = new System.Windows.Forms.Panel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox48 = new System.Windows.Forms.TextBox();
             this.label63 = new System.Windows.Forms.Label();
-            this.label62 = new System.Windows.Forms.Label();
             this.comboBox12 = new System.Windows.Forms.ComboBox();
-            this.textBox46 = new System.Windows.Forms.TextBox();
             this.label59 = new System.Windows.Forms.Label();
             this.dateTimePicker6 = new System.Windows.Forms.DateTimePicker();
             this.label60 = new System.Windows.Forms.Label();
@@ -270,18 +256,20 @@ namespace DBProject
             this.comboBox14 = new System.Windows.Forms.ComboBox();
             this.label117 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label75 = new System.Windows.Forms.Label();
-            this.textBox58 = new System.Windows.Forms.TextBox();
             this.label76 = new System.Windows.Forms.Label();
             this.textBox59 = new System.Windows.Forms.TextBox();
             this.label68 = new System.Windows.Forms.Label();
             this.textBox51 = new System.Windows.Forms.TextBox();
-            this.textBox55 = new System.Windows.Forms.TextBox();
             this.label72 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.textBox60 = new System.Windows.Forms.TextBox();
+            this.comboBox23 = new System.Windows.Forms.ComboBox();
+            this.comboBox18 = new System.Windows.Forms.ComboBox();
+            this.comboBox17 = new System.Windows.Forms.ComboBox();
+            this.comboBox16 = new System.Windows.Forms.ComboBox();
             this.label77 = new System.Windows.Forms.Label();
-            this.textBox61 = new System.Windows.Forms.TextBox();
             this.label78 = new System.Windows.Forms.Label();
             this.textBox49 = new System.Windows.Forms.TextBox();
             this.label66 = new System.Windows.Forms.Label();
@@ -292,8 +280,6 @@ namespace DBProject
             this.label71 = new System.Windows.Forms.Label();
             this.textBox56 = new System.Windows.Forms.TextBox();
             this.textBox54 = new System.Windows.Forms.TextBox();
-            this.textBox57 = new System.Windows.Forms.TextBox();
-            this.textBox50 = new System.Windows.Forms.TextBox();
             this.label74 = new System.Windows.Forms.Label();
             this.label70 = new System.Windows.Forms.Label();
             this.textBox53 = new System.Windows.Forms.TextBox();
@@ -323,17 +309,11 @@ namespace DBProject
             this.addVenditaPanel = new System.Windows.Forms.Panel();
             this.comboBox20 = new System.Windows.Forms.ComboBox();
             this.label95 = new System.Windows.Forms.Label();
-            this.textBox67 = new System.Windows.Forms.TextBox();
-            this.label85 = new System.Windows.Forms.Label();
-            this.comboBox18 = new System.Windows.Forms.ComboBox();
             this.comboBox19 = new System.Windows.Forms.ComboBox();
-            this.label86 = new System.Windows.Forms.Label();
             this.label88 = new System.Windows.Forms.Label();
             this.addRevisionePanel = new System.Windows.Forms.Panel();
-            this.textBox13 = new System.Windows.Forms.TextBox();
             this.label90 = new System.Windows.Forms.Label();
             this.dateTimePicker8 = new System.Windows.Forms.DateTimePicker();
-            this.label89 = new System.Windows.Forms.Label();
             this.comboBox21 = new System.Windows.Forms.ComboBox();
             this.label93 = new System.Windows.Forms.Label();
             this.addOrdinePanel = new System.Windows.Forms.Panel();
@@ -348,8 +328,9 @@ namespace DBProject
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.addVeicRicToOrdinePanel = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
             this.comboItem = new System.Windows.Forms.ComboBox();
-            this.textBox93 = new System.Windows.Forms.TextBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label129 = new System.Windows.Forms.Label();
             this.label131 = new System.Windows.Forms.Label();
@@ -361,8 +342,9 @@ namespace DBProject
             this.dateTimePicker7 = new System.Windows.Forms.DateTimePicker();
             this.label94 = new System.Windows.Forms.Label();
             this.label124 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
+            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
             this.addFornitorePanel.SuspendLayout();
             this.groupBox11.SuspendLayout();
             this.groupBox10.SuspendLayout();
@@ -392,12 +374,14 @@ namespace DBProject
             this.addPagamentoPanel.SuspendLayout();
             this.addRiparazionePanel.SuspendLayout();
             this.addUtilizzoRicambioRipPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
             this.addRicambioPanel.SuspendLayout();
-            this.groupBox4.SuspendLayout();
             this.addGiacenzaPanel.SuspendLayout();
             this.addVeicoloPanel.SuspendLayout();
             this.groupBox21.SuspendLayout();
             this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.groupBox5.SuspendLayout();
             this.addModelloPanel.SuspendLayout();
             this.addOptionalPanel.SuspendLayout();
@@ -409,6 +393,9 @@ namespace DBProject
             this.groupBox23.SuspendLayout();
             this.addVeicRicToOrdinePanel.SuspendLayout();
             this.addEsecRevPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
             this.SuspendLayout();
             // 
             // addFornitorePanel
@@ -695,7 +682,7 @@ namespace DBProject
             this.submitFornitoreBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitFornitoreBtn.BackColor = System.Drawing.Color.White;
             this.submitFornitoreBtn.Image = ((System.Drawing.Image)(resources.GetObject("submitFornitoreBtn.Image")));
-            this.submitFornitoreBtn.Location = new System.Drawing.Point(389, 423);
+            this.submitFornitoreBtn.Location = new System.Drawing.Point(389, 400);
             this.submitFornitoreBtn.Name = "submitFornitoreBtn";
             this.submitFornitoreBtn.Size = new System.Drawing.Size(46, 45);
             this.submitFornitoreBtn.TabIndex = 14;
@@ -781,7 +768,7 @@ namespace DBProject
             this.submitFatturaBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitFatturaBtn.BackColor = System.Drawing.Color.White;
             this.submitFatturaBtn.Image = ((System.Drawing.Image)(resources.GetObject("submitFatturaBtn.Image")));
-            this.submitFatturaBtn.Location = new System.Drawing.Point(390, 416);
+            this.submitFatturaBtn.Location = new System.Drawing.Point(390, 400);
             this.submitFatturaBtn.Name = "submitFatturaBtn";
             this.submitFatturaBtn.Size = new System.Drawing.Size(46, 45);
             this.submitFatturaBtn.TabIndex = 6;
@@ -844,6 +831,7 @@ namespace DBProject
             // 
             this.textBox7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox7.Location = new System.Drawing.Point(395, 189);
+            this.textBox7.MaxLength = 6;
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(192, 20);
             this.textBox7.TabIndex = 3;
@@ -876,11 +864,11 @@ namespace DBProject
             // groupBox20
             // 
             this.groupBox20.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox20.Controls.Add(this.numericUpDown6);
             this.groupBox20.Controls.Add(this.comboBox4);
             this.groupBox20.Controls.Add(this.label11);
             this.groupBox20.Controls.Add(this.label9);
             this.groupBox20.Controls.Add(this.label12);
-            this.groupBox20.Controls.Add(this.textBox10);
             this.groupBox20.Controls.Add(this.textBox12);
             this.groupBox20.Location = new System.Drawing.Point(231, 191);
             this.groupBox20.Name = "groupBox20";
@@ -931,14 +919,6 @@ namespace DBProject
             this.label12.Size = new System.Drawing.Size(77, 13);
             this.label12.TabIndex = 4;
             this.label12.Text = "Periodicità rate";
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(185, 23);
-            this.textBox10.MaxLength = 2;
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(183, 20);
-            this.textBox10.TabIndex = 4;
             // 
             // textBox12
             // 
@@ -998,7 +978,7 @@ namespace DBProject
             this.submitModalitaPagBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitModalitaPagBtn.BackColor = System.Drawing.Color.White;
             this.submitModalitaPagBtn.Image = ((System.Drawing.Image)(resources.GetObject("submitModalitaPagBtn.Image")));
-            this.submitModalitaPagBtn.Location = new System.Drawing.Point(395, 413);
+            this.submitModalitaPagBtn.Location = new System.Drawing.Point(395, 400);
             this.submitModalitaPagBtn.Name = "submitModalitaPagBtn";
             this.submitModalitaPagBtn.Size = new System.Drawing.Size(46, 45);
             this.submitModalitaPagBtn.TabIndex = 7;
@@ -1032,7 +1012,7 @@ namespace DBProject
             this.submitTrasportoBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitTrasportoBtn.BackColor = System.Drawing.Color.White;
             this.submitTrasportoBtn.Image = ((System.Drawing.Image)(resources.GetObject("submitTrasportoBtn.Image")));
-            this.submitTrasportoBtn.Location = new System.Drawing.Point(387, 425);
+            this.submitTrasportoBtn.Location = new System.Drawing.Point(387, 400);
             this.submitTrasportoBtn.Name = "submitTrasportoBtn";
             this.submitTrasportoBtn.Size = new System.Drawing.Size(46, 45);
             this.submitTrasportoBtn.TabIndex = 10;
@@ -1045,7 +1025,7 @@ namespace DBProject
             this.submitRevisioneBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitRevisioneBtn.BackColor = System.Drawing.Color.White;
             this.submitRevisioneBtn.Image = ((System.Drawing.Image)(resources.GetObject("submitRevisioneBtn.Image")));
-            this.submitRevisioneBtn.Location = new System.Drawing.Point(389, 421);
+            this.submitRevisioneBtn.Location = new System.Drawing.Point(389, 300);
             this.submitRevisioneBtn.Name = "submitRevisioneBtn";
             this.submitRevisioneBtn.Size = new System.Drawing.Size(46, 45);
             this.submitRevisioneBtn.TabIndex = 4;
@@ -1058,7 +1038,7 @@ namespace DBProject
             this.submitOptionalBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitOptionalBtn.BackColor = System.Drawing.Color.White;
             this.submitOptionalBtn.Image = ((System.Drawing.Image)(resources.GetObject("submitOptionalBtn.Image")));
-            this.submitOptionalBtn.Location = new System.Drawing.Point(384, 413);
+            this.submitOptionalBtn.Location = new System.Drawing.Point(384, 400);
             this.submitOptionalBtn.Name = "submitOptionalBtn";
             this.submitOptionalBtn.Size = new System.Drawing.Size(46, 45);
             this.submitOptionalBtn.TabIndex = 5;
@@ -1071,7 +1051,7 @@ namespace DBProject
             this.submitRicambioBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitRicambioBtn.BackColor = System.Drawing.Color.White;
             this.submitRicambioBtn.Image = ((System.Drawing.Image)(resources.GetObject("submitRicambioBtn.Image")));
-            this.submitRicambioBtn.Location = new System.Drawing.Point(396, 415);
+            this.submitRicambioBtn.Location = new System.Drawing.Point(396, 400);
             this.submitRicambioBtn.Name = "submitRicambioBtn";
             this.submitRicambioBtn.Size = new System.Drawing.Size(46, 45);
             this.submitRicambioBtn.TabIndex = 7;
@@ -1084,7 +1064,7 @@ namespace DBProject
             this.submitDettaglioBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitDettaglioBtn.BackColor = System.Drawing.Color.White;
             this.submitDettaglioBtn.Image = ((System.Drawing.Image)(resources.GetObject("submitDettaglioBtn.Image")));
-            this.submitDettaglioBtn.Location = new System.Drawing.Point(388, 413);
+            this.submitDettaglioBtn.Location = new System.Drawing.Point(388, 400);
             this.submitDettaglioBtn.Name = "submitDettaglioBtn";
             this.submitDettaglioBtn.Size = new System.Drawing.Size(46, 45);
             this.submitDettaglioBtn.TabIndex = 5;
@@ -1097,7 +1077,7 @@ namespace DBProject
             this.submitOptToVeicBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitOptToVeicBtn.BackColor = System.Drawing.Color.White;
             this.submitOptToVeicBtn.Image = ((System.Drawing.Image)(resources.GetObject("submitOptToVeicBtn.Image")));
-            this.submitOptToVeicBtn.Location = new System.Drawing.Point(399, 413);
+            this.submitOptToVeicBtn.Location = new System.Drawing.Point(399, 300);
             this.submitOptToVeicBtn.Name = "submitOptToVeicBtn";
             this.submitOptToVeicBtn.Size = new System.Drawing.Size(46, 45);
             this.submitOptToVeicBtn.TabIndex = 3;
@@ -1110,7 +1090,7 @@ namespace DBProject
             this.submitVenditaBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitVenditaBtn.BackColor = System.Drawing.Color.White;
             this.submitVenditaBtn.Image = ((System.Drawing.Image)(resources.GetObject("submitVenditaBtn.Image")));
-            this.submitVenditaBtn.Location = new System.Drawing.Point(398, 418);
+            this.submitVenditaBtn.Location = new System.Drawing.Point(398, 300);
             this.submitVenditaBtn.Name = "submitVenditaBtn";
             this.submitVenditaBtn.Size = new System.Drawing.Size(46, 45);
             this.submitVenditaBtn.TabIndex = 5;
@@ -1123,7 +1103,7 @@ namespace DBProject
             this.submitModelloBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitModelloBtn.BackColor = System.Drawing.Color.White;
             this.submitModelloBtn.Image = ((System.Drawing.Image)(resources.GetObject("submitModelloBtn.Image")));
-            this.submitModelloBtn.Location = new System.Drawing.Point(387, 414);
+            this.submitModelloBtn.Location = new System.Drawing.Point(387, 400);
             this.submitModelloBtn.Name = "submitModelloBtn";
             this.submitModelloBtn.Size = new System.Drawing.Size(46, 45);
             this.submitModelloBtn.TabIndex = 4;
@@ -1136,7 +1116,7 @@ namespace DBProject
             this.submitRiparazione.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitRiparazione.BackColor = System.Drawing.Color.White;
             this.submitRiparazione.Image = ((System.Drawing.Image)(resources.GetObject("submitRiparazione.Image")));
-            this.submitRiparazione.Location = new System.Drawing.Point(389, 402);
+            this.submitRiparazione.Location = new System.Drawing.Point(389, 400);
             this.submitRiparazione.Name = "submitRiparazione";
             this.submitRiparazione.Size = new System.Drawing.Size(46, 45);
             this.submitRiparazione.TabIndex = 5;
@@ -1162,7 +1142,7 @@ namespace DBProject
             this.submitContrattoBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitContrattoBtn.BackColor = System.Drawing.Color.White;
             this.submitContrattoBtn.Image = ((System.Drawing.Image)(resources.GetObject("submitContrattoBtn.Image")));
-            this.submitContrattoBtn.Location = new System.Drawing.Point(395, 421);
+            this.submitContrattoBtn.Location = new System.Drawing.Point(395, 400);
             this.submitContrattoBtn.Name = "submitContrattoBtn";
             this.submitContrattoBtn.Size = new System.Drawing.Size(46, 45);
             this.submitContrattoBtn.TabIndex = 6;
@@ -1175,7 +1155,7 @@ namespace DBProject
             this.submitPerfTraspBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitPerfTraspBtn.BackColor = System.Drawing.Color.White;
             this.submitPerfTraspBtn.Image = ((System.Drawing.Image)(resources.GetObject("submitPerfTraspBtn.Image")));
-            this.submitPerfTraspBtn.Location = new System.Drawing.Point(387, 422);
+            this.submitPerfTraspBtn.Location = new System.Drawing.Point(387, 300);
             this.submitPerfTraspBtn.Name = "submitPerfTraspBtn";
             this.submitPerfTraspBtn.Size = new System.Drawing.Size(46, 45);
             this.submitPerfTraspBtn.TabIndex = 3;
@@ -1188,7 +1168,7 @@ namespace DBProject
             this.submitClienteABtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitClienteABtn.BackColor = System.Drawing.Color.White;
             this.submitClienteABtn.Image = ((System.Drawing.Image)(resources.GetObject("submitClienteABtn.Image")));
-            this.submitClienteABtn.Location = new System.Drawing.Point(387, 375);
+            this.submitClienteABtn.Location = new System.Drawing.Point(387, 380);
             this.submitClienteABtn.Name = "submitClienteABtn";
             this.submitClienteABtn.Size = new System.Drawing.Size(46, 45);
             this.submitClienteABtn.TabIndex = 12;
@@ -1201,7 +1181,7 @@ namespace DBProject
             this.submitGiacenzaBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitGiacenzaBtn.BackColor = System.Drawing.Color.White;
             this.submitGiacenzaBtn.Image = ((System.Drawing.Image)(resources.GetObject("submitGiacenzaBtn.Image")));
-            this.submitGiacenzaBtn.Location = new System.Drawing.Point(405, 424);
+            this.submitGiacenzaBtn.Location = new System.Drawing.Point(405, 400);
             this.submitGiacenzaBtn.Name = "submitGiacenzaBtn";
             this.submitGiacenzaBtn.Size = new System.Drawing.Size(46, 45);
             this.submitGiacenzaBtn.TabIndex = 5;
@@ -1214,7 +1194,7 @@ namespace DBProject
             this.submitPagamentoBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitPagamentoBtn.BackColor = System.Drawing.Color.White;
             this.submitPagamentoBtn.Image = ((System.Drawing.Image)(resources.GetObject("submitPagamentoBtn.Image")));
-            this.submitPagamentoBtn.Location = new System.Drawing.Point(398, 412);
+            this.submitPagamentoBtn.Location = new System.Drawing.Point(398, 400);
             this.submitPagamentoBtn.Name = "submitPagamentoBtn";
             this.submitPagamentoBtn.Size = new System.Drawing.Size(46, 45);
             this.submitPagamentoBtn.TabIndex = 4;
@@ -1227,7 +1207,7 @@ namespace DBProject
             this.submitClientePBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitClientePBtn.BackColor = System.Drawing.Color.White;
             this.submitClientePBtn.Image = ((System.Drawing.Image)(resources.GetObject("submitClientePBtn.Image")));
-            this.submitClientePBtn.Location = new System.Drawing.Point(387, 368);
+            this.submitClientePBtn.Location = new System.Drawing.Point(387, 380);
             this.submitClientePBtn.Name = "submitClientePBtn";
             this.submitClientePBtn.Size = new System.Drawing.Size(46, 45);
             this.submitClientePBtn.TabIndex = 16;
@@ -1240,7 +1220,7 @@ namespace DBProject
             this.submitAddOrdineBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitAddOrdineBtn.BackColor = System.Drawing.Color.White;
             this.submitAddOrdineBtn.Image = ((System.Drawing.Image)(resources.GetObject("submitAddOrdineBtn.Image")));
-            this.submitAddOrdineBtn.Location = new System.Drawing.Point(389, 388);
+            this.submitAddOrdineBtn.Location = new System.Drawing.Point(389, 400);
             this.submitAddOrdineBtn.Name = "submitAddOrdineBtn";
             this.submitAddOrdineBtn.Size = new System.Drawing.Size(46, 45);
             this.submitAddOrdineBtn.TabIndex = 14;
@@ -1253,7 +1233,7 @@ namespace DBProject
             this.submitAddVeicRicToOrderBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitAddVeicRicToOrderBtn.BackColor = System.Drawing.Color.White;
             this.submitAddVeicRicToOrderBtn.Image = ((System.Drawing.Image)(resources.GetObject("submitAddVeicRicToOrderBtn.Image")));
-            this.submitAddVeicRicToOrderBtn.Location = new System.Drawing.Point(399, 367);
+            this.submitAddVeicRicToOrderBtn.Location = new System.Drawing.Point(399, 400);
             this.submitAddVeicRicToOrderBtn.Name = "submitAddVeicRicToOrderBtn";
             this.submitAddVeicRicToOrderBtn.Size = new System.Drawing.Size(46, 45);
             this.submitAddVeicRicToOrderBtn.TabIndex = 14;
@@ -1266,7 +1246,7 @@ namespace DBProject
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button1.BackColor = System.Drawing.Color.White;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(387, 422);
+            this.button1.Location = new System.Drawing.Point(382, 339);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(46, 45);
             this.button1.TabIndex = 3;
@@ -1290,8 +1270,8 @@ namespace DBProject
             this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Location = new System.Drawing.Point(-1, -3);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -1848,7 +1828,6 @@ namespace DBProject
             this.addContrattoPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.addContrattoPanel.Controls.Add(this.textBox3);
             this.addContrattoPanel.Controls.Add(this.dateTimePicker9);
             this.addContrattoPanel.Controls.Add(this.comboBox6);
             this.addContrattoPanel.Controls.Add(this.comboBox5);
@@ -1858,24 +1837,15 @@ namespace DBProject
             this.addContrattoPanel.Controls.Add(this.label25);
             this.addContrattoPanel.Controls.Add(this.label26);
             this.addContrattoPanel.Controls.Add(this.label27);
-            this.addContrattoPanel.Controls.Add(this.label28);
             this.addContrattoPanel.Location = new System.Drawing.Point(2, 0);
             this.addContrattoPanel.Name = "addContrattoPanel";
             this.addContrattoPanel.Size = new System.Drawing.Size(836, 476);
             this.addContrattoPanel.TabIndex = 12;
             // 
-            // textBox3
-            // 
-            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox3.Location = new System.Drawing.Point(415, 77);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(183, 20);
-            this.textBox3.TabIndex = 7;
-            // 
             // dateTimePicker9
             // 
             this.dateTimePicker9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePicker9.Location = new System.Drawing.Point(416, 129);
+            this.dateTimePicker9.Location = new System.Drawing.Point(416, 104);
             this.dateTimePicker9.Name = "dateTimePicker9";
             this.dateTimePicker9.Size = new System.Drawing.Size(183, 20);
             this.dateTimePicker9.TabIndex = 2;
@@ -1883,8 +1853,9 @@ namespace DBProject
             // comboBox6
             // 
             this.comboBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(415, 247);
+            this.comboBox6.Location = new System.Drawing.Point(415, 222);
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(183, 21);
             this.comboBox6.TabIndex = 4;
@@ -1893,8 +1864,9 @@ namespace DBProject
             // 
             this.comboBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBox5.DisplayMember = "Da";
+            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(416, 303);
+            this.comboBox5.Location = new System.Drawing.Point(416, 278);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(183, 21);
             this.comboBox5.TabIndex = 5;
@@ -1903,7 +1875,8 @@ namespace DBProject
             // textBox21
             // 
             this.textBox21.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox21.Location = new System.Drawing.Point(416, 188);
+            this.textBox21.Location = new System.Drawing.Point(416, 163);
+            this.textBox21.MaxLength = 6;
             this.textBox21.Name = "textBox21";
             this.textBox21.Size = new System.Drawing.Size(183, 20);
             this.textBox21.TabIndex = 3;
@@ -1912,7 +1885,7 @@ namespace DBProject
             // 
             this.label19.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(233, 251);
+            this.label19.Location = new System.Drawing.Point(233, 226);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(39, 13);
             this.label19.TabIndex = 4;
@@ -1922,7 +1895,7 @@ namespace DBProject
             // 
             this.label25.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(233, 192);
+            this.label25.Location = new System.Drawing.Point(233, 167);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(103, 13);
             this.label25.TabIndex = 3;
@@ -1932,7 +1905,7 @@ namespace DBProject
             // 
             this.label26.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(233, 134);
+            this.label26.Location = new System.Drawing.Point(233, 109);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(30, 13);
             this.label26.TabIndex = 2;
@@ -1942,21 +1915,11 @@ namespace DBProject
             // 
             this.label27.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(233, 307);
+            this.label27.Location = new System.Drawing.Point(233, 282);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(103, 13);
             this.label27.TabIndex = 1;
             this.label27.Text = "Modalità pagamento";
-            // 
-            // label28
-            // 
-            this.label28.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(234, 79);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(44, 13);
-            this.label28.TabIndex = 0;
-            this.label28.Text = "Numero";
             // 
             // addTrasportoPanel
             // 
@@ -1987,20 +1950,19 @@ namespace DBProject
             this.groupBox1.Controls.Add(this.label38);
             this.groupBox1.Controls.Add(this.textBox24);
             this.groupBox1.Controls.Add(this.textBox19);
-            this.groupBox1.Controls.Add(this.textBox20);
             this.groupBox1.Controls.Add(this.label37);
-            this.groupBox1.Controls.Add(this.label35);
             this.groupBox1.Controls.Add(this.label36);
-            this.groupBox1.Location = new System.Drawing.Point(424, 160);
+            this.groupBox1.Location = new System.Drawing.Point(424, 176);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(367, 142);
+            this.groupBox1.Size = new System.Drawing.Size(367, 126);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Luogo consegna:";
             // 
             // textBox27
             // 
-            this.textBox27.Location = new System.Drawing.Point(183, 50);
+            this.textBox27.Location = new System.Drawing.Point(183, 56);
+            this.textBox27.MaxLength = 30;
             this.textBox27.Name = "textBox27";
             this.textBox27.Size = new System.Drawing.Size(181, 20);
             this.textBox27.TabIndex = 7;
@@ -2016,7 +1978,8 @@ namespace DBProject
             // 
             // textBox24
             // 
-            this.textBox24.Location = new System.Drawing.Point(183, 77);
+            this.textBox24.Location = new System.Drawing.Point(183, 89);
+            this.textBox24.MaxLength = 30;
             this.textBox24.Name = "textBox24";
             this.textBox24.Size = new System.Drawing.Size(181, 20);
             this.textBox24.TabIndex = 8;
@@ -2024,39 +1987,24 @@ namespace DBProject
             // textBox19
             // 
             this.textBox19.Location = new System.Drawing.Point(183, 24);
+            this.textBox19.MaxLength = 50;
             this.textBox19.Name = "textBox19";
             this.textBox19.Size = new System.Drawing.Size(181, 20);
             this.textBox19.TabIndex = 6;
             // 
-            // textBox20
-            // 
-            this.textBox20.Location = new System.Drawing.Point(183, 102);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(78, 20);
-            this.textBox20.TabIndex = 9;
-            // 
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(23, 53);
+            this.label37.Location = new System.Drawing.Point(23, 59);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(28, 13);
             this.label37.TabIndex = 18;
             this.label37.Text = "Città";
             // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(23, 105);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(28, 13);
-            this.label35.TabIndex = 16;
-            this.label35.Text = "CAP";
-            // 
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(23, 80);
+            this.label36.Location = new System.Drawing.Point(23, 92);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(51, 13);
             this.label36.TabIndex = 17;
@@ -2066,6 +2014,7 @@ namespace DBProject
             // 
             this.comboBox8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBox8.DisplayMember = "Numero";
+            this.comboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox8.FormattingEnabled = true;
             this.comboBox8.ItemHeight = 13;
             this.comboBox8.Location = new System.Drawing.Point(199, 179);
@@ -2096,6 +2045,7 @@ namespace DBProject
             // 
             this.comboBox7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBox7.DisplayMember = "Partita_IVA";
+            this.comboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox7.FormattingEnabled = true;
             this.comboBox7.ItemHeight = 13;
             this.comboBox7.Location = new System.Drawing.Point(198, 234);
@@ -2118,6 +2068,7 @@ namespace DBProject
             // 
             this.textBox25.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox25.Location = new System.Drawing.Point(199, 282);
+            this.textBox25.MaxLength = 6;
             this.textBox25.Name = "textBox25";
             this.textBox25.Size = new System.Drawing.Size(183, 20);
             this.textBox25.TabIndex = 4;
@@ -2126,6 +2077,7 @@ namespace DBProject
             // 
             this.textBox26.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox26.Location = new System.Drawing.Point(199, 127);
+            this.textBox26.MaxLength = 6;
             this.textBox26.Name = "textBox26";
             this.textBox26.Size = new System.Drawing.Size(183, 20);
             this.textBox26.TabIndex = 1;
@@ -2353,9 +2305,7 @@ namespace DBProject
             this.addRiparazionePanel.Controls.Add(this.label45);
             this.addRiparazionePanel.Controls.Add(this.label46);
             this.addRiparazionePanel.Controls.Add(this.label49);
-            this.addRiparazionePanel.Controls.Add(this.label53);
             this.addRiparazionePanel.Controls.Add(this.textBox42);
-            this.addRiparazionePanel.Controls.Add(this.textBox43);
             this.addRiparazionePanel.Location = new System.Drawing.Point(1, -2);
             this.addRiparazionePanel.Name = "addRiparazionePanel";
             this.addRiparazionePanel.Size = new System.Drawing.Size(836, 476);
@@ -2365,8 +2315,9 @@ namespace DBProject
             // 
             this.comboBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBox2.DisplayMember = "Numero_telaio";
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(410, 85);
+            this.comboBox2.Location = new System.Drawing.Point(410, 117);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(188, 21);
             this.comboBox2.TabIndex = 1;
@@ -2384,7 +2335,7 @@ namespace DBProject
             // 
             this.label45.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(230, 91);
+            this.label45.Location = new System.Drawing.Point(230, 123);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(96, 13);
             this.label45.TabIndex = 7;
@@ -2410,37 +2361,21 @@ namespace DBProject
             this.label49.TabIndex = 5;
             this.label49.Text = "Data";
             // 
-            // label53
-            // 
-            this.label53.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label53.AutoSize = true;
-            this.label53.Location = new System.Drawing.Point(231, 132);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(44, 13);
-            this.label53.TabIndex = 4;
-            this.label53.Text = "Numero";
-            // 
             // textBox42
             // 
             this.textBox42.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox42.Location = new System.Drawing.Point(411, 210);
+            this.textBox42.MaxLength = 6;
             this.textBox42.Name = "textBox42";
             this.textBox42.Size = new System.Drawing.Size(188, 20);
             this.textBox42.TabIndex = 4;
-            // 
-            // textBox43
-            // 
-            this.textBox43.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox43.Location = new System.Drawing.Point(411, 125);
-            this.textBox43.Name = "textBox43";
-            this.textBox43.Size = new System.Drawing.Size(188, 20);
-            this.textBox43.TabIndex = 2;
             // 
             // addUtilizzoRicambioRipPanel
             // 
             this.addUtilizzoRicambioRipPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.addUtilizzoRicambioRipPanel.Controls.Add(this.numericUpDown3);
             this.addUtilizzoRicambioRipPanel.Controls.Add(this.comboBox25);
             this.addUtilizzoRicambioRipPanel.Controls.Add(this.label120);
             this.addUtilizzoRicambioRipPanel.Controls.Add(this.comboBox11);
@@ -2449,18 +2384,35 @@ namespace DBProject
             this.addUtilizzoRicambioRipPanel.Controls.Add(this.submitDettaglioBtn);
             this.addUtilizzoRicambioRipPanel.Controls.Add(this.label21);
             this.addUtilizzoRicambioRipPanel.Controls.Add(this.label40);
-            this.addUtilizzoRicambioRipPanel.Controls.Add(this.textBox16);
             this.addUtilizzoRicambioRipPanel.Location = new System.Drawing.Point(0, -2);
             this.addUtilizzoRicambioRipPanel.Name = "addUtilizzoRicambioRipPanel";
             this.addUtilizzoRicambioRipPanel.Size = new System.Drawing.Size(836, 476);
             this.addUtilizzoRicambioRipPanel.TabIndex = 33;
             // 
+            // numericUpDown3
+            // 
+            this.numericUpDown3.Location = new System.Drawing.Point(406, 238);
+            this.numericUpDown3.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown3.Name = "numericUpDown3";
+            this.numericUpDown3.Size = new System.Drawing.Size(69, 20);
+            this.numericUpDown3.TabIndex = 13;
+            this.numericUpDown3.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
             // comboBox25
             // 
             this.comboBox25.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBox25.DisplayMember = "Veicolo_Numero_telaio";
+            this.comboBox25.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox25.FormattingEnabled = true;
-            this.comboBox25.Location = new System.Drawing.Point(406, 79);
+            this.comboBox25.Location = new System.Drawing.Point(406, 101);
             this.comboBox25.Name = "comboBox25";
             this.comboBox25.Size = new System.Drawing.Size(188, 21);
             this.comboBox25.TabIndex = 1;
@@ -2470,7 +2422,7 @@ namespace DBProject
             // 
             this.label120.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label120.AutoSize = true;
-            this.label120.Location = new System.Drawing.Point(226, 85);
+            this.label120.Location = new System.Drawing.Point(226, 107);
             this.label120.Name = "label120";
             this.label120.Size = new System.Drawing.Size(42, 13);
             this.label120.TabIndex = 12;
@@ -2480,8 +2432,9 @@ namespace DBProject
             // 
             this.comboBox11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBox11.DisplayMember = "Numero";
+            this.comboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.Location = new System.Drawing.Point(406, 125);
+            this.comboBox11.Location = new System.Drawing.Point(406, 147);
             this.comboBox11.Name = "comboBox11";
             this.comboBox11.Size = new System.Drawing.Size(188, 21);
             this.comboBox11.TabIndex = 2;
@@ -2491,7 +2444,7 @@ namespace DBProject
             // 
             this.label54.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(226, 131);
+            this.label54.Location = new System.Drawing.Point(226, 153);
             this.label54.Name = "label54";
             this.label54.Size = new System.Drawing.Size(63, 13);
             this.label54.TabIndex = 10;
@@ -2501,8 +2454,9 @@ namespace DBProject
             // 
             this.comboBox10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBox10.DisplayMember = "Codice";
+            this.comboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Location = new System.Drawing.Point(406, 172);
+            this.comboBox10.Location = new System.Drawing.Point(406, 194);
             this.comboBox10.Name = "comboBox10";
             this.comboBox10.Size = new System.Drawing.Size(188, 21);
             this.comboBox10.TabIndex = 3;
@@ -2512,7 +2466,7 @@ namespace DBProject
             // 
             this.label21.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(226, 176);
+            this.label21.Location = new System.Drawing.Point(226, 198);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(105, 13);
             this.label21.TabIndex = 7;
@@ -2522,29 +2476,21 @@ namespace DBProject
             // 
             this.label40.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(226, 220);
+            this.label40.Location = new System.Drawing.Point(226, 242);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(47, 13);
             this.label40.TabIndex = 6;
             this.label40.Text = "Quantità";
-            // 
-            // textBox16
-            // 
-            this.textBox16.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox16.Location = new System.Drawing.Point(406, 217);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(188, 20);
-            this.textBox16.TabIndex = 4;
             // 
             // addRicambioPanel
             // 
             this.addRicambioPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.addRicambioPanel.Controls.Add(this.label119);
+            this.addRicambioPanel.Controls.Add(this.label55);
+            this.addRicambioPanel.Controls.Add(this.textBox44);
             this.addRicambioPanel.Controls.Add(this.comboBox13);
             this.addRicambioPanel.Controls.Add(this.label64);
-            this.addRicambioPanel.Controls.Add(this.groupBox4);
             this.addRicambioPanel.Controls.Add(this.label43);
             this.addRicambioPanel.Controls.Add(this.submitRicambioBtn);
             this.addRicambioPanel.Controls.Add(this.textBox41);
@@ -2557,88 +2503,51 @@ namespace DBProject
             this.addRicambioPanel.Size = new System.Drawing.Size(836, 476);
             this.addRicambioPanel.TabIndex = 34;
             // 
-            // label119
+            // label55
             // 
-            this.label119.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label119.AutoSize = true;
-            this.label119.Location = new System.Drawing.Point(636, 212);
-            this.label119.Name = "label119";
-            this.label119.Size = new System.Drawing.Size(39, 13);
-            this.label119.TabIndex = 13;
-            this.label119.Text = "--> tipo";
+            this.label55.AutoSize = true;
+            this.label55.Location = new System.Drawing.Point(242, 148);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(111, 13);
+            this.label55.TabIndex = 15;
+            this.label55.Text = "Prezzo per riparazione";
+            // 
+            // textBox44
+            // 
+            this.textBox44.Location = new System.Drawing.Point(419, 145);
+            this.textBox44.MaxLength = 6;
+            this.textBox44.Name = "textBox44";
+            this.textBox44.Size = new System.Drawing.Size(188, 20);
+            this.textBox44.TabIndex = 14;
             // 
             // comboBox13
             // 
             this.comboBox13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBox13.DisplayMember = "Partita_IVA";
+            this.comboBox13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox13.FormattingEnabled = true;
-            this.comboBox13.Location = new System.Drawing.Point(416, 207);
+            this.comboBox13.Location = new System.Drawing.Point(417, 188);
             this.comboBox13.Name = "comboBox13";
             this.comboBox13.Size = new System.Drawing.Size(191, 21);
             this.comboBox13.TabIndex = 5;
             this.comboBox13.ValueMember = "Partita_IVA";
+            this.comboBox13.DropDown += new System.EventHandler(this.comboBox13_DropDown);
             // 
             // label64
             // 
             this.label64.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label64.AutoSize = true;
-            this.label64.Location = new System.Drawing.Point(241, 210);
+            this.label64.Location = new System.Drawing.Point(242, 191);
             this.label64.Name = "label64";
             this.label64.Size = new System.Drawing.Size(48, 13);
             this.label64.TabIndex = 12;
             this.label64.Text = "Fornitore";
             // 
-            // groupBox4
-            // 
-            this.groupBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.groupBox4.Controls.Add(this.label55);
-            this.groupBox4.Controls.Add(this.label58);
-            this.groupBox4.Controls.Add(this.textBox45);
-            this.groupBox4.Controls.Add(this.textBox44);
-            this.groupBox4.Location = new System.Drawing.Point(243, 124);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(365, 76);
-            this.groupBox4.TabIndex = 3;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Prezzi";
-            // 
-            // label55
-            // 
-            this.label55.AutoSize = true;
-            this.label55.Location = new System.Drawing.Point(7, 47);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(43, 13);
-            this.label55.TabIndex = 13;
-            this.label55.Text = "Vendita";
-            // 
-            // label58
-            // 
-            this.label58.AutoSize = true;
-            this.label58.Location = new System.Drawing.Point(8, 20);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(48, 13);
-            this.label58.TabIndex = 12;
-            this.label58.Text = "Acquisto";
-            // 
-            // textBox45
-            // 
-            this.textBox45.Location = new System.Drawing.Point(173, 17);
-            this.textBox45.Name = "textBox45";
-            this.textBox45.Size = new System.Drawing.Size(188, 20);
-            this.textBox45.TabIndex = 3;
-            // 
-            // textBox44
-            // 
-            this.textBox44.Location = new System.Drawing.Point(173, 44);
-            this.textBox44.Name = "textBox44";
-            this.textBox44.Size = new System.Drawing.Size(188, 20);
-            this.textBox44.TabIndex = 4;
-            // 
             // label43
             // 
             this.label43.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(240, 241);
+            this.label43.Location = new System.Drawing.Point(241, 222);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(57, 13);
             this.label43.TabIndex = 8;
@@ -2647,7 +2556,8 @@ namespace DBProject
             // textBox41
             // 
             this.textBox41.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox41.Location = new System.Drawing.Point(374, 243);
+            this.textBox41.Location = new System.Drawing.Point(375, 224);
+            this.textBox41.MaxLength = 255;
             this.textBox41.Multiline = true;
             this.textBox41.Name = "textBox41";
             this.textBox41.Size = new System.Drawing.Size(233, 85);
@@ -2657,7 +2567,7 @@ namespace DBProject
             // 
             this.label56.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label56.AutoSize = true;
-            this.label56.Location = new System.Drawing.Point(240, 105);
+            this.label56.Location = new System.Drawing.Point(240, 109);
             this.label56.Name = "label56";
             this.label56.Size = new System.Drawing.Size(35, 13);
             this.label56.TabIndex = 6;
@@ -2676,7 +2586,8 @@ namespace DBProject
             // textBox39
             // 
             this.textBox39.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox39.Location = new System.Drawing.Point(417, 102);
+            this.textBox39.Location = new System.Drawing.Point(417, 106);
+            this.textBox39.MaxLength = 30;
             this.textBox39.Name = "textBox39";
             this.textBox39.Size = new System.Drawing.Size(191, 20);
             this.textBox39.TabIndex = 2;
@@ -2684,7 +2595,8 @@ namespace DBProject
             // textBox40
             // 
             this.textBox40.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox40.Location = new System.Drawing.Point(417, 75);
+            this.textBox40.Location = new System.Drawing.Point(416, 75);
+            this.textBox40.MaxLength = 6;
             this.textBox40.Name = "textBox40";
             this.textBox40.Size = new System.Drawing.Size(192, 20);
             this.textBox40.TabIndex = 1;
@@ -2694,13 +2606,11 @@ namespace DBProject
             this.addGiacenzaPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.addGiacenzaPanel.Controls.Add(this.textBox4);
+            this.addGiacenzaPanel.Controls.Add(this.numericUpDown5);
             this.addGiacenzaPanel.Controls.Add(this.textBox48);
             this.addGiacenzaPanel.Controls.Add(this.submitGiacenzaBtn);
             this.addGiacenzaPanel.Controls.Add(this.label63);
-            this.addGiacenzaPanel.Controls.Add(this.label62);
             this.addGiacenzaPanel.Controls.Add(this.comboBox12);
-            this.addGiacenzaPanel.Controls.Add(this.textBox46);
             this.addGiacenzaPanel.Controls.Add(this.label59);
             this.addGiacenzaPanel.Controls.Add(this.dateTimePicker6);
             this.addGiacenzaPanel.Controls.Add(this.label60);
@@ -2711,18 +2621,11 @@ namespace DBProject
             this.addGiacenzaPanel.TabIndex = 24;
             this.addGiacenzaPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.addGiacenzaPanel_Paint);
             // 
-            // textBox4
-            // 
-            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox4.Location = new System.Drawing.Point(416, 127);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(185, 20);
-            this.textBox4.TabIndex = 19;
-            // 
             // textBox48
             // 
             this.textBox48.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox48.Location = new System.Drawing.Point(366, 280);
+            this.textBox48.Location = new System.Drawing.Point(366, 259);
+            this.textBox48.MaxLength = 255;
             this.textBox48.Multiline = true;
             this.textBox48.Name = "textBox48";
             this.textBox48.Size = new System.Drawing.Size(235, 112);
@@ -2732,26 +2635,17 @@ namespace DBProject
             // 
             this.label63.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label63.AutoSize = true;
-            this.label63.Location = new System.Drawing.Point(234, 283);
+            this.label63.Location = new System.Drawing.Point(234, 262);
             this.label63.Name = "label63";
             this.label63.Size = new System.Drawing.Size(45, 13);
             this.label63.TabIndex = 18;
             this.label63.Text = "Causale";
             // 
-            // label62
-            // 
-            this.label62.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label62.AutoSize = true;
-            this.label62.Location = new System.Drawing.Point(235, 130);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(44, 13);
-            this.label62.TabIndex = 16;
-            this.label62.Text = "Numero";
-            // 
             // comboBox12
             // 
             this.comboBox12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBox12.DisplayMember = "Codice";
+            this.comboBox12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox12.FormattingEnabled = true;
             this.comboBox12.Location = new System.Drawing.Point(416, 84);
             this.comboBox12.Name = "comboBox12";
@@ -2759,19 +2653,11 @@ namespace DBProject
             this.comboBox12.TabIndex = 1;
             this.comboBox12.ValueMember = "Codice";
             // 
-            // textBox46
-            // 
-            this.textBox46.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox46.Location = new System.Drawing.Point(416, 223);
-            this.textBox46.Name = "textBox46";
-            this.textBox46.Size = new System.Drawing.Size(185, 20);
-            this.textBox46.TabIndex = 3;
-            // 
             // label59
             // 
             this.label59.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label59.AutoSize = true;
-            this.label59.Location = new System.Drawing.Point(233, 226);
+            this.label59.Location = new System.Drawing.Point(233, 205);
             this.label59.Name = "label59";
             this.label59.Size = new System.Drawing.Size(85, 13);
             this.label59.TabIndex = 13;
@@ -2780,7 +2666,7 @@ namespace DBProject
             // dateTimePicker6
             // 
             this.dateTimePicker6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePicker6.Location = new System.Drawing.Point(416, 168);
+            this.dateTimePicker6.Location = new System.Drawing.Point(416, 147);
             this.dateTimePicker6.Name = "dateTimePicker6";
             this.dateTimePicker6.Size = new System.Drawing.Size(186, 20);
             this.dateTimePicker6.TabIndex = 2;
@@ -2789,7 +2675,7 @@ namespace DBProject
             // 
             this.label60.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label60.AutoSize = true;
-            this.label60.Location = new System.Drawing.Point(234, 170);
+            this.label60.Location = new System.Drawing.Point(234, 149);
             this.label60.Name = "label60";
             this.label60.Size = new System.Drawing.Size(30, 13);
             this.label60.TabIndex = 1;
@@ -2839,7 +2725,7 @@ namespace DBProject
             // 
             // dateTimePicker14
             // 
-            this.dateTimePicker14.Location = new System.Drawing.Point(202, 70);
+            this.dateTimePicker14.Location = new System.Drawing.Point(195, 70);
             this.dateTimePicker14.Name = "dateTimePicker14";
             this.dateTimePicker14.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker14.TabIndex = 20;
@@ -2847,17 +2733,19 @@ namespace DBProject
             // comboBox24
             // 
             this.comboBox24.DisplayMember = "Partita_IVA";
+            this.comboBox24.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox24.FormattingEnabled = true;
-            this.comboBox24.Location = new System.Drawing.Point(208, 43);
+            this.comboBox24.Location = new System.Drawing.Point(195, 43);
             this.comboBox24.Name = "comboBox24";
-            this.comboBox24.Size = new System.Drawing.Size(191, 21);
+            this.comboBox24.Size = new System.Drawing.Size(197, 21);
             this.comboBox24.TabIndex = 3;
             this.comboBox24.ValueMember = "Partita_IVA";
+            this.comboBox24.DropDown += new System.EventHandler(this.comboBox24_DropDown);
             // 
             // label65
             // 
             this.label65.AutoSize = true;
-            this.label65.Location = new System.Drawing.Point(24, 18);
+            this.label65.Location = new System.Drawing.Point(24, 51);
             this.label65.Name = "label65";
             this.label65.Size = new System.Drawing.Size(44, 13);
             this.label65.TabIndex = 12;
@@ -2866,26 +2754,28 @@ namespace DBProject
             // label118
             // 
             this.label118.AutoSize = true;
-            this.label118.Location = new System.Drawing.Point(24, 49);
+            this.label118.Location = new System.Drawing.Point(23, 22);
             this.label118.Name = "label118";
-            this.label118.Size = new System.Drawing.Size(48, 13);
+            this.label118.Size = new System.Drawing.Size(84, 13);
             this.label118.TabIndex = 19;
-            this.label118.Text = "Fornitore";
+            this.label118.Text = "Casa produttrice";
             // 
             // comboBox14
             // 
             this.comboBox14.DisplayMember = "Nome";
+            this.comboBox14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox14.FormattingEnabled = true;
-            this.comboBox14.Location = new System.Drawing.Point(208, 12);
+            this.comboBox14.Location = new System.Drawing.Point(194, 12);
             this.comboBox14.Name = "comboBox14";
-            this.comboBox14.Size = new System.Drawing.Size(191, 21);
+            this.comboBox14.Size = new System.Drawing.Size(198, 21);
             this.comboBox14.TabIndex = 2;
             this.comboBox14.ValueMember = "Nome";
+            this.comboBox14.DropDown += new System.EventHandler(this.casaProduttriceDropDown);
             // 
             // label117
             // 
             this.label117.AutoSize = true;
-            this.label117.Location = new System.Drawing.Point(24, 77);
+            this.label117.Location = new System.Drawing.Point(25, 77);
             this.label117.Name = "label117";
             this.label117.Size = new System.Drawing.Size(32, 13);
             this.label117.TabIndex = 17;
@@ -2894,13 +2784,13 @@ namespace DBProject
             // groupBox6
             // 
             this.groupBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox6.Controls.Add(this.numericUpDown2);
+            this.groupBox6.Controls.Add(this.numericUpDown1);
             this.groupBox6.Controls.Add(this.label75);
-            this.groupBox6.Controls.Add(this.textBox58);
             this.groupBox6.Controls.Add(this.label76);
             this.groupBox6.Controls.Add(this.textBox59);
             this.groupBox6.Controls.Add(this.label68);
             this.groupBox6.Controls.Add(this.textBox51);
-            this.groupBox6.Controls.Add(this.textBox55);
             this.groupBox6.Controls.Add(this.label72);
             this.groupBox6.Location = new System.Drawing.Point(202, 179);
             this.groupBox6.Name = "groupBox6";
@@ -2909,26 +2799,63 @@ namespace DBProject
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Informazioni base";
             // 
+            // numericUpDown2
+            // 
+            this.numericUpDown2.Location = new System.Drawing.Point(349, 52);
+            this.numericUpDown2.Maximum = new decimal(new int[] {
+            9,
+            0,
+            0,
+            0});
+            this.numericUpDown2.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown2.Name = "numericUpDown2";
+            this.numericUpDown2.Size = new System.Drawing.Size(44, 20);
+            this.numericUpDown2.TabIndex = 32;
+            this.numericUpDown2.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(349, 22);
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+            9,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(44, 20);
+            this.numericUpDown1.TabIndex = 31;
+            this.numericUpDown1.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
             // label75
             // 
             this.label75.AutoSize = true;
-            this.label75.Location = new System.Drawing.Point(15, 56);
+            this.label75.Location = new System.Drawing.Point(29, 56);
             this.label75.Name = "label75";
             this.label75.Size = new System.Drawing.Size(102, 13);
             this.label75.TabIndex = 28;
             this.label75.Text = "Capienza bagagliaio";
             // 
-            // textBox58
-            // 
-            this.textBox58.Location = new System.Drawing.Point(280, 51);
-            this.textBox58.Name = "textBox58";
-            this.textBox58.Size = new System.Drawing.Size(78, 20);
-            this.textBox58.TabIndex = 8;
-            // 
             // label76
             // 
             this.label76.AutoSize = true;
-            this.label76.Location = new System.Drawing.Point(240, 54);
+            this.label76.Location = new System.Drawing.Point(294, 54);
             this.label76.Name = "label76";
             this.label76.Size = new System.Drawing.Size(32, 13);
             this.label76.TabIndex = 26;
@@ -2936,7 +2863,8 @@ namespace DBProject
             // 
             // textBox59
             // 
-            this.textBox59.Location = new System.Drawing.Point(129, 54);
+            this.textBox59.Location = new System.Drawing.Point(143, 54);
+            this.textBox59.MaxLength = 3;
             this.textBox59.Name = "textBox59";
             this.textBox59.Size = new System.Drawing.Size(78, 20);
             this.textBox59.TabIndex = 7;
@@ -2944,7 +2872,7 @@ namespace DBProject
             // label68
             // 
             this.label68.AutoSize = true;
-            this.label68.Location = new System.Drawing.Point(15, 25);
+            this.label68.Location = new System.Drawing.Point(29, 25);
             this.label68.Name = "label68";
             this.label68.Size = new System.Drawing.Size(65, 13);
             this.label68.TabIndex = 14;
@@ -2952,23 +2880,16 @@ namespace DBProject
             // 
             // textBox51
             // 
-            this.textBox51.Location = new System.Drawing.Point(129, 25);
+            this.textBox51.Location = new System.Drawing.Point(143, 25);
+            this.textBox51.MaxLength = 10;
             this.textBox51.Name = "textBox51";
             this.textBox51.Size = new System.Drawing.Size(78, 20);
             this.textBox51.TabIndex = 5;
             // 
-            // textBox55
-            // 
-            this.textBox55.Location = new System.Drawing.Point(280, 22);
-            this.textBox55.Name = "textBox55";
-            this.textBox55.Size = new System.Drawing.Size(78, 20);
-            this.textBox55.TabIndex = 6;
-            this.textBox55.UseWaitCursor = true;
-            // 
             // label72
             // 
             this.label72.AutoSize = true;
-            this.label72.Location = new System.Drawing.Point(240, 26);
+            this.label72.Location = new System.Drawing.Point(294, 26);
             this.label72.Name = "label72";
             this.label72.Size = new System.Drawing.Size(30, 13);
             this.label72.TabIndex = 16;
@@ -2977,9 +2898,11 @@ namespace DBProject
             // groupBox5
             // 
             this.groupBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.groupBox5.Controls.Add(this.textBox60);
+            this.groupBox5.Controls.Add(this.comboBox23);
+            this.groupBox5.Controls.Add(this.comboBox18);
+            this.groupBox5.Controls.Add(this.comboBox17);
+            this.groupBox5.Controls.Add(this.comboBox16);
             this.groupBox5.Controls.Add(this.label77);
-            this.groupBox5.Controls.Add(this.textBox61);
             this.groupBox5.Controls.Add(this.label78);
             this.groupBox5.Controls.Add(this.textBox49);
             this.groupBox5.Controls.Add(this.label66);
@@ -2990,8 +2913,6 @@ namespace DBProject
             this.groupBox5.Controls.Add(this.label71);
             this.groupBox5.Controls.Add(this.textBox56);
             this.groupBox5.Controls.Add(this.textBox54);
-            this.groupBox5.Controls.Add(this.textBox57);
-            this.groupBox5.Controls.Add(this.textBox50);
             this.groupBox5.Controls.Add(this.label74);
             this.groupBox5.Location = new System.Drawing.Point(202, 267);
             this.groupBox5.Name = "groupBox5";
@@ -3000,12 +2921,71 @@ namespace DBProject
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Motore e prestazioni";
             // 
-            // textBox60
+            // comboBox23
             // 
-            this.textBox60.Location = new System.Drawing.Point(317, 42);
-            this.textBox60.Name = "textBox60";
-            this.textBox60.Size = new System.Drawing.Size(78, 20);
-            this.textBox60.TabIndex = 12;
+            this.comboBox23.DisplayMember = "Nome";
+            this.comboBox23.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox23.FormattingEnabled = true;
+            this.comboBox23.Items.AddRange(new object[] {
+            "Euro 0",
+            "Euro 1",
+            "Euro 2",
+            "Euro 3",
+            "Euro 4",
+            "Euro 5"});
+            this.comboBox23.Location = new System.Drawing.Point(105, 96);
+            this.comboBox23.Name = "comboBox23";
+            this.comboBox23.Size = new System.Drawing.Size(77, 21);
+            this.comboBox23.TabIndex = 34;
+            this.comboBox23.ValueMember = "Nome";
+            // 
+            // comboBox18
+            // 
+            this.comboBox18.DisplayMember = "Nome";
+            this.comboBox18.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox18.FormattingEnabled = true;
+            this.comboBox18.Items.AddRange(new object[] {
+            "Anteriore",
+            "Posteriore",
+            "Integrale"});
+            this.comboBox18.Location = new System.Drawing.Point(106, 44);
+            this.comboBox18.Name = "comboBox18";
+            this.comboBox18.Size = new System.Drawing.Size(77, 21);
+            this.comboBox18.TabIndex = 33;
+            this.comboBox18.ValueMember = "Nome";
+            // 
+            // comboBox17
+            // 
+            this.comboBox17.DisplayMember = "Nome";
+            this.comboBox17.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox17.FormattingEnabled = true;
+            this.comboBox17.Items.AddRange(new object[] {
+            "Benzina",
+            "Diesel",
+            "Metano",
+            "GPL",
+            "Ibrida",
+            "Elettrica"});
+            this.comboBox17.Location = new System.Drawing.Point(317, 70);
+            this.comboBox17.Name = "comboBox17";
+            this.comboBox17.Size = new System.Drawing.Size(77, 21);
+            this.comboBox17.TabIndex = 32;
+            this.comboBox17.ValueMember = "Nome";
+            // 
+            // comboBox16
+            // 
+            this.comboBox16.DisplayMember = "Nome";
+            this.comboBox16.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox16.FormattingEnabled = true;
+            this.comboBox16.Items.AddRange(new object[] {
+            "Automatico",
+            "Manuale",
+            "Al volante"});
+            this.comboBox16.Location = new System.Drawing.Point(317, 42);
+            this.comboBox16.Name = "comboBox16";
+            this.comboBox16.Size = new System.Drawing.Size(77, 21);
+            this.comboBox16.TabIndex = 31;
+            this.comboBox16.ValueMember = "Nome";
             // 
             // label77
             // 
@@ -3015,13 +2995,6 @@ namespace DBProject
             this.label77.Size = new System.Drawing.Size(42, 13);
             this.label77.TabIndex = 30;
             this.label77.Text = "Cambio";
-            // 
-            // textBox61
-            // 
-            this.textBox61.Location = new System.Drawing.Point(105, 42);
-            this.textBox61.Name = "textBox61";
-            this.textBox61.Size = new System.Drawing.Size(78, 20);
-            this.textBox61.TabIndex = 11;
             // 
             // label78
             // 
@@ -3035,6 +3008,7 @@ namespace DBProject
             // textBox49
             // 
             this.textBox49.Location = new System.Drawing.Point(317, 15);
+            this.textBox49.MaxLength = 6;
             this.textBox49.Name = "textBox49";
             this.textBox49.Size = new System.Drawing.Size(78, 20);
             this.textBox49.TabIndex = 10;
@@ -3060,6 +3034,7 @@ namespace DBProject
             // textBox52
             // 
             this.textBox52.Location = new System.Drawing.Point(105, 16);
+            this.textBox52.MaxLength = 6;
             this.textBox52.Name = "textBox52";
             this.textBox52.Size = new System.Drawing.Size(78, 20);
             this.textBox52.TabIndex = 9;
@@ -3094,6 +3069,7 @@ namespace DBProject
             // textBox56
             // 
             this.textBox56.Location = new System.Drawing.Point(316, 96);
+            this.textBox56.MaxLength = 3;
             this.textBox56.Name = "textBox56";
             this.textBox56.Size = new System.Drawing.Size(78, 20);
             this.textBox56.TabIndex = 16;
@@ -3101,23 +3077,10 @@ namespace DBProject
             // textBox54
             // 
             this.textBox54.Location = new System.Drawing.Point(105, 71);
+            this.textBox54.MaxLength = 6;
             this.textBox54.Name = "textBox54";
             this.textBox54.Size = new System.Drawing.Size(78, 20);
             this.textBox54.TabIndex = 13;
-            // 
-            // textBox57
-            // 
-            this.textBox57.Location = new System.Drawing.Point(105, 99);
-            this.textBox57.Name = "textBox57";
-            this.textBox57.Size = new System.Drawing.Size(78, 20);
-            this.textBox57.TabIndex = 15;
-            // 
-            // textBox50
-            // 
-            this.textBox50.Location = new System.Drawing.Point(316, 69);
-            this.textBox50.Name = "textBox50";
-            this.textBox50.Size = new System.Drawing.Size(78, 20);
-            this.textBox50.TabIndex = 14;
             // 
             // label74
             // 
@@ -3141,7 +3104,8 @@ namespace DBProject
             // textBox53
             // 
             this.textBox53.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox53.Location = new System.Drawing.Point(333, 48);
+            this.textBox53.Location = new System.Drawing.Point(328, 50);
+            this.textBox53.MaxLength = 6;
             this.textBox53.Name = "textBox53";
             this.textBox53.Size = new System.Drawing.Size(79, 20);
             this.textBox53.TabIndex = 1;
@@ -3184,6 +3148,7 @@ namespace DBProject
             // 
             this.comboBox15.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBox15.DisplayMember = "Partita_IVA";
+            this.comboBox15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox15.FormattingEnabled = true;
             this.comboBox15.ItemHeight = 13;
             this.comboBox15.Location = new System.Drawing.Point(382, 180);
@@ -3191,6 +3156,7 @@ namespace DBProject
             this.comboBox15.Size = new System.Drawing.Size(191, 21);
             this.comboBox15.TabIndex = 3;
             this.comboBox15.ValueMember = "Partita_IVA";
+            this.comboBox15.DropDown += new System.EventHandler(this.casaProduttriceDropDown);
             // 
             // label91
             // 
@@ -3216,6 +3182,7 @@ namespace DBProject
             // 
             this.textBox74.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox74.Location = new System.Drawing.Point(381, 126);
+            this.textBox74.MaxLength = 20;
             this.textBox74.Name = "textBox74";
             this.textBox74.Size = new System.Drawing.Size(192, 20);
             this.textBox74.TabIndex = 1;
@@ -3243,6 +3210,7 @@ namespace DBProject
             // 
             this.textBox66.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox66.Location = new System.Drawing.Point(400, 215);
+            this.textBox66.MaxLength = 255;
             this.textBox66.Multiline = true;
             this.textBox66.Name = "textBox66";
             this.textBox66.Size = new System.Drawing.Size(216, 109);
@@ -3262,6 +3230,7 @@ namespace DBProject
             // 
             this.textBox65.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox65.Location = new System.Drawing.Point(399, 89);
+            this.textBox65.MaxLength = 6;
             this.textBox65.Name = "textBox65";
             this.textBox65.Size = new System.Drawing.Size(150, 20);
             this.textBox65.TabIndex = 1;
@@ -3308,6 +3277,7 @@ namespace DBProject
             // 
             this.textBox64.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox64.Location = new System.Drawing.Point(400, 132);
+            this.textBox64.MaxLength = 30;
             this.textBox64.Name = "textBox64";
             this.textBox64.Size = new System.Drawing.Size(150, 20);
             this.textBox64.TabIndex = 2;
@@ -3334,6 +3304,7 @@ namespace DBProject
             // 
             this.comboRic.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboRic.DisplayMember = "Codice";
+            this.comboRic.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboRic.FormattingEnabled = true;
             this.comboRic.Location = new System.Drawing.Point(383, 176);
             this.comboRic.Name = "comboRic";
@@ -3345,6 +3316,7 @@ namespace DBProject
             // 
             this.comboVeicCat.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboVeicCat.DisplayMember = "Codice";
+            this.comboVeicCat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboVeicCat.FormattingEnabled = true;
             this.comboVeicCat.Location = new System.Drawing.Point(384, 118);
             this.comboVeicCat.Name = "comboVeicCat";
@@ -3401,12 +3373,8 @@ namespace DBProject
             | System.Windows.Forms.AnchorStyles.Right)));
             this.addVenditaPanel.Controls.Add(this.comboBox20);
             this.addVenditaPanel.Controls.Add(this.label95);
-            this.addVenditaPanel.Controls.Add(this.textBox67);
             this.addVenditaPanel.Controls.Add(this.submitVenditaBtn);
-            this.addVenditaPanel.Controls.Add(this.label85);
-            this.addVenditaPanel.Controls.Add(this.comboBox18);
             this.addVenditaPanel.Controls.Add(this.comboBox19);
-            this.addVenditaPanel.Controls.Add(this.label86);
             this.addVenditaPanel.Controls.Add(this.label88);
             this.addVenditaPanel.Location = new System.Drawing.Point(1, -2);
             this.addVenditaPanel.Name = "addVenditaPanel";
@@ -3417,8 +3385,9 @@ namespace DBProject
             // 
             this.comboBox20.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBox20.DisplayMember = "Numero";
+            this.comboBox20.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox20.FormattingEnabled = true;
-            this.comboBox20.Location = new System.Drawing.Point(399, 192);
+            this.comboBox20.Location = new System.Drawing.Point(421, 188);
             this.comboBox20.Name = "comboBox20";
             this.comboBox20.Size = new System.Drawing.Size(121, 21);
             this.comboBox20.TabIndex = 3;
@@ -3428,95 +3397,48 @@ namespace DBProject
             // 
             this.label95.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label95.AutoSize = true;
-            this.label95.Location = new System.Drawing.Point(301, 197);
+            this.label95.Location = new System.Drawing.Point(301, 193);
             this.label95.Name = "label95";
             this.label95.Size = new System.Drawing.Size(50, 13);
             this.label95.TabIndex = 21;
             this.label95.Text = "Contratto";
             // 
-            // textBox67
-            // 
-            this.textBox67.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox67.Location = new System.Drawing.Point(399, 104);
-            this.textBox67.Name = "textBox67";
-            this.textBox67.Size = new System.Drawing.Size(121, 20);
-            this.textBox67.TabIndex = 1;
-            // 
-            // label85
-            // 
-            this.label85.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label85.AutoSize = true;
-            this.label85.Location = new System.Drawing.Point(301, 105);
-            this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(36, 13);
-            this.label85.TabIndex = 19;
-            this.label85.Text = "Telaio";
-            // 
-            // comboBox18
-            // 
-            this.comboBox18.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox18.DisplayMember = "ID_ordine";
-            this.comboBox18.FormattingEnabled = true;
-            this.comboBox18.Location = new System.Drawing.Point(399, 237);
-            this.comboBox18.Name = "comboBox18";
-            this.comboBox18.Size = new System.Drawing.Size(121, 21);
-            this.comboBox18.TabIndex = 4;
-            this.comboBox18.ValueMember = "ID_ordine";
-            // 
             // comboBox19
             // 
             this.comboBox19.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBox19.DisplayMember = "Codice";
+            this.comboBox19.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox19.FormattingEnabled = true;
-            this.comboBox19.Location = new System.Drawing.Point(399, 147);
+            this.comboBox19.Location = new System.Drawing.Point(421, 143);
             this.comboBox19.Name = "comboBox19";
             this.comboBox19.Size = new System.Drawing.Size(121, 21);
             this.comboBox19.TabIndex = 2;
             this.comboBox19.ValueMember = "Codice";
             // 
-            // label86
-            // 
-            this.label86.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label86.AutoSize = true;
-            this.label86.Location = new System.Drawing.Point(301, 242);
-            this.label86.Name = "label86";
-            this.label86.Size = new System.Drawing.Size(91, 13);
-            this.label86.TabIndex = 16;
-            this.label86.Text = "Ordine spedizione";
-            // 
             // label88
             // 
             this.label88.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label88.AutoSize = true;
-            this.label88.Location = new System.Drawing.Point(301, 150);
+            this.label88.Location = new System.Drawing.Point(301, 146);
             this.label88.Name = "label88";
-            this.label88.Size = new System.Drawing.Size(42, 13);
+            this.label88.Size = new System.Drawing.Size(97, 13);
             this.label88.TabIndex = 4;
-            this.label88.Text = "Veicolo";
+            this.label88.Text = "Veicolo in catalogo";
             // 
             // addRevisionePanel
             // 
             this.addRevisionePanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.addRevisionePanel.Controls.Add(this.textBox13);
             this.addRevisionePanel.Controls.Add(this.label90);
             this.addRevisionePanel.Controls.Add(this.dateTimePicker8);
             this.addRevisionePanel.Controls.Add(this.submitRevisioneBtn);
-            this.addRevisionePanel.Controls.Add(this.label89);
             this.addRevisionePanel.Controls.Add(this.comboBox21);
             this.addRevisionePanel.Controls.Add(this.label93);
             this.addRevisionePanel.Location = new System.Drawing.Point(0, -3);
             this.addRevisionePanel.Name = "addRevisionePanel";
             this.addRevisionePanel.Size = new System.Drawing.Size(836, 476);
             this.addRevisionePanel.TabIndex = 40;
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(359, 100);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(146, 20);
-            this.textBox13.TabIndex = 22;
             // 
             // label90
             // 
@@ -3536,20 +3458,11 @@ namespace DBProject
             this.dateTimePicker8.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker8.TabIndex = 2;
             // 
-            // label89
-            // 
-            this.label89.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label89.AutoSize = true;
-            this.label89.Location = new System.Drawing.Point(263, 106);
-            this.label89.Name = "label89";
-            this.label89.Size = new System.Drawing.Size(44, 13);
-            this.label89.TabIndex = 19;
-            this.label89.Text = "Numero";
-            // 
             // comboBox21
             // 
             this.comboBox21.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBox21.DisplayMember = "Numero_telaio";
+            this.comboBox21.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox21.FormattingEnabled = true;
             this.comboBox21.Location = new System.Drawing.Point(359, 157);
             this.comboBox21.Name = "comboBox21";
@@ -3688,10 +3601,10 @@ namespace DBProject
             this.addVeicRicToOrdinePanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.addVeicRicToOrdinePanel.Controls.Add(this.numericUpDown4);
             this.addVeicRicToOrdinePanel.Controls.Add(this.textBox1);
             this.addVeicRicToOrdinePanel.Controls.Add(this.label17);
             this.addVeicRicToOrdinePanel.Controls.Add(this.comboItem);
-            this.addVeicRicToOrdinePanel.Controls.Add(this.textBox93);
             this.addVeicRicToOrdinePanel.Controls.Add(this.submitAddVeicRicToOrderBtn);
             this.addVeicRicToOrdinePanel.Controls.Add(this.comboBox3);
             this.addVeicRicToOrdinePanel.Controls.Add(this.label129);
@@ -3702,6 +3615,25 @@ namespace DBProject
             this.addVeicRicToOrdinePanel.Size = new System.Drawing.Size(836, 478);
             this.addVeicRicToOrdinePanel.TabIndex = 42;
             this.addVeicRicToOrdinePanel.VisibleChanged += new System.EventHandler(this.addVeicRicToOrdinePanel_VisibleChanged);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox1.Location = new System.Drawing.Point(420, 212);
+            this.textBox1.MaxLength = 10;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(121, 20);
+            this.textBox1.TabIndex = 23;
+            // 
+            // label17
+            // 
+            this.label17.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(291, 215);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(50, 13);
+            this.label17.TabIndex = 22;
+            this.label17.Text = "Prezzo/u";
             // 
             // comboItem
             // 
@@ -3715,22 +3647,13 @@ namespace DBProject
             this.comboItem.TabIndex = 21;
             this.comboItem.ValueMember = "Codice";
             // 
-            // textBox93
-            // 
-            this.textBox93.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox93.Location = new System.Drawing.Point(420, 254);
-            this.textBox93.MaxLength = 6;
-            this.textBox93.Name = "textBox93";
-            this.textBox93.Size = new System.Drawing.Size(121, 20);
-            this.textBox93.TabIndex = 20;
-            // 
             // comboBox3
             // 
             this.comboBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBox3.DisplayMember = "ID_ordine";
             this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(419, 116);
+            this.comboBox3.Location = new System.Drawing.Point(419, 119);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(246, 21);
             this.comboBox3.TabIndex = 18;
@@ -3750,7 +3673,7 @@ namespace DBProject
             // 
             this.label131.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label131.AutoSize = true;
-            this.label131.Location = new System.Drawing.Point(289, 117);
+            this.label131.Location = new System.Drawing.Point(289, 120);
             this.label131.Name = "label131";
             this.label131.Size = new System.Drawing.Size(38, 13);
             this.label131.TabIndex = 17;
@@ -3787,6 +3710,7 @@ namespace DBProject
             // 
             this.comboBox27.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBox27.DisplayMember = "Numero";
+            this.comboBox27.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox27.FormattingEnabled = true;
             this.comboBox27.Location = new System.Drawing.Point(426, 167);
             this.comboBox27.Name = "comboBox27";
@@ -3808,6 +3732,7 @@ namespace DBProject
             // 
             this.comboBox26.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBox26.DisplayMember = "Veicolo_Numero_telaio";
+            this.comboBox26.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox26.FormattingEnabled = true;
             this.comboBox26.Location = new System.Drawing.Point(426, 114);
             this.comboBox26.Name = "comboBox26";
@@ -3843,30 +3768,67 @@ namespace DBProject
             this.label124.TabIndex = 0;
             this.label124.Text = "Veicolo";
             // 
-            // textBox1
+            // numericUpDown4
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Location = new System.Drawing.Point(420, 212);
-            this.textBox1.MaxLength = 10;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 20);
-            this.textBox1.TabIndex = 23;
+            this.numericUpDown4.Location = new System.Drawing.Point(421, 253);
+            this.numericUpDown4.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.numericUpDown4.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown4.Name = "numericUpDown4";
+            this.numericUpDown4.Size = new System.Drawing.Size(121, 20);
+            this.numericUpDown4.TabIndex = 24;
+            this.numericUpDown4.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
-            // label17
+            // numericUpDown5
             // 
-            this.label17.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(291, 215);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(50, 13);
-            this.label17.TabIndex = 22;
-            this.label17.Text = "Prezzo/u";
+            this.numericUpDown5.Location = new System.Drawing.Point(518, 205);
+            this.numericUpDown5.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.numericUpDown5.Name = "numericUpDown5";
+            this.numericUpDown5.Size = new System.Drawing.Size(84, 20);
+            this.numericUpDown5.TabIndex = 19;
+            // 
+            // numericUpDown6
+            // 
+            this.numericUpDown6.Location = new System.Drawing.Point(300, 24);
+            this.numericUpDown6.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown6.Name = "numericUpDown6";
+            this.numericUpDown6.Size = new System.Drawing.Size(68, 20);
+            this.numericUpDown6.TabIndex = 11;
+            this.numericUpDown6.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // EntryForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(839, 472);
+            this.Controls.Add(this.addModelloPanel);
+            this.Controls.Add(this.addVeicoloPanel);
+            this.Controls.Add(this.addRicambioPanel);
+            this.Controls.Add(this.addUtilizzoRicambioRipPanel);
+            this.Controls.Add(this.addRiparazionePanel);
             this.Controls.Add(this.addVeicRicToOrdinePanel);
             this.Controls.Add(this.addOrdinePanel);
             this.Controls.Add(this.addFornitorePanel);
@@ -3883,11 +3845,6 @@ namespace DBProject
             this.Controls.Add(this.addVenditaPanel);
             this.Controls.Add(this.addOptToVeicPanel);
             this.Controls.Add(this.addOptionalPanel);
-            this.Controls.Add(this.addModelloPanel);
-            this.Controls.Add(this.addVeicoloPanel);
-            this.Controls.Add(this.addRicambioPanel);
-            this.Controls.Add(this.addUtilizzoRicambioRipPanel);
-            this.Controls.Add(this.addRiparazionePanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EntryForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -3946,10 +3903,9 @@ namespace DBProject
             this.addRiparazionePanel.PerformLayout();
             this.addUtilizzoRicambioRipPanel.ResumeLayout(false);
             this.addUtilizzoRicambioRipPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
             this.addRicambioPanel.ResumeLayout(false);
             this.addRicambioPanel.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
             this.addGiacenzaPanel.ResumeLayout(false);
             this.addGiacenzaPanel.PerformLayout();
             this.addVeicoloPanel.ResumeLayout(false);
@@ -3958,6 +3914,8 @@ namespace DBProject
             this.groupBox21.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.addModelloPanel.ResumeLayout(false);
@@ -3980,6 +3938,9 @@ namespace DBProject
             this.addVeicRicToOrdinePanel.PerformLayout();
             this.addEsecRevPanel.ResumeLayout(false);
             this.addEsecRevPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -4000,7 +3961,6 @@ namespace DBProject
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Label label12;
@@ -4020,7 +3980,6 @@ namespace DBProject
         private Label label25;
         private Label label26;
         private Label label27;
-        private Label label28;
         private ComboBox comboBox6;
         private ComboBox comboBox5;
         private Panel addTrasportoPanel;
@@ -4034,8 +3993,6 @@ namespace DBProject
         private Label label38;
         private Label label37;
         private Label label36;
-        private Label label35;
-        private TextBox textBox20;
         private TextBox textBox19;
         private DateTimePicker dateTimePicker2;
         private Label label29;
@@ -4068,16 +4025,13 @@ namespace DBProject
         private Label label45;
         private Label label46;
         private Label label49;
-        private Label label53;
         private TextBox textBox42;
-        private TextBox textBox43;
         private Panel addUtilizzoRicambioRipPanel;
         private ComboBox comboBox11;
         private Label label54;
         private ComboBox comboBox10;
         private Label label21;
         private Label label40;
-        private TextBox textBox16;
         private Panel addRicambioPanel;
         private Label label56;
         private Label label57;
@@ -4085,15 +4039,8 @@ namespace DBProject
         private TextBox textBox40;
         private Label label43;
         private TextBox textBox41;
-        private GroupBox groupBox4;
-        private Label label55;
-        private Label label58;
-        private TextBox textBox45;
-        private TextBox textBox44;
         private Panel addGiacenzaPanel;
-        private Label label62;
         private ComboBox comboBox12;
-        private TextBox textBox46;
         private Label label59;
         private DateTimePicker dateTimePicker6;
         private Label label60;
@@ -4109,10 +4056,7 @@ namespace DBProject
         private Label label73;
         private Label label67;
         private TextBox textBox56;
-        private TextBox textBox50;
         private Label label74;
-        private TextBox textBox55;
-        private TextBox textBox57;
         private Label label72;
         private TextBox textBox54;
         private Label label71;
@@ -4126,12 +4070,9 @@ namespace DBProject
         private Label label70;
         private TextBox textBox53;
         private Label label75;
-        private TextBox textBox58;
         private Label label76;
         private TextBox textBox59;
-        private TextBox textBox60;
         private Label label77;
-        private TextBox textBox61;
         private Label label78;
         private Panel addModelloPanel;
         private Label label79;
@@ -4154,15 +4095,10 @@ namespace DBProject
         private Label label84;
         private Label label87;
         private Panel addVenditaPanel;
-        private TextBox textBox67;
-        private Label label85;
-        private ComboBox comboBox18;
         private ComboBox comboBox19;
-        private Label label86;
         private Label label88;
         private Panel addRevisionePanel;
         private Label label90;
-        private Label label89;
         private ComboBox comboBox21;
         private Label label93;
         private DateTimePicker dateTimePicker8;
@@ -4267,7 +4203,6 @@ namespace DBProject
         private ComboBox comboBox24;
         private Label label118;
         private Label label117;
-        private Label label119;
         private ComboBox comboBox25;
         private Label label120;
         private Panel addOrdinePanel;
@@ -4275,7 +4210,6 @@ namespace DBProject
         private Button submitAddOrdineBtn;
         private Panel addVeicRicToOrdinePanel;
         private Button submitAddVeicRicToOrderBtn;
-        private TextBox textBox93;
         private ComboBox comboBox3;
         private Label label131;
         private Label label130;
@@ -4304,9 +4238,6 @@ namespace DBProject
         private ComboBox comboFattura;
         private ComboBox comboFornitore;
         private Label label126;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox13;
         private ComboBox comboBox4;
         private Label label97;
         private ComboBox comboBox9;
@@ -4316,5 +4247,17 @@ namespace DBProject
         private DateTimePicker datePagamento;
         private TextBox textBox1;
         private Label label17;
+        private NumericUpDown numericUpDown2;
+        private NumericUpDown numericUpDown1;
+        private ComboBox comboBox18;
+        private ComboBox comboBox17;
+        private ComboBox comboBox16;
+        private ComboBox comboBox23;
+        private Label label55;
+        private TextBox textBox44;
+        private NumericUpDown numericUpDown3;
+        private NumericUpDown numericUpDown4;
+        private NumericUpDown numericUpDown5;
+        private NumericUpDown numericUpDown6;
     }
 }
