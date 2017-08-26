@@ -238,8 +238,7 @@ namespace DBProject
             {
                 // settare comboBox adeguatamente
                 case Entry.RicVeic:
-                    this.label84.Text = "Ricambio";
-                    this.comboRic.BringToFront();
+                    this.label84.Text = "Ricambio";                   
                     break;
                 case Entry.OptToVeicVend:
                     this.comboVeicVend.BringToFront();
@@ -249,11 +248,7 @@ namespace DBProject
             {
                 this.label84.Text = "Optional";
                 this.comboOpt.BringToFront();
-            }
-            else if (currEntry != Entry.OptToVeicVend)
-            {
-                this.comboVeicCat.BringToFront();
-            }
+            }           
         }
 
         #endregion
@@ -337,30 +332,29 @@ namespace DBProject
         }
 
         private void submitVenditaBtn_Click(object sender, EventArgs e)
-        {/*
-            Veicolo_venduto vv = new Veicolo_venduto();
+        {
+            VeicoloVenduto vv = new VeicoloVenduto();
 
-            vv.Numero_telaio = this.textBox67.Text;
-            vv.Contratto_Numero = convertStringInt(this.comboBox20.ValueMember);
-            vv.Ordine_ID_ordine = this.comboBox18.ValueMember;
-            vv.Veicolo_Codice = this.comboBox19.ValueMember;
+            var val = this.comboBox20.SelectedValue;
+            vv.Contratto = val == null ? -1 : convertStringInt(val.ToString());
+
+            val = this.comboBox19.SelectedValue;
+            vv.VeicoloCatalogo = val == null ? null :val.ToString();             
 
             try
             {
-                if (!(isString(vv.Numero_telaio) &&
-                        isString(vv.Veicolo_Codice) &&
-                        isString(vv.Ordine_ID_ordine) &&
-                        isInt(vv.Contratto_Numero)))
+                if (!(isString(vv.VeicoloCatalogo) &&                        
+                       isInt((int)vv.Contratto)))
                 {
-                    throw new Exception("Campi vuoti");
+                    throw new Exception("Campi vuoti o errati");
                 }
-                //db.Veicolo_venduto.InsertOnSubmit(vv);
-                //db.SubmitChanges();
+                db.VeicoloVenduto.InsertOnSubmit(vv);
+                db.SubmitChanges();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Errore di inserimento dati");
-            }*/
+            }
 
             this.Close();
         }
@@ -405,29 +399,30 @@ namespace DBProject
         }
 
         private void submitModelloBtn_Click(object sender, EventArgs e)
-        {/*
-            Modello_veicolo m = new Modello_veicolo();
+        {
+            ModelloVeicolo m = new ModelloVeicolo();
 
             m.Nome = this.textBox74.Text;
             m.Anno = this.dateTimePicker15.Value;
-            m.Fornitore_Partita_IVA = this.comboBox15.ValueMember;
+
+            var val = this.comboBox15.SelectedValue;
+            m.Fornitore = val == null ? null : val.ToString();    
 
             try
             {
                 if (!(isString(m.Nome) &&
-                        isString(m.Fornitore_Partita_IVA)))
+                        isString(m.Fornitore)))
                 {
-                    throw new Exception("Campi vuoti");
+                    throw new Exception("Campi vuoti o errati");
                 }
-                //db.Modello_veicolo.InsertOnSubmit(m);
-                //db.SubmitChanges();
+                db.ModelloVeicolo.InsertOnSubmit(m);
+                db.SubmitChanges();
+                this.Close();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Errore di inserimento dati");
-            }
-            */
-            this.Close();
+            }                        
         }
 
         private void submitRicambioBtn_Click(object sender, EventArgs e)
@@ -516,30 +511,30 @@ namespace DBProject
         }
 
         private void submitContrattoBtn_Click(object sender, EventArgs e)
-        {/*
-            Contratto_di_vendita v = new Contratto_di_vendita();
-            //Da aggiungere numero
-
+        {
+            ContrattoVendita v = new ContrattoVendita();            
             v.Data = this.dateTimePicker9.Value;
-            v.Importo_complessivo = convertStringFloat(this.textBox21.Text);
-            v.Nostre_Mod_Da = convertStringFloat(this.comboBox6.ValueMember);
-            v.Cliente_PartitaIVA_CodiceFiscale = this.comboBox5.ValueMember;
+            v.ImportoComplessivo = convertStringFloat(this.textBox21.Text);
+            var val = this.comboBox5.SelectedValue;
+            v.ModalitàPagamento = val == null ? -1 : convertStringFloat(val.ToString());
+            val = this.comboBox6.SelectedValue;
+            v.Cliente = val == null ? -1 : convertStringInt(val.ToString());
             try
             {
-                if (!(isString(v.Cliente_PartitaIVA_CodiceFiscale) &&
-                        isFloat(v.Importo_complessivo) &&
-                        isFloat(v.Nostre_Mod_Da)))
+                if (!(isInt((int)v.Cliente) &&
+                        isFloat(v.ImportoComplessivo) &&
+                        isFloat(v.ModalitàPagamento)))
                 {
-                    throw new Exception("Campi vuoti");
+                    throw new Exception("Campi vuoti o errati");
                 }
-                //db.Contratto_di_vendita.InsertOnSubmit(v);
-                //db.SubmitChanges();
+                db.ContrattoVendita.InsertOnSubmit(v);
+                db.SubmitChanges();
+                this.Close();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Errore di inserimento dati");
-            }*/
-            this.Close();
+            }            
         }
 
         private void submitClienteABtn_Click(object sender, EventArgs e)
@@ -757,38 +752,53 @@ namespace DBProject
 
         private void submitModalitaPagBtn_Click(object sender, EventArgs e)
         {
-            // mino uso questo metodo sia per le nostre modalità di pagamento che per quelle del
-            // fornitore, il se inserire le nostre modalità o quelle del fornitore lo aggiungo poi io
-            
-            ModalitàPagamento mp = new ModalitàPagamento();
-            NostreModalitàPagamento nmp = new NostreModalitàPagamento();
-            var val = this.fornAddModPagComboBox.SelectedValue;
-            mp.Fornitore = val == null ? null : val.ToString();
-            nmp.Da = mp.Da = convertStringFloat( this.textBox8.Text);
-            nmp.A = mp.A = convertStringFloat(this.textBox9.Text);
-            nmp.NumerRate = mp.NumeroRate = numericUpDown6.Value;        
-            nmp.Periodicità = mp.Periodicità = this.comboBox4.Text;
-            nmp.TassoInteresse = mp.TassoInteresse = convertStringFloat(this.textBox12.Text);
-
             try
             {
-                if (!(  isString(mp.Fornitore) &&
-                        isFloat(mp.Da) &&
-                        isFloat(mp.A) &&
-                        isInt((int)mp.NumeroRate) &&
-                        (mp.Da < mp.A) &&
-                        isString(mp.Periodicità) &&
-                        isFloat(mp.TassoInteresse)))
-                {
-                    throw new Exception("Campi vuoti o errati");
-                }               
-
                 // Aggiungo mod pagamento del fornitore                
-                if (currEntry == Entry.ModPag)                
-                    db.ModalitàPagamento.InsertOnSubmit(mp);                
-                // Aggiungo mie modalità di pagamento
-                else                
-                    db.NostreModalitàPagamento.InsertOnSubmit(nmp);                
+                if (currEntry == Entry.ModPag)
+                {
+                    ModalitàPagamento mp = new ModalitàPagamento();
+                    var val = this.fornAddModPagComboBox.SelectedValue;
+                    mp.Fornitore = val == null ? null : val.ToString();
+                    mp.Da = convertStringFloat(this.textBox8.Text);
+                    mp.A = convertStringFloat(this.textBox9.Text);
+                    mp.NumeroRate = numericUpDown6.Value;
+                    mp.Periodicità = this.comboBox4.Text;
+                    mp.TassoInteresse = convertStringFloat(this.textBox12.Text);
+                    if (!(isString(mp.Fornitore) &&
+                            isFloat(mp.Da) &&
+                            isFloat(mp.A) &&
+                            isInt((int)mp.NumeroRate) &&
+                            (mp.Da < mp.A) &&
+                            isString(mp.Periodicità) &&
+                            isFloat(mp.TassoInteresse)))
+                    {
+                        throw new Exception("Campi vuoti o errati");
+                    }
+
+                    db.ModalitàPagamento.InsertOnSubmit(mp);
+                }
+                else
+                {
+                    NostreModalitàPagamento nmp = new NostreModalitàPagamento();
+                    nmp.Da = convertStringFloat(this.textBox8.Text);
+                    nmp.A = convertStringFloat(this.textBox9.Text);
+                    nmp.NumerRate = numericUpDown6.Value;
+                    nmp.Periodicità = this.comboBox4.Text;
+                    nmp.TassoInteresse = convertStringFloat(this.textBox12.Text);
+
+                    if (!(isFloat(nmp.Da) &&
+                            isFloat(nmp.A) &&
+                            isInt((int)nmp.NumerRate) &&
+                            (nmp.Da < nmp.A) &&
+                            isString(nmp.Periodicità) &&
+                            isFloat(nmp.TassoInteresse)))
+                    {
+                        throw new Exception("Campi vuoti o errati");
+                    }
+
+                    db.NostreModalitàPagamento.InsertOnSubmit(nmp);
+                }
 
                 db.SubmitChanges();
                 this.Close();
@@ -796,7 +806,7 @@ namespace DBProject
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Errore di inserimento dati");
-            }                       
+            }
         }
 
         private void submitRevisioneBtn_Click(object sender, EventArgs e)
@@ -806,58 +816,75 @@ namespace DBProject
         }
 
         private void submitVeicoloBtn_Click(object sender, EventArgs e)
-        {/*
-            Veicolo_in_catalogo v = new Veicolo_in_catalogo();
+        {
+            VeicoloCatalogo v = new VeicoloCatalogo();
             v.Codice = this.textBox53.Text;
-            v.Modello_Nome = this.comboBox14.ValueMember;
-            v.Modello_Partita_IVA = this.comboBox24.ValueMember;
-            v.Modello_Anno = this.dateTimePicker14.Value;
 
-            v.Prezzo_base =convertStringFloat(this.textBox51.Text);
-            v.No_posti =convertStringInt(this.textBox55.Text);
-            v.Capienza_bagagliaio =convertStringFloat(this.textBox59.Text);
-            v.No_porte = convertStringInt(this.textBox58.Text);
+            var val = this.comboBox14.SelectedValue;
+            v.NomeModello = val == null ? null : val.ToString();
 
+            val = this.comboBox28.SelectedValue;
+            Boolean date = false;
+            if (date = (val != null))            
+                v.AnnoModello = Convert.ToDateTime(val.ToString());            
+                         
+            v.PrezzoBase = convertStringFloat(this.textBox51.Text);
+            v.NumPosti = numericUpDown1.Value;
+            v.CapienzaBagagliaio = convertStringFloat(this.textBox59.Text);
+            v.NumPorte = numericUpDown2.Value;
             v.Potenza = convertStringFloat(this.textBox52.Text);
-            v.Trazione = this.textBox61.Text;
+            val = this.comboBox18.SelectedValue;
+            v.Trazione = val == null ? null : val.ToString();            
             v.Consumi = convertStringFloat(this.textBox54.Text);
-            v.Omologazione = this.textBox57.Text;
-            v.Cilindrata =convertStringFloat( this.textBox49.Text);
-            v.Cambio = this.textBox60.Text;
-            v.Tipo_alimentazione = this.textBox50.Text;
-            v.Capacita_serbatorio =convertStringFloat(this.textBox56.Text);
+            val = this.comboBox23.SelectedValue;
+            v.Omologazione = val == null ? null : val.ToString();                         
+            v.Cilindrata = convertStringFloat( this.textBox49.Text);
+            val = this.comboBox16.SelectedValue;
+            v.Cambio = val == null ? null : val.ToString();
+
+            val = this.comboBox17.SelectedValue;
+            v.TipoAlimentazione = val == null ? null : val.ToString();            
+            v.CapacitàSerbatorio = convertStringFloat(this.textBox56.Text);
+           
+            Console.WriteLine(isString(v.Trazione));
+            Console.WriteLine(isString(v.Omologazione));
+            /*
+            isFloat(v.Consumi) &&
+                        isFloat(v.CapacitàSerbatorio) &&
+                        isFloat(v.Cilindrata) &&
+                        isString(v.TipoAlimentazione) &&
+                        isString(v.Cambio) &&
+                        isFloat(v.Potenza)))*/            
+
+
+
 
             try
             {
-                if (!(  isString(v.Codice) &&
-                        isString(v.Modello_Nome) &&
-                        isString(v.Modello_Partita_IVA) &&
-
-                        isFloat(v.Prezzo_base) &&
-                        isFloat(v.Capienza_bagagliaio) &&
-                        isInt(v.No_posti) &&
-                        isInt(v.No_porte) &&
-
+                if (!( isString(v.Codice) &&
+                        isString(v.NomeModello) && 
+                        date &&                                                
+                        isFloat(v.PrezzoBase) &&
+                        isFloat(v.CapienzaBagagliaio) &&                       
                         isString(v.Trazione) &&
                         isString(v.Omologazione) &&
                         isFloat(v.Consumi) &&
-                        isFloat(v.Capacita_serbatorio) &&
+                        isFloat(v.CapacitàSerbatorio) &&
                         isFloat(v.Cilindrata) &&
-                        isString(v.Tipo_alimentazione) &&
+                        isString(v.TipoAlimentazione) &&
                         isString(v.Cambio) &&
                         isFloat(v.Potenza)))
                 {
-                    throw new Exception("Campi vuoti");
+                    throw new Exception("Campi vuoti o errati");
                 }
-                //db.Trasporto.InsertOnSubmit(v); 
-                //db.SubmitChanges();
+                db.VeicoloCatalogo.InsertOnSubmit(v); 
+                db.SubmitChanges();
+                this.Close();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Errore di inserimento dati");
-            }
-            */
-            this.Close();
+            }                        
         }
 
         private void submitDettaglioBtn_Click(object sender, EventArgs e)
@@ -1225,7 +1252,7 @@ namespace DBProject
                          where f.Fornitore == forn
                          select f.Nome;
 
-            this.comboBox22.DataSource = mod.ToList();            
+            this.comboBox24.DataSource = mod.ToList();            
         }
 
         private void comboBox13_DropDown(object sender, EventArgs e)
@@ -1238,6 +1265,106 @@ namespace DBProject
             combo.DataSource = pive.ToList();
             combo.DisplayMember = "RagioneSociale";
             combo.ValueMember = "PartitaIVA";
+        }
+       
+        private void ClienteDropDown(object sender, EventArgs e)
+        {
+            var cliP = from c in this.db.Cliente
+                      where c.CodiceFiscale != null                       
+                       select new Client {Member = (c.Nome + " " + c.Cognome + " CF: " + c.CodiceFiscale), Id = c.Id};
+
+           var cliA = from c in this.db.Cliente
+                      where c.PartitaIVA != null
+                      select new Client {Member = (c.RagioneSociale + " PIVA: " + c.PartitaIVA), Id = c.Id};
+
+            List<Client> clients = cliP.ToList<Client>();
+
+            ComboBox combo = (ComboBox)sender;
+            combo.DataSource = clients.Concat(cliA.ToList<Client>()).ToList<Client>();
+            combo.DisplayMember = "Member";
+            combo.ValueMember = "Id";
+        }
+        private class Client
+        {
+            public String Member { get; set; }
+            public Decimal Id { get; set; }
+        }
+
+        private void comboBox5_DropDown(object sender, EventArgs e)
+        {           
+            var modpag = from f in this.db.NostreModalitàPagamento                      
+                         select new { f.Da, member = f.Da + "-" + f.A };
+            ComboBox combo = (ComboBox)sender;
+            combo.DataSource = modpag.ToList();
+            combo.DisplayMember = "member";
+            combo.ValueMember = "Da";
+        }
+
+        private void comboBox28_DropDown(object sender, EventArgs e)
+        {
+            var value = this.comboBox24.SelectedValue;
+            if (value == null)
+                return;
+
+            String mod = value.ToString();
+
+            var anni = from f in this.db.ModelloVeicolo
+                       where f.Nome == mod
+                       select f.Anno;
+            ComboBox combo = (ComboBox)sender;
+            combo.DataSource = anni.ToList();          
+        }
+
+        private void comboBox19_DropDown(object sender, EventArgs e)
+        {
+            var data = from v in db.VeicoloCatalogo
+                       select new { v.NomeModello, v.Codice };
+
+            ComboBox combo = (ComboBox)sender;
+            combo.DataSource = data;
+            combo.DisplayMember = "NomeModello";
+            combo.ValueMember = "Codice";
+        }        
+
+        private void comboBox20_DropDown(object sender, EventArgs e)
+        {           
+            var value = this.comboBox29.SelectedValue;
+            if (value == null)
+                return;
+
+            Decimal cli = convertStringInt(value.ToString());
+
+            var data = from v in db.ContrattoVendita
+                       where v.Cliente == cli
+                       select v.Numero;
+
+            ComboBox combo = (ComboBox)sender;
+            combo.DataSource = data;            
+        }
+
+        private void comboVeicVend_DropDown(object sender, EventArgs e)
+        {
+            var data = from v in db.VeicoloVenduto
+                       select new {member=v.VeicoloCatalogo1.NomeModello + " ID: " + v.Id, v.Id };
+
+            ComboBox combo = (ComboBox)sender;
+            combo.DataSource = data;
+            combo.DisplayMember = "member";
+            combo.ValueMember = "Id";
+        }
+
+        private void comboOpt_DropDown(object sender, EventArgs e)
+        {/*
+            var value = this.comboVeicVend.SelectedValue;
+            if (value == null)
+                return;
+
+            String veic = value.ToString();
+            var op = from f in this.db.Optional
+                      where f.Supporto == forn
+                      select f.Nome;
+
+            this.comboBox24.DataSource = mod.ToList();*/
         }
     }
 

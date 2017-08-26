@@ -251,7 +251,7 @@ namespace DBProject
             this.label61 = new System.Windows.Forms.Label();
             this.addVeicoloPanel = new System.Windows.Forms.Panel();
             this.groupBox21 = new System.Windows.Forms.GroupBox();
-            this.dateTimePicker14 = new System.Windows.Forms.DateTimePicker();
+            this.comboBox28 = new System.Windows.Forms.ComboBox();
             this.comboBox24 = new System.Windows.Forms.ComboBox();
             this.label65 = new System.Windows.Forms.Label();
             this.label118 = new System.Windows.Forms.Label();
@@ -302,13 +302,13 @@ namespace DBProject
             this.label82 = new System.Windows.Forms.Label();
             this.textBox64 = new System.Windows.Forms.TextBox();
             this.addOptToVeicPanel = new System.Windows.Forms.Panel();
-            this.comboRic = new System.Windows.Forms.ComboBox();
-            this.comboVeicCat = new System.Windows.Forms.ComboBox();
             this.comboOpt = new System.Windows.Forms.ComboBox();
             this.comboVeicVend = new System.Windows.Forms.ComboBox();
             this.label84 = new System.Windows.Forms.Label();
             this.label87 = new System.Windows.Forms.Label();
             this.addVenditaPanel = new System.Windows.Forms.Panel();
+            this.comboBox29 = new System.Windows.Forms.ComboBox();
+            this.label22 = new System.Windows.Forms.Label();
             this.comboBox20 = new System.Windows.Forms.ComboBox();
             this.label95 = new System.Windows.Forms.Label();
             this.comboBox19 = new System.Windows.Forms.ComboBox();
@@ -900,11 +900,10 @@ namespace DBProject
             this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Items.AddRange(new object[] {
+            "Immediato",
             "Mensile",
             "Bimestrale",
-            "Trimestrale",
-            "Quadrimestrale",
-            "Semestrale"});
+            "Trimestrale"});
             this.comboBox4.Location = new System.Drawing.Point(185, 56);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(183, 21);
@@ -1876,6 +1875,7 @@ namespace DBProject
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(183, 21);
             this.comboBox6.TabIndex = 4;
+            this.comboBox6.DropDown += new System.EventHandler(this.ClienteDropDown);
             // 
             // comboBox5
             // 
@@ -1888,6 +1888,7 @@ namespace DBProject
             this.comboBox5.Size = new System.Drawing.Size(183, 21);
             this.comboBox5.TabIndex = 5;
             this.comboBox5.ValueMember = "Da";
+            this.comboBox5.DropDown += new System.EventHandler(this.comboBox5_DropDown);
             // 
             // textBox21
             // 
@@ -2739,7 +2740,7 @@ namespace DBProject
             // groupBox21
             // 
             this.groupBox21.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.groupBox21.Controls.Add(this.dateTimePicker14);
+            this.groupBox21.Controls.Add(this.comboBox28);
             this.groupBox21.Controls.Add(this.comboBox24);
             this.groupBox21.Controls.Add(this.label65);
             this.groupBox21.Controls.Add(this.label118);
@@ -2752,12 +2753,17 @@ namespace DBProject
             this.groupBox21.TabStop = false;
             this.groupBox21.Text = "Produzione";
             // 
-            // dateTimePicker14
+            // comboBox28
             // 
-            this.dateTimePicker14.Location = new System.Drawing.Point(195, 70);
-            this.dateTimePicker14.Name = "dateTimePicker14";
-            this.dateTimePicker14.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker14.TabIndex = 20;
+            this.comboBox28.DisplayMember = "Partita_IVA";
+            this.comboBox28.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox28.FormattingEnabled = true;
+            this.comboBox28.Location = new System.Drawing.Point(196, 72);
+            this.comboBox28.Name = "comboBox28";
+            this.comboBox28.Size = new System.Drawing.Size(197, 21);
+            this.comboBox28.TabIndex = 20;
+            this.comboBox28.ValueMember = "Partita_IVA";
+            this.comboBox28.DropDown += new System.EventHandler(this.comboBox28_DropDown);
             // 
             // comboBox24
             // 
@@ -3316,8 +3322,6 @@ namespace DBProject
             this.addOptToVeicPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.addOptToVeicPanel.Controls.Add(this.comboRic);
-            this.addOptToVeicPanel.Controls.Add(this.comboVeicCat);
             this.addOptToVeicPanel.Controls.Add(this.comboOpt);
             this.addOptToVeicPanel.Controls.Add(this.comboVeicVend);
             this.addOptToVeicPanel.Controls.Add(this.label84);
@@ -3329,51 +3333,31 @@ namespace DBProject
             this.addOptToVeicPanel.TabIndex = 38;
             this.addOptToVeicPanel.VisibleChanged += new System.EventHandler(this.addOptToVeicPanel_VisibleChanged);
             // 
-            // comboRic
-            // 
-            this.comboRic.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboRic.DisplayMember = "Codice";
-            this.comboRic.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboRic.FormattingEnabled = true;
-            this.comboRic.Location = new System.Drawing.Point(383, 176);
-            this.comboRic.Name = "comboRic";
-            this.comboRic.Size = new System.Drawing.Size(121, 21);
-            this.comboRic.TabIndex = 18;
-            this.comboRic.ValueMember = "Codice";
-            // 
-            // comboVeicCat
-            // 
-            this.comboVeicCat.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboVeicCat.DisplayMember = "Codice";
-            this.comboVeicCat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboVeicCat.FormattingEnabled = true;
-            this.comboVeicCat.Location = new System.Drawing.Point(384, 118);
-            this.comboVeicCat.Name = "comboVeicCat";
-            this.comboVeicCat.Size = new System.Drawing.Size(121, 21);
-            this.comboVeicCat.TabIndex = 17;
-            this.comboVeicCat.ValueMember = "Codice";
-            // 
             // comboOpt
             // 
             this.comboOpt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboOpt.DisplayMember = "Codice";
+            this.comboOpt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboOpt.FormattingEnabled = true;
             this.comboOpt.Location = new System.Drawing.Point(383, 176);
             this.comboOpt.Name = "comboOpt";
             this.comboOpt.Size = new System.Drawing.Size(121, 21);
             this.comboOpt.TabIndex = 2;
             this.comboOpt.ValueMember = "Codice";
+            this.comboOpt.DropDown += new System.EventHandler(this.comboOpt_DropDown);
             // 
             // comboVeicVend
             // 
             this.comboVeicVend.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboVeicVend.DisplayMember = "Numero_telaio";
+            this.comboVeicVend.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboVeicVend.FormattingEnabled = true;
             this.comboVeicVend.Location = new System.Drawing.Point(384, 118);
             this.comboVeicVend.Name = "comboVeicVend";
             this.comboVeicVend.Size = new System.Drawing.Size(121, 21);
             this.comboVeicVend.TabIndex = 1;
             this.comboVeicVend.ValueMember = "Numero_telaio";
+            this.comboVeicVend.DropDown += new System.EventHandler(this.comboVeicVend_DropDown);
             // 
             // label84
             // 
@@ -3400,6 +3384,8 @@ namespace DBProject
             this.addVenditaPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.addVenditaPanel.Controls.Add(this.comboBox29);
+            this.addVenditaPanel.Controls.Add(this.label22);
             this.addVenditaPanel.Controls.Add(this.comboBox20);
             this.addVenditaPanel.Controls.Add(this.label95);
             this.addVenditaPanel.Controls.Add(this.submitVenditaBtn);
@@ -3410,23 +3396,47 @@ namespace DBProject
             this.addVenditaPanel.Size = new System.Drawing.Size(836, 476);
             this.addVenditaPanel.TabIndex = 39;
             // 
+            // comboBox29
+            // 
+            this.comboBox29.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboBox29.DisplayMember = "Numero";
+            this.comboBox29.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox29.FormattingEnabled = true;
+            this.comboBox29.Location = new System.Drawing.Point(421, 146);
+            this.comboBox29.Name = "comboBox29";
+            this.comboBox29.Size = new System.Drawing.Size(209, 21);
+            this.comboBox29.TabIndex = 22;
+            this.comboBox29.ValueMember = "Numero";
+            this.comboBox29.DropDown += new System.EventHandler(this.ClienteDropDown);
+            // 
+            // label22
+            // 
+            this.label22.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(304, 151);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(39, 13);
+            this.label22.TabIndex = 23;
+            this.label22.Text = "Cliente";
+            // 
             // comboBox20
             // 
             this.comboBox20.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBox20.DisplayMember = "Numero";
             this.comboBox20.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox20.FormattingEnabled = true;
-            this.comboBox20.Location = new System.Drawing.Point(421, 188);
+            this.comboBox20.Location = new System.Drawing.Point(421, 183);
             this.comboBox20.Name = "comboBox20";
             this.comboBox20.Size = new System.Drawing.Size(121, 21);
             this.comboBox20.TabIndex = 3;
             this.comboBox20.ValueMember = "Numero";
+            this.comboBox20.DropDown += new System.EventHandler(this.comboBox20_DropDown);
             // 
             // label95
             // 
             this.label95.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label95.AutoSize = true;
-            this.label95.Location = new System.Drawing.Point(301, 193);
+            this.label95.Location = new System.Drawing.Point(302, 188);
             this.label95.Name = "label95";
             this.label95.Size = new System.Drawing.Size(50, 13);
             this.label95.TabIndex = 21;
@@ -3438,17 +3448,18 @@ namespace DBProject
             this.comboBox19.DisplayMember = "Codice";
             this.comboBox19.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox19.FormattingEnabled = true;
-            this.comboBox19.Location = new System.Drawing.Point(421, 143);
+            this.comboBox19.Location = new System.Drawing.Point(420, 222);
             this.comboBox19.Name = "comboBox19";
             this.comboBox19.Size = new System.Drawing.Size(121, 21);
             this.comboBox19.TabIndex = 2;
             this.comboBox19.ValueMember = "Codice";
+            this.comboBox19.DropDown += new System.EventHandler(this.comboBox19_DropDown);
             // 
             // label88
             // 
             this.label88.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label88.AutoSize = true;
-            this.label88.Location = new System.Drawing.Point(301, 146);
+            this.label88.Location = new System.Drawing.Point(300, 225);
             this.label88.Name = "label88";
             this.label88.Size = new System.Drawing.Size(97, 13);
             this.label88.TabIndex = 4;
@@ -3824,9 +3835,6 @@ namespace DBProject
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(839, 472);
-            this.Controls.Add(this.addModalitaPagPanel);
-            this.Controls.Add(this.addRevisionePanel);
-            this.Controls.Add(this.addVenditaPanel);
             this.Controls.Add(this.addOptToVeicPanel);
             this.Controls.Add(this.addOptionalPanel);
             this.Controls.Add(this.addModelloPanel);
@@ -3845,6 +3853,9 @@ namespace DBProject
             this.Controls.Add(this.addEsecRevPanel);
             this.Controls.Add(this.addPerfPanel);
             this.Controls.Add(this.addTrasportoPanel);
+            this.Controls.Add(this.addModalitaPagPanel);
+            this.Controls.Add(this.addRevisionePanel);
+            this.Controls.Add(this.addVenditaPanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EntryForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -4230,9 +4241,6 @@ namespace DBProject
         private Label label124;
         private ComboBox comboBox27;
         private Label label125;
-        private DateTimePicker dateTimePicker14;
-        private ComboBox comboVeicCat;
-        private ComboBox comboRic;
         private DateTimePicker dateTimePicker15;
         private ComboBox comboItem;
         private ComboBox comboFattura;
@@ -4259,5 +4267,8 @@ namespace DBProject
         private NumericUpDown numericUpDown4;
         private NumericUpDown numericUpDown5;
         private NumericUpDown numericUpDown6;
+        private ComboBox comboBox28;
+        private ComboBox comboBox29;
+        private Label label22;
     }
 }
