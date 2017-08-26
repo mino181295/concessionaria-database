@@ -766,7 +766,7 @@ namespace DBProject
             mp.Fornitore = val == null ? null : val.ToString();
             nmp.Da = mp.Da = convertStringFloat( this.textBox8.Text);
             nmp.A = mp.A = convertStringFloat(this.textBox9.Text);
-            nmp.NumerRate = mp.NumeroRate = convertStringInt(this.textBox10.Text);           
+            nmp.NumerRate = mp.NumeroRate = numericUpDown6.Value;        
             nmp.Periodicità = mp.Periodicità = this.comboBox4.Text;
             nmp.TassoInteresse = mp.TassoInteresse = convertStringFloat(this.textBox12.Text);
 

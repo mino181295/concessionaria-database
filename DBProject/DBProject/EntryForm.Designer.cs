@@ -78,6 +78,7 @@ namespace DBProject
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.addModalitaPagPanel = new System.Windows.Forms.Panel();
             this.groupBox20 = new System.Windows.Forms.GroupBox();
+            this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -113,6 +114,31 @@ namespace DBProject
             this.button1 = new System.Windows.Forms.Button();
             this.addClientePanel = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.groupBox18 = new System.Windows.Forms.GroupBox();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.label111 = new System.Windows.Forms.Label();
+            this.textBox79 = new System.Windows.Forms.TextBox();
+            this.label116 = new System.Windows.Forms.Label();
+            this.groupBox14 = new System.Windows.Forms.GroupBox();
+            this.textBox80 = new System.Windows.Forms.TextBox();
+            this.label108 = new System.Windows.Forms.Label();
+            this.textBox82 = new System.Windows.Forms.TextBox();
+            this.label109 = new System.Windows.Forms.Label();
+            this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.label106 = new System.Windows.Forms.Label();
+            this.textBox81 = new System.Windows.Forms.TextBox();
+            this.label107 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.textBox28 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.textBox30 = new System.Windows.Forms.TextBox();
+            this.textBox31 = new System.Windows.Forms.TextBox();
+            this.textBox32 = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox16 = new System.Windows.Forms.GroupBox();
             this.textBox76 = new System.Windows.Forms.TextBox();
@@ -144,31 +170,6 @@ namespace DBProject
             this.label115 = new System.Windows.Forms.Label();
             this.textBox77 = new System.Windows.Forms.TextBox();
             this.label105 = new System.Windows.Forms.Label();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.groupBox18 = new System.Windows.Forms.GroupBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.label111 = new System.Windows.Forms.Label();
-            this.textBox79 = new System.Windows.Forms.TextBox();
-            this.label116 = new System.Windows.Forms.Label();
-            this.groupBox14 = new System.Windows.Forms.GroupBox();
-            this.textBox80 = new System.Windows.Forms.TextBox();
-            this.label108 = new System.Windows.Forms.Label();
-            this.textBox82 = new System.Windows.Forms.TextBox();
-            this.label109 = new System.Windows.Forms.Label();
-            this.groupBox13 = new System.Windows.Forms.GroupBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.label106 = new System.Windows.Forms.Label();
-            this.textBox81 = new System.Windows.Forms.TextBox();
-            this.label107 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBox28 = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.textBox30 = new System.Windows.Forms.TextBox();
-            this.textBox31 = new System.Windows.Forms.TextBox();
-            this.textBox32 = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
             this.addContrattoPanel = new System.Windows.Forms.Panel();
             this.dateTimePicker9 = new System.Windows.Forms.DateTimePicker();
             this.comboBox6 = new System.Windows.Forms.ComboBox();
@@ -240,6 +241,7 @@ namespace DBProject
             this.textBox39 = new System.Windows.Forms.TextBox();
             this.textBox40 = new System.Windows.Forms.TextBox();
             this.addGiacenzaPanel = new System.Windows.Forms.Panel();
+            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
             this.textBox48 = new System.Windows.Forms.TextBox();
             this.label63 = new System.Windows.Forms.Label();
             this.comboBox12 = new System.Windows.Forms.ComboBox();
@@ -328,6 +330,7 @@ namespace DBProject
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.addVeicRicToOrdinePanel = new System.Windows.Forms.Panel();
+            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.comboItem = new System.Windows.Forms.ComboBox();
@@ -342,9 +345,6 @@ namespace DBProject
             this.dateTimePicker7 = new System.Windows.Forms.DateTimePicker();
             this.label94 = new System.Windows.Forms.Label();
             this.label124 = new System.Windows.Forms.Label();
-            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
             this.addFornitorePanel.SuspendLayout();
             this.groupBox11.SuspendLayout();
             this.groupBox10.SuspendLayout();
@@ -354,19 +354,20 @@ namespace DBProject
             this.addFatturaPanel.SuspendLayout();
             this.addModalitaPagPanel.SuspendLayout();
             this.groupBox20.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
             this.groupBox19.SuspendLayout();
             this.addClientePanel.SuspendLayout();
             this.tabControl1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.groupBox16.SuspendLayout();
-            this.groupBox12.SuspendLayout();
-            this.groupBox15.SuspendLayout();
-            this.groupBox17.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox18.SuspendLayout();
             this.groupBox14.SuspendLayout();
             this.groupBox13.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.groupBox16.SuspendLayout();
+            this.groupBox12.SuspendLayout();
+            this.groupBox15.SuspendLayout();
+            this.groupBox17.SuspendLayout();
             this.addContrattoPanel.SuspendLayout();
             this.addTrasportoPanel.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -377,6 +378,7 @@ namespace DBProject
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
             this.addRicambioPanel.SuspendLayout();
             this.addGiacenzaPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
             this.addVeicoloPanel.SuspendLayout();
             this.groupBox21.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -392,10 +394,8 @@ namespace DBProject
             this.groupBox22.SuspendLayout();
             this.groupBox23.SuspendLayout();
             this.addVeicRicToOrdinePanel.SuspendLayout();
-            this.addEsecRevPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
+            this.addEsecRevPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // addFornitorePanel
@@ -877,6 +877,23 @@ namespace DBProject
             this.groupBox20.TabStop = false;
             this.groupBox20.Text = "Caratteristiche";
             // 
+            // numericUpDown6
+            // 
+            this.numericUpDown6.Location = new System.Drawing.Point(300, 24);
+            this.numericUpDown6.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown6.Name = "numericUpDown6";
+            this.numericUpDown6.Size = new System.Drawing.Size(68, 20);
+            this.numericUpDown6.TabIndex = 11;
+            this.numericUpDown6.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
             // comboBox4
             // 
             this.comboBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -1278,6 +1295,251 @@ namespace DBProject
             this.tabControl1.Size = new System.Drawing.Size(827, 480);
             this.tabControl1.TabIndex = 20;
             // 
+            // tabPage1
+            // 
+            this.tabPage1.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPage1.Controls.Add(this.groupBox18);
+            this.tabPage1.Controls.Add(this.groupBox14);
+            this.tabPage1.Controls.Add(this.submitClienteABtn);
+            this.tabPage1.Controls.Add(this.groupBox13);
+            this.tabPage1.Controls.Add(this.groupBox3);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(819, 454);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Azienda";
+            // 
+            // groupBox18
+            // 
+            this.groupBox18.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox18.Controls.Add(this.textBox17);
+            this.groupBox18.Controls.Add(this.label111);
+            this.groupBox18.Controls.Add(this.textBox79);
+            this.groupBox18.Controls.Add(this.label116);
+            this.groupBox18.Location = new System.Drawing.Point(429, 50);
+            this.groupBox18.Name = "groupBox18";
+            this.groupBox18.Size = new System.Drawing.Size(360, 70);
+            this.groupBox18.TabIndex = 5;
+            this.groupBox18.TabStop = false;
+            this.groupBox18.Text = "Recapiti";
+            // 
+            // textBox17
+            // 
+            this.textBox17.Location = new System.Drawing.Point(176, 40);
+            this.textBox17.MaxLength = 12;
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(181, 20);
+            this.textBox17.TabIndex = 6;
+            // 
+            // label111
+            // 
+            this.label111.AutoSize = true;
+            this.label111.Location = new System.Drawing.Point(23, 19);
+            this.label111.Name = "label111";
+            this.label111.Size = new System.Drawing.Size(53, 13);
+            this.label111.TabIndex = 19;
+            this.label111.Text = "Principale";
+            // 
+            // textBox79
+            // 
+            this.textBox79.Location = new System.Drawing.Point(176, 14);
+            this.textBox79.MaxLength = 12;
+            this.textBox79.Name = "textBox79";
+            this.textBox79.Size = new System.Drawing.Size(181, 20);
+            this.textBox79.TabIndex = 5;
+            // 
+            // label116
+            // 
+            this.label116.AutoSize = true;
+            this.label116.Location = new System.Drawing.Point(23, 43);
+            this.label116.Name = "label116";
+            this.label116.Size = new System.Drawing.Size(61, 13);
+            this.label116.TabIndex = 18;
+            this.label116.Text = "Secondario";
+            // 
+            // groupBox14
+            // 
+            this.groupBox14.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox14.Controls.Add(this.textBox80);
+            this.groupBox14.Controls.Add(this.label108);
+            this.groupBox14.Controls.Add(this.textBox82);
+            this.groupBox14.Controls.Add(this.label109);
+            this.groupBox14.Location = new System.Drawing.Point(46, 50);
+            this.groupBox14.Name = "groupBox14";
+            this.groupBox14.Size = new System.Drawing.Size(360, 67);
+            this.groupBox14.TabIndex = 1;
+            this.groupBox14.TabStop = false;
+            this.groupBox14.Text = "Nominativi";
+            // 
+            // textBox80
+            // 
+            this.textBox80.Location = new System.Drawing.Point(176, 40);
+            this.textBox80.MaxLength = 50;
+            this.textBox80.Name = "textBox80";
+            this.textBox80.Size = new System.Drawing.Size(181, 20);
+            this.textBox80.TabIndex = 2;
+            // 
+            // label108
+            // 
+            this.label108.AutoSize = true;
+            this.label108.Location = new System.Drawing.Point(23, 19);
+            this.label108.Name = "label108";
+            this.label108.Size = new System.Drawing.Size(57, 13);
+            this.label108.TabIndex = 19;
+            this.label108.Text = "Partita IVA";
+            // 
+            // textBox82
+            // 
+            this.textBox82.Location = new System.Drawing.Point(176, 14);
+            this.textBox82.MaxLength = 11;
+            this.textBox82.Name = "textBox82";
+            this.textBox82.Size = new System.Drawing.Size(181, 20);
+            this.textBox82.TabIndex = 1;
+            // 
+            // label109
+            // 
+            this.label109.AutoSize = true;
+            this.label109.Location = new System.Drawing.Point(23, 43);
+            this.label109.Name = "label109";
+            this.label109.Size = new System.Drawing.Size(83, 13);
+            this.label109.TabIndex = 18;
+            this.label109.Text = "Ragione sociale";
+            // 
+            // groupBox13
+            // 
+            this.groupBox13.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox13.Controls.Add(this.textBox15);
+            this.groupBox13.Controls.Add(this.label106);
+            this.groupBox13.Controls.Add(this.textBox81);
+            this.groupBox13.Controls.Add(this.label107);
+            this.groupBox13.Location = new System.Drawing.Point(46, 195);
+            this.groupBox13.Name = "groupBox13";
+            this.groupBox13.Size = new System.Drawing.Size(360, 67);
+            this.groupBox13.TabIndex = 3;
+            this.groupBox13.TabStop = false;
+            this.groupBox13.Text = "Indirizzi email";
+            // 
+            // textBox15
+            // 
+            this.textBox15.Location = new System.Drawing.Point(176, 40);
+            this.textBox15.MaxLength = 30;
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(181, 20);
+            this.textBox15.TabIndex = 4;
+            // 
+            // label106
+            // 
+            this.label106.AutoSize = true;
+            this.label106.Location = new System.Drawing.Point(23, 19);
+            this.label106.Name = "label106";
+            this.label106.Size = new System.Drawing.Size(53, 13);
+            this.label106.TabIndex = 19;
+            this.label106.Text = "Principale";
+            // 
+            // textBox81
+            // 
+            this.textBox81.Location = new System.Drawing.Point(176, 14);
+            this.textBox81.MaxLength = 30;
+            this.textBox81.Name = "textBox81";
+            this.textBox81.Size = new System.Drawing.Size(181, 20);
+            this.textBox81.TabIndex = 3;
+            // 
+            // label107
+            // 
+            this.label107.AutoSize = true;
+            this.label107.Location = new System.Drawing.Point(23, 43);
+            this.label107.Name = "label107";
+            this.label107.Size = new System.Drawing.Size(61, 13);
+            this.label107.TabIndex = 18;
+            this.label107.Text = "Secondario";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox3.Controls.Add(this.textBox28);
+            this.groupBox3.Controls.Add(this.label14);
+            this.groupBox3.Controls.Add(this.textBox30);
+            this.groupBox3.Controls.Add(this.textBox31);
+            this.groupBox3.Controls.Add(this.textBox32);
+            this.groupBox3.Controls.Add(this.label15);
+            this.groupBox3.Controls.Add(this.label16);
+            this.groupBox3.Controls.Add(this.label30);
+            this.groupBox3.Location = new System.Drawing.Point(430, 195);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(360, 127);
+            this.groupBox3.TabIndex = 8;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Sede";
+            // 
+            // textBox28
+            // 
+            this.textBox28.Location = new System.Drawing.Point(176, 40);
+            this.textBox28.MaxLength = 30;
+            this.textBox28.Name = "textBox28";
+            this.textBox28.Size = new System.Drawing.Size(181, 20);
+            this.textBox28.TabIndex = 9;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(23, 19);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(45, 13);
+            this.label14.TabIndex = 19;
+            this.label14.Text = "Indirizzo";
+            // 
+            // textBox30
+            // 
+            this.textBox30.Location = new System.Drawing.Point(176, 67);
+            this.textBox30.MaxLength = 30;
+            this.textBox30.Name = "textBox30";
+            this.textBox30.Size = new System.Drawing.Size(181, 20);
+            this.textBox30.TabIndex = 10;
+            // 
+            // textBox31
+            // 
+            this.textBox31.Location = new System.Drawing.Point(176, 14);
+            this.textBox31.MaxLength = 50;
+            this.textBox31.Name = "textBox31";
+            this.textBox31.Size = new System.Drawing.Size(181, 20);
+            this.textBox31.TabIndex = 8;
+            // 
+            // textBox32
+            // 
+            this.textBox32.Location = new System.Drawing.Point(175, 92);
+            this.textBox32.MaxLength = 4;
+            this.textBox32.Name = "textBox32";
+            this.textBox32.Size = new System.Drawing.Size(78, 20);
+            this.textBox32.TabIndex = 11;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(23, 43);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(28, 13);
+            this.label15.TabIndex = 18;
+            this.label15.Text = "Città";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(23, 95);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(28, 13);
+            this.label16.TabIndex = 16;
+            this.label16.Text = "CAP";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(23, 70);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(51, 13);
+            this.label30.TabIndex = 17;
+            this.label30.Text = "Provincia";
+            // 
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.SystemColors.Control;
@@ -1577,251 +1839,6 @@ namespace DBProject
             this.label105.Size = new System.Drawing.Size(121, 13);
             this.label105.TabIndex = 24;
             this.label105.Text = "Partita IVA - Cod. fiscale";
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.BackColor = System.Drawing.SystemColors.Control;
-            this.tabPage1.Controls.Add(this.groupBox18);
-            this.tabPage1.Controls.Add(this.groupBox14);
-            this.tabPage1.Controls.Add(this.submitClienteABtn);
-            this.tabPage1.Controls.Add(this.groupBox13);
-            this.tabPage1.Controls.Add(this.groupBox3);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(819, 454);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Azienda";
-            // 
-            // groupBox18
-            // 
-            this.groupBox18.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.groupBox18.Controls.Add(this.textBox17);
-            this.groupBox18.Controls.Add(this.label111);
-            this.groupBox18.Controls.Add(this.textBox79);
-            this.groupBox18.Controls.Add(this.label116);
-            this.groupBox18.Location = new System.Drawing.Point(429, 50);
-            this.groupBox18.Name = "groupBox18";
-            this.groupBox18.Size = new System.Drawing.Size(360, 70);
-            this.groupBox18.TabIndex = 5;
-            this.groupBox18.TabStop = false;
-            this.groupBox18.Text = "Recapiti";
-            // 
-            // textBox17
-            // 
-            this.textBox17.Location = new System.Drawing.Point(176, 40);
-            this.textBox17.MaxLength = 12;
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(181, 20);
-            this.textBox17.TabIndex = 6;
-            // 
-            // label111
-            // 
-            this.label111.AutoSize = true;
-            this.label111.Location = new System.Drawing.Point(23, 19);
-            this.label111.Name = "label111";
-            this.label111.Size = new System.Drawing.Size(53, 13);
-            this.label111.TabIndex = 19;
-            this.label111.Text = "Principale";
-            // 
-            // textBox79
-            // 
-            this.textBox79.Location = new System.Drawing.Point(176, 14);
-            this.textBox79.MaxLength = 12;
-            this.textBox79.Name = "textBox79";
-            this.textBox79.Size = new System.Drawing.Size(181, 20);
-            this.textBox79.TabIndex = 5;
-            // 
-            // label116
-            // 
-            this.label116.AutoSize = true;
-            this.label116.Location = new System.Drawing.Point(23, 43);
-            this.label116.Name = "label116";
-            this.label116.Size = new System.Drawing.Size(61, 13);
-            this.label116.TabIndex = 18;
-            this.label116.Text = "Secondario";
-            // 
-            // groupBox14
-            // 
-            this.groupBox14.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.groupBox14.Controls.Add(this.textBox80);
-            this.groupBox14.Controls.Add(this.label108);
-            this.groupBox14.Controls.Add(this.textBox82);
-            this.groupBox14.Controls.Add(this.label109);
-            this.groupBox14.Location = new System.Drawing.Point(46, 50);
-            this.groupBox14.Name = "groupBox14";
-            this.groupBox14.Size = new System.Drawing.Size(360, 67);
-            this.groupBox14.TabIndex = 1;
-            this.groupBox14.TabStop = false;
-            this.groupBox14.Text = "Nominativi";
-            // 
-            // textBox80
-            // 
-            this.textBox80.Location = new System.Drawing.Point(176, 40);
-            this.textBox80.MaxLength = 50;
-            this.textBox80.Name = "textBox80";
-            this.textBox80.Size = new System.Drawing.Size(181, 20);
-            this.textBox80.TabIndex = 2;
-            // 
-            // label108
-            // 
-            this.label108.AutoSize = true;
-            this.label108.Location = new System.Drawing.Point(23, 19);
-            this.label108.Name = "label108";
-            this.label108.Size = new System.Drawing.Size(57, 13);
-            this.label108.TabIndex = 19;
-            this.label108.Text = "Partita IVA";
-            // 
-            // textBox82
-            // 
-            this.textBox82.Location = new System.Drawing.Point(176, 14);
-            this.textBox82.MaxLength = 11;
-            this.textBox82.Name = "textBox82";
-            this.textBox82.Size = new System.Drawing.Size(181, 20);
-            this.textBox82.TabIndex = 1;
-            // 
-            // label109
-            // 
-            this.label109.AutoSize = true;
-            this.label109.Location = new System.Drawing.Point(23, 43);
-            this.label109.Name = "label109";
-            this.label109.Size = new System.Drawing.Size(83, 13);
-            this.label109.TabIndex = 18;
-            this.label109.Text = "Ragione sociale";
-            // 
-            // groupBox13
-            // 
-            this.groupBox13.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.groupBox13.Controls.Add(this.textBox15);
-            this.groupBox13.Controls.Add(this.label106);
-            this.groupBox13.Controls.Add(this.textBox81);
-            this.groupBox13.Controls.Add(this.label107);
-            this.groupBox13.Location = new System.Drawing.Point(46, 195);
-            this.groupBox13.Name = "groupBox13";
-            this.groupBox13.Size = new System.Drawing.Size(360, 67);
-            this.groupBox13.TabIndex = 3;
-            this.groupBox13.TabStop = false;
-            this.groupBox13.Text = "Indirizzi email";
-            // 
-            // textBox15
-            // 
-            this.textBox15.Location = new System.Drawing.Point(176, 40);
-            this.textBox15.MaxLength = 30;
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(181, 20);
-            this.textBox15.TabIndex = 4;
-            // 
-            // label106
-            // 
-            this.label106.AutoSize = true;
-            this.label106.Location = new System.Drawing.Point(23, 19);
-            this.label106.Name = "label106";
-            this.label106.Size = new System.Drawing.Size(53, 13);
-            this.label106.TabIndex = 19;
-            this.label106.Text = "Principale";
-            // 
-            // textBox81
-            // 
-            this.textBox81.Location = new System.Drawing.Point(176, 14);
-            this.textBox81.MaxLength = 30;
-            this.textBox81.Name = "textBox81";
-            this.textBox81.Size = new System.Drawing.Size(181, 20);
-            this.textBox81.TabIndex = 3;
-            // 
-            // label107
-            // 
-            this.label107.AutoSize = true;
-            this.label107.Location = new System.Drawing.Point(23, 43);
-            this.label107.Name = "label107";
-            this.label107.Size = new System.Drawing.Size(61, 13);
-            this.label107.TabIndex = 18;
-            this.label107.Text = "Secondario";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.groupBox3.Controls.Add(this.textBox28);
-            this.groupBox3.Controls.Add(this.label14);
-            this.groupBox3.Controls.Add(this.textBox30);
-            this.groupBox3.Controls.Add(this.textBox31);
-            this.groupBox3.Controls.Add(this.textBox32);
-            this.groupBox3.Controls.Add(this.label15);
-            this.groupBox3.Controls.Add(this.label16);
-            this.groupBox3.Controls.Add(this.label30);
-            this.groupBox3.Location = new System.Drawing.Point(430, 195);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(360, 127);
-            this.groupBox3.TabIndex = 8;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Sede";
-            // 
-            // textBox28
-            // 
-            this.textBox28.Location = new System.Drawing.Point(176, 40);
-            this.textBox28.MaxLength = 30;
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(181, 20);
-            this.textBox28.TabIndex = 9;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(23, 19);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(45, 13);
-            this.label14.TabIndex = 19;
-            this.label14.Text = "Indirizzo";
-            // 
-            // textBox30
-            // 
-            this.textBox30.Location = new System.Drawing.Point(176, 67);
-            this.textBox30.MaxLength = 30;
-            this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(181, 20);
-            this.textBox30.TabIndex = 10;
-            // 
-            // textBox31
-            // 
-            this.textBox31.Location = new System.Drawing.Point(176, 14);
-            this.textBox31.MaxLength = 50;
-            this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(181, 20);
-            this.textBox31.TabIndex = 8;
-            // 
-            // textBox32
-            // 
-            this.textBox32.Location = new System.Drawing.Point(175, 92);
-            this.textBox32.MaxLength = 4;
-            this.textBox32.Name = "textBox32";
-            this.textBox32.Size = new System.Drawing.Size(78, 20);
-            this.textBox32.TabIndex = 11;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(23, 43);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(28, 13);
-            this.label15.TabIndex = 18;
-            this.label15.Text = "Città";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(23, 95);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(28, 13);
-            this.label16.TabIndex = 16;
-            this.label16.Text = "CAP";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(23, 70);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(51, 13);
-            this.label30.TabIndex = 17;
-            this.label30.Text = "Provincia";
             // 
             // addContrattoPanel
             // 
@@ -2620,6 +2637,18 @@ namespace DBProject
             this.addGiacenzaPanel.Size = new System.Drawing.Size(836, 476);
             this.addGiacenzaPanel.TabIndex = 24;
             this.addGiacenzaPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.addGiacenzaPanel_Paint);
+            // 
+            // numericUpDown5
+            // 
+            this.numericUpDown5.Location = new System.Drawing.Point(518, 205);
+            this.numericUpDown5.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.numericUpDown5.Name = "numericUpDown5";
+            this.numericUpDown5.Size = new System.Drawing.Size(84, 20);
+            this.numericUpDown5.TabIndex = 19;
             // 
             // textBox48
             // 
@@ -3616,6 +3645,28 @@ namespace DBProject
             this.addVeicRicToOrdinePanel.TabIndex = 42;
             this.addVeicRicToOrdinePanel.VisibleChanged += new System.EventHandler(this.addVeicRicToOrdinePanel_VisibleChanged);
             // 
+            // numericUpDown4
+            // 
+            this.numericUpDown4.Location = new System.Drawing.Point(421, 253);
+            this.numericUpDown4.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.numericUpDown4.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown4.Name = "numericUpDown4";
+            this.numericUpDown4.Size = new System.Drawing.Size(121, 20);
+            this.numericUpDown4.TabIndex = 24;
+            this.numericUpDown4.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
             // textBox1
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -3768,62 +3819,16 @@ namespace DBProject
             this.label124.TabIndex = 0;
             this.label124.Text = "Veicolo";
             // 
-            // numericUpDown4
-            // 
-            this.numericUpDown4.Location = new System.Drawing.Point(421, 253);
-            this.numericUpDown4.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.numericUpDown4.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(121, 20);
-            this.numericUpDown4.TabIndex = 24;
-            this.numericUpDown4.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // numericUpDown5
-            // 
-            this.numericUpDown5.Location = new System.Drawing.Point(518, 205);
-            this.numericUpDown5.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.numericUpDown5.Name = "numericUpDown5";
-            this.numericUpDown5.Size = new System.Drawing.Size(84, 20);
-            this.numericUpDown5.TabIndex = 19;
-            // 
-            // numericUpDown6
-            // 
-            this.numericUpDown6.Location = new System.Drawing.Point(300, 24);
-            this.numericUpDown6.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown6.Name = "numericUpDown6";
-            this.numericUpDown6.Size = new System.Drawing.Size(68, 20);
-            this.numericUpDown6.TabIndex = 11;
-            this.numericUpDown6.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
             // EntryForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(839, 472);
+            this.Controls.Add(this.addModalitaPagPanel);
+            this.Controls.Add(this.addRevisionePanel);
+            this.Controls.Add(this.addVenditaPanel);
+            this.Controls.Add(this.addOptToVeicPanel);
+            this.Controls.Add(this.addOptionalPanel);
             this.Controls.Add(this.addModelloPanel);
             this.Controls.Add(this.addVeicoloPanel);
             this.Controls.Add(this.addRicambioPanel);
@@ -3840,11 +3845,6 @@ namespace DBProject
             this.Controls.Add(this.addEsecRevPanel);
             this.Controls.Add(this.addPerfPanel);
             this.Controls.Add(this.addTrasportoPanel);
-            this.Controls.Add(this.addModalitaPagPanel);
-            this.Controls.Add(this.addRevisionePanel);
-            this.Controls.Add(this.addVenditaPanel);
-            this.Controls.Add(this.addOptToVeicPanel);
-            this.Controls.Add(this.addOptionalPanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EntryForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -3866,10 +3866,20 @@ namespace DBProject
             this.addModalitaPagPanel.PerformLayout();
             this.groupBox20.ResumeLayout(false);
             this.groupBox20.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
             this.groupBox19.ResumeLayout(false);
             this.groupBox19.PerformLayout();
             this.addClientePanel.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.groupBox18.ResumeLayout(false);
+            this.groupBox18.PerformLayout();
+            this.groupBox14.ResumeLayout(false);
+            this.groupBox14.PerformLayout();
+            this.groupBox13.ResumeLayout(false);
+            this.groupBox13.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.groupBox16.ResumeLayout(false);
@@ -3880,15 +3890,6 @@ namespace DBProject
             this.groupBox15.PerformLayout();
             this.groupBox17.ResumeLayout(false);
             this.groupBox17.PerformLayout();
-            this.tabPage1.ResumeLayout(false);
-            this.groupBox18.ResumeLayout(false);
-            this.groupBox18.PerformLayout();
-            this.groupBox14.ResumeLayout(false);
-            this.groupBox14.PerformLayout();
-            this.groupBox13.ResumeLayout(false);
-            this.groupBox13.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             this.addContrattoPanel.ResumeLayout(false);
             this.addContrattoPanel.PerformLayout();
             this.addTrasportoPanel.ResumeLayout(false);
@@ -3908,6 +3909,7 @@ namespace DBProject
             this.addRicambioPanel.PerformLayout();
             this.addGiacenzaPanel.ResumeLayout(false);
             this.addGiacenzaPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
             this.addVeicoloPanel.ResumeLayout(false);
             this.addVeicoloPanel.PerformLayout();
             this.groupBox21.ResumeLayout(false);
@@ -3936,11 +3938,9 @@ namespace DBProject
             this.groupBox23.PerformLayout();
             this.addVeicRicToOrdinePanel.ResumeLayout(false);
             this.addVeicRicToOrdinePanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
             this.addEsecRevPanel.ResumeLayout(false);
             this.addEsecRevPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
             this.ResumeLayout(false);
 
         }
