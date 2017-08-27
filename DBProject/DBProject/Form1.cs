@@ -29,7 +29,57 @@ namespace DBProject
 
         private void Form1_Load(object sender, EventArgs e)
         {
-         
+            // TODO: questa riga di codice carica i dati nella tabella 'dBProject1617DataSet.Referenza'. È possibile spostarla o rimuoverla se necessario.
+            this.referenzaTableAdapter.Fill(this.dBProject1617DataSet.Referenza);
+            // TODO: questa riga di codice carica i dati nella tabella 'dBProject1617DataSet.Giacenza'. È possibile spostarla o rimuoverla se necessario.
+            this.giacenzaTableAdapter.Fill(this.dBProject1617DataSet.Giacenza);
+            // TODO: questa riga di codice carica i dati nella tabella 'dBProject1617DataSet.Ricambio'. È possibile spostarla o rimuoverla se necessario.
+            this.ricambioTableAdapter.Fill(this.dBProject1617DataSet.Ricambio);
+            // TODO: questa riga di codice carica i dati nella tabella 'dBProject1617DataSet.Utilizzo'. È possibile spostarla o rimuoverla se necessario.
+            this.utilizzoTableAdapter.Fill(this.dBProject1617DataSet.Utilizzo);
+            // TODO: questa riga di codice carica i dati nella tabella 'dBProject1617DataSet.Riparazione'. È possibile spostarla o rimuoverla se necessario.
+            this.riparazioneTableAdapter.Fill(this.dBProject1617DataSet.Riparazione);
+            // TODO: questa riga di codice carica i dati nella tabella 'dBProject1617DataSet.Trasporto'. È possibile spostarla o rimuoverla se necessario.
+            this.trasportoTableAdapter.Fill(this.dBProject1617DataSet.Trasporto);
+            // TODO: questa riga di codice carica i dati nella tabella 'dBProject1617DataSet.Corriere'. È possibile spostarla o rimuoverla se necessario.
+            this.corriereTableAdapter.Fill(this.dBProject1617DataSet.Corriere);
+            // TODO: questa riga di codice carica i dati nella tabella 'dBProject1617DataSet.OrdineRicambio'. È possibile spostarla o rimuoverla se necessario.
+            this.ordineRicambioTableAdapter.Fill(this.dBProject1617DataSet.OrdineRicambio);
+            // TODO: questa riga di codice carica i dati nella tabella 'dBProject1617DataSet.OrdineVeicolo'. È possibile spostarla o rimuoverla se necessario.
+            this.ordineVeicoloTableAdapter.Fill(this.dBProject1617DataSet.OrdineVeicolo);
+            // TODO: questa riga di codice carica i dati nella tabella 'dBProject1617DataSet.Ordine'. È possibile spostarla o rimuoverla se necessario.
+            this.ordineTableAdapter.Fill(this.dBProject1617DataSet.Ordine);
+            // TODO: questa riga di codice carica i dati nella tabella 'dBProject1617DataSet.RataCliente'. È possibile spostarla o rimuoverla se necessario.
+            this.rataClienteTableAdapter.Fill(this.dBProject1617DataSet.RataCliente);
+            // TODO: questa riga di codice carica i dati nella tabella 'dBProject1617DataSet.NostreModalitàPagamento'. È possibile spostarla o rimuoverla se necessario.
+            this.nostreModalitàPagamentoTableAdapter.Fill(this.dBProject1617DataSet.NostreModalitàPagamento);
+            // TODO: questa riga di codice carica i dati nella tabella 'dBProject1617DataSet.ContrattoVendita'. È possibile spostarla o rimuoverla se necessario.
+            this.contrattoVenditaTableAdapter.Fill(this.dBProject1617DataSet.ContrattoVendita);
+            // TODO: questa riga di codice carica i dati nella tabella 'dBProject1617DataSet.Cliente'. È possibile spostarla o rimuoverla se necessario.
+            this.clienteTableAdapter.Fill(this.dBProject1617DataSet.Cliente);
+            // TODO: questa riga di codice carica i dati nella tabella 'dBProject1617DataSet.ModalitàPagamento'. È possibile spostarla o rimuoverla se necessario.
+            this.modalitàPagamentoTableAdapter.Fill(this.dBProject1617DataSet.ModalitàPagamento);
+            // TODO: questa riga di codice carica i dati nella tabella 'dBProject1617DataSet.Rata'. È possibile spostarla o rimuoverla se necessario.
+            this.rataTableAdapter.Fill(this.dBProject1617DataSet.Rata);
+            // TODO: questa riga di codice carica i dati nella tabella 'dBProject1617DataSet.FatturaAcquisto'. È possibile spostarla o rimuoverla se necessario.
+            this.fatturaAcquistoTableAdapter.Fill(this.dBProject1617DataSet.FatturaAcquisto);
+            // TODO: questa riga di codice carica i dati nella tabella 'dBProject1617DataSet.Fornitore'. È possibile spostarla o rimuoverla se necessario.
+            this.fornitoreTableAdapter.Fill(this.dBProject1617DataSet.Fornitore);
+            // TODO: questa riga di codice carica i dati nella tabella 'dBProject1617DataSet.Dotazione'. È possibile spostarla o rimuoverla se necessario.
+            this.dotazioneTableAdapter.Fill(this.dBProject1617DataSet.Dotazione);
+            // TODO: questa riga di codice carica i dati nella tabella 'dBProject1617DataSet.Supporto'. È possibile spostarla o rimuoverla se necessario.
+            this.supportoTableAdapter.Fill(this.dBProject1617DataSet.Supporto);
+            // TODO: questa riga di codice carica i dati nella tabella 'dBProject1617DataSet.Revisione'. È possibile spostarla o rimuoverla se necessario.
+            this.revisioneTableAdapter.Fill(this.dBProject1617DataSet.Revisione);
+            // TODO: questa riga di codice carica i dati nella tabella 'dBProject1617DataSet.VeicoloVenduto'. È possibile spostarla o rimuoverla se necessario.
+            this.veicoloVendutoTableAdapter.Fill(this.dBProject1617DataSet.VeicoloVenduto);
+            // TODO: questa riga di codice carica i dati nella tabella 'dBProject1617DataSet.Optional'. È possibile spostarla o rimuoverla se necessario.
+            this.optionalTableAdapter.Fill(this.dBProject1617DataSet.Optional);
+            // TODO: questa riga di codice carica i dati nella tabella 'dBProject1617DataSet.ModelloVeicolo'. È possibile spostarla o rimuoverla se necessario.
+            this.modelloVeicoloTableAdapter.Fill(this.dBProject1617DataSet.ModelloVeicolo);
+            // TODO: questa riga di codice carica i dati nella tabella 'dBProject1617DataSet.VeicoloCatalogo'. È possibile spostarla o rimuoverla se necessario.
+            this.veicoloCatalogoTableAdapter.Fill(this.dBProject1617DataSet.VeicoloCatalogo);
+
             // Officina
             this.giacenzaTableAdapter.Fill(this.dBProject1617DataSet.Giacenza);
             fillCombo(this.comboBox22, this.dBProject1617DataSet.Giacenza);

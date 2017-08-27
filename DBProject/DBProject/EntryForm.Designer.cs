@@ -902,8 +902,8 @@ namespace DBProject
             this.comboBox4.Items.AddRange(new object[] {
             "Immediato",
             "Mensile",
-            "Bimestrale",
-            "Trimestrale"});
+            "Bimestr.",
+            "Trimest."});
             this.comboBox4.Location = new System.Drawing.Point(185, 56);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(183, 21);
@@ -1507,7 +1507,7 @@ namespace DBProject
             // textBox32
             // 
             this.textBox32.Location = new System.Drawing.Point(175, 92);
-            this.textBox32.MaxLength = 4;
+            this.textBox32.MaxLength = 5;
             this.textBox32.Name = "textBox32";
             this.textBox32.Size = new System.Drawing.Size(78, 20);
             this.textBox32.TabIndex = 11;
@@ -1791,7 +1791,7 @@ namespace DBProject
             // textBox88
             // 
             this.textBox88.Location = new System.Drawing.Point(175, 92);
-            this.textBox88.MaxLength = 4;
+            this.textBox88.MaxLength = 5;
             this.textBox88.Name = "textBox88";
             this.textBox88.Size = new System.Drawing.Size(78, 20);
             this.textBox88.TabIndex = 15;
@@ -3835,6 +3835,9 @@ namespace DBProject
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(839, 472);
+            this.Controls.Add(this.addModalitaPagPanel);
+            this.Controls.Add(this.addRevisionePanel);
+            this.Controls.Add(this.addVenditaPanel);
             this.Controls.Add(this.addOptToVeicPanel);
             this.Controls.Add(this.addOptionalPanel);
             this.Controls.Add(this.addModelloPanel);
@@ -3853,9 +3856,6 @@ namespace DBProject
             this.Controls.Add(this.addEsecRevPanel);
             this.Controls.Add(this.addPerfPanel);
             this.Controls.Add(this.addTrasportoPanel);
-            this.Controls.Add(this.addModalitaPagPanel);
-            this.Controls.Add(this.addRevisionePanel);
-            this.Controls.Add(this.addVenditaPanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EntryForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

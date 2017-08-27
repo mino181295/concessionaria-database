@@ -399,7 +399,7 @@ namespace DBProject
         }
 
         private void submitModelloBtn_Click(object sender, EventArgs e)
-        {
+        {/*
             ModelloVeicolo m = new ModelloVeicolo();
 
             m.Nome = this.textBox74.Text;
@@ -422,7 +422,7 @@ namespace DBProject
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Errore di inserimento dati");
-            }                        
+            }                        */
         }
 
         private void submitRicambioBtn_Click(object sender, EventArgs e)
@@ -816,7 +816,7 @@ namespace DBProject
         }
 
         private void submitVeicoloBtn_Click(object sender, EventArgs e)
-        {
+        {/*
             VeicoloCatalogo v = new VeicoloCatalogo();
             v.Codice = this.textBox53.Text;
 
@@ -856,7 +856,7 @@ namespace DBProject
                         isString(v.Cambio) &&
                         isFloat(v.Potenza)))*/            
 
-
+            /*
 
 
             try
@@ -884,7 +884,7 @@ namespace DBProject
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Errore di inserimento dati");
-            }                        
+            }                        */
         }
 
         private void submitDettaglioBtn_Click(object sender, EventArgs e)
@@ -1249,7 +1249,7 @@ namespace DBProject
 
             String forn = value.ToString();
             var mod = from f in this.db.ModelloVeicolo
-                         where f.Fornitore == forn
+                         where f.CasaProduttrice == forn
                          select f.Nome;
 
             this.comboBox24.DataSource = mod.ToList();            
