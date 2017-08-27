@@ -198,7 +198,7 @@ namespace DBProject
         {
             comboBox3.DataSource = from o in db.Ordine
                                    where o.TipoOrdine == (this.currEntry == Entry.DetVeic ? 'v' : 'r')
-                                   select new { desc = "id: " + o.Id + " del " + o.DataOrdine, o.Id };
+                                   select new { desc = "A " + o.Fornitore1.RagioneSociale + ", del " + o.DataOrdine +", id: " + o.Id, o.Id };
             comboBox3.DisplayMember = "desc";
             comboBox3.ValueMember = "Id";
 
@@ -206,25 +206,13 @@ namespace DBProject
             {
                 this.label129.Text = "Veicolo Cliente";
                 label130.Visible = false;
-                numericUpDown4.Visible = false;                
-
-                comboItem.DataSource = from v in db.VeicoloVenduto
-                                       where v.OrdineVeicolo == null
-                                       select new { desc = "id: " + v.Id + " contratto: " + v.Contratto, v.Id };
-                comboItem.DisplayMember = "desc";
-                comboItem.ValueMember = "Id";
-
+                numericUpDown4.Visible = false;                                
             } else
             {
                 this.label129.Text = "Ricambio";
                 label130.Visible = true;
-                numericUpDown4.Visible = true;
-
-                comboItem.DataSource = from v in db.Ricambio                                      
-                                       select new { desc = v.Nome + " codice: " + v.Codice, v.Codice};
-                comboItem.DisplayMember = "desc";
-                comboItem.ValueMember = "Codice";
-            }            
+                numericUpDown4.Visible = true;                
+            }               
         }
 
         /* usato per associare:
@@ -339,8 +327,8 @@ namespace DBProject
             vv.Contratto = val == null ? -1 : convertStringInt(val.ToString());
 
             val = this.comboBox19.SelectedValue;
-            vv.VeicoloCatalogo = val == null ? null :val.ToString();             
-
+            vv.VeicoloCatalogo = val == null ? null : val.ToString();            
+            
             try
             {
                 if (!(isString(vv.VeicoloCatalogo) &&                        
@@ -350,22 +338,40 @@ namespace DBProject
                 }
                 db.VeicoloVenduto.InsertOnSubmit(vv);
                 db.SubmitChanges();
+                this.Close();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Errore di inserimento dati");
-            }
-
-            this.Close();
+            }           
         }
 
         private void submitOptToVeicBtn_Click(object sender, EventArgs e)
-        {/*
-            //nON CAPISCO PRIMA è BINDATO CON RIPARAZIONE POI C'E OPTIONAL
-            supporto s = new supporto();
-            s.Optional_Codice = this.comboRic.ValueMember;
-            s.Veicolo_Codice = this.comboVeicCat.ValueMember;*/
-            this.Close();
+        {
+
+            Dotazione d = new Dotazione();
+
+            var val = this.comboVeicVend.SelectedValue;
+            d.Veicolo = val == null ? -1 : convertStringInt(val.ToString());
+
+            val = this.comboOpt.SelectedValue;
+            d.Optional = val == null ? null : val.ToString();
+
+            try
+            {
+                if (!(isString(d.Optional) &&
+                       isInt((int)d.Veicolo)))
+                {
+                    throw new Exception("Campi vuoti o errati");
+                }
+                db.Dotazione.InsertOnSubmit(d);
+                db.SubmitChanges();
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Errore di inserimento dati");
+            }            
         }
 
         private void submitOptionalBtn_Click(object sender, EventArgs e)
@@ -1293,7 +1299,7 @@ namespace DBProject
         private void comboBox5_DropDown(object sender, EventArgs e)
         {           
             var modpag = from f in this.db.NostreModalitàPagamento                      
-                         select new { f.Da, member = f.Da + "-" + f.A };
+                         select new { f.Da, member = "Da " + f.Da + " a " + f.A  + " " + f.Periodicità + " " + f.NumerRate + " rate"};
             ComboBox combo = (ComboBox)sender;
             combo.DataSource = modpag.ToList();
             combo.DisplayMember = "member";
@@ -1318,11 +1324,11 @@ namespace DBProject
         private void comboBox19_DropDown(object sender, EventArgs e)
         {
             var data = from v in db.VeicoloCatalogo
-                       select new { v.NomeModello, v.Codice };
+                       select new { member = v.ModelloVeicolo.Fornitore.RagioneSociale + v.NomeModello + " del " + v.ModelloVeicolo.Anno , v.Codice };
 
             ComboBox combo = (ComboBox)sender;
             combo.DataSource = data;
-            combo.DisplayMember = "NomeModello";
+            combo.DisplayMember = "member";
             combo.ValueMember = "Codice";
         }        
 
@@ -1336,16 +1342,18 @@ namespace DBProject
 
             var data = from v in db.ContrattoVendita
                        where v.Cliente == cli
-                       select v.Numero;
+                       select new {member = "numero: " + v.Numero + " del " + v.Data, v.Numero};
 
             ComboBox combo = (ComboBox)sender;
-            combo.DataSource = data;            
+            combo.DataSource = data;
+            combo.DisplayMember = "member";
+            combo.ValueMember = "Numero";
         }
 
         private void comboVeicVend_DropDown(object sender, EventArgs e)
         {
             var data = from v in db.VeicoloVenduto
-                       select new {member=v.VeicoloCatalogo1.NomeModello + " ID: " + v.Id, v.Id };
+                       select new {member=v.OrdineVeicolo.Ordine1.Fornitore1.RagioneSociale + " " + v.VeicoloCatalogo1.NomeModello + " ID: " + v.Id, v.Id };
 
             ComboBox combo = (ComboBox)sender;
             combo.DataSource = data;
@@ -1354,17 +1362,50 @@ namespace DBProject
         }
 
         private void comboOpt_DropDown(object sender, EventArgs e)
-        {/*
+        {
             var value = this.comboVeicVend.SelectedValue;
             if (value == null)
                 return;
 
-            String veic = value.ToString();
-            var op = from f in this.db.Optional
-                      where f.Supporto == forn
-                      select f.Nome;
+            var op = from o in this.db.Supporto
+                     where o.VeicoloCatalogo == (from v in this.db.VeicoloVenduto
+                                                 where v.Id == convertStringInt(value.ToString())
+                                                 select v.VeicoloCatalogo).First()
+                     select new { member = o.Optional1.Nome + " " + o.Optional1.Prezzo + " €", o.Optional };
 
-            this.comboBox24.DataSource = mod.ToList();*/
+       
+            ComboBox combo = (ComboBox)sender;
+            combo.DataSource = op.ToList();
+            combo.DisplayMember = "member";
+            combo.ValueMember = "Optional";
+        }
+
+        private void comboItem_DropDown(object sender, EventArgs e)
+        {
+            var value = this.comboBox3.SelectedValue;
+            if (value == null)
+                return;
+
+            String forn = (from o in db.Ordine
+                       where o.Id == convertStringInt(value.ToString())
+                       select o.Fornitore).First();
+
+            if (this.currEntry == Entry.DetVeic)
+            {
+                comboItem.DataSource = from v in db.VeicoloVenduto
+                                       where v.OrdineVeicolo == null
+                                       && v.VeicoloCatalogo1.CasaProduttrice == forn
+                                       select new { desc = v.VeicoloCatalogo1.NomeModello + " id: " + v.Id, v.Id };
+                comboItem.DisplayMember = "desc";
+                comboItem.ValueMember = "Id";
+            }
+            else
+            {
+                comboItem.DataSource = from v in db.Ricambio
+                                       select new { desc = v.Nome + " codice: " + v.Codice, v.Codice };
+                comboItem.DisplayMember = "desc";
+                comboItem.ValueMember = "Codice";
+            }
         }
     }
 

@@ -1873,7 +1873,7 @@ namespace DBProject
             this.comboBox6.FormattingEnabled = true;
             this.comboBox6.Location = new System.Drawing.Point(415, 222);
             this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(183, 21);
+            this.comboBox6.Size = new System.Drawing.Size(249, 21);
             this.comboBox6.TabIndex = 4;
             this.comboBox6.DropDown += new System.EventHandler(this.ClienteDropDown);
             // 
@@ -1885,7 +1885,7 @@ namespace DBProject
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Location = new System.Drawing.Point(416, 278);
             this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(183, 21);
+            this.comboBox5.Size = new System.Drawing.Size(248, 21);
             this.comboBox5.TabIndex = 5;
             this.comboBox5.ValueMember = "Da";
             this.comboBox5.DropDown += new System.EventHandler(this.comboBox5_DropDown);
@@ -3341,7 +3341,7 @@ namespace DBProject
             this.comboOpt.FormattingEnabled = true;
             this.comboOpt.Location = new System.Drawing.Point(383, 176);
             this.comboOpt.Name = "comboOpt";
-            this.comboOpt.Size = new System.Drawing.Size(121, 21);
+            this.comboOpt.Size = new System.Drawing.Size(212, 21);
             this.comboOpt.TabIndex = 2;
             this.comboOpt.ValueMember = "Codice";
             this.comboOpt.DropDown += new System.EventHandler(this.comboOpt_DropDown);
@@ -3354,7 +3354,7 @@ namespace DBProject
             this.comboVeicVend.FormattingEnabled = true;
             this.comboVeicVend.Location = new System.Drawing.Point(384, 118);
             this.comboVeicVend.Name = "comboVeicVend";
-            this.comboVeicVend.Size = new System.Drawing.Size(121, 21);
+            this.comboVeicVend.Size = new System.Drawing.Size(210, 21);
             this.comboVeicVend.TabIndex = 1;
             this.comboVeicVend.ValueMember = "Numero_telaio";
             this.comboVeicVend.DropDown += new System.EventHandler(this.comboVeicVend_DropDown);
@@ -3402,7 +3402,7 @@ namespace DBProject
             this.comboBox29.DisplayMember = "Numero";
             this.comboBox29.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox29.FormattingEnabled = true;
-            this.comboBox29.Location = new System.Drawing.Point(421, 146);
+            this.comboBox29.Location = new System.Drawing.Point(390, 146);
             this.comboBox29.Name = "comboBox29";
             this.comboBox29.Size = new System.Drawing.Size(209, 21);
             this.comboBox29.TabIndex = 22;
@@ -3413,7 +3413,7 @@ namespace DBProject
             // 
             this.label22.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(304, 151);
+            this.label22.Location = new System.Drawing.Point(273, 151);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(39, 13);
             this.label22.TabIndex = 23;
@@ -3425,9 +3425,9 @@ namespace DBProject
             this.comboBox20.DisplayMember = "Numero";
             this.comboBox20.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox20.FormattingEnabled = true;
-            this.comboBox20.Location = new System.Drawing.Point(421, 183);
+            this.comboBox20.Location = new System.Drawing.Point(390, 183);
             this.comboBox20.Name = "comboBox20";
-            this.comboBox20.Size = new System.Drawing.Size(121, 21);
+            this.comboBox20.Size = new System.Drawing.Size(209, 21);
             this.comboBox20.TabIndex = 3;
             this.comboBox20.ValueMember = "Numero";
             this.comboBox20.DropDown += new System.EventHandler(this.comboBox20_DropDown);
@@ -3436,7 +3436,7 @@ namespace DBProject
             // 
             this.label95.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label95.AutoSize = true;
-            this.label95.Location = new System.Drawing.Point(302, 188);
+            this.label95.Location = new System.Drawing.Point(271, 188);
             this.label95.Name = "label95";
             this.label95.Size = new System.Drawing.Size(50, 13);
             this.label95.TabIndex = 21;
@@ -3448,9 +3448,9 @@ namespace DBProject
             this.comboBox19.DisplayMember = "Codice";
             this.comboBox19.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox19.FormattingEnabled = true;
-            this.comboBox19.Location = new System.Drawing.Point(420, 222);
+            this.comboBox19.Location = new System.Drawing.Point(389, 222);
             this.comboBox19.Name = "comboBox19";
-            this.comboBox19.Size = new System.Drawing.Size(121, 21);
+            this.comboBox19.Size = new System.Drawing.Size(210, 21);
             this.comboBox19.TabIndex = 2;
             this.comboBox19.ValueMember = "Codice";
             this.comboBox19.DropDown += new System.EventHandler(this.comboBox19_DropDown);
@@ -3459,7 +3459,7 @@ namespace DBProject
             // 
             this.label88.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label88.AutoSize = true;
-            this.label88.Location = new System.Drawing.Point(300, 225);
+            this.label88.Location = new System.Drawing.Point(269, 225);
             this.label88.Name = "label88";
             this.label88.Size = new System.Drawing.Size(97, 13);
             this.label88.TabIndex = 4;
@@ -3708,6 +3708,7 @@ namespace DBProject
             this.comboItem.Size = new System.Drawing.Size(121, 21);
             this.comboItem.TabIndex = 21;
             this.comboItem.ValueMember = "Codice";
+            this.comboItem.DropDown += new System.EventHandler(this.comboItem_DropDown);
             // 
             // comboBox3
             // 
@@ -3835,16 +3836,6 @@ namespace DBProject
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(839, 472);
-            this.Controls.Add(this.addModalitaPagPanel);
-            this.Controls.Add(this.addRevisionePanel);
-            this.Controls.Add(this.addVenditaPanel);
-            this.Controls.Add(this.addOptToVeicPanel);
-            this.Controls.Add(this.addOptionalPanel);
-            this.Controls.Add(this.addModelloPanel);
-            this.Controls.Add(this.addVeicoloPanel);
-            this.Controls.Add(this.addRicambioPanel);
-            this.Controls.Add(this.addUtilizzoRicambioRipPanel);
-            this.Controls.Add(this.addRiparazionePanel);
             this.Controls.Add(this.addVeicRicToOrdinePanel);
             this.Controls.Add(this.addOrdinePanel);
             this.Controls.Add(this.addFornitorePanel);
@@ -3856,6 +3847,16 @@ namespace DBProject
             this.Controls.Add(this.addEsecRevPanel);
             this.Controls.Add(this.addPerfPanel);
             this.Controls.Add(this.addTrasportoPanel);
+            this.Controls.Add(this.addModalitaPagPanel);
+            this.Controls.Add(this.addRevisionePanel);
+            this.Controls.Add(this.addVenditaPanel);
+            this.Controls.Add(this.addOptToVeicPanel);
+            this.Controls.Add(this.addOptionalPanel);
+            this.Controls.Add(this.addModelloPanel);
+            this.Controls.Add(this.addVeicoloPanel);
+            this.Controls.Add(this.addRicambioPanel);
+            this.Controls.Add(this.addUtilizzoRicambioRipPanel);
+            this.Controls.Add(this.addRiparazionePanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EntryForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
