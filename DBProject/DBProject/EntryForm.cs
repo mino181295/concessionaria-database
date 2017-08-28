@@ -44,17 +44,19 @@ namespace DBProject
         private Entry currEntry = Entry.None;
 
         /* To access the data in the db. */
-        private DataClassesDataContext db = new DataClassesDataContext();
+        private DataClassesDataContext db;
 
         /*
          * Dictionary used to map the enum Entry (from which i know which entity i should consider)
          * together with the respective panel.  
          */
         private Dictionary<Entry, Panel> panelMap = new Dictionary<Entry, Panel>();
-
-        public EntryForm()
+        
+        public EntryForm(DataClassesDataContext db)
         {
-            InitializeComponent();
+            this.db = db;
+                       
+            InitializeComponent();            
 
             // Gestione Fornitore
             this.panelMap.Add(Entry.Fornitore, this.addFornitorePanel);
@@ -195,7 +197,7 @@ namespace DBProject
 
         // usato sia per DETTAGLIO ORDINE VEICOLO che RICAMBIO
         private void addVeicRicToOrdinePanel_VisibleChanged(object sender, EventArgs e)
-        {
+        {            
             comboBox3.DataSource = from o in db.Ordine
                                    where o.TipoOrdine == (this.currEntry == Entry.DetVeic ? 'v' : 'r')
                                    select new { desc = "A " + o.Fornitore1.RagioneSociale + ", del " + o.DataOrdine +", id: " + o.Id, o.Id };
@@ -336,8 +338,27 @@ namespace DBProject
                 {
                     throw new Exception("Campi vuoti o errati");
                 }
-                db.VeicoloVenduto.InsertOnSubmit(vv);
+                db.VeicoloVenduto.InsertOnSubmit(vv);                
+
+                //Aggiorno il valore del contratto e le mod. di pagamento
+                ContrattoVendita contr = (from v in db.ContrattoVendita
+                                          where v.Numero == vv.Contratto
+                                          select v).First();
+
+                VeicoloCatalogo op = (from o in db.VeicoloCatalogo
+                               where o.Codice == vv.VeicoloCatalogo
+                               select o).First();
+
+                contr.ImportoComplessivo += op.PrezzoBase;
+
+                NostreModalitàPagamento mod = (from m in db.NostreModalitàPagamento
+                                               where contr.ImportoComplessivo >= m.Da
+                                               && contr.ImportoComplessivo < m.A
+                                               select m).First();
+                contr.ModalitàPagamento = mod.Da;
+
                 db.SubmitChanges();
+                db.Refresh(System.Data.Linq.RefreshMode.OverwriteCurrentValues, db.ContrattoVendita);               
                 this.Close();
             }
             catch (Exception ex)
@@ -351,11 +372,11 @@ namespace DBProject
 
             Dotazione d = new Dotazione();
 
-            var val = this.comboVeicVend.SelectedValue;
-            d.Veicolo = val == null ? -1 : convertStringInt(val.ToString());
-
-            val = this.comboOpt.SelectedValue;
+            var val = this.comboOpt.SelectedValue;
             d.Optional = val == null ? null : val.ToString();
+
+            val = this.comboVeicVend.SelectedValue;
+            d.Veicolo = val == null ? -1 : convertStringInt(val.ToString());
 
             try
             {
@@ -364,8 +385,28 @@ namespace DBProject
                 {
                     throw new Exception("Campi vuoti o errati");
                 }
-                db.Dotazione.InsertOnSubmit(d);
+                db.Dotazione.InsertOnSubmit(d);            
+
+                //Aggiorno il valore del contratto e le mod. di pagamento
+                ContrattoVendita contr = (from v in db.VeicoloVenduto
+                                         where v.Id == d.Veicolo
+                                         select v.ContrattoVendita).First();
+
+                Optional op = (from o in db.Optional
+                               where o.Codice == d.Optional
+                               select o).First();
+
+                contr.ImportoComplessivo += op.Prezzo;
+
+                NostreModalitàPagamento mod = (from m in db.NostreModalitàPagamento
+                                               where contr.ImportoComplessivo >= m.Da
+                                               && contr.ImportoComplessivo < m.A
+                                               select m).First();
+                contr.ModalitàPagamento = mod.Da;
+
                 db.SubmitChanges();
+
+                db.Refresh(System.Data.Linq.RefreshMode.OverwriteCurrentValues, db.ContrattoVendita);                
                 this.Close();
             }
             catch (Exception ex)
@@ -520,10 +561,13 @@ namespace DBProject
         {
             ContrattoVendita v = new ContrattoVendita();            
             v.Data = this.dateTimePicker9.Value;
-            v.ImportoComplessivo = convertStringFloat(this.textBox21.Text);
-            var val = this.comboBox5.SelectedValue;
-            v.ModalitàPagamento = val == null ? -1 : convertStringFloat(val.ToString());
-            val = this.comboBox6.SelectedValue;
+
+            v.ImportoComplessivo = 0;                       
+            v.ModalitàPagamento = (from m in db.NostreModalitàPagamento
+                                   where m.Da == 0
+                                   select m.Da).First();
+
+            var val = this.comboBox6.SelectedValue;
             v.Cliente = val == null ? -1 : convertStringInt(val.ToString());
             try
             {
@@ -1351,9 +1395,12 @@ namespace DBProject
         }
 
         private void comboVeicVend_DropDown(object sender, EventArgs e)
-        {
-            var data = from v in db.VeicoloVenduto
-                       select new {member=v.OrdineVeicolo.Ordine1.Fornitore1.RagioneSociale + " " + v.VeicoloCatalogo1.NomeModello + " ID: " + v.Id, v.Id };
+        {           
+            var data = from vv in db.VeicoloVenduto join vc in db.VeicoloCatalogo
+                       on vv.VeicoloCatalogo equals vc.Codice
+                       join c in db.Fornitore on vc.CasaProduttrice equals c.PartitaIVA
+                       orderby vv.Contratto
+                       select new {member = "Contratto no. " + vv.Contratto + " " + c.RagioneSociale + " " + vc.NomeModello + " ID: " + vv.Id, vv.Id };
 
             ComboBox combo = (ComboBox)sender;
             combo.DataSource = data;

@@ -173,12 +173,8 @@ namespace DBProject
             this.addContrattoPanel = new System.Windows.Forms.Panel();
             this.dateTimePicker9 = new System.Windows.Forms.DateTimePicker();
             this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
             this.addTrasportoPanel = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBox27 = new System.Windows.Forms.TextBox();
@@ -1158,7 +1154,7 @@ namespace DBProject
             this.submitContrattoBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitContrattoBtn.BackColor = System.Drawing.Color.White;
             this.submitContrattoBtn.Image = ((System.Drawing.Image)(resources.GetObject("submitContrattoBtn.Image")));
-            this.submitContrattoBtn.Location = new System.Drawing.Point(395, 400);
+            this.submitContrattoBtn.Location = new System.Drawing.Point(395, 300);
             this.submitContrattoBtn.Name = "submitContrattoBtn";
             this.submitContrattoBtn.Size = new System.Drawing.Size(46, 45);
             this.submitContrattoBtn.TabIndex = 6;
@@ -1846,13 +1842,9 @@ namespace DBProject
             | System.Windows.Forms.AnchorStyles.Right)));
             this.addContrattoPanel.Controls.Add(this.dateTimePicker9);
             this.addContrattoPanel.Controls.Add(this.comboBox6);
-            this.addContrattoPanel.Controls.Add(this.comboBox5);
-            this.addContrattoPanel.Controls.Add(this.textBox21);
             this.addContrattoPanel.Controls.Add(this.label19);
             this.addContrattoPanel.Controls.Add(this.submitContrattoBtn);
-            this.addContrattoPanel.Controls.Add(this.label25);
             this.addContrattoPanel.Controls.Add(this.label26);
-            this.addContrattoPanel.Controls.Add(this.label27);
             this.addContrattoPanel.Location = new System.Drawing.Point(2, 0);
             this.addContrattoPanel.Name = "addContrattoPanel";
             this.addContrattoPanel.Size = new System.Drawing.Size(836, 476);
@@ -1861,7 +1853,7 @@ namespace DBProject
             // dateTimePicker9
             // 
             this.dateTimePicker9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePicker9.Location = new System.Drawing.Point(416, 104);
+            this.dateTimePicker9.Location = new System.Drawing.Point(416, 135);
             this.dateTimePicker9.Name = "dateTimePicker9";
             this.dateTimePicker9.Size = new System.Drawing.Size(183, 20);
             this.dateTimePicker9.TabIndex = 2;
@@ -1871,73 +1863,31 @@ namespace DBProject
             this.comboBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(415, 222);
+            this.comboBox6.Location = new System.Drawing.Point(415, 197);
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(249, 21);
             this.comboBox6.TabIndex = 4;
             this.comboBox6.DropDown += new System.EventHandler(this.ClienteDropDown);
             // 
-            // comboBox5
-            // 
-            this.comboBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox5.DisplayMember = "Da";
-            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(416, 278);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(248, 21);
-            this.comboBox5.TabIndex = 5;
-            this.comboBox5.ValueMember = "Da";
-            this.comboBox5.DropDown += new System.EventHandler(this.comboBox5_DropDown);
-            // 
-            // textBox21
-            // 
-            this.textBox21.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox21.Location = new System.Drawing.Point(416, 163);
-            this.textBox21.MaxLength = 6;
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(183, 20);
-            this.textBox21.TabIndex = 3;
-            // 
             // label19
             // 
             this.label19.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(233, 226);
+            this.label19.Location = new System.Drawing.Point(233, 201);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(39, 13);
             this.label19.TabIndex = 4;
             this.label19.Text = "Cliente";
             // 
-            // label25
-            // 
-            this.label25.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(233, 167);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(103, 13);
-            this.label25.TabIndex = 3;
-            this.label25.Text = "Importo complessivo";
-            // 
             // label26
             // 
             this.label26.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(233, 109);
+            this.label26.Location = new System.Drawing.Point(233, 140);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(30, 13);
             this.label26.TabIndex = 2;
             this.label26.Text = "Data";
-            // 
-            // label27
-            // 
-            this.label27.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(233, 282);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(103, 13);
-            this.label27.TabIndex = 1;
-            this.label27.Text = "Modalità pagamento";
             // 
             // addTrasportoPanel
             // 
@@ -3836,6 +3786,13 @@ namespace DBProject
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(839, 472);
+            this.Controls.Add(this.addOptToVeicPanel);
+            this.Controls.Add(this.addOptionalPanel);
+            this.Controls.Add(this.addModelloPanel);
+            this.Controls.Add(this.addVeicoloPanel);
+            this.Controls.Add(this.addRicambioPanel);
+            this.Controls.Add(this.addUtilizzoRicambioRipPanel);
+            this.Controls.Add(this.addRiparazionePanel);
             this.Controls.Add(this.addVeicRicToOrdinePanel);
             this.Controls.Add(this.addOrdinePanel);
             this.Controls.Add(this.addFornitorePanel);
@@ -3850,13 +3807,6 @@ namespace DBProject
             this.Controls.Add(this.addModalitaPagPanel);
             this.Controls.Add(this.addRevisionePanel);
             this.Controls.Add(this.addVenditaPanel);
-            this.Controls.Add(this.addOptToVeicPanel);
-            this.Controls.Add(this.addOptionalPanel);
-            this.Controls.Add(this.addModelloPanel);
-            this.Controls.Add(this.addVeicoloPanel);
-            this.Controls.Add(this.addRicambioPanel);
-            this.Controls.Add(this.addUtilizzoRicambioRipPanel);
-            this.Controls.Add(this.addRiparazionePanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EntryForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -3987,13 +3937,9 @@ namespace DBProject
         private System.Windows.Forms.Label fornAddModPagLabel;
         private Panel addClientePanel;
         private Panel addContrattoPanel;
-        private TextBox textBox21;
         private Label label19;
-        private Label label25;
         private Label label26;
-        private Label label27;
         private ComboBox comboBox6;
-        private ComboBox comboBox5;
         private Panel addTrasportoPanel;
         private ComboBox comboBox7;
         private Label label32;

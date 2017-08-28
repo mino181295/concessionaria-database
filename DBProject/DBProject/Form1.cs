@@ -12,8 +12,8 @@ namespace DBProject
 {
     public partial class MainForm : Form
     {
-        private EntryForm entryForm = new EntryForm();
-        private DataClassesDataContext db = new DataClassesDataContext();
+        private EntryForm entryForm;
+        private DataClassesDataContext db;// = new DataClassesDataContext();
         private Boolean isHomePanel = true;
 
         // Elementi per le searchbars
@@ -22,8 +22,9 @@ namespace DBProject
         private DataGridView destinationDataGridView; // DataGridView da fillare con il risultato della ricerca per filtro.
         private String tableName;
 
-        public MainForm()
+        public MainForm(DataClassesDataContext db)           
         {
+            this.db = db;
             InitializeComponent();
         }
 
@@ -164,60 +165,7 @@ namespace DBProject
             fillCombo(this.comboBoxFatture, this.dBProject1617DataSet.FatturaAcquisto);
 
             this.fornitoreTableAdapter.Fill(this.dBProject1617DataSet.Fornitore);
-            fillCombo(this.comboBoxFornitore, this.dBProject1617DataSet.Fornitore);
-            
-
-            #region DataSetAdapters
-
-
-
-
-            /*
-            // Officina         
-            fillCombo(this.comboBox22, db.Giacenza.GetType());
-            fillCombo(this.comboBox21, db.Ricambio.GetType());
-            fillCombo(this.comboBox20, db.Utilizzo.GetType());
-            fillCombo(this.comboBox19, db.Riparazione.GetType());
-
-
-            // Veicoli           
-            fillCombo(this.comboBox25, db.Supporto.GetType());
-            fillCombo(this.comboBox18, db.Dotazione.GetType());
-            fillCombo(this.comboBox17, db.Revisione.GetType());
-            fillCombo(this.comboBox16, db.VeicoloVenduto.GetType());
-            fillCombo(this.comboBox15, db.Optional.GetType());
-            fillCombo(this.comboBox11, db.ModelloVeicolo.GetType());
-            fillCombo(this.comboBox14, db.VeicoloCatalogo.GetType());
-
-
-            // Ordine          
-            fillCombo(this.comboBox23, db.OrdineRicambio.GetType());
-            fillCombo(this.comboBox13, db.OrdineVeicolo.GetType());
-            fillCombo(this.comboBox12, db.Ordine.GetType());
-
-
-            // Clienti e contatti         
-            fillCombo(this.comboBox10, db.ModalitàPagamento.GetType());
-            fillCombo(this.comboBox9, db.RataCliente.GetType());
-            fillCombo(this.comboBox24, db.ContrattoVendita.GetType());
-            fillCombo(this.comboBox8, db.Cliente.GetType());
-
-
-            // Corrieri         
-            fillCombo(this.comboBoxTrasporti, db.Trasporto.GetType());
-            fillCombo(this.comboBoxCorrieri, db.Corriere.GetType());
-            
-
-
-            // Fornitori            
-            fillCombo(this.comboBoxModPag, db.ModalitàPagamento.GetType());
-            fillCombo(this.comboBoxPagamenti, db.Rata.GetType());
-            fillCombo(this.comboBoxFatture, db.FatturaAcquisto.GetType());
-            fillCombo(this.comboBoxFornitore, db.Fornitore.GetType());
-
-            */
-
-            #endregion
+            fillCombo(this.comboBoxFornitore, this.dBProject1617DataSet.Fornitore);                        
 
             this.homePanel.BringToFront();
         }
@@ -253,8 +201,8 @@ namespace DBProject
             Panel panel;
             if (sender == this.fornitoriBtn)
                 panel = this.fornitoriPanel;
-            else if (sender == this.clientiBtn)            
-                panel = this.clientiPanel;                
+            else if (sender == this.clientiBtn)                            
+                panel = this.clientiPanel;            
             else if (sender == this.officinaBtn)
                 panel = this.officinaPanel;
             else if (sender == this.corrieriBtn)
@@ -270,11 +218,8 @@ namespace DBProject
         }
 
         private void addInstanceBtn_Click(object sender, EventArgs e)
-        {
-            //temporanea
-            this.entryForm.Dispose();
-            this.entryForm = new EntryForm();
-            //
+        {                                              
+            this.entryForm = new EntryForm(this.db);                        
 
             //EntryButton è un button custom indicante l'EntryForm da mostrare al click relativo.
             EntryButton senderBtn = (EntryButton)sender;
@@ -445,9 +390,8 @@ namespace DBProject
             this.currentCombo = controls.OfType<ComboBox>().First();
 
             // Setto il DataGridView destinazione dei dati.
-            destinationDataGridView = controls.OfType<DataGridView>().First();            
+            destinationDataGridView = controls.OfType<DataGridView>().First();     
         }
-
 
         #endregion             
     }

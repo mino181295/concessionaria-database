@@ -5,18 +5,20 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DBProject
-{
+{   
     static class Program
-    {
+    {        
         /// <summary>
         /// Punto di ingresso principale dell'applicazione.
         /// </summary>
         [STAThread]
         static void Main()
         {
+            DataClassesDataContext db = new DataClassesDataContext();
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
-        }
+            Application.Run(new MainForm(db));
+        }        
     }
 }
