@@ -108,7 +108,7 @@ namespace DBProject
     #endregion
 		
 		public DataClassesDataContext() : 
-				base(global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString, mappingSource)
+				base(global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString1, mappingSource)
 		{
 			OnCreated();
 		}

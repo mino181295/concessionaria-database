@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DBProject1617" Class="DataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Paolo\Desktop\dbproject-1617\ProgettoDB-1617\database\DBProject1617.mdf;Integrated Security=True;Connect Timeout=30" SettingsObjectName="DBProject.Properties.Settings" SettingsPropertyName="DBProject1617ConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Paolo\Desktop\dbproject-1617\DBProject\database\DBProject1617.mdf;Integrated Security=True;Connect Timeout=30" SettingsObjectName="DBProject.Properties.Settings" SettingsPropertyName="DBProject1617ConnectionString1" Provider="System.Data.SqlClient" />
   <Table Name="dbo.Cliente" Member="Cliente">
     <Type Name="Cliente">
       <Column Name="Id" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
