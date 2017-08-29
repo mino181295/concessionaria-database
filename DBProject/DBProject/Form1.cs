@@ -393,6 +393,11 @@ namespace DBProject
             destinationDataGridView = controls.OfType<DataGridView>().First();     
         }
 
-        #endregion             
+        #endregion
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            new OpForm(this.db).ShowDialog();    
+        }
     }
 }

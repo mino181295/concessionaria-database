@@ -282,7 +282,7 @@ namespace DBProject
             return (f != -1);
         }
 
-        private int convertStringInt(string i)
+        public static int convertStringInt(string i)
         {
             int result = 0;
             return Int32.TryParse(i, out result) ? result : -1;

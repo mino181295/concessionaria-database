@@ -335,6 +335,12 @@
             this.comboBox24 = new System.Windows.Forms.ComboBox();
             this.textBox24 = new System.Windows.Forms.TextBox();
             this.dataGridView5 = new System.Windows.Forms.DataGridView();
+            this.numeroDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.importoComplessivoDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.modalitàPagamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contrattoVenditaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.addContrattoBtn = new DBProject.EntryButton();
             this.Pagamento = new System.Windows.Forms.TabPage();
             this.comboBox9 = new System.Windows.Forms.ComboBox();
@@ -357,7 +363,6 @@
             this.numerRateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nostreModalitàPagamentoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.addNsModPag_Btn = new DBProject.EntryButton();
-            this.contrattoVenditaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.clientiPanel = new System.Windows.Forms.Panel();
             this.veicoloCatalogoTableAdapter = new DBProject.DBProject1617DataSetTableAdapters.VeicoloCatalogoTableAdapter();
             this.modelloVeicoloTableAdapter = new DBProject.DBProject1617DataSetTableAdapters.ModelloVeicoloTableAdapter();
@@ -384,11 +389,7 @@
             this.ricambioTableAdapter = new DBProject.DBProject1617DataSetTableAdapters.RicambioTableAdapter();
             this.giacenzaTableAdapter = new DBProject.DBProject1617DataSetTableAdapters.GiacenzaTableAdapter();
             this.referenzaTableAdapter = new DBProject.DBProject1617DataSetTableAdapters.ReferenzaTableAdapter();
-            this.numeroDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.importoComplessivoDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.modalitàPagamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button2 = new System.Windows.Forms.Button();
             this.tabControl5.SuspendLayout();
             this.Ordine.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView20)).BeginInit();
@@ -470,13 +471,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
             this.Contratto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.contrattoVenditaBindingSource)).BeginInit();
             this.Pagamento.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rataClienteBindingSource)).BeginInit();
             this.Modalita_di_pagamento.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nostreModalitàPagamentoBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.contrattoVenditaBindingSource)).BeginInit();
             this.clientiPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -2143,9 +2144,9 @@
             // corrieriBtn
             // 
             this.corrieriBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.corrieriBtn.Location = new System.Drawing.Point(379, 288);
+            this.corrieriBtn.Location = new System.Drawing.Point(379, 250);
             this.corrieriBtn.Name = "corrieriBtn";
-            this.corrieriBtn.Size = new System.Drawing.Size(75, 23);
+            this.corrieriBtn.Size = new System.Drawing.Size(75, 19);
             this.corrieriBtn.TabIndex = 6;
             this.corrieriBtn.Text = "Corrieri";
             this.corrieriBtn.UseVisualStyleBackColor = true;
@@ -2154,9 +2155,9 @@
             // ordiniBtn
             // 
             this.ordiniBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.ordiniBtn.Location = new System.Drawing.Point(379, 227);
+            this.ordiniBtn.Location = new System.Drawing.Point(379, 189);
             this.ordiniBtn.Name = "ordiniBtn";
-            this.ordiniBtn.Size = new System.Drawing.Size(75, 23);
+            this.ordiniBtn.Size = new System.Drawing.Size(75, 19);
             this.ordiniBtn.TabIndex = 4;
             this.ordiniBtn.Text = "Ordini";
             this.ordiniBtn.UseVisualStyleBackColor = true;
@@ -2165,9 +2166,9 @@
             // veicoliBtn
             // 
             this.veicoliBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.veicoliBtn.Location = new System.Drawing.Point(197, 227);
+            this.veicoliBtn.Location = new System.Drawing.Point(197, 189);
             this.veicoliBtn.Name = "veicoliBtn";
-            this.veicoliBtn.Size = new System.Drawing.Size(75, 23);
+            this.veicoliBtn.Size = new System.Drawing.Size(75, 19);
             this.veicoliBtn.TabIndex = 3;
             this.veicoliBtn.Text = "Veicoli venduti";
             this.veicoliBtn.UseVisualStyleBackColor = true;
@@ -2178,6 +2179,7 @@
             this.homePanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.homePanel.Controls.Add(this.button2);
             this.homePanel.Controls.Add(this.veicoliBtn);
             this.homePanel.Controls.Add(this.ordiniBtn);
             this.homePanel.Controls.Add(this.corrieriBtn);
@@ -2193,9 +2195,9 @@
             // clientiBtn
             // 
             this.clientiBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.clientiBtn.Location = new System.Drawing.Point(197, 168);
+            this.clientiBtn.Location = new System.Drawing.Point(197, 130);
             this.clientiBtn.Name = "clientiBtn";
-            this.clientiBtn.Size = new System.Drawing.Size(75, 23);
+            this.clientiBtn.Size = new System.Drawing.Size(75, 19);
             this.clientiBtn.TabIndex = 1;
             this.clientiBtn.Text = "Clienti";
             this.clientiBtn.UseVisualStyleBackColor = true;
@@ -2204,9 +2206,9 @@
             // fornitoriBtn
             // 
             this.fornitoriBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.fornitoriBtn.Location = new System.Drawing.Point(379, 168);
+            this.fornitoriBtn.Location = new System.Drawing.Point(379, 130);
             this.fornitoriBtn.Name = "fornitoriBtn";
-            this.fornitoriBtn.Size = new System.Drawing.Size(75, 23);
+            this.fornitoriBtn.Size = new System.Drawing.Size(75, 19);
             this.fornitoriBtn.TabIndex = 2;
             this.fornitoriBtn.Text = "Fornitori";
             this.fornitoriBtn.UseVisualStyleBackColor = true;
@@ -2215,9 +2217,9 @@
             // officinaBtn
             // 
             this.officinaBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.officinaBtn.Location = new System.Drawing.Point(197, 288);
+            this.officinaBtn.Location = new System.Drawing.Point(197, 250);
             this.officinaBtn.Name = "officinaBtn";
-            this.officinaBtn.Size = new System.Drawing.Size(75, 23);
+            this.officinaBtn.Size = new System.Drawing.Size(75, 19);
             this.officinaBtn.TabIndex = 5;
             this.officinaBtn.Text = "Officina";
             this.officinaBtn.UseVisualStyleBackColor = true;
@@ -2227,7 +2229,7 @@
             // 
             this.menuLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.menuLabel.AutoSize = true;
-            this.menuLabel.Location = new System.Drawing.Point(254, 123);
+            this.menuLabel.Location = new System.Drawing.Point(254, 85);
             this.menuLabel.Name = "menuLabel";
             this.menuLabel.Size = new System.Drawing.Size(152, 13);
             this.menuLabel.TabIndex = 1;
@@ -3706,6 +3708,46 @@
             this.dataGridView5.Size = new System.Drawing.Size(472, 265);
             this.dataGridView5.TabIndex = 18;
             // 
+            // numeroDataGridViewTextBoxColumn2
+            // 
+            this.numeroDataGridViewTextBoxColumn2.DataPropertyName = "Numero";
+            this.numeroDataGridViewTextBoxColumn2.HeaderText = "Numero";
+            this.numeroDataGridViewTextBoxColumn2.Name = "numeroDataGridViewTextBoxColumn2";
+            this.numeroDataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // dataDataGridViewTextBoxColumn1
+            // 
+            this.dataDataGridViewTextBoxColumn1.DataPropertyName = "Data";
+            this.dataDataGridViewTextBoxColumn1.HeaderText = "Data";
+            this.dataDataGridViewTextBoxColumn1.Name = "dataDataGridViewTextBoxColumn1";
+            this.dataDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // importoComplessivoDataGridViewTextBoxColumn1
+            // 
+            this.importoComplessivoDataGridViewTextBoxColumn1.DataPropertyName = "ImportoComplessivo";
+            this.importoComplessivoDataGridViewTextBoxColumn1.HeaderText = "ImportoComplessivo";
+            this.importoComplessivoDataGridViewTextBoxColumn1.Name = "importoComplessivoDataGridViewTextBoxColumn1";
+            this.importoComplessivoDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // modalitàPagamentoDataGridViewTextBoxColumn
+            // 
+            this.modalitàPagamentoDataGridViewTextBoxColumn.DataPropertyName = "ModalitàPagamento";
+            this.modalitàPagamentoDataGridViewTextBoxColumn.HeaderText = "ModalitàPagamento";
+            this.modalitàPagamentoDataGridViewTextBoxColumn.Name = "modalitàPagamentoDataGridViewTextBoxColumn";
+            this.modalitàPagamentoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // clienteDataGridViewTextBoxColumn
+            // 
+            this.clienteDataGridViewTextBoxColumn.DataPropertyName = "Cliente";
+            this.clienteDataGridViewTextBoxColumn.HeaderText = "Cliente";
+            this.clienteDataGridViewTextBoxColumn.Name = "clienteDataGridViewTextBoxColumn";
+            this.clienteDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // contrattoVenditaBindingSource
+            // 
+            this.contrattoVenditaBindingSource.DataMember = "ContrattoVendita";
+            this.contrattoVenditaBindingSource.DataSource = this.dBProject1617DataSet;
+            // 
             // addContrattoBtn
             // 
             this.addContrattoBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -3939,11 +3981,6 @@
             this.addNsModPag_Btn.UseVisualStyleBackColor = true;
             this.addNsModPag_Btn.Click += new System.EventHandler(this.addInstanceBtn_Click);
             // 
-            // contrattoVenditaBindingSource
-            // 
-            this.contrattoVenditaBindingSource.DataMember = "ContrattoVendita";
-            this.contrattoVenditaBindingSource.DataSource = this.dBProject1617DataSet;
-            // 
             // clientiPanel
             // 
             this.clientiPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -4056,53 +4093,28 @@
             // 
             this.referenzaTableAdapter.ClearBeforeFill = true;
             // 
-            // numeroDataGridViewTextBoxColumn2
+            // button2
             // 
-            this.numeroDataGridViewTextBoxColumn2.DataPropertyName = "Numero";
-            this.numeroDataGridViewTextBoxColumn2.HeaderText = "Numero";
-            this.numeroDataGridViewTextBoxColumn2.Name = "numeroDataGridViewTextBoxColumn2";
-            this.numeroDataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // dataDataGridViewTextBoxColumn1
-            // 
-            this.dataDataGridViewTextBoxColumn1.DataPropertyName = "Data";
-            this.dataDataGridViewTextBoxColumn1.HeaderText = "Data";
-            this.dataDataGridViewTextBoxColumn1.Name = "dataDataGridViewTextBoxColumn1";
-            this.dataDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // importoComplessivoDataGridViewTextBoxColumn1
-            // 
-            this.importoComplessivoDataGridViewTextBoxColumn1.DataPropertyName = "ImportoComplessivo";
-            this.importoComplessivoDataGridViewTextBoxColumn1.HeaderText = "ImportoComplessivo";
-            this.importoComplessivoDataGridViewTextBoxColumn1.Name = "importoComplessivoDataGridViewTextBoxColumn1";
-            this.importoComplessivoDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // modalitàPagamentoDataGridViewTextBoxColumn
-            // 
-            this.modalitàPagamentoDataGridViewTextBoxColumn.DataPropertyName = "ModalitàPagamento";
-            this.modalitàPagamentoDataGridViewTextBoxColumn.HeaderText = "ModalitàPagamento";
-            this.modalitàPagamentoDataGridViewTextBoxColumn.Name = "modalitàPagamentoDataGridViewTextBoxColumn";
-            this.modalitàPagamentoDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // clienteDataGridViewTextBoxColumn
-            // 
-            this.clienteDataGridViewTextBoxColumn.DataPropertyName = "Cliente";
-            this.clienteDataGridViewTextBoxColumn.HeaderText = "Cliente";
-            this.clienteDataGridViewTextBoxColumn.Name = "clienteDataGridViewTextBoxColumn";
-            this.clienteDataGridViewTextBoxColumn.ReadOnly = true;
+            this.button2.Location = new System.Drawing.Point(268, 314);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(127, 39);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "Operazioni";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(655, 403);
+            this.Controls.Add(this.homePanel);
+            this.Controls.Add(this.fornitoriPanel);
+            this.Controls.Add(this.corrieriPanel);
             this.Controls.Add(this.clientiPanel);
             this.Controls.Add(this.ordiniPanel);
             this.Controls.Add(this.veicoliPanel);
             this.Controls.Add(this.officinaPanel);
-            this.Controls.Add(this.homePanel);
-            this.Controls.Add(this.fornitoriPanel);
-            this.Controls.Add(this.corrieriPanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -4219,6 +4231,7 @@
             this.Contratto.ResumeLayout(false);
             this.Contratto.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.contrattoVenditaBindingSource)).EndInit();
             this.Pagamento.ResumeLayout(false);
             this.Pagamento.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
@@ -4227,7 +4240,6 @@
             this.Modalita_di_pagamento.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nostreModalitàPagamentoBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.contrattoVenditaBindingSource)).EndInit();
             this.clientiPanel.ResumeLayout(false);
             this.clientiPanel.PerformLayout();
             this.ResumeLayout(false);
@@ -4594,6 +4606,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn importoComplessivoDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn modalitàPagamentoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn clienteDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button button2;
     }
 }
 
