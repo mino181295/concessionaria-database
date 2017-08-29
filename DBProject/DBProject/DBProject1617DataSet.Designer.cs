@@ -14111,7 +14111,7 @@ SELECT Id, TipoCliente, CodiceFiscale, Nome, Cognome, DataNascita, CittàNascita
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString;
+            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -14981,7 +14981,7 @@ SELECT Numero, Data, ImportoComplessivo, ModalitàPagamento, Cliente FROM Contra
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString;
+            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -15335,7 +15335,7 @@ SELECT PartitaIVA, RagioneSociale, Indirizzo, Città, Provincia, CAP, Recapito1,
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString;
+            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -15917,7 +15917,7 @@ SELECT PartitaIVA, RagioneSociale, Indirizzo, Città, Provincia, CAP, Recapito1,
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString;
+            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -16260,7 +16260,7 @@ SELECT Fornitore, Numero, Ordine, Data, ImportoComplessivo, ModPagamentoFornitor
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString;
+            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -16673,7 +16673,7 @@ SELECT PartitaIVA, CasaProduttrice, FornitoreRicambi, RagioneSociale, Recapito1,
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString;
+            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -17326,7 +17326,7 @@ SELECT Ricambio, Numero, Data, Quantità, Causale FROM Giacenza WHERE (Numero = 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString;
+            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -17695,7 +17695,7 @@ SELECT Fornitore, Da, A, Periodicità, TassoInteresse, NumeroRate FROM Modalità
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString;
+            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -18058,7 +18058,7 @@ SELECT Nome, Anno, CasaProduttrice FROM ModelloVeicolo WHERE (Anno = @Anno) AND 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString;
+            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -18417,7 +18417,7 @@ SELECT Da, A, Periodicità, TassoInteresse, NumerRate FROM NostreModalitàPagame
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString;
+            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -18761,7 +18761,7 @@ SELECT Codice, Nome, Descrizione, Prezzo FROM Optional WHERE (Codice = @Codice)"
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString;
+            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -19148,7 +19148,7 @@ SELECT Id, TipoOrdine, DataOrdine, DataConsegnaPrevista, DataConsegna, Fornitore
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString;
+            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -19538,7 +19538,7 @@ SELECT Ordine, Ricambio, Quantità, PrezzoUnitario FROM OrdineRicambio WHERE (Or
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString;
+            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -19871,7 +19871,7 @@ SELECT Veicolo, PrezzoFornitore, Ordine FROM OrdineVeicolo WHERE (Veicolo = @Vei
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString;
+            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -20190,7 +20190,7 @@ SELECT FornitoreFattura, NumeroFattura, Scadenza, Importo, DataPagamento FROM Ra
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString;
+            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -20557,7 +20557,7 @@ SELECT Contratto, Scadenza, Importo, DataPagamento FROM RataCliente WHERE (Contr
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString;
+            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -20889,7 +20889,7 @@ SELECT VeicoloCatalogo, Ricambio FROM Referenza WHERE (Ricambio = @Ricambio) AND
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString;
+            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -21238,7 +21238,7 @@ SELECT VeicoloVenduto, Numero, Scadenza, DataEsecuzione FROM Revisione WHERE (Nu
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString;
+            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -21587,7 +21587,7 @@ SELECT Codice, Nome, Descrizione, PrezzoUnitarioRiparazione, TipoRicambio, Forni
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString;
+            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -22015,7 +22015,7 @@ SELECT Veicolo, Numero, Data, ImportoComplessivo FROM Riparazione WHERE (Numero 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString;
+            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -22322,7 +22322,7 @@ SELECT VeicoloCatalogo, Optional FROM Supporto WHERE (Optional = @Optional) AND 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString;
+            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -22701,7 +22701,7 @@ SELECT Codice, Costo, DataConsegnaPrevista, DataConsegna, IndirizzoConsegna, Cit
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString;
+            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -23227,7 +23227,7 @@ SELECT Ricambio, Veicolo, Numero, Quantità FROM Utilizzo WHERE (Numero = @Numer
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString;
+            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -23623,7 +23623,7 @@ SELECT Codice, PrezzoBase, Potenza, NumPosti, Consumi, Omologazione, CapacitàSe
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString;
+            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -24228,7 +24228,7 @@ SELECT Id, Telaio, Contratto, VeicoloCatalogo FROM VeicoloVenduto WHERE (Id = @I
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString;
+            this._connection.ConnectionString = global::DBProject.Properties.Settings.Default.DBProject1617ConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
