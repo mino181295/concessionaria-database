@@ -10,21 +10,48 @@ using System.Windows.Forms;
 
 namespace DBProject
 {
-    public partial class OpForm : Form
+    public partial class opForm : Form
     {
         private DataClassesDataContext db;
 
-        public OpForm(DataClassesDataContext db)
+        public opForm(DataClassesDataContext db)
         {
             this.db = db;
             InitializeComponent();
+            showHome();
+
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void showHome()
         {
-
+            this.panelHome.BringToFront();
         }
 
+
+        private void buttonOp_Click(object sender, EventArgs e)
+        {
+            switch (((Button)sender).Name)
+            {
+                case "buttonA1":
+                    panelOpionalToVeic.BringToFront();
+                    break;
+                case "buttonB3":
+                    panelClassificaVendite.BringToFront();
+                    break;
+                case "buttonC3":
+                    panelIncassi.BringToFront();
+                    break;
+            }
+        }
+
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            showHome();
+        }
+
+
+
+        // OP A1: Ricerca optional dato il veicololo
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             ComboBox combo = (ComboBox)sender;
@@ -32,10 +59,10 @@ namespace DBProject
             if (value == null)
                 return;
 
-            dataGridView1.DataSource = from o in this.db.Supporto
+            dataGridViewOptional.DataSource = from o in this.db.Supporto
                                        join v in db.VeicoloCatalogo on o.VeicoloCatalogo equals v.Codice
                                        where v.Codice == value.ToString()
-                                       select o.Optional1;                                          
+                                       select o.Optional1;
         }
 
         private void comboBox1_DropDown(object sender, EventArgs e)
@@ -50,28 +77,34 @@ namespace DBProject
             combo.ValueMember = "Codice";
         }
 
-        private void dateTimePicker_ValueChanged(object sender, EventArgs e)
+
+        // OP B3: Visualizzazione classifica veicoli venduti
+        private void dateTimeVendite_ValueChanged(object sender, EventArgs e)
         {
             DateTime fromD = dateTimePicker2.Value;
             DateTime to = dateTimePicker3.Value;
 
-            dataGridView2.DataSource = from vv in db.VeicoloVenduto
+            dataGridViewVendite.DataSource = from vv in db.VeicoloVenduto
                                        join vc in db.VeicoloCatalogo on vv.VeicoloCatalogo equals vc.Codice
                                        where vv.ContrattoVendita.Data <= to && vv.ContrattoVendita.Data >= fromD
                                        group vc by vc.Codice into vs
-                                       select new {Veicolo=vs.First().Codice + " " + vs.First().NomeModello, NumeroVenduti = vs.Count() };
-                                       
+                                       select new { CodiceVeicolo = vs.First().Codice , NumeroVenduti = vs.Count() };
+
         }
 
+
+        // OP C3: Somma incassi da [data1] a [data2]
         private void dateTimePickerIncassi_ValueChanged(object sender, EventArgs e)
         {
             DateTime fromD = dateTimePicker4.Value;
             DateTime to = dateTimePicker5.Value;
 
-           label3.Text = (from c in db.ContrattoVendita
-                                        where c.Data <= to && c.Data >= fromD
-                                        select c).ToList().Sum(item=>item.ImportoComplessivo).ToString();
-                                       
+            labelIncassi.Text = (from c in db.ContrattoVendita
+                                 where c.Data <= to && c.Data >= fromD
+                                 select c).ToList().Sum(item => item.ImportoComplessivo).ToString() + " €";
+
         }
+
+
     }
 }
