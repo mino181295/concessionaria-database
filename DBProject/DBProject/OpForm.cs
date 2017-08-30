@@ -72,7 +72,6 @@ namespace DBProject
             combo.DisplayMember = "member";
             combo.ValueMember = "Codice";
         }
-
         private void comboBox1_DropDownClosed(object sender, EventArgs e)
         {
             ComboBox combo = (ComboBox)sender;
@@ -98,7 +97,6 @@ namespace DBProject
             combo.DisplayMember = "member";
             combo.ValueMember = "Id";
         }
-
         private void comboBox2_DropDownClosed(object sender, EventArgs e)
         {
             ComboBox combo = (ComboBox)sender;
@@ -171,7 +169,6 @@ namespace DBProject
             combo.DisplayMember = "member";
             combo.ValueMember = "Numero";
         }
-
         private void comboBox3_DropDownClosed(object sender, EventArgs e)
         {
             ComboBox combo = (ComboBox)sender;
@@ -183,7 +180,6 @@ namespace DBProject
                                             where c.Numero == EntryForm.convertStringInt(value.ToString())
                                             select c.ImportoComplessivo).First().ToString();
         }
-
        
     }
 }
