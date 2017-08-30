@@ -3786,6 +3786,12 @@ namespace DBProject
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(839, 472);
+            this.Controls.Add(this.addEsecRevPanel);
+            this.Controls.Add(this.addPerfPanel);
+            this.Controls.Add(this.addTrasportoPanel);
+            this.Controls.Add(this.addModalitaPagPanel);
+            this.Controls.Add(this.addRevisionePanel);
+            this.Controls.Add(this.addVenditaPanel);
             this.Controls.Add(this.addOptToVeicPanel);
             this.Controls.Add(this.addOptionalPanel);
             this.Controls.Add(this.addModelloPanel);
@@ -3801,12 +3807,6 @@ namespace DBProject
             this.Controls.Add(this.addClientePanel);
             this.Controls.Add(this.addGiacenzaPanel);
             this.Controls.Add(this.addPagamentoPanel);
-            this.Controls.Add(this.addEsecRevPanel);
-            this.Controls.Add(this.addPerfPanel);
-            this.Controls.Add(this.addTrasportoPanel);
-            this.Controls.Add(this.addModalitaPagPanel);
-            this.Controls.Add(this.addRevisionePanel);
-            this.Controls.Add(this.addVenditaPanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EntryForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
