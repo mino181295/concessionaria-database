@@ -25,6 +25,7 @@ namespace DBProject
         private void showHome()
         {
             this.panelHome.BringToFront();
+            this.Text = "Operazioni";
         }
 
 
@@ -33,7 +34,7 @@ namespace DBProject
             switch (((Button)sender).Name)
             {
                 case "buttonA1":
-                    panelOpionalToVeic.BringToFront();
+                    panelOpionalToVeic.BringToFront();                    
                     break;
                 case "buttonA2":
                     panelStoricoRevisioni.BringToFront();
@@ -51,6 +52,8 @@ namespace DBProject
                     panelContratto.BringToFront();
                     break;
             }
+
+            this.Text = ((Button)sender).Text;
         }
 
         private void buttonBack_Click(object sender, EventArgs e)

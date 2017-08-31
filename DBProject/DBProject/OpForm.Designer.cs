@@ -255,9 +255,10 @@
             // buttonC4
             // 
             this.buttonC4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttonC4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonC4.Location = new System.Drawing.Point(367, 285);
             this.buttonC4.Name = "buttonC4";
-            this.buttonC4.Size = new System.Drawing.Size(116, 64);
+            this.buttonC4.Size = new System.Drawing.Size(130, 60);
             this.buttonC4.TabIndex = 5;
             this.buttonC4.Text = "[C4] Importo complessivo contratto";
             this.buttonC4.UseVisualStyleBackColor = true;
@@ -266,9 +267,10 @@
             // buttonB1
             // 
             this.buttonB1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttonB1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonB1.Location = new System.Drawing.Point(205, 206);
             this.buttonB1.Name = "buttonB1";
-            this.buttonB1.Size = new System.Drawing.Size(116, 47);
+            this.buttonB1.Size = new System.Drawing.Size(130, 60);
             this.buttonB1.TabIndex = 4;
             this.buttonB1.Text = "[B1] Visualizza acquirenti nel periodo";
             this.buttonB1.UseVisualStyleBackColor = true;
@@ -277,9 +279,10 @@
             // buttonA2
             // 
             this.buttonA2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttonA2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonA2.Location = new System.Drawing.Point(367, 133);
             this.buttonA2.Name = "buttonA2";
-            this.buttonA2.Size = new System.Drawing.Size(116, 45);
+            this.buttonA2.Size = new System.Drawing.Size(130, 60);
             this.buttonA2.TabIndex = 3;
             this.buttonA2.Text = "[A2] Storico revisioni veicolo";
             this.buttonA2.UseVisualStyleBackColor = true;
@@ -288,9 +291,10 @@
             // buttonC3
             // 
             this.buttonC3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttonC3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonC3.Location = new System.Drawing.Point(205, 285);
             this.buttonC3.Name = "buttonC3";
-            this.buttonC3.Size = new System.Drawing.Size(116, 45);
+            this.buttonC3.Size = new System.Drawing.Size(130, 60);
             this.buttonC3.TabIndex = 2;
             this.buttonC3.Text = "[C3] Incassi del periodo";
             this.buttonC3.UseVisualStyleBackColor = true;
@@ -299,9 +303,10 @@
             // buttonB3
             // 
             this.buttonB3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttonB3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonB3.Location = new System.Drawing.Point(367, 206);
             this.buttonB3.Name = "buttonB3";
-            this.buttonB3.Size = new System.Drawing.Size(116, 47);
+            this.buttonB3.Size = new System.Drawing.Size(130, 60);
             this.buttonB3.TabIndex = 1;
             this.buttonB3.Text = "[B3] Classifica veicoli venduti nel periodo";
             this.buttonB3.UseVisualStyleBackColor = true;
@@ -310,9 +315,10 @@
             // buttonA1
             // 
             this.buttonA1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttonA1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonA1.Location = new System.Drawing.Point(205, 133);
             this.buttonA1.Name = "buttonA1";
-            this.buttonA1.Size = new System.Drawing.Size(116, 23);
+            this.buttonA1.Size = new System.Drawing.Size(130, 60);
             this.buttonA1.TabIndex = 0;
             this.buttonA1.Text = "[A1] Optional veicolo";
             this.buttonA1.UseVisualStyleBackColor = true;

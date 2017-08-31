@@ -194,6 +194,7 @@ namespace DBProject
         {
             this.homePanel.BringToFront();
             isHomePanel = true;
+            this.Text = "Gestionale MinosPol";
         }
 
         private void homeBtns_Click(object sender, EventArgs e)
@@ -215,6 +216,7 @@ namespace DBProject
             panel.BringToFront();
             isHomePanel = false;
             searchSetup(panel.Controls.OfType<TabControl>().First());
+            this.Text = ((Button)sender).Text;
         }
 
         private void addInstanceBtn_Click(object sender, EventArgs e)
