@@ -92,11 +92,11 @@ namespace DBProject
         // OP A2: Storico revisioni veicolo.
         private void comboBox2_DropDown(object sender, EventArgs e)
         {
-            var data = from v in db.VeicoloVenduto                          
-                       select new { member = v.Id + " " + v.VeicoloCatalogo1.NomeModello, v.Id };
-
             ComboBox combo = (ComboBox)sender;
-            combo.DataSource = data;
+            combo.DataSource = from v in db.VeicoloVenduto
+                               join c in db.Fornitore
+                               on v.VeicoloCatalogo1.CasaProduttrice equals c.PartitaIVA
+                               select new { member = c.RagioneSociale + " " + v.VeicoloCatalogo1.NomeModello + " " + v.VeicoloCatalogo1.AnnoModello + " id: " + v.Id, v.Id };
             combo.DisplayMember = "member";
             combo.ValueMember = "Id";
         }

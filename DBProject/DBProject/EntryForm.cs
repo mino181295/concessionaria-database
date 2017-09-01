@@ -861,8 +861,26 @@ namespace DBProject
 
         private void submitRevisioneBtn_Click(object sender, EventArgs e)
         {
+            Revisione r = new Revisione();
 
-            this.Close();
+            var val = this.comboBox21.SelectedValue;
+            r.VeicoloVenduto = val == null ? -1 : convertStringInt(val.ToString());
+            r.Scadenza = dateTimePicker8.Value;
+
+            try
+            {
+                if (!(isInt((int) r.VeicoloVenduto)))
+                {
+                    throw new Exception("Campi vuoti o errati");
+                }
+                db.Revisione.InsertOnSubmit(r);
+                db.SubmitChanges();
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Errore di inserimento dati");
+            }
         }
 
         private void submitVeicoloBtn_Click(object sender, EventArgs e)
@@ -1107,27 +1125,32 @@ namespace DBProject
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {/*
-            Revisione r = new Revisione();
-
-            r.Veicolo_Numero_telaio = this.comboBox26.ValueMember;
-            r.Numero = convertStringInt(this.comboBox27.ValueMember);
-            r.Data_esecuzione = this.dateTimePicker7.Value;
-
+        {           
             try
             {
-                if (!(  isString(r.Veicolo_Numero_telaio) &&
-                        isInt(r.Numero)))
+                var val = this.comboBox26.SelectedValue;
+                int veicolo = val == null ? -1 : convertStringInt(val.ToString());
+
+                val = this.comboBox27.SelectedValue;
+                int revisioneNum = val == null ? -1 : convertStringInt(val.ToString());
+
+                if (!(  isInt((int) veicolo) &&
+                        isInt(revisioneNum)))
                 {
-                    throw new Exception("Campi vuoti");
+                    throw new Exception("Campi vuoti o errati");
                 }
-                //db.Riparazione.InsertOnSubmit(r);
-                //db.SubmitChanges();
+
+                Revisione rv = (from r in db.Revisione
+                               where r.VeicoloVenduto == veicolo && r.Numero == revisioneNum
+                               select r).First();
+                rv.DataEsecuzione = dateTimePicker7.Value;
+
+                db.SubmitChanges();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Errore di inserimento dati");
-            }*/
+            }
             this.Close();
         }
 
@@ -1453,6 +1476,65 @@ namespace DBProject
                 comboItem.DisplayMember = "desc";
                 comboItem.ValueMember = "Codice";
             }
+        }
+
+        private void comboContratti_DropDown(object sender, EventArgs e)
+        {
+            ComboBox combo = (ComboBox)sender;
+            combo.DataSource = from c in db.ContrattoVendita                                                              
+                               select new { member = "Numero: " + c.Numero + " a nome di: " + (c.Cliente1.CodiceFiscale == null ? c.Cliente1.RagioneSociale : c.Cliente1.Nome + c.Cliente1.Cognome), c.Numero};
+            combo.DisplayMember = "member";
+            combo.ValueMember = "Numero";
+        }
+
+        private void comboBox21_DropDown(object sender, EventArgs e)
+        {
+            var value = this.comboBox5.SelectedValue;
+            if (value == null)
+                return;
+
+            ComboBox combo = (ComboBox)sender;
+            combo.DataSource = from v in db.VeicoloVenduto
+                               join c in db.Fornitore
+                               on v.VeicoloCatalogo1.CasaProduttrice equals c.PartitaIVA
+                               where v.Contratto == convertStringInt(value.ToString())
+                               select new { member = c.RagioneSociale + " " + v.VeicoloCatalogo1.NomeModello + " " + v.VeicoloCatalogo1.AnnoModello + " id: " + v.Id, v.Id };
+            combo.DisplayMember = "member";
+            combo.ValueMember = "Id";
+        }
+
+        private void comboBox26_DropDown(object sender, EventArgs e)
+        {
+            var value = this.comboBox31.SelectedValue;
+            if (value == null)
+                return;
+
+            ComboBox combo = (ComboBox)sender;
+            combo.DataSource = from v in db.VeicoloVenduto
+                               join c in db.Fornitore
+                               on v.VeicoloCatalogo1.CasaProduttrice equals c.PartitaIVA
+                               join r in db.Revisione   
+                               on v.Id equals r.VeicoloVenduto                           
+                               where v.Contratto == convertStringInt(value.ToString())
+                               && r.DataEsecuzione == null
+                               select new { member = c.RagioneSociale + " " + v.VeicoloCatalogo1.NomeModello + " " + v.VeicoloCatalogo1.AnnoModello + " id: " + v.Id, v.Id };
+            combo.DisplayMember = "member";
+            combo.ValueMember = "Id";
+        }
+
+        private void comboBox27_DropDown(object sender, EventArgs e)
+        {
+            var value = this.comboBox26.SelectedValue;
+            if (value == null)
+                return;
+
+            ComboBox combo = (ComboBox)sender;
+            combo.DataSource = from r in db.Revisione
+                               where r.VeicoloVenduto == convertStringInt(value.ToString())
+                               && r.DataEsecuzione == null
+                               select new { member = "Numero: " + r.Numero + " scadente in data: " + r.Scadenza, r.Numero };
+            combo.DisplayMember = "member";
+            combo.ValueMember = "Numero";
         }
     }
 
