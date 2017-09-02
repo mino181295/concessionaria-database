@@ -141,7 +141,8 @@ namespace DBProject
                                        join vc in db.VeicoloCatalogo on vv.VeicoloCatalogo equals vc.Codice
                                        where vv.ContrattoVendita.Data <= to && vv.ContrattoVendita.Data >= fromD
                                        group vc by vc.Codice into vs
-                                       select new { CodiceVeicolo = vs.First().Codice , NumeroVenduti = vs.Count() };
+                                       orderby vs.Count() descending
+                                       select new { CodiceVeicolo = vs.First().Codice , NumeroVenduti = vs.Count() };                                       
 
         }
 

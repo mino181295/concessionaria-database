@@ -620,13 +620,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(688, 431);
-            this.Controls.Add(this.panelStoricoRevisioni);
-            this.Controls.Add(this.panelHome);
-            this.Controls.Add(this.panelAcquirenti);
             this.Controls.Add(this.panelClassificaVendite);
             this.Controls.Add(this.panelOpionalToVeic);
             this.Controls.Add(this.panelContratto);
             this.Controls.Add(this.panelIncassi);
+            this.Controls.Add(this.panelStoricoRevisioni);
+            this.Controls.Add(this.panelHome);
+            this.Controls.Add(this.panelAcquirenti);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "opForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;

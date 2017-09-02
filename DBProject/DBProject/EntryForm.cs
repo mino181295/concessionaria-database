@@ -1438,16 +1438,20 @@ namespace DBProject
                 return;
 
             var op = from o in this.db.Supporto
-                     where o.VeicoloCatalogo == (from v in this.db.VeicoloVenduto
-                                                 where v.Id == convertStringInt(value.ToString())
-                                                 select v.VeicoloCatalogo).First()
+                     join v in db.VeicoloVenduto
+                     on o.VeicoloCatalogo equals v.VeicoloCatalogo
+                     where v.Id == convertStringInt(value.ToString())
+                     && !((from v in this.db.VeicoloVenduto
+                          join d in db.Dotazione
+                          on v.Id equals d.Veicolo                          
+                          where v.Id == convertStringInt(value.ToString())
+                          select d.Optional).Contains(o.Optional))
                      select new { member = o.Optional1.Nome + " " + o.Optional1.Prezzo + " €", o.Optional };
 
-       
             ComboBox combo = (ComboBox)sender;
             combo.DataSource = op.ToList();
             combo.DisplayMember = "member";
-            combo.ValueMember = "Optional";
+            combo.ValueMember = "Optional";          
         }
 
         private void comboItem_DropDown(object sender, EventArgs e)
